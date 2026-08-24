@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · AIhot</title>
+<meta name="description" content="AIhot 项目简介、数据来源与分类口径说明。">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="inner">
+    <a class="brand" href="/">AIhot<small>每日 AI 热点</small></a>
+    <div class="nav-links">
+      <a href="/">首页</a>
+      <a href="/days/2026082302/">今日新闻</a>
+      <a href="/#weekly" class="soon" aria-disabled="true" onclick="return false">一周新闻<span class="tag-soon">即将上线</span></a>
+      <a href="/about/" class="active">关于</a>
+      <a href="/contact/">联系</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <p class="kicker">关于我们</p>
+  <h1>关于 AIhot</h1>
+  <p class="lead">我们做什么，以及数据从哪里来。</p>
+</header>
+
+<main class="wrap">
+  <section class="section prose">
+    <h2><span class="bar"></span>项目简介</h2>
+    <p>AIhot 是一个每日自动检索并整理的 AI 热点聚合服务。我们按北京时间时间轴，从公开条目池中筛选当天最值得关注的 AI 进展，统一归类后生成当日日报，并部署到对应的 /days/ 日期文件夹（如 <code>/days/2026082302/</code>），方便你随时回看任意一天。</p>
+
+    <h3>数据来源</h3>
+    <p>数据来自 AIHOT 公开条目池（mode=all），按北京时间时间轴筛选，每日检索一次并生成当日日报。原始条目可点击卡片中的「阅读原文」跳转至来源站点。</p>
+
+    <h3>分类口径</h3>
+    <p>公开条目池含 4 个分类：<strong>产品发布 / 更新</strong>、<strong>行业动态</strong>、<strong>论文 / 研究</strong>、<strong>技巧 / 教程</strong>，目前无独立「模型」分类。</p>
+
+    <h3>时间说明</h3>
+    <p>卡片时间为条目北京时间（按 AI HOT 时间轴口径），与来源站点本地时间可能存在时差。</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com" target="_blank" rel="noopener">AIHOT</a></div>
+  <div class="note">本站为静态站点，「今日新闻」与各日期归档指向对应 /days/ 日期文件夹，请按需更新链接。</div>
+</footer>
+</body>
+</html>
