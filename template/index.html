@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 日报（模板）</title>
+<title>AI 日报 · 2026年8月27日 周四</title>
 <style>
   :root{
     --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
@@ -90,6 +90,19 @@
   .site-footer a{color:#4f46e5;font-weight:600}
   .site-footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
   @media (max-width:560px){.brand small{display:none}}
+
+  /* 排序切换（吸顶导航右侧） */
+  .sort-toggle{margin-left:auto;display:flex;gap:6px;background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:3px;box-shadow:var(--shadow)}
+  .sort-btn{appearance:none;border:0;cursor:pointer;font:inherit;font-size:13px;font-weight:700;
+    color:var(--muted);background:transparent;border-radius:999px;padding:5px 14px;transition:.15s}
+  .sort-btn:hover{color:var(--ink);background:#f3f4f6}
+  .sort-btn.active{color:#fff;background:#4f46e5}
+  /* 卡片元信息行（来源 + 评分角标） */
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .score-badge{display:inline-flex;align-items:center;font-size:12px;font-weight:700;
+    color:#b45309;background:#fef3c7;border:1px solid #fde68a;border-radius:999px;
+    padding:3px 9px;line-height:1.2}
 </style>
 </head>
 <body>
@@ -98,10 +111,14 @@
       <a class="brand" href="https://aihot.space/">AIhot<small>每日 AI 热点</small></a>
       <div class="nav-links">
         <a href="https://aihot.space/">首页</a>
-        <a href="/days/YYYYMMDDHH/" class="active">今日新闻</a>
+        <a href="/days/2026082721/" class="active">今日新闻</a>
         <a href="https://aihot.space/#weekly" class="soon" aria-disabled="true" onclick="return false">一周新闻<span class="tag-soon">即将上线</span></a>
         <a href="https://aihot.space/about/">关于</a>
         <a href="https://aihot.space/contact/">联系</a>
+      </div>
+      <div class="sort-toggle" role="group" aria-label="排序方式">
+        <button type="button" class="sort-btn" data-mode="time">按时间排序</button>
+        <button type="button" class="sort-btn active" data-mode="score">按评分排序</button>
       </div>
     </div>
   </nav>
@@ -124,11 +141,54 @@
 
   <footer class="site-footer">
     <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com" target="_blank" rel="noopener">AIHOT</a></div>
-    <div class="note">本文件为日报模板：复制为 days/YYYYMMDDHH/index.html 并整体替换 DATA 即可生成新日报，导航中日期按实际更新。</div>
+    <div class="note">本文件为 AI 日报单文件成品（2026-8-27）：数据来自 AIHOT 全量公开条目池，整体替换内联 DATA 即可生成其它日期日报。</div>
   </footer>
 
 <script>
-const DATA = {"meta": {"date": "YYYY-MM-DD", "heroDate": "YYYY年M月D日 周X（占位）", "total": 6, "sourceName": "AIHOT", "sourceUrl": "https://aihot.virxact.com", "generatedNote": "【模板占位数据】生成日报时请整体替换本 DATA 为当日真实数据，并将导航中 /days/YYYYMMDDHH/ 改成当日日期文件夹。"}, "sections": [{"key": "models", "label": "模型发布/更新", "color": "#6366f1", "count": 1, "cards": [{"num": 1, "title": "【占位】模型发布示例标题", "summary": "这是模板占位卡片，生成时替换为真实内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "products", "label": "产品发布/更新", "color": "#10b981", "count": 1, "cards": [{"num": 1, "title": "【占位】产品发布示例标题", "summary": "这是模板占位卡片，生成时替换为真实内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "industry", "label": "行业动态", "color": "#f59e0b", "count": 1, "cards": [{"num": 1, "title": "【占位】行业动态示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "papers", "label": "论文研究", "color": "#3b82f6", "count": 1, "cards": [{"num": 1, "title": "【占位】论文研究示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "tips", "label": "技巧与观点", "color": "#8b5cf6", "count": 1, "cards": [{"num": 1, "title": "【占位】技巧观点示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}]};
+const DATA = {
+  // ============================================================
+  //  通用模板：每次生成日报时，只替换下面 const DATA 的内容即可。
+  //  其余 HTML / CSS / JS 保持不变。字段含义见行内注释。
+  // ============================================================
+  // ===== 元信息：Hero 大标题与页脚来源标注 =====
+  meta: {
+    date: "YYYY-MM-DD",                       // 数据日期（ISO，仅记录用）
+    heroDate: "YYYY年M月D日 周X",              // Hero 主标题显示日期，例如 "2026年8月27日 周四"
+    total: 5,                                 // 总条数（= 五个版块 cards 之和，生成时填实际值）
+    sourceName: "AIHOT",                      // 数据源名称
+    sourceUrl: "https://aihot.virxact.com",   // 数据源地址
+    generatedNote: "数据检索时间：YYYY年MM月DD日 HH:MM（北京时间）；数据源为 AIHOT 全量公开条目池（/api/v1/items?mode=all&window=24h），默认按评分排序、可切换按时间排序。"
+  },
+  // ===== 五个固定版块：顺序与 key 固定不要改动；color 与 index.html 配色一致 =====
+  // count 生成时填该版块 cards.length（此处示例填 1）
+  sections: [
+    { key:"models", label:"模型发布 / 更新", color:"#6366f1", count:1, cards:[
+      { num:1, section:"models", title:"示例：模型标题", source:"示例来源", time:"8月27日 21:11",
+        summary:"示例摘要，不超过60字，展示在卡片正文。", aihot:"https://aihot.virxact.com/items/xxx",
+        original:"https://example.com/original", score:84 }
+    ]},
+    { key:"products", label:"产品发布 / 更新", color:"#10b981", count:1, cards:[
+      { num:2, section:"products", title:"示例：产品标题", source:"示例来源", time:"8月27日 20:30",
+        summary:"示例摘要，不超过60字，展示在卡片正文。", aihot:"https://aihot.virxact.com/items/xxx",
+        original:"https://example.com/original", score:79 }
+    ]},
+    { key:"industry", label:"行业动态", color:"#f59e0b", count:1, cards:[
+      { num:3, section:"industry", title:"示例：行业标题", source:"示例来源", time:"8月27日 19:00",
+        summary:"示例摘要，不超过60字，展示在卡片正文。", aihot:"https://aihot.virxact.com/items/xxx",
+        original:"https://example.com/original", score:72 }
+    ]},
+    { key:"papers", label:"论文研究", color:"#3b82f6", count:1, cards:[
+      { num:4, section:"papers", title:"示例：论文标题", source:"示例来源", time:"8月27日 18:00",
+        summary:"示例摘要，不超过60字，展示在卡片正文。", aihot:"https://aihot.virxact.com/items/xxx",
+        original:"https://example.com/original", score:68 }
+    ]},
+    { key:"tips", label:"技巧与观点", color:"#8b5cf6", count:1, cards:[
+      { num:5, section:"tips", title:"示例：技巧标题", source:"示例来源", time:"8月27日 17:00",
+        summary:"示例摘要，不超过60字，展示在卡片正文。", aihot:"https://aihot.virxact.com/items/xxx",
+        original:"https://example.com/original", score:60 }
+    ]}
+  ]
+};
 const app = document.getElementById('app');
 const nav = document.getElementById('nav');
 document.getElementById('heroDate').textContent = DATA.meta.heroDate;
@@ -139,9 +199,12 @@ srcEl.textContent = DATA.meta.sourceName + '（' + DATA.meta.sourceUrl + '）';
 srcEl.href = DATA.meta.sourceUrl;
 document.getElementById('footGen').textContent = DATA.meta.generatedNote;
 document.getElementById('footNote').textContent =
-  '说明：卡片时间为条目北京时间（按 AI HOT 时间轴口径）。公开条目池含 5 个分类（模型发布/更新、产品发布/更新、行业动态、论文研究、技巧与观点）。';
+  '说明：卡片时间为条目在北京时间的发布/发现时间（慢推信源标注「收录」）；数据源为 AIHOT 全量公开条目池（/api/v1/items?mode=all&window=24h），按时间轴倒序全局连续编号。';
 
 const hs = document.getElementById('heroStats');
+const sectionGrids = {};
+const sectionRefs = {};
+
 DATA.sections.forEach(s => {
   const el = document.createElement('div');
   el.className = 'stat';
@@ -177,47 +240,85 @@ DATA.sections.forEach(s => {
   head.append(bar, h2, pill);
   sec.appendChild(head);
   const grid = document.createElement('div'); grid.className = 'grid';
-  if (s.cards.length === 0) {
-    const empty = document.createElement('div');
-    empty.className = 'empty';
-    empty.textContent = '本期暂无「' + s.label + '」相关条目。';
-    grid.appendChild(empty);
-  } else {
-    s.cards.forEach(card => {
-      const c = document.createElement('article'); c.className = 'card';
-      const num = document.createElement('div'); num.className = 'num';
-      num.style.background = s.color; num.textContent = '#' + card.num;
-      c.appendChild(num);
-      const title = document.createElement('a'); title.className = 'title';
-      title.textContent = card.title;
-      const titleHref = card.aihot || card.original;
-      if (titleHref) { title.href = titleHref; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
-      c.appendChild(title);
-      if (card.source) {
-        const chip = document.createElement('span'); chip.className = 'chip';
-        chip.textContent = '来源 · ' + card.source;
-        c.appendChild(chip);
-      }
-      const sum = document.createElement('p'); sum.className = 'summary';
-      sum.textContent = card.summary; c.appendChild(sum);
-      const foot = document.createElement('div'); foot.className = 'foot';
-      const time = document.createElement('span'); time.className = 'time';
-      time.textContent = card.time ? (card.time + ' 北京时间') : '';
-      foot.appendChild(time);
-      const readHref = card.original || card.aihot;
-      if (readHref) {
-        const read = document.createElement('a'); read.className = 'read';
-        read.textContent = '阅读原文 →';
-        read.href = readHref; read.target = '_blank'; read.rel = 'noopener noreferrer';
-        foot.appendChild(read);
-      }
-      c.appendChild(foot);
-      grid.appendChild(c);
-    });
-  }
   sec.appendChild(grid);
+  sectionGrids[s.key] = grid;
+  sectionRefs[s.key] = sec;
   app.appendChild(sec);
 });
+
+let sortMode = 'score';
+
+function cardEl(card, displayNum, color) {
+  const c = document.createElement('article'); c.className = 'card';
+  const num = document.createElement('div'); num.className = 'num';
+  num.style.background = color; num.textContent = '#' + displayNum;
+  c.appendChild(num);
+  const title = document.createElement('a'); title.className = 'title';
+  title.textContent = card.title;
+  const titleHref = card.aihot || card.original;
+  if (titleHref) { title.href = titleHref; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
+  c.appendChild(title);
+  const meta = document.createElement('div'); meta.className = 'meta-row';
+  if (card.source) {
+    const chip = document.createElement('span'); chip.className = 'chip';
+    chip.textContent = '来源 · ' + card.source;
+    meta.appendChild(chip);
+  }
+  if (card.score !== null && card.score !== undefined) {
+    const sc = document.createElement('span'); sc.className = 'score-badge';
+    sc.textContent = '评分 ' + card.score;
+    meta.appendChild(sc);
+  }
+  c.appendChild(meta);
+  const sum = document.createElement('p'); sum.className = 'summary';
+  sum.textContent = card.summary; c.appendChild(sum);
+  const foot = document.createElement('div'); foot.className = 'foot';
+  const time = document.createElement('span'); time.className = 'time';
+  time.textContent = card.time ? (card.time + ' 北京时间') : '';
+  foot.appendChild(time);
+  const readHref = card.original || card.aihot;
+  if (readHref) {
+    const read = document.createElement('a'); read.className = 'read';
+    read.textContent = '阅读原文 →';
+    read.href = readHref; read.target = '_blank'; read.rel = 'noopener noreferrer';
+    foot.appendChild(read);
+  }
+  c.appendChild(foot);
+  return c;
+}
+
+function render() {
+  let counter = 0;
+  DATA.sections.forEach(s => {
+    const cards = s.cards.slice();
+    if (sortMode === 'score') {
+      cards.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+    } else {
+      cards.sort((a, b) => a.num - b.num);
+    }
+    const grid = sectionGrids[s.key];
+    grid.innerHTML = '';
+    if (cards.length === 0) {
+      const empty = document.createElement('div'); empty.className = 'empty';
+      empty.textContent = '本期暂无「' + s.label + '」相关条目。';
+      grid.appendChild(empty);
+      return;
+    }
+    cards.forEach(card => {
+      counter++;
+      grid.appendChild(cardEl(card, counter, s.color));
+    });
+  });
+  document.querySelectorAll('.sort-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === sortMode);
+  });
+}
+
+document.querySelectorAll('.sort-btn').forEach(b => {
+  b.addEventListener('click', () => { sortMode = b.dataset.mode; render(); });
+});
+
+render();
 
 const navLinks = Array.from(nav.querySelectorAll('a'));
 const obs = new IntersectionObserver(entries => {
@@ -227,10 +328,7 @@ const obs = new IntersectionObserver(entries => {
     }
   });
 }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
-DATA.sections.forEach(s => {
-  const el = document.getElementById('sec-' + s.key);
-  if (el) obs.observe(el);
-});
+DATA.sections.forEach(s => { obs.observe(sectionRefs[s.key]); });
 </script>
 </body>
 </html>
