@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 晨报仪表盘</title>
+<title>AI 日报（模板）</title>
 <style>
   :root{
     --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
@@ -98,7 +98,7 @@
       <a class="brand" href="https://aihot.space/">AIhot<small>每日 AI 热点</small></a>
       <div class="nav-links">
         <a href="https://aihot.space/">首页</a>
-        <a href="/days/2026082302/" class="active">今日新闻</a>
+        <a href="/days/YYYYMMDDHH/" class="active">今日新闻</a>
         <a href="https://aihot.space/#weekly" class="soon" aria-disabled="true" onclick="return false">一周新闻<span class="tag-soon">即将上线</span></a>
         <a href="https://aihot.space/about/">关于</a>
         <a href="https://aihot.space/contact/">联系</a>
@@ -106,7 +106,7 @@
     </div>
   </nav>
   <header class="hero" id="top">
-    <p class="kicker">AI 早报</p>
+    <p class="kicker">AI 日报</p>
     <h1 id="heroDate"></h1>
     <p class="total">今日共收录 <b id="heroTotal"></b> 条 AI 资讯</p>
     <div class="stats" id="heroStats"></div>
@@ -128,7 +128,7 @@
   </footer>
 
 <script>
-const DATA = {"meta": {"date": "YYYY-MM-DD", "heroDate": "YYYY年M月D日 周X（占位）", "total": 6, "sourceName": "AIHOT", "sourceUrl": "https://aihot.virxact.com", "generatedNote": "【模板占位数据】生成日报时请整体替换本 DATA 为当日真实数据，并将导航中 /days/2026082302/ 改成当日日期文件夹。"}, "sections": [{"key": "products", "label": "产品发布/更新", "color": "#10b981", "count": 1, "cards": [{"num": 1, "title": "【占位】产品发布示例标题", "summary": "这是模板占位卡片，生成时替换为真实内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "industry", "label": "行业动态", "color": "#f59e0b", "count": 1, "cards": [{"num": 1, "title": "【占位】行业动态示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "papers", "label": "论文/研究", "color": "#3b82f6", "count": 1, "cards": [{"num": 1, "title": "【占位】论文研究示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "tips", "label": "技巧/教程", "color": "#8b5cf6", "count": 1, "cards": [{"num": 1, "title": "【占位】技巧教程示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}]};
+const DATA = {"meta": {"date": "YYYY-MM-DD", "heroDate": "YYYY年M月D日 周X（占位）", "total": 6, "sourceName": "AIHOT", "sourceUrl": "https://aihot.virxact.com", "generatedNote": "【模板占位数据】生成日报时请整体替换本 DATA 为当日真实数据，并将导航中 /days/YYYYMMDDHH/ 改成当日日期文件夹。"}, "sections": [{"key": "products", "label": "产品发布/更新", "color": "#10b981", "count": 1, "cards": [{"num": 1, "title": "【占位】产品发布示例标题", "summary": "这是模板占位卡片，生成时替换为真实内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "industry", "label": "行业动态", "color": "#f59e0b", "count": 1, "cards": [{"num": 1, "title": "【占位】行业动态示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "papers", "label": "论文/研究", "color": "#3b82f6", "count": 1, "cards": [{"num": 1, "title": "【占位】论文研究示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}, {"key": "tips", "label": "技巧/教程", "color": "#8b5cf6", "count": 1, "cards": [{"num": 1, "title": "【占位】技巧教程示例标题", "summary": "占位内容。", "source": "示例来源", "aihot": "https://aihot.virxact.com", "original": "https://aihot.virxact.com", "time": "MM-DD HH:MM", "full": "YYYY-MM-DD HH:MM（北京时间）"}]}]};
 const app = document.getElementById('app');
 const nav = document.getElementById('nav');
 document.getElementById('heroDate').textContent = DATA.meta.heroDate;
