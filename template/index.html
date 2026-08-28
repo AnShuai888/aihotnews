@@ -8,7 +8,7 @@
   :root{
     --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
     --line:#e5e7eb; --shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
-    --radius:16px;
+    --radius:16px; --navh:58px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -28,11 +28,11 @@
     padding:8px 16px;font-size:14px;display:flex;align-items:center;gap:8px}
   .stat .dot{width:9px;height:9px;border-radius:50%}
   .stat b{font-weight:700}
-  .nav{position:sticky;top:58px;z-index:20;background:rgba(255,255,255,.92);
+  .nav{position:sticky;top:var(--navh);z-index:20;background:rgba(255,255,255,.92);
     backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
     display:flex;gap:8px;padding:10px 16px;overflow-x:auto}
   .nav a{flex:0 0 auto;font-size:14px;color:var(--muted);
-    border:1px solid var(--line);border-radius:999px;padding:6px 14px;
+    border:1px solid var(--line);border-radius:999px;padding:6px 14px;min-height:44px;
     display:flex;align-items:center;gap:6px;transition:.2s;white-space:nowrap;
     background:transparent;--active-bg:#4f46e5}
   .nav a .c{font-weight:700;color:var(--ink)}
@@ -79,8 +79,12 @@
   .site-nav .inner{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
   .brand{font-size:18px;font-weight:800;color:#4f46e5;letter-spacing:.5px;white-space:nowrap}
   .brand small{display:block;font-size:11px;font-weight:500;color:#6b7280;letter-spacing:.1em}
-  .nav-links{display:flex;align-items:center;gap:8px;margin-left:auto;overflow-x:auto}
-  .nav-links a{flex:0 0 auto;font-size:14px;color:#6b7280;border:1px solid var(--line);border-radius:999px;padding:6px 14px;white-space:nowrap;transition:transform .2s,background .2s,color .2s}
+  .nav-links{display:flex;align-items:center;gap:8px;margin-left:auto;overflow-x:auto;
+    min-width:0;scrollbar-width:none;-ms-overflow-style:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{flex:0 0 auto;font-size:14px;color:#6b7280;border:1px solid var(--line);
+    border-radius:999px;padding:6px 16px;min-height:44px;display:inline-flex;align-items:center;
+    white-space:nowrap;transition:transform .2s,background .2s,color .2s}
   .nav-links a:hover{background:#f3f4f6;transform:translateY(-1px)}
   .nav-links a.active{color:#fff;background:#4f46e5;border-color:transparent}
   .nav-links a.soon{color:#6b7280;cursor:default;opacity:.7}
@@ -91,13 +95,31 @@
   .site-footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
   @media (max-width:560px){.brand small{display:none}}
 
-  /* 排序切换（吸顶导航右侧） */
-  .sort-toggle{margin-left:auto;display:flex;gap:6px;background:#fff;border:1px solid var(--line);
-    border-radius:999px;padding:3px;box-shadow:var(--shadow)}
-  .sort-btn{appearance:none;border:0;cursor:pointer;font:inherit;font-size:13px;font-weight:700;
-    color:var(--muted);background:transparent;border-radius:999px;padding:5px 14px;transition:.15s}
-  .sort-btn:hover{color:var(--ink);background:#f3f4f6}
-  .sort-btn.active{color:#fff;background:#4f46e5}
+  /* 工具条：排序 + 显示条数（分类导航下方，移动端优先） */
+  .toolbar{max-width:1180px;margin:0 auto;padding:16px 20px 0;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .ctl{appearance:none;-webkit-appearance:none;min-height:44px;font:inherit;font-size:14px;
+    font-weight:700;color:var(--ink);background:#fff
+    url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1.5L6 6.5L11 1.5' fill='none' stroke='%236b7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat right 14px center;background-size:12px 8px;
+    border:1px solid var(--line);border-radius:999px;padding:10px 38px 10px 16px;
+    cursor:pointer;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+  .ctl:hover{border-color:#a5b4fc}
+  .ctl:focus-visible{outline:2px solid #4f46e5;outline-offset:2px}
+  .toolbar .hint{font-size:13px;color:var(--muted);margin-left:auto}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  @media (max-width:560px){
+    .toolbar{padding:12px 14px 0;gap:8px}
+    .ctl{flex:1 1 calc(50% - 4px);min-width:0;font-size:13.5px;padding:10px 34px 10px 14px;
+      background-position:right 12px center}
+    .toolbar .hint{flex:1 1 100%;margin-left:0;text-align:center}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .card{transition:none}
+    .card:hover{transform:none}
+  }
   /* 卡片元信息行（来源 + 评分角标） */
   .meta-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .score-badge{display:inline-flex;align-items:center;font-size:12px;font-weight:700;
@@ -116,10 +138,6 @@
         <a href="https://aihot.space/about/">关于</a>
         <a href="https://aihot.space/contact/">联系</a>
       </div>
-      <div class="sort-toggle" role="group" aria-label="排序方式">
-        <button type="button" class="sort-btn" data-mode="time">按时间排序</button>
-        <button type="button" class="sort-btn active" data-mode="score">按评分排序</button>
-      </div>
     </div>
   </nav>
   <header class="hero" id="top">
@@ -130,6 +148,21 @@
   </header>
 
   <nav class="nav" id="nav"></nav>
+
+  <div class="toolbar">
+    <label class="sr-only" for="sortSel">排序方式</label>
+    <select class="ctl" id="sortSel">
+      <option value="score">排序 · 评分优先</option>
+      <option value="time">排序 · 时间优先</option>
+    </select>
+    <label class="sr-only" for="topSel">显示条数</label>
+    <select class="ctl" id="topSel">
+      <option value="0">显示 · 全部</option>
+      <option value="10">显示 · Top 10</option>
+      <option value="5">显示 · Top 5</option>
+    </select>
+    <span class="hint" id="toolHint"></span>
+  </div>
 
   <main class="wrap" id="app"></main>
 
@@ -204,6 +237,7 @@ document.getElementById('footNote').textContent =
 const hs = document.getElementById('heroStats');
 const sectionGrids = {};
 const sectionRefs = {};
+const sectionPills = {};
 
 DATA.sections.forEach(s => {
   const el = document.createElement('div');
@@ -237,6 +271,7 @@ DATA.sections.forEach(s => {
   const bar = document.createElement('div'); bar.className = 'bar'; bar.style.background = s.color;
   const h2 = document.createElement('h2'); h2.textContent = s.label;
   const pill = document.createElement('span'); pill.className = 'pill'; pill.textContent = s.count + ' 条';
+  sectionPills[s.key] = pill;
   head.append(bar, h2, pill);
   sec.appendChild(head);
   const grid = document.createElement('div'); grid.className = 'grid';
@@ -247,6 +282,7 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
+let topN = 0;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -296,29 +332,47 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
+    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const pill = sectionPills[s.key];
+    if (pill) {
+      pill.textContent = (topN > 0 && cards.length > topN)
+        ? (topN + ' / ' + cards.length + ' 条')
+        : (cards.length + ' 条');
+    }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
-    if (cards.length === 0) {
+    if (shown.length === 0) {
       const empty = document.createElement('div'); empty.className = 'empty';
       empty.textContent = '本期暂无「' + s.label + '」相关条目。';
       grid.appendChild(empty);
       return;
     }
-    cards.forEach(card => {
+    shown.forEach(card => {
       counter++;
       grid.appendChild(cardEl(card, counter, s.color));
     });
   });
-  document.querySelectorAll('.sort-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.mode === sortMode);
-  });
+  const hint = document.getElementById('toolHint');
+  if (hint) {
+    hint.textContent = '当前显示 ' + counter + ' 条'
+      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）');
+  }
 }
 
-document.querySelectorAll('.sort-btn').forEach(b => {
-  b.addEventListener('click', () => { sortMode = b.dataset.mode; render(); });
-});
+const sortSel = document.getElementById('sortSel');
+const topSel = document.getElementById('topSel');
+if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
+if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
+
+function syncNavOffset(){
+  const sn = document.querySelector('.site-nav');
+  if (sn) document.documentElement.style.setProperty('--navh', sn.offsetHeight + 'px');
+}
+syncNavOffset();
+window.addEventListener('resize', syncNavOffset);
+window.addEventListener('load', syncNavOffset);
 
 const navLinks = Array.from(nav.querySelectorAll('a'));
 const obs = new IntersectionObserver(entries => {
