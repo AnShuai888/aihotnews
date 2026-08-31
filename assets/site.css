@@ -91,9 +91,6 @@ img{max-width:100%}
   .archive-grid{grid-template-columns:1fr}
 }
 
-/* ===== 站内搜索（Pagefind UI 容器） ===== */
-.search-section #search{margin-top:4px}
-#search .pagefind-ui{--pagefind-ui-primary:var(--brand-1);--pagefind-ui-font:inherit;font-size:15px}
 
 /* ===== 月度折叠归档 ===== */
 .month-group{border:1px solid var(--line);border-radius:12px;background:var(--panel);
