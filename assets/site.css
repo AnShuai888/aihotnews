@@ -55,6 +55,12 @@ img{max-width:100%}
 .archive-card .meta{font-size:13px;color:var(--muted)}
 .archive-card .go{margin-top:6px;font-size:13px;font-weight:700;color:var(--brand-1)}
 
+/* ===== 每周周报（与日报区分：紫色调） ===== */
+.sec-head.weekly .bar{background:var(--brand-2)}
+.archive-card.weekly{border-color:#ede9fe}
+.archive-card.weekly .date{color:var(--brand-2)}
+.archive-card.weekly .go{color:var(--brand-2)}
+
 /* ===== 关于正文 ===== */
 .prose{max-width:760px}
 .prose p{font-size:15px;color:#374151}

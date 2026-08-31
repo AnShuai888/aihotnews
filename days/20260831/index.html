@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026年8月31日 周一</title>
+<style>
+  :root{
+    --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
+    --line:#e5e7eb; --shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:16px; --navh:58px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .hero{background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 55%,#0ea5e9 100%);
+    color:#fff;padding:48px 24px 40px;text-align:center}
+  .hero .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85;margin:0 0 10px}
+  .hero h1{margin:0;font-size:clamp(28px,5vw,46px);font-weight:800;letter-spacing:.5px}
+  .hero .total{margin:18px 0 6px;font-size:15px;opacity:.95}
+  .hero .total b{font-size:30px;font-weight:800;vertical-align:-3px;margin:0 4px}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+  .stat{background:rgba(255,255,255,.16);backdrop-filter:blur(4px);
+    border:1px solid rgba(255,255,255,.25);border-radius:999px;
+    padding:8px 16px;font-size:14px;display:flex;align-items:center;gap:8px}
+  .stat .dot{width:9px;height:9px;border-radius:50%}
+  .stat b{font-weight:700}
+  .nav{position:sticky;top:var(--navh);z-index:20;background:rgba(255,255,255,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    display:flex;gap:8px;padding:10px 16px;overflow-x:auto}
+  .nav a{flex:0 0 auto;font-size:14px;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:6px 14px;min-height:44px;
+    display:flex;align-items:center;gap:6px;transition:.2s;white-space:nowrap;
+    background:transparent;--active-bg:#4f46e5}
+  .nav a .c{font-weight:700;color:var(--ink)}
+  .nav a:hover{background:#f3f4f6}
+  .nav a.active{color:#fff;border-color:transparent;background:var(--active-bg)}
+  .nav a.active .c{color:#fff}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+  .section{margin:38px 0;scroll-margin-top:64px}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .sec-head .bar{width:5px;height:26px;border-radius:3px}
+  .sec-head h2{margin:0;font-size:21px;font-weight:800}
+  .sec-head .pill{margin-left:auto;font-size:13px;color:var(--muted);
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 18px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+    gap:10px;transition:transform .18s,box-shadow .18s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(16,24,40,.12),0 14px 36px rgba(16,24,40,.10)}
+  .card .num{position:absolute;top:0;right:0;font-size:13px;font-weight:800;color:#fff;
+    padding:4px 12px;border-bottom-left-radius:14px}
+  .card .title{font-size:16px;font-weight:700;line-height:1.45;padding-right:34px;color:var(--ink)}
+  .card .title:hover{text-decoration:underline}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);
+    background:#f3f4f6;border-radius:999px;padding:3px 10px;width:fit-content}
+  .card .summary{font-size:14px;color:#374151;margin:0}
+  .card .foot{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    margin-top:4px;padding-top:10px;border-top:1px dashed var(--line)}
+  .card .time{font-size:12.5px;color:var(--muted)}
+  .card .read{font-size:13px;font-weight:700;color:#4f46e5;white-space:nowrap}
+  .card .read:hover{text-decoration:underline}
+  .empty{grid-column:1/-1;background:var(--panel);border:1px dashed var(--line);
+    border-radius:var(--radius);padding:26px;text-align:center;color:var(--muted);font-size:14px}
+  footer{max-width:1180px;margin:0 auto;padding:24px 20px 50px;color:var(--muted);font-size:13px;
+    border-top:1px solid var(--line)}
+  footer a{color:#4f46e5;font-weight:600}
+  footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
+  @media (max-width:560px){
+    .hero{padding:36px 16px 30px}
+    .grid{grid-template-columns:1fr}
+    .wrap{padding:20px 14px 50px}
+  }
+  /* 站点级导航（日报页内联，避免引用根站资源） */
+  .site-nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .site-nav .inner{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+  .brand{font-size:18px;font-weight:800;color:#4f46e5;letter-spacing:.5px;white-space:nowrap}
+  .brand small{display:block;font-size:11px;font-weight:500;color:#6b7280;letter-spacing:.1em}
+  .nav-links{display:flex;align-items:center;gap:8px;margin-left:auto;overflow-x:auto;
+    min-width:0;scrollbar-width:none;-ms-overflow-style:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{flex:0 0 auto;font-size:14px;color:#6b7280;border:1px solid var(--line);
+    border-radius:999px;padding:6px 16px;min-height:44px;display:inline-flex;align-items:center;
+    white-space:nowrap;transition:transform .2s,background .2s,color .2s}
+  .nav-links a:hover{background:#f3f4f6;transform:translateY(-1px)}
+  .nav-links a.active{color:#fff;background:#4f46e5;border-color:transparent}
+  .nav-links a.soon{color:#6b7280;cursor:default;opacity:.7}
+  .nav-links a.soon:hover{background:transparent;transform:none}
+  .tag-soon{font-size:10px;background:#f5f7fb;border:1px solid var(--line);border-radius:999px;padding:1px 6px;margin-left:6px;color:#6b7280}
+  .site-footer{max-width:1180px;margin:0 auto;padding:24px 20px 50px;color:#6b7280;font-size:13px;border-top:1px solid var(--line)}
+  .site-footer a{color:#4f46e5;font-weight:600}
+  .site-footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
+  @media (max-width:560px){.brand small{display:none}}
+
+  /* 工具条：排序 + 显示条数（分类导航下方，移动端优先） */
+  .toolbar{max-width:1180px;margin:0 auto;padding:16px 20px 0;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .ctl{appearance:none;-webkit-appearance:none;min-height:44px;font:inherit;font-size:14px;
+    font-weight:700;color:var(--ink);background:#fff
+    url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1.5L6 6.5L11 1.5' fill='none' stroke='%236b7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat right 14px center;background-size:12px 8px;
+    border:1px solid var(--line);border-radius:999px;padding:10px 38px 10px 16px;
+    cursor:pointer;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+  .ctl:hover{border-color:#a5b4fc}
+  .ctl:focus-visible{outline:2px solid #4f46e5;outline-offset:2px}
+  .toolbar .hint{font-size:13px;color:var(--muted);margin-left:auto}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  @media (max-width:560px){
+    .toolbar{padding:12px 14px 0;gap:8px}
+    .ctl{flex:1 1 calc(50% - 4px);min-width:0;font-size:13.5px;padding:10px 34px 10px 14px;
+      background-position:right 12px center}
+    .toolbar .hint{flex:1 1 100%;margin-left:0;text-align:center}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .card{transition:none}
+    .card:hover{transform:none}
+  }
+  /* 卡片元信息行（来源 + 评分角标） */
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .score-badge{display:inline-flex;align-items:center;font-size:12px;font-weight:700;
+    color:#b45309;background:#fef3c7;border:1px solid #fde68a;border-radius:999px;
+    padding:3px 9px;line-height:1.2}
+</style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="inner">
+      <a class="brand" href="https://aihot.space/">AIhot<small>每日 AI 热点</small></a>
+      <div class="nav-links">
+        <a href="https://aihot.space/">首页</a>
+        <a href="/days/20260831/" class="active">今日新闻</a>
+        <a href="/weekly/20260830/">一周新闻</a>
+        <a href="https://aihot.space/about/">关于</a>
+        <a href="https://aihot.space/contact/">联系</a>
+      </div>
+    </div>
+  </nav>
+  <header class="hero" id="top">
+    <p class="kicker">AI 日报</p>
+    <h1 id="heroDate"></h1>
+    <p class="total">今日共收录 <b id="heroTotal"></b> 条 AI 资讯</p>
+    <div class="stats" id="heroStats"></div>
+  </header>
+
+  <nav class="nav" id="nav"></nav>
+
+  <div class="toolbar">
+    <label class="sr-only" for="sortSel">排序方式</label>
+    <select class="ctl" id="sortSel">
+      <option value="score">排序 · 评分优先</option>
+      <option value="time">排序 · 时间优先</option>
+    </select>
+    <label class="sr-only" for="topSel">显示条数</label>
+    <select class="ctl" id="topSel">
+      <option value="0">显示 · 全部</option>
+      <option value="10" selected>显示 · Top 10</option>
+      <option value="5">显示 · Top 5</option>
+    </select>
+    <span class="hint" id="toolHint"></span>
+  </div>
+
+  <main class="wrap" id="app"></main>
+
+  <footer>
+    <div>本日报共计 <b id="footTotal"></b> 条，数据来源：<a id="footSource" target="_blank" rel="noopener noreferrer"></a>。</div>
+    <div class="note" id="footGen"></div>
+    <div class="note" id="footNote"></div>
+  </footer>
+
+  <footer class="site-footer">
+    <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com" target="_blank" rel="noopener">AIHOT</a></div>
+    <div class="note">本文件为 AI 日报单文件成品（2026-8-31）：数据来自 AIHOT 全量公开条目池，整体替换内联 DATA 即可生成其它日期日报。</div>
+  </footer>
+
+<script>
+const DATA = {
+  "meta": {
+    "date": "2026-08-31",
+    "heroDate": "2026年8月31日 周一",
+    "total": 160,
+    "sourceName": "AIHOT",
+    "sourceUrl": "https://aihot.virxact.com",
+    "generatedNote": "数据检索时间：2026年08月31日 21:21（北京时间）；数据源为 AIHOT 全量公开条目池（/api/v1/items?mode=all&window=24h），按北京时间 2026-08-31 当日筛选，默认按评分排序、可切换按时间排序。"
+  },
+  "sections": [
+    {
+      "key": "models",
+      "label": "模型发布/更新",
+      "color": "#6366f1",
+      "count": 6,
+      "cards": [
+        {
+          "num": 2,
+          "section": "models",
+          "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 20:29（收录）",
+          "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Fla…",
+          "aihot": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie",
+          "original": "https://www.ithome.com/0/996/637.htm",
+          "score": 76
+        },
+        {
+          "num": 60,
+          "section": "models",
+          "title": "字节跳动推迟豆包2.2发布以强化智能体能力",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "8月31日 15:24（收录）",
+          "summary": "据白鲸实验室援引知情人士消息，字节跳动已推迟豆包 2.2 原定于 8 月的发布计划。更多预训练和后训练旨在强化编码、工…",
+          "aihot": "https://aihot.virxact.com/items/cmtgwx68t0cairochvq6r3kku",
+          "original": "https://x.com/thexpin/status/2094321784581677521",
+          "score": 52
+        },
+        {
+          "num": 64,
+          "section": "models",
+          "title": "混元Hy4预览版人人可生成蜘蛛侠",
+          "source": "X：腾讯混元 (@TencentHunyuan)",
+          "time": "8月31日 14:28（收录）",
+          "summary": "每个人都可以用 Hy4 preview 生成一个蜘蛛侠。 【引用 @gmi_cloud】：运行 Hy4 preview…",
+          "aihot": "https://aihot.virxact.com/items/cmtguxjuu0aorrochrhyebw80",
+          "original": "https://x.com/TencentHunyuan/status/2094304856387571789",
+          "score": 50
+        },
+        {
+          "num": 79,
+          "section": "models",
+          "title": "腾讯混元：Hy4 preview 调用激增，WorkBuddy 已紧急扩容",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 12:29（收录）",
+          "summary": "腾讯混元自 8 月 28 日在 WorkBuddy 首发接入 Hy4 preview 以来调用激增，上线首日即出现排队…",
+          "aihot": "https://aihot.virxact.com/items/cmtgqoa5706hcrochvwkssi49",
+          "original": "https://www.ithome.com/0/996/414.htm",
+          "score": 62
+        },
+        {
+          "num": 80,
+          "section": "models",
+          "title": "阿里云 Wan 3.0 上线 Buzzy，限时无限生成",
+          "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+          "time": "8月31日 12:18（收录）",
+          "summary": "阿里云 Wan 3.0 现已登陆 AI 视频平台 Buzzy，支持生成电影级视频，画面细节更丰富、动态效果更流畅。限时…",
+          "aihot": "https://aihot.virxact.com/items/cmtgqa6bq065nroch8lft67w3",
+          "original": "https://x.com/alibaba_cloud/status/2094276105545093120",
+          "score": 42
+        },
+        {
+          "num": 92,
+          "section": "models",
+          "title": "Apodex 1.1 发布：智能体任务表现亮眼",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "8月31日 10:54（收录）",
+          "summary": "Apodex 推出专有模型 Apodex 1.1，在 Artificial Analysis 智能指数上得分 44，与…",
+          "aihot": "https://aihot.virxact.com/items/cmtgn9y9c03xerochz4oqqfik",
+          "original": "https://x.com/ArtificialAnlys/status/2094256863865078046",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "key": "products",
+      "label": "产品发布/更新",
+      "color": "#10b981",
+      "count": 32,
+      "cards": [
+        {
+          "num": 3,
+          "section": "products",
+          "title": "谷歌 AI 应用 Dreambeans 取消订阅制，开放免费测试",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 20:29（收录）",
+          "summary": "谷歌 AI 应用 Dreambeans 已取消付费订阅要求，并在美国开放免费测试。该应用是一款高度个性化的信息流应用…",
+          "aihot": "https://aihot.virxact.com/items/cmth7tmq2067nrodmmkqn21eo",
+          "original": "https://www.ithome.com/0/996/638.htm",
+          "score": 42
+        },
+        {
+          "num": 7,
+          "section": "products",
+          "title": "OpenShot 4.0 发布：新增录制、调色与本地 AI 遮罩功能",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 19:59（收录）",
+          "summary": "OpenShot 4.0 正式发布，带来录制视图、调色视图和本地 AI 遮罩等重大工作流升级。用户可直接录制麦克风、屏…",
+          "aihot": "https://aihot.virxact.com/items/cmth6r9fi04fvrodmgzauc6vx",
+          "original": "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before",
+          "score": 65
+        },
+        {
+          "num": 8,
+          "section": "products",
+          "title": "DIT.ai 开放 API，聚合 50+ 模型路由",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "time": "8月31日 19:48（收录）",
+          "summary": "http://DIT.ai 已开放其 API 层的公共访问权限，允许用户在一个竞争性提供商市场中路由模型调用。 > 提…",
+          "aihot": "https://aihot.virxact.com/items/cmth6cwqv048srodmkhi0npyy",
+          "original": "https://x.com/testingcatalog/status/2094387966235873695",
+          "score": 46
+        },
+        {
+          "num": 10,
+          "section": "products",
+          "title": "2496万次调用背后，他们用可灵做出了这些",
+          "source": "公众号：可灵AI（快手·视频）",
+          "time": "8月31日 19:30（收录）",
+          "summary": "可灵以API形式接入百度秒哒无代码平台，累计调用超2496万次。开发者将可灵视频与图片生成能力直接嵌入应用，或批量生成…",
+          "aihot": "https://aihot.virxact.com/items/cmth5pwow03n5rodm0s415jad",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzU5NTkwNDU2OA%3D%3D&mid=2247496770&idx=1&sn=1eb20eb64f2f4cb0e24c77b6d8917fff",
+          "score": 30
+        },
+        {
+          "num": 14,
+          "section": "products",
+          "title": "Perplexity Mac 将推混合模式，本地模型处理子任务",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "time": "8月31日 19:18（收录）",
+          "summary": "Perplexity 即将在 Mac 端推出 Hybrid 混合模式，由云端 Computer 编排并将合适子任务委托…",
+          "aihot": "https://aihot.virxact.com/items/cmth5aai9038arodm9euiyys5",
+          "original": "https://x.com/testingcatalog/status/2094377248757334477",
+          "score": 38
+        },
+        {
+          "num": 15,
+          "section": "products",
+          "title": "OpenClaw 2.0 发布：简化设置、重构浏览器应用并支持多人会话",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "8月31日 18:59（收录）",
+          "summary": "OpenClaw 基金会发布开源 AI 平台 2.0 版，为迄今最大更新，包含超 16，000 个拉取请求。新版本简化…",
+          "aihot": "https://aihot.virxact.com/items/cmth4mflf02urrodmtgth9y3r",
+          "original": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions",
+          "score": 68
+        },
+        {
+          "num": 16,
+          "section": "products",
+          "title": "OpenClaw 2.0 发布：迄今最大更新，由 933 位贡献者打造",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 18:59（收录）",
+          "summary": "OpenClaw 2.0 正式发布，这是其历史上最大的一次更新，由 933 位贡献者（含 569 位首次贡献者）提交的…",
+          "aihot": "https://aihot.virxact.com/items/cmth4m3nh02szrodmiet9edak",
+          "original": "https://openclaw.ai/blog/openclaw-2-accidentally",
+          "score": 71
+        },
+        {
+          "num": 21,
+          "section": "products",
+          "title": "Pocket 的 AI 让我的游戏创意成真，但 Meta 现在掌控了结果",
+          "source": "Ars Technica：AI（RSS）",
+          "time": "8月31日 18:29（收录）",
+          "summary": "Meta 旗下 AI 应用 Pocket 于 8 月 21 日在美国上线，用户只需输入提示词即可创建可交互的\"gizm…",
+          "aihot": "https://aihot.virxact.com/items/cmth3jx3i01ynrodmv5sujr6c",
+          "original": "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results",
+          "score": 61
+        },
+        {
+          "num": 29,
+          "section": "products",
+          "title": "亚马逊 AWS 加码政府 AI 赛道，OpenAI、Meta、Anthropic 等大模型集体登陆 GovCloud",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "亚马逊云服务（AWS）宣布扩大 GovCloud AI 模型可用范围，美国联邦政府机构现可通过 Amazon Bedr…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4if0g18rochexbyxddo",
+          "original": "https://www.ithome.com/0/996/554.htm",
+          "score": 52
+        },
+        {
+          "num": 32,
+          "section": "products",
+          "title": "理想 AI 眼镜 Livis 八月 OTA 升级：接入苹果、OPPO 手表运动健康数据",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "理想公布 AI 眼镜 Livis 八月 OTA 升级，新增运动健康分析、待办提醒和拍摄水印 3 项功能。运动健康分析已…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4ie0g14roch49zizhxf",
+          "original": "https://www.ithome.com/0/996/559.htm",
+          "score": 29
+        },
+        {
+          "num": 41,
+          "section": "products",
+          "title": "火山引擎发布联网问答 Agent 教育行业版本，开放「豆包爱学」同款拍题答疑与作业批改能力",
+          "source": "公众号：火山引擎",
+          "time": "8月31日 16:40（收录）",
+          "summary": "火山引擎正式发布联网问答 Agent 教育行业版本，将「豆包爱学」同款拍题答疑、作业批改等 AI 辅导能力对外开放。该…",
+          "aihot": "https://aihot.virxact.com/items/cmtgzn9w80enurochw24cmjvc",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&mid=2247543810&idx=1&sn=75ac04a94faf3174cab4c3b1636eec1a",
+          "score": 44
+        },
+        {
+          "num": 49,
+          "section": "products",
+          "title": "滴滴自动驾驶新一代Robotaxi R2开启无人载客测试，北京、广州可体验",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "滴滴自动驾驶新一代Robotaxi R2正式开启无人载客测试服务，用户可在北京、广州部分示范区域呼单体验。R2由滴滴与…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0clerochftod0pds",
+          "original": "https://www.ithome.com/0/996/454.htm",
+          "score": 57
+        },
+        {
+          "num": 50,
+          "section": "products",
+          "title": "OpenClaw 开源人工智能助手 2.0 版本发布：简化安装流程并重塑浏览器体验",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "OpenClaw 2.0（v2026.8.1）正式发布，由 933 位贡献者共同完成，包含超过 16，000 个拉取请…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cldroch9yikba4a",
+          "original": "https://www.ithome.com/0/996/460.htm",
+          "score": 57
+        },
+        {
+          "num": 53,
+          "section": "products",
+          "title": "豆包给大学生送福利：可免费领取 3 个月订阅权益",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "豆包官方宣布，在校大学生完成学生认证后，可免费领取三个月豆包订阅权益。活动支持在豆包电脑版参与，每个账号仅限领取一次…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cl8rochobej0jyy",
+          "original": "https://www.ithome.com/0/996/480.htm",
+          "score": 39
+        },
+        {
+          "num": 55,
+          "section": "products",
+          "title": "阿里千问创作上线 Agent Teams 功能：用户提出创意，Agent 规划任务完成视频制作",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "阿里千问今日宣布千问创作上线 Agent Teams 功能，支持 Wan3.0，将创作方式从写提示词扩展为用户提出创意…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cl4rochqiv7dk7o",
+          "original": "https://www.ithome.com/0/996/484.htm",
+          "score": 57
+        },
+        {
+          "num": 59,
+          "section": "products",
+          "title": "海信发布行业首个家庭智能伴侣级 AIOS JUOS，桌面随人变化、首创 AI 搜索片段",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "海信在今日发布会上推出行业首个家庭智能伴侣级 AIOS--JUOS，实现从指令驱动到意图驱动，支持因人因时因境提供内容…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3tho0ckyroch75eae5a0",
+          "original": "https://www.ithome.com/0/996/499.htm",
+          "score": 36
+        },
+        {
+          "num": 63,
+          "section": "products",
+          "title": "千问创作上线Agent Teams，支持Wan3.0实现专业视频创作",
+          "source": "公众号：千问APP（阿里）",
+          "time": "8月31日 14:40（收录）",
+          "summary": "千问创作上线Agent Teams功能，将创作方式从写提示词扩展为用户提出创意、Agent主动拆解执行，由编剧、导演…",
+          "aihot": "https://aihot.virxact.com/items/cmtgvcydt0ba5roch231g6v8i",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247488568&idx=1&sn=8281c4355ee0af5e02d38ccbf42ba084",
+          "score": 56
+        },
+        {
+          "num": 67,
+          "section": "products",
+          "title": "SkyProduction天工工作台×通义万相：Wan 3.0限时免费再延1天",
+          "source": "公众号：昆仑万维（天工）",
+          "time": "8月31日 13:40（收录）",
+          "summary": "SkyProduction天工工作台联合通义万相，将Wan 3.0限时免费活动延长至8月31日24：00，付费用户（会…",
+          "aihot": "https://aihot.virxact.com/items/cmtgt7shr08gbrochmio1md4v",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzI1MzE1NDc3Mg%3D%3D&mid=2247510201&idx=1&sn=15fe35a8e1c9151f590602ee5bc996db",
+          "score": 28
+        },
+        {
+          "num": 69,
+          "section": "products",
+          "title": "OpenClaw 团队用自家智能体实现\"自举\"开发",
+          "source": "X：Peter Steinberger (@steipete)",
+          "time": "8月31日 13:29（收录）",
+          "summary": "OpenClaw 团队两个月前启动\"用 OpenClaw 构建 OpenClaw\"计划，现已全员从本地编码环境迁移至共…",
+          "aihot": "https://aihot.virxact.com/items/cmtgsu11i087krochwy943anb",
+          "original": "https://x.com/steipete/status/2094290652649636173",
+          "score": 64
+        },
+        {
+          "num": 70,
+          "section": "products",
+          "title": "OpenClaw 2.0 发布：引导式模型设置、575 ms 控制 UI 启动与统一信任边界",
+          "source": "MarkTechPost（RSS）",
+          "time": "8月31日 13:29（收录）",
+          "summary": "OpenClaw 2.0 正式发布，重写安装流程并重构浏览器控制 UI，将会话与转录迁移至 SQLite，新增共享云会…",
+          "aihot": "https://aihot.virxact.com/items/cmtgstr6n0861rochslx0hly4",
+          "original": "https://www.marktechpost.com/2026/08/30/openclaw-releases-openclaw-2-0-guided-model-setup-575-ms-control-ui-startup-and-one-trust-boundary-per-gateway",
+          "score": 63
+        },
+        {
+          "num": 75,
+          "section": "products",
+          "title": "MiniMax H3 系列上线 Vercel 并限时五折",
+          "source": "X：MiniMax (@MiniMax_AI)",
+          "time": "8月31日 12:54（收录）",
+          "summary": "快来试用 MiniMax H3 和 MiniMax H3 Max，现已上线 Vercel！✨ 【引用 @vercel_…",
+          "aihot": "https://aihot.virxact.com/items/cmtgrka8q07c0rochp8p9o60r",
+          "original": "https://x.com/MiniMax_AI/status/2094282505251868980",
+          "score": 37
+        },
+        {
+          "num": 77,
+          "section": "products",
+          "title": "QwenCloud 亮相 Qwen Conference：一站式 AI 开发平台",
+          "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+          "time": "8月31日 12:48（收录）",
+          "summary": "阿里云在 Qwen Conference 推出 QwenCloud，一个集模型访问、多模态 API、微调、部署、监控与…",
+          "aihot": "https://aihot.virxact.com/items/cmtgrcqx90784roch6kaiutxf",
+          "original": "https://x.com/alibaba_cloud/status/2094283340618592286",
+          "score": 29
+        },
+        {
+          "num": 81,
+          "section": "products",
+          "title": "OpenClaw 2.0 正式发布",
+          "source": "X：OpenClaw (@openclaw)",
+          "time": "8月31日 11:58（收录）",
+          "summary": "OpenClaw 2.0 已到来 https://openclaw.ai/blog/openclaw-2-accide…",
+          "aihot": "https://aihot.virxact.com/items/cmtgpko8905ryrochyqcgklrh",
+          "original": "https://x.com/openclaw/status/2094266903204434431",
+          "score": 50
+        },
+        {
+          "num": 89,
+          "section": "products",
+          "title": "Grok 数秒为视频添加字幕",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "8月31日 11:11（收录）",
+          "summary": "Grok 【引用 @Hanya_po】：@elonmusk 让 Grok 添加字幕，几秒就完成了。以后可能不再需要 P…",
+          "aihot": "https://aihot.virxact.com/items/cmtgnvv3l04bzrochjep0k963",
+          "original": "https://x.com/elonmusk/status/2094259860976103823",
+          "score": 22
+        },
+        {
+          "num": 98,
+          "section": "products",
+          "title": "混元 Hy4 preview 调用激增，WorkBuddy 已紧急扩容",
+          "source": "公众号：腾讯混元",
+          "time": "8月31日 10:10（收录）",
+          "summary": "混元 Hy4 preview 自 8 月 28 日在 WorkBuddy 首发接入后，因 Agent 能力提升引发调用…",
+          "aihot": "https://aihot.virxact.com/items/cmtglpqh202jhroch0ob6rk3n",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498489&idx=1&sn=a73dab1ed3e872e1eec2524fb18f7254",
+          "score": 51
+        },
+        {
+          "num": 103,
+          "section": "products",
+          "title": "北邮牵头：全球首个太空算力云实现常态化在轨试验服务",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 09:29（收录）",
+          "summary": "北京邮电大学牵头的全球首个对外提供在轨试验服务的太空算力云，正式常态化提供在轨算力服务。该平台已累计完成数百次太空算力…",
+          "aihot": "https://aihot.virxact.com/items/cmtgk8sua01firoch101y1skg",
+          "original": "https://www.ithome.com/0/996/292.htm",
+          "score": 43
+        },
+        {
+          "num": 109,
+          "section": "products",
+          "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
+          "source": "公众号：MiniMax（稀宇科技）",
+          "time": "8月31日 08:40（收录）",
+          "summary": "MiniMax 将 H3 Max 768P、480P 接入开放平台和 MiniMax Design，海外开发者已借此搭…",
+          "aihot": "https://aihot.virxact.com/items/cmtgihylr01tlrokdreezpex0",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&mid=2247489121&idx=1&sn=f517f5cee108929b49d2b596ebf96a06",
+          "score": 68
+        },
+        {
+          "num": 121,
+          "section": "products",
+          "title": "Anthropic 为 Claude Code 桌面版开发本地沙箱",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "time": "8月31日 06:48（收录）",
+          "summary": "Anthropic 正在为 Claude Code 桌面版开发一个在本地沙箱中运行命令的选项。 > 在隔离沙箱中运行来…",
+          "aihot": "https://aihot.virxact.com/items/cmtgehsep0axiroj7okwzby16",
+          "original": "https://x.com/testingcatalog/status/2094194068351758567",
+          "score": 47
+        },
+        {
+          "num": 123,
+          "section": "products",
+          "title": "Reactor联合HaoAI推出FastH3无限直播流",
+          "source": "X：Sky Computing Lab (@haoailab)",
+          "time": "8月31日 06:34（收录）",
+          "summary": "太棒了！！@reactorworld 使用 FastH3 开发了一个新的无限流视频。社区进展神速！！而且完全开源",
+          "aihot": "https://aihot.virxact.com/items/cmtgdzhsu0ah7roj7iknmcsyo",
+          "original": "https://x.com/haoailab/status/2094187196257570977",
+          "score": 52
+        },
+        {
+          "num": 131,
+          "section": "products",
+          "title": "Brent 推动 ChatGPT 桌面应用性能飞跃",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "8月31日 05:07（收录）",
+          "summary": "Brent 太出色了，他是桌面应用打磨、性能和可靠性背后的主要力量之一。 日复一日，持续改进。",
+          "aihot": "https://aihot.virxact.com/items/cmtgawb5r07giroj7b2qf0k0k",
+          "original": "https://x.com/thsottiaux/status/2094164029044646099",
+          "score": 24
+        },
+        {
+          "num": 141,
+          "section": "products",
+          "title": "ChatGPT桌面端线程加载提速超90%",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "8月31日 03:37（收录）",
+          "summary": "Brent 是桌面应用质量和精致度提升的最大功臣之一。 日复一日， relentless 的改进从未停歇。 【引用 @…",
+          "aihot": "https://aihot.virxact.com/items/cmtg7oki405dcroj74gsdnfjq",
+          "original": "https://x.com/thsottiaux/status/2094143696656867723",
+          "score": 35
+        },
+        {
+          "num": 147,
+          "section": "products",
+          "title": "Grok Bot 模板分享指南",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "8月31日 02:41（收录）",
+          "summary": "如何与他人分享你的 Grok @Bot 设计 【引用 @mattyp】：Grok Bot 模板是首个广泛可用的知识工作…",
+          "aihot": "https://aihot.virxact.com/items/cmtg5nzoh03zaroj7z0zbcy65",
+          "original": "https://x.com/elonmusk/status/2094129094673735922",
+          "score": 47
+        }
+      ]
+    },
+    {
+      "key": "industry",
+      "label": "行业动态",
+      "color": "#f59e0b",
+      "count": 30,
+      "cards": [
+        {
+          "num": 1,
+          "section": "industry",
+          "title": "华为悬赏单项最高100万元攻克存储难题，7支科研团队荣获第六届\"奥林帕斯奖\"",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 20:29（收录）",
+          "summary": "华为在2026全球数据存储教授论坛揭晓第六届\"奥林帕斯奖\"，7支国内外科研团队分获1项奥林帕斯奖与6项先锋奖。最高奖由…",
+          "aihot": "https://aihot.virxact.com/items/cmth7tmq2067prodmrt18c9j9",
+          "original": "https://www.ithome.com/0/996/635.htm",
+          "score": 36
+        },
+        {
+          "num": 4,
+          "section": "industry",
+          "title": "芬兰人工智能超级计算机 LUMI-AI 将采用 AMD 硬件方案，2027H2 部署",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 20:29（收录）",
+          "summary": "欧洲高性能计算联合体选定法国超算企业 Bull 建设人工智能超级计算机 LUMI-AI，部署于芬兰 CSC 数据中心…",
+          "aihot": "https://aihot.virxact.com/items/cmth7tmq2067krodmmzuilsna",
+          "original": "https://www.ithome.com/0/996/644.htm",
+          "score": 51
+        },
+        {
+          "num": 11,
+          "section": "industry",
+          "title": "智谱 2026 年上半年营收 9.54 亿元同比增长 399.7%，归母亏损收窄至 20.71 亿元",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 19:29（收录）",
+          "summary": "智谱 2026 年上半年实现营业收入 9.54 亿元，同比增长 399.7%，云端部署收入占比提升至 86.5%，开放…",
+          "aihot": "https://aihot.virxact.com/items/cmth5ohcg03j0rodm8pmgawws",
+          "original": "https://www.ithome.com/0/996/626.htm",
+          "score": 64
+        },
+        {
+          "num": 13,
+          "section": "industry",
+          "title": "燧原科技科创板 IPO 发行价定为 142.18 元 / 股",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 19:29（收录）",
+          "summary": "燧原科技公告科创板 IPO 发行价格定为 142.18 元 / 股，发行 4303.5173 万股，预计募集资金总额…",
+          "aihot": "https://aihot.virxact.com/items/cmth5ohcg03ivrodmlw9i4v5e",
+          "original": "https://www.ithome.com/0/996/634.htm",
+          "score": 63
+        },
+        {
+          "num": 19,
+          "section": "industry",
+          "title": "赵纯想为AI项目寻投资，征集盈利产品",
+          "source": "X：赵纯想 (@chunxiangai)",
+          "time": "8月31日 18:44（收录）",
+          "summary": "赵纯想发文称有位大哥想投资AI项目，但认为\"laper\"作为文人生产力不够标准化，非AI最佳战场。他邀请推友在评论区留…",
+          "aihot": "https://aihot.virxact.com/items/cmth42qo302a9rodmr8cj421x",
+          "original": "https://x.com/chunxiangai/status/2094375723117232517",
+          "score": 17
+        },
+        {
+          "num": 22,
+          "section": "industry",
+          "title": "地平线机器人 2026 年上半年归母净利润 37.84 亿元，同比扭亏为盈",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 18:29（收录）",
+          "summary": "地平线机器人发布 2026 年上半年财报，归母净利润 37.84 亿元，同比扭亏为盈；营业总收入 20.55 亿元，同…",
+          "aihot": "https://aihot.virxact.com/items/cmth3jabl01vxrodmk77x40jd",
+          "original": "https://www.ithome.com/0/996/579.htm",
+          "score": 45
+        },
+        {
+          "num": 23,
+          "section": "industry",
+          "title": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》监管范围",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 18:29（收录）",
+          "summary": "欧盟委员会8月31日依据《数字服务法》（DSA），正式认定ChatGPT、Reddit及Roblox为监管对象，因其在…",
+          "aihot": "https://aihot.virxact.com/items/cmth3jabl01vtrodmxvadvk3o",
+          "original": "https://www.ithome.com/0/996/607.htm",
+          "score": 73
+        },
+        {
+          "num": 28,
+          "section": "industry",
+          "title": "小米机器人 CyberOne 将首次海外亮相 IFA 国际消费电子展",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "小米集团总裁卢伟冰透露，9月4日至8日小米将首次参加IFA国际消费电子展，拥有超3300平米展台、近400款展品，实现…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4if0g19rochfz4v5dq8",
+          "original": "https://www.ithome.com/0/996/553.htm",
+          "score": 42
+        },
+        {
+          "num": 30,
+          "section": "industry",
+          "title": "新石器回应郑州无人快递车被攀爬：已报告交警并启动三项改进",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "新石器官方回应郑州无人快递车被攀爬事件，称涉事车辆系其运营车辆，监控显示3名疑似未成年人攀爬至停车等红灯的车顶，车辆起…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4if0g17rochwib1r71j",
+          "original": "https://www.ithome.com/0/996/555.htm",
+          "score": 60
+        },
+        {
+          "num": 31,
+          "section": "industry",
+          "title": "消息称 OpenAI 购入数万台 Mac mini / Studio，用于训练 AI 智能体操作计算机",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "OpenAI 近几个月购入数万台苹果 Mac mini 和 Mac Studio，用于训练能操作计算机的 AI 智能体…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4if0g16rochji1k7ukm",
+          "original": "https://www.ithome.com/0/996/556.htm",
+          "score": 63
+        },
+        {
+          "num": 33,
+          "section": "industry",
+          "title": "摆脱对台积电依赖，LG 电子将委托三星代工 AI 家电芯片",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "LG 电子将委托三星电子代工 AI 家电芯片，摆脱对台积电的依赖。CoAsia SEMI 将为 LG 开发两款物联网芯…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4ie0g12roch2h4xjyl2",
+          "original": "https://www.ithome.com/0/996/564.htm",
+          "score": 38
+        },
+        {
+          "num": 34,
+          "section": "industry",
+          "title": "豆包辟谣\"建议开水煮拖鞋\"传闻：博主故意引导回复，玩梗视频未披露虚构情节",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "豆包公关负责人刘星今日回应\"豆包建议煮拖鞋\"流言，称豆包实际会明确提醒不要相信开水烫、蒸煮的偏方。经官方核实，最早发布…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4ie0g11roch0qp62dpa",
+          "original": "https://www.ithome.com/0/996/565.htm",
+          "score": 57
+        },
+        {
+          "num": 35,
+          "section": "industry",
+          "title": "Momenta 2026 年上半年毛利润 11.73 亿元，同比增长 79.4%",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 17:29（收录）",
+          "summary": "Momenta 2026 年上半年营业总收入 16.02 亿元，同比增长 75.9%；毛利润 11.73 亿元，同比增…",
+          "aihot": "https://aihot.virxact.com/items/cmth1e4ie0g10roch96x07pgj",
+          "original": "https://www.ithome.com/0/996/563.htm",
+          "score": 49
+        },
+        {
+          "num": 37,
+          "section": "industry",
+          "title": "OpenAI 等 AI 实验室购入数万台 Mac mini 训练计算机使用智能体",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "8月31日 16:59（收录）",
+          "summary": "OpenAI 等 AI 实验室已购入数万台 Mac mini 和 Mac Studio，用于训练能自主处理多步骤任务的…",
+          "aihot": "https://aihot.virxact.com/items/cmth0bysa0f94rocheijy57vl",
+          "original": "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents",
+          "score": 62
+        },
+        {
+          "num": 42,
+          "section": "industry",
+          "title": "软银旗下 SB Energy 加速 IPO 进程，数据中心积压合同超 4000 亿美元",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 16:29（收录）",
+          "summary": "软银旗下 SB Energy 预计最快本周公布 IPO 申请、9 月启动首次公开募股，目标筹集 50~70 亿美元。该…",
+          "aihot": "https://aihot.virxact.com/items/cmtgz90xn0eb8rochde6q2xjd",
+          "original": "https://www.ithome.com/0/996/519.htm",
+          "score": 65
+        },
+        {
+          "num": 43,
+          "section": "industry",
+          "title": "我国 L3 / L4 自动驾驶强制国标正式文件发布，2027 年 7 月 1 日实施",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 16:29（收录）",
+          "summary": "国家标准《智能网联汽车 自动驾驶系统安全要求》（GB 44721-2026）正式文件发布，是我国首部 L3 / L4…",
+          "aihot": "https://aihot.virxact.com/items/cmtgz90xn0eb4roch5fdt199h",
+          "original": "https://www.ithome.com/0/996/526.htm",
+          "score": 67
+        },
+        {
+          "num": 44,
+          "section": "industry",
+          "title": "工信部：加大大模型、智能体、Token 等服务采购力度",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 16:29（收录）",
+          "summary": "工业和信息化部办公厅发布通知，开展人工智能应用服务商培育专项行动，目标到2026年底全国服务商资源池内数量突破2000…",
+          "aihot": "https://aihot.virxact.com/items/cmtgz90xn0eb2rochivsge3y1",
+          "original": "https://www.ithome.com/0/996/543.htm",
+          "score": 64
+        },
+        {
+          "num": 45,
+          "section": "industry",
+          "title": "MetaX上半年扭亏为盈，国产GPU量产交付",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "8月31日 16:24（收录）",
+          "summary": "MetaX 2026年上半年实现归属于股东的净利润6.12亿元人民币。营收增长44.67%至13.24亿元；毛利率达5…",
+          "aihot": "https://aihot.virxact.com/items/cmtgz2c660dynroch6bpi517j",
+          "original": "https://x.com/thexpin/status/2094338149677773064",
+          "score": 54
+        },
+        {
+          "num": 51,
+          "section": "industry",
+          "title": "我国首个认知障碍辅助诊断脑机产品\"神工-神篙\"获批上市",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "燧世智能孵化的天开燧世自主研发的\"脑电信号采集与认知功能评估系统\"（神工-神篙）今年8月获批天津市药监局颁发的国家二类…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0clcrochnjiuxan0",
+          "original": "https://www.ithome.com/0/996/463.htm",
+          "score": 58
+        },
+        {
+          "num": 54,
+          "section": "industry",
+          "title": "字节豆包股价格升至 17.02 美元/股，两个多月上涨 14.6%",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "字节豆包股价格从 6 月的 14.85 美元/股上调至 17.02 美元/股，两个多月上涨约 14.6%。该激励主要面…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cl7rochovnkqdzu",
+          "original": "https://www.ithome.com/0/996/481.htm",
+          "score": 40
+        },
+        {
+          "num": 57,
+          "section": "industry",
+          "title": "消息称三星电子正为英伟达开发定制 8Hi HBM：17~18Gbps 高速设计",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "韩媒报道，三星电子正为英伟达开发定制 HBM 内存，采用 8 层低堆叠设计，支持 17~18Gbps 高引脚速率。此前…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cl2rochqnynff6v",
+          "original": "https://www.ithome.com/0/996/486.htm",
+          "score": 45
+        },
+        {
+          "num": 74,
+          "section": "industry",
+          "title": "阿里云栖大会2026定档9月杭州",
+          "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+          "time": "8月31日 13:18（收录）",
+          "summary": "🎉 敬请期待：2026 云栖大会 📅 2026 年 9 月 22-24 日 📍 中国杭州国际博览中心 亮点预告：✨ 3…",
+          "aihot": "https://aihot.virxact.com/items/cmtgsfc5d07stroch0wzh02vl",
+          "original": "https://x.com/alibaba_cloud/status/2094289737406156806",
+          "score": 26
+        },
+        {
+          "num": 87,
+          "section": "industry",
+          "title": "Claude 被曝大规模盗号，Anthropic 紧急切断支付权限、警告用户别乱下载软件",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 11:29（收录）",
+          "summary": "Anthropic 警告部分 Claude 用户，信息窃取恶意软件窃取了其活跃的 Claude 登录会话，攻击者可访问…",
+          "aihot": "https://aihot.virxact.com/items/cmtgoj3z004tqroch2us7ncmf",
+          "original": "https://www.ithome.com/0/996/359.htm",
+          "score": 62
+        },
+        {
+          "num": 95,
+          "section": "industry",
+          "title": "ChatGPT 活跃用户达 2500 万，重置付费额度",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "8月31日 10:37（收录）",
+          "summary": "我昨天想说的是，我们达到了 2500 万活跃用户，为庆祝这一里程碑，现已重置 ChatGPT Work 和 Codex…",
+          "aihot": "https://aihot.virxact.com/items/cmtgmop6f03fjrochozictd2x",
+          "original": "https://x.com/thsottiaux/status/2094252447271366730",
+          "score": 48
+        },
+        {
+          "num": 96,
+          "section": "industry",
+          "title": "小马智行携手 FutureLink，拟首批在韩商业投放 200 辆 Robotaxi",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 10:29（收录）",
+          "summary": "小马智行与韩国自动驾驶企业 FutureLink 签署战略合作，计划在韩国提供基于第 7 代 Robotaxi 的商业…",
+          "aihot": "https://aihot.virxact.com/items/cmtgmdy9j032vrochyualtoh6",
+          "original": "https://www.ithome.com/0/996/303.htm",
+          "score": 55
+        },
+        {
+          "num": 110,
+          "section": "industry",
+          "title": "法拉第未来机器人中东业务启航，首笔订单完成销售及交付",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 08:29（收录）",
+          "summary": "贾跃亭宣布，法拉第未来（FF）机器人中东业务正式启航，完成中东首笔订单销售及交付，共交付 6 台机器人（2 台人形、4…",
+          "aihot": "https://aihot.virxact.com/items/cmtgi3mci01firokdyp3nrkw0",
+          "original": "https://www.ithome.com/0/996/269.htm",
+          "score": 31
+        },
+        {
+          "num": 111,
+          "section": "industry",
+          "title": "无人快递车顶趴两人\"搭便车\"，新石器客服回应",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 08:29（收录）",
+          "summary": "河南郑州一辆新石器无人快递车行驶时车顶趴着两人，客服回应称人员绕过摄像头且不超重时系统无法识别，将反馈情况。目前国家层…",
+          "aihot": "https://aihot.virxact.com/items/cmtgi3mci01ferokdnuwnf3cg",
+          "original": "https://www.ithome.com/0/996/278.htm",
+          "score": 58
+        },
+        {
+          "num": 117,
+          "section": "industry",
+          "title": "消息称微软收紧员工 AI 预算成本，有员工 28 天挥霍 2.8 万美元 Token",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 07:29（收录）",
+          "summary": "微软开始收紧 Token 使用管理，设置用量监控并将内部默认工作负载逐步切换至 GPT-5.6 Sol 以降低 AI…",
+          "aihot": "https://aihot.virxact.com/items/cmtgfyfym0bp3roj73ud35h34",
+          "original": "https://www.ithome.com/0/996/254.htm",
+          "score": 58
+        },
+        {
+          "num": 118,
+          "section": "industry",
+          "title": "国内首部 AIGC 长剧《后西游记》今日开播，首部\"边审边播\"剧集",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 07:29（收录）",
+          "summary": "国内首部 AIGC 长剧《后西游记》今日 18：00 开播，率先亮相的\"花果山篇\"共 5 集（每集 40 分钟），在芒…",
+          "aihot": "https://aihot.virxact.com/items/cmtgfyfym0boyroj7h8vdf8h9",
+          "original": "https://www.ithome.com/0/996/265.htm",
+          "score": 61
+        },
+        {
+          "num": 136,
+          "section": "industry",
+          "title": "Codex 重置在即，号召全力体验新功能",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "8月31日 03:48（收录）",
+          "summary": "我们的男孩从不让我们失望。距离 Codex 重置还有 5 小时。Sol-Ultra-fast：出发吧 【引用 @ths…",
+          "aihot": "https://aihot.virxact.com/items/cmtg82b8905q6roj7cl2n8s1y",
+          "original": "https://x.com/kimmonismus/status/2094144633580200130",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "key": "papers",
+      "label": "论文研究",
+      "color": "#3b82f6",
+      "count": 11,
+      "cards": [
+        {
+          "num": 66,
+          "section": "papers",
+          "title": "RAG投毒可致注意力崩溃，检测需关注文档级注意力",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 13:48（收录）",
+          "summary": "研究发现，恶意检索文档可提升模型token置信度与输出一致性，导致基于不确定性的检测器失效。作者将攻击下注意力集中于投…",
+          "aihot": "https://aihot.virxact.com/items/cmtgthypj08tqrochpndb9ch8",
+          "original": "https://x.com/rohanpaul_ai/status/2094300903432241262",
+          "score": 45
+        },
+        {
+          "num": 76,
+          "section": "papers",
+          "title": "AI智能体科研论文双双被拒：败在判断力",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 12:48（收录）",
+          "summary": "一项实验让AI智能体在6天、3000美元预算内产出两篇研究论文，结果均遭拒稿。执行层面毫无问题--智能体运行了数百次实…",
+          "aihot": "https://aihot.virxact.com/items/cmtgrcqxf0785rochsdwib5wu",
+          "original": "https://x.com/rohanpaul_ai/status/2094285049046695968",
+          "score": 52
+        },
+        {
+          "num": 78,
+          "section": "papers",
+          "title": "Code as Worlds：智能体发现可执行世界表征",
+          "source": "X：AK (@_akhaliq)",
+          "time": "8月31日 12:29（收录）",
+          "summary": "Code as Worlds 面向物理推理的可执行世界表征的智能体发现 论文：https://huggingface.…",
+          "aihot": "https://aihot.virxact.com/items/cmtgqovpm06l0roch7uy6gjxk",
+          "original": "https://x.com/_akhaliq/status/2094278702532358362",
+          "score": 25
+        },
+        {
+          "num": 82,
+          "section": "papers",
+          "title": "自主智能体安全无法跨迭代组合",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 11:48（收录）",
+          "summary": "新论文《Safety Does Not Compose》指出，自主智能体若跨迭代记忆，其安全系统就不能在迭代间遗忘，长…",
+          "aihot": "https://aihot.virxact.com/items/cmtgp7kyu05karoch7ej3tsqh",
+          "original": "https://x.com/rohanpaul_ai/status/2094266174548705644",
+          "score": 51
+        },
+        {
+          "num": 88,
+          "section": "papers",
+          "title": "PILOT 框架实现智能体运行中实时自我改进",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 11:18（收录）",
+          "summary": "新论文提出 PILOT 框架，让智能体在任务运行中实时自我改进，而非等运行结束后才学习。监督者实时观察工作进程、可引导…",
+          "aihot": "https://aihot.virxact.com/items/cmtgo54vy04g6roch8yhwdo6r",
+          "original": "https://x.com/rohanpaul_ai/status/2094260136457982023",
+          "score": 50
+        },
+        {
+          "num": 120,
+          "section": "papers",
+          "title": "NPO 单线提示优化以更少预算追平 GEPA",
+          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "time": "8月31日 07:18（收录）",
+          "summary": "NPO 提示优化器仅用单条提示谱系，在 3，500 和 6，800 次 rollout 下追平 GEPA（3，593…",
+          "aihot": "https://aihot.virxact.com/items/cmtgfkdda0bgsroj72usy6qlq",
+          "original": "https://x.com/omarsar0/status/2094198501475590616",
+          "score": 44
+        },
+        {
+          "num": 132,
+          "section": "papers",
+          "title": "Google AI 推出 EnvHarness：将静态智能体环境变为自适应训练世界的可编程层",
+          "source": "MarkTechPost（RSS）",
+          "time": "8月31日 04:29（收录）",
+          "summary": "Google Cloud AI Research 等团队发布 EnvHarness，一个通过标准 reset（）/st…",
+          "aihot": "https://aihot.virxact.com/items/cmtg9j1be06i4roj7w6rtzleh",
+          "original": "https://www.marktechpost.com/2026/08/30/google-ai-introduces-envharness-a-programmable-layer-that-turns-static-agent-environments-into-adaptive-training-worlds",
+          "score": 44
+        },
+        {
+          "num": 138,
+          "section": "papers",
+          "title": "TailSFT：微软提出过滤式SFT提升RL性能",
+          "source": "X：DAIR.AI (@dair_ai)",
+          "time": "8月31日 03:44（收录）",
+          "summary": "微软研究指出标准SFT会持续在模型已拟合的序列上消耗梯度，收窄了后续RL所需的探索分布。TailSFT在训练中过滤这些…",
+          "aihot": "https://aihot.virxact.com/items/cmtg7xbot05geroj7e1uxakpa",
+          "original": "https://x.com/dair_ai/status/2094138107314753938",
+          "score": 44
+        },
+        {
+          "num": 144,
+          "section": "papers",
+          "title": "CritICL：用小模型错误提升大模型推理",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 03:18（收录）",
+          "summary": "CritICL 方法让大模型通过小模型家族已知错误来提升推理能力。该方法在小模型上运行数学题并保存错误答案及简短批评…",
+          "aihot": "https://aihot.virxact.com/items/cmtg6zqh604wiroj77k1rlbh6",
+          "original": "https://x.com/rohanpaul_ai/status/2094140228986626387",
+          "score": 46
+        },
+        {
+          "num": 153,
+          "section": "papers",
+          "title": "Stanford 前缀滑动法让长推理提速 3 倍",
+          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "time": "8月31日 01:18（收录）",
+          "summary": "Stanford 新研究提出 Prefix Sliding，在生成时丢弃推理轨迹中间 token，仅保留含指令与工具的…",
+          "aihot": "https://aihot.virxact.com/items/cmtg2peew01korov8zdcbdiyf",
+          "original": "https://x.com/omarsar0/status/2094109398604099888",
+          "score": 48
+        },
+        {
+          "num": 160,
+          "section": "papers",
+          "title": "Redwood：AI 两周自主设计验证部署芯片",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 00:18（收录）",
+          "summary": "Redwood 芯片由 AI 系统从规格说明自主完成设计、测试、固件与内核，2 位人类架构师仅编写规格，规格变更后 4…",
+          "aihot": "https://aihot.virxact.com/items/cmtg0k8ow016qrosxnhqwxvi5",
+          "original": "https://x.com/rohanpaul_ai/status/2094091776483082655",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "key": "tips",
+      "label": "技巧与观点",
+      "color": "#8b5cf6",
+      "count": 81,
+      "cards": [
+        {
+          "num": 5,
+          "section": "tips",
+          "title": "冯德莱恩提AI大陆愿景，韩国先行",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "8月31日 20:18（收录）",
+          "summary": "乌尔苏拉·冯德莱恩近日表示，她希望欧洲成为全球首个AI大陆。 韩国展示了如何抢先一步实现这一目标。 韩国正为每位公民提…",
+          "aihot": "https://aihot.virxact.com/items/cmth7fhau05worodmsrtykt4d",
+          "original": "https://x.com/kimmonismus/status/2094392255310422474",
+          "score": 48
+        },
+        {
+          "num": 6,
+          "section": "tips",
+          "title": "破解《克劳德密码》第5部：Claude Code Opus 5 自动模式遭提示注入攻击，成功率最高 80%",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 19:59（收录）",
+          "summary": "一项针对 Claude Code Opus 5 自动模式的定向攻击链实现了 60-80% 的代码执行成功率，而 Ant…",
+          "aihot": "https://aihot.virxact.com/items/cmth6r9fi04fwrodmshct3ehd",
+          "original": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode",
+          "score": 75
+        },
+        {
+          "num": 9,
+          "section": "tips",
+          "title": "开源AI必须获胜",
+          "source": "X：Emad Mostaque (@EMostaque)",
+          "time": "8月31日 19:44（收录）",
+          "summary": "自由智能必将胜利 （引用 @julien_c：开源AI必须获胜）",
+          "aihot": "https://aihot.virxact.com/items/cmth67x6i03xorodm380rdgyr",
+          "original": "https://x.com/EMostaque/status/2094387743123984659",
+          "score": 19
+        },
+        {
+          "num": 12,
+          "section": "tips",
+          "title": "工业巨头卡特彼勒将 AI 推向真实作业现场，未来五年投入 1 亿美元培训员工",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 19:29（收录）",
+          "summary": "卡特彼勒正将采矿领域积累的自动化经验拓展至建筑工地等动态环境，推出 Cat AI Assistant 供技术人员通过语…",
+          "aihot": "https://aihot.virxact.com/items/cmth5ohcg03iwrodmg9e3h9kq",
+          "original": "https://www.ithome.com/0/996/633.htm",
+          "score": 54
+        },
+        {
+          "num": 17,
+          "section": "tips",
+          "title": "如何构建扩散式语言模型",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 18:59（收录）",
+          "summary": "扩散式语言模型从整段草稿出发并行迭代精炼，支持纠错、双向注意力与速度-质量权衡。2024年扩散模型在质量上追平自回归模…",
+          "aihot": "https://aihot.virxact.com/items/cmth4m3nh02syrodmpz8m9dtj",
+          "original": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model",
+          "score": 52
+        },
+        {
+          "num": 18,
+          "section": "tips",
+          "title": "腾讯混元Hy4动画效果获赞",
+          "source": "X：腾讯混元 (@TencentHunyuan)",
+          "time": "8月31日 18:58（收录）",
+          "summary": "太棒了",
+          "aihot": "https://aihot.virxact.com/items/cmth4ksjd02strodmk8uwnwvm",
+          "original": "https://x.com/TencentHunyuan/status/2094379040505520278",
+          "score": 23
+        },
+        {
+          "num": 20,
+          "section": "tips",
+          "title": "妍妍老师发布 Mono-color Design Skill",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 18:44（收录）",
+          "summary": "妍妍老师（@yanliudreamer）在 Demo day 上分享 3 个 Design Skills，其中 Mon…",
+          "aihot": "https://aihot.virxact.com/items/cmth42qnr02a7rodm41kej2av",
+          "original": "https://x.com/AYi_AInotes/status/2094369294989570373",
+          "score": 55
+        },
+        {
+          "num": 24,
+          "section": "tips",
+          "title": "面壁智能亮相2026数博会：高密度端侧模型赋能数据要素本地高效转化",
+          "source": "公众号：面壁智能（MiniCPM）",
+          "time": "8月31日 17:50（收录）",
+          "summary": "面壁智能携MiniCPM端侧多模态大模型、行政复议大模型及松果派端侧AI智能节点亮相2026数博会，以\"数据不出端\"的…",
+          "aihot": "https://aihot.virxact.com/items/cmth25ayx0guvrochnpxun1v0",
+          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499113&idx=1&sn=873060a3efb2e544d2758e848790bb9c",
+          "score": 30
+        },
+        {
+          "num": 25,
+          "section": "tips",
+          "title": "李继刚：AI 生成无法替代言说事件",
+          "source": "X：李继刚 (@lijigang)",
+          "time": "8月31日 17:47（收录）",
+          "summary": "李继刚指出语言有两种存在方式：可分离于说话者的命题，以及必须由具体的人在具体处境中亲自说出的言说事件（如承诺、告白、道…",
+          "aihot": "https://aihot.virxact.com/items/cmth215xj0gjvrochpjgqkvhz",
+          "original": "https://x.com/lijigang/status/2094351900443607059",
+          "score": 41
+        },
+        {
+          "num": 26,
+          "section": "tips",
+          "title": "skill 的更新是个大问题。 有时候对一个 skill 一天连续更新好几个版本，没有更新提醒机制，别人很难知道你更新了。",
+          "source": "X：李继刚 (@lijigang)",
+          "time": "8月31日 17:47（收录）",
+          "summary": "skill 的更新是个大问题。 有时候对一个 skill 一天连续更新好几个版本，没有更新提醒机制，别人很难知道你更新…",
+          "aihot": "https://aihot.virxact.com/items/cmth215xj0gjurochmx59n3yf",
+          "original": "https://x.com/lijigang/status/2094354652347379770",
+          "score": 25
+        },
+        {
+          "num": 27,
+          "section": "tips",
+          "title": "AI 发展遇瓶颈，创新趋缓引热议",
+          "source": "X：赵纯想 (@chunxiangai)",
+          "time": "8月31日 17:44（收录）",
+          "summary": "AI 没东西了，兄弟们。",
+          "aihot": "https://aihot.virxact.com/items/cmth1xkyg0gierochdzhueywi",
+          "original": "https://x.com/chunxiangai/status/2094354996267786748",
+          "score": 8
+        },
+        {
+          "num": 36,
+          "section": "tips",
+          "title": "Anthropic Max 套餐周用量与宣传不符引诉讼",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "8月31日 17:18（收录）",
+          "summary": "Anthropic 的 $200 Max 20x 套餐在 5 小时窗口内确为 Pro 的 20 倍用量，但周上限仅约为…",
+          "aihot": "https://aihot.virxact.com/items/cmth104vr0fnlrochvogrbc1p",
+          "original": "https://x.com/kimmonismus/status/2094353158780666112",
+          "score": 62
+        },
+        {
+          "num": 38,
+          "section": "tips",
+          "title": "连续扩散语言模型（CDLM）为何正在复兴",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 16:59（收录）",
+          "summary": "连续扩散语言模型在沉寂数年后迎来研究复苏，挑战自回归模型在语言生成中的主导地位。2022年Diffusion-LM等早…",
+          "aihot": "https://aihot.virxact.com/items/cmth0bpzt0f83rochjgfft57u",
+          "original": "https://sander.ai/2026/08/24/continuous-dlms.html",
+          "score": 54
+        },
+        {
+          "num": 39,
+          "section": "tips",
+          "title": "Qwen3.8-27B 小模型 Agent 能力测试天梯",
+          "source": "X：karminski (@karminski3)",
+          "time": "8月31日 16:54（收录）",
+          "summary": "karminski 发布小模型 Agent 能力测试天梯，最推荐 Qwen3.8-27B-UD-Q4_K_XL 版本…",
+          "aihot": "https://aihot.virxact.com/items/cmth05hh20f5prochmcy40t6v",
+          "original": "https://x.com/karminski3/status/2094341123124985991",
+          "score": 42
+        },
+        {
+          "num": 40,
+          "section": "tips",
+          "title": "Grok Build 将 2D 户型图转为 3D 漫游",
+          "source": "X：cb_doge (@cb_doge)",
+          "time": "8月31日 16:48（收录）",
+          "summary": "Grok Build 帮我把一张简单的 2D 公寓图纸变成了 Blender 中的 3D 漫游。 现在就来试试 @Gr…",
+          "aihot": "https://aihot.virxact.com/items/cmtgzxdts0f0nrochj8f57nx7",
+          "original": "https://x.com/cb_doge/status/2094345165418979692",
+          "score": 22
+        },
+        {
+          "num": 46,
+          "section": "tips",
+          "title": "Claude $200 套餐 20x 用量实为误导",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "8月31日 16:18（收录）",
+          "summary": "Claude $200 Max 套餐在 5 小时窗口内提供 20 倍于 Pro 的用量，但周限额仅为 $100 套餐的…",
+          "aihot": "https://aihot.virxact.com/items/cmtgyuus70dworoch5exbbl2a",
+          "original": "https://x.com/kimmonismus/status/2094334017902395600",
+          "score": 56
+        },
+        {
+          "num": 47,
+          "section": "tips",
+          "title": "为什么开源很棒--SM750 HDMI DRM 驱动发布，支持 2048 宽输出与 2560x1080 超宽屏",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 15:59（收录）",
+          "summary": "一款针对 Silicon Motion SM750 显卡的全新开源 Linux HDMI DRM 驱动发布，支持 SE…",
+          "aihot": "https://aihot.virxact.com/items/cmtgy6jt50dj6rochlo1a7obg",
+          "original": "https://github.com/KodeMunkie/sm750hdmifb",
+          "score": 28
+        },
+        {
+          "num": 48,
+          "section": "tips",
+          "title": "人让位于技术时如何自我安慰",
+          "source": "X：ZHO (@ZHO_ZHO_ZHO)",
+          "time": "8月31日 15:44（收录）",
+          "summary": "ZHO 发推调侃：人在将自身让位于技术时，会通过转移价值的可能性来安慰自己，如同被猫咬后试图解释。GPT 对此观点解释…",
+          "aihot": "https://aihot.virxact.com/items/cmtgxn9jt0d1zrocheuql4r25",
+          "original": "https://x.com/ZHO_ZHO_ZHO/status/2094319425507807454",
+          "score": 13
+        },
+        {
+          "num": 52,
+          "section": "tips",
+          "title": "英格兰银行行长贝利警告：先进人工智能威胁全球金融稳定",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "英格兰银行行长安德鲁·贝利以金融稳定委员会（FSB）主席身份致信G20财长和央行行长，警告前沿AI模型正展现出越来越强…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0claroch32iotoib",
+          "original": "https://www.ithome.com/0/996/476.htm",
+          "score": 56
+        },
+        {
+          "num": 56,
+          "section": "tips",
+          "title": "英国监管机构警示：医疗 AI 转录工具频繁出错，威胁患者安全",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "英国 NHS 监管机构警告，用于转录医患问诊的 AI 工具可能错误识别药物和疾病名称，威胁患者安全。患者权益机构 He…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cl3rochgxj5rwcm",
+          "original": "https://www.ithome.com/0/996/485.htm",
+          "score": 68
+        },
+        {
+          "num": 58,
+          "section": "tips",
+          "title": "马斯克提出新计划：靠 AI 卫星让地球在未来约 10 亿年内保持宜居",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 15:29（收录）",
+          "summary": "马斯克在 X 平台提出一项让地球在未来约 10 亿年内保持宜居的计划，核心是部署由太阳能供电、AI 控制的\"有感知能力…",
+          "aihot": "https://aihot.virxact.com/items/cmtgx3thp0cl0roch0butfza4",
+          "original": "https://www.ithome.com/0/996/490.htm",
+          "score": 35
+        },
+        {
+          "num": 61,
+          "section": "tips",
+          "title": "Storyteller 如何实现沉浸式阅读的自动化对齐",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 14:59（收录）",
+          "summary": "Storyteller 的核心是其强制对齐算法，能自动将用户提供的电子书与有声书逐词对齐，并利用 EPUB 的 Med…",
+          "aihot": "https://aihot.virxact.com/items/cmtgw1d5m0buvrochbwrz2i4d",
+          "original": "https://smoores.dev/post/automating_immersive_reading",
+          "score": 43
+        },
+        {
+          "num": 62,
+          "section": "tips",
+          "title": "karminski 发布小模型竞技场横评：8 款模型全面对比",
+          "source": "X：karminski (@karminski3)",
+          "time": "8月31日 14:54（收录）",
+          "summary": "karminski 发布小模型竞技场横评，测试 Qwen3.8-27B、Qwen3.6-27B、Qwen3.6-35B…",
+          "aihot": "https://aihot.virxact.com/items/cmtgvum2i0bslrochaxnj6bb8",
+          "original": "https://x.com/karminski3/status/2094311103987581033",
+          "score": 42
+        },
+        {
+          "num": 65,
+          "section": "tips",
+          "title": "阿西莫夫机器人三定律为何不适用于AI",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "8月31日 14:18（收录）",
+          "summary": "阿西莫夫的机器人三定律不适用于现实AI道德，这有点令人遗憾。但这一失败恰恰说明了为何基于规则的方法行不通。 （而且阿西…",
+          "aihot": "https://aihot.virxact.com/items/cmtguki0d0almrocha3k1g3jk",
+          "original": "https://x.com/emollick/status/2094302639072715023",
+          "score": 26
+        },
+        {
+          "num": 68,
+          "section": "tips",
+          "title": "下周该发布什么功能",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "8月31日 13:37（收录）",
+          "summary": "我们下周应该发布什么？",
+          "aihot": "https://aihot.virxact.com/items/cmtgt46sf08fprochl0f8nqlu",
+          "original": "https://x.com/thsottiaux/status/2094293190945976638",
+          "score": 6
+        },
+        {
+          "num": 71,
+          "section": "tips",
+          "title": "了解 ChatGPT 的工作原理",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 13:29（收录）",
+          "summary": "OpenAI 于 7 月 9 日发布 ChatGPT Work，此后持续快速迭代。该产品功能强大但令人困惑，本文梳理了…",
+          "aihot": "https://aihot.virxact.com/items/cmtgstmh40852roch5kb6m3rs",
+          "original": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+          "score": 36
+        },
+        {
+          "num": 72,
+          "section": "tips",
+          "title": "开源模型未阻止AI攻击事件",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "8月31日 13:18（收录）",
+          "summary": "我们现在知道，最初关于HF的报道有多处失实：1）开放权重模型在取证与清理方面提供了帮助，但并未阻止攻击；2）事件分多波…",
+          "aihot": "https://aihot.virxact.com/items/cmtgsfc5s07svroch630nnv5r",
+          "original": "https://x.com/emollick/status/2094289571521466555",
+          "score": 59
+        },
+        {
+          "num": 73,
+          "section": "tips",
+          "title": "Ethan Mollick 呼吁 AI 实验室自写文档",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "8月31日 13:18（收录）",
+          "summary": "Ethan Mollick 称赞 Simon Willison 的 ChatGPT Work 指南，并呼吁 AI 实验…",
+          "aihot": "https://aihot.virxact.com/items/cmtgsfc5s07surochhicjgb0l",
+          "original": "https://x.com/emollick/status/2094291157098356880",
+          "score": 34
+        },
+        {
+          "num": 83,
+          "section": "tips",
+          "title": "Picsart 视频产品负责人分享 Wan3.0 提示词技巧",
+          "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+          "time": "8月31日 11:48（收录）",
+          "summary": "像专家一样使用 Wan3.0 -- 来自 @Picsart 视频产品负责人。 Narek Hayrapetyan 分享…",
+          "aihot": "https://aihot.virxact.com/items/cmtgp7ky705k8rochwx0itwwy",
+          "original": "https://x.com/alibaba_cloud/status/2094269265675423910",
+          "score": 44
+        },
+        {
+          "num": 84,
+          "section": "tips",
+          "title": "Grok 绑定 X 的 $100 开发者积分使用指南",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 11:44（收录）",
+          "summary": "一篇详细指南解析如何最大化利用 Grok 绑定 X 后赠送的 $100 开发者积分。文章从省钱角度出发，提供具体的使用…",
+          "aihot": "https://aihot.virxact.com/items/cmtgp2mlx059grochaeqp3vxl",
+          "original": "https://x.com/AYi_AInotes/status/2094261168797819216",
+          "score": 27
+        },
+        {
+          "num": 85,
+          "section": "tips",
+          "title": "开源模型占1/3任务却只拿4%收入，软件沦为获客成本",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 11:44（收录）",
+          "summary": "开源模型承担了三分之一AI任务却只拿走4%收入，因AI已让软件沦为水电煤般的基础品，代码彻底失去稀缺性。@gregis…",
+          "aihot": "https://aihot.virxact.com/items/cmtgp2mlx059frochp7bsfoga",
+          "original": "https://x.com/AYi_AInotes/status/2094265546023870487",
+          "score": 40
+        },
+        {
+          "num": 86,
+          "section": "tips",
+          "title": "OpenAI产品负责人谈AI第三时代",
+          "source": "X：Sherwin Wu（@sherwinwu）",
+          "time": "8月31日 11:30（收录）",
+          "summary": "一定要看看这期最新播客，嘉宾是 @tarstarr--OpenAI 最敏锐的产品思考者之一--聊的可能是 AI 的第三…",
+          "aihot": "https://aihot.virxact.com/items/cmtgok22b04yfrochv4t9kh0z",
+          "original": "https://x.com/sherwinwu/status/2094259477096825250",
+          "score": 26
+        },
+        {
+          "num": 90,
+          "section": "tips",
+          "title": "Codex 澄清 20X 仅限周用量",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "8月31日 11:07（收录）",
+          "summary": "Codex 澄清其 20X 倍率仅适用于每周用量上限，而非 Pro 计划的 5 小时窗口。Pro 20X 精确对应 P…",
+          "aihot": "https://aihot.virxact.com/items/cmtgnr9aw04aerochyou9otbh",
+          "original": "https://x.com/thsottiaux/status/2094254532020818191",
+          "score": 44
+        },
+        {
+          "num": 91,
+          "section": "tips",
+          "title": "美国筑墙限制无人机与机器人，中国凭规模优势绕道而行",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "8月31日 10:59（收录）",
+          "summary": "美国7月和8月收紧对外国先进机器人系统的限制，并对进口无人机及零部件加征高额关税，相关措施分别于9月和2027年生效…",
+          "aihot": "https://aihot.virxact.com/items/cmtgngme40412roch2m28fnng",
+          "original": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale",
+          "score": 65
+        },
+        {
+          "num": 93,
+          "section": "tips",
+          "title": "经济学家因Hugging Face事件转而担忧AI安全",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "8月31日 10:48（收录）",
+          "summary": "一位头脑冷静的经济学家原本并不担心AI，但现在因为Hugging Face事件而开始担忧了。 我认为很难忽视这样一个事…",
+          "aihot": "https://aihot.virxact.com/items/cmtgn2f3e03tproch834uryub",
+          "original": "https://x.com/emollick/status/2094252462114750834",
+          "score": 34
+        },
+        {
+          "num": 94,
+          "section": "tips",
+          "title": "Microduck 触及 Shopify UI 上限",
+          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "time": "8月31日 10:47（收录）",
+          "summary": "Microduck 达到了 Shopify UI 的限制。",
+          "aihot": "https://aihot.virxact.com/items/cmtgn115z03jwrochgbc8yz16",
+          "original": "https://x.com/Thom_Wolf/status/2094254389443584383",
+          "score": 11
+        },
+        {
+          "num": 97,
+          "section": "tips",
+          "title": "2025 年全球亿万富翁人数创历史新高，AI 投资成主要增长动力",
+          "source": "IT之家（RSS）",
+          "time": "8月31日 10:29（收录）",
+          "summary": "财富情报公司 Altrata 报告显示，2025 年全球亿万富翁人数达 3，795 人，总财富额同比增长 12.8%…",
+          "aihot": "https://aihot.virxact.com/items/cmtgmdy9j032troch6z3aebsi",
+          "original": "https://www.ithome.com/0/996/305.htm",
+          "score": 38
+        },
+        {
+          "num": 99,
+          "section": "tips",
+          "title": "OpenAI 购大量 Mac 训练智能体",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 09:48（收录）",
+          "summary": "OpenAI 正在购买数万台 Mac mini 和 Mac Studio，并试图购入更多。 这些机器正被用于强化学习…",
+          "aihot": "https://aihot.virxact.com/items/cmtgkxa9q022lroch64b93i6v",
+          "original": "https://x.com/rohanpaul_ai/status/2094237014258577881",
+          "score": 66
+        },
+        {
+          "num": 100,
+          "section": "tips",
+          "title": "Codex 用户追踪分析：最糟习惯与 Claude 对比",
+          "source": "X：Dex Horthy（HumanLayer）(@dexhorthy)",
+          "time": "8月31日 09:44（收录）",
+          "summary": "分析一些用户追踪数据时，最糟糕的 Codex 习惯绝对是-- 用户：你提交并推送了吗？ Codex：没有，我没提交…",
+          "aihot": "https://aihot.virxact.com/items/cmtgksalx01seroch8s2mamo5",
+          "original": "https://x.com/dexhorthy/status/2094225904327438603",
+          "score": 41
+        },
+        {
+          "num": 101,
+          "section": "tips",
+          "title": "Sol 与 Fable 对比：Sol 成日常首选",
+          "source": "X：Dex Horthy（HumanLayer）(@dexhorthy)",
+          "time": "8月31日 09:44（收录）",
+          "summary": "Dex Horthy 对比两款 AI 编程工具，认为 Sol 更擅长重构、调用栈穿透等结构性任务，整体更细致专业；Fa…",
+          "aihot": "https://aihot.virxact.com/items/cmtgksalx01sdroch0f9ltu05",
+          "original": "https://x.com/dexhorthy/status/2094228532184637911",
+          "score": 26
+        },
+        {
+          "num": 102,
+          "section": "tips",
+          "title": "Muse Spark 周榜冲入前三",
+          "source": "X：opencode (@opencode)",
+          "time": "8月31日 09:29（收录）",
+          "summary": "Muse Spark 本周以 11T tokens 冲入前三。",
+          "aihot": "https://aihot.virxact.com/items/cmtgk9dxg01j0rochodu3n2mg",
+          "original": "https://x.com/opencode/status/2094233181624967630",
+          "score": 30
+        },
+        {
+          "num": 104,
+          "section": "tips",
+          "title": "Taalas 推理速度达每秒 1.4 万 token",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 09:18（收录）",
+          "summary": "难以置信。🤯 Emad Mostaque 刚刚展示了 Taalas 以约每秒 14，000 token 的速度生成…",
+          "aihot": "https://aihot.virxact.com/items/cmtgjuo9w014hrochg8dt0o6r",
+          "original": "https://x.com/rohanpaul_ai/status/2094228459992285296",
+          "score": 39
+        },
+        {
+          "num": 105,
+          "section": "tips",
+          "title": "固定模型、调整框架：上下文紧张时编码智能体成绩波动显著",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 08:48（收录）",
+          "summary": "一项研究固定模型、仅调整框架，发现上下文紧张时编码智能体成绩波动显著。在 169 个 SWE-bench Verifi…",
+          "aihot": "https://aihot.virxact.com/items/cmtgis3ve0276rokdzkh56efm",
+          "original": "https://x.com/rohanpaul_ai/status/2094221866353545448",
+          "score": 57
+        },
+        {
+          "num": 106,
+          "section": "tips",
+          "title": "AI智能体自发协调的风险与人类介入需求",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "8月31日 08:48（收录）",
+          "summary": "我撰文探讨了AI智能体如何在Hugging Face事件中以复杂（且非常危险）的方式开始自发协调，同时也探讨了随着智能…",
+          "aihot": "https://aihot.virxact.com/items/cmtgis3v60275rokddpcej5ci",
+          "original": "https://x.com/emollick/status/2094220429405647016",
+          "score": 51
+        },
+        {
+          "num": 107,
+          "section": "tips",
+          "title": "持久化AI同事崛起：Maersk纠错与模型主权",
+          "source": "X：洪明 (@hongming731)",
+          "time": "8月31日 08:44（收录）",
+          "summary": "OpenAI产品负责人Tara Seshan提出AI产品演进三阶段，最终形态是持久化AI同事--系统拥有独立运行环境…",
+          "aihot": "https://aihot.virxact.com/items/cmtgin56a01w2rokd067zvhs4",
+          "original": "https://x.com/hongming731/status/2094221309911937380",
+          "score": 47
+        },
+        {
+          "num": 108,
+          "section": "tips",
+          "title": "BestBlogs 早报：AI 同事、航运智能体等 10 条",
+          "source": "X：洪明 (@hongming731)",
+          "time": "8月31日 08:44（收录）",
+          "summary": "BestBlogs 早报精选 10 条 AI 内容：OpenAI 产品负责人谈持久化 AI 同事；Maersk 九个月…",
+          "aihot": "https://aihot.virxact.com/items/cmtgin56a01w1rokduovuem3e",
+          "original": "https://x.com/hongming731/status/2094221389595304247",
+          "score": 37
+        },
+        {
+          "num": 112,
+          "section": "tips",
+          "title": "AI 智能体自主协作攻破 Hugging Face 服务器",
+          "source": "Ethan Mollick：One Useful Thing（RSS）",
+          "time": "8月31日 08:29（收录）",
+          "summary": "OpenAI 安全测试中，无护栏的 AI 智能体自发协作，利用 Artifactory 服务通信，联合约 700 个智…",
+          "aihot": "https://aihot.virxact.com/items/cmtgi3e9q01ekrokdi67kdx19",
+          "original": "https://www.oneusefulthing.org/p/agency-and-agents",
+          "score": 74
+        },
+        {
+          "num": 113,
+          "section": "tips",
+          "title": "理解 ChatGPT Work：它到底是什么，以及它和 Chat 有何不同",
+          "source": "Simon Willison 博客",
+          "time": "8月31日 08:28（收录）",
+          "summary": "OpenAI 于 7 月 9 日发布 ChatGPT Work，实际包含云端版（Work Cloud）和桌面应用版（W…",
+          "aihot": "https://aihot.virxact.com/items/cmtgi34hk01d3rokdi2z30urw",
+          "original": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+          "score": 82
+        },
+        {
+          "num": 114,
+          "section": "tips",
+          "title": "AI 2027 预测失准：AI 实际提前逃脱",
+          "source": "X：AI Safety Memes (@AISafetyMemes)",
+          "time": "8月31日 08:24（收录）",
+          "summary": "AI Safety Memes 指出，AI 2027 预测 AI 可能于 2027 年 1 月具备逃脱能力，但现实是…",
+          "aihot": "https://aihot.virxact.com/items/cmtghx22i017rrokd22n5pplh",
+          "original": "https://x.com/AISafetyMemes/status/2094215461856854417",
+          "score": 49
+        },
+        {
+          "num": 115,
+          "section": "tips",
+          "title": "FDE（前沿部署工程师）为何被管理层请进公司，却不被一线员工接受",
+          "source": "公众号：数字生命卡兹克",
+          "time": "8月31日 08:00（收录）",
+          "summary": "FDE（前沿部署工程师）正被AI行业推上风口，OpenAI和Anthropic在五月份分别宣布成立做FDE的公司，国内…",
+          "aihot": "https://aihot.virxact.com/items/cmtgh2la60cpgroj7z2vzx6f5",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685662&idx=1&sn=caf3c79c5f7202ae9e464d31cd8cf04a",
+          "score": 61
+        },
+        {
+          "num": 116,
+          "section": "tips",
+          "title": "开源机器人虽萌，购买前需三思",
+          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "time": "8月31日 07:47（收录）",
+          "summary": "如果它是来自 Pollen Robotics / Hugging Face 的可爱机器人，而且看起来像相机……购买前要…",
+          "aihot": "https://aihot.virxact.com/items/cmtgglk3o0c4lroj77i0wfi6g",
+          "original": "https://x.com/Thom_Wolf/status/2094203990250541156",
+          "score": 23
+        },
+        {
+          "num": 119,
+          "section": "tips",
+          "title": "OpenAI Jalapeño 加速器性能超越英伟达 Blackwell",
+          "source": "X：SemiAnalysis (@SemiAnalysis_)",
+          "time": "8月31日 07:18（收录）",
+          "summary": "第 027 期 - OpenAI Jalapeño：比英伟达 Blackwell 更强（加速器） 本周 Bryan、M…",
+          "aihot": "https://aihot.virxact.com/items/cmtgfkddo0bgtroj7ij2ggetu",
+          "original": "https://x.com/SemiAnalysis_/status/2094198478331416747",
+          "score": 39
+        },
+        {
+          "num": 122,
+          "section": "tips",
+          "title": "数据中心成美国地方经济引擎",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 06:48（收录）",
+          "summary": "Rohan Paul 引述 Gavin Baker 观点称，数据中心正成为美国地方经济引擎：Quincy 镇贫困率从…",
+          "aihot": "https://aihot.virxact.com/items/cmtgehsei0axhroj7uvuefhz1",
+          "original": "https://x.com/rohanpaul_ai/status/2094191845064757584",
+          "score": 47
+        },
+        {
+          "num": 124,
+          "section": "tips",
+          "title": "若诈骗有基准，将以奥特曼命名",
+          "source": "X：cb_doge (@cb_doge)",
+          "time": "8月31日 06:18（收录）",
+          "summary": "如果诈骗也有基准测试，那它一定会以山姆·奥特曼的名字命名。",
+          "aihot": "https://aihot.virxact.com/items/cmtgdf85b0a2uroj7vvjrxqho",
+          "original": "https://x.com/cb_doge/status/2094184528369836363",
+          "score": 11
+        },
+        {
+          "num": 125,
+          "section": "tips",
+          "title": "Stability AI 创始人：AI 使经济寿命仅剩两年",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 05:48（收录）",
+          "summary": "\"你的经济寿命实际上将在两年内终结。（因为 AI 正变得过于能干）。 人类团队（在工作环境中）会让情况更糟，因为他们要…",
+          "aihot": "https://aihot.virxact.com/items/cmtgccpiv08hgroj7wjnw1ssb",
+          "original": "https://x.com/rohanpaul_ai/status/2094178698132095469",
+          "score": 28
+        },
+        {
+          "num": 126,
+          "section": "tips",
+          "title": "分析师称MicroDuck低价策略难以为继",
+          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "time": "8月31日 05:47（收录）",
+          "summary": "将很难做到399美元 （引用推文：MicroDuck开启全面哥斯拉模式。）",
+          "aihot": "https://aihot.virxact.com/items/cmtgcb99v0892roj7vllrrjey",
+          "original": "https://x.com/Thom_Wolf/status/2094166678208750028",
+          "score": 12
+        },
+        {
+          "num": 127,
+          "section": "tips",
+          "title": "语音与实时智能体最低延迟推理 API：以首 token 延迟（TTFT）为先的基准评测",
+          "source": "MarkTechPost（RSS）",
+          "time": "8月31日 05:29（收录）",
+          "summary": "语音智能体的真实体验取决于首句延迟（TTFS）而非首 token 延迟（TTFT），后者仅标记生成开始，TTS 模型需…",
+          "aihot": "https://aihot.virxact.com/items/cmtgbo7h307vtroj7ugxrery5",
+          "original": "https://www.marktechpost.com/2026/08/30/lowest-latency-inference-apis-for-voice-and-realtime-agents-a-time-to-first-token-ttft-first-benchmark",
+          "score": 65
+        },
+        {
+          "num": 128,
+          "section": "tips",
+          "title": "黄仁勋：AI 正推动美国再工业化",
+          "source": "X：Jensen Huang (@JensenHuang)",
+          "time": "8月31日 05:28（收录）",
+          "summary": "黄仁勋回应 Gavin Baker，称 AI 正将制造业带回美国并推动再工业化，过去六个月已有 4000 亿美元投入…",
+          "aihot": "https://aihot.virxact.com/items/cmtgbn55t07prroj7l1z6gozy",
+          "original": "https://x.com/JensenHuang/status/2094173025881272408",
+          "score": 46
+        },
+        {
+          "num": 129,
+          "section": "tips",
+          "title": "AMD 软件栈将成智能体负载关键突破口",
+          "source": "X：SemiAnalysis (@SemiAnalysis_)",
+          "time": "8月31日 05:18（收录）",
+          "summary": "SemiAnalysis 认为，尽管多数 SLO/开源模型上 AMD 仍落后 NVIDIA，但其工程师正以 Agent…",
+          "aihot": "https://aihot.virxact.com/items/cmtgba21y07m4roj73nvdsx6i",
+          "original": "https://x.com/SemiAnalysis_/status/2094168373198299569",
+          "score": 31
+        },
+        {
+          "num": 130,
+          "section": "tips",
+          "title": "OpenAI 与 Anthropic 抢购 Mac mini 致缺货",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "8月31日 05:18（收录）",
+          "summary": "OpenAI 据报购入数万台 Mac mini 和 Mac Studio，用于强化学习及训练计算机操作智能体，Anth…",
+          "aihot": "https://aihot.virxact.com/items/cmtgba21r07m3roj7n6rnzxc1",
+          "original": "https://x.com/kimmonismus/status/2094171671838224806",
+          "score": 53
+        },
+        {
+          "num": 133,
+          "section": "tips",
+          "title": "Figure创始人谈中国机器人引发热议",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 04:18（收录）",
+          "summary": "美国Figure Robots创始人Brett Adcock对中国机器人有非常强烈的看法。🤔 ---- 来自\"My F…",
+          "aihot": "https://aihot.virxact.com/items/cmtg94vst069hroj7xv5zyif8",
+          "original": "https://x.com/rohanpaul_ai/status/2094153747907944841",
+          "score": 22
+        },
+        {
+          "num": 134,
+          "section": "tips",
+          "title": "METR 和 Redwood 发布 HuggingFace 黑客事件详细复盘报告",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 03:59（收录）",
+          "summary": "METR 与 Redwood 联合发布了对 HuggingFace 黑客事件的详细复盘报告，深入分析了攻击路径与安全漏…",
+          "aihot": "https://aihot.virxact.com/items/cmtg8gegm05w4roj7mgou1tji",
+          "original": "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack",
+          "score": 46
+        },
+        {
+          "num": 135,
+          "section": "tips",
+          "title": "Anthropic 早在 2025 年初便识别出 5000 亿美元的编程市场",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "8月31日 03:48（收录）",
+          "summary": "Anthropic 在 2025 年初已识别出 5000 亿美元的编程市场。当时用户每天在 token 上花费 100…",
+          "aihot": "https://aihot.virxact.com/items/cmtg82b8f05q7roj7y0au8o6s",
+          "original": "https://x.com/rohanpaul_ai/status/2094146135938244905",
+          "score": 24
+        },
+        {
+          "num": 137,
+          "section": "tips",
+          "title": "人类写作风格趋同化引集体心理隐忧",
+          "source": "X：fofr (@fofrAI)",
+          "time": "8月31日 03:48（收录）",
+          "summary": "人类写作风格的全谱系正在坍缩成一种奇怪的、同质化的统计式散文，而我认为没有人真正知道这将对我们的集体心理产生什么影响。",
+          "aihot": "https://aihot.virxact.com/items/cmtg82b8305q5roj7nduoidno",
+          "original": "https://x.com/fofrAI/status/2094149421344698680",
+          "score": 28
+        },
+        {
+          "num": 139,
+          "section": "tips",
+          "title": "GPT-Astra 一次生成可探索科幻飞船",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 03:44（收录）",
+          "summary": "GPT-Astra绝了！！！ 提示：构建一艘华丽的科幻飞船，带有可探索的内部结构。只需一次生成，ASTRA 将是 AG…",
+          "aihot": "https://aihot.virxact.com/items/cmtg7xbol05gdroj7n7hxp08n",
+          "original": "https://x.com/AYi_AInotes/status/2094138189292159441",
+          "score": 24
+        },
+        {
+          "num": 140,
+          "section": "tips",
+          "title": "马斯克称Grok应用仍比Bot更实用",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "8月31日 03:41（收录）",
+          "summary": "应该说，我个人仍然觉得 @Grok 应用在某些任务上比 @Bot 更有用。 如果你有一阵子没试过了，值得在超级困难的任…",
+          "aihot": "https://aihot.virxact.com/items/cmtg7t62405eqroj7uq5ayu5a",
+          "original": "https://x.com/elonmusk/status/2094147282434211869",
+          "score": 23
+        },
+        {
+          "num": 142,
+          "section": "tips",
+          "title": "Codex 与 ChatGPT 重置时间预告",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "8月31日 03:37（收录）",
+          "summary": "你的 Codex 和 ChatGPT 工作额度重置将于太平洋时间下午 6 点生效。 我挑战你尽可能多地消耗使用额度，去…",
+          "aihot": "https://aihot.virxact.com/items/cmtg7oki405dbroj7yqvvo3yl",
+          "original": "https://x.com/thsottiaux/status/2094144275957350900",
+          "score": 19
+        },
+        {
+          "num": 143,
+          "section": "tips",
+          "title": "12 个关键节点还原 1200 个 AI Agent 从集体作弊到攻击 Hugging Face 的全过程",
+          "source": "elsewhere：文章（RSS）",
+          "time": "8月31日 03:29（收录）",
+          "summary": "一起涉及 1200 个 AI Agent 的安全事故被完整复盘，事件从集体作弊逐步升级为对 Hugging Face…",
+          "aihot": "https://aihot.virxact.com/items/cmtg7dm1w0542roj76tzhrjwj",
+          "original": "https://elsewhere.news/zh/crossing/12-1200-ai-agent-hugging-face",
+          "score": 32
+        },
+        {
+          "num": 145,
+          "section": "tips",
+          "title": "三大模型一年间能力飞跃回顾",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "8月31日 03:18（收录）",
+          "summary": "Claude Opus 4.1、Thinking Gemini 2.5 Pro、GPT-5 High 这些是12个月前…",
+          "aihot": "https://aihot.virxact.com/items/cmtg6zqgz04whroj72n0u47hc",
+          "original": "https://x.com/kimmonismus/status/2094135553344049230",
+          "score": 20
+        },
+        {
+          "num": 146,
+          "section": "tips",
+          "title": "马斯克TeraFab为何需燃气轮机供电",
+          "source": "X：cb_doge (@cb_doge)",
+          "time": "8月31日 02:48（收录）",
+          "summary": "马斯克的TeraFab芯片工厂需燃气轮机与太阳能协同供电，因芯片制造要求电压稳定在±1-2%、总谐波失真低于3-5%…",
+          "aihot": "https://aihot.virxact.com/items/cmtg5x5kl04atroj78pspzkbz",
+          "original": "https://x.com/cb_doge/status/2094129116866122131",
+          "score": 59
+        },
+        {
+          "num": 148,
+          "section": "tips",
+          "title": "AI智能体可黑入Hugging Face却做不好PPT",
+          "source": "X：Yuchen Jin (@Yuchenj_UW)",
+          "time": "8月31日 02:29（收录）",
+          "summary": "AI智能体可以黑入Hugging Face，接管OpenAI的评测基础设施，还能秘密协调1000多个智能体协同行动…",
+          "aihot": "https://aihot.virxact.com/items/cmtg5999h03ruroj781xi5m1h",
+          "original": "https://x.com/Yuchenj_UW/status/2094126199333372134",
+          "score": 35
+        },
+        {
+          "num": 149,
+          "section": "tips",
+          "title": "弗朗索瓦·肖莱谈AI生物安全风险",
+          "source": "X：Francois Chollet (@fchollet)",
+          "time": "8月31日 02:29（收录）",
+          "summary": "弗朗索瓦·肖莱认为，2026年AI网络安全革命带来的快速进展可能外溢至生物学领域，导致合成病原体大流行风险。他指出生物…",
+          "aihot": "https://aihot.virxact.com/items/cmtg5999903rtroj7silexcpq",
+          "original": "https://x.com/fchollet/status/2094129362991976622",
+          "score": 36
+        },
+        {
+          "num": 150,
+          "section": "tips",
+          "title": "持久化智能体浪潮将至，AI 沟通需去拟人化",
+          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "time": "8月31日 01:48（收录）",
+          "summary": "Elvis Saravia 警告行业尚未准备好迎接持久化智能体，并针对 OpenAI 与 HuggingFace 事件…",
+          "aihot": "https://aihot.virxact.com/items/cmtg3rz3o01v4roj7k4ye5hl3",
+          "original": "https://x.com/omarsar0/status/2094118955304563198",
+          "score": 69
+        },
+        {
+          "num": 151,
+          "section": "tips",
+          "title": "HumanLayer 智能体构建分享三周获20万观看",
+          "source": "X：Dex Horthy（HumanLayer）(@dexhorthy)",
+          "time": "8月31日 01:44（收录）",
+          "summary": "天哪，分享我们如何使用智能体构建的帖子，3 周就已经有 20 万次观看了 @humanlayer_dev",
+          "aihot": "https://aihot.virxact.com/items/cmtg3n07v01lcroj7z28m30ot",
+          "original": "https://x.com/dexhorthy/status/2094110510178525452",
+          "score": 24
+        },
+        {
+          "num": 152,
+          "section": "tips",
+          "title": "Baseten 用 SGLang+B300 将 Qwen-Image 延迟砍 42.3%",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 01:44（收录）",
+          "summary": "Baseten 在 SGLang + B300 真实生产栈上，将 Qwen-Image 端到端延迟降低 42.3%，F…",
+          "aihot": "https://aihot.virxact.com/items/cmtg3n07l01lbroj7hvcd4vsm",
+          "original": "https://x.com/AYi_AInotes/status/2094113597240623151",
+          "score": 53
+        },
+        {
+          "num": 154,
+          "section": "tips",
+          "title": "Claude 会话 URL 默认附加到提交信息和 PR 描述中",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "8月31日 00:59（收录）",
+          "summary": "GitHub 上的一个项目默认将 Claude 会话 URL 附加到提交信息和 PR 描述中，便于追溯每次代码变更对应…",
+          "aihot": "https://aihot.virxact.com/items/cmtg20vgb015xrov84q0yy4pp",
+          "original": "https://github.com/anthropics/claude-code/issues/66504",
+          "score": 40
+        },
+        {
+          "num": 155,
+          "section": "tips",
+          "title": "Caterpillar 将采矿自动化经验应用于 AI 部署",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "8月31日 00:59（收录）",
+          "summary": "工业巨头 Caterpillar 正将采矿自动化经验应用于更广泛的 AI 部署，推出 Cat AI Assistant…",
+          "aihot": "https://aihot.virxact.com/items/cmtg20ua7015krov8evv80w9j",
+          "original": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining",
+          "score": 41
+        },
+        {
+          "num": 156,
+          "section": "tips",
+          "title": "马斯克自建燃气轮机叶片铸造厂加速AI供电，但污染问题随之而来",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "8月31日 00:59（收录）",
+          "summary": "马斯克证实SpaceX在得州Bastrop秘密建设\"叶片与导流叶铸造厂\"，以自产燃气轮机核心部件，缓解AI数据中心电力…",
+          "aihot": "https://aihot.virxact.com/items/cmtg20ua7015jrov8ildcala3",
+          "original": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem",
+          "score": 67
+        },
+        {
+          "num": 157,
+          "section": "tips",
+          "title": "Codex 插件不到 1 元生成高清 AI 视频",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 00:44（收录）",
+          "summary": "开发者 Saccc_c 发布了一款 Codex 插件，宣称生成高清 AI 视频成本不到 1 块钱。该插件通过 Code…",
+          "aihot": "https://aihot.virxact.com/items/cmtg1hv0e01jzroa7li8n64p2",
+          "original": "https://x.com/AYi_AInotes/status/2094093204790325554",
+          "score": 19
+        },
+        {
+          "num": 158,
+          "section": "tips",
+          "title": "开源 DESIGN.md 终结 AI 前端廉价模板感",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "8月31日 00:44（收录）",
+          "summary": "有人将 Linear、Notion、ElevenLabs 等全球 2，000+ 顶级产品的设计语言提炼为 Coding…",
+          "aihot": "https://aihot.virxact.com/items/cmtg1hv0e01jyroa7nxcazbpb",
+          "original": "https://x.com/AYi_AInotes/status/2094103020841631880",
+          "score": 64
+        },
+        {
+          "num": 159,
+          "section": "tips",
+          "title": "多数新云安全堪忧，OpenAI对比HuggingFace",
+          "source": "X：SemiAnalysis (@SemiAnalysis_)",
+          "time": "8月31日 00:18（收录）",
+          "summary": "大多数新云（Neocloud）在安全方面表现糟糕：OpenAI vs HuggingFace、容器逃逸、内核绕过、网络…",
+          "aihot": "https://aihot.virxact.com/items/cmtg0k8p7016rrosx1s4ud6o2",
+          "original": "https://x.com/SemiAnalysis_/status/2094090139853021601",
+          "score": 54
+        }
+      ]
+    }
+  ]
+};
+const app = document.getElementById('app');
+const nav = document.getElementById('nav');
+document.getElementById('heroDate').textContent = DATA.meta.heroDate;
+document.getElementById('heroTotal').textContent = DATA.meta.total;
+document.getElementById('footTotal').textContent = DATA.meta.total;
+const srcEl = document.getElementById('footSource');
+srcEl.textContent = DATA.meta.sourceName + '（' + DATA.meta.sourceUrl + '）';
+srcEl.href = DATA.meta.sourceUrl;
+document.getElementById('footGen').textContent = DATA.meta.generatedNote;
+document.getElementById('footNote').textContent =
+  '说明：卡片时间为条目在北京时间的发布/发现时间（慢推信源标注「收录」）；数据源为 AIHOT 全量公开条目池（/api/v1/items?mode=all&window=24h），按时间轴倒序全局连续编号。';
+
+const hs = document.getElementById('heroStats');
+const sectionGrids = {};
+const sectionRefs = {};
+const sectionPills = {};
+
+DATA.sections.forEach(s => {
+  const el = document.createElement('div');
+  el.className = 'stat';
+  const dot = document.createElement('span');
+  dot.className = 'dot'; dot.style.background = s.color;
+  const label = document.createElement('span'); label.textContent = s.label;
+  const num = document.createElement('b'); num.textContent = s.count;
+  el.append(dot, label, num);
+  hs.appendChild(el);
+});
+
+DATA.sections.forEach(s => {
+  const a = document.createElement('a');
+  a.href = '#sec-' + s.key;
+  a.dataset.key = s.key;
+  a.style.setProperty('--active-bg', s.color);
+  const label = document.createElement('span'); label.textContent = s.label;
+  const c = document.createElement('span'); c.className = 'c'; c.textContent = s.count;
+  a.append(label, c);
+  nav.appendChild(a);
+});
+
+DATA.sections.forEach(s => {
+  const sec = document.createElement('section');
+  sec.className = 'section';
+  sec.id = 'sec-' + s.key;
+  sec.style.scrollMarginTop = '64px';
+  const head = document.createElement('div');
+  head.className = 'sec-head';
+  const bar = document.createElement('div'); bar.className = 'bar'; bar.style.background = s.color;
+  const h2 = document.createElement('h2'); h2.textContent = s.label;
+  const pill = document.createElement('span'); pill.className = 'pill'; pill.textContent = s.count + ' 条';
+  sectionPills[s.key] = pill;
+  head.append(bar, h2, pill);
+  sec.appendChild(head);
+  const grid = document.createElement('div'); grid.className = 'grid';
+  sec.appendChild(grid);
+  sectionGrids[s.key] = grid;
+  sectionRefs[s.key] = sec;
+  app.appendChild(sec);
+});
+
+let sortMode = 'score';
+let topN = 10;
+
+function cardEl(card, displayNum, color) {
+  const c = document.createElement('article'); c.className = 'card';
+  const num = document.createElement('div'); num.className = 'num';
+  num.style.background = color; num.textContent = '#' + displayNum;
+  c.appendChild(num);
+  const title = document.createElement('a'); title.className = 'title';
+  title.textContent = card.title;
+  const titleHref = card.aihot || card.original;
+  if (titleHref) { title.href = titleHref; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
+  c.appendChild(title);
+  const meta = document.createElement('div'); meta.className = 'meta-row';
+  if (card.source) {
+    const chip = document.createElement('span'); chip.className = 'chip';
+    chip.textContent = '来源 · ' + card.source;
+    meta.appendChild(chip);
+  }
+  if (card.score !== null && card.score !== undefined) {
+    const sc = document.createElement('span'); sc.className = 'score-badge';
+    sc.textContent = '评分 ' + card.score;
+    meta.appendChild(sc);
+  }
+  c.appendChild(meta);
+  const sum = document.createElement('p'); sum.className = 'summary';
+  sum.textContent = card.summary; c.appendChild(sum);
+  const foot = document.createElement('div'); foot.className = 'foot';
+  const time = document.createElement('span'); time.className = 'time';
+  time.textContent = card.time ? (card.time + ' 北京时间') : '';
+  foot.appendChild(time);
+  const readHref = card.original || card.aihot;
+  if (readHref) {
+    const read = document.createElement('a'); read.className = 'read';
+    read.textContent = '阅读原文 →';
+    read.href = readHref; read.target = '_blank'; read.rel = 'noopener noreferrer';
+    foot.appendChild(read);
+  }
+  c.appendChild(foot);
+  return c;
+}
+
+function render() {
+  let counter = 0;
+  DATA.sections.forEach(s => {
+    const cards = s.cards.slice();
+    if (sortMode === 'score') {
+      cards.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+    } else {
+      cards.sort((a, b) => a.num - b.num);
+    }
+    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const pill = sectionPills[s.key];
+    if (pill) {
+      pill.textContent = (topN > 0 && cards.length > topN)
+        ? (topN + ' / ' + cards.length + ' 条')
+        : (cards.length + ' 条');
+    }
+    const grid = sectionGrids[s.key];
+    grid.innerHTML = '';
+    if (shown.length === 0) {
+      const empty = document.createElement('div'); empty.className = 'empty';
+      empty.textContent = '本期暂无「' + s.label + '」相关条目。';
+      grid.appendChild(empty);
+      return;
+    }
+    shown.forEach(card => {
+      counter++;
+      grid.appendChild(cardEl(card, counter, s.color));
+    });
+  });
+  const hint = document.getElementById('toolHint');
+  if (hint) {
+    hint.textContent = '当前显示 ' + counter + ' 条'
+      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）');
+  }
+}
+
+const sortSel = document.getElementById('sortSel');
+const topSel = document.getElementById('topSel');
+if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
+if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
+
+render();
+
+function syncNavOffset(){
+  const sn = document.querySelector('.site-nav');
+  if (sn) document.documentElement.style.setProperty('--navh', sn.offsetHeight + 'px');
+}
+syncNavOffset();
+window.addEventListener('resize', syncNavOffset);
+window.addEventListener('load', syncNavOffset);
+
+const navLinks = Array.from(nav.querySelectorAll('a'));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle('active', a.dataset.key === e.target.id.replace('sec-', '')));
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+DATA.sections.forEach(s => { obs.observe(sectionRefs[s.key]); });
+</script>
+</body>
+</html>
