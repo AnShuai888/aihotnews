@@ -6,6 +6,7 @@
 <title>AIhot · 每日 AI 热点，一键速览</title>
 <meta name="description" content="AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间时间轴整理，一分钟看懂 AI 圈。">
 <link rel="stylesheet" href="/assets/site.css">
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
 </head>
 <body>
 <nav class="site-nav">
@@ -33,6 +34,15 @@
 </header>
 
 <main class="wrap">
+  <section class="section search-section">
+    <div class="sec-head">
+      <span class="bar"></span>
+      <h2>站内搜索</h2>
+      <span class="pill">检索全部日报</span>
+    </div>
+    <div id="search"></div>
+  </section>
+
   <section class="section">
     <div class="sec-head">
       <span class="bar"></span>
@@ -40,6 +50,7 @@
       <span class="pill">每日更新</span>
     </div>
     <div class="archive-grid">
+<!--DAILY_ARCHIVE-->
       <a class="archive-card" href="/days/20260831/">
         <span class="date">2026-08-31</span>
         <span class="meta">周一 · 160 条资讯</span>
@@ -75,16 +86,14 @@
         <span class="meta">周二 · 264 条资讯</span>
         <span class="go">查看当日日报 →</span>
       </a>
-      <a class="archive-card" href="/days/20260824/">
-        <span class="date">2026-08-24</span>
-        <span class="meta">周一 · 156 条资讯</span>
-        <span class="go">查看当日日报 →</span>
-      </a>
-      <a class="archive-card" href="/days/20260823/">
-        <span class="date">2026-08-23</span>
-        <span class="meta">周日 · 116 条资讯</span>
-        <span class="go">查看当日日报 →</span>
-      </a>
+      <details class="month-group">
+        <summary><span class="m">2026-08</span><span class="c">2 天</span></summary>
+        <div class="month-list">
+        <a class="day-link" href="/days/20260824/"><span class="d">08-24</span><span class="m">周一 · 156 条</span></a>
+        <a class="day-link" href="/days/20260823/"><span class="d">08-23</span><span class="m">周日 · 116 条</span></a>
+        </div>
+      </details>
+      <!--/DAILY_ARCHIVE-->
     </div>
   </section>
 
@@ -119,5 +128,14 @@
   <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com" target="_blank" rel="noopener">AIHOT</a></div>
   <div class="note">本站为静态站点，「今日新闻」与各日期归档指向对应 /days/ 日期文件夹，请按需更新链接。</div>
 </footer>
+
+<script src="/_pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (window.PagefindUI) {
+      new PagefindUI({ element: "#search", showSubResults: true });
+    }
+  });
+</script>
 </body>
 </html>
