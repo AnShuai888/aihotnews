@@ -95,8 +95,11 @@
   .site-footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
   @media (max-width:560px){.brand small{display:none}}
 
-  /* 工具条：排序 + 显示条数（分类导航下方，移动端优先） */
-  .toolbar{max-width:1180px;margin:0 auto;padding:16px 20px 0;
+  /* 工具条：排序 + 显示条数（sticky 跟随滚动；仅作用于下方 5 个分类版块，AI 热点榜不受控） */
+  .toolbar{position:sticky;top:calc(var(--navh) + var(--nav2h,52px));z-index:18;
+    max-width:1180px;margin:0 auto;padding:12px 20px;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
     display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   .tb-tag{font-size:12.5px;font-weight:700;color:#4f46e5;background:#eef2ff;
     border:1px solid #c7d2fe;border-radius:999px;padding:5px 12px;white-space:nowrap}
@@ -112,7 +115,7 @@
   .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
     clip:rect(0,0,0,0);white-space:nowrap;border:0}
   @media (max-width:560px){
-    .toolbar{padding:12px 14px 0;gap:8px}
+    .toolbar{position:static;border-bottom:none;padding:12px 14px 0;gap:8px}
     .tb-tag{flex:1 1 100%;text-align:center;border-radius:8px}
     .ctl{flex:1 1 calc(50% - 4px);min-width:0;font-size:13.5px;padding:10px 34px 10px 14px;
       background-position:right 12px center}
@@ -189,7 +192,7 @@
   <nav class="nav" id="nav"></nav>
 
   <div class="toolbar">
-    <span class="tb-tag">版块筛选</span>
+    <span class="tb-tag">分类资讯</span>
     <label class="sr-only" for="sortSel">排序方式</label>
     <select class="ctl" id="sortSel">
       <option value="score">排序 · 评分优先</option>
@@ -461,7 +464,8 @@ function render() {
   const hint = document.getElementById('toolHint');
   if (hint) {
     hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）');
+      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
+      + ' · AI 热点榜不参与';
   }
 }
 
@@ -475,6 +479,8 @@ render();
 function syncNavOffset(){
   const sn = document.querySelector('.site-nav');
   if (sn) document.documentElement.style.setProperty('--navh', sn.offsetHeight + 'px');
+  const nv = document.getElementById('nav');
+  if (nv) document.documentElement.style.setProperty('--nav2h', nv.offsetHeight + 'px');
 }
 syncNavOffset();
 window.addEventListener('resize', syncNavOffset);
