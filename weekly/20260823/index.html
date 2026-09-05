@@ -133,14 +133,13 @@
   <main class="wrap" id="app"></main>
 
   <footer>
-    <div>本周边报共计 <b id="footTotal"></b> 篇，数据来源：<a id="footSource" target="_blank" rel="noopener noreferrer"></a>。</div>
-    <div class="note" id="footGen"></div>
+    <div id="footLine1"></div>
     <div class="note" id="footNote"></div>
   </footer>
 
   <footer class="site-footer">
     <div>AIhot · 每周 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com/weekly" target="_blank" rel="noopener">AIHOT 周报</a></div>
-    <div class="note">本文件为 AI 周报单文件成品（2026-8-30）：数据来自 AIHOT 周报页，整体替换内联 DATA 即可生成其它期周报。</div>
+    <!-- 单文件成品（2026-8-30）：数据来自 AIHOT 周报页，整体替换内联 DATA 即可生成其它期周报。 -->
   </footer>
 
 <script>
@@ -150,8 +149,10 @@ const DATA = {
     "total": 18,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.virxact.com/weekly",
-    "generatedNote": "整理时间：2026年8月30日（北京时间）；数据来源：AIHOT 周报页（https://aihot.virxact.com/weekly），按 5 个专题分组、全局连续编号 1–18，每篇可点原文跳转至 AIHOT 条目页。",
-    "footNote": "说明：本期周报由 AIHOT 周报页整理，覆盖 2026-08-17 ~ 2026-08-23（上周），由编辑系统自动综合；按「推理基础设施 / 开源模型 / 安全治理 / 垂直应用 / 智能体工具链」5 个专题分组，全局连续编号 1–18；卡片为条目在 AIHOT 的标题与来源，逐条发布时间页面未提供，故不展示。"
+    "period": "2026-08-17 ~ 2026-08-23",
+    "weekNo": "2026-W34",
+    "topic": "",
+    "generatedAt": "2026年8月30日",
   },
   "stats": [
     {
@@ -335,12 +336,31 @@ const app = document.getElementById('app');
 const nav = document.getElementById('nav');
 document.getElementById('heroDate').textContent = DATA.meta.heroDate;
 document.getElementById('heroTotal').textContent = DATA.meta.total;
-document.getElementById('footTotal').textContent = DATA.meta.total;
-const srcEl = document.getElementById('footSource');
-srcEl.textContent = DATA.meta.sourceName + '（' + DATA.meta.sourceUrl + '）';
-srcEl.href = DATA.meta.sourceUrl;
-document.getElementById('footGen').textContent = DATA.meta.generatedNote;
-document.getElementById('footNote').textContent = DATA.meta.footNote;
+/* 脚注：全部由 DATA.meta 变量 + DATA.sections 自动生成；换期只改 DATA，无需改本文案 */
+(function () {
+  const m = DATA.meta;
+  const secCount = DATA.sections.length;
+  const secNames = DATA.sections.map(function (s) { return s.label; }).join(' / ');
+
+  const l1 = document.getElementById('footLine1');
+  const b = document.createElement('b');
+  b.textContent = m.total;
+  const a = document.createElement('a');
+  a.textContent = m.sourceName + ' 周报页';
+  a.href = m.sourceUrl;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  l1.append(
+    '本期 AI 周报共收录 ', b, ' 篇，覆盖 ',
+    m.period, '（', m.weekNo, '）',
+    m.topic ? '，主题「' + m.topic + '」' : '',
+    '；整理时间 ', m.generatedAt, '（北京时间），内容整理自 ', a, '。'
+  );
+
+  document.getElementById('footNote').textContent =
+    '按「' + secNames + '」' + secCount + ' 个专题分组、全局连续编号 1–' + m.total +
+    '，每篇标题可点击跳转至 ' + m.sourceName + ' 原文条目；条目卡片仅含标题与来源，逐条发布时间源页面未提供，故未展示。';
+})();
 
 const hs = document.getElementById('heroStats');
 const sectionGrids = {};
