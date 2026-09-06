@@ -96,7 +96,7 @@
   @media (max-width:560px){.brand small{display:none}}
 
   /* 工具条：排序 + 显示条数（分类导航下方，移动端优先） */
-  .toolbar{max-width:1180px;margin:0 auto;padding:16px 20px 0;
+  .toolbar{position:sticky;top:calc(var(--navh) + var(--nav2h,52px));z-index:18;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);max-width:1180px;margin:0 auto;padding:16px 20px 0;
     display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   .ctl{appearance:none;-webkit-appearance:none;min-height:44px;font:inherit;font-size:14px;
     font-weight:700;color:var(--ink);background:#fff
