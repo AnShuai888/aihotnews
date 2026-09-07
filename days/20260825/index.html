@@ -184,14 +184,14 @@ document.getElementById('heroTotal').textContent = DATA.meta.total;
 document.getElementById('footTotal').textContent = DATA.meta.total;
 
 const srcEl = document.getElementById('footSource');
-srcEl.textContent = DATA.meta.sourceName + '（' + DATA.meta.sourceUrl + '）';
+srcEl.textContent = DATA.meta.sourceName;
 srcEl.href = DATA.meta.sourceUrl;
 
 document.getElementById('footGen').textContent =
   '数据检索时间：' + (DATA.meta.generatedAt || '—');
 
 document.getElementById('footNote').textContent =
-  '说明：卡片时间为各条目在北京时间的发布/发现时间；数据源为 AIHOT 全量公开条目池（/api/v1/items），按 2026-08-25 严格筛选。';
+  '说明：卡片时间为各条目在北京时间的发布/发现时间。';
 
 // Hero stats
 const hs = document.getElementById('heroStats');

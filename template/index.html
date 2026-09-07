@@ -232,7 +232,7 @@ const DATA = {
     total: 5,                                 // 总条数（= 五个版块 cards 之和，生成时填实际值）
     sourceName: "AIHOT",                      // 数据源名称
     sourceUrl: "https://aihot.virxact.com",   // 数据源地址
-    generatedNote: "数据检索时间：YYYY年MM月DD日 HH:MM（北京时间）；数据源为 AIHOT 全量公开条目池（/api/v1/items?mode=all&window=24h），默认按评分排序、可切换按时间排序。"
+    generatedNote: "数据检索时间：YYYY年MM月DD日 HH:MM（北京时间）；默认按评分排序、可切换按时间排序。"
   },
   // ===== 五个固定版块：顺序与 key 固定不要改动；color 与 index.html 配色一致 =====
   // count 生成时填该版块 cards.length（此处示例填 1）
@@ -270,11 +270,12 @@ document.getElementById('heroDate').textContent = DATA.meta.heroDate;
 document.getElementById('heroTotal').textContent = DATA.meta.total;
 document.getElementById('footTotal').textContent = DATA.meta.total;
 const srcEl = document.getElementById('footSource');
-srcEl.textContent = DATA.meta.sourceName + '（' + DATA.meta.sourceUrl + '）';
+/* 页脚署名：只显示来源名称（可点击跳转源站），不再裸露 URL 文本 */
+srcEl.textContent = DATA.meta.sourceName;
 srcEl.href = DATA.meta.sourceUrl;
 document.getElementById('footGen').textContent = DATA.meta.generatedNote;
 document.getElementById('footNote').textContent =
-  '说明：卡片时间为条目在北京时间的发布/发现时间（慢推信源标注「收录」）；数据源为 AIHOT 全量公开条目池（/api/v1/items?mode=all&window=24h），按时间轴倒序全局连续编号。';
+  '说明：卡片时间为条目在北京时间的发布/发现时间（慢推信源标注「收录」）；按时间轴倒序全局连续编号。';
 
 const hs = document.getElementById('heroStats');
 const sectionGrids = {};
