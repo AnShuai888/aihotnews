@@ -392,7 +392,7 @@ function renderHot() {
   const list = document.createElement('div'); list.className = 'hot-list';
   if (!ht || !ht.items.length) {
     const empty = document.createElement('div'); empty.className = 'empty';
-    empty.textContent = '暂无可用的「AI 热点榜」快照（近 48 小时抓取失败或未检索）。';
+    empty.textContent = '数据源近 48 小时暂无热点榜产出，可先浏览下方分类资讯。';
     list.appendChild(empty);
   } else {
     ht.items.forEach(it => {
