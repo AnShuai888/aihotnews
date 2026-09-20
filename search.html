@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIhot · 搜索 AI 热点</title>
+<meta name="description" content="跨全部历史 AI 日报检索，按关键词与分类筛选，快速找到你关心的内容。">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="inner">
+    <a class="brand" href="/">AIhot<small>每日 AI 热点</small></a>
+    <div class="nav-links">
+      <a href="/">首页</a>
+      <a href="/search.html" class="active">搜索</a>
+      <a href="/about/">关于</a>
+      <a href="/contact/">联系</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero hero-search">
+  <p class="kicker">全站检索 · SEARCH</p>
+  <h1>搜索 AI 热点</h1>
+  <p class="lead">跨全部历史日报，按标题、摘要、来源检索，支持按分类筛选。</p>
+  <div class="search-box">
+    <input id="q" type="search" placeholder="输入关键词，如：GPT、机器人、开源、Agent…" autocomplete="off">
+  </div>
+  <div class="filters" id="filters">
+    <button class="chip active" data-label="">全部</button>
+    <button class="chip" data-label="模型发布/更新">模型</button>
+    <button class="chip" data-label="产品发布/更新">产品</button>
+    <button class="chip" data-label="行业动态">行业</button>
+    <button class="chip" data-label="论文研究">论文</button>
+    <button class="chip" data-label="技巧与观点">技巧</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="result-meta" class="result-meta">正在加载数据…</div>
+  <div class="news-grid" id="results"></div>
+  <div id="empty" class="empty" hidden>没有匹配的结果，换个关键词或分类试试。</div>
+</main>
+
+<footer class="site-footer">
+  <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com" target="_blank" rel="noopener">AIHOT</a></div>
+  <div class="note">本站为静态站点，检索在浏览器本地完成，不会上传你的查询。</div>
+</footer>
+
+<script>
+const STATE = { q: "", label: "" };
+let ARCH = null;
+const $ = (s) => document.querySelector(s);
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+
+function card(it) {
+  return '<a class="news-card" style="--c:' + esc(it.color) + '" href="/days/' + esc(it.date) + '/">' +
+    '<div class="nc-top"><span class="nc-cat">' + esc(it.sectionLabel) + '</span>' +
+    '<span class="nc-score">★ ' + it.score + '</span></div>' +
+    '<div class="nc-title">' + esc(it.title) + '</div>' +
+    '<div class="nc-summary">' + esc(it.summary) + '</div>' +
+    '<div class="nc-foot"><span class="nc-src">' + esc(it.source) + '</span>' +
+    '<span class="nc-date">' + esc(it.date) + '</span>' +
+    '<span class="nc-link">查看当日 →</span></div></a>';
+}
+
+function render() {
+  if (!ARCH) return;
+  const q = STATE.q.trim().toLowerCase();
+  const label = STATE.label;
+  let list = ARCH.items;
+  if (label) list = list.filter((x) => x.sectionLabel === label);
+  if (q) {
+    list = list.filter((x) =>
+      (x.title || "").toLowerCase().includes(q) ||
+      (x.summary || "").toLowerCase().includes(q) ||
+      (x.source || "").toLowerCase().includes(q) ||
+      (x.sectionLabel || "").toLowerCase().includes(q));
+  }
+  list = list.slice().sort((a, b) =>
+    a.date === b.date ? b.score - a.score : (a.date < b.date ? 1 : -1));
+  const MAX = 200;
+  const shown = list.slice(0, MAX);
+  $("#results").innerHTML = shown.map(card).join("");
+  $("#result-meta").textContent =
+    "匹配 " + list.length + " 条" + (list.length > MAX ? "（仅显示前 " + MAX + " 条）" : "");
+  $("#empty").hidden = list.length !== 0;
+}
+
+fetch("/assets/archive.json")
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((d) => {
+    ARCH = d;
+    $("#result-meta").textContent = "共 " + d.total + " 条历史资讯，输入关键词开始检索";
+    render();
+  })
+  .catch((e) => {
+    $("#results").innerHTML = "";
+    $("#result-meta").textContent =
+      "加载数据失败：请通过站点 http 访问（直接以 file:// 打开本页无法读取 archive.json）。";
+  });
+
+$("#q").addEventListener("input", (e) => { STATE.q = e.target.value; render(); });
+$("#filters").addEventListener("click", (e) => {
+  const b = e.target.closest(".chip");
+  if (!b) return;
+  STATE.label = b.dataset.label || "";
+  Array.prototype.forEach.call($("#filters").children, (c) =>
+    c.classList.toggle("active", c === b));
+  render();
+});
+</script>
+</body>
+</html>
