@@ -1,6 +1,6 @@
 :root{
   --brand-1:#4f46e5; --brand-2:#7c3aed; --brand-3:#0ea5e9;
-  --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb;
+  --bg:#eef1f7; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280; --line:#dbe1ec;
   --radius:16px;
   --shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
   --maxw:1400px;
@@ -60,19 +60,28 @@ img{max-width:100%}
 .news-card{position:relative;display:flex;flex-direction:column;gap:9px;background:var(--panel);
   border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;overflow:hidden;
   box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
-.news-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c,var(--brand-1))}
+.news-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c,var(--brand-1))}
 .news-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(16,24,40,.12)}
 .news-card .nc-top{display:flex;align-items:center;gap:8px;font-size:12px}
-.news-card .nc-cat{font-weight:700;color:var(--c,var(--brand-1));
-  background:color-mix(in srgb,var(--c,var(--brand-1)) 14%,#fff);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.news-card .nc-cat{font-weight:700;color:var(--c-ink,var(--muted));
+  background:var(--c-bg,#f1f3f8);border-radius:999px;padding:2px 10px;white-space:nowrap}
 .news-card .nc-score{margin-left:auto;font-weight:800;color:var(--c,var(--brand-1));white-space:nowrap}
-.news-card .nc-title{font-size:15.5px;font-weight:700;line-height:1.4;color:var(--ink)}
+.news-card .nc-title{font-size:16px;font-weight:700;line-height:1.4;color:var(--ink)}
 .news-card .nc-summary{font-size:13px;color:var(--muted);line-height:1.55;
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .news-card .nc-foot{display:flex;align-items:center;gap:8px;margin-top:2px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
-.news-card .nc-src{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
-.news-card .nc-date{white-space:nowrap}
+.news-card .nc-src{background:#f1f3f8;border:1px solid #dfe4ef;color:#4b5563;border-radius:999px;padding:2px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
+.news-card .nc-date{white-space:nowrap;color:#9ca3af}
 .news-card .nc-link{margin-left:auto;font-weight:700;color:var(--brand-1);white-space:nowrap}
+/* 首条大卡（本周精选编辑化版式） */
+.news-card.lead{grid-column:1/-1;padding:20px 22px;gap:12px}
+.news-card.lead .nc-top{font-size:13px}
+.news-card.lead .nc-title{font-size:18px;line-height:1.45}
+.news-card.lead .nc-summary{-webkit-line-clamp:4}
+/* 次级紧凑小卡（不显示摘要，标题两行齐平） */
+.news-card.compact .nc-title{-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+.news-card.compact .nc-summary{display:none}
+.news-card.compact .nc-foot{margin-top:auto}
 
 /* ===== 每周周报（与日报区分：紫色调） ===== */
 .sec-head.weekly .bar{background:var(--brand-2)}

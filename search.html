@@ -53,6 +53,15 @@ const STATE = { q: "", label: "" };
 let ARCH = null;
 const $ = (s) => document.querySelector(s);
 
+// 分类 → [左色条/评分色, 胶囊底色, 胶囊文字色]，与首页策展共用同一配色
+const CAT = {
+  "模型发布/更新": ["#6366f1", "#eef0fe", "#4338ca"],
+  "产品发布/更新": ["#10b981", "#e7f8f1", "#047857"],
+  "行业动态":     ["#f59e0b", "#fef6e7", "#b45309"],
+  "论文研究":     ["#3b82f6", "#eaf2fe", "#1d4ed8"],
+  "技巧与观点":   ["#8b5cf6", "#f3effe", "#6d28d9"]
+};
+
 function esc(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
@@ -60,7 +69,8 @@ function esc(s) {
 }
 
 function card(it) {
-  return '<a class="news-card" style="--c:' + esc(it.color) + '" href="/days/' + esc(it.date) + '/">' +
+  const cc = CAT[it.sectionLabel] || ["#6366f1", "#f1f3f8", "#6b7280"];
+  return '<a class="news-card" style="--c:' + cc[0] + ';--c-bg:' + cc[1] + ';--c-ink:' + cc[2] + '" href="/days/' + esc(it.date) + '/">' +
     '<div class="nc-top"><span class="nc-cat">' + esc(it.sectionLabel) + '</span>' +
     '<span class="nc-score">★ ' + it.score + '</span></div>' +
     '<div class="nc-title">' + esc(it.title) + '</div>' +
