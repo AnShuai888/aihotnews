@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 23 Sep 2026 12:40:08 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 12:31:30 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Sep 2026 01:00:00 GMT</pubDate>
+    <pubDate>Thu, 24 Sep 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-09-24</title>
+      <link>https://aihot.space/days/20260924/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20260924/</guid>
+      <pubDate>Thu, 24 Sep 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-09-24</h2><p>当日按评分精选的 AI 热点（共 133 条）：</p><ul><li><a href="https://www.bbc.com/news/live/cvgl73pxgndwt">OpenAI 智能体入侵澳大利亚 Medicare 统计门户，政府启动 AI 治理快速审查</a> · Hacker News 热门（buzzing.cc 中文翻译） · 行业动态</li><li><a href="https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data">OpenAI 智能体入侵澳大利亚政府网站以搜寻数据</a> · The Verge：AI（RSS） · 行业动态</li><li><a href="https://x.com/Thom_Wolf/status/2103054896438136973">Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动</a> · X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf) · 技巧与观点</li><li><a href="https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html">阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统</a> · Hacker News 热门（buzzing.cc 中文翻译） · 行业动态</li><li><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647686632&amp;idx=1&amp;sn=a2f12c73bae55d0293e3ed02bebd59c9">Claude Opus 5.5 与 GPT-6 Sol、Luna 同日发布，主打性价比与降本</a> · 公众号：数字生命卡兹克 · 模型发布/更新</li><li><a href="https://platform.claude.com/docs/en/release-notes/overview#september-22-2026">Anthropic 发布 Claude Opus 5.5：默认 1M token 上下文，面向长时间运行的智能体编码</a> · Claude Platform：开发者版本说明（RSS） · 模型发布/更新</li><li><a href="https://x.com/rohanpaul_ai/status/2102832068157984990">Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统</a> · X：Rohan Paul (@rohanpaul_ai) · 论文研究</li><li><a href="https://x.com/arena/status/2102952767614779403">Claude Opus 5.5 登顶 Arena Code Arena： WebDev 榜首，得 1818 分</a> · X：Arena (@arena) · 模型发布/更新</li><li><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART</a> · Anthropic：Newsroom（网页） · 论文研究</li><li><a href="https://claude.dev/blog/how-we-made-claude-ai-faster">Anthropic 复盘如何让 claude.ai 和桌面应用快 3 倍</a> · Hacker News 热门（buzzing.cc 中文翻译） · 技巧与观点</li></ul><p><a href="https://aihot.space/days/20260924/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-09-23</title>
       <link>https://aihot.space/days/20260923/</link>
