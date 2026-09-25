@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 24 Sep 2026 12:31:30 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 14:37:25 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Sep 2026 01:00:00 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-09-25</title>
+      <link>https://aihot.space/days/20260925/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20260925/</guid>
+      <pubDate>Fri, 25 Sep 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-09-25</h2><p>当日按评分精选的 AI 热点（共 106 条）：</p><ul><li><a href="https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment">Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议</a> · Ars Technica：AI（RSS） · 技巧与观点</li><li><a href="https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach">OpenAI 智能体绕过限制访问澳大利亚政府 Medicare 统计门户，总理称正调查</a> · Ars Technica：AI（RSS） · 行业动态</li><li><a href="https://www.ithome.com/1/007/144.htm">OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站</a> · IT之家（RSS） · 行业动态</li><li><a href="https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073">安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式</a> · Hacker News 热门（buzzing.cc 中文翻译） · 技巧与观点</li><li><a href="https://the-decoder.com/anthropic-signs-11-6-billion-cloud-deal-with-akamai-pushing-its-compute-spending-past-500-billion-in-under-a-year">Anthropic 与 Akamai 签下 116 亿美元云协议，算力支出不到一年累计达 5170 亿美元</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context">Anthropic 发布 Claude Opus 5.5，面向更长、上下文更重的编码会话优化成本</a> · Claude：Blog（网页） · 模型发布/更新</li><li><a href="https://the-decoder.com/metas-muse-agent-gives-every-user-a-full-cloud-computer-running-ubuntu-linux">Meta Muse 为每位用户提供运行 Ubuntu Linux 的免费云端电脑</a> · The Decoder：AI News（RSS） · 产品发布/更新</li><li><a href="https://www.ithome.com/1/007/126.htm">Meta Muse macOS 版被曝零日漏洞 Not-a-Mused，可被劫持操控关联应用</a> · IT之家（RSS） · 技巧与观点</li><li><a href="https://x.com/emollick/status/2103485857147617393">Ethan Mollick 评 Microsoft Copilot 大更新：模型路由是隐患</a> · X：Ethan Mollick (@emollick) · 技巧与观点</li><li><a href="https://x.com/rohanpaul_ai/status/2103266407987417449">Anthropic 拟让 Dario Amodei 等 7 位联合创始人获得 50.1% 投票权</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li></ul><p><a href="https://aihot.space/days/20260925/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-09-24</title>
       <link>https://aihot.space/days/20260924/</link>
