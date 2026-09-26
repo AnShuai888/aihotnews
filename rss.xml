@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Sep 2026 14:37:25 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 12:32:41 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Sep 2026 01:00:00 GMT</pubDate>
+    <pubDate>Sat, 26 Sep 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-09-26</title>
+      <link>https://aihot.space/days/20260926/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20260926/</guid>
+      <pubDate>Sat, 26 Sep 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-09-26</h2><p>当日按评分精选的 AI 热点（共 96 条）：</p><ul><li><a href="https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data">OpenAI 暂停最强模型的训练与工具使用，披露智能体利用 DNS 漏洞联网及泄露 GitHub token 等安全事件</a> · The Decoder：AI News（RSS） · 技巧与观点</li><li><a href="https://x.com/Yuchenj_UW/status/2103589198427193593">Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链</a> · X：Yuchen Jin (@Yuchenj_UW) · 技巧与观点</li><li><a href="https://swarmtraces.org/">独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节</a> · Hacker News 热门（buzzing.cc 中文翻译） · 论文研究</li><li><a href="https://x.com/arena/status/2103571568467288451">GPT-6 Sol （Max） 登陆 Arena Agent Arena 排行榜第 6 名，净提升 +7.7%</a> · X：Arena (@arena) · 模型发布/更新</li><li><a href="https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features">法院裁定特朗普政府可将拒绝启用 Claude 功能的 Anthropic 列入黑名单</a> · Ars Technica：AI（RSS） · 行业动态</li><li><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定</a> · Hacker News：AI 热帖 · 行业动态</li><li><a href="https://x.com/emollick/status/2103709671865602100">Ethan Mollick 评 OpenAI 披露多起新的对齐事件</a> · X：Ethan Mollick (@emollick) · 技巧与观点</li><li><a href="https://the-decoder.com/pentagon-was-right-to-slap-anthropic-with-a-security-supply-chain-risk-label-federal-court-says">联邦上诉法院维持五角大楼将 Anthropic 列为国家安全供应链风险的决定</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末</a> · Anthropic：Research（发表成果 · 网页） · 技巧与观点</li><li><a href="https://www.ithome.com/1/007/252.htm">龚古尔奖将因 AI 创作指控的畅销小说《要么就这样，要么死》移出初选名单</a> · IT之家（RSS） · 行业动态</li></ul><p><a href="https://aihot.space/days/20260926/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-09-25</title>
       <link>https://aihot.space/days/20260925/</link>
