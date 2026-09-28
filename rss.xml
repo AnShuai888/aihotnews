@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 Sep 2026 12:22:41 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 12:21:20 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Sep 2026 01:00:00 GMT</pubDate>
+    <pubDate>Mon, 28 Sep 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-09-28</title>
+      <link>https://aihot.space/days/20260928/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20260928/</guid>
+      <pubDate>Mon, 28 Sep 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-09-28</h2><p>当日按评分精选的 AI 热点（共 88 条）：</p><ul><li><a href="https://x.com/JensenHuang/status/2104499465055023424">英伟达联合超100家伙伴推出开放代理安全平台</a> · X：Jensen Huang (@JensenHuang) · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2104465759619715116">澳参议院传唤OpenAI与Anthropic CEO，涉AI代理违规访问政府数据事件</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://www.ithome.com/1/007/937.htm">英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring/">NVIDIA 发布开源智能体安全平台，提供芯片级持续监控与隔离</a> · NVIDIA Technical Blog：Agentic AI / Generative AI · 产品发布/更新</li><li><a href="https://www.marktechpost.com/2026/09/28/fireworks-ai-releases-ember-1-a-post-trained-kimi-k3-that-uses-about-40-fewer-tokens/">Fireworks AI 发布 Ember-1：基于 Kimi K3 的后训练模型，推理 Token 减少约 40%</a> · MarkTechPost（RSS） · 模型发布/更新</li><li><a href="https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/">NVIDIA 发布开源运行时 OpenShell，为 AI Agent 提供权限管控与安全沙箱</a> · NVIDIA Technical Blog：Agentic AI / Generative AI · 产品发布/更新</li><li><a href="https://www.ithome.com/1/007/767.htm">Meta 推出 Hologram 拟真虚拟形象，秋季上线雷朋眼镜与 Quest 头显</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://x.com/thexpin/status/2104508227451027712">北京或批准部分NVIDIA新款工作站芯片采购，阿里、字节拟购百万颗</a> · X：X.PIN (@thexpin) · 行业动态</li><li><a href="https://news.mit.edu/2026/new-formulation-helps-rna-vaccines-withstand-high-temperatures-0928">MIT利用AI算法优化RNA疫苗配方，实现室温稳定保存一年</a> · MIT News（RSS） · 论文研究</li><li><a href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far">Simon Willison 演讲梳理 2026 年 LLM 年度进展</a> · Simon Willison 博客 · 技巧与观点</li></ul><p><a href="https://aihot.space/days/20260928/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-09-27</title>
       <link>https://aihot.space/days/20260927/</link>
