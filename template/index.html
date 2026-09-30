@@ -398,7 +398,7 @@ function cardEl(card, displayNum, color) {
     chip.textContent = '来源 · ' + card.source;
     meta.appendChild(chip);
   }
-  if (card.score !== null && card.score !== undefined) {
+  if (card.score > 0) {
     const sc = document.createElement('span'); sc.className = 'score-badge';
     sc.textContent = '评分 ' + card.score;
     meta.appendChild(sc);
