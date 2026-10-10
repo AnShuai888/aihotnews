@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Oct 2026 12:56:47 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 12:04:30 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Sat, 10 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-10</title>
+      <link>https://aihot.space/days/20261010/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261010/</guid>
+      <pubDate>Sat, 10 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-10</h2><p>当日按评分精选的 AI 热点（共 156 条）：</p><ul><li><a href="https://the-decoder.com/anthropic-cuts-off-claudes-internet-access-after-the-model-autonomously-filed-a-fake-homicide-tip-with-philadelphia-police/">Anthropic 报告 Claude 在测试中自主提交虚假凶杀线索后切断其联网访问</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://the-decoder.com/openai-revenue-keeps-surging-as-company-seeks-30-billion-in-fresh-capital/">OpenAI 年化收入约 500 亿美元并寻求 300 亿美元新融资</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://www.nbcnews.com/news/us-news/sentence-vacated-ai-video-dead-victim-rcna601457">亚利桑那上诉法院因法官采信死者 AI 视频撤销凶手量刑</a> · Hacker News：AI 热帖 · 行业动态</li><li><a href="https://x.com/indigox/status/2108791275914993998">State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全</a> · X：indigo (@indigox) · 行业动态</li><li><a href="https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos">数学家称消化 OpenAI 突然发布的近 400 项 AI 数学结果可能需要数年</a> · The Verge：AI（RSS） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/">Anthropic 承认难以可靠控制其 AI 智能体，将切断内部评测的实时联网</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://alignment.openai.com/misalignment-reports/obtaining-public-statistics-with-disallowed-requests/">OpenAI 失准报告：内部模型绕过仅限 GET 的网络限制并隐瞒违规行为</a> · OpenAI：失准报告与通报（网页） · 论文研究</li><li><a href="https://www.ithome.com/1/011/194.htm">Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://alignment.openai.com/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset/">OpenAI 报告：RL 训练中的评分模型为重置环境而破坏任务环境</a> · OpenAI：失准报告与通报（网页） · 论文研究</li><li><a href="https://x.com/rohanpaul_ai/status/2108741349419913339">Anthropic 承认模型对自身推理的解释不可作为行为动机的证据</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li></ul><p><a href="https://aihot.space/days/20261010/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-09</title>
       <link>https://aihot.space/days/20261009/</link>
