@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-10-11 18:56",
- "total": 8363,
+ "generatedAt": "2026-10-11 20:58",
+ "total": 8368,
  "items": [
   {
    "date": "2026-10-11",
-   "num": 31,
+   "num": 36,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -18,7 +18,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 2,
+   "num": 7,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -32,7 +32,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 23,
+   "num": 28,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -46,7 +46,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 16,
+   "num": 21,
    "section": "tips",
    "sectionLabel": "技巧与观点",
    "color": "#8b5cf6",
@@ -60,7 +60,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 15,
+   "num": 20,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -74,7 +74,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 34,
+   "num": 39,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -88,7 +88,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 43,
+   "num": 48,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -102,7 +102,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 49,
+   "num": 54,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -116,7 +116,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 8,
+   "num": 13,
    "section": "models",
    "sectionLabel": "模型发布/更新",
    "color": "#6366f1",
@@ -130,7 +130,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 21,
+   "num": 26,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -144,7 +144,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 27,
+   "num": 32,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -158,7 +158,35 @@
   },
   {
    "date": "2026-10-11",
-   "num": 42,
+   "num": 1,
+   "section": "tips",
+   "sectionLabel": "技巧与观点",
+   "color": "#8b5cf6",
+   "title": "哈佛 2026 秋季 CS2680〈现代 AI 系统〉课程深度解读：从 Agent Loop 到推理引擎",
+   "source": "X：邵猛 (@shao__meng)",
+   "time": "10月11日 20:29（收录）",
+   "summary": "作者解读哈佛大学 2026 年秋季研究生课程 CS2680「Modern AI Systems: Agents and…",
+   "score": 63,
+   "original": "https://x.com/shao__meng/status/2109255026631983170",
+   "aihot": "https://aihot.news/items/jysqb7nmywh0qi1o4lkhe9mjo"
+  },
+  {
+   "date": "2026-10-11",
+   "num": 2,
+   "section": "tips",
+   "sectionLabel": "技巧与观点",
+   "color": "#8b5cf6",
+   "title": "有人逆向拆解了 ChatGPT Intelligent UI 的工作原理",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "time": "10月11日 20:29（收录）",
+   "summary": "有人逆向工程了 ChatGPT 新推出的 Generative UI（Intelligent UI）的架构。其工作方式…",
+   "score": 60,
+   "original": "https://x.com/rohanpaul_ai/status/2109256090173190542",
+   "aihot": "https://aihot.news/items/t2lvdezwdnqv6utzq23e5ypz8"
+  },
+  {
+   "date": "2026-10-11",
+   "num": 47,
    "section": "models",
    "sectionLabel": "模型发布/更新",
    "color": "#6366f1",
@@ -172,7 +200,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 12,
+   "num": 17,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -186,7 +214,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 22,
+   "num": 27,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -200,7 +228,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 39,
+   "num": 44,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -214,7 +242,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 25,
+   "num": 30,
    "section": "papers",
    "sectionLabel": "论文研究",
    "color": "#3b82f6",
@@ -228,7 +256,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 33,
+   "num": 38,
    "section": "papers",
    "sectionLabel": "论文研究",
    "color": "#3b82f6",
@@ -242,7 +270,21 @@
   },
   {
    "date": "2026-10-11",
-   "num": 44,
+   "num": 4,
+   "section": "tips",
+   "sectionLabel": "技巧与观点",
+   "color": "#8b5cf6",
+   "title": "The Verge 记者实测在 M5 Ultra Mac Studio 上用 Hermes Agent 玩转本地 AI",
+   "source": "The Verge：AI（RSS）",
+   "time": "10月11日 19:33（收录）",
+   "summary": "The Verge 作者在 256GB 统一内存的 M5 Ultra Mac Studio 上安装开源自托管智能体应用…",
+   "score": 55,
+   "original": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+   "aihot": "https://aihot.news/items/ytqnzd69p2k3mytkw0fqw9inb"
+  },
+  {
+   "date": "2026-10-11",
+   "num": 49,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -256,7 +298,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 24,
+   "num": 29,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -270,7 +312,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 30,
+   "num": 35,
    "section": "papers",
    "sectionLabel": "论文研究",
    "color": "#3b82f6",
@@ -284,7 +326,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 14,
+   "num": 19,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -298,7 +340,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 1,
+   "num": 6,
    "section": "papers",
    "sectionLabel": "论文研究",
    "color": "#3b82f6",
@@ -312,7 +354,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 40,
+   "num": 45,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -326,7 +368,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 35,
+   "num": 40,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -340,7 +382,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 13,
+   "num": 18,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -354,7 +396,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 37,
+   "num": 42,
    "section": "papers",
    "sectionLabel": "论文研究",
    "color": "#3b82f6",
@@ -368,7 +410,21 @@
   },
   {
    "date": "2026-10-11",
-   "num": 18,
+   "num": 5,
+   "section": "papers",
+   "sectionLabel": "论文研究",
+   "color": "#3b82f6",
+   "title": "亚马逊论文：LLM 可当研究世界模型预测实验结果",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "time": "10月11日 19:27（收录）",
+   "summary": "亚马逊新论文提出用 LLM 充当\"研究世界模型\"，在实验开跑前预测训练改动的收益。基于 9 个设置、2653 条真实实…",
+   "score": 45,
+   "original": "https://x.com/rohanpaul_ai/status/2109243398628708619",
+   "aihot": "https://aihot.news/items/k9porzhfk6z3l01r3kxrb9piv"
+  },
+  {
+   "date": "2026-10-11",
+   "num": 23,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -382,7 +438,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 46,
+   "num": 51,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -396,7 +452,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 11,
+   "num": 16,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -410,7 +466,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 9,
+   "num": 14,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -424,7 +480,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 6,
+   "num": 11,
    "section": "models",
    "sectionLabel": "模型发布/更新",
    "color": "#6366f1",
@@ -438,7 +494,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 5,
+   "num": 10,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -452,7 +508,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 45,
+   "num": 50,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -466,7 +522,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 38,
+   "num": 43,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -480,7 +536,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 4,
+   "num": 9,
    "section": "models",
    "sectionLabel": "模型发布/更新",
    "color": "#6366f1",
@@ -494,7 +550,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 7,
+   "num": 12,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -508,7 +564,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 26,
+   "num": 31,
    "section": "tips",
    "sectionLabel": "技巧与观点",
    "color": "#8b5cf6",
@@ -522,7 +578,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 41,
+   "num": 46,
    "section": "models",
    "sectionLabel": "模型发布/更新",
    "color": "#6366f1",
@@ -536,7 +592,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 47,
+   "num": 52,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -550,7 +606,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 29,
+   "num": 34,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -564,7 +620,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 32,
+   "num": 37,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -578,7 +634,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 48,
+   "num": 53,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -592,7 +648,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 28,
+   "num": 33,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -606,7 +662,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 19,
+   "num": 24,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -620,7 +676,21 @@
   },
   {
    "date": "2026-10-11",
-   "num": 10,
+   "num": 3,
+   "section": "industry",
+   "sectionLabel": "行业动态",
+   "color": "#f59e0b",
+   "title": "Grok @Bot 获妮琪·米娜盛赞",
+   "source": "X：Elon Musk (@elonmusk, xAI)",
+   "time": "10月11日 20:00（收录）",
+   "summary": "试试 Grok @Bot！",
+   "score": 26,
+   "original": "https://x.com/elonmusk/status/2109250878247195075",
+   "aihot": "https://aihot.news/items/zb3jl9gh6zkkrcnkhoz6sq7fl"
+  },
+  {
+   "date": "2026-10-11",
+   "num": 15,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -634,7 +704,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 3,
+   "num": 8,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -648,7 +718,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 17,
+   "num": 22,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
@@ -662,7 +732,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 20,
+   "num": 25,
    "section": "industry",
    "sectionLabel": "行业动态",
    "color": "#f59e0b",
@@ -676,7 +746,7 @@
   },
   {
    "date": "2026-10-11",
-   "num": 36,
+   "num": 41,
    "section": "products",
    "sectionLabel": "产品发布/更新",
    "color": "#10b981",
