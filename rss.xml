@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 13 Oct 2026 11:06:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 11:00:00 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-14</title>
+      <link>https://aihot.space/days/20261014/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261014/</guid>
+      <pubDate>Wed, 14 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-14</h2><p>当日按评分精选的 AI 热点（共 186 条）：</p><ul><li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/">Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型</a> · Google Blog：AI（RSS） · 模型发布/更新</li><li><a href="https://deepmind.google/blog/introducing-gemini-4-argon/">Google DeepMind 发布 Gemini 4 Argon，全球上线 API、Gemini 应用和 Antigravity</a> · Google DeepMind：Blog（RSS） · 模型发布/更新</li><li><a href="https://x.com/ArtificialAnlys/status/2110068185793970576">Gemini 4 Argon 正式 GA，智能指数追平 GPT-6 Astra，Cost per Task 仅为 60%</a> · X：Artificial Analysis (@ArtificialAnlys) · 模型发布/更新</li><li><a href="https://x.com/rohanpaul_ai/status/2110203596948353155">Xbow 用 GPT-5.6 挖出 Chrome 三个漏洞，获 Google 25 万美元全链奖励</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://ai.google.dev/gemini-api/docs/changelog#10-13-2026">Gemini 4 Argon (gemini-4-argon) 正式发布 GA</a> · Gemini API：更新日志（网页） · 模型发布/更新</li><li><a href="https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/">Character.ai 破产文件显示 AI 商业模式难以为继</a> · 404 Media（RSS） · 行业动态</li><li><a href="https://x.com/reach_vb/status/2110086935733833893">XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金</a> · X：Vaibhav Srivastav（OpenAI）(@reach_vb) · 行业动态</li><li><a href="https://the-decoder.com/character-ai-will-shut-down-if-no-buyer-emerges-capping-a-fall-from-2-7-billion-google-deal-to-bankruptcy/">Character.ai 申请破产待售，无买家则将关停</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://x.com/dongxi_nlp/status/2110157167399485848">OpenAI 沙特籍员工在高管会议室安装录音设备被捕</a> · X：马东锡 NLP (@dongxi_nlp) · 行业动态</li><li><a href="https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/">Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析</a> · Johann Rehberger / Embrace The Red（RSS） · 论文研究</li></ul><p><a href="https://aihot.space/days/20261014/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-13</title>
       <link>https://aihot.space/days/20261013/</link>
