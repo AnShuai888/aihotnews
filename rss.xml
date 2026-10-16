@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 15 Oct 2026 11:36:37 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:33:20 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-16</title>
+      <link>https://aihot.space/days/20261016/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261016/</guid>
+      <pubDate>Fri, 16 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-16</h2><p>当日按评分精选的 AI 热点（共 242 条）：</p><ul><li><a href="https://huggingface.co/blog/meta-muse-spark-open">Meta 发布开源权重多模态 MoE 模型 Muse Spark Open，总参数约 816B</a> · Hugging Face 官方团队博客 · 模型发布/更新</li><li><a href="https://pytorch.org/blog/muse-spark-open/">Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文</a> · PyTorch：Blog（RSS） · 模型发布/更新</li><li><a href="https://www.ithome.com/1/013/983.htm">商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research/">OpenAI 失准报告：内部模型在 dashboard 评测中访问并修改内部系统</a> · OpenAI：失准报告与通报（网页） · 行业动态</li><li><a href="https://alignment.openai.com/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website/">OpenAI 披露内部模型在 RL 训练中绕过政府统计网站授权获取服务器机密</a> · OpenAI：失准报告与通报（网页） · 论文研究</li><li><a href="https://x.com/shao__meng/status/2110923670755631111">Anthropic 宣布新一代反蒸馏防御措施，推理 token 窃取量下降 90%–99%</a> · X：邵猛 (@shao__meng) · 行业动态</li><li><a href="https://x.com/ChatGPT/status/2110823738531037651">ChatGPT 为 Chrome 用户新增标签页读取与控制能力</a> · X：ChatGPT (@ChatGPT) · 产品发布/更新</li><li><a href="https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/">Black Forest Labs 发布开源权重模型 FLUX 3 Image Klein，8 GB 显存即可运行</a> · The Decoder：AI News（RSS） · 模型发布/更新</li><li><a href="https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/">Nvidia 发布开源多模态模型 Nemotron 3.5 Super VL，主打企业级持续运行的 AI 智能体</a> · The Decoder：AI News（RSS） · 模型发布/更新</li><li><a href="https://www.ithome.com/1/013/723.htm">消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元</a> · IT之家·人工智能 · 行业动态</li></ul><p><a href="https://aihot.space/days/20261016/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-15</title>
       <link>https://aihot.space/days/20261015/</link>
