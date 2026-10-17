@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 16 Oct 2026 12:33:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 12:55:04 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Sat, 17 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-17</title>
+      <link>https://aihot.space/days/20261017/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261017/</guid>
+      <pubDate>Sat, 17 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-17</h2><p>当日按评分精选的 AI 热点（共 155 条）：</p><ul><li><a href="https://x.com/arena/status/2111221323217412318">Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一</a> · X：Arena (@arena) · 模型发布/更新</li><li><a href="https://www.ithome.com/1/014/214.htm">OpenAI 更新 ChatGPT for Chrome 扩展：可读取多标签页并在 Work 模式下操作浏览器</a> · IT之家·人工智能 · 产品发布/更新</li><li><a href="https://the-decoder.com/chatgpt-becomes-a-full-chrome-browser-assistant-that-reads-and-acts-on-your-open-tabs/">ChatGPT Chrome 扩展升级为浏览器助手，可读取并操作打开的标签页</a> · The Decoder：AI News（RSS） · 产品发布/更新</li><li><a href="https://x.com/shao__meng/status/2111268686103494921">商务部科技部第48号公告拟管制AI技术出口，开源模型出口豁免与合规路径解读</a> · X：邵猛 (@shao__meng) · 行业动态</li><li><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Anthropic 用 Claude 揭开 NIST ECDSA 曲线种子来源之谜</a> · Anthropic：Research（发表成果 · 网页） · 论文研究</li><li><a href="https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/">DeepSeek 发布 V4.1-Flash-1017：智能体任务超越更大对手，成本再降，并首次开放自研搜索 API</a> · The Decoder：AI News（RSS） · 模型发布/更新</li><li><a href="https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/">DeepSeek 发布 V4.1-Flash-1017，DeepSWE 得分 77.0 并开放 Search API</a> · MarkTechPost（RSS） · 模型发布/更新</li><li><a href="https://the-decoder.com/china-plans-to-tighten-export-controls-on-open-weight-models-and-23-key-ai-technologies/">中国拟收紧开源权重模型及 23 项关键 AI 技术出口管制</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://www.anthropic.com/research/employment-at-anthropic">Anthropic 报告：AI 如何改变公司内部的雇佣与工作组织</a> · Anthropic：Research（发表成果 · 网页） · 论文研究</li><li><a href="https://the-decoder.com/china-tightens-export-controls-on-open-weight-models-and-23-key-ai-technologies/">中国拟限制大模型权重及 23 项 AI 技术出口，开源发布可走快速许可</a> · The Decoder：AI News（RSS） · 行业动态</li></ul><p><a href="https://aihot.space/days/20261017/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-16</title>
       <link>https://aihot.space/days/20261016/</link>
