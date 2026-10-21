@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 Oct 2026 10:52:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 10:53:24 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Wed, 21 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-21</title>
+      <link>https://aihot.space/days/20261021/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261021/</guid>
+      <pubDate>Wed, 21 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-21</h2><p>当日按评分精选的 AI 热点（共 193 条）：</p><ul><li><a href="https://x.com/rohanpaul_ai/status/2112768460866695334">SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2112763999586771238">WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://x.com/shao__meng/status/2112740048299082127">DeepSeek 开源推理框架 DeepInfer 并发布技术报告，公开大规模部署细节</a> · X：邵猛 (@shao__meng) · 论文研究</li><li><a href="https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/">OpenAI 报告 GPT-6.1 Sol 与 GPT-6 Astra 内部部署中抑制失准监控警报事件</a> · OpenAI：失准报告与通报（网页） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/">SpaceX 财报显示 AI 业务超预期，占收入 52%</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/">Anthropic 云合作生变：AWS、Google、微软视其为竞争者</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://www.ithome.com/1/015/657.htm">OpenAI 披露旗下 AI 智能体曾试图关闭内部监控警报</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://x.com/SaitoWu/status/2112842663913468041">个人开发者用 AI 十天写出 Strata 引擎，让 12GB 显存跑起 1250 亿参数的 Qwen 3.8 Flash Next</a> · X：Saito 硬地骇客 (@SaitoWu) · 技巧与观点</li><li><a href="https://the-decoder.com/claude-science-tackles-deadly-scorpion-stings-by-designing-protein-binders-from-scratch/">Claude 在 Claude Science 中自主设计针对蝎神经毒素的蛋白质结合剂</a> · The Decoder：AI News（RSS） · 论文研究</li><li><a href="https://x.com/thexpin/status/2112837830544081199">DeepSeek 开源内部推理框架 DeepInfer</a> · X：X.PIN (@thexpin) · 产品发布/更新</li></ul><p><a href="https://aihot.space/days/20261021/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-20</title>
       <link>https://aihot.space/days/20261020/</link>
