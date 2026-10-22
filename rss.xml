@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 21 Oct 2026 10:53:24 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 11:56:57 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Thu, 22 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-22</title>
+      <link>https://aihot.space/days/20261022/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261022/</guid>
+      <pubDate>Thu, 22 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-22</h2><p>当日按评分精选的 AI 热点（共 176 条）：</p><ul><li><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687466&amp;idx=1&amp;sn=ba7ba0f3ca50ef789c17b179dd061f60">卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月</a> · 公众号：数字生命卡兹克 · 行业动态</li><li><a href="https://x.com/OpenAI/status/2112945805686604033">OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响</a> · X：OpenAI (@OpenAI) · 产品发布/更新</li><li><a href="https://x.com/rohanpaul_ai/status/2113136583985766442">NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://x.com/Khazix0918/status/2113096414469464281">AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘</a> · X：卡兹克 (@Khazix0918) · 行业动态</li><li><a href="https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/">Microsoft Research 与合作者证明 31 年历史的 KLS 猜想</a> · Microsoft Research 博客（RSS） · 论文研究</li><li><a href="https://www.ithome.com/1/016/243.htm">消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://www.recodechinaai.com/p/chinas-draft-ai-export-controls-dont">中国 AI 技术出口管制草案澄清：开放权重模型不在禁止范围</a> · Recode China AI（RSS） · 行业动态</li><li><a href="https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/">GPT-5.6 Sol 与 Gemini 4 Argon 发现影响数百万网站的 PHP 关键漏洞</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/">OpenAI 与 Google Wiz 用 AI 发现潜伏 20 年的 PHP 严重漏洞，NSA 建议无法立即修复的网站先下线</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2112962364996038971">研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li></ul><p><a href="https://aihot.space/days/20261022/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-21</title>
       <link>https://aihot.space/days/20261021/</link>
@@ -421,13 +428,6 @@
       <guid isPermaLink="true">https://aihot.space/days/20260824/</guid>
       <pubDate>Mon, 24 Aug 2026 01:00:00 GMT</pubDate>
       <description><h2>AIhot 每日 AI 精选 · 2026-08-24</h2><p>当日按评分精选的 AI 热点（共 156 条）：</p><ul><li><a href="https://x.com/alibaba_cloud/status/2091825078266908762">万相3.0上线SeaArt，支持多模态输入</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091826875689812323">阿里云 Wan 3.0 上线 Scenario，支持 30 秒视频生成</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091827304498667778">通义万相 Wan 3.0 上线 RunningHub</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091828631068889354">通义万相3.0上线Leonardo AI平台</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091807371224117597">阿里云 Wan 3.0 上线 Runware D0</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091795688187392432">阿里云 Wan3.0 上线 Segmind，原生生成 30 秒视频</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091796012205756629">阿里云 Wan3.0 上线 NadouPro，支持 30 秒原生视频</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091787253274329304">阿里云 Wan3.0 上线 fal，单次生成 30 秒视频</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091787580954304776">阿里云 Wan3.0 上线 TapNow，支持多格式参考</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li><li><a href="https://x.com/alibaba_cloud/status/2091792537287807040">阿里云Wan3.0上线Magnific支持多模态生成</a> · X：阿里云 / Alibaba Cloud (@alibaba_cloud) · 模型发布/更新</li></ul><p><a href="https://aihot.space/days/20260824/">在 AIhot 阅读完整日报 →</a></p></description>
-    </item>
-    <item>
-      <title>AIhot 每日 AI 精选 · 2026-08-23</title>
-      <link>https://aihot.space/days/20260823/</link>
-      <guid isPermaLink="true">https://aihot.space/days/20260823/</guid>
-      <pubDate>Sun, 23 Aug 2026 01:00:00 GMT</pubDate>
-      <description><h2>AIhot 每日 AI 精选 · 2026-08-23</h2><p>当日按评分精选的 AI 热点（共 116 条）：</p><ul><li><a href="https://www.ithome.com/0/993/258.htm">诺亦腾机器人发布 HiPHI，开源 617.5 小时高精度人体运动数据</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://www.marktechpost.com/2026/08/23/meet-freetoken-an-edge-native-moe-serving-engine-that-runs-753b-glm-5-2-on-a-single-workstation-gpu">FreeToken：单工作站 GPU 运行 753B GLM-5.2 的边缘原生 MoE 推理引擎</a> · MarkTechPost（RSS） · 产品发布/更新</li><li><a href="https://www.ithome.com/0/993/248.htm">橡鹿机器人全球首发三款烹饪机器人产品</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://www.ithome.com/0/993/235.htm">OpenAI Codex 明天重置额度，并修复近期用量消耗过快问题</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://www.marktechpost.com/2026/08/23/vercel-introduces-is-agentic-a-free-agent-readiness-scoring-tool-that-audits-public-websites-using-oras-100-checks">Vercel 推出免费工具 Is Agentic，用 Ora 的 118 项检查为网站智能体就绪度打分</a> · MarkTechPost（RSS） · 产品发布/更新</li><li><a href="https://www.ithome.com/0/993/187.htm">海尔发布全自主家用 AI 烹饪机器人&quot;AI 厨天才&quot;CR3：模仿大厨颠勺手法，蒸汽自清洁</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://x.com/thsottiaux/status/2091407991736332689">Codex 速率限制更新：修复与用量重置</a> · X：Tibo (@thsottiaux) · 产品发布/更新</li><li><a href="https://www.ithome.com/0/993/181.htm">小米玄戒芯片技术沟通会明天见，时隔459天再迎全新成员</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://www.ithome.com/0/993/155.htm">上纬新材消费级机器人启元 Q1/T1 开启预订，预计首批发货最早 9 月</a> · IT之家（RSS） · 产品发布/更新</li><li><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.241">Claude Code v2.1.241 发布</a> · Claude Code：GitHub Releases（RSS） · 产品发布/更新</li></ul><p><a href="https://aihot.space/days/20260823/">在 AIhot 阅读完整日报 →</a></p></description>
     </item>
   </channel>
 </rss>
