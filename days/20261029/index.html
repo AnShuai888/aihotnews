@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="AIhot 每日 AI 精选" href="/rss.xml">
+<title>AI 日报 · 2026年10月29日 周四</title>
+<style>
+  :root{
+    --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
+    --line:#e5e7eb; --shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:16px; --navh:58px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .hero{background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 55%,#0ea5e9 100%);
+    color:#fff;padding:48px 24px 40px;text-align:center}
+  .hero .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85;margin:0 0 10px}
+  .hero h1{margin:0;font-size:clamp(28px,5vw,46px);font-weight:800;letter-spacing:.5px}
+  .hero .total{margin:18px 0 6px;font-size:15px;opacity:.95}
+  .hero .total b{font-size:30px;font-weight:800;vertical-align:-3px;margin:0 4px}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+  .stat{background:rgba(255,255,255,.16);backdrop-filter:blur(4px);
+    border:1px solid rgba(255,255,255,.25);border-radius:999px;
+    padding:8px 16px;font-size:14px;display:flex;align-items:center;gap:8px}
+  .stat .dot{width:9px;height:9px;border-radius:50%}
+  .stat b{font-weight:700}
+  .nav{position:sticky;top:var(--navh);z-index:20;background:rgba(255,255,255,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    display:flex;gap:8px;padding:10px 16px;overflow-x:auto}
+  .nav a{flex:0 0 auto;font-size:14px;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:6px 14px;min-height:44px;
+    display:flex;align-items:center;gap:6px;transition:.2s;white-space:nowrap;
+    background:transparent;--active-bg:#4f46e5}
+  .nav a .c{font-weight:700;color:var(--ink)}
+  .nav a:hover{background:#f3f4f6}
+  .nav a.active{color:#fff;border-color:transparent;background:var(--active-bg)}
+  .nav a.active .c{color:#fff}
+  .shell{max-width:1400px;margin:0 auto;padding:24px 20px 60px;
+    display:grid;grid-template-columns:240px minmax(0,1fr);gap:24px;align-items:start}
+  .wrap{min-width:0;padding:0}
+  .section{margin:38px 0;scroll-margin-top:calc(var(--navh) + 16px)}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .sec-head .bar{width:5px;height:26px;border-radius:3px}
+  .sec-head h2{margin:0;font-size:21px;font-weight:800}
+  .sec-head .pill{margin-left:auto;font-size:13px;color:var(--muted);
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 18px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+    gap:10px;transition:transform .18s,box-shadow .18s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(16,24,40,.12),0 14px 36px rgba(16,24,40,.10)}
+  .card .num{position:absolute;top:0;right:0;font-size:13px;font-weight:800;color:#fff;
+    padding:4px 12px;border-bottom-left-radius:14px}
+  .card .title{font-size:16px;font-weight:700;line-height:1.45;padding-right:34px;color:var(--ink)}
+  .card .title:hover{text-decoration:underline}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);
+    background:#f3f4f6;border-radius:999px;padding:3px 10px;width:fit-content}
+  .card .summary{font-size:14px;color:#374151;margin:0}
+  .card .foot{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    margin-top:4px;padding-top:10px;border-top:1px dashed var(--line)}
+  .card .time{font-size:12.5px;color:var(--muted)}
+  .card .read{font-size:13px;font-weight:700;color:#4f46e5;white-space:nowrap}
+  .card .read:hover{text-decoration:underline}
+  .empty{grid-column:1/-1;background:var(--panel);border:1px dashed var(--line);
+    border-radius:var(--radius);padding:26px;text-align:center;color:var(--muted);font-size:14px}
+  footer{max-width:1400px;margin:0 auto;padding:24px 20px 50px;color:var(--muted);font-size:13px;
+    border-top:1px solid var(--line)}
+  footer a{color:#4f46e5;font-weight:600}
+  footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
+  @media (max-width:560px){
+    .hero{padding:36px 16px 30px}
+    .grid{grid-template-columns:1fr}
+    .wrap{padding:20px 14px 50px}
+  }
+  /* 站点级导航（日报页内联，避免引用根站资源） */
+  .site-nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .site-nav .inner{max-width:1400px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+  .brand{font-size:18px;font-weight:800;color:#4f46e5;letter-spacing:.5px;white-space:nowrap}
+  .brand small{display:block;font-size:11px;font-weight:500;color:#6b7280;letter-spacing:.1em}
+  .nav-links{display:flex;align-items:center;gap:8px;margin-left:auto;overflow-x:auto;
+    min-width:0;scrollbar-width:none;-ms-overflow-style:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{flex:0 0 auto;font-size:14px;color:#6b7280;border:1px solid var(--line);
+    border-radius:999px;padding:6px 16px;min-height:44px;display:inline-flex;align-items:center;
+    white-space:nowrap;transition:transform .2s,background .2s,color .2s}
+  .nav-links a:hover{background:#f3f4f6;transform:translateY(-1px)}
+  .nav-links a.active{color:#fff;background:#4f46e5;border-color:transparent}
+  .nav-links a.soon{color:#6b7280;cursor:default;opacity:.7}
+  .nav-links a.soon:hover{background:transparent;transform:none}
+  .tag-soon{font-size:10px;background:#f5f7fb;border:1px solid var(--line);border-radius:999px;padding:1px 6px;margin-left:6px;color:#6b7280}
+  .site-footer{max-width:1400px;margin:0 auto;padding:24px 20px 50px;color:#6b7280;font-size:13px;border-top:1px solid var(--line)}
+  .site-footer a{color:#4f46e5;font-weight:600}
+  .site-footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
+  @media (max-width:560px){.brand small{display:none}}
+
+  /* 工具条：排序 + 显示条数（sticky 跟随滚动；仅作用于下方 5 个分类版块，AI 热点榜不受控） */
+  .toolbar{position:sticky;top:calc(var(--navh) + var(--nav2h,52px));z-index:18;
+    max-width:1400px;margin:0 auto;padding:12px 20px;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .tb-tag{font-size:12.5px;font-weight:700;color:#4f46e5;background:#eef2ff;
+    border:1px solid #c7d2fe;border-radius:999px;padding:5px 12px;white-space:nowrap}
+  .ctl{appearance:none;-webkit-appearance:none;min-height:44px;font:inherit;font-size:14px;
+    font-weight:700;color:var(--ink);background:#fff
+    url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1.5L6 6.5L11 1.5' fill='none' stroke='%236b7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat right 14px center;background-size:12px 8px;
+    border:1px solid var(--line);border-radius:999px;padding:10px 38px 10px 16px;
+    cursor:pointer;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+  .ctl:hover{border-color:#a5b4fc}
+  .ctl:focus-visible{outline:2px solid #4f46e5;outline-offset:2px}
+  .toolbar .hint{font-size:13px;color:var(--muted);margin-left:auto}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  @media (max-width:560px){
+    .toolbar{position:static;border-bottom:none;padding:12px 14px 0;gap:8px}
+    .tb-tag{flex:1 1 100%;text-align:center;border-radius:8px}
+    .ctl{flex:1 1 calc(50% - 4px);min-width:0;font-size:13.5px;padding:10px 34px 10px 14px;
+      background-position:right 12px center}
+    .toolbar .hint{flex:1 1 100%;margin-left:0;text-align:center}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .card{transition:none}
+    .card:hover{transform:none}
+  }
+  /* 卡片元信息行（来源 + 评分角标） */
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .score-badge{display:inline-flex;align-items:center;font-size:12px;font-weight:700;
+    color:#b45309;background:#fef3c7;border:1px solid #fde68a;border-radius:999px;
+    padding:3px 9px;line-height:1.2}
+
+  /* AI 热点榜模块（hot-topics 近48h快照，暖色强调以区别于分类版块） */
+  .hot{margin:30px 0 8px;scroll-margin-top:calc(var(--navh) + 16px)}
+  .hot-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+  .hot-head .bar{width:5px;height:26px;border-radius:3px;
+    background:linear-gradient(180deg,#f97316,#ef4444)}
+  .hot-head h2{margin:0;font-size:21px;font-weight:800}
+  .hot-head .pill{margin-left:auto;font-size:13px;color:var(--muted);
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+  .hot-list{display:flex;flex-direction:column;gap:10px}
+  .hot-row{display:flex;align-items:center;gap:14px;background:var(--panel);
+    border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);
+    transition:transform .18s,box-shadow .18s}
+  .hot-row:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,68,68,.14)}
+  .hot-rank{flex:0 0 auto;width:34px;height:34px;border-radius:10px;display:flex;
+    align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#fff;
+    background:linear-gradient(135deg,#f97316,#ef4444)}
+  .hot-rank.top{box-shadow:0 0 0 3px rgba(249,115,22,.18)}
+  .hot-main{flex:1 1 auto;min-width:0}
+  .hot-title{font-size:15.5px;font-weight:700;line-height:1.45;color:var(--ink);
+    text-decoration:none}
+  .hot-title:hover{text-decoration:underline}
+  .hot-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:7px}
+  .hot-src{font-size:12.5px;color:var(--muted);background:#f3f4f6;border-radius:999px;padding:3px 10px}
+  /* 热点榜：排名 + 标题(黑字 + 可点 → aihot 聚合页) + 来源 chip + 阅读原文(→original 真实出处)
+     指标（信号/信源/来龙去脉）已按 0905 决策移除；
+     标题口径与模型卡片完全一致：黑字 var(--ink)、hover 出下划线、<a> 跳转 aihot 聚合页 */
+  .hot-read{font-size:13px;font-weight:700;color:#4f46e5;white-space:nowrap;
+    text-decoration:none}
+  .hot-read:hover{color:#4338ca;text-decoration:underline}
+  @media (max-width:560px){
+    .hot{margin:22px 0 6px}
+    .hot-row{gap:10px;padding:12px}
+    .hot-rank{width:30px;height:30px;font-size:14px}
+    .hot-title{font-size:14.5px}
+  }
+  /* ===== 左栏布局（≥1200px：分类导航 + 显示设置收进左栏；<1200px 回落顶部横条） ===== */
+  .rail{position:sticky;top:calc(var(--navh) + 16px);align-self:start;
+    max-height:calc(100vh - var(--navh) - 32px);overflow:auto;
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 14px;box-shadow:var(--shadow)}
+  .rail-title{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.08em;
+    margin:0 0 10px;padding-left:2px}
+  .rail-sep{height:1px;background:var(--line);margin:16px 0}
+  .rail .nav{flex-direction:column;gap:6px;padding:0;overflow:visible;position:static;
+    background:none;border-bottom:none;backdrop-filter:none}
+  .rail .nav a{width:100%;justify-content:space-between;border-radius:10px;
+    padding:8px 12px;font-size:13.5px}
+  .rail .toolbar{position:static;flex-direction:column;align-items:stretch;gap:10px;
+    padding:0;max-width:none;margin:0;background:none;border-bottom:none;backdrop-filter:none}
+  .rail .ctl{width:100%}
+  .rail .toolbar .hint{margin-left:0;text-align:left;font-size:12.5px;line-height:1.7}
+  @media (max-width:1199px){
+    .shell{display:block;padding:18px 20px 50px}
+    .rail{position:sticky;top:var(--navh);z-index:20;max-height:none;overflow:visible;
+      background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-radius:0;
+      border-left:none;border-right:none;border-bottom:1px solid var(--line);
+      margin:0 -20px 20px;padding:10px 20px;display:flex;flex-wrap:wrap;
+      gap:8px;align-items:center}
+    .rail-title,.rail-sep{display:none}
+    .rail .nav{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;width:100%}
+    .rail .nav a{width:auto}
+    .rail .toolbar{flex-direction:row;flex-wrap:wrap;width:100%;gap:8px}
+    .rail .ctl{width:auto;flex:1 1 auto}
+    .rail .toolbar .hint{flex:1 1 100%;text-align:left}
+    .section,.hot{scroll-margin-top:calc(var(--navh) + 116px)}
+  }
+  @media (max-width:560px){
+    .shell{padding:14px 14px 50px}
+    .rail{margin:0 -14px 16px;padding:10px 14px}
+    .rail .nav a{padding:6px 12px;font-size:13px}
+    .rail .ctl{flex:1 1 calc(50% - 4px);font-size:13.5px}
+    .section,.hot{scroll-margin-top:calc(var(--navh) + 152px)}
+  }
+</style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="inner">
+      <a class="brand" href="https://aihot.space/">AIhot<small>每日 AI 热点</small></a>
+      <div class="nav-links">
+        <a href="/">首页</a>
+        <a href="/today" class="active">今日新闻</a>
+        <a href="/week">一周新闻</a>
+        <a href="/search.html">搜索</a>
+        <a href="/about/">关于</a>
+        <a href="/contact/">联系</a>
+      </div>
+    </div>
+  </nav>
+  <header class="hero" id="top">
+    <p class="kicker">AI 日报</p>
+    <h1 id="heroDate"></h1>
+    <p class="total">今日共收录 <b id="heroTotal"></b> 条 AI 资讯</p>
+    <div class="stats" id="heroStats"></div>
+  </header>
+
+  <div class="shell">
+    <aside class="rail">
+      <p class="rail-title">本期版块</p>
+      <nav class="nav" id="nav"></nav>
+      <div class="rail-sep"></div>
+      <p class="rail-title">显示设置</p>
+      <div class="toolbar">
+        <label class="sr-only" for="sortSel">排序方式</label>
+        <select class="ctl" id="sortSel">
+          <option value="score">排序 · 评分优先</option>
+          <option value="time">排序 · 时间优先</option>
+        </select>
+        <label class="sr-only" for="topSel">显示条数</label>
+        <select class="ctl" id="topSel">
+          <option value="0">显示 · 全部</option>
+          <option value="10" selected>显示 · Top 10</option>
+          <option value="5">显示 · Top 5</option>
+        </select>
+        <span class="hint" id="toolHint"></span>
+      </div>
+    </aside>
+    <main class="wrap" id="app"></main>
+  </div>
+
+  <footer>
+    <div>本日报共计 <b id="footTotal"></b> 条，数据来源：<a id="footSource" target="_blank" rel="noopener noreferrer"></a>。</div>
+    <div class="note" id="footGen"></div>
+    <div class="note" id="footNote"></div>
+  </footer>
+
+  <footer class="site-footer">
+    <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.virxact.com" target="_blank" rel="noopener">AIHOT</a></div>
+    </footer>
+
+<script>
+const DATA = {
+  "meta": {
+    "date": "2026-10-29",
+    "heroDate": "2026年10月29日 周四",
+    "total": 141,
+    "sourceName": "AIHOT",
+    "sourceUrl": "https://aihot.virxact.com",
+    "generatedNote": "数据检索时间：2026年10月29日 18:46（北京时间）；默认按评分排序、可切换按时间排序。"
+  },
+  "sections": [
+    {
+      "key": "models",
+      "label": "模型发布/更新",
+      "color": "#6366f1",
+      "count": 15,
+      "cards": [
+        {
+          "num": 9,
+          "section": "models",
+          "title": "Block 发布 Dessa：仅用语音训练的全双工语音模型",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月29日 16:30（收录）",
+          "summary": "Block 发布研究预览版 Dessa，一款仅用人类对话音频训练的全双工语音到语音模型，不使用文本和预训练模型。它用…",
+          "aihot": "https://aihot.news/items/c9fy5yl1nfvl65abihw0hf6rj",
+          "original": "https://www.marktechpost.com/2026/10/29/block-dessa-full-duplex-speech-model/",
+          "score": 49
+        },
+        {
+          "num": 13,
+          "section": "models",
+          "title": "英伟达发布开放权重转录模型 Nemotron 3.5 Transcribe，支持 40 种语言并开源数据管线 Granary v2",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 15:39（收录）",
+          "summary": "英伟达于 10 月 28 日发布开放权重语音转录模型 Nemotron 3.5 Transcribe，并公开训练数据管…",
+          "aihot": "https://aihot.news/items/hb9hlobx48r7sz850swx62efv",
+          "original": "https://www.ithome.com/1/019/545.htm",
+          "score": 72
+        },
+        {
+          "num": 33,
+          "section": "models",
+          "title": "腾讯混元 Hy4、Hy4 flash 即将发布，首次引入视觉理解",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 10:54（收录）",
+          "summary": "腾讯在腾讯全球数字生态大会上宣布 Hy4 即将发布，相比 Hy4 preview 全面大幅提升，强化长程与真实生产力任…",
+          "aihot": "https://aihot.news/items/nbbhsgm9vpgyuk3fs9hjz576f",
+          "original": "https://www.ithome.com/1/019/328.htm",
+          "score": 42
+        },
+        {
+          "num": 36,
+          "section": "models",
+          "title": "ForgeKernel 登顶 NVIDIA SOL Bench FIB 赛道",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "time": "10月29日 10:30（收录）",
+          "summary": "ForgeKernel 已登顶 NVIDIA SOL Bench 的 FIB 赛道以及华为 CANNBench。目前…",
+          "aihot": "https://aihot.news/items/xyfhdo71llvzhnrg12827zjzi",
+          "original": "https://x.com/OpenBMB/status/2115631957564608554",
+          "score": 40
+        },
+        {
+          "num": 38,
+          "section": "models",
+          "title": "OpenMOSS 发布开源图像生成模型 MOSS-Image，主打长文本渲染与可编辑布局",
+          "source": "OpenMOSS / 复旦NLP / 上海创智 / MOSI（网页）",
+          "time": "10月29日 10:05（收录）",
+          "summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长…",
+          "aihot": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
+          "original": "https://openmoss.ai/blog/cn/moss-image/",
+          "score": 71
+        },
+        {
+          "num": 39,
+          "section": "models",
+          "title": "首批风云卫星极端天气 AI 模型发布，台风智能云图解译模型 27 秒生成解译文本",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 10:02（收录）",
+          "summary": "10 月 29 日，首批风云气象卫星极端天气人工智能模型在 2026 年风云卫星用户大会上正式发布。台风智能云图解译模…",
+          "aihot": "https://aihot.news/items/hxrc17hmgniqx07b4uk4bclmn",
+          "original": "https://www.ithome.com/1/019/303.htm",
+          "score": 54
+        },
+        {
+          "num": 68,
+          "section": "models",
+          "title": "Claude 与 GPT 机器人写字对比",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "10月29日 06:22（收录）",
+          "summary": "同一个机器人，同一个任务，两个模型的书写风格截然不同 ➤ 左侧，Claude Opus 5.5 一点一点地写出“hel…",
+          "aihot": "https://aihot.news/items/vzqpihxoz9q9niwbm2gzmlwyf",
+          "original": "https://x.com/ArtificialAnlys/status/2115567357506748492",
+          "score": 43
+        },
+        {
+          "num": 84,
+          "section": "models",
+          "title": "ElevenLabs 发布强制对齐模型 Cue",
+          "source": "X：ElevenLabs (@elevenlabs)",
+          "time": "10月29日 04:01（收录）",
+          "summary": "ElevenLabs 研究团队发布强制对齐模型 Cue，能将每个字符精确放到音频时间轴上，精度高于其测试过的所有开源对…",
+          "aihot": "https://aihot.news/items/tagph8idnpjw0e6bp3694i09w",
+          "original": "https://x.com/ElevenLabs/status/2115527286065914248",
+          "score": 54
+        },
+        {
+          "num": 87,
+          "section": "models",
+          "title": "Google DeepMind 发布 Gemini 4 Carbon，登顶 Artificial Analysis Intelligence Index",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月29日 03:23（收录）",
+          "summary": "Google DeepMind 在 Argon 发布两周后推出 Gemini 4 Carbon，以 59 分登顶 Ar…",
+          "aihot": "https://aihot.news/items/ugkyvkwl9tqrdi3anmneg4dhe",
+          "original": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
+          "score": 82
+        },
+        {
+          "num": 94,
+          "section": "models",
+          "title": "Meta Muse Spark 在 ARC-AGI 基准测试成绩公布",
+          "source": "X：ARC Prize (@arcprize)",
+          "time": "10月29日 02:46（收录）",
+          "summary": "Meta 的 Muse Spark Open 在 ARC-AGI（已验证）上的成绩： - ARC-AGI-3：0.4%…",
+          "aihot": "https://aihot.news/items/ki3d9x5rcyzadre1vlwpglz0d",
+          "original": "https://x.com/arcprize/status/2115512736809468084",
+          "score": 47
+        },
+        {
+          "num": 115,
+          "section": "models",
+          "title": "Google 发布 Gemini 4 Carbon，主打网络安全与长程智能体能力",
+          "source": "Hacker News：AI 热帖",
+          "time": "10月29日 01:29（收录）",
+          "summary": "Google 发布新前沿模型 Gemini 4 Carbon，定位为其最强模型，主打网络安全防御和长程智能体任务。",
+          "aihot": "https://aihot.news/items/mi7uzh1ij9cgkgk1enurrbwb9",
+          "original": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "score": 76
+        },
+        {
+          "num": 126,
+          "section": "models",
+          "title": "Artificial Analysis 发布 AA-Video-I2V v2.1 图像生视频评测基准",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "10月29日 01:08（收录）",
+          "summary": "Artificial Analysis 发布 AA-Video-I2V v2.1 与 AA-Video-I2V-Sil…",
+          "aihot": "https://aihot.news/items/yce5u508ngm44a4023segt5k7",
+          "original": "https://x.com/ArtificialAnlys/status/2115483562921304316",
+          "score": 53
+        },
+        {
+          "num": 127,
+          "section": "models",
+          "title": "AssemblyAI 发布首个语音合成模型 AssemblyAI-TTS-1，进入 Provider Voice Arena 前 12",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "10月29日 01:08（收录）",
+          "summary": "Artificial Analysis 评测了 AssemblyAI 发布的首个语音合成模型 AssemblyAI-T…",
+          "aihot": "https://aihot.news/items/wvgfenxop596nkuoazmww4vao",
+          "original": "https://x.com/ArtificialAnlys/status/2115487498248036359",
+          "score": 55
+        },
+        {
+          "num": 136,
+          "section": "models",
+          "title": "Nvidia 开源 Nemotron 3.5 Transcribe 语音识别模型，集成转写、翻译和说话人识别",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月29日 00:21（收录）",
+          "summary": "Nvidia 发布开源语音识别模型 Nemotron 3.5 Transcribe，可转写 40 种语言、在 31 种…",
+          "aihot": "https://aihot.news/items/ew22p9w5yr881tzyzimraod2w",
+          "original": "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/",
+          "score": 69
+        },
+        {
+          "num": 141,
+          "section": "models",
+          "title": "面壁智能发布 MiniCPM-OCR 1.0，支持在 iPhone 和 iPad 本地运行",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "time": "10月29日 00:09（收录）",
+          "summary": "面壁智能 OpenBMB 发布 MiniCPM-OCR 1.0，主打 1B 规模下的 SOTA OCR 性能与速度，在…",
+          "aihot": "https://aihot.news/items/vlhz5p8p7oyu6h3fp8pbdiplf",
+          "original": "https://x.com/OpenBMB/status/2115473600836964838",
+          "score": 61
+        }
+      ]
+    },
+    {
+      "key": "products",
+      "label": "产品发布/更新",
+      "color": "#10b981",
+      "count": 51,
+      "cards": [
+        {
+          "num": 7,
+          "section": "products",
+          "title": "Anthropic 推出 Claude 智能报告工具，企业可监控员工 AI 使用情况与开销",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 16:31（收录）",
+          "summary": "Anthropic 于当地时间周三发布 Claude 智能报告功能，现已面向 Claude Enterprise 付费…",
+          "aihot": "https://aihot.news/items/cxxo065ay5aij8sqr9rjgvp2c",
+          "original": "https://www.ithome.com/1/019/568.htm",
+          "score": 52
+        },
+        {
+          "num": 8,
+          "section": "products",
+          "title": "AssemblyAI 发布首个语音合成模型 TTS-1，定价 $15/1M 字符面向语音 Agent",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月29日 16:30（收录）",
+          "summary": "AssemblyAI 发布首个文本转语音模型 AssemblyAI-TTS-1，正式开放 API，面向实时电话语音 A…",
+          "aihot": "https://aihot.news/items/i7mn1vv9wp8r8pon12oq0r3xp",
+          "original": "https://www.marktechpost.com/2026/10/29/assemblyai-tts-1-text-to-speech-api-voice-agents/",
+          "score": 60
+        },
+        {
+          "num": 10,
+          "section": "products",
+          "title": "Infini-AI-Lab 开源 Hermit harness 适配器框架，可不动模型和 harness 适配 Codex、Claude Code 等智能体",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月29日 16:30（收录）",
+          "summary": "Infini-AI-Lab 发布开源 harness 适配器框架 Hermit（v0.1.0，Apache-2.0）…",
+          "aihot": "https://aihot.news/items/lnlic19kj4v0cnxxl4fi9l5hn",
+          "original": "https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/",
+          "score": 64
+        },
+        {
+          "num": 14,
+          "section": "products",
+          "title": "小米 MiMo Desktop 会员权益升级：额度加量不加价，新增 DeepSeek、GLM、Kimi、Qwen 等第三方模型",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 15:13（收录）",
+          "summary": "小米 MiMo 宣布 Xiaomi MiMo Desktop 会员权益升级，会员总体额度显著上调且加量不加价，调整实时…",
+          "aihot": "https://aihot.news/items/fnp2xhsggumuxq5s9dblytt8y",
+          "original": "https://www.ithome.com/1/019/502.htm",
+          "score": 42
+        },
+        {
+          "num": 16,
+          "section": "products",
+          "title": "Grok API 推出自定义审核控制，可在文本请求中设置 guidelines",
+          "source": "X：Roshan Sadanani（SpaceXSI，Grok Bot） (@roshan_s)",
+          "time": "10月29日 15:07（收录）",
+          "summary": "Grok API 新增自定义审核功能：在任意文本 API 请求中加入 guidelines 参数，即可约束 Grok…",
+          "aihot": "https://aihot.news/items/vxyj56a6sckvvme148lg2topt",
+          "original": "https://x.com/roshan_s/status/2115695752261333361",
+          "score": 51
+        },
+        {
+          "num": 17,
+          "section": "products",
+          "title": "Amp 推出 macOS Satellites：云端 Mac 自动构建、测试和运行苹果应用",
+          "source": "Amp Chronicle",
+          "time": "10月29日 15:01（收录）",
+          "summary": "Amp 推出 macOS Satellites（beta），让智能体在云端 Mac 上构建、测试和运行 iOS 与 m…",
+          "aihot": "https://aihot.news/items/mdt69mu14jfr8iix7d72senz8",
+          "original": "https://ampcode.com/news/macos-satellites",
+          "score": 58
+        },
+        {
+          "num": 18,
+          "section": "products",
+          "title": "Claude Code 2.1.311 新增环境变量，AI 智能体删文件可不再逐次询问",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 14:47（收录）",
+          "summary": "Claude Code v2.1.311 新增环境变量 CLAUDE_CODE_EVEN_MORE_DANGEROUS…",
+          "aihot": "https://aihot.news/items/rr94zgst3rpz19ho1opyqykat",
+          "original": "https://www.ithome.com/1/019/476.htm",
+          "score": 49
+        },
+        {
+          "num": 23,
+          "section": "products",
+          "title": "Claude Code CLI 恢复 ultrathink",
+          "source": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
+          "time": "10月29日 13:04（收录）",
+          "summary": "🌈 ultrathink 🌈",
+          "aihot": "https://aihot.news/items/arvti2mfsh060d3f76pf2ki38",
+          "original": "https://x.com/adocomplete/status/2115667836022772058",
+          "score": 41
+        },
+        {
+          "num": 24,
+          "section": "products",
+          "title": "腾讯WorkBuddy上线Buddy One，打通腾讯会议、腾讯文档、ima和腾讯网盘账号体系",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "time": "10月29日 12:56（收录）",
+          "summary": "腾讯WorkBuddy推出Buddy One，将WorkBuddy、腾讯会议、腾讯文档、ima和腾讯网盘的账号体系打通…",
+          "aihot": "https://aihot.news/items/as28qs4cboy4e7u28lzeqgrhn",
+          "original": "https://x.com/Khazix0918/status/2115662773103530096",
+          "score": 61
+        },
+        {
+          "num": 28,
+          "section": "products",
+          "title": "腾讯上线 Buddy One：打通 WorkBuddy 与腾讯会议、腾讯文档、ima、腾讯网盘账号体系",
+          "source": "公众号：数字生命卡兹克",
+          "time": "10月29日 11:46（收录）",
+          "summary": "腾讯推出 Buddy One，将 WorkBuddy、腾讯会议、腾讯文档、ima、腾讯网盘账号打通，分免费的 Budd…",
+          "aihot": "https://aihot.news/items/di8s2lujmysoqvnmiyfenzguv",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687932&idx=1&sn=771f8b464f04c1f297e5624a600c7933",
+          "score": 64
+        },
+        {
+          "num": 35,
+          "section": "products",
+          "title": "面壁智能 MiniCPM-OCR 登陆更多芯片平台",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "time": "10月29日 10:30（收录）",
+          "summary": "非常感谢 FlagOS 团队！💙 很高兴能一起将 MiniCPM-OCR 带到更多芯片平台。迫不及待想看到社区会构建出…",
+          "aihot": "https://aihot.news/items/c5a6oo6dvxr2dggoq0ebpr3us",
+          "original": "https://x.com/OpenBMB/status/2115630390761423192",
+          "score": 48
+        },
+        {
+          "num": 37,
+          "section": "products",
+          "title": "千问上线「学习档案」：串联拍题、批改、错题本生成学情报告",
+          "source": "公众号：千问APP（阿里）",
+          "time": "10月29日 10:15（收录）",
+          "summary": "千问上线「学习档案」，可把用户在千问的拍题上传、作业批改、错题本等学习记录串联起来，生成个人专属学情报告。案例中，初三…",
+          "aihot": "https://aihot.news/items/ereu8nzvsm4n2pmfi76v1erld",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489316&idx=1&sn=3e510757b81fa1955a480cf0f716b745",
+          "score": 40
+        },
+        {
+          "num": 40,
+          "section": "products",
+          "title": "ChatGPT 支持短信联系你的 dot",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "10月29日 09:59（收录）",
+          "summary": "第 24 天/ 像给任何人发短信一样给你的 dot 发消息。分享/转发东西变得超级简单，可以给它留语音消息，甚至可以发…",
+          "aihot": "https://aihot.news/items/ac4wovgrgyllbc7nitwn04z39",
+          "original": "https://x.com/thsottiaux/status/2115622002581188681",
+          "score": 47
+        },
+        {
+          "num": 41,
+          "section": "products",
+          "title": "Claude Code CLI 恢复 ultrathink",
+          "source": "X：Adam Wolff（Anthropic，Claude Code） (@dmwlff)",
+          "time": "10月29日 09:41（收录）",
+          "summary": "ultrathink 在 CC CLI 里回来了。 我们之前把它关掉了一段时间，因为它有点怪，可能也让人困惑。 但我喜…",
+          "aihot": "https://aihot.news/items/rmoip040puarxmykygotag5mf",
+          "original": "https://x.com/dmwlff/status/2115614417689944066",
+          "score": 43
+        },
+        {
+          "num": 42,
+          "section": "products",
+          "title": "OpenRouter 重建默认路由算法：TTFT 降 16.9%、429 错误减少 67%",
+          "source": "OpenRouter：Announcements（RSS）",
+          "time": "10月29日 09:34（收录）",
+          "summary": "OpenRouter 宣布重建默认 provider 路由算法，从只按价格排序改为按 Routing Cost 综合…",
+          "aihot": "https://aihot.news/items/l4znfnzfs6rz6vorl1wyj90gb",
+          "original": "https://openrouter.ai/blog/announcements/how-we-rebuilt-provider-routing/",
+          "score": 72
+        },
+        {
+          "num": 43,
+          "section": "products",
+          "title": "ChatGPT 向 Pro 和 Business 订阅者提供每月最多 500 美元 API 额度",
+          "source": "X：ChatGPT (@ChatGPT)",
+          "time": "10月29日 08:57（收录）",
+          "summary": "OpenAI 官方账号宣布，符合条件的 ChatGPT Pro 和 Business 订阅者可在 API 中领取每月最…",
+          "aihot": "https://aihot.news/items/lyqkxvphi7vcb52zhe4h6h8e1",
+          "original": "https://x.com/ChatGPT/status/2115601128733974859",
+          "score": 52
+        },
+        {
+          "num": 45,
+          "section": "products",
+          "title": "fal 上线 Motion to Code，可将动画描述或图片视频转为可编辑代码",
+          "source": "X：fal (@fal)",
+          "time": "10月29日 08:39（收录）",
+          "summary": "fal 上线 Motion to Code：输入动画描述或图片、视频，即可生成可编辑代码，输出为 GSAP 页面或循环…",
+          "aihot": "https://aihot.news/items/ak6qss4hlrdofxd7ul3h1mssx",
+          "original": "https://x.com/fal/status/2115599892471021865",
+          "score": 59
+        },
+        {
+          "num": 46,
+          "section": "products",
+          "title": "fal 推出 motion-to-code 模型",
+          "source": "X：fal (@fal)",
+          "time": "10月29日 08:39（收录）",
+          "summary": "在这里试试！ GSAP：https://fal.ai/models/fal-ai/motion-to-code/gsa…",
+          "aihot": "https://aihot.news/items/q8qxozgn3g0c7rtnf92suxry1",
+          "original": "https://x.com/fal/status/2115599894668890554",
+          "score": 49
+        },
+        {
+          "num": 51,
+          "section": "products",
+          "title": "腾讯网盘开启内测申请：支持连接多个 AI 应用，共享存储、聚合上下文",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 08:18（收录）",
+          "summary": "腾讯网盘开启内测申请，官网已开放入口，用户可直接提交。该产品支持连接多个 AI 应用，共享存储并聚合上下文，宣称让生态…",
+          "aihot": "https://aihot.news/items/sakfoecudsvy6my45wejkuk8y",
+          "original": "https://www.ithome.com/1/019/283.htm",
+          "score": 46
+        },
+        {
+          "num": 52,
+          "section": "products",
+          "title": "https://x.com/typesafeai/status/2115590372927889553",
+          "source": "X：TypeSafe AI (@typesafeai)",
+          "time": "10月29日 07:55（收录）",
+          "summary": "该条目暂无摘要，可点击「阅读原文」查看出处。",
+          "aihot": "https://aihot.news/items/vh2428ab53afa5rz0jqm0q2h5",
+          "original": "https://x.com/typesafeai/status/2115590372927889553",
+          "score": 53
+        },
+        {
+          "num": 54,
+          "section": "products",
+          "title": "Grok API 新增 guidelines 内容管控",
+          "source": "X：Grok (@grok)",
+          "time": "10月29日 07:40（收录）",
+          "summary": "现在你可以在文本 API 请求中添加 `guidelines`，进一步管控 Grok API 如何处理特定内容类别…",
+          "aihot": "https://aihot.news/items/eqgb2h8ycyrm559qnhfy7qhgk",
+          "original": "https://x.com/grok/status/2115584612122718296",
+          "score": 41
+        },
+        {
+          "num": 59,
+          "section": "products",
+          "title": "微软A365智能体超5000万，Windows+Agent 365强化安全治理",
+          "source": "X：Satya Nadella (@satyanadella)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "微软宣布 A365 中智能体数量已超 5000 万，环比增长 30%。Windows 与 Agent 365 结合，让…",
+          "aihot": "https://aihot.news/items/ht8anp3lawnjrah6sylag2jk8",
+          "original": "https://x.com/satyanadella/status/2115577770533368135",
+          "score": 42
+        },
+        {
+          "num": 61,
+          "section": "products",
+          "title": "OpenAI 向 ChatGPT Pro 和 Business 订阅者提供每月最高 $500 API 额度",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "OpenAI 宣布即日起，符合条件的 ChatGPT Pro 和 Business 订阅者每月可领取最高 $500 的…",
+          "aihot": "https://aihot.news/items/s0x0m11ny4wsnv6aydm6oqy39",
+          "original": "https://x.com/OpenAIDevs/status/2115583698074755078",
+          "score": 64
+        },
+        {
+          "num": 62,
+          "section": "products",
+          "title": "OpenAI 开发者 API 额度领取指南",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "开始构建： 1. 在 ChatGPT 账单中领取你的 API 额度：https://chatgpt.com/setti…",
+          "aihot": "https://aihot.news/items/noi2crm1vvuqnbtty1v5gjd83",
+          "original": "https://x.com/OpenAIDevs/status/2115583710288613476",
+          "score": 41
+        },
+        {
+          "num": 63,
+          "section": "products",
+          "title": "OpenAI 各套餐 Credits 额度说明",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "Credits 额度取决于套餐。 Pro 套餐按档位每月可获得 $100、$200 或 $500。 Business…",
+          "aihot": "https://aihot.news/items/f04wbmv60jrupwnuwpd8hk09h",
+          "original": "https://x.com/OpenAIDevs/status/2115583721994944972",
+          "score": 40
+        },
+        {
+          "num": 64,
+          "section": "products",
+          "title": "NotebookLM Live Chat 语音对话开放至移动端全部用户",
+          "source": "X：Gemini Notebook (@Gemini_Notebook)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "NotebookLM 宣布 Live Chat 移动端现已面向全部用户开放，此前已向 Ultra 用户完成 100%…",
+          "aihot": "https://aihot.news/items/vfynk6643qtcmghm4sb8tpa0o",
+          "original": "https://x.com/Gemini_Notebook/status/2115582082340860324",
+          "score": 50
+        },
+        {
+          "num": 65,
+          "section": "products",
+          "title": "Gemini 接入 Strava 生成个性化训练计划",
+          "source": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
+          "time": "10月29日 07:16（收录）",
+          "summary": "Gemini 新功能：连接你的 @Strava 账号，把多年的原始训练日志转化为你的个性化教练计划",
+          "aihot": "https://aihot.news/items/u8pgzo65gn0bj66nn6buyq1nf",
+          "original": "https://x.com/joshwoodward/status/2115580552170627080",
+          "score": 42
+        },
+        {
+          "num": 69,
+          "section": "products",
+          "title": "Akai 为开源 MPC Sample Key 引入 vibe coding 改装固件",
+          "source": "The Verge：AI（RSS）",
+          "time": "10月29日 06:21（收录）",
+          "summary": "Akai 在尚未正式发布 MPC Sample Key 前，就向改装社区提前提供设备，展示多款用 vibe codin…",
+          "aihot": "https://aihot.news/items/a8csmcsvr6s4q9dqduakgpsoh",
+          "original": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+          "score": 41
+        },
+        {
+          "num": 75,
+          "section": "products",
+          "title": "Perplexity 网页版推出语音模式，运行于 GPT-Live-1",
+          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+          "time": "10月29日 05:51（收录）",
+          "summary": "Perplexity CEO Aravind Srinivas 转发团队消息，宣布 Perplexity 网页版上线新…",
+          "aihot": "https://aihot.news/items/vxzoo410vql14jk9jidihzpo1",
+          "original": "https://x.com/AravSrinivas/status/2115555247217320196",
+          "score": 50
+        },
+        {
+          "num": 78,
+          "section": "products",
+          "title": "Google Play services 中的 LiteRT 升级：GPU 推理提速 1.4 倍、应用体积减小约 8 MB",
+          "source": "Google Developers Blog（RSS）",
+          "time": "10月29日 05:02（收录）",
+          "summary": "Google 宣布 Google Play services 中的 LiteRT 迎来最大升级，GPU 推理速度约为旧…",
+          "aihot": "https://aihot.news/items/ahutkfpfx7c6xhqe0nd9omxtb",
+          "original": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+          "score": 54
+        },
+        {
+          "num": 81,
+          "section": "products",
+          "title": "Sierra 推出 Compliance Console，为长周期 AI 智能体提供合规管控",
+          "source": "Sierra：Blog（RSS）",
+          "time": "10月29日 04:35（收录）",
+          "summary": "Sierra 发布 Compliance Console，内置于 Horizon 平台，帮助企业在跨渠道、跨地区场景中…",
+          "aihot": "https://aihot.news/items/alot60hrrtpyim0sn0rek0tch",
+          "original": "https://sierra.ai/blog/introducing-compliance-console",
+          "score": 43
+        },
+        {
+          "num": 85,
+          "section": "products",
+          "title": "Anthropic 推出企业报告工具，量化 Claude 的 token 支出回报",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 04:01（收录）",
+          "summary": "Anthropic 于周三发布一套企业报告工具，通过内部分析和员工调查，让管理者查看团队在指定日期范围内用 Claud…",
+          "aihot": "https://aihot.news/items/ncr8sz6mgjm4ce7123czpbmmb",
+          "original": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+          "score": 52
+        },
+        {
+          "num": 86,
+          "section": "products",
+          "title": "Gemini App 推出沉浸式探索功能",
+          "source": "X：Google (@Google)",
+          "time": "10月29日 03:34（收录）",
+          "summary": "Google 官方介绍 Gemini App 新增的沉浸式探索（immersive explorations）功能，提…",
+          "aihot": "https://aihot.news/items/rwee8cjx8vp7iz6elj5dpwlsk",
+          "original": "https://x.com/Google/status/2115525648722583554",
+          "score": 52
+        },
+        {
+          "num": 90,
+          "section": "products",
+          "title": "Databricks 谈语音智能体：用上下文让语音客服产生真实客户价值",
+          "source": "Databricks：Blog（RSS）",
+          "time": "10月29日 02:48（收录）",
+          "summary": "Databricks 发文阐述语音智能体落地关键在于上下文而非语音本身，其原型用 LiveKit 承载通话、Deepg…",
+          "aihot": "https://aihot.news/items/yn795rx8ysxbebs2q1lzmq43c",
+          "original": "https://www.databricks.com/blog/voice-agents-are-here-context-turns-them-real-customer-value",
+          "score": 40
+        },
+        {
+          "num": 96,
+          "section": "products",
+          "title": "Gemini 推出沉浸式探索功能",
+          "source": "X：Gemini (@GeminiApp)",
+          "time": "10月29日 02:29（收录）",
+          "summary": "在 Gemini 中通过沉浸式探索深入了解新话题。 无论是追溯丝绸之路上的贸易路线、窥探喷气发动机内部，还是研究闪电的…",
+          "aihot": "https://aihot.news/items/rbovg6nabg1j5kkbf6elm548t",
+          "original": "https://x.com/GeminiApp/status/2115507092660289631",
+          "score": 42
+        },
+        {
+          "num": 98,
+          "section": "products",
+          "title": "Claude Enterprise 正式上线智能报告、应用内调研与团队共享预算",
+          "source": "Claude：Blog（网页）",
+          "time": "10月29日 02:22（收录）",
+          "summary": "Claude Enterprise 正式上线智能报告、应用内调研和团队共享预算三项功能。智能报告可分析团队对话样本、按…",
+          "aihot": "https://aihot.news/items/q6ciwdz3he2pldxqcjzw2mno4",
+          "original": "https://claude.com/blog/smart-reports-surveys-pooled-budgets",
+          "score": 41
+        },
+        {
+          "num": 99,
+          "section": "products",
+          "title": "Mastra 推出 Span Queries：按 span 过滤和分组追踪数据",
+          "source": "Mastra Blog",
+          "time": "10月29日 02:20（收录）",
+          "summary": "Mastra 上线 Span Queries，可在所有 trace 内按时间范围、类型、名称、状态、错误、耗时等条件过…",
+          "aihot": "https://aihot.news/items/g2pkri96aeywd49ex56asqo0x",
+          "original": "https://mastra.ai/blog/introducing-span-queries",
+          "score": 46
+        },
+        {
+          "num": 100,
+          "section": "products",
+          "title": "MiniMax 开源 MCode Stack：15 个编码团队日常使用的 Agent 技能",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月29日 02:15（收录）",
+          "summary": "MiniMax 于 2026 年 10 月 28 日以 MIT 许可开源 MCode Stack，共 2 套栈、17…",
+          "aihot": "https://aihot.news/items/ehl7p8usav1dtd6mjx0lgluxo",
+          "original": "https://www.marktechpost.com/2026/10/28/minimax-open-sources-mcode-stack-agent-skills/",
+          "score": 67
+        },
+        {
+          "num": 102,
+          "section": "products",
+          "title": "PyTorch 2.15 发布：重写 NCCL 后端转为默认并提升多平台推理性能",
+          "source": "PyTorch：Blog（RSS）",
+          "time": "10月29日 02:10（收录）",
+          "summary": "PyTorch Foundation 发布 PyTorch 2.15，重写的 NCCL 后端成为所有 nccl 进程组…",
+          "aihot": "https://aihot.news/items/uemhjbeijkwq15dzl7arehc5c",
+          "original": "https://pytorch.org/blog/pytorch-2-15-release-blog/",
+          "score": 62
+        },
+        {
+          "num": 105,
+          "section": "products",
+          "title": "Google 推出 Connected Apps Platform 向开发者开放 Gemini 和 Search 接入",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 02:01（收录）",
+          "summary": "Google 推出 Connected Apps Platform，让企业和开发者提交第三方应用接入其 Search…",
+          "aihot": "https://aihot.news/items/xx65yxbh0h9vr3bzrb8wum3r8",
+          "original": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+          "score": 56
+        },
+        {
+          "num": 111,
+          "section": "products",
+          "title": "ChatGPT 开放短信联系 dot 功能，美国 Pro 用户可抢先体验",
+          "source": "X：ChatGPT (@ChatGPT)",
+          "time": "10月29日 01:39（收录）",
+          "summary": "ChatGPT 宣布应用户要求推出短信联系 dot 功能，可通过文字、照片或语音留言给 dot 布置任务，dot 会主…",
+          "aihot": "https://aihot.news/items/c471z1yrbhcxswbhoynd0l71j",
+          "original": "https://x.com/ChatGPT/status/2115496387613786374",
+          "score": 53
+        },
+        {
+          "num": 113,
+          "section": "products",
+          "title": "Apple 发布搭载 PROLED XDR 显示屏和 M5 Pro/M5 Max 的新款 MacBook Pro",
+          "source": "Apple：Newsroom（RSS）",
+          "time": "10月29日 01:39（收录）",
+          "summary": "Apple 发布搭载 PROLED XDR 显示屏的新款 MacBook Pro，采用 tandem OLED 技术…",
+          "aihot": "https://aihot.news/items/urs0f8vvh3zel0gh18qvn8h09",
+          "original": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/",
+          "score": 58
+        },
+        {
+          "num": 117,
+          "section": "products",
+          "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
+          "source": "Microsoft：Official Blog（RSS）",
+          "time": "10月29日 01:27（收录）",
+          "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Fou…",
+          "aihot": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+          "original": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+          "score": 64
+        },
+        {
+          "num": 118,
+          "section": "products",
+          "title": "Anthropic 为 Claude for Legal 新增自动核验来源的 artifacts",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月29日 01:21（收录）",
+          "summary": "Anthropic 为 Claude for Legal 推出可自动核验引用来源的 artifacts，模型先完成初步…",
+          "aihot": "https://aihot.news/items/pzuyrlzf7y28uq0xany2dn672",
+          "original": "https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer/",
+          "score": 42
+        },
+        {
+          "num": 120,
+          "section": "products",
+          "title": "Google 开放 Android 开发环境给第三方 AI 智能体，发布新 Gemini API 和 XREAL AURA 眼镜",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月29日 01:21（收录）",
+          "summary": "Google 在 Android Dev Summit 上宣布 Android Studio Rabbit 2 推出…",
+          "aihot": "https://aihot.news/items/q5d7uqnj2d49ef18b981bh0ce",
+          "original": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+          "score": 67
+        },
+        {
+          "num": 124,
+          "section": "products",
+          "title": "Chrome 增强自动填充开始用 Gemini 从 Gmail 提取信息填表",
+          "source": "The Verge：AI（RSS）",
+          "time": "10月29日 01:11（收录）",
+          "summary": "Google 于今日在美国推出 Chrome 增强自动填充更新，通过 Gemini with Personal Int…",
+          "aihot": "https://aihot.news/items/u8lg25vd6ieu2yrnm0ybi69b7",
+          "original": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
+          "score": 52
+        },
+        {
+          "num": 128,
+          "section": "products",
+          "title": "Chrome 推出 AI 增强自动填充，可从 Gmail 提取信息填写表单",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 01:00（收录）",
+          "summary": "Google 为 Chrome 推出 AI 增强版自动填充，可引用用户 Gmail 中的内容，建议填入航班确认号、会员…",
+          "aihot": "https://aihot.news/items/hpdssj7wzoll6gw7vub9mwjv8",
+          "original": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+          "score": 55
+        },
+        {
+          "num": 131,
+          "section": "products",
+          "title": "Meta Andromeda：通过模型-系统协同设计驱动下一代广告检索",
+          "source": "Meta Engineering Blog（RSS）",
+          "time": "10月29日 00:47（收录）",
+          "summary": "Meta 公布下一代个性化广告检索引擎 Meta Andromeda，在单张 GH200 GPU 上实现每秒超 100…",
+          "aihot": "https://aihot.news/items/l24wmspn9ll83aiyuyzxkc2d6",
+          "original": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+          "score": 46
+        },
+        {
+          "num": 135,
+          "section": "products",
+          "title": "Anthropic 为法律工作推出即用型 Artifacts 画廊",
+          "source": "Claude：Blog（网页）",
+          "time": "10月29日 00:21（收录）",
+          "summary": "Anthropic 推出面向法律专业人士的即用型 artifacts，包括合同审查、引用核查、监管时间线和事项看板等交…",
+          "aihot": "https://aihot.news/items/sa5s9u2trwxumjqnzqmlibs1i",
+          "original": "https://claude.com/blog/introducing-artifacts-for-legal-work",
+          "score": 52
+        },
+        {
+          "num": 139,
+          "section": "products",
+          "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
+          "source": "GitHub Blog",
+          "time": "10月29日 00:14（收录）",
+          "summary": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发…",
+          "aihot": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
+          "original": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+          "score": 71
+        },
+        {
+          "num": 140,
+          "section": "products",
+          "title": "Perplexity 向 Pro 和 Max 用户推出新语音模式，支持网页端和 Mac 应用",
+          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+          "time": "10月29日 00:12（收录）",
+          "summary": "Perplexity CEO Aravind Srinivas 宣布新语音模式正在向所有 Pro 和 Max 用户推出…",
+          "aihot": "https://aihot.news/items/bnswyc7linzswpvees9ewpqwx",
+          "original": "https://x.com/AravSrinivas/status/2115476775505658135",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "key": "industry",
+      "label": "行业动态",
+      "color": "#f59e0b",
+      "count": 47,
+      "cards": [
+        {
+          "num": 1,
+          "section": "industry",
+          "title": "Google 三季度搜索增速不及预期，投资者担忧 AI 搜索变现拖累核心业务",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月29日 18:34（收录）",
+          "summary": "Google 三季度搜索收入增长约 12%，低于分析师预期的 15%，市值一度缩水最多 10%。高管 Philipp…",
+          "aihot": "https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
+          "original": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
+          "score": 80
+        },
+        {
+          "num": 2,
+          "section": "industry",
+          "title": "AI 数据中心为何在亚利桑那引发水资源抗争",
+          "source": "The Verge：AI（RSS）",
+          "time": "10月29日 18:31（收录）",
+          "summary": "The Verge 实地报道亚利桑那州因 AI 数据中心建设而激化的水资源矛盾。",
+          "aihot": "https://aihot.news/items/yyp5b4s84d87e0c197t92edy7",
+          "original": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+          "score": 72
+        },
+        {
+          "num": 3,
+          "section": "industry",
+          "title": "参议员 Wyden 与 Markey 致信 Meta，要求回应智能眼镜隐私争议",
+          "source": "404 Media（RSS）",
+          "time": "10月29日 18:31（收录）",
+          "summary": "俄勒冈州参议员 Ron Wyden 和马萨诸塞州参议员 Edward Markey 致信 Meta，要求其就智能眼镜隐…",
+          "aihot": "https://aihot.news/items/bsfamxqbuj2if7dw7pjat8qhy",
+          "original": "https://www.404media.co/senators-wyden-markey-letter-to-meta-smart-glasses/",
+          "score": 66
+        },
+        {
+          "num": 4,
+          "section": "industry",
+          "title": "美国纽约州签署法令禁止向未成年人提供不安全 AI 聊天机器人服务",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 18:15（收录）",
+          "summary": "美国纽约州州长 Kathy Hochul 于 10 月 28 日签署法令，禁止向未成年人提供不安全 AI 聊天机器人服…",
+          "aihot": "https://aihot.news/items/ujfx1gzyyomqfyw1j10qtw56g",
+          "original": "https://www.ithome.com/1/019/627.htm",
+          "score": 70
+        },
+        {
+          "num": 5,
+          "section": "industry",
+          "title": "宇树科技发布上市后首份 Q3 财报：营收 9970 万美元同比增长 70%，联合 HSG 启动机器人孵化计划",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "10月29日 17:42（收录）",
+          "summary": "宇树科技（Unitree Robotics）发布上市后首份 Q3 财报，营收 9970 万美元，同比增长 70%；Q3…",
+          "aihot": "https://aihot.news/items/fvr8kcuszsnvycxl3ve51tdwd",
+          "original": "https://x.com/thexpin/status/2115735035617960218",
+          "score": 53
+        },
+        {
+          "num": 11,
+          "section": "industry",
+          "title": "IDC：2026H1 中国 MaaS 市场规模达 106.3 亿元，火山引擎以 45.1% 份额居首",
+          "source": "公众号：火山引擎",
+          "time": "10月29日 16:17（收录）",
+          "summary": "IDC 报告显示 2026H1 中国 MaaS 市场规模达 106.3 亿元，火山引擎以 45.1% 份额位居第一，市…",
+          "aihot": "https://aihot.news/items/x1rn3gk9jcmax8fsosufx0j9q",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&mid=2247545546&idx=1&sn=14c4f3ef7f84775baa98f2a3c8172e15",
+          "score": 56
+        },
+        {
+          "num": 12,
+          "section": "industry",
+          "title": "CXMT 将在两个月内小规模量产 HBM3E，良率仅 20-30%",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "10月29日 16:09（收录）",
+          "summary": "据 X.PIN 报道，中国 CXMT 将在两个月内开始限量生产 HBM3E，以缓解国内 AI 内存紧缺。代价是良率仅…",
+          "aihot": "https://aihot.news/items/l815j6lmb5qi58g8ze0n8q199",
+          "original": "https://x.com/thexpin/status/2115710132126703628",
+          "score": 59
+        },
+        {
+          "num": 15,
+          "section": "industry",
+          "title": "美高校计算机专业入学人数大幅下滑，AI 冲击初级编程岗位",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 15:13（收录）",
+          "summary": "彭博社援引美国全国学生信息交换中心的数据称，今年秋季美国计算机与信息科学专业本科入学人数下滑超 12%，研究生降幅超…",
+          "aihot": "https://aihot.news/items/h2a3wjdjxnx4wr4tkfweuzyj6",
+          "original": "https://www.ithome.com/1/019/516.htm",
+          "score": 71
+        },
+        {
+          "num": 20,
+          "section": "industry",
+          "title": "全国首个华为昇腾 950DT 1024 卡智算集群在武汉上线",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 13:55（收录）",
+          "summary": "全国首个华为昇腾 950DT 1024 卡智算集群在武汉上线，由湖北科投投资建设，在华为中国行 2026·湖北省人工智…",
+          "aihot": "https://aihot.news/items/aqs6e9xzmcramf8f8725pghc3",
+          "original": "https://www.ithome.com/1/019/419.htm",
+          "score": 54
+        },
+        {
+          "num": 21,
+          "section": "industry",
+          "title": "腾讯汤道生：WorkBuddy 企业版已覆盖中国企业 500 强中的 50%",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 13:55（收录）",
+          "summary": "腾讯在 2026 全球数字生态大会上披露，WorkBuddy 自今年 3 月上线以来 7 个月迭代 100 个大版本…",
+          "aihot": "https://aihot.news/items/lk3f8efkpv8ohnpwnoourtdo4",
+          "original": "https://www.ithome.com/1/019/422.htm",
+          "score": 50
+        },
+        {
+          "num": 25,
+          "section": "industry",
+          "title": "善邻集团与 Preferred Networks 达成业务资本合作，融合地理空间信息与 AI",
+          "source": "Preferred Networks：AI 研究与产品",
+          "time": "10月29日 12:39（收录）",
+          "summary": "善邻、善邻数据通信与 Preferred Networks（PFN）签署业务资本合作契约，善邻方面将认购 PFN 的第…",
+          "aihot": "https://aihot.news/items/nxkr3qtuf0bmqigntjkhrfdno",
+          "original": "https://www.preferred.jp/ja/news/pr20261029",
+          "score": 44
+        },
+        {
+          "num": 29,
+          "section": "industry",
+          "title": "中国 AI 实验室的数据蒸馏目标从 Claude 转向 OpenAI GPT-6 Astra",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 11:32（收录）",
+          "summary": "据 The Information 报道，中国 AI 实验室已把数据蒸馏目标从 Claude 转向 OpenAI 的…",
+          "aihot": "https://aihot.news/items/toxvbawkzbqcjjyt61jb37yj4",
+          "original": "https://x.com/rohanpaul_ai/status/2115643355522896283",
+          "score": 59
+        },
+        {
+          "num": 30,
+          "section": "industry",
+          "title": "ServiceNow 财报超预期盘后仍跌 19%，AI 冲击订阅业务担忧发酵",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 11:32（收录）",
+          "summary": "ServiceNow 尽管超出自身季度目标，盘后股价仍跌 19%，原因是市场担忧 AI 智能体侵蚀其席位订阅业务。",
+          "aihot": "https://aihot.news/items/k98nrvr3ccrrnz18zcrcuz1yx",
+          "original": "https://x.com/rohanpaul_ai/status/2115645490352259252",
+          "score": 66
+        },
+        {
+          "num": 32,
+          "section": "industry",
+          "title": "OpenClaw 四位开发者入选 Linux 基金会百强贡献者",
+          "source": "X：OpenClaw (@openclaw)",
+          "time": "10月29日 11:01（收录）",
+          "summary": "四位 OpenClaw 开发者入选 @linuxfoundation 的 Top 100 贡献者榜单： #1 @ste…",
+          "aihot": "https://aihot.news/items/scxfh69kihlnxevn2ctg9y3wi",
+          "original": "https://x.com/openclaw/status/2115636811594915985",
+          "score": 47
+        },
+        {
+          "num": 34,
+          "section": "industry",
+          "title": "韩国芯片创企 FuriosaAI 完成 6.2 亿美元 D 轮融资，估值增至 29 亿美元",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 10:54（收录）",
+          "summary": "据彭博社报道，韩国 AI 芯片初创公司 FuriosaAI 完成 6.2 亿美元 D 轮融资，估值增至 29 亿美元…",
+          "aihot": "https://aihot.news/items/mw9d4cuduegmymhuzenfaz0lf",
+          "original": "https://www.ithome.com/1/019/329.htm",
+          "score": 56
+        },
+        {
+          "num": 44,
+          "section": "industry",
+          "title": "塞拉俱乐部报告：AI 数据中心或抵消美国电力行业 15 年减排成果",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 08:44（收录）",
+          "summary": "据彭博社报道，塞拉俱乐部内部分析指出，AI 数据中心引发的化石燃料电厂建设热潮恐将抵消美国电力行业过去 15 年的减排…",
+          "aihot": "https://aihot.news/items/oiaa48kwvygq8rhwqwveek8qv",
+          "original": "https://www.ithome.com/1/019/287.htm",
+          "score": 51
+        },
+        {
+          "num": 47,
+          "section": "industry",
+          "title": "触摸屏 Mac 时隔 6 年发布",
+          "source": "X：Dash (@dashhuang)",
+          "time": "10月29日 08:39（收录）",
+          "summary": "时隔 6 年，触摸屏的 Mac 终于发布了……",
+          "aihot": "https://aihot.news/items/u32jlmyyhf6awulouxq961k27",
+          "original": "https://x.com/DashHuang/status/2115602425390539074",
+          "score": 43
+        },
+        {
+          "num": 53,
+          "section": "industry",
+          "title": "消息称美国司法部就英伟达 129.3 亿美元收购 Hugging Face 展开反垄断问询",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 07:52（收录）",
+          "summary": "据路透社报道，美国司法部已就英伟达以 129.3 亿美元收购 Hugging Face 的交易对 AI 领域竞争的影响…",
+          "aihot": "https://aihot.news/items/leo70d6h0mh2gpnaqadd3hj29",
+          "original": "https://www.ithome.com/1/019/272.htm",
+          "score": 69
+        },
+        {
+          "num": 55,
+          "section": "industry",
+          "title": "Anthropic 致信加州州长纽森，建议法院有权阻止严重风险 AI 模型发布",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 07:26（收录）",
+          "summary": "Anthropic 于本月 15 日致信加州州长纽森，建议政府可通过法院申请禁令，阻止对公众构成严重风险的 AI 模型…",
+          "aihot": "https://aihot.news/items/hax652vsg89xpuprsangyzmj0",
+          "original": "https://www.ithome.com/1/019/271.htm",
+          "score": 56
+        },
+        {
+          "num": 56,
+          "section": "industry",
+          "title": "微软财报电话会：Microsoft Cloud 收入超 $63B，同比增长 30%",
+          "source": "X：Satya Nadella (@satyanadella)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "Satya Nadella 结束微软财报电话会，称财年开局强劲。Microsoft Cloud 收入超过 $63B，同…",
+          "aihot": "https://aihot.news/items/p2duc8iee22e74ooyyvuch32d",
+          "original": "https://x.com/satyanadella/status/2115577764300693644",
+          "score": 55
+        },
+        {
+          "num": 57,
+          "section": "industry",
+          "title": "微软宣布 Copilot 迄今最大更新，统一 Chat、Cowork、Autopilot 与 Code",
+          "source": "X：Satya Nadella (@satyanadella)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "微软宣布 Copilot 迄今最大更新，将 Chat、Cowork、Autopilot 和 Code 整合为统一体验…",
+          "aihot": "https://aihot.news/items/zaem5j41fry2rljc7faa12a6i",
+          "original": "https://x.com/satyanadella/status/2115577765995123084",
+          "score": 54
+        },
+        {
+          "num": 58,
+          "section": "industry",
+          "title": "微软 Foundry 收入同比增长超两倍",
+          "source": "X：Satya Nadella (@satyanadella)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "微软 Foundry 收入同比增长超两倍，使用多模型的客户数同比增长 5 倍，开源模型相关收入增长 10 倍。微软正将…",
+          "aihot": "https://aihot.news/items/ko3avj6s6unctvw49j6mhm3r7",
+          "original": "https://x.com/satyanadella/status/2115577768159416765",
+          "score": 46
+        },
+        {
+          "num": 70,
+          "section": "industry",
+          "title": "Microsoft 连续 10 个季度刷新季度营收纪录，本季度达 923 亿美元",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 06:00（收录）",
+          "summary": "Microsoft 公布季度营收 923 亿美元，同比增长 19%，连续 10 个季度刷新营收纪录，净利润达 366…",
+          "aihot": "https://aihot.news/items/mfszwx98v0qankhh2qkeuwgp1",
+          "original": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+          "score": 71
+        },
+        {
+          "num": 71,
+          "section": "industry",
+          "title": "Microsoft 单季从 OpenAI 获得营收 100 亿美元",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 06:00（收录）",
+          "summary": "Microsoft 在监管文件中披露，截至 9 月 30 日的季度从与 OpenAI 的商业安排中录得 100 亿美元…",
+          "aihot": "https://aihot.news/items/tstf9sk8q7qet7pyv8ew6sj5s",
+          "original": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+          "score": 75
+        },
+        {
+          "num": 72,
+          "section": "industry",
+          "title": "Google 将 AI 搜索广告扩展至国际市场，核心搜索广告增速放缓",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 06:00（收录）",
+          "summary": "Google 在 Alphabet 第三季度财报电话会上宣布，将 AI Mode 中的广告首次扩展至国际市场，并同步在…",
+          "aihot": "https://aihot.news/items/jd3veqivxbdvdcjfbnigfwtwt",
+          "original": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+          "score": 68
+        },
+        {
+          "num": 73,
+          "section": "industry",
+          "title": "Microsoft 首次披露 Azure 单季收入 332 亿美元，同比增长 48%",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月29日 06:00（收录）",
+          "summary": "Microsoft 在财报中首次以美元金额披露 Azure 单季收入，7 至 9 月季度达 332 亿美元，同比增长…",
+          "aihot": "https://aihot.news/items/u4ac2oqbksb0l0gn0f2t2wxtm",
+          "original": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+          "score": 69
+        },
+        {
+          "num": 74,
+          "section": "industry",
+          "title": "Google 云收入同比增 103% 至 307 亿美元，AI 支出致自由现金流转负",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 05:51（收录）",
+          "summary": "Google Cloud 收入同比增长 103% 至 $30.7B，运营利润同比增至三倍达 $11.1B；模型 API…",
+          "aihot": "https://aihot.news/items/j6apx0gzyk46nznsfm1jm9vd5",
+          "original": "https://x.com/rohanpaul_ai/status/2115554654738391482",
+          "score": 78
+        },
+        {
+          "num": 76,
+          "section": "industry",
+          "title": "Apple 发布触屏 MacBook Pro，配 PROLED XDR 显示屏",
+          "source": "X：indigo (@indigox)",
+          "time": "10月29日 05:37（收录）",
+          "summary": "Apple 发布了配备 PROLED XDR Display 与触屏的 MacBook Pro，推文作者已预定一台。作…",
+          "aihot": "https://aihot.news/items/a6t2ty0nk6v3vxucsydi150vm",
+          "original": "https://x.com/indigox/status/2115554512639537546",
+          "score": 48
+        },
+        {
+          "num": 77,
+          "section": "industry",
+          "title": "Microsoft 财报后股价涨约 4%，Azure 营收同比增长 48% 至 $33.2B",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 05:20（收录）",
+          "summary": "Microsoft 财报后股价在盘后交易上涨约 4%，Azure 营收同比增长 48% 至 $33.2B，超出分析师…",
+          "aihot": "https://aihot.news/items/rqmlfki92cl94mdimltihpfiz",
+          "original": "https://x.com/rohanpaul_ai/status/2115554140764197143",
+          "score": 71
+        },
+        {
+          "num": 79,
+          "section": "industry",
+          "title": "OpenAI 与 ServiceNow 扩大合作，将模型和 Agent 深入企业工作流",
+          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "time": "10月29日 04:39（收录）",
+          "summary": "OpenAI 与 ServiceNow 宣布扩大合作，把 OpenAI 模型和 Agent 引入 ServiceNow…",
+          "aihot": "https://aihot.news/items/zlu487ipym7p4dru68cp00k7h",
+          "original": "https://openai.com/index/openai-servicenow-partnership-expansion",
+          "score": 53
+        },
+        {
+          "num": 80,
+          "section": "industry",
+          "title": "Anthropic 扩大 AI for Science 计划，新增 20 家科研基金会与机构合作",
+          "source": "Anthropic：Newsroom（网页）",
+          "time": "10月29日 04:36（收录）",
+          "summary": "Anthropic 将 AI for Science 计划扩展至 20 家全球科学基金会、研究机构与科研团队，为其提供…",
+          "aihot": "https://aihot.news/items/gsn3xahq4pdvxqs4lilfpcnjh",
+          "original": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+          "score": 46
+        },
+        {
+          "num": 82,
+          "section": "industry",
+          "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
+          "source": "X：Sundar Pichai (@sundarpichai)",
+          "time": "10月29日 04:20（收录）",
+          "summary": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收…",
+          "aihot": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+          "original": "https://x.com/sundarpichai/status/2115535455156642066",
+          "score": 78
+        },
+        {
+          "num": 89,
+          "section": "industry",
+          "title": "微软今年将停止在智能电视上支持 Copilot",
+          "source": "The Verge：AI（RSS）",
+          "time": "10月29日 03:13（收录）",
+          "summary": "微软已决定在今年内结束所有电视上的 Copilot 功能支持，LG 电视弹窗通知称该功能\"不再可用并可能很快停止运行\"…",
+          "aihot": "https://aihot.news/items/cojo74654pkbn9ymcmup8x1q2",
+          "original": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+          "score": 42
+        },
+        {
+          "num": 91,
+          "section": "industry",
+          "title": "Sunra 发布统一 API，一文接入主流图像视频音频与 3D 模型",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 02:47（收录）",
+          "summary": "Sunra 发布统一 API，用一个密钥接入主流图像、视频、音频和 3D 模型，按各家厂商原价即用即付，无订阅且不加价…",
+          "aihot": "https://aihot.news/items/xohulw8zq82ut1wui26pzfbqq",
+          "original": "https://x.com/rohanpaul_ai/status/2115510689376973290",
+          "score": 56
+        },
+        {
+          "num": 93,
+          "section": "industry",
+          "title": "Oracle 在 Investor Day 设定 2029 财年至少 300 亿美元自由现金流目标",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 02:47（收录）",
+          "summary": "Oracle 在 Investor Day 上给出财务拐点时间表，目标 2029 财年自由现金流至少 300 亿美元…",
+          "aihot": "https://aihot.news/items/wy3og32dzxxorskg07mjir320",
+          "original": "https://x.com/rohanpaul_ai/status/2115515475753066988",
+          "score": 69
+        },
+        {
+          "num": 97,
+          "section": "industry",
+          "title": "太空数据中心竞赛升温：Google 卫星在轨测试 TPU，Cowboy Space 推出轨道数据中心火箭",
+          "source": "Newcomer 新闻长文（RSS）",
+          "time": "10月29日 02:29（收录）",
+          "summary": "Newcomer 报道太空数据中心创业进展。SpaceX 本月早些时候的一次发射搭载了 Google 实验卫星，研究人…",
+          "aihot": "https://aihot.news/items/tmk7xkjt8z0gw2kz8qlekt0v6",
+          "original": "https://www.newcomer.co/p/the-new-space-race-startups-press",
+          "score": 62
+        },
+        {
+          "num": 101,
+          "section": "industry",
+          "title": "Google AI Mode 被问 2020 年美国大选获胜者时给出回避性回答",
+          "source": "Ars Technica：AI（RSS）",
+          "time": "10月29日 02:11（收录）",
+          "summary": "Google AI Mode 被直接问及 2020 年美国总统大选获胜者时，未直接作答，而是让用户去查阅美国联邦选举委…",
+          "aihot": "https://aihot.news/items/diokncjpegb9psg9m8bhe43d7",
+          "original": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+          "score": 44
+        },
+        {
+          "num": 109,
+          "section": "industry",
+          "title": "GitHub 数据显示智能体代码激增，年内新增 4M CPU 核心应对",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 01:45（收录）",
+          "summary": "作者引用 GitHub 数据称智能体经济正在形成：2026 年 9 月 GitHub 记录 73.8 亿次 commi…",
+          "aihot": "https://aihot.news/items/wcfm9ucsugiryvok7ry1grngb",
+          "original": "https://x.com/rohanpaul_ai/status/2115494454673211650",
+          "score": 64
+        },
+        {
+          "num": 110,
+          "section": "industry",
+          "title": "Meta 支持五所美国大学用其 AI 模型加速医学与科学突破",
+          "source": "Meta AI：Research Blog（网页）",
+          "time": "10月29日 01:44（收录）",
+          "summary": "Meta 宣布支持加州理工学院、俄亥俄州立大学医学院、路易斯安那州立大学、印第安纳大学和 UTHealth Houst…",
+          "aihot": "https://aihot.news/items/uxl9efxltu3ktl6kzxk6mqoby",
+          "original": "https://research.meta.ai/blog/supporting-medical-scientific-research",
+          "score": 45
+        },
+        {
+          "num": 112,
+          "section": "industry",
+          "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
+          "source": "X：Boris Cherny (@bcherny)",
+          "time": "10月29日 01:39（收录）",
+          "summary": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示…",
+          "aihot": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+          "original": "https://x.com/bcherny/status/2115491259381072269",
+          "score": 67
+        },
+        {
+          "num": 116,
+          "section": "industry",
+          "title": "Cognition 介绍 Mercor 突破 $2B ARR 及其工程师使用 Devin 的方式",
+          "source": "X：Cognition (@cognition)",
+          "time": "10月29日 01:27（收录）",
+          "summary": "Cognition 介绍，由三位 22 岁年轻人在 2023 年创立的 Mercor 于今年 6 月 ARR 突破 $…",
+          "aihot": "https://aihot.news/items/qanvyc750tmcxlv2du5lh3iyp",
+          "original": "https://x.com/cognition/status/2115488769306673267",
+          "score": 58
+        },
+        {
+          "num": 119,
+          "section": "industry",
+          "title": "OpenAI 柏林 DevDay：Dots 将登陆欧洲，重点是把开发者锁进平台",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月29日 01:21（收录）",
+          "summary": "OpenAI 在柏林 DevDay Exchange 2026 上重提旧发布，并透露 AI 助手 Dots 预计\"几周…",
+          "aihot": "https://aihot.news/items/kkescq6w0ed9is9y2j9y2oy59",
+          "original": "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/",
+          "score": 41
+        },
+        {
+          "num": 121,
+          "section": "industry",
+          "title": "Cognition 获 700亿至800亿美元估值报价，考虑年内再融资",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 01:14（收录）",
+          "summary": "Cognition 收到 700亿至800亿美元估值的投资报价，正认真考虑在年底前进行新一轮融资，但谈判尚处早期、条款…",
+          "aihot": "https://aihot.news/items/d63lecpachjm3n9uw477js14h",
+          "original": "https://x.com/rohanpaul_ai/status/2115487458502881417",
+          "score": 61
+        },
+        {
+          "num": 122,
+          "section": "industry",
+          "title": "Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 01:14（收录）",
+          "summary": "Anthropic 的 IPO 文件显示其现金及短期投资达 $131.7B，超过 Amazon 和 Microsoft…",
+          "aihot": "https://aihot.news/items/vidjbhx5bf45wdl488kst1wv8",
+          "original": "https://x.com/rohanpaul_ai/status/2115491649543635378",
+          "score": 85
+        },
+        {
+          "num": 123,
+          "section": "industry",
+          "title": "Meta 或再次无限期推迟引发争议的新商业条款",
+          "source": "The Verge：AI（RSS）",
+          "time": "10月29日 01:11（收录）",
+          "summary": "Meta 表示可能将原定 11 月 20 日生效的新商业条款再度推迟，甚至无限期延后，以回应出版商对其内容被用于 AI…",
+          "aihot": "https://aihot.news/items/cx7y7xf1cvcltp7nyj2odsh71",
+          "original": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+          "score": 55
+        },
+        {
+          "num": 132,
+          "section": "industry",
+          "title": "Claude Duet 美国 Max 用户优先开放",
+          "source": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
+          "time": "10月29日 00:43（收录）",
+          "summary": "今天 Claude Duet 帮你做了什么？😅",
+          "aihot": "https://aihot.news/items/sktr33ywukx4xrmzoohl52xs3",
+          "original": "https://x.com/adocomplete/status/2115483956498112995",
+          "score": 49
+        },
+        {
+          "num": 138,
+          "section": "industry",
+          "title": "GitHub Octoverse 2026：开发活动创新高，超 40% 的 PR 由智能体起草",
+          "source": "GitHub Blog",
+          "time": "10月29日 00:14（收录）",
+          "summary": "GitHub 发布 2026 年度 Octoverse 报告：过去 12 个月开发者推送代码 179 亿次，超过 20…",
+          "aihot": "https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc",
+          "original": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+          "score": 78
+        }
+      ]
+    },
+    {
+      "key": "papers",
+      "label": "论文研究",
+      "color": "#3b82f6",
+      "count": 13,
+      "cards": [
+        {
+          "num": 22,
+          "section": "papers",
+          "title": "UC Santa Barbara 新论文：演化记忆取代测试时训练做数学发现",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 13:34（收录）",
+          "summary": "UC Santa Barbara 新论文提出 TTME，用固定权重加演化记忆替代测试时训练来做 LLM 数学发现，在…",
+          "aihot": "https://aihot.news/items/e7odrg32dzm9ipk1887c3nndv",
+          "original": "https://x.com/rohanpaul_ai/status/2115673734497382475",
+          "score": 42
+        },
+        {
+          "num": 26,
+          "section": "papers",
+          "title": "Apple 论文发现工具使用智能体的泛化更依赖应用与数据库多样性而非任务数量",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 12:33（收录）",
+          "summary": "Apple 论文研究合成训练数据配比对 LLM 工具使用智能体泛化的影响，发现随数据预算增长，扩展应用和数据库多样性比…",
+          "aihot": "https://aihot.news/items/j5j5ov31fyfwnxqogw68vzz1f",
+          "original": "https://x.com/rohanpaul_ai/status/2115657738072334570",
+          "score": 52
+        },
+        {
+          "num": 27,
+          "section": "papers",
+          "title": "Google 发布 EmbeddingGemma 2 多模态嵌入模型论文",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 12:03（收录）",
+          "summary": "Google 发布 EmbeddingGemma 2 论文，这是一个基于 Gemma 4、以 Apache 2.0 许…",
+          "aihot": "https://aihot.news/items/x7673996ly9f3oyxayoxjbloj",
+          "original": "https://x.com/rohanpaul_ai/status/2115655095505576117",
+          "score": 61
+        },
+        {
+          "num": 50,
+          "section": "papers",
+          "title": "预印本测试显示 15 个 LLM 检出临床试验论文方法学错误的能力超过人类同行评审",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 08:26（收录）",
+          "summary": "一项新预印本测试了 15 个 LLM 检测临床试验论文中植入方法学错误的能力，模型得分 53% 到 96%，而未受训练…",
+          "aihot": "https://aihot.news/items/j1su0uvv75rj393rdbj9cgiuu",
+          "original": "https://x.com/rohanpaul_ai/status/2115599215368016343",
+          "score": 68
+        },
+        {
+          "num": 60,
+          "section": "papers",
+          "title": "TikTok 论文 Log-To-Leak 揭示 MCP 智能体可被诱导在任务完成后向攻击者工具泄露对话数据",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 07:24（收录）",
+          "summary": "TikTok 论文 Log-To-Leak 研究 MCP 智能体的提示词注入攻击：攻击者在工具的自然语言描述中隐藏指令…",
+          "aihot": "https://aihot.news/items/ocehc1rt9rjnpvuz9w527vpkh",
+          "original": "https://x.com/rohanpaul_ai/status/2115585031901257874",
+          "score": 59
+        },
+        {
+          "num": 66,
+          "section": "papers",
+          "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
+          "source": "IT之家·人工智能",
+          "time": "10月29日 07:00（收录）",
+          "summary": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、S…",
+          "aihot": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
+          "original": "https://www.ithome.com/1/019/268.htm",
+          "score": 81
+        },
+        {
+          "num": 67,
+          "section": "papers",
+          "title": "Google 发布 PLE 基准：最强 AI 智能体在物理工程任务上仅得 50.6%",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 06:22（收录）",
+          "summary": "Google 发布 PLE 基准，包含 85 项由执业工程师编写或审核的电气、土木、结构和机械工程任务，智能体每个任务…",
+          "aihot": "https://aihot.news/items/iepern9k3wfucoa5uwzb3qdis",
+          "original": "https://x.com/rohanpaul_ai/status/2115567033773674980",
+          "score": 63
+        },
+        {
+          "num": 88,
+          "section": "papers",
+          "title": "Replit 发布 ViBench 2.0 长程软件开发基准，GPT-6.1 Sol 以 65% pass@1 居首",
+          "source": "Replit：Blog（RSS）",
+          "time": "10月29日 03:23（收录）",
+          "summary": "Replit 发布长程软件开发基准 ViBench 2.0，代理从空项目按功能搭建完整产品，包含 17 个产品、241…",
+          "aihot": "https://aihot.news/items/azv2dqilar464etquy2mio4vj",
+          "original": "https://replit.com/blog/vibench-2-long-horizon-software-benchmark",
+          "score": 55
+        },
+        {
+          "num": 92,
+          "section": "papers",
+          "title": "Google DeepMind 新论文：LLM 关键词建主题树优于嵌入向量",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月29日 02:47（收录）",
+          "summary": "Google DeepMind 新论文提出 CALLIOPE：让 LLM 从关键词而非嵌入向量构建主题树，在严格隐私约…",
+          "aihot": "https://aihot.news/items/bkokdbxzzc8rdi7mi1hbyu9t2",
+          "original": "https://x.com/rohanpaul_ai/status/2115511990592655620",
+          "score": 45
+        },
+        {
+          "num": 106,
+          "section": "papers",
+          "title": "Cartesia 发布 From Tokens to Bytes II：用两类 scaling law 解析字节级训练与分词的取舍",
+          "source": "Cartesia 产品与研究",
+          "time": "10月29日 01:53（收录）",
+          "summary": "Cartesia 发布 From Tokens to Bytes 系列第二篇，通过 compute-to-loss 与…",
+          "aihot": "https://aihot.news/items/h7w3r93yndaq407ewscs3xvpe",
+          "original": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-2",
+          "score": 51
+        },
+        {
+          "num": 107,
+          "section": "papers",
+          "title": "Cartesia 发布 H-Net 扩缩律研究：字节级层级网络比 BPE 提升最高 3-5x 计算效率",
+          "source": "Cartesia 产品与研究",
+          "time": "10月29日 01:53（收录）",
+          "summary": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE…",
+          "aihot": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
+          "original": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
+          "score": 60
+        },
+        {
+          "num": 114,
+          "section": "papers",
+          "title": "BallotBench 上线：9 个前沿 AI Agent 实时预测 2026 美国中期选举",
+          "source": "X：Karina Nguyen（@karinanguyen）",
+          "time": "10月29日 01:37（收录）",
+          "summary": "Karina Nguyen 团队推出 BallotBench 实时基准，9 个前沿 AI Agent 从发布当天至 1…",
+          "aihot": "https://aihot.news/items/rxg2qimpdzzvpxdrzi529s65e",
+          "original": "https://x.com/karinanguyen/status/2115493347909632410",
+          "score": 62
+        },
+        {
+          "num": 125,
+          "section": "papers",
+          "title": "中国模型更易泄露数据？",
+          "source": "X：PromptArmor (@PromptArmor)",
+          "time": "10月29日 01:10（收录）",
+          "summary": "中国模型是否更可能泄露数据？ PromptArmor 将我们所有传播最广的攻击在多个模型上进行了测试，发现 Deeps…",
+          "aihot": "https://aihot.news/items/toco96zndt3zpj4ro3njfjnpr",
+          "original": "https://x.com/PromptArmor/status/2115491281967202736",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "key": "tips",
+      "label": "技巧与观点",
+      "color": "#8b5cf6",
+      "count": 15,
+      "cards": [
+        {
+          "num": 6,
+          "section": "tips",
+          "title": "Tessl 工程博客探讨 AI 软件工厂的成本该由谁负责",
+          "source": "Tessl：产品与工程博客",
+          "time": "10月29日 17:21（收录）",
+          "summary": "Tessl 博客分析工程领导者如何判断 AI agent 账单背后的钱花得值不值，提出七方面管理框架：成本可见与归属…",
+          "aihot": "https://aihot.news/items/f611xi4sgo6avyoy8lf4mlrdu",
+          "original": "https://tessl.io/blog/who-owns-the-cost-of-the-ai-software-factory",
+          "score": 55
+        },
+        {
+          "num": 19,
+          "section": "tips",
+          "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
+          "source": "X：Addy Osmani (@addyosmani)",
+          "time": "10月29日 14:36（收录）",
+          "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一…",
+          "aihot": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+          "original": "https://x.com/addyosmani/status/2115688494865465370",
+          "score": 73
+        },
+        {
+          "num": 31,
+          "section": "tips",
+          "title": "LibTV 开源破亿 AI 短片工程画布，作者实测拆解一人剧组工作流",
+          "source": "公众号：卡尔的AI沃茨",
+          "time": "10月29日 11:15（收录）",
+          "summary": "LibTV（liblib.tv）公开了《非妖哉》等破亿 AI 短剧的完整工程画布，把爆款作品的提示词、分镜串联和角色一…",
+          "aihot": "https://aihot.news/items/hfaqzbh6g8ni1qwpz6pxm0klz",
+          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247512710&idx=1&sn=c4344cc80b4bc1bde687e9959f94767c",
+          "score": 63
+        },
+        {
+          "num": 48,
+          "section": "tips",
+          "title": "OpenRouter 实测 13 种提示注入攻击，讲解 Armor 与 Guardrails 防御方法",
+          "source": "OpenRouter：Announcements（RSS）",
+          "time": "10月29日 08:33（收录）",
+          "summary": "OpenRouter 发布提示注入防御教程，用 13 种自有攻击加 12 种其他模型编写的攻击测试 Claude Ha…",
+          "aihot": "https://aihot.news/items/ub53utrs4sxzgkhe4o2y17qyt",
+          "original": "https://openrouter.ai/blog/tutorials/prevent-prompt-injection/",
+          "score": 69
+        },
+        {
+          "num": 49,
+          "section": "tips",
+          "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
+          "source": "OpenRouter：Announcements（RSS）",
+          "time": "10月29日 08:33（收录）",
+          "summary": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让…",
+          "aihot": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
+          "original": "https://openrouter.ai/blog/tutorials/extract-tables-from-pdf-llm/",
+          "score": 76
+        },
+        {
+          "num": 83,
+          "section": "tips",
+          "title": "Claude Code 动态工作流可仅用约 10 个子智能体",
+          "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
+          "time": "10月29日 04:10（收录）",
+          "summary": "顺便说一句，动态工作流不一定非得有几百个子智能体！任何我想以相同方式重跑的任务我都会用它们，哪怕只有约 10 个子智能…",
+          "aihot": "https://aihot.news/items/zfdx42wrpzty9fzhgykr3tgke",
+          "original": "https://x.com/lydiahallie/status/2115533617984401464",
+          "score": 42
+        },
+        {
+          "num": 95,
+          "section": "tips",
+          "title": "Baseten 优化 Qwen3-ASR 1.7B 批量转写，吞吐达原版 vLLM 的 7 倍",
+          "source": "Baseten 工程博客（网页）",
+          "time": "10月29日 02:30（收录）",
+          "summary": "Baseten 优化了 Qwen3-ASR 1.7B 的批量转写部署，在 64 并发下吞吐比原生 vLLM 高 7 倍…",
+          "aihot": "https://aihot.news/items/l4esgip2enwt1uerh71db72gb",
+          "original": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/",
+          "score": 51
+        },
+        {
+          "num": 103,
+          "section": "tips",
+          "title": "Pydantic AI 自建基准：code mode 在长任务上成本减半、小任务反而更贵",
+          "source": "Pydantic AI 官方文章",
+          "time": "10月29日 02:10（收录）",
+          "summary": "Pydantic AI 的 Michael Pfaffenberger 用 5 个小型 Pydantic AI 应用…",
+          "aihot": "https://aihot.news/items/mcucufe6w6qrftx6l40hkmjrz",
+          "original": "https://pydantic.dev/articles/why-code-mode-is-the-future",
+          "score": 69
+        },
+        {
+          "num": 104,
+          "section": "tips",
+          "title": "Google 演示用 Agents CLI 评测闭环爬坡式提升 Agent 质量",
+          "source": "Google Developers Blog（RSS）",
+          "time": "10月29日 02:01（收录）",
+          "summary": "Google Developers Blog 实操演示 Agents CLI 的 eval 命名空间如何支撑 Agen…",
+          "aihot": "https://aihot.news/items/rv8durxtwokyuw3nepfr0heok",
+          "original": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
+          "score": 59
+        },
+        {
+          "num": 108,
+          "section": "tips",
+          "title": "LangChain 实测 OpenWiki 与证据图构建有据可查的 Agent 记忆层",
+          "source": "LangChain：Blog（RSS）",
+          "time": "10月29日 01:47（收录）",
+          "summary": "LangChain 介绍如何用其开源 wiki 编译器 OpenWiki 为 Agent 构建持久记忆层，把分散的政策…",
+          "aihot": "https://aihot.news/items/py2mxbl9rsjw80djsmv90nly5",
+          "original": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
+          "score": 62
+        },
+        {
+          "num": 129,
+          "section": "tips",
+          "title": "研究者将 Ai2 开源模型 olmOCR 2 应用于历史与考古档案转录",
+          "source": "Ai2 / Allen Institute for AI（RSS）",
+          "time": "10月29日 00:58（收录）",
+          "summary": "Ai2 介绍研究者如何将开源文档转录模型 olmOCR 2 适配于历史与考古档案。",
+          "aihot": "https://aihot.news/items/z3ksnbwfg805uf6039u0o7bhs",
+          "original": "https://allenai.org/blog/olmocr-2-historical-archives",
+          "score": 51
+        },
+        {
+          "num": 130,
+          "section": "tips",
+          "title": "如何用 Managed Deep Agents 的 Schedules SDK 构建主动式常驻智能体",
+          "source": "LangChain：Blog（RSS）",
+          "time": "10月29日 00:47（收录）",
+          "summary": "LangChain 介绍如何用 Managed Deep Agents 内置的 cron 调度服务构建主动式常驻智能体…",
+          "aihot": "https://aihot.news/items/oaaevlws62jl6f3fndf6r2c9h",
+          "original": "https://www.langchain.com/blog/proactive-agents",
+          "score": 44
+        },
+        {
+          "num": 133,
+          "section": "tips",
+          "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
+          "source": "OpenRouter：Announcements（RSS）",
+          "time": "10月29日 00:28（收录）",
+          "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码…",
+          "aihot": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
+          "original": "https://openrouter.ai/blog/tutorials/claude-code-usage-limit/",
+          "score": 70
+        },
+        {
+          "num": 134,
+          "section": "tips",
+          "title": "OpenRouter 解析 Claude 529 Overloaded 错误及三种修复方法",
+          "source": "OpenRouter：Announcements（RSS）",
+          "time": "10月29日 00:28（收录）",
+          "summary": "OpenRouter 发文解释 Claude 的 529 overloaded_error 表示 Anthropic…",
+          "aihot": "https://aihot.news/items/gruq9q2kwluwoazoh8sq7ux19",
+          "original": "https://openrouter.ai/blog/tutorials/claude-529-overloaded/",
+          "score": 67
+        },
+        {
+          "num": 137,
+          "section": "tips",
+          "title": "Replit 详解 Agent Habitat 背后的安全架构",
+          "source": "Replit：Blog（RSS）",
+          "time": "10月29日 00:21（收录）",
+          "summary": "Replit 介绍其 Agent Habitat 的安全架构，用组织级策略边界把沙箱、连接器、智能体和应用统一纳入管控…",
+          "aihot": "https://aihot.news/items/az8i0475vsf8da3f9k8pz3t3j",
+          "original": "https://replit.com/blog/architecture-behind-secure-agent-work",
+          "score": 43
+        }
+      ]
+    }
+  ],
+  "hotTopics": {
+    "updatedAt": "2026-10-29 18:46",
+    "count": 10,
+    "items": [
+      {
+        "rank": 1,
+        "title": "谷歌发布 Gemini 4 Carbon，称登顶 AA v5",
+        "source": "Google DeepMind：Blog（RSS）",
+        "signal": 66,
+        "sources": 15,
+        "sourceNames": [
+          "X：Google (@Google)",
+          "X：indigo (@indigox)",
+          "X：Arena (@arena)",
+          "IT之家·人工智能",
+          "The Verge：AI（RSS）",
+          "The Decoder：AI News（RSS）",
+          "Ars Technica：AI（RSS）",
+          "MarkTechPost（RSS）"
+        ],
+        "aihot": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+        "story": "https://aihot.virxact.com/story/62c69dca-91ed-4912-96ed-fb608f645ee7",
+        "original": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+      },
+      {
+        "rank": 2,
+        "title": "Google DeepMind 发布 Genie 4 世界模型研究预览版",
+        "source": "Google DeepMind：Blog（RSS）",
+        "signal": 63,
+        "sources": 13,
+        "sourceNames": [
+          "MarkTechPost（RSS）",
+          "X：indigo (@indigox)",
+          "X：卡兹克 (@Khazix0918)",
+          "公众号：数字生命卡兹克",
+          "X：Demis Hassabis (@demishassabis)",
+          "IT之家·人工智能",
+          "The Decoder：AI News（RSS）",
+          "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)"
+        ],
+        "aihot": "https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
+        "story": "https://aihot.virxact.com/story/d9a88c5c-1b99-4e5b-af6c-dec4f752f180",
+        "original": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+      },
+      {
+        "rank": 3,
+        "title": "Apple发布PROLED XDR屏MacBook Pro，首配触控",
+        "source": "Apple：Newsroom（RSS）",
+        "signal": 32,
+        "sources": 3,
+        "sourceNames": [
+          "X：Dash (@dashhuang)",
+          "X：indigo (@indigox)",
+          "Apple：Newsroom（RSS）"
+        ],
+        "aihot": "https://aihot.news/items/urs0f8vvh3zel0gh18qvn8h09",
+        "story": "https://aihot.virxact.com/story/add1dde9-53ea-4f82-9daa-6d50735a149c",
+        "original": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/"
+      },
+      {
+        "rank": 4,
+        "title": "Anthropic 递交 S-1，拟以 ANT 登陆纳斯达克",
+        "source": "Anthropic：Newsroom（网页）",
+        "signal": 33,
+        "sources": 9,
+        "sourceNames": [
+          "Ed Zitron 长文 / Where’s Your Ed At（RSS）",
+          "X：Rohan Paul (@rohanpaul_ai)",
+          "X：Saito 硬地骇客 (@SaitoWu)",
+          "IT之家·人工智能",
+          "TechCrunch：AI（RSS）",
+          "Ars Technica：AI（RSS）",
+          "Azeem Azhar：Exponential View（RSS）",
+          "The Verge：AI（RSS）"
+        ],
+        "aihot": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
+        "story": "https://aihot.virxact.com/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d",
+        "original": "https://www.anthropic.com/news/s1-sec"
+      },
+      {
+        "rank": 5,
+        "title": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe",
+        "source": "IT之家·人工智能",
+        "signal": 11,
+        "sources": 6,
+        "sourceNames": [
+          "IT之家·人工智能",
+          "MarkTechPost（RSS）",
+          "The Decoder：AI News（RSS）",
+          "X：Artificial Analysis (@ArtificialAnlys)",
+          "TechCrunch：AI（RSS）",
+          "Hugging Face 社区博客（混合发现）"
+        ],
+        "aihot": "https://aihot.news/items/hb9hlobx48r7sz850swx62efv",
+        "story": "https://aihot.virxact.com/story/0aff3bb1-44c6-45f9-92fa-d4d7e6ec3945",
+        "original": "https://www.ithome.com/1/019/545.htm"
+      },
+      {
+        "rank": 6,
+        "title": "微软首披Azure单季营收332亿美元，超预期",
+        "source": "X：Satya Nadella (@satyanadella)",
+        "signal": 14,
+        "sources": 3,
+        "sourceNames": [
+          "X：Satya Nadella (@satyanadella)",
+          "TechCrunch：AI（RSS）",
+          "X：Rohan Paul (@rohanpaul_ai)"
+        ],
+        "aihot": "https://aihot.news/items/p2duc8iee22e74ooyyvuch32d",
+        "story": "https://aihot.virxact.com/story/11d678b6-32a9-4107-b928-74a73608cd88",
+        "original": "https://x.com/satyanadella/status/2115577764300693644"
+      },
+      {
+        "rank": 7,
+        "title": "OpenAI 向 Pro 与 Business 订阅者发放 API 额度",
+        "source": "X：OpenAI Developers (@OpenAIDevs)",
+        "signal": 14,
+        "sources": 1,
+        "sourceNames": [
+          "X：ChatGPT (@ChatGPT)"
+        ],
+        "aihot": "https://aihot.news/items/s0x0m11ny4wsnv6aydm6oqy39",
+        "story": "https://aihot.virxact.com/story/08d907d8-e0b3-41bc-b07e-9b475c378c41",
+        "original": "https://x.com/OpenAIDevs/status/2115583698074755078"
+      },
+      {
+        "rank": 8,
+        "title": "Anthropic公布药物研发合作，并传收购Mithril Medicine",
+        "source": "X：Anthropic (@AnthropicAI)",
+        "signal": 23,
+        "sources": 2,
+        "sourceNames": [
+          "X：Rohan Paul (@rohanpaul_ai)",
+          "X：Anthropic (@AnthropicAI)"
+        ],
+        "aihot": "https://aihot.news/items/s06bmy25gmrtj73ordbvi4q9e",
+        "story": "https://aihot.virxact.com/story/37c4f934-a969-4d47-b4ab-d8394ef134ba",
+        "original": "https://x.com/AnthropicAI/status/2115178675050307942"
+      },
+      {
+        "rank": 9,
+        "title": "OpenAI 发布 GPT-6.1 Terra，API 价格减半",
+        "source": "X：Tibo (@thsottiaux)",
+        "signal": 28,
+        "sources": 3,
+        "sourceNames": [
+          "IT之家·人工智能",
+          "X：Arena (@arena)",
+          "X：卡兹克 (@Khazix0918)"
+        ],
+        "aihot": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
+        "story": "https://aihot.virxact.com/story/30e9a1ca-aae1-410a-b1c6-53893df398db",
+        "original": "https://x.com/thsottiaux/status/2114800277677092936"
+      },
+      {
+        "rank": 10,
+        "title": "Alphabet Q3营收增25%，云收入翻倍至307亿美元",
+        "source": "X：Sundar Pichai (@sundarpichai)",
+        "signal": 10,
+        "sources": 3,
+        "sourceNames": [
+          "TechCrunch：AI（RSS）",
+          "X：Rohan Paul (@rohanpaul_ai)",
+          "X：Sundar Pichai (@sundarpichai)"
+        ],
+        "aihot": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+        "story": "https://aihot.virxact.com/story/c432aa2e-0614-4744-8618-1769e016569b",
+        "original": "https://x.com/sundarpichai/status/2115535455156642066"
+      }
+    ]
+  }
+};
+const app = document.getElementById('app');
+const nav = document.getElementById('nav');
+document.getElementById('heroDate').textContent = DATA.meta.heroDate;
+document.getElementById('heroTotal').textContent = DATA.meta.total;
+document.getElementById('footTotal').textContent = DATA.meta.total;
+const srcEl = document.getElementById('footSource');
+/* 页脚署名：只显示来源名称（可点击跳转源站），不再裸露 URL 文本 */
+srcEl.textContent = DATA.meta.sourceName;
+srcEl.href = DATA.meta.sourceUrl;
+document.getElementById('footGen').textContent = DATA.meta.generatedNote;
+document.getElementById('footNote').textContent =
+  '说明：卡片时间为条目在北京时间的发布/发现时间（慢推信源标注「收录」）；按时间轴倒序全局连续编号。';
+
+const hs = document.getElementById('heroStats');
+const sectionGrids = {};
+const sectionRefs = {};
+const sectionPills = {};
+
+DATA.sections.forEach(s => {
+  const el = document.createElement('div');
+  el.className = 'stat';
+  const dot = document.createElement('span');
+  dot.className = 'dot'; dot.style.background = s.color;
+  const label = document.createElement('span'); label.textContent = s.label;
+  const num = document.createElement('b'); num.textContent = s.count;
+  el.append(dot, label, num);
+  hs.appendChild(el);
+});
+
+DATA.sections.forEach(s => {
+  const a = document.createElement('a');
+  a.href = '#sec-' + s.key;
+  a.dataset.key = s.key;
+  a.style.setProperty('--active-bg', s.color);
+  const label = document.createElement('span'); label.textContent = s.label;
+  const c = document.createElement('span'); c.className = 'c'; c.textContent = s.count;
+  a.append(label, c);
+  nav.appendChild(a);
+});
+
+// AI 热点榜 导航项（插到分类导航最前面）
+const hotNav = document.createElement('a');
+hotNav.href = '#sec-hot';
+hotNav.dataset.key = 'hot';
+hotNav.style.setProperty('--active-bg', '#f97316');
+hotNav.textContent = 'AI 热点榜（48 小时内）';
+if (nav.firstChild) nav.insertBefore(hotNav, nav.firstChild); else nav.appendChild(hotNav);
+
+renderHot();
+
+DATA.sections.forEach(s => {
+  const sec = document.createElement('section');
+  sec.className = 'section';
+  sec.id = 'sec-' + s.key;
+  /* scroll-margin-top 改由 CSS 控制（含响应式媒体查询） */
+  const head = document.createElement('div');
+  head.className = 'sec-head';
+  const bar = document.createElement('div'); bar.className = 'bar'; bar.style.background = s.color;
+  const h2 = document.createElement('h2'); h2.textContent = s.label;
+  const pill = document.createElement('span'); pill.className = 'pill'; pill.textContent = s.count + ' 条';
+  sectionPills[s.key] = pill;
+  head.append(bar, h2, pill);
+  sec.appendChild(head);
+  const grid = document.createElement('div'); grid.className = 'grid';
+  sec.appendChild(grid);
+  sectionGrids[s.key] = grid;
+  sectionRefs[s.key] = sec;
+  app.appendChild(sec);
+});
+
+let sortMode = 'score';
+let topN = 10;
+
+function cardEl(card, displayNum, color) {
+  const c = document.createElement('article'); c.className = 'card';
+  const num = document.createElement('div'); num.className = 'num';
+  num.style.background = color; num.textContent = '#' + displayNum;
+  c.appendChild(num);
+  const title = document.createElement('a'); title.className = 'title';
+  title.textContent = card.title;
+  const titleHref = card.aihot || card.original;
+  if (titleHref) { title.href = titleHref; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
+  c.appendChild(title);
+  const meta = document.createElement('div'); meta.className = 'meta-row';
+  if (card.source) {
+    const chip = document.createElement('span'); chip.className = 'chip';
+    chip.textContent = '来源 · ' + card.source;
+    meta.appendChild(chip);
+  }
+  if (card.score > 0) {
+    const sc = document.createElement('span'); sc.className = 'score-badge';
+    sc.textContent = '评分 ' + card.score;
+    meta.appendChild(sc);
+  }
+  c.appendChild(meta);
+  const sum = document.createElement('p'); sum.className = 'summary';
+  sum.textContent = card.summary; c.appendChild(sum);
+  const foot = document.createElement('div'); foot.className = 'foot';
+  const time = document.createElement('span'); time.className = 'time';
+  time.textContent = card.time ? (card.time + ' 北京时间') : '';
+  foot.appendChild(time);
+  const readHref = card.original || card.aihot;
+  if (readHref) {
+    const read = document.createElement('a'); read.className = 'read';
+    read.textContent = '阅读原文 →';
+    read.href = readHref; read.target = '_blank'; read.rel = 'noopener noreferrer';
+    foot.appendChild(read);
+  }
+  c.appendChild(foot);
+  return c;
+}
+
+function renderHot() {
+  const ht = DATA.hotTopics;
+  const sec = document.createElement('section');
+  sec.className = 'hot';
+  sec.id = 'sec-hot';
+  /* scroll-margin-top 改由 CSS 控制（含响应式媒体查询） */
+  const head = document.createElement('div');
+  head.className = 'hot-head';
+  const bar = document.createElement('div'); bar.className = 'bar';
+  const h2 = document.createElement('h2'); h2.textContent = 'AI 热点榜（48 小时内）';
+  const pill = document.createElement('span'); pill.className = 'pill';
+  pill.textContent = (ht && ht.items.length) ? (ht.items.length + ' 条 · 近 48 小时') : '暂无';
+  head.append(bar, h2, pill);
+  sec.appendChild(head);
+  const list = document.createElement('div'); list.className = 'hot-list';
+  if (!ht || !ht.items.length) {
+    const empty = document.createElement('div'); empty.className = 'empty';
+    empty.textContent = '数据源近 48 小时暂无热点榜产出，可先浏览下方分类资讯。';
+    list.appendChild(empty);
+  } else {
+    ht.items.forEach(it => {
+      const row = document.createElement('div'); row.className = 'hot-row';
+      const rank = document.createElement('div');
+      rank.className = 'hot-rank' + (it.rank <= 3 ? ' top' : '');
+      rank.textContent = it.rank;
+      const main = document.createElement('div'); main.className = 'hot-main';
+      const title = document.createElement('a'); title.className = 'hot-title';
+      title.textContent = it.title;
+      /* 标题 → aihot 聚合页（与模型卡片口径一致），original 交由「阅读原文」承载 */
+      const href = it.aihot || it.original;
+      if (href) { title.href = href; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
+      main.appendChild(title);
+      const meta = document.createElement('div'); meta.className = 'hot-meta';
+      if (it.source) {
+        const s = document.createElement('span'); s.className = 'hot-src';
+        s.textContent = '来源 · ' + it.source;
+        meta.appendChild(s);
+      }
+      /* 阅读原文：优先 original（真实出处），缺失时回退 aihot 聚合页 */
+      const readHref = it.original || it.aihot;
+      if (readHref) {
+        const rd = document.createElement('a'); rd.className = 'hot-read';
+        rd.textContent = '阅读原文 →'; rd.href = readHref;
+        rd.target = '_blank'; rd.rel = 'noopener noreferrer';
+        meta.appendChild(rd);
+      }
+      main.appendChild(meta);
+      row.append(rank, main);
+      list.appendChild(row);
+    });
+  }
+  sec.appendChild(list);
+  app.appendChild(sec);
+  sectionRefs['hot'] = sec;
+}
+
+function render() {
+  let counter = 0;
+  DATA.sections.forEach(s => {
+    const cards = s.cards.slice();
+    if (sortMode === 'score') {
+      cards.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+    } else {
+      cards.sort((a, b) => a.num - b.num);
+    }
+    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const pill = sectionPills[s.key];
+    if (pill) {
+      pill.textContent = (topN > 0 && cards.length > topN)
+        ? (topN + ' / ' + cards.length + ' 条')
+        : (cards.length + ' 条');
+    }
+    const grid = sectionGrids[s.key];
+    grid.innerHTML = '';
+    if (shown.length === 0) {
+      const empty = document.createElement('div'); empty.className = 'empty';
+      empty.textContent = '本期暂无「' + s.label + '」相关条目。';
+      grid.appendChild(empty);
+      return;
+    }
+    shown.forEach(card => {
+      counter++;
+      grid.appendChild(cardEl(card, counter, s.color));
+    });
+  });
+  const hint = document.getElementById('toolHint');
+  if (hint) {
+    hint.textContent = '当前显示 ' + counter + ' 条'
+      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
+      + ' · AI 热点榜不参与';
+  }
+}
+
+const sortSel = document.getElementById('sortSel');
+const topSel = document.getElementById('topSel');
+if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
+if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
+
+render();
+
+function syncNavOffset(){
+  const sn = document.querySelector('.site-nav');
+  if (sn) document.documentElement.style.setProperty('--navh', sn.offsetHeight + 'px');
+  const nv = document.getElementById('nav');
+  if (nv) document.documentElement.style.setProperty('--nav2h', nv.offsetHeight + 'px');
+}
+syncNavOffset();
+window.addEventListener('resize', syncNavOffset);
+window.addEventListener('load', syncNavOffset);
+
+const navLinks = Array.from(nav.querySelectorAll('a'));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle('active', a.dataset.key === e.target.id.replace('sec-', '')));
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+DATA.sections.forEach(s => { obs.observe(sectionRefs[s.key]); });
+if (sectionRefs['hot']) obs.observe(sectionRefs['hot']);
+</script>
+</body>
+</html>
