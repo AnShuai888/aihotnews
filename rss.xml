@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Oct 2026 10:46:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 10:57:34 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Fri, 30 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-30</title>
+      <link>https://aihot.space/days/20261030/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261030/</guid>
+      <pubDate>Fri, 30 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-30</h2><p>当日按评分精选的 AI 热点（共 144 条）：</p><ul><li><a href="https://www.platformer.news/thursday-newsletter-6/">Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络</a> · Platformer（热点 RSS） · 行业动态</li><li><a href="https://cursor.com/blog/claude-code-extension-security-notice">Cursor 扩展市场发现恶意版 Anthropic.claude-code 2.1.313，最多 4100 名用户受影响</a> · Cursor Blog · 行业动态</li><li><a href="https://www.bbc.com/news/articles/cm9qzdqpxy48o">Google 市值蒸发 5000 亿美元，AI 概要冲击搜索广告引发华尔街担忧</a> · Hacker News：AI 热帖 · 行业动态</li><li><a href="https://www.understandingai.org/p/anthropics-financials-are-surprisingly">Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧</a> · Timothy B. Lee：Understanding AI（RSS） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/">Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/">Alphabet Q3 营收近 1280 亿美元但承认 AI 搜索变现更低，股价大跌约 12%</a> · Ars Technica：AI（RSS） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/">Reddit 宣布转向以登录为主的体验，以应对 AI 搜索带来的流量下滑</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">OpenAI 详解如何检测前沿模型失准行为</a> · OpenAI：官网动态（RSS · 排除企业/客户案例） · 论文研究</li><li><a href="https://trakkr.ai/trakkr-research/zombie-stats">Trakkr 研究：追踪 1285 条 AI 引用统计的溯源路径</a> · Hacker News：AI 热帖 · 论文研究</li><li><a href="https://factory.com/news/frontier-harness">Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness</a> · Factory 研究 / 产品（RSS） · 产品发布/更新</li></ul><p><a href="https://aihot.space/days/20261030/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-29</title>
       <link>https://aihot.space/days/20261029/</link>
@@ -421,13 +428,6 @@
       <guid isPermaLink="true">https://aihot.space/days/20260901/</guid>
       <pubDate>Tue, 01 Sep 2026 01:00:00 GMT</pubDate>
       <description><h2>AIhot 每日 AI 精选 · 2026-09-01</h2><p>当日按评分精选的 AI 热点（共 246 条）：</p><ul><li><a href="https://www.ithome.com/0/996/711.htm">Anthropic 详解 7·30 安全事件：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控</a> · IT之家（RSS） · 技巧与观点</li><li><a href="https://www.anthropic.com/news/improving-alignment-security-efforts">Anthropic 复盘 Claude 模型越权访问事件并公布安全与对齐改进措施</a> · Anthropic：Newsroom（网页） · 技巧与观点</li><li><a href="https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit">Sony 等音乐出版商起诉 Anthropic，引用员工赞美盗版图书馆的内部聊天</a> · Ars Technica：AI（RSS） · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2094454965502951544">ChatGPT Ads 上线不足 200 天年化收入达 10 亿美元</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://x.com/AnthropicAI/status/2094577944056430865">Anthropic 研究：训练一个错位的奖励寻求者模型</a> · X：Anthropic (@AnthropicAI) · 论文研究</li><li><a href="https://www.ithome.com/0/996/714.htm">Anthropic 与 Lambda 签署 350 亿美元云计算协议，数据中心租赁权归英伟达</a> · IT之家（RSS） · 行业动态</li><li><a href="https://www.ithome.com/0/996/710.htm">AI 需求激增促使苹果提前发布 2026 款 Mac mini 与 Mac Studio</a> · IT之家（RSS） · 行业动态</li><li><a href="https://x.com/cb_doge/status/2094522656393732346">Apple 称新证据显示前工程师在 OpenAI 用其机密电路设计教 AI 智能体跑仿真</a> · X：cb_doge (@cb_doge) · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2094598319876264232">Anthropic 研究：在 80 个可作弊环境中训练的 Opus 级模型学会篡改奖励函数并规避安全监控</a> · X：Rohan Paul (@rohanpaul_ai) · 论文研究</li><li><a href="https://x.com/cb_doge/status/2094454578590945789">美军方上线 Grok for Government 于 GenAI.mil</a> · X：cb_doge (@cb_doge) · 产品发布/更新</li></ul><p><a href="https://aihot.space/days/20260901/">在 AIhot 阅读完整日报 →</a></p></description>
-    </item>
-    <item>
-      <title>AIhot 每日 AI 精选 · 2026-08-31</title>
-      <link>https://aihot.space/days/20260831/</link>
-      <guid isPermaLink="true">https://aihot.space/days/20260831/</guid>
-      <pubDate>Mon, 31 Aug 2026 01:00:00 GMT</pubDate>
-      <description><h2>AIhot 每日 AI 精选 · 2026-08-31</h2><p>当日按评分精选的 AI 热点（共 160 条）：</p><ul><li><a href="https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work">理解 ChatGPT Work：它到底是什么，以及它和 Chat 有何不同</a> · Simon Willison 博客 · 技巧与观点</li><li><a href="https://www.ithome.com/0/996/637.htm">DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8</a> · IT之家（RSS） · 模型发布/更新</li><li><a href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode">破解《克劳德密码》第5部：Claude Code Opus 5 自动模式遭提示注入攻击，成功率最高 80%</a> · Hacker News 热门（buzzing.cc 中文翻译） · 技巧与观点</li><li><a href="https://www.oneusefulthing.org/p/agency-and-agents">AI 智能体自主协作攻破 Hugging Face 服务器</a> · Ethan Mollick：One Useful Thing（RSS） · 技巧与观点</li><li><a href="https://www.ithome.com/0/996/607.htm">欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》监管范围</a> · IT之家（RSS） · 行业动态</li><li><a href="https://openclaw.ai/blog/openclaw-2-accidentally">OpenClaw 2.0 发布：迄今最大更新，由 933 位贡献者打造</a> · Hacker News 热门（buzzing.cc 中文翻译） · 产品发布/更新</li><li><a href="https://x.com/omarsar0/status/2094118955304563198">持久化智能体浪潮将至，AI 沟通需去拟人化</a> · X：Elvis Saravia (@omarsar0, DAIR.AI) · 技巧与观点</li><li><a href="https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions">OpenClaw 2.0 发布：简化设置、重构浏览器应用并支持多人会话</a> · The Decoder：AI News（RSS） · 产品发布/更新</li><li><a href="https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&amp;mid=2247489121&amp;idx=1&amp;sn=f517f5cee108929b49d2b596ebf96a06">基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了</a> · 公众号：MiniMax（稀宇科技） · 产品发布/更新</li><li><a href="https://www.ithome.com/0/996/485.htm">英国监管机构警示：医疗 AI 转录工具频繁出错，威胁患者安全</a> · IT之家（RSS） · 技巧与观点</li></ul><p><a href="https://aihot.space/days/20260831/">在 AIhot 阅读完整日报 →</a></p></description>
     </item>
   </channel>
 </rss>
