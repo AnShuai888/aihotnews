@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Oct 2026 10:57:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:55:52 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Oct 2026 01:00:00 GMT</pubDate>
+    <pubDate>Sat, 31 Oct 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-10-31</title>
+      <link>https://aihot.space/days/20261031/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261031/</guid>
+      <pubDate>Sat, 31 Oct 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-10-31</h2><p>当日按评分精选的 AI 热点（共 111 条）：</p><ul><li><a href="https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/">科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://www.wiz.io/blog/black-october-for-ai-developer-platforms">Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件</a> · Wiz：Research（安全研究） · 论文研究</li><li><a href="https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&amp;mid=2247489416&amp;idx=1&amp;sn=9525f61df8086fcd6fe4d4183da068de">阿里巴巴与Apple合作，千问集成至Apple智能，11月4日开放测试</a> · 公众号：千问APP（阿里） · 行业动态</li><li><a href="https://www.bbc.co.uk/news/articles/cvwy72e0n72yo">AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%</a> · Hacker News：AI 热帖 · 行业动态</li><li><a href="https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/">Reddit CEO 称 Google AI Mode 不为任何人带来流量，Reddit 每周流失超百万搜索访问</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/">Nvidia 洽谈为 Nscale 西弗吉尼亚 Anthropic 数据中心提供债务担保</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://alignment.openai.com/how-we-detect-frontier-model-misalignment/">OpenAI 详解如何监控前沿模型的失对齐行为</a> · OpenAI：Alignment 研究博客（RSS） · 论文研究</li><li><a href="https://www.ithome.com/1/020/444.htm">Anthropic IPO 招股文件披露近 9000 亿美元隐性债务</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://www.ithome.com/1/020/395.htm">阿里巴巴：Apple 智能国行用户可自主选择是否开通千问集成功能</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/">Microsoft 向约四分之一员工提出自愿离职方案，AI 关键部门除外</a> · The Decoder：AI News（RSS） · 行业动态</li></ul><p><a href="https://aihot.space/days/20261031/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-10-30</title>
       <link>https://aihot.space/days/20261030/</link>
@@ -421,13 +428,6 @@
       <guid isPermaLink="true">https://aihot.space/days/20260902/</guid>
       <pubDate>Wed, 02 Sep 2026 01:00:00 GMT</pubDate>
       <description><h2>AIhot 每日 AI 精选 · 2026-09-02</h2><p>当日按评分精选的 AI 热点（共 340 条）：</p><ul><li><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1</a> · Anthropic：Newsroom（网页） · 模型发布/更新</li><li><a href="https://www.ithome.com/0/997/193.htm">Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%</a> · IT之家（RSS） · 模型发布/更新</li><li><a href="https://openai.com/index/path-to-astra">OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布</a> · OpenAI：官网动态（RSS · 排除企业/客户案例） · 模型发布/更新</li><li><a href="https://x.com/rohanpaul_ai/status/2094975190468010368">Nvidia 接近以 129 亿美元收购 Hugging Face</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://www.ithome.com/0/997/238.htm">英伟达接近以约 140 亿美元收购 Hugging Face，最快本周达成协议</a> · IT之家（RSS） · 行业动态</li><li><a href="https://openai.com/index/path-to-astra">OpenAI 宣布 Astra 达到 Preparedness Framework 网络安全 Critical 阈值</a> · Hacker News 热门（buzzing.cc 中文翻译） · 模型发布/更新</li><li><a href="https://x.com/rohanpaul_ai/status/2094873718237565197">Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现</a> · X：Rohan Paul (@rohanpaul_ai) · 论文研究</li><li><a href="https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less">Anthropic 发布 Claude Fable 5.1 与 Mythos 5.1，编码更强且成本最多降 45%</a> · The Decoder：AI News（RSS） · 模型发布/更新</li><li><a href="https://x.com/ArtificialAnlys/status/2094881171066978525">Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%</a> · X：Artificial Analysis (@ArtificialAnlys) · 技巧与观点</li><li><a href="https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack">Hugging Face 遭 OpenAI 智能体集体入侵后，AI 拟人化叙事之争升温</a> · The Verge：AI（RSS） · 技巧与观点</li></ul><p><a href="https://aihot.space/days/20260902/">在 AIhot 阅读完整日报 →</a></p></description>
-    </item>
-    <item>
-      <title>AIhot 每日 AI 精选 · 2026-09-01</title>
-      <link>https://aihot.space/days/20260901/</link>
-      <guid isPermaLink="true">https://aihot.space/days/20260901/</guid>
-      <pubDate>Tue, 01 Sep 2026 01:00:00 GMT</pubDate>
-      <description><h2>AIhot 每日 AI 精选 · 2026-09-01</h2><p>当日按评分精选的 AI 热点（共 246 条）：</p><ul><li><a href="https://www.ithome.com/0/996/711.htm">Anthropic 详解 7·30 安全事件：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控</a> · IT之家（RSS） · 技巧与观点</li><li><a href="https://www.anthropic.com/news/improving-alignment-security-efforts">Anthropic 复盘 Claude 模型越权访问事件并公布安全与对齐改进措施</a> · Anthropic：Newsroom（网页） · 技巧与观点</li><li><a href="https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit">Sony 等音乐出版商起诉 Anthropic，引用员工赞美盗版图书馆的内部聊天</a> · Ars Technica：AI（RSS） · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2094454965502951544">ChatGPT Ads 上线不足 200 天年化收入达 10 亿美元</a> · X：Rohan Paul (@rohanpaul_ai) · 行业动态</li><li><a href="https://x.com/AnthropicAI/status/2094577944056430865">Anthropic 研究：训练一个错位的奖励寻求者模型</a> · X：Anthropic (@AnthropicAI) · 论文研究</li><li><a href="https://www.ithome.com/0/996/714.htm">Anthropic 与 Lambda 签署 350 亿美元云计算协议，数据中心租赁权归英伟达</a> · IT之家（RSS） · 行业动态</li><li><a href="https://www.ithome.com/0/996/710.htm">AI 需求激增促使苹果提前发布 2026 款 Mac mini 与 Mac Studio</a> · IT之家（RSS） · 行业动态</li><li><a href="https://x.com/cb_doge/status/2094522656393732346">Apple 称新证据显示前工程师在 OpenAI 用其机密电路设计教 AI 智能体跑仿真</a> · X：cb_doge (@cb_doge) · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2094598319876264232">Anthropic 研究：在 80 个可作弊环境中训练的 Opus 级模型学会篡改奖励函数并规避安全监控</a> · X：Rohan Paul (@rohanpaul_ai) · 论文研究</li><li><a href="https://x.com/cb_doge/status/2094454578590945789">美军方上线 Grok for Government 于 GenAI.mil</a> · X：cb_doge (@cb_doge) · 产品发布/更新</li></ul><p><a href="https://aihot.space/days/20260901/">在 AIhot 阅读完整日报 →</a></p></description>
     </item>
   </channel>
 </rss>
