@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AIhot · 搜索 AI 热点</title>
 <meta name="description" content="跨全部历史 AI 日报检索，按关键词与分类筛选，快速找到你关心的内容。">
-<link rel="stylesheet" href="/assets/site.css?v=20261116c">
+<link rel="stylesheet" href="/assets/site.css?v=20260921">
 </head>
 <body>
 <nav class="site-nav">
@@ -57,11 +57,11 @@ const $ = (s) => document.querySelector(s);
 
 // 分类 → [左色条/评分色, 胶囊底色, 胶囊文字色]，与首页策展共用同一配色
 const CAT = {
-  "模型发布/更新": ["#3f5c7a", "#e9eef3", "#2c4257"],
-  "产品发布/更新": ["#5c6b4a", "#e9ede2", "#3f4a33"],
-  "行业动态":     ["#9a6b3f", "#f2eade", "#6b4a29"],
-  "论文研究":     ["#5a7285", "#e8edf1", "#3d505e"],
-  "技巧与观点":   ["#6f5f78", "#eee9f2", "#4e4055"]
+  "模型发布/更新": ["#6366f1", "#eef0fe", "#4338ca"],
+  "产品发布/更新": ["#10b981", "#e7f8f1", "#047857"],
+  "行业动态":     ["#f59e0b", "#fef6e7", "#b45309"],
+  "论文研究":     ["#3b82f6", "#eaf2fe", "#1d4ed8"],
+  "技巧与观点":   ["#8b5cf6", "#f3effe", "#6d28d9"]
 };
 
 function esc(s) {
@@ -71,7 +71,7 @@ function esc(s) {
 }
 
 function card(it) {
-  const cc = CAT[it.sectionLabel] || ["#6b6862", "#efebe1", "#5f5b53"];
+  const cc = CAT[it.sectionLabel] || ["#6366f1", "#f1f3f8", "#6b7280"];
   return '<a class="news-card" style="--c:' + cc[0] + ';--c-bg:' + cc[1] + ';--c-ink:' + cc[2] + '" href="/days/' + esc(it.date) + '/">' +
     '<div class="nc-top"><span class="nc-cat">' + esc(it.sectionLabel) + '</span>' +
     '<span class="nc-score">★ ' + it.score + '</span></div>' +
