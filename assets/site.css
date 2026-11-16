@@ -72,7 +72,7 @@ img{max-width:100%}
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .news-card .nc-foot{display:flex;align-items:center;gap:8px;margin-top:2px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
 .news-card .nc-src{background:#efebe1;border:1px solid var(--line);color:#5f5b53;border-radius:5px;padding:2px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
-.news-card .nc-date{white-space:nowrap;color:#989288}
+.news-card .nc-date{white-space:nowrap}
 .news-card .nc-link{margin-left:auto;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 /* 首条大卡（本周精选编辑化版式） */
 .news-card.lead{grid-column:1/-1;padding:20px 22px;gap:12px}
