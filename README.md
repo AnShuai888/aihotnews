@@ -3,7 +3,7 @@
 A **zero-dependency, fully static** Chinese AI news aggregator. Every day it automatically pulls AI news from aihot, then deduplicates, categorizes, and scores it into a single-page daily briefing. Once a week it also rolls up a curated weekly report. The site is deployed automatically by **Cloudflare Pages** — no backend, no build step.
 
 - Visit online: https://aihot.space
-- Content source: aihot (a Chinese AI news aggregation platform)
+- Content source: AIHOT (aihot.news), a Chinese AI news aggregation platform
 - Tech form: single-file HTML with inline CSS/JS, no CDN, no external font/image dependencies, works offline
 
 ---
@@ -70,7 +70,11 @@ python -m http.server 8765
 
 ## Disclaimer
 
-All content on this site comes from a third-party aggregation platform (aihot); copyright belongs to the original authors. This site only **organizes and aggregates** the material, and every item is attributed with its source and original link. It is not used for commercial purposes. For takedown or removal requests, please contact the maintainer.
+All content on this site comes from the third-party aggregation platform AIHOT (aihot.news); copyright belongs to the original authors. This site only provides **non-commercial curation and aggregation**; every item is attributed with its source and original link. It has **not obtained, and does not claim, any written authorization from AIHOT**. For commercial use, republication, or data redistribution, please contact AIHOT (agent@virxact.com); for infringement or takedown requests, please contact the maintainer.
+
+## License
+
+This project is released under the [MIT License](LICENSE). It covers only the site's original templates, styles, scripts, and documentation — it does **not** cover any data, items, summaries, scores, images, `assets/archive.json`, inline data in daily/weekly pages, or AIHOT's brand and services, which remain the property of their respective owners (see https://aihot.news/terms).
 
 ---
 
