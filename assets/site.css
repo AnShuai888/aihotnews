@@ -1,5 +1,5 @@
 :root{
-  --brand-1:#4f46e5; --brand-2:#7c3aed; --brand-3:#0ea5e9;
+  --brand-1:#2563eb; --brand-2:#0e7490; --brand-3:#1e3a8a;
   --bg:#eef1f7; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280; --line:#dbe1ec;
   --radius:16px;
   --shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
@@ -27,7 +27,7 @@ img{max-width:100%}
 .tag-soon{font-size:10px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:1px 6px;margin-left:6px;color:var(--muted)}
 
 /* ===== Hero ===== */
-.hero{background:linear-gradient(135deg,var(--brand-1) 0%,var(--brand-2) 55%,var(--brand-3) 100%);color:#fff;padding:56px 24px 48px;text-align:center}
+.hero{background:linear-gradient(135deg,var(--brand-3) 0%,var(--brand-1) 55%,var(--brand-2) 100%);color:#fff;padding:56px 24px 48px;text-align:center}
 .hero .kicker{font-size:13px;letter-spacing:.18em;opacity:.85;margin:0 0 10px}
 .hero h1{margin:0;font-size:clamp(28px,5vw,46px);font-weight:800;letter-spacing:.5px}
 .hero p.lead{margin:14px auto 0;max-width:560px;font-size:15px;opacity:.95}
