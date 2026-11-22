@@ -201,6 +201,8 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
+        <label class="sr-only" for="topSel">显示条数</label>
+        <select class="ctl" id="topSel"></select>
 <span class="hint" id="toolHint"></span>
       </div>
     </aside>
@@ -836,6 +838,9 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
+// 显示条数档位：数据驱动，后续加档只需在数组里加一个数（如 20）。
+const TOP_OPTIONS = [10, 5];
+let topN = TOP_OPTIONS[0];
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -885,10 +890,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = cards;
+    const shown = cards.slice(0, topN);
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = cards.length + ' 条';
+      pill.textContent = shown.length + ' / ' + cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -905,10 +910,20 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
+    hint.textContent = '每类显示前 ' + topN + ' 条 · 当前 ' + counter + ' 条 · 热点榜不参与';
   }
 }
 
+const topSel = document.getElementById('topSel');
+if (topSel) {
+  TOP_OPTIONS.forEach(n => {
+    const o = document.createElement('option');
+    o.value = String(n); o.textContent = '显示 · Top ' + n;
+    if (n === topN) o.selected = true;
+    topSel.appendChild(o);
+  });
+  topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || TOP_OPTIONS[0]; render(); });
+}
 const sortSel = document.getElementById('sortSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
 
