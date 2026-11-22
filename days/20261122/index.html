@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="AIhot 每日 AI 精选" href="/rss.xml">
+<title>AI 日报 · 2026年11月22日 周日</title>
+<style>
+  :root{
+    --bg:#f5f7fb; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
+    --line:#e5e7eb; --shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:16px; --navh:58px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .hero{background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 55%,#0e7490 100%);
+    color:#fff;padding:48px 24px 40px;text-align:center}
+  .hero .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85;margin:0 0 10px}
+  .hero h1{margin:0;font-size:clamp(28px,5vw,46px);font-weight:800;letter-spacing:.5px}
+  .hero .total{margin:18px 0 6px;font-size:15px;opacity:.95}
+  .hero .total b{font-size:30px;font-weight:800;vertical-align:-3px;margin:0 4px}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+  .stat{background:rgba(255,255,255,.16);backdrop-filter:blur(4px);
+    border:1px solid rgba(255,255,255,.25);border-radius:999px;
+    padding:8px 16px;font-size:14px;display:flex;align-items:center;gap:8px}
+  .stat .dot{width:9px;height:9px;border-radius:50%}
+  .stat b{font-weight:700}
+  .nav{position:sticky;top:var(--navh);z-index:20;background:rgba(255,255,255,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    display:flex;gap:8px;padding:10px 16px;overflow-x:auto}
+  .nav a{flex:0 0 auto;font-size:14px;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:6px 14px;min-height:44px;
+    display:flex;align-items:center;gap:6px;transition:.2s;white-space:nowrap;
+    background:transparent;--active-bg:#2563eb}
+  .nav a .c{font-weight:700;color:var(--ink)}
+  .nav a:hover{background:#f3f4f6}
+  .nav a.active{color:#fff;border-color:transparent;background:var(--active-bg)}
+  .nav a.active .c{color:#fff}
+  .shell{max-width:1400px;margin:0 auto;padding:24px 20px 60px;
+    display:grid;grid-template-columns:240px minmax(0,1fr);gap:24px;align-items:start}
+  .wrap{min-width:0;padding:0}
+  .section{margin:38px 0;scroll-margin-top:calc(var(--navh) + 16px)}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .sec-head .bar{width:5px;height:26px;border-radius:3px}
+  .sec-head h2{margin:0;font-size:21px;font-weight:800}
+  .sec-head .pill{margin-left:auto;font-size:13px;color:var(--muted);
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 18px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+    gap:10px;transition:transform .18s,box-shadow .18s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(16,24,40,.12),0 14px 36px rgba(16,24,40,.10)}
+  .card .num{position:absolute;top:0;right:0;font-size:13px;font-weight:800;color:#fff;
+    padding:4px 12px;border-bottom-left-radius:14px}
+  .card .title{font-size:16px;font-weight:700;line-height:1.45;padding-right:34px;color:var(--ink)}
+  .card .title:hover{text-decoration:underline}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);
+    background:#f3f4f6;border-radius:999px;padding:3px 10px;width:fit-content}
+  .card .summary{font-size:14px;color:#374151;margin:0}
+  .card .foot{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    margin-top:4px;padding-top:10px;border-top:1px dashed var(--line)}
+  .card .time{font-size:12.5px;color:var(--muted)}
+  .card .read{font-size:13px;font-weight:700;color:#2563eb;white-space:nowrap}
+  .card .read:hover{text-decoration:underline}
+  .empty{grid-column:1/-1;background:var(--panel);border:1px dashed var(--line);
+    border-radius:var(--radius);padding:26px;text-align:center;color:var(--muted);font-size:14px}
+  footer{max-width:1400px;margin:0 auto;padding:24px 20px 50px;color:var(--muted);font-size:13px;
+    border-top:1px solid var(--line)}
+  footer a{color:#2563eb;font-weight:600}
+  footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
+  @media (max-width:560px){
+    .hero{padding:36px 16px 30px}
+    .grid{grid-template-columns:1fr}
+    .wrap{padding:20px 14px 50px}
+  }
+  /* 站点级导航（日报页内联，避免引用根站资源） */
+  .site-nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .site-nav .inner{max-width:1400px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+  .brand{font-size:18px;font-weight:800;color:#2563eb;letter-spacing:.5px;white-space:nowrap}
+  .brand small{display:block;font-size:11px;font-weight:500;color:#6b7280;letter-spacing:.1em}
+  .nav-links{display:flex;align-items:center;gap:8px;margin-left:auto;overflow-x:auto;
+    min-width:0;scrollbar-width:none;-ms-overflow-style:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{flex:0 0 auto;font-size:14px;color:#6b7280;border:1px solid var(--line);
+    border-radius:999px;padding:6px 16px;min-height:44px;display:inline-flex;align-items:center;
+    white-space:nowrap;transition:transform .2s,background .2s,color .2s}
+  .nav-links a:hover{background:#f3f4f6;transform:translateY(-1px)}
+  .nav-links a.active{color:#fff;background:#2563eb;border-color:transparent}
+  .nav-links a.soon{color:#6b7280;cursor:default;opacity:.7}
+  .nav-links a.soon:hover{background:transparent;transform:none}
+  .tag-soon{font-size:10px;background:#f5f7fb;border:1px solid var(--line);border-radius:999px;padding:1px 6px;margin-left:6px;color:#6b7280}
+  .site-footer{max-width:1400px;margin:0 auto;padding:24px 20px 50px;color:#6b7280;font-size:13px;border-top:1px solid var(--line)}
+  .site-footer a{color:#2563eb;font-weight:600}
+  .site-footer .note{margin-top:8px;font-size:12.5px;opacity:.85}
+  @media (max-width:560px){.brand small{display:none}}
+
+  /* 工具条：排序 + 显示条数（sticky 跟随滚动；仅作用于下方 5 个分类版块，AI 热点榜不受控） */
+  .toolbar{position:sticky;top:calc(var(--navh) + var(--nav2h,52px));z-index:18;
+    max-width:1400px;margin:0 auto;padding:12px 20px;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .tb-tag{font-size:12.5px;font-weight:700;color:#2563eb;background:#eff6ff;
+    border:1px solid #c7d2fe;border-radius:999px;padding:5px 12px;white-space:nowrap}
+  .ctl{appearance:none;-webkit-appearance:none;min-height:44px;font:inherit;font-size:14px;
+    font-weight:700;color:var(--ink);background:#fff
+    url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1.5L6 6.5L11 1.5' fill='none' stroke='%236b7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat right 14px center;background-size:12px 8px;
+    border:1px solid var(--line);border-radius:999px;padding:10px 38px 10px 16px;
+    cursor:pointer;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+  .ctl:hover{border-color:#a5b4fc}
+  .ctl:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+  .toolbar .hint{font-size:13px;color:var(--muted);margin-left:auto}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  @media (max-width:560px){
+    .toolbar{position:static;border-bottom:none;padding:12px 14px 0;gap:8px}
+    .tb-tag{flex:1 1 100%;text-align:center;border-radius:8px}
+    .ctl{flex:1 1 calc(50% - 4px);min-width:0;font-size:13.5px;padding:10px 34px 10px 14px;
+      background-position:right 12px center}
+    .toolbar .hint{flex:1 1 100%;margin-left:0;text-align:center}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .card{transition:none}
+    .card:hover{transform:none}
+  }
+  /* 卡片元信息行（来源 + 评分角标） */
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .score-badge{display:inline-flex;align-items:center;font-size:12px;font-weight:700;
+    color:#b45309;background:#fef3c7;border:1px solid #fde68a;border-radius:999px;
+    padding:3px 9px;line-height:1.2}
+
+  /* AI 热点榜模块（hot-topics 近48h快照，暖色强调以区别于分类版块） */
+  .hot{margin:30px 0 8px;scroll-margin-top:calc(var(--navh) + 16px)}
+  .hot-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+  .hot-head .bar{width:5px;height:26px;border-radius:3px;
+    background:linear-gradient(180deg,#f97316,#ef4444)}
+  .hot-head h2{margin:0;font-size:21px;font-weight:800}
+  .hot-head .pill{margin-left:auto;font-size:13px;color:var(--muted);
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+  .hot-list{display:flex;flex-direction:column;gap:10px}
+  .hot-row{display:flex;align-items:center;gap:14px;background:var(--panel);
+    border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);
+    transition:transform .18s,box-shadow .18s}
+  .hot-row:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,68,68,.14)}
+  .hot-rank{flex:0 0 auto;width:34px;height:34px;border-radius:10px;display:flex;
+    align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#fff;
+    background:linear-gradient(135deg,#f97316,#ef4444)}
+  .hot-rank.top{box-shadow:0 0 0 3px rgba(249,115,22,.18)}
+  .hot-main{flex:1 1 auto;min-width:0}
+  .hot-title{font-size:15.5px;font-weight:700;line-height:1.45;color:var(--ink);
+    text-decoration:none}
+  .hot-title:hover{text-decoration:underline}
+  .hot-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:7px}
+  .hot-src{font-size:12.5px;color:var(--muted);background:#f3f4f6;border-radius:999px;padding:3px 10px}
+  /* 热点榜：排名 + 标题(黑字 + 可点 → aihot 聚合页) + 来源 chip + 阅读原文(→original 真实出处)
+     指标（信号/信源/来龙去脉）已按 0905 决策移除；
+     标题口径与模型卡片完全一致：黑字 var(--ink)、hover 出下划线、<a> 跳转 aihot 聚合页 */
+  .hot-read{font-size:13px;font-weight:700;color:#2563eb;white-space:nowrap;
+    text-decoration:none}
+  .hot-read:hover{color:#4338ca;text-decoration:underline}
+  @media (max-width:560px){
+    .hot{margin:22px 0 6px}
+    .hot-row{gap:10px;padding:12px}
+    .hot-rank{width:30px;height:30px;font-size:14px}
+    .hot-title{font-size:14.5px}
+  }
+  /* ===== 左栏布局（≥1200px：分类导航 + 显示设置收进左栏；<1200px 回落顶部横条） ===== */
+  .rail{position:sticky;top:calc(var(--navh) + 16px);align-self:start;
+    max-height:calc(100vh - var(--navh) - 32px);overflow:auto;
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 14px;box-shadow:var(--shadow)}
+  .rail-title{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.08em;
+    margin:0 0 10px;padding-left:2px}
+  .rail-sep{height:1px;background:var(--line);margin:16px 0}
+  .rail .nav{flex-direction:column;gap:6px;padding:0;overflow:visible;position:static;
+    background:none;border-bottom:none;backdrop-filter:none}
+  .rail .nav a{width:100%;justify-content:space-between;border-radius:10px;
+    padding:8px 12px;font-size:13.5px}
+  .rail .toolbar{position:static;flex-direction:column;align-items:stretch;gap:10px;
+    padding:0;max-width:none;margin:0;background:none;border-bottom:none;backdrop-filter:none}
+  .rail .ctl{width:100%}
+  .rail .toolbar .hint{margin-left:0;text-align:left;font-size:12.5px;line-height:1.7}
+  @media (max-width:1199px){
+    .shell{display:block;padding:18px 20px 50px}
+    .rail{position:sticky;top:var(--navh);z-index:20;max-height:none;overflow:visible;
+      background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-radius:0;
+      border-left:none;border-right:none;border-bottom:1px solid var(--line);
+      margin:0 -20px 20px;padding:10px 20px;display:flex;flex-wrap:wrap;
+      gap:8px;align-items:center}
+    .rail-title,.rail-sep{display:none}
+    .rail .nav{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;width:100%}
+    .rail .nav a{width:auto}
+    .rail .toolbar{flex-direction:row;flex-wrap:wrap;width:100%;gap:8px}
+    .rail .ctl{width:auto;flex:1 1 auto}
+    .rail .toolbar .hint{flex:1 1 100%;text-align:left}
+    .section,.hot{scroll-margin-top:calc(var(--navh) + 116px)}
+  }
+  @media (max-width:560px){
+    .shell{padding:14px 14px 50px}
+    .rail{margin:0 -14px 16px;padding:10px 14px}
+    .rail .nav a{padding:6px 12px;font-size:13px}
+    .rail .ctl{flex:1 1 calc(50% - 4px);font-size:13.5px}
+    .section,.hot{scroll-margin-top:calc(var(--navh) + 152px)}
+  }
+</style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="inner">
+      <a class="brand" href="https://aihot.space/">AIhot<small>每日 AI 热点</small></a>
+      <div class="nav-links">
+        <a href="/">首页</a>
+        <a href="/today" class="active">今日新闻</a>
+        <a href="/week">一周新闻</a>
+        <a href="/search.html">搜索</a>
+        <a href="/about/">关于</a>
+        <a href="/contact/">联系</a>
+      </div>
+    </div>
+  </nav>
+  <header class="hero" id="top">
+    <p class="kicker">AI 日报</p>
+    <h1 id="heroDate"></h1>
+    <p class="total">今日共收录 <b id="heroTotal"></b> 条 AI 资讯</p>
+    <div class="stats" id="heroStats"></div>
+  </header>
+
+  <div class="shell">
+    <aside class="rail">
+      <p class="rail-title">本期版块</p>
+      <nav class="nav" id="nav"></nav>
+      <div class="rail-sep"></div>
+      <p class="rail-title">显示设置</p>
+      <div class="toolbar">
+        <label class="sr-only" for="sortSel">排序方式</label>
+        <select class="ctl" id="sortSel">
+          <option value="score">排序 · 评分优先</option>
+          <option value="time">排序 · 时间优先</option>
+        </select>
+        <label class="sr-only" for="topSel">显示条数</label>
+        <select class="ctl" id="topSel"></select>
+        <span class="hint" id="toolHint"></span>
+      </div>
+    </aside>
+    <main class="wrap" id="app"></main>
+  </div>
+
+  <footer>
+    <div>本日报共计 <b id="footTotal"></b> 条，数据来源：<a id="footSource" target="_blank" rel="noopener noreferrer"></a>。</div>
+    <div class="note" id="footGen"></div>
+    <div class="note" id="footNote"></div>
+  </footer>
+
+  <footer class="site-footer">
+    <div>AIhot · 每日 AI 热点聚合 · 数据来源 <a href="https://aihot.news" target="_blank" rel="noopener noreferrer">AIHOT</a></div>
+    </footer>
+
+<script>
+const DATA = {
+  "meta": {
+    "date": "2026-11-22",
+    "heroDate": "2026年11月22日 周日",
+    "total": 34,
+    "sourceName": "AIHOT",
+    "sourceUrl": "https://aihot.news",
+    "generatedNote": "数据检索时间：2026年11月22日 21:13（北京时间）；默认按评分排序、可切换按时间排序。"
+  },
+  "sections": [
+    {
+      "key": "models",
+      "label": "模型发布/更新",
+      "color": "#6366f1",
+      "count": 2,
+      "cards": [
+        {
+          "num": 7,
+          "section": "models",
+          "title": "Artificial Analysis 评测显示 GPT-6.2 Astra 和 Sol 回答更简短但透明度低于 Claude",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月22日 18:03（收录）",
+          "summary": "The Decoder 援引 Artificial Analysis 的 AA-PersonalityBench 评测…",
+          "aihot": "https://aihot.news/items/pkywgdchhebtc2i7cxpndjtso",
+          "original": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+          "score": 60
+        },
+        {
+          "num": 27,
+          "section": "models",
+          "title": "GPT-6.2 Astra 登 Agent Arena 指数第 6",
+          "source": "X：Arena (@arena)",
+          "time": "11月22日 02:00（收录）",
+          "summary": "OpenAI 的 GPT-6.2 Astra (Max) 在 Agent Arena Index 上排名第 6，比 G…",
+          "aihot": "https://aihot.news/items/ga4t5wuthq74lyd7ap05tjths",
+          "original": "https://x.com/arena/status/2124191294360588725",
+          "score": 44
+        }
+      ]
+    },
+    {
+      "key": "products",
+      "label": "产品发布/更新",
+      "color": "#10b981",
+      "count": 9,
+      "cards": [
+        {
+          "num": 24,
+          "section": "products",
+          "title": "Claude Code 推出实验性 Code Mode，用 JavaScript 编排多步工具调用",
+          "source": "X：Addy Osmani (@addyosmani)",
+          "time": "11月22日 04:10（收录）",
+          "summary": "Anthropic 的 Addy Osmani 介绍 Claude Code 实验性新功能 Code Mode：Cla…",
+          "aihot": "https://aihot.news/items/g6euba94fvthhuiocojfrlqpa",
+          "original": "https://x.com/addyosmani/status/2124229492248019362",
+          "score": 74
+        },
+        {
+          "num": 23,
+          "section": "products",
+          "title": "Qwen4 Max 上线 Together AI，单次调用修复 Tornado 整仓 bug",
+          "source": "Together AI 研究与产品博客（RSS）",
+          "time": "11月22日 05:44（收录）",
+          "summary": "Together AI 宣布阿里旗舰模型 Qwen4 Max 上线其 Serverless 推理平台（模型串 Qwen…",
+          "aihot": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+          "original": "https://www.together.ai/blog/qwen4-max",
+          "score": 72
+        },
+        {
+          "num": 5,
+          "section": "products",
+          "title": "Google 在 Gemini API 预览 Tool Retrieval，面向大型工具库延迟加载 schema",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月22日 19:12（收录）",
+          "summary": "Google 在 Gemini API 的 Interactions API（v1beta）中预览上线 Tool Re…",
+          "aihot": "https://aihot.news/items/wgzy1mbctlp5z5p5ttc47as2a",
+          "original": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+          "score": 54
+        },
+        {
+          "num": 9,
+          "section": "products",
+          "title": "TikTok 上线 AI 内容透明度检测工具与创作者肖像检测功能",
+          "source": "IT之家·人工智能",
+          "time": "11月22日 15:06（收录）",
+          "summary": "TikTok 于当地时间 11 月 19 日宣布推出两项 AI 透明度工具。用户无需账号即可上传图片或视频，检测其是否…",
+          "aihot": "https://aihot.news/items/f6i88eec881e2u2z63w6xlsih",
+          "original": "https://www.ithome.com/1/030/581.htm",
+          "score": 54
+        },
+        {
+          "num": 16,
+          "section": "products",
+          "title": "Graham Dumpleton 发布 AI 辅助 Rust 服务器 Muru，用于运行 Python Web 应用",
+          "source": "Simon Willison 博客",
+          "time": "11月22日 08:42（收录）",
+          "summary": "mod_wsgi 作者 Graham Dumpleton 发布 AI 辅助开发的 Rust 服务器 Muru，目标是为…",
+          "aihot": "https://aihot.news/items/kb0bmjubmelz5mx18wthycfyb",
+          "original": "https://simonwillison.net/2026/Nov/21/muru/",
+          "score": 46
+        },
+        {
+          "num": 25,
+          "section": "products",
+          "title": "Amp 为 Puck 推出车载模式，支持开车时语音对话",
+          "source": "Amp Chronicle",
+          "time": "11月22日 02:55（收录）",
+          "summary": "Amp 的 Puck 现已支持在车内语音对话，让用户开车时无需看屏幕即可更安全地工作。iPhone 和 Android…",
+          "aihot": "https://aihot.news/items/t7ejvp54put1vlmoyahiccgib",
+          "original": "https://ampcode.com/news/puck-in-the-car",
+          "score": 46
+        },
+        {
+          "num": 19,
+          "section": "products",
+          "title": "特斯拉FSD V15天空箭头导航",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "11月22日 07:37（收录）",
+          "summary": "在FSD V15中，特斯拉AI计算机像电子游戏一样，用天空中的箭头重新渲染现实来指示转弯。 你可以点击现实重现器上的任…",
+          "aihot": "https://aihot.news/items/mbi7z2u3erlzmlonr9dmanwh5",
+          "original": "https://x.com/elonmusk/status/2124238164512714925",
+          "score": 42
+        },
+        {
+          "num": 10,
+          "section": "products",
+          "title": "腾讯 Chatterfly 输入法安卓版开启内测，支持语音转写、自动翻译等 AI 功能",
+          "source": "IT之家·人工智能",
+          "time": "11月22日 14:45（收录）",
+          "summary": "腾讯 Chatterfly 输入法安卓版开启内测，iOS 版状态为“即将发布”。该输入法支持语音输入成稿、语音自动翻译…",
+          "aihot": "https://aihot.news/items/pxv1mlpjsgryssaduxl01w5b4",
+          "original": "https://www.ithome.com/1/030/576.htm",
+          "score": 41
+        },
+        {
+          "num": 21,
+          "section": "products",
+          "title": "OpenCode 上 GLM 5.3 与 DeepSeek V4.1 Flash 六折",
+          "source": "X：opencode (@opencode)",
+          "time": "11月22日 06:43（收录）",
+          "summary": "GLM 5.3 和 DeepSeek V4.1 Flash 现已在 OpenCode 享受 60% 折扣",
+          "aihot": "https://aihot.news/items/wt9537cmael2viasp9qvjgau1",
+          "original": "https://x.com/opencode/status/2124265178267005017",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "key": "industry",
+      "label": "行业动态",
+      "color": "#f59e0b",
+      "count": 10,
+      "cards": [
+        {
+          "num": 3,
+          "section": "industry",
+          "title": "Lean 与 Mathlib 社区确认 Levent Alpöge 黎曼猜想证明正确",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月22日 20:05（收录）",
+          "summary": "Lean 与 Mathlib 社区发表声明，确认斯坦福数学家 Levent Alpöge 的黎曼猜想证明正确。Alpö…",
+          "aihot": "https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
+          "original": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+          "score": 85
+        },
+        {
+          "num": 15,
+          "section": "industry",
+          "title": "FT 调查：与 Jensen Huang 有情感关系的 Alice Huang 牵涉向中国走私 Nvidia 芯片的网络",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月22日 09:30（收录）",
+          "summary": "FT 发布调查报道，指与 Jensen Huang 存在情感关系的 Alice Huang 牵涉一张将 Nvidia…",
+          "aihot": "https://aihot.news/items/ygk78g9svmphgtbms3klrjnxw",
+          "original": "https://x.com/rohanpaul_ai/status/2124303818167095585",
+          "score": 75
+        },
+        {
+          "num": 18,
+          "section": "industry",
+          "title": "Together AI 通报 2026 年 6-7 月 serverless 推理服务提示词泄露事件",
+          "source": "Together AI 研究与产品博客（RSS）",
+          "time": "11月22日 07:46（收录）",
+          "summary": "Together AI 通报一起安全事件：因 AI 编码 agent 在公开 GitHub 仓库 xorl 中提交了私…",
+          "aihot": "https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
+          "original": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+          "score": 74
+        },
+        {
+          "num": 11,
+          "section": "industry",
+          "title": "韩国高考 AI 作弊事件发酵，教育部长崔教振引咎辞职",
+          "source": "IT之家·人工智能",
+          "time": "11月22日 11:36（收录）",
+          "summary": "韩国教育部长官崔教振 11 月 22 日辞职，为 2027 年度高考防范 AI 作弊措施不足引发的混乱承担责任。韩国高…",
+          "aihot": "https://aihot.news/items/pyf9a8fjorvbn6o2gg11w7dbt",
+          "original": "https://www.ithome.com/1/030/558.htm",
+          "score": 73
+        },
+        {
+          "num": 22,
+          "section": "industry",
+          "title": "TechCrunch 播客解读 Nvidia 财报亮眼与请愿前 CEO 黄仁勋回归并存的两种叙事",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "11月22日 05:47（收录）",
+          "summary": "TechCrunch Equity 播客讨论本周 Nvidia 的两幅反差图景：财报收入大涨、管理层称无需前 CEO…",
+          "aihot": "https://aihot.news/items/f6pc7clp2m7q0s3k1vvgalg6v",
+          "original": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+          "score": 67
+        },
+        {
+          "num": 13,
+          "section": "industry",
+          "title": "OpenRouter 因推理提供商数据处理事件下架三家提供商并移除 125 个 ZDR 端点",
+          "source": "OpenRouter：Announcements（RSS）",
+          "time": "11月22日 09:50（收录）",
+          "summary": "OpenRouter 针对安全研究人员报告的部分推理提供商数据泄露或数据政策未被执行问题发布公告，称未发现 OpenR…",
+          "aihot": "https://aihot.news/items/dvvqir3buzkemt3nqplef9omx",
+          "original": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+          "score": 65
+        },
+        {
+          "num": 14,
+          "section": "industry",
+          "title": "Amazon 接近以约 7.5B 美元收购 AI 创业公司 Decart",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月22日 09:30（收录）",
+          "summary": "Amazon 接近以约 $7.5B 收购 AI 创业公司 Decart，几乎是其最新 $4B 估值的两倍。据报道，De…",
+          "aihot": "https://aihot.news/items/eg97pyuem4incr7vpqsklw36v",
+          "original": "https://x.com/rohanpaul_ai/status/2124294348712092061",
+          "score": 65
+        },
+        {
+          "num": 32,
+          "section": "industry",
+          "title": "TechCrunch 起底短剧平台 Shortical 的面部授权 AI 剧集模式",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "11月22日 00:09（收录）",
+          "summary": "短剧平台 Shortical 首次通过直接协议授权以色列演员 Aki Avni 的面部，制作全 AI 剧集《Inevi…",
+          "aihot": "https://aihot.news/items/tyv1kuj0zdg5ghlaj4a2trh3b",
+          "original": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+          "score": 64
+        },
+        {
+          "num": 8,
+          "section": "industry",
+          "title": "Helsing 在柏林艺术中心发布军事 AI 系统 Clarity 引发抗议，场地方致歉",
+          "source": "IT之家·人工智能",
+          "time": "11月22日 15:48（收录）",
+          "summary": "据《卫报》报道，德国军工初创企业 Helsing 于 11 月 11 日在柏林艺术文化空间 Kraftwerk Ber…",
+          "aihot": "https://aihot.news/items/it1vwwm8v504q0lscoo50kua7",
+          "original": "https://www.ithome.com/1/030/590.htm",
+          "score": 63
+        },
+        {
+          "num": 17,
+          "section": "industry",
+          "title": "Signal 更新默认屏蔽截图，阻止 Siri AI 和 Gemini 等 AI 智能体读取消息",
+          "source": "IT之家·人工智能",
+          "time": "11月22日 07:46（收录）",
+          "summary": "Signal 推出 iOS / Android 更新，默认阻止应用内截图和录屏，以防止 Siri AI、Gemini…",
+          "aihot": "https://aihot.news/items/ef9x7y2sig0grv75qqa6qfr6q",
+          "original": "https://www.ithome.com/1/030/517.htm",
+          "score": 61
+        }
+      ]
+    },
+    {
+      "key": "papers",
+      "label": "论文研究",
+      "color": "#3b82f6",
+      "count": 6,
+      "cards": [
+        {
+          "num": 26,
+          "section": "papers",
+          "title": "Columbia 与 MIT 论文展示 Claude 发现的算法突破 3SUM 与 APSP 长期速度上限",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月22日 02:49（收录）",
+          "summary": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式…",
+          "aihot": "https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+          "original": "https://x.com/rohanpaul_ai/status/2124213113583174076",
+          "score": 77
+        },
+        {
+          "num": 1,
+          "section": "papers",
+          "title": "Dragos研究揭示低价AI推理服务商窃取密钥并窥探用户请求",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月22日 21:06（收录）",
+          "summary": "Dragos安全研究人员在2026年7月至11月期间向AI服务商发送约200万条含假凭证的请求，发现至少三家服务商遭入…",
+          "aihot": "https://aihot.news/items/kbrosmbvldj069ds87zid0wlp",
+          "original": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+          "score": 73
+        },
+        {
+          "num": 2,
+          "section": "papers",
+          "title": "METR 警告 AI 能力提升快于专家可靠评估新系统安全性的速度",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月22日 21:06（收录）",
+          "summary": "AI 研究机构 METR 发布 2026 年 11 月 AI 能力测量更新，警告现有公开数据不足以排除未来几年 AI…",
+          "aihot": "https://aihot.news/items/m3samvph4iuiugqq1hamllckb",
+          "original": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+          "score": 65
+        },
+        {
+          "num": 20,
+          "section": "papers",
+          "title": "UT Austin 论文：Darmok 系统在英国密码填字上达到超人表现",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月22日 07:28（收录）",
+          "summary": "UT Austin 论文介绍 Darmok，称其为首个在英国密码填字上达到超人表现的自动化系统。在 2026 Time…",
+          "aihot": "https://aihot.news/items/sysqtnax23md47g77bx6rywht",
+          "original": "https://x.com/rohanpaul_ai/status/2124276600435019932",
+          "score": 63
+        },
+        {
+          "num": 12,
+          "section": "papers",
+          "title": "Columbia 与 CertiK 推出 TensorLean，用 Lean 对 PTX 级 GPU 内核做形式化验证",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月22日 10:04（收录）",
+          "summary": "Columbia 大学与 CertiK 研究人员推出 TensorLean，一个在 PTX 级验证 GPU 内核的 L…",
+          "aihot": "https://aihot.news/items/hf95pziye2nm3tc6agg9ar66g",
+          "original": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+          "score": 59
+        },
+        {
+          "num": 30,
+          "section": "papers",
+          "title": "NVIDIA 论文 CPU-ARC：把 LLM 推理缓存为 CPU 代码，复用成本降低 16 到 291 倍",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月22日 00:45（收录）",
+          "summary": "NVIDIA 论文提出 Agentic Reasoning Caching（CPU-ARC），让 LLM 把推理轨迹转…",
+          "aihot": "https://aihot.news/items/lvwln5cmwwoeos29egif4fhzt",
+          "original": "https://x.com/rohanpaul_ai/status/2124177125247013266",
+          "score": 58
+        }
+      ]
+    },
+    {
+      "key": "tips",
+      "label": "技巧与观点",
+      "color": "#8b5cf6",
+      "count": 7,
+      "cards": [
+        {
+          "num": 6,
+          "section": "tips",
+          "title": "2026 个人 AI 智能体横评：Hermes Agent、OpenClaw、Gemini Spark 等 7 款在记忆、安全与成本上的对比",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月22日 19:12（收录）",
+          "summary": "MarkTechPost 整理 2026 年 7 款个人 AI 智能体的横评，从记忆、安全、成本三个维度比较 Herm…",
+          "aihot": "https://aihot.news/items/kt973icel3r03tjiy830bo3dt",
+          "original": "https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/",
+          "score": 75
+        },
+        {
+          "num": 28,
+          "section": "tips",
+          "title": "TechCrunch 盘点可直接发短信使用的 AI 智能体：从 Instinct 到 Poke 等 20 余款",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "11月22日 01:33（收录）",
+          "summary": "TechCrunch 汇总了目前可通过短信、iMessage、WhatsApp 等渠道直接使用的 AI 智能体，它们可…",
+          "aihot": "https://aihot.news/items/k5xoh63xwr5p955bxav9k28c8",
+          "original": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "score": 60
+        },
+        {
+          "num": 29,
+          "section": "tips",
+          "title": "LangChain 讲解如何为 AI 智能体搭建知识工厂",
+          "source": "LangChain：Blog（RSS）",
+          "time": "11月22日 01:26（收录）",
+          "summary": "LangChain 分享其内部 GTM、内容工作室智能体和 LangSmith Engine 背后的知识工厂实践，认为…",
+          "aihot": "https://aihot.news/items/fp3eizt94dncpk7m3ddwh7zmf",
+          "original": "https://www.langchain.com/blog/knowledge-factory",
+          "score": 53
+        },
+        {
+          "num": 34,
+          "section": "tips",
+          "title": "AIHOT 开放 Antigravity 重置监控及匿名 API",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "time": "11月22日 00:00（收录）",
+          "summary": "卡兹克介绍 AIHOT 半个月前上线的重置监控功能，覆盖 Antigravity、Codex、Claude 和 Gro…",
+          "aihot": "https://aihot.news/items/whgaoufw6emneyq2irkcfxtv0",
+          "original": "https://x.com/Khazix0918/status/2124106642933653521",
+          "score": 53
+        },
+        {
+          "num": 4,
+          "section": "tips",
+          "title": "开发者将微型 Transformer 模型 Tiny 2.1 塞进软盘，让 486 老电脑也能用上 AI",
+          "source": "IT之家·人工智能",
+          "time": "11月22日 19:39（收录）",
+          "summary": "开发者 WollyMonjac 用 Turbo C 2.0 编写了微型问答 Transformer 模型 Tiny 2…",
+          "aihot": "https://aihot.news/items/h5ullue72g8a4b2jiqdqpxs02",
+          "original": "https://www.ithome.com/1/030/699.htm",
+          "score": 46
+        },
+        {
+          "num": 31,
+          "section": "tips",
+          "title": "Perplexity 用 Fable 5.2 造月球火星探索游戏",
+          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+          "time": "11月22日 00:35（收录）",
+          "summary": "Perplexity 的 Teammate 在 Fable 5.2 上做出浏览器游戏 Getsumen Express…",
+          "aihot": "https://aihot.news/items/ifz9ovblov48lqlnlz1bmkb4j",
+          "original": "https://x.com/AravSrinivas/status/2124174082522685820",
+          "score": 44
+        },
+        {
+          "num": 33,
+          "section": "tips",
+          "title": "Tripo API 实战教程三部曲",
+          "source": "Tripo（官方 X）",
+          "time": "11月22日 00:00（收录）",
+          "summary": "了解如何在真实 3D 项目中使用 Tripo API。 这个三部曲系列涵盖 AI 智能体工作流、使用 Blender…",
+          "aihot": "https://aihot.news/items/p5dj2psru2iq2vlnduz9ujhof",
+          "original": "https://x.com/tripoai/status/2124155890010107915",
+          "score": 41
+        }
+      ]
+    }
+  ],
+  "hotTopics": {
+    "updatedAt": "2026-11-22 21:13",
+    "count": 10,
+    "items": [
+      {
+        "rank": 1,
+        "title": "Lean 社区确认阿尔波格黎曼猜想证明正确",
+        "source": "公众号：数字生命卡兹克",
+        "signal": 64,
+        "sources": 9,
+        "sourceNames": [
+          "The Decoder：AI News（RSS）",
+          "IT之家·人工智能",
+          "X：Saito 硬地骇客 (@SaitoWu)",
+          "X：Elon Musk (@elonmusk, xAI)",
+          "X：Rohan Paul (@rohanpaul_ai)",
+          "公众号：数字生命卡兹克",
+          "The Verge：AI（RSS）",
+          "Simon Willison 博客"
+        ],
+        "aihot": "https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4",
+        "story": "https://aihot.news/story/647b0945-9244-4f55-b509-0f3fa0f6fe51",
+        "original": "https://mp.weixin.qq.com/s/8Zi3nfwddzFy6cZsK2_KxA"
+      },
+      {
+        "rank": 2,
+        "title": "Thinking Machines 开源 26.4B 循环模型 Inkling 2 Mini",
+        "source": "Thinking Machines Lab：News（网页）",
+        "signal": 37,
+        "sources": 9,
+        "sourceNames": [
+          "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+          "MarkTechPost（RSS）",
+          "The Decoder：AI News（RSS）",
+          "X：Mira Murati（@miramurati）",
+          "X：Thinking Machines (@thinkymachines)",
+          "X：Arena (@arena)",
+          "X：ARC Prize (@arcprize)",
+          "X：Artificial Analysis (@ArtificialAnlys)"
+        ],
+        "aihot": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+        "story": "https://aihot.news/story/0cf0f02a-0464-43db-b253-ed1878937b74",
+        "original": "https://thinkingmachines.ai/news/inkling-2-mini/"
+      },
+      {
+        "rank": 3,
+        "title": "Anthropic 上市首日收涨 17%，次日回落",
+        "source": "Anthropic：Newsroom（网页）",
+        "signal": 21,
+        "sources": 2,
+        "sourceNames": [
+          "The Verge：AI（RSS）",
+          "Hacker News：AI 热帖"
+        ],
+        "aihot": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
+        "story": "https://aihot.news/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d",
+        "original": "https://www.anthropic.com/news/s1-sec"
+      },
+      {
+        "rank": 4,
+        "title": "特斯拉FSD v15下月推送，马斯克介绍天空箭头导航",
+        "source": "X：indigo (@indigox)",
+        "signal": 10,
+        "sources": 2,
+        "sourceNames": [
+          "X：indigo (@indigox)",
+          "X：Elon Musk (@elonmusk, xAI)"
+        ],
+        "aihot": "https://aihot.news/items/xriwds9rtl5niekinxe2uwxsu",
+        "story": "https://aihot.news/story/fcbdc9a0-bdf5-473c-9f26-7a51a8deb2e3",
+        "original": "https://x.com/indigox/status/2124264257273643371"
+      },
+      {
+        "rank": 5,
+        "title": "Google 发布 Gemini 4 Neon，API 可直传 Office 文件",
+        "source": "Google DeepMind：Blog（RSS）",
+        "signal": 19,
+        "sources": 1,
+        "sourceNames": [
+          "X：Google (@Google)"
+        ],
+        "aihot": "https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
+        "story": "https://aihot.news/story/74578987-a1ed-4ce0-96b8-658226459865",
+        "original": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+      },
+      {
+        "rank": 6,
+        "title": "200万诱饵请求测出AI服务链数据外泄",
+        "source": "Ars Technica：AI（RSS）",
+        "signal": 4,
+        "sources": 4,
+        "sourceNames": [
+          "The Decoder：AI News（RSS）",
+          "X：OpenRouter (@OpenRouter)",
+          "IT之家·人工智能",
+          "Ars Technica：AI（RSS）"
+        ],
+        "aihot": "https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+        "story": "https://aihot.news/story/2d0a9c1a-2a0a-41b6-a7ef-776ef03a783b",
+        "original": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+      },
+      {
+        "rank": 7,
+        "title": "Signal 移动端默认拦截截图，防系统级 AI 读取聊天",
+        "source": "The Decoder：AI News（RSS）",
+        "signal": 8,
+        "sources": 3,
+        "sourceNames": [
+          "IT之家·人工智能",
+          "TechCrunch：AI（RSS）",
+          "The Decoder：AI News（RSS）"
+        ],
+        "aihot": "https://aihot.news/items/j0t8pj4nipni3gwi970137zxw",
+        "story": "https://aihot.news/story/3e9f616b-fbd2-43c8-b778-498a7800b0c3",
+        "original": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/"
+      },
+      {
+        "rank": 8,
+        "title": "特朗普威胁对海外建数据中心征税",
+        "source": "The Verge：AI（RSS）",
+        "signal": 12,
+        "sources": 1,
+        "sourceNames": [
+          "The Verge：AI（RSS）"
+        ],
+        "aihot": "https://aihot.news/items/qzkdqvffbfz581q2kieprq6dd",
+        "story": "https://aihot.news/story/9d1f99c5-6603-4fa6-99c6-30ae0b7c956e",
+        "original": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax"
+      },
+      {
+        "rank": 9,
+        "title": "Chollet 称算力需求未见顶，马斯克预警资金短缺",
+        "source": "X：Francois Chollet (@fchollet)",
+        "signal": 3,
+        "sources": 2,
+        "sourceNames": [
+          "IT之家·人工智能",
+          "X：Francois Chollet (@fchollet)"
+        ],
+        "aihot": "https://aihot.news/items/keyiyrvngw7f625sjytaia6hf",
+        "story": "https://aihot.news/story/f00f5c21-41ee-4e4b-b02d-89efffe5d553",
+        "original": "https://x.com/fchollet/status/2124246742644461569"
+      },
+      {
+        "rank": 10,
+        "title": "黄仁勋因婚外情风波辞任英伟达CEO，CFO临时接任",
+        "source": "NVIDIA：Newsroom（RSS）",
+        "signal": 7,
+        "sources": 1,
+        "sourceNames": [
+          "X：Rohan Paul (@rohanpaul_ai)"
+        ],
+        "aihot": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
+        "story": "https://aihot.news/story/d01448e7-e6ef-4224-9e13-5f4b350dd6ed",
+        "original": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+      }
+    ]
+  }
+};
+const app = document.getElementById('app');
+const nav = document.getElementById('nav');
+document.getElementById('heroDate').textContent = DATA.meta.heroDate;
+document.getElementById('heroTotal').textContent = DATA.meta.total;
+document.getElementById('footTotal').textContent = DATA.meta.total;
+const srcEl = document.getElementById('footSource');
+/* 页脚署名：只显示来源名称（可点击跳转源站），不再裸露 URL 文本 */
+srcEl.textContent = DATA.meta.sourceName;
+srcEl.href = DATA.meta.sourceUrl;
+document.getElementById('footGen').textContent = DATA.meta.generatedNote;
+document.getElementById('footNote').textContent =
+  '说明：卡片时间为条目在北京时间的发布/发现时间（慢推信源标注「收录」）；按时间轴倒序全局连续编号。';
+
+const hs = document.getElementById('heroStats');
+const sectionGrids = {};
+const sectionRefs = {};
+const sectionPills = {};
+
+DATA.sections.forEach(s => {
+  const el = document.createElement('div');
+  el.className = 'stat';
+  const dot = document.createElement('span');
+  dot.className = 'dot'; dot.style.background = s.color;
+  const label = document.createElement('span'); label.textContent = s.label;
+  const num = document.createElement('b'); num.textContent = s.count;
+  el.append(dot, label, num);
+  hs.appendChild(el);
+});
+
+DATA.sections.forEach(s => {
+  const a = document.createElement('a');
+  a.href = '#sec-' + s.key;
+  a.dataset.key = s.key;
+  a.style.setProperty('--active-bg', s.color);
+  const label = document.createElement('span'); label.textContent = s.label;
+  const c = document.createElement('span'); c.className = 'c'; c.textContent = s.count;
+  a.append(label, c);
+  nav.appendChild(a);
+});
+
+// AI 热点榜 导航项（插到分类导航最前面）
+const hotNav = document.createElement('a');
+hotNav.href = '#sec-hot';
+hotNav.dataset.key = 'hot';
+hotNav.style.setProperty('--active-bg', '#f97316');
+hotNav.textContent = 'AI 热点榜（48 小时内）';
+if (nav.firstChild) nav.insertBefore(hotNav, nav.firstChild); else nav.appendChild(hotNav);
+
+renderHot();
+
+DATA.sections.forEach(s => {
+  const sec = document.createElement('section');
+  sec.className = 'section';
+  sec.id = 'sec-' + s.key;
+  /* scroll-margin-top 改由 CSS 控制（含响应式媒体查询） */
+  const head = document.createElement('div');
+  head.className = 'sec-head';
+  const bar = document.createElement('div'); bar.className = 'bar'; bar.style.background = s.color;
+  const h2 = document.createElement('h2'); h2.textContent = s.label;
+  const pill = document.createElement('span'); pill.className = 'pill'; pill.textContent = s.count + ' 条';
+  sectionPills[s.key] = pill;
+  head.append(bar, h2, pill);
+  sec.appendChild(head);
+  const grid = document.createElement('div'); grid.className = 'grid';
+  sec.appendChild(grid);
+  sectionGrids[s.key] = grid;
+  sectionRefs[s.key] = sec;
+  app.appendChild(sec);
+});
+
+let sortMode = 'score';
+// 显示条数档位：数据驱动，后续加档只需在数组里加一个数（如 20）。
+const TOP_OPTIONS = [10, 5];
+let topN = TOP_OPTIONS[0];
+
+function cardEl(card, displayNum, color) {
+  const c = document.createElement('article'); c.className = 'card';
+  const num = document.createElement('div'); num.className = 'num';
+  num.style.background = color; num.textContent = '#' + displayNum;
+  c.appendChild(num);
+  const title = document.createElement('a'); title.className = 'title';
+  title.textContent = card.title;
+  const titleHref = card.aihot || card.original;
+  if (titleHref) { title.href = titleHref; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
+  c.appendChild(title);
+  const meta = document.createElement('div'); meta.className = 'meta-row';
+  if (card.source) {
+    const chip = document.createElement('span'); chip.className = 'chip';
+    chip.textContent = '来源 · ' + card.source;
+    meta.appendChild(chip);
+  }
+  if (card.score > 0) {
+    const sc = document.createElement('span'); sc.className = 'score-badge';
+    sc.textContent = '评分 ' + card.score;
+    meta.appendChild(sc);
+  }
+  c.appendChild(meta);
+  const sum = document.createElement('p'); sum.className = 'summary';
+  sum.textContent = card.summary; c.appendChild(sum);
+  const foot = document.createElement('div'); foot.className = 'foot';
+  const time = document.createElement('span'); time.className = 'time';
+  time.textContent = card.time ? (card.time + ' 北京时间') : '';
+  foot.appendChild(time);
+  const readHref = card.original || card.aihot;
+  if (readHref) {
+    const read = document.createElement('a'); read.className = 'read';
+    read.textContent = '阅读原文 →';
+    read.href = readHref; read.target = '_blank'; read.rel = 'noopener noreferrer';
+    foot.appendChild(read);
+  }
+  c.appendChild(foot);
+  return c;
+}
+
+function renderHot() {
+  const ht = DATA.hotTopics;
+  const sec = document.createElement('section');
+  sec.className = 'hot';
+  sec.id = 'sec-hot';
+  /* scroll-margin-top 改由 CSS 控制（含响应式媒体查询） */
+  const head = document.createElement('div');
+  head.className = 'hot-head';
+  const bar = document.createElement('div'); bar.className = 'bar';
+  const h2 = document.createElement('h2'); h2.textContent = 'AI 热点榜（48 小时内）';
+  const pill = document.createElement('span'); pill.className = 'pill';
+  pill.textContent = (ht && ht.items.length) ? (ht.items.length + ' 条 · 近 48 小时') : '暂无';
+  head.append(bar, h2, pill);
+  sec.appendChild(head);
+  const list = document.createElement('div'); list.className = 'hot-list';
+  if (!ht || !ht.items.length) {
+    const empty = document.createElement('div'); empty.className = 'empty';
+    empty.textContent = '数据源近 48 小时暂无热点榜产出，可先浏览下方分类资讯。';
+    list.appendChild(empty);
+  } else {
+    ht.items.forEach(it => {
+      const row = document.createElement('div'); row.className = 'hot-row';
+      const rank = document.createElement('div');
+      rank.className = 'hot-rank' + (it.rank <= 3 ? ' top' : '');
+      rank.textContent = it.rank;
+      const main = document.createElement('div'); main.className = 'hot-main';
+      const title = document.createElement('a'); title.className = 'hot-title';
+      title.textContent = it.title;
+      /* 标题 → aihot 聚合页（与模型卡片口径一致），original 交由「阅读原文」承载 */
+      const href = it.aihot || it.original;
+      if (href) { title.href = href; title.target = '_blank'; title.rel = 'noopener noreferrer'; }
+      main.appendChild(title);
+      const meta = document.createElement('div'); meta.className = 'hot-meta';
+      if (it.source) {
+        const s = document.createElement('span'); s.className = 'hot-src';
+        s.textContent = '来源 · ' + it.source;
+        meta.appendChild(s);
+      }
+      /* 阅读原文：优先 original（真实出处），缺失时回退 aihot 聚合页 */
+      const readHref = it.original || it.aihot;
+      if (readHref) {
+        const rd = document.createElement('a'); rd.className = 'hot-read';
+        rd.textContent = '阅读原文 →'; rd.href = readHref;
+        rd.target = '_blank'; rd.rel = 'noopener noreferrer';
+        meta.appendChild(rd);
+      }
+      main.appendChild(meta);
+      row.append(rank, main);
+      list.appendChild(row);
+    });
+  }
+  sec.appendChild(list);
+  app.appendChild(sec);
+  sectionRefs['hot'] = sec;
+}
+
+function render() {
+  let counter = 0;
+  DATA.sections.forEach(s => {
+    const cards = s.cards.slice();
+    if (sortMode === 'score') {
+      cards.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+    } else {
+      cards.sort((a, b) => a.num - b.num);
+    }
+    const shown = cards.slice(0, topN);
+    const pill = sectionPills[s.key];
+    if (pill) pill.textContent = shown.length + ' / ' + cards.length + ' 条';
+    const grid = sectionGrids[s.key];
+    grid.innerHTML = '';
+    if (shown.length === 0) {
+      const empty = document.createElement('div'); empty.className = 'empty';
+      empty.textContent = '本期暂无「' + s.label + '」相关条目。';
+      grid.appendChild(empty);
+      return;
+    }
+    shown.forEach(card => {
+      counter++;
+      grid.appendChild(cardEl(card, counter, s.color));
+    });
+  });
+  const hint = document.getElementById('toolHint');
+  if (hint) {
+    hint.textContent = '每类显示前 ' + topN + ' 条 · 当前 ' + counter + ' 条 · 热点榜不参与';
+  }
+}
+
+const sortSel = document.getElementById('sortSel');
+const topSel = document.getElementById('topSel');
+if (topSel) {
+  TOP_OPTIONS.forEach(n => {
+    const o = document.createElement('option');
+    o.value = String(n); o.textContent = '显示 · Top ' + n;
+    if (n === topN) o.selected = true;
+    topSel.appendChild(o);
+  });
+  topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || TOP_OPTIONS[0]; render(); });
+}
+if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
+
+render();
+
+function syncNavOffset(){
+  const sn = document.querySelector('.site-nav');
+  if (sn) document.documentElement.style.setProperty('--navh', sn.offsetHeight + 'px');
+  const nv = document.getElementById('nav');
+  if (nv) document.documentElement.style.setProperty('--nav2h', nv.offsetHeight + 'px');
+}
+syncNavOffset();
+window.addEventListener('resize', syncNavOffset);
+window.addEventListener('load', syncNavOffset);
+
+const navLinks = Array.from(nav.querySelectorAll('a'));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle('active', a.dataset.key === e.target.id.replace('sec-', '')));
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+DATA.sections.forEach(s => { obs.observe(sectionRefs[s.key]); });
+if (sectionRefs['hot']) obs.observe(sectionRefs['hot']);
+</script>
+</body>
+</html>
