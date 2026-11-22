@@ -164,3 +164,27 @@ img{max-width:100%}
 .chip.active{background:#fff;color:var(--brand-1);border-color:#fff;font-weight:700}
 .result-meta{font-size:14px;color:var(--muted);margin:6px 0 18px}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
+
+/* ===== 相关站点外链下拉（site_links.py 维护） ===== */
+.site-dropdown{position:relative;flex:0 0 auto;margin-left:8px}
+.sl-summary{list-style:none;cursor:pointer;font-size:14px;color:var(--brand-1);
+  border:1px solid var(--brand-1);border-radius:999px;padding:6px 14px;white-space:nowrap;
+  background:var(--panel);transition:background .2s,color .2s}
+.sl-summary::-webkit-details-marker{display:none}
+.sl-summary:hover{background:var(--brand-1);color:#fff}
+.sl-short{display:none}
+.sl-caret{font-size:11px;margin-left:3px}
+.site-dropdown[open] .sl-summary{background:var(--brand-1);color:#fff}
+.sl-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:50;min-width:210px;
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:6px;box-shadow:var(--shadow)}
+.sl-item{display:block;padding:9px 12px;border-radius:8px;transition:background .2s}
+.sl-item:hover{background:#eff6ff}
+.sl-label{display:block;font-size:14px;color:var(--ink)}
+.sl-desc{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.sl-ext{position:absolute;right:12px;top:10px;font-size:12px;color:var(--brand-1)}
+@media (max-width:560px){
+  .sl-summary{padding:6px 12px;font-size:13px}
+  .sl-full{display:none}
+  .sl-short{display:inline}
+}
