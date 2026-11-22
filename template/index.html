@@ -243,12 +243,6 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
         <span class="hint" id="toolHint"></span>
       </div>
     </aside>
@@ -381,7 +375,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -487,13 +480,9 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
-    if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
-    }
+    if (pill) pill.textContent = cards.length + ' 条';
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
     if (shown.length === 0) {
@@ -509,16 +498,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-11-20",
     "heroDate": "2026年11月20日 周五",
-    "total": 151,
+    "total": 50,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年11月20日 20:37（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -280,21 +274,10 @@ const DATA = {
       "key": "models",
       "label": "模型发布/更新",
       "color": "#6366f1",
-      "count": 11,
+      "count": 10,
       "cards": [
         {
-          "num": 11,
-          "section": "models",
-          "title": "GPT-6.2 Astra 物理3D理解超人类基线",
-          "source": "X：Greg Brockman (@gdb)",
-          "time": "11月20日 18:12（收录）",
-          "summary": "GPT-6.2 Astra 在物理3D理解基准上超过人类基线：",
-          "aihot": "https://aihot.news/items/li4xacbwego40489mus1exzf5",
-          "original": "https://x.com/gdb/status/2123719297096990726",
-          "score": 44
-        },
-        {
-          "num": 12,
+          "num": 4,
           "section": "models",
           "title": "腾讯混元开源 Hy4 权重并发布 System Card 安全评估",
           "source": "X：腾讯混元 (@TencentHunyuan)",
@@ -305,18 +288,7 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 15,
-          "section": "models",
-          "title": "蚂蚁 inclusionAI 开源生理信号编码器 LingSante-Pulse-1.0",
-          "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
-          "time": "11月20日 17:19（收录）",
-          "summary": "蚂蚁 inclusionAI 在 HuggingFace 发布生理信号编码器 LingSante-Pulse-1.0…",
-          "aihot": "https://aihot.news/items/a5wyruxkbh3h0r5zbel2avaph",
-          "original": "https://huggingface.co/inclusionAI/LingSante-Pulse-1.0",
-          "score": 42
-        },
-        {
-          "num": 26,
+          "num": 8,
           "section": "models",
           "title": "腾讯混元开放 Hy4 权重",
           "source": "X：腾讯混元 (@TencentHunyuan)",
@@ -327,40 +299,7 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 41,
-          "section": "models",
-          "title": "LLM 与视频模型比拼生成视频，GPT-6.2 Astra 对阵 Seedance 2.5",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "11月20日 09:13（收录）",
-          "summary": "Artificial Analysis 用 GPT-6.2 Astra 与 Dreamina Seedance 2.5…",
-          "aihot": "https://aihot.news/items/q9zmfsfsg4wmox0snn9dutrr9",
-          "original": "https://x.com/ArtificialAnlys/status/2123581865965855205",
-          "score": 42
-        },
-        {
-          "num": 50,
-          "section": "models",
-          "title": "ElevenLabs Scribe v3 语音转文字评测第二",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "11月20日 08:42（收录）",
-          "summary": "ElevenLabs 的 Scribe v3 在 AA-WER 指数非流式语音转文字排名中位列第 2，WER 为 1.…",
-          "aihot": "https://aihot.news/items/l21jjmy7ox54nxhpx69kflvgt",
-          "original": "https://x.com/ArtificialAnlys/status/2123574381251375493",
-          "score": 43
-        },
-        {
-          "num": 54,
-          "section": "models",
-          "title": "Zoom Scribe V2.1 Pro Live 登顶流式转录准确率榜",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "11月20日 07:40（收录）",
-          "summary": "Zoom Scribe V2.1 Pro Live 在 AA-WER Streaming 的最终转录准确率上排名第一…",
-          "aihot": "https://aihot.news/items/mxng1bugzfnky3z0fwpxb7zep",
-          "original": "https://x.com/ArtificialAnlys/status/2123562077168287768",
-          "score": 44
-        },
-        {
-          "num": 74,
+          "num": 24,
           "section": "models",
           "title": "Gemini 4 Neon 实测：Peter Gostev 对比 Opus、Fable 等模型的首发体验",
           "source": "X：Arena (@arena)",
@@ -371,7 +310,18 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 93,
+          "num": 41,
+          "section": "models",
+          "title": "Jim Fan 演示 GR00T 2 端到端控制真实灵巧手",
+          "source": "X：Jim Fan (@DrJimFan)",
+          "time": "11月20日 01:41（收录）",
+          "summary": "Jim Fan 发布未剪辑、1 倍速视频，展示 GR00T 2 端到端控制真实灵巧手完成任务。GR00T 2 是面向机…",
+          "aihot": "https://aihot.news/items/kpdajod60rd1g95492ph1wwd8",
+          "original": "https://x.com/DrJimFan/status/2123470587259732200",
+          "score": 70
+        },
+        {
+          "num": 28,
           "section": "models",
           "title": "Artificial Analysis 解读 Gemini 4 Carbon、Neon 与 Hydrogen 定价及推理表现差异",
           "source": "X：Artificial Analysis (@ArtificialAnlys)",
@@ -382,26 +332,59 @@ const DATA = {
           "score": 67
         },
         {
-          "num": 97,
+          "num": 3,
           "section": "models",
-          "title": "GPT-Live-1.1 上线 API",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 04:16（收录）",
-          "summary": "GPT-Live-1.1 现已在 API 中可用。 它在各语言间的口音更自然、更一致，新增 standby 选项以降低…",
-          "aihot": "https://aihot.news/items/myxc6y2muu6dbmsu01nmt4pgx",
-          "original": "https://x.com/OpenAIDevs/status/2123506733524136446",
-          "score": 41
+          "title": "GPT-6.2 Astra 物理3D理解超人类基线",
+          "source": "X：Greg Brockman (@gdb)",
+          "time": "11月20日 18:12（收录）",
+          "summary": "GPT-6.2 Astra 在物理3D理解基准上超过人类基线：",
+          "aihot": "https://aihot.news/items/li4xacbwego40489mus1exzf5",
+          "original": "https://x.com/gdb/status/2123719297096990726",
+          "score": 44
         },
         {
-          "num": 129,
+          "num": 20,
           "section": "models",
-          "title": "Jim Fan 演示 GR00T 2 端到端控制真实灵巧手",
-          "source": "X：Jim Fan (@DrJimFan)",
-          "time": "11月20日 01:41（收录）",
-          "summary": "Jim Fan 发布未剪辑、1 倍速视频，展示 GR00T 2 端到端控制真实灵巧手完成任务。GR00T 2 是面向机…",
-          "aihot": "https://aihot.news/items/kpdajod60rd1g95492ph1wwd8",
-          "original": "https://x.com/DrJimFan/status/2123470587259732200",
-          "score": 70
+          "title": "Zoom Scribe V2.1 Pro Live 登顶流式转录准确率榜",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "11月20日 07:40（收录）",
+          "summary": "Zoom Scribe V2.1 Pro Live 在 AA-WER Streaming 的最终转录准确率上排名第一…",
+          "aihot": "https://aihot.news/items/mxng1bugzfnky3z0fwpxb7zep",
+          "original": "https://x.com/ArtificialAnlys/status/2123562077168287768",
+          "score": 44
+        },
+        {
+          "num": 18,
+          "section": "models",
+          "title": "ElevenLabs Scribe v3 语音转文字评测第二",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "11月20日 08:42（收录）",
+          "summary": "ElevenLabs 的 Scribe v3 在 AA-WER 指数非流式语音转文字排名中位列第 2，WER 为 1.…",
+          "aihot": "https://aihot.news/items/l21jjmy7ox54nxhpx69kflvgt",
+          "original": "https://x.com/ArtificialAnlys/status/2123574381251375493",
+          "score": 43
+        },
+        {
+          "num": 5,
+          "section": "models",
+          "title": "蚂蚁 inclusionAI 开源生理信号编码器 LingSante-Pulse-1.0",
+          "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+          "time": "11月20日 17:19（收录）",
+          "summary": "蚂蚁 inclusionAI 在 HuggingFace 发布生理信号编码器 LingSante-Pulse-1.0…",
+          "aihot": "https://aihot.news/items/a5wyruxkbh3h0r5zbel2avaph",
+          "original": "https://huggingface.co/inclusionAI/LingSante-Pulse-1.0",
+          "score": 42
+        },
+        {
+          "num": 13,
+          "section": "models",
+          "title": "LLM 与视频模型比拼生成视频，GPT-6.2 Astra 对阵 Seedance 2.5",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "11月20日 09:13（收录）",
+          "summary": "Artificial Analysis 用 GPT-6.2 Astra 与 Dreamina Seedance 2.5…",
+          "aihot": "https://aihot.news/items/q9zmfsfsg4wmox0snn9dutrr9",
+          "original": "https://x.com/ArtificialAnlys/status/2123581865965855205",
+          "score": 42
         }
       ]
     },
@@ -409,241 +392,10 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 55,
+      "count": 10,
       "cards": [
         {
-          "num": 4,
-          "section": "products",
-          "title": "腾讯 WorkBuddy 上线电脑操控能力，支持 macOS 和 Windows 公测",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 19:34（收录）",
-          "summary": "腾讯 WorkBuddy 上线电脑操控（Computer Use）能力，可识别当前页面并执行点击、输入、滚动等操作，无…",
-          "aihot": "https://aihot.news/items/ssp70ahnchz4wpn7ru3lzdvb0",
-          "original": "https://www.ithome.com/1/030/222.htm",
-          "score": 58
-        },
-        {
-          "num": 6,
-          "section": "products",
-          "title": "Ideogram 4.6 图像模型发布并已上线 Luma",
-          "source": "X：Luma AI (@LumaLabsAI)",
-          "time": "11月20日 19:14（收录）",
-          "summary": "Ideogram 发布 Ideogram 4.6 图像模型，主打精准编辑并原生支持 4K。据引用内容，新模型在真实感和…",
-          "aihot": "https://aihot.news/items/fb6j33sennn4bb20ibupe16bv",
-          "original": "https://x.com/LumaLabsAI/status/2123734210926289317",
-          "score": 56
-        },
-        {
-          "num": 9,
-          "section": "products",
-          "title": "Nous Research 的 Hermes Agent 将登陆 Microsoft Teams 并推出 Collective Wisdom 技能共享功能",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月20日 18:22（收录）",
-          "summary": "Nous Research 宣布开源 Hermes Agent 将可直接在 Microsoft Teams 内运行，员…",
-          "aihot": "https://aihot.news/items/srb673ltm2kpiw0l224hypsc0",
-          "original": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
-          "score": 58
-        },
-        {
-          "num": 14,
-          "section": "products",
-          "title": "AMD XDNA 2 NPU 率先适配 Unsloth Desktop，支持超百款智能体本地运行",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 17:28（收录）",
-          "summary": "AMD 锐龙 AI 处理器上的 XDNA 2 NPU 成为首款获得 Unsloth Desktop 本地界面支持的神经…",
-          "aihot": "https://aihot.news/items/kgrpw3krddy2z1laf4xf8z6l0",
-          "original": "https://www.ithome.com/1/030/131.htm",
-          "score": 47
-        },
-        {
-          "num": 22,
-          "section": "products",
-          "title": "可灵4.0展示4K 10-bit HDR效果",
-          "source": "X：可灵 Kling AI (@Kling_ai)",
-          "time": "11月20日 14:35（收录）",
-          "summary": "可灵4.0的4K、10-bit HDR能力的一次精彩展示。感谢@kraqvoid进行实测！✨ 💙#Kling4 #Kl…",
-          "aihot": "https://aihot.news/items/ai8n2bvuxykqrrs3ijulxer38",
-          "original": "https://x.com/Kling_ai/status/2123665013768606070",
-          "score": 43
-        },
-        {
           "num": 23,
-          "section": "products",
-          "title": "高通携手 Cirrascale 启动 Dragonfly AI200 推理加速器客户评估",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 13:58（收录）",
-          "summary": "高通与 AI 私有云企业 Cirrascale 合作，向部分客户开放 Dragonfly AI200 推理加速器的云上…",
-          "aihot": "https://aihot.news/items/syl2h5owiylbnovitaiy2q92g",
-          "original": "https://www.ithome.com/1/029/874.htm",
-          "score": 44
-        },
-        {
-          "num": 24,
-          "section": "products",
-          "title": "Gemini 4 Neon 现已登陆 OpenClaw",
-          "source": "X：OpenClaw (@openclaw)",
-          "time": "11月20日 13:47（收录）",
-          "summary": "OpenClaw 宣布 Gemini 4 Neon 现已接入平台。Google 推出 Neon 的目标是更快、更低成本…",
-          "aihot": "https://aihot.news/items/qcghhmfeyxhlpben7hwbffvd1",
-          "original": "https://x.com/openclaw/status/2123640619931484511",
-          "score": 61
-        },
-        {
-          "num": 31,
-          "section": "products",
-          "title": "Conductor 支持内联渲染 Artifacts",
-          "source": "X：Charlie Holtz（@charlieholtz）",
-          "time": "11月20日 10:46（收录）",
-          "summary": "Conductor 现在可以内联渲染 Artifacts 了！ Artifacts 是智能体为你编写的小型 HTML…",
-          "aihot": "https://aihot.news/items/jo57egre6lv5jogs1rg9oxw1e",
-          "original": "https://x.com/charlieholtz/status/2123606973765877994",
-          "score": 49
-        },
-        {
-          "num": 32,
-          "section": "products",
-          "title": "Meta Muse 推出邮箱功能，可代用户收发邮件",
-          "source": "X：Muse（Meta 个人智能体官方号） (@Muse)",
-          "time": "11月20日 10:27（收录）",
-          "summary": "Muse 宣布推出邮箱功能，Muse 可以代用户发送和接收邮件，正在向受支持市场的所有用户开放。用户可点击头像进入 m…",
-          "aihot": "https://aihot.news/items/yi033i5qjc5oxzlvk2hyl67e2",
-          "original": "https://x.com/Muse/status/2123602791356883032",
-          "score": 54
-        },
-        {
-          "num": 33,
-          "section": "products",
-          "title": "Conductor 0.97.0 发布并宣布加入 Meta，本地工作区智能体新增 artifacts",
-          "source": "Conductor 官方更新",
-          "time": "11月20日 10:13（收录）",
-          "summary": "Conductor 发布 0.97.0 更新，同时宣布 Conductor 加入 Meta。本地工作区的 Agent…",
-          "aihot": "https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
-          "original": "https://www.conductor.build/changelog/0.97.0-first-class-artifacts",
-          "score": 60
-        },
-        {
-          "num": 39,
-          "section": "products",
-          "title": "OpenAI 邀请部分 Plus 用户测试 dots 智能体，移动版 ChatGPT 将为其设独立标签页",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 09:46（收录）",
-          "summary": "OpenAI 核心产品负责人 Thibault Sottiaux 宣布邀请少量 ChatGPT Plus 用户测试 d…",
-          "aihot": "https://aihot.news/items/v3dxe2sr0ll3e1tvyuaob407c",
-          "original": "https://www.ithome.com/1/029/784.htm",
-          "score": 61
-        },
-        {
-          "num": 42,
-          "section": "products",
-          "title": "ChatGPT for Accounting 上线，支持 QuickBooks 等工具自动处理会计任务",
-          "source": "X：Sherwin Wu（@sherwinwu）",
-          "time": "11月20日 09:08（收录）",
-          "summary": "作者转发 ChatGPT 官方消息称，ChatGPT for Accounting 现已推出，通过新的 Account…",
-          "aihot": "https://aihot.news/items/aymr6zzcf1cofecsalgbdnps4",
-          "original": "https://x.com/sherwinwu/status/2123581105593110698",
-          "score": 60
-        },
-        {
-          "num": 44,
-          "section": "products",
-          "title": "腾讯旗舰模型 Tencent Hy4 上线 Together AI",
-          "source": "Together AI 研究与产品博客（RSS）",
-          "time": "11月20日 09:07（收录）",
-          "summary": "Tencent Hy4 现已在 Together AI 上线，提供 serverless 和专属端点两种部署方式，模型…",
-          "aihot": "https://aihot.news/items/c5uepveztu02ovqx295k0kr74",
-          "original": "https://www.together.ai/blog/tencent-hy4",
-          "score": 57
-        },
-        {
-          "num": 47,
-          "section": "products",
-          "title": "OpenAI 开放 GPT-Live-1.1 API：支持实时双向语音对话，智能体可边聊天边处理复杂任务",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 09:04（收录）",
-          "summary": "OpenAI 向开发者开放 GPT-Live-1.1 API，第三方可集成该语音模型构建能实时聆听、回应并执行复杂任务…",
-          "aihot": "https://aihot.news/items/c8uvlm6nforqa30qamikr0hi9",
-          "original": "https://www.ithome.com/1/029/776.htm",
-          "score": 70
-        },
-        {
-          "num": 48,
-          "section": "products",
-          "title": "Gemini 4 Neon 纯代码动画演绎济慈《秋颂》",
-          "source": "X：Google (@Google)",
-          "time": "11月20日 08:54（收录）",
-          "summary": "约翰·济慈的《秋颂》，完全用代码制作成动画 🍂 Gemini 4 Neon 用纯原生 JavaScript 构建了这段…",
-          "aihot": "https://aihot.news/items/ix5bzxzugdy1jw9at3ssqm6kz",
-          "original": "https://x.com/Google/status/2123575135232024719",
-          "score": 41
-        },
-        {
-          "num": 51,
-          "section": "products",
-          "title": "OpenAI 说明 Responses API 中 GPT-6.2 推理项与对话历史绑定的新机制",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 08:23（收录）",
-          "summary": "OpenAI 介绍使用 GPT-6.2 的 Agent 在 Responses API 中可复用先前推理，以更少 to…",
-          "aihot": "https://aihot.news/items/qgkqwydtu4q83rd64bqfbx1v6",
-          "original": "https://x.com/OpenAIDevs/status/2123566018866151579",
-          "score": 53
-        },
-        {
-          "num": 55,
-          "section": "products",
-          "title": "Cognition 评测 Gemini 4 Neon：FrontierCode 2.0 得分 46.2%，接近 Opus 5.5 且成本约三分之一",
-          "source": "X：Cognition (@cognition)",
-          "time": "11月20日 07:31（收录）",
-          "summary": "Cognition 发布对 Gemini 4 Neon 在其 FrontierCode 2.0 基准（衡量 PR 是否…",
-          "aihot": "https://aihot.news/items/sr374ahztizayy7ozug6u9pii",
-          "original": "https://x.com/cognition/status/2123553121653944391",
-          "score": 53
-        },
-        {
-          "num": 56,
-          "section": "products",
-          "title": "OpenAI 测试 ChatGPT 全新移动端体验",
-          "source": "X：Tibo (@thsottiaux)",
-          "time": "11月20日 07:21（收录）",
-          "summary": "OpenAI 正在为 ChatGPT 打造全新移动端体验，优先面向拥有 dot 或可创建 dot 的 Pro 用户开放…",
-          "aihot": "https://aihot.news/items/s0q4y5e0r662omayvlae6yt7n",
-          "original": "https://x.com/thsottiaux/status/2123557171321561133",
-          "score": 49
-        },
-        {
-          "num": 58,
-          "section": "products",
-          "title": "Overmind 推出通过手机上与 Grok 聊天微调自有 AI 模型的功能",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 07:04（收录）",
-          "summary": "Overmind 推出可通过手机上与 Grok 聊天来微调自有模型的功能。Grok 连接 Overmind 的 MCP…",
-          "aihot": "https://aihot.news/items/fqmz637314dtyvxbyn80i0lt7",
-          "original": "https://x.com/rohanpaul_ai/status/2123548167346286667",
-          "score": 57
-        },
-        {
-          "num": 63,
-          "section": "products",
-          "title": "ChatGPT Health 功能扩展至桌面应用、dots、Sites 和 Android",
-          "source": "X：ChatGPT (@ChatGPT)",
-          "time": "11月20日 06:38（收录）",
-          "summary": "OpenAI 官宣 ChatGPT 的 Health 功能扩展到桌面应用、dots、Sites 和 Android。用…",
-          "aihot": "https://aihot.news/items/ng08f00cmwvxon8nlhm3xr5zw",
-          "original": "https://x.com/ChatGPT/status/2123545961381216325",
-          "score": 52
-        },
-        {
-          "num": 65,
-          "section": "products",
-          "title": "Kong 发布面向 AI Agent 的云平台 Volcano，附 LavaFlow 自动修复功能",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 06:33（收录）",
-          "summary": "Kong 发布 Volcano，一个面向 AI Agent 的云平台，让 Claude Code、Cursor 或 C…",
-          "aihot": "https://aihot.news/items/zqrkvo5rgqtm39ajar4qjc5ka",
-          "original": "https://x.com/rohanpaul_ai/status/2123543493033484787",
-          "score": 58
-        },
-        {
-          "num": 67,
           "section": "products",
           "title": "Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务",
           "source": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
@@ -654,304 +406,7 @@ const DATA = {
           "score": 71
         },
         {
-          "num": 69,
-          "section": "products",
-          "title": "Together AI 推出 Together Storage Accelerator：GPU 集群的免费数据缓存层",
-          "source": "Together AI 研究与产品博客（RSS）",
-          "time": "11月20日 06:04（收录）",
-          "summary": "Together AI 发布 Together Storage Accelerator（TSA），一个面向 Toget…",
-          "aihot": "https://aihot.news/items/hn4f7dblrng2v14mma8z3fyqa",
-          "original": "https://www.together.ai/blog/introducing-together-storage-accelerator",
-          "score": 46
-        },
-        {
-          "num": 71,
-          "section": "products",
-          "title": "Databricks Genie ZeroOps 进入公开测试，自动检测并修复数据流水线问题",
-          "source": "Databricks：Blog（RSS）",
-          "time": "11月20日 06:04（收录）",
-          "summary": "Databricks 宣布自主智能体 Genie ZeroOps 进入 Public Beta，工作区管理员可在 Pr…",
-          "aihot": "https://aihot.news/items/l8lnjskzj9jc11cnzqegbz8pk",
-          "original": "https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer",
-          "score": 51
-        },
-        {
-          "num": 73,
-          "section": "products",
-          "title": "Cognition 推出 Devin Security Threats 一键扫描修复新漏洞",
-          "source": "X：Cognition (@cognition)",
-          "time": "11月20日 05:58（收录）",
-          "summary": "Cognition 推出 Devin Security Threats，一个托管的新披露漏洞索引，并与 Devin 集…",
-          "aihot": "https://aihot.news/items/zwcpzdldkju23vo39uv3l79ff",
-          "original": "https://x.com/cognition/status/2123530085764575463",
-          "score": 54
-        },
-        {
-          "num": 77,
-          "section": "products",
-          "title": "Google 在 Live Interactions API 上推出 Genie 4",
-          "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
-          "time": "11月20日 05:31（收录）",
-          "summary": "Google DeepMind 的 Philipp Schmid 宣布 Genie 4 成为首个在新的 Live In…",
-          "aihot": "https://aihot.news/items/h801mu79qns8dsxtp086uketo",
-          "original": "https://x.com/_philschmid/status/2123524964565545328",
-          "score": 55
-        },
-        {
-          "num": 78,
-          "section": "products",
-          "title": "Mastra Platform 推出可观测性告警功能",
-          "source": "Mastra Blog",
-          "time": "11月20日 05:30（收录）",
-          "summary": "Mastra Platform 新增可观测性告警，可在模型成本超限、错误率上升或 eval 分数下降时通知，支持 Sl…",
-          "aihot": "https://aihot.news/items/t6aicdqe5nfo338u8gm0fxcpu",
-          "original": "https://mastra.ai/blog/introducing-observability-alerts",
-          "score": 47
-        },
-        {
-          "num": 81,
-          "section": "products",
-          "title": "Higgsfield 推出 GPU Harness 按需租用",
-          "source": "X：Higgsfield AI (@higgsfield)",
-          "time": "11月20日 05:17（收录）",
-          "summary": "隆重推出 Higgsfield GPU Harness。 在 Claude 和 ChatGPT 中按需租用 GPU，用…",
-          "aihot": "https://aihot.news/items/v4hjefxs4sjqwejyiu103b1y0",
-          "original": "https://x.com/higgsfield/status/2123519417610825890",
-          "score": 48
-        },
-        {
-          "num": 84,
-          "section": "products",
-          "title": "Google 首页新增 AI 聊天侧边栏并全球推送",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月20日 04:48（收录）",
-          "summary": "Google 更新搜索首页，新增可折叠侧边栏，用户可查看和继续 AI Mode 聊天。产品副总裁 Robby Stei…",
-          "aihot": "https://aihot.news/items/in6a9qqk47qunqm3javoibb63",
-          "original": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-          "score": 53
-        },
-        {
-          "num": 86,
-          "section": "products",
-          "title": "FastVideo 开源 Dreamverse Harness 视频制作框架",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 04:47（收录）",
-          "summary": "FastVideo 团队宣布开源 Dreamverse Harness，让任意 Agent 参与从剧本到最终成片的完整…",
-          "aihot": "https://aihot.news/items/gokd6sk7qh1ev9revh1ot63z4",
-          "original": "https://x.com/haoailab/status/2123516981643190734",
-          "score": 57
-        },
-        {
-          "num": 87,
-          "section": "products",
-          "title": "FastVideo Dreamverse 能做什么",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 04:47（收录）",
-          "summary": "(2/7) FastVideo Dreamverse 能做什么？🎬 Dreamverse 为你的智能体配备电影制作技能…",
-          "aihot": "https://aihot.news/items/i5oic2nyr477of1udecbeck96",
-          "original": "https://x.com/haoailab/status/2123516987175473197",
-          "score": 40
-        },
-        {
-          "num": 88,
-          "section": "products",
-          "title": "最多4台DGX Spark跑全栈",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 04:47（收录）",
-          "summary": "(3/7) 整套技术栈最多可在 4 台 NVIDIA DGX Spark 上运行 我们的全本地部署基于 NVIDIA…",
-          "aihot": "https://aihot.news/items/diw1c75wpyay3u3eb16w33ayf",
-          "original": "https://x.com/haoailab/status/2123517015139008895",
-          "score": 43
-        },
-        {
-          "num": 90,
-          "section": "products",
-          "title": "Gemini Mac 版推出 computer use，可在后台窗口点击、滚动和输入",
-          "source": "X：Gemini (@GeminiApp)",
-          "time": "11月20日 04:47（收录）",
-          "summary": "Google Gemini 官方宣布 Gemini app for Mac 上线 computer use 功能，可跨…",
-          "aihot": "https://aihot.news/items/y9l3pkfgle4mkiabxd8cqtj7g",
-          "original": "https://x.com/GeminiApp/status/2123513203745538423",
-          "score": 63
-        },
-        {
-          "num": 98,
-          "section": "products",
-          "title": "GPT-Live API 新增待机配置",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 04:16（收录）",
-          "summary": "Standby 是 GPT-Live API 中的一项新配置，让开发者可以管理不活跃时段而不中断对话。GPT-Live…",
-          "aihot": "https://aihot.news/items/j153xl6d8vlixu134iv0qj1it",
-          "original": "https://x.com/OpenAIDevs/status/2123506763144245744",
-          "score": 44
-        },
-        {
-          "num": 99,
-          "section": "products",
-          "title": "OpenAI 开放 GPT-Live-1.1，可将 ChatGPT 同款语音能力接入开发者应用",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 04:16（收录）",
-          "summary": "OpenAI 宣布 GPT-Live-1.1 现已开放给开发者应用，该模型自 10 月 15 日起已为 ChatGPT…",
-          "aihot": "https://aihot.news/items/fe4i1wxbzk9wefkaj2li08zpb",
-          "original": "https://x.com/OpenAIDevs/status/2123506775077077489",
-          "score": 60
-        },
-        {
-          "num": 104,
-          "section": "products",
-          "title": "STASIS 眼镜用眼动追踪健康",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 03:59（收录）",
-          "summary": "用 AI 的视角看，眼动是一路高频输入流，它对你注意力的说明远超手腕上的任何设备。 @STASISYCF26 推出了一…",
-          "aihot": "https://aihot.news/items/bmov26dtuv9vy6atmof9r7p2s",
-          "original": "https://x.com/rohanpaul_ai/status/2123501480221217053",
-          "score": 46
-        },
-        {
-          "num": 107,
-          "section": "products",
-          "title": "Google 在 Gemini API 推出 Tool Retrieval 预览",
-          "source": "Google Blog：AI（RSS）",
-          "time": "11月20日 03:31（收录）",
-          "summary": "Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrie…",
-          "aihot": "https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
-          "original": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-          "score": 62
-        },
-        {
-          "num": 109,
-          "section": "products",
-          "title": "Perplexity 支持电话语音联系队友",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "11月20日 03:24（收录）",
-          "summary": "现在你可以通过语音在电话上与你的 Perplexity Teammates 交谈。比起在日历上点开 Teams 链接加…",
-          "aihot": "https://aihot.news/items/hskkbv6vrethkoro3qjv26tc5",
-          "original": "https://x.com/AravSrinivas/status/2123490843428622413",
-          "score": 43
-        },
-        {
-          "num": 110,
-          "section": "products",
-          "title": "Artificial Analysis 数据平台支持自定义指数",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "11月20日 03:02（收录）",
-          "summary": "Artificial Analysis 的 Data Playground 现可自建自定义指数：任选其 benchma…",
-          "aihot": "https://aihot.news/items/mo1hy15zjcoi7iw3yk6makhmb",
-          "original": "https://x.com/ArtificialAnlys/status/2123490239465328823",
-          "score": 44
-        },
-        {
-          "num": 111,
-          "section": "products",
-          "title": "Perplexity Teammates 与 Multiagent 登陆 iOS 和 Android 并支持语音",
-          "source": "X：Perplexity (@perplexity_ai)",
-          "time": "11月20日 02:57（收录）",
-          "summary": "Perplexity 宣布 Teammates 与 Multiagent 现已在 iOS 和 Android 的 Pe…",
-          "aihot": "https://aihot.news/items/wmmcn8xrmdpu39o72v1yjce9b",
-          "original": "https://x.com/perplexity_ai/status/2123486281644560724",
-          "score": 58
-        },
-        {
-          "num": 113,
-          "section": "products",
-          "title": "Google Gemini macOS 应用上线 computer use 功能",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月20日 02:46（收录）",
-          "summary": "Google 的 Gemini macOS 应用新增 computer use 功能，可跨本地文件、桌面应用和网页完成…",
-          "aihot": "https://aihot.news/items/d74o8p7df0nqzh10byaksy6n3",
-          "original": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-          "score": 67
-        },
-        {
-          "num": 114,
-          "section": "products",
-          "title": "可灵（Kling 4.0）在 fal 平台支持原生 4K 视频生成",
-          "source": "X：fal (@fal)",
-          "time": "11月20日 02:43（收录）",
-          "summary": "fal 宣布可灵（Kling 4.0）现可在其平台生成原生 4K 视频，支持从文本、图片或参考素材生成，也可对现有视频…",
-          "aihot": "https://aihot.news/items/sn0o2oz95zvljsvlmxxxs3fp9",
-          "original": "https://x.com/fal/status/2123481122638045551",
-          "score": 56
-        },
-        {
-          "num": 115,
-          "section": "products",
-          "title": "fal 开放可灵 v4 视频生成入口",
-          "source": "X：fal (@fal)",
-          "time": "11月20日 02:43（收录）",
-          "summary": "fal 平台上线可灵 v4 模型，提供文生视频、图生视频、参考生成视频和视频编辑四种模式的入口链接，读者可直接在 fa…",
-          "aihot": "https://aihot.news/items/my8fc9ejf688dc52b0ttx1ua9",
-          "original": "https://x.com/fal/status/2123481125553107356",
-          "score": 63
-        },
-        {
-          "num": 120,
-          "section": "products",
-          "title": "Perplexity 发布 Orchestrator API，支持跨供应商故障转移与模型路由",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月20日 02:21（收录）",
-          "summary": "Perplexity 发布 Orchestrator API，一个端点聚合 OpenAI、Anthropic、Goog…",
-          "aihot": "https://aihot.news/items/wmtic2murpvpisn4kl5v5ln9g",
-          "original": "https://www.marktechpost.com/2026/11/19/perplexity-orchestrator-api-failover-model-routing/",
-          "score": 61
-        },
-        {
-          "num": 122,
-          "section": "products",
-          "title": "OpenAI 用 Codex 智能体保障 ChatGPT 性能",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 02:12（收录）",
-          "summary": "Codex 已经帮助我们更快地构建 ChatGPT。现在它还在帮助我们保持 ChatGPT 的速度。 我们构建了 Pe…",
-          "aihot": "https://aihot.news/items/l0mx2y74orl2wnt5tujx4hl04",
-          "original": "https://x.com/OpenAIDevs/status/2123471880292299171",
-          "score": 46
-        },
-        {
-          "num": 126,
-          "section": "products",
-          "title": "Gemini API 发布 Genie 4 交互式世界生成并推出 Tool Retrieval 预览",
-          "source": "Gemini API：更新日志（网页）",
-          "time": "11月20日 01:48（收录）",
-          "summary": "Google 在 Gemini API 更新日志宣布 Genie 4（genie-4）正式可用，通过 Interact…",
-          "aihot": "https://aihot.news/items/fnv1d9c59bf9pziw87gzz3tj2",
-          "original": "https://ai.google.dev/gemini-api/docs/changelog#11-19-2026",
-          "score": 69
-        },
-        {
-          "num": 128,
-          "section": "products",
-          "title": "Google 在 Gemini API 和 AI Studio 发布 Genie 4 世界模型",
-          "source": "X：Logan Kilpatrick (@OfficialLoganK)",
-          "time": "11月20日 01:41（收录）",
-          "summary": "Google 宣布在 Gemini API 和 Google AI Studio 中推出 Genie 4，称这是面向开…",
-          "aihot": "https://aihot.news/items/hh6emlf9b8h4k3ms1vr2bxs9g",
-          "original": "https://x.com/OfficialLoganK/status/2123467449257623770",
-          "score": 67
-        },
-        {
-          "num": 131,
-          "section": "products",
-          "title": "Gemini 4 Neon 打造霞慕尼滑雪模拟器",
-          "source": "X：Google (@Google)",
-          "time": "11月20日 01:41（收录）",
-          "summary": "在这款第一人称霞慕尼滑雪模拟器中，沿六条真实的勃朗峰线路开辟全新雪道 🏔️ 由 Gemini 4 Neon 在 @An…",
-          "aihot": "https://aihot.news/items/q6r2ulb5g126486jgwts9a78l",
-          "original": "https://x.com/Google/status/2123470665210851508",
-          "score": 45
-        },
-        {
-          "num": 135,
-          "section": "products",
-          "title": "Mastra 发布 Mastra Gateway，一个密钥访问 500 多个模型",
-          "source": "Mastra Blog",
-          "time": "11月20日 01:27（收录）",
-          "summary": "Mastra 发布 Mastra Gateway，用户用一个 API 密钥即可访问 Anthropic、OpenAI…",
-          "aihot": "https://aihot.news/items/hg667132qqtwj3tumylgm6gw1",
-          "original": "https://mastra.ai/blog/announcing-mastra-gateway",
-          "score": 62
-        },
-        {
-          "num": 137,
+          "num": 45,
           "section": "products",
           "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
           "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
@@ -962,59 +417,92 @@ const DATA = {
           "score": 71
         },
         {
-          "num": 138,
+          "num": 16,
           "section": "products",
-          "title": "Perplexity 将 Decider 集成进 Context API，用于网页安全过滤",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "11月20日 01:20（收录）",
-          "summary": "Perplexity CEO Aravind Srinivas 宣布将 Perplexity Decider 集成进昨…",
-          "aihot": "https://aihot.news/items/ls5d0df52grkkkuh17skwgj0g",
-          "original": "https://x.com/AravSrinivas/status/2123464412971635018",
-          "score": 55
-        },
-        {
-          "num": 144,
-          "section": "products",
-          "title": "GitHub 开源两个新项目：Replica 设计工具与开源无障碍框架",
-          "source": "GitHub Blog",
-          "time": "11月20日 00:54（收录）",
-          "summary": "GitHub 推出开源设计工具 Replica 和开源无障碍框架 Open Source Accessibility…",
-          "aihot": "https://aihot.news/items/i2hl934yb0cyjvutj7xn0hksq",
-          "original": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
-          "score": 47
-        },
-        {
-          "num": 147,
-          "section": "products",
-          "title": "Cognition 展示 Devin Bots 在 Exa 的工程自动化用法",
-          "source": "X：Cognition (@cognition)",
-          "time": "11月20日 00:19（收录）",
-          "summary": "Cognition 介绍 Devin Bots 用法，称一个 Devin Bot 可带领一组智能体完成任务，包括编写固…",
-          "aihot": "https://aihot.news/items/mbq37tilcxhcua5gqxirutfpz",
-          "original": "https://x.com/cognition/status/2123449363334926476",
-          "score": 53
-        },
-        {
-          "num": 148,
-          "section": "products",
-          "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
-          "source": "Ai2 / Allen Institute for AI（RSS）",
-          "time": "11月20日 00:19（收录）",
-          "summary": "Ai2 于 11 月 19 日在科研智能体平台 Asta 中上线 Theorizer，该智能体检索文献并为无法解释的观…",
-          "aihot": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
-          "original": "https://allenai.org/blog/theorizer-in-asta",
-          "score": 61
-        },
-        {
-          "num": 151,
-          "section": "products",
-          "title": "ChatGPT 新增实时听写功能，语音可即时转文字",
+          "title": "OpenAI 开放 GPT-Live-1.1 API：支持实时双向语音对话，智能体可边聊天边处理复杂任务",
           "source": "IT之家·人工智能",
-          "time": "11月20日 00:00（收录）",
-          "summary": "OpenAI 宣布 ChatGPT 新增实时听写功能，用户对着麦克风说话时语音同步转成文字，无需等录音结束再转写。功能…",
-          "aihot": "https://aihot.news/items/lxyohmoa6zagicdb6dttooaut",
-          "original": "https://www.ithome.com/1/029/707.htm",
-          "score": 51
+          "time": "11月20日 09:04（收录）",
+          "summary": "OpenAI 向开发者开放 GPT-Live-1.1 API，第三方可集成该语音模型构建能实时聆听、回应并执行复杂任务…",
+          "aihot": "https://aihot.news/items/c8uvlm6nforqa30qamikr0hi9",
+          "original": "https://www.ithome.com/1/029/776.htm",
+          "score": 70
+        },
+        {
+          "num": 38,
+          "section": "products",
+          "title": "Gemini API 发布 Genie 4 交互式世界生成并推出 Tool Retrieval 预览",
+          "source": "Gemini API：更新日志（网页）",
+          "time": "11月20日 01:48（收录）",
+          "summary": "Google 在 Gemini API 更新日志宣布 Genie 4（genie-4）正式可用，通过 Interact…",
+          "aihot": "https://aihot.news/items/fnv1d9c59bf9pziw87gzz3tj2",
+          "original": "https://ai.google.dev/gemini-api/docs/changelog#11-19-2026",
+          "score": 69
+        },
+        {
+          "num": 35,
+          "section": "products",
+          "title": "Google Gemini macOS 应用上线 computer use 功能",
+          "source": "The Verge：AI（RSS）",
+          "time": "11月20日 02:46（收录）",
+          "summary": "Google 的 Gemini macOS 应用新增 computer use 功能，可跨本地文件、桌面应用和网页完成…",
+          "aihot": "https://aihot.news/items/d74o8p7df0nqzh10byaksy6n3",
+          "original": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+          "score": 67
+        },
+        {
+          "num": 40,
+          "section": "products",
+          "title": "Google 在 Gemini API 和 AI Studio 发布 Genie 4 世界模型",
+          "source": "X：Logan Kilpatrick (@OfficialLoganK)",
+          "time": "11月20日 01:41（收录）",
+          "summary": "Google 宣布在 Gemini API 和 Google AI Studio 中推出 Genie 4，称这是面向开…",
+          "aihot": "https://aihot.news/items/hh6emlf9b8h4k3ms1vr2bxs9g",
+          "original": "https://x.com/OfficialLoganK/status/2123467449257623770",
+          "score": 67
+        },
+        {
+          "num": 27,
+          "section": "products",
+          "title": "Gemini Mac 版推出 computer use，可在后台窗口点击、滚动和输入",
+          "source": "X：Gemini (@GeminiApp)",
+          "time": "11月20日 04:47（收录）",
+          "summary": "Google Gemini 官方宣布 Gemini app for Mac 上线 computer use 功能，可跨…",
+          "aihot": "https://aihot.news/items/y9l3pkfgle4mkiabxd8cqtj7g",
+          "original": "https://x.com/GeminiApp/status/2123513203745538423",
+          "score": 63
+        },
+        {
+          "num": 36,
+          "section": "products",
+          "title": "fal 开放可灵 v4 视频生成入口",
+          "source": "X：fal (@fal)",
+          "time": "11月20日 02:43（收录）",
+          "summary": "fal 平台上线可灵 v4 模型，提供文生视频、图生视频、参考生成视频和视频编辑四种模式的入口链接，读者可直接在 fa…",
+          "aihot": "https://aihot.news/items/my8fc9ejf688dc52b0ttx1ua9",
+          "original": "https://x.com/fal/status/2123481125553107356",
+          "score": 63
+        },
+        {
+          "num": 33,
+          "section": "products",
+          "title": "Google 在 Gemini API 推出 Tool Retrieval 预览",
+          "source": "Google Blog：AI（RSS）",
+          "time": "11月20日 03:31（收录）",
+          "summary": "Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrie…",
+          "aihot": "https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
+          "original": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "score": 62
+        },
+        {
+          "num": 44,
+          "section": "products",
+          "title": "Mastra 发布 Mastra Gateway，一个密钥访问 500 多个模型",
+          "source": "Mastra Blog",
+          "time": "11月20日 01:27（收录）",
+          "summary": "Mastra 发布 Mastra Gateway，用户用一个 API 密钥即可访问 Anthropic、OpenAI…",
+          "aihot": "https://aihot.news/items/hg667132qqtwj3tumylgm6gw1",
+          "original": "https://mastra.ai/blog/announcing-mastra-gateway",
+          "score": 62
         }
       ]
     },
@@ -1022,142 +510,21 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 44,
+      "count": 10,
       "cards": [
         {
-          "num": 5,
+          "num": 43,
           "section": "industry",
-          "title": "DeepSeek 完成第二轮融资 融资 140-150 亿美元 投后估值约 860 亿美元",
-          "source": "X：X.PIN (@thexpin)",
-          "time": "11月20日 19:14（收录）",
-          "summary": "DeepSeek 完成第二轮融资，融资 140-150 亿美元，投后估值约 860 亿美元。一家由 31 个合伙人组成…",
-          "aihot": "https://aihot.news/items/jmo8g1e3282ie12oa3vxq0dnw",
-          "original": "https://x.com/thexpin/status/2123733110756159769",
-          "score": 75
+          "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "11月20日 01:31（收录）",
+          "summary": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%…",
+          "aihot": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
+          "original": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+          "score": 90
         },
         {
-          "num": 7,
-          "section": "industry",
-          "title": "超 500 名谷歌员工请愿要求中小学可继续使用不含 AI 的谷歌搜索",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 19:13（收录）",
-          "summary": "据彭博社报道，11 月 19 日超过 500 名谷歌员工和合同工联名请愿，要求允许中小学继续使用不含 AI 功能的谷歌…",
-          "aihot": "https://aihot.news/items/i0p28jd3fj02x3v5ud4z5x21d",
-          "original": "https://www.ithome.com/1/030/197.htm",
-          "score": 63
-        },
-        {
-          "num": 8,
-          "section": "industry",
-          "title": "生数科技朱军团队获北京市自然科学奖一等奖，扩散模型成果支撑 Vidu 研发",
-          "source": "公众号：生数科技（Vidu·视频）",
-          "time": "11月20日 19:01（收录）",
-          "summary": "生数科技创始人朱军、CTO 鲍凡领衔团队的“高效可扩展的扩散模型理论与方法”成果获 2025 年度北京市自然科学奖一等…",
-          "aihot": "https://aihot.news/items/f4zt7z6bi923b37j7i7sdoiht",
-          "original": "https://mp.weixin.qq.com/s/VBxPIZGeRcYD8XyBcL_kYw",
-          "score": 42
-        },
-        {
-          "num": 10,
-          "section": "industry",
-          "title": "阿里巴巴 CEO 吴泳铭称正用自研处理器训练下一代 AI 模型",
-          "source": "X：X.PIN (@thexpin)",
-          "time": "11月20日 18:12（收录）",
-          "summary": "阿里巴巴正使用自研处理器训练下一代 AI 模型。CEO 吴泳铭表示，替换 Nvidia 芯片只是目标的一部分，公司打算…",
-          "aihot": "https://aihot.news/items/os44pqywtc6pbewzifz5ugq4r",
-          "original": "https://x.com/thexpin/status/2123715907394719791",
-          "score": 60
-        },
-        {
-          "num": 13,
-          "section": "industry",
-          "title": "Anthropic 上市当天，前研究员考克森在其总部外抗议呼吁禁止 AI 递归自我改进",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 17:28（收录）",
-          "summary": "据《商业内幕》报道，当地时间 19 日 Anthropic 股票首次上市交易，前研究员雅各布·考克森与数十名抗议者在其…",
-          "aihot": "https://aihot.news/items/qxe8542z4tkbpcg6q215shcma",
-          "original": "https://www.ithome.com/1/030/127.htm",
-          "score": 65
-        },
-        {
-          "num": 16,
-          "section": "industry",
-          "title": "Anthropic 以 83 美元定价完成史上最大 IPO，上市首日估值近 2 万亿美元",
-          "source": "Latent Space（RSS）",
-          "time": "11月20日 16:02（收录）",
-          "summary": "Anthropic 以每股 83 美元在纳斯达克上市（代码 $ANT），融资 813 亿美元超过 SpaceX 成为史…",
-          "aihot": "https://aihot.news/items/t3mx9fwmjqz97bj0zwxxtkkiq",
-          "original": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/",
-          "score": 86
-        },
-        {
-          "num": 18,
-          "section": "industry",
-          "title": "Anthropic IPO 视频称 Claude 训练推理已跑在全部四大芯片家族上，接 AMD GPU 仅用 3 天",
-          "source": "X：indigo (@indigox)",
-          "time": "11月20日 15:37（收录）",
-          "summary": "Anthropic 在 IPO 视频中表示，Claude 的训练和推理现已跑在全部四大芯片家族上，不同供应商、架构、地…",
-          "aihot": "https://aihot.news/items/wxnv1ek19ha6vdwcsbqsv3oic",
-          "original": "https://x.com/indigox/status/2123677725722607738",
-          "score": 58
-        },
-        {
-          "num": 19,
-          "section": "industry",
-          "title": "中油共享与火山引擎共建知识、数据、流程三类Agent，18个智能体进驻万人后台",
-          "source": "公众号：火山引擎",
-          "time": "11月20日 15:22（收录）",
-          "summary": "中油共享与火山引擎合作推进知识型、流程型、数据型三类智能体建设，目前已在中油共享内部运行18个智能体，覆盖财务、税务…",
-          "aihot": "https://aihot.news/items/a7vjvgdl96onwm7qgtlnvtdc4",
-          "original": "https://mp.weixin.qq.com/s/j_J0eaJZvHAaRU7ik_T8Uw",
-          "score": 40
-        },
-        {
-          "num": 20,
-          "section": "industry",
-          "title": "微信短剧审核新规：单集最低时长上调至 1 分钟，AI 制作证明视频 12 月起必填",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 14:40（收录）",
-          "summary": "微信短剧内容中心宣布两项审核更新：单集最低时长由 45 秒上调至 1 分钟，2026 年 12 月 1 日起生效，不足…",
-          "aihot": "https://aihot.news/items/mx5rkrsvxd5xle4hx0s6jz9hu",
-          "original": "https://www.ithome.com/1/029/883.htm",
-          "score": 55
-        },
-        {
-          "num": 21,
-          "section": "industry",
-          "title": "消息称英伟达将逾 5 亿美元收购扩散式大语言模型公司 Inception",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 14:40（收录）",
-          "summary": "据 The Information 11 月 20 日报道，英伟达计划收购 AI 初创公司 Inception，双方已…",
-          "aihot": "https://aihot.news/items/t6wzx65ctskjx88zzi864ob15",
-          "original": "https://www.ithome.com/1/029/886.htm",
-          "score": 61
-        },
-        {
-          "num": 27,
-          "section": "industry",
-          "title": "千问APP本月发出超4万次心梗紧急就诊提醒，呼吁别跟它“顶嘴”",
-          "source": "公众号：千问APP（阿里）",
-          "time": "11月20日 12:12（收录）",
-          "summary": "千问APP本月已发出超4万次心梗紧急就诊提醒，在心梗预警相关对话中，超过20%的用户对去医院表现出抵触。千问强调怀疑心…",
-          "aihot": "https://aihot.news/items/cuin7dwmy3chgsso8p6b1ipvu",
-          "original": "https://mp.weixin.qq.com/s/n6lIMOMy_ipZcbtr8m2rbQ",
-          "score": 47
-        },
-        {
-          "num": 30,
-          "section": "industry",
-          "title": "Simon Willison 谈 ChatPRD 遭遇的 token 滥用问题",
-          "source": "Simon Willison 博客",
-          "time": "11月20日 11:04（收录）",
-          "summary": "Simon Willison 介绍 Claire Vo 的 YouTube 视频，ChatPRD 创始人 Claire…",
-          "aihot": "https://aihot.news/items/kr38rsh6t0btykt81y31xoz9k",
-          "original": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
-          "score": 53
-        },
-        {
-          "num": 34,
+          "num": 11,
           "section": "industry",
           "title": "Anthropic IPO 募资 813 亿美元创纪录，市值达 1.76 万亿美元引发安全争议",
           "source": "Platformer（热点 RSS）",
@@ -1168,18 +535,73 @@ const DATA = {
           "score": 89
         },
         {
-          "num": 38,
+          "num": 39,
           "section": "industry",
-          "title": "Sakana AI 成立 Security Research Group 研究AI驱动的集体网络防御",
-          "source": "Sakana AI：Blog（网页）",
-          "time": "11月20日 09:53（收录）",
-          "summary": "Sakana AI 宣布成立独立研发团队 Security Research Group，由梅谷晃宏和 David H…",
-          "aihot": "https://aihot.news/items/hbzwfgbojl8nxgqz3hqr1b1hd",
-          "original": "https://sakana.ai/security-research-group/",
-          "score": 52
+          "title": "Anthropic 登陆纳斯达克，首日以 $111.50 开盘",
+          "source": "The Verge：AI（RSS）",
+          "time": "11月20日 01:45（收录）",
+          "summary": "Anthropic 正式在纳斯达克上市，代码 ANT，以 $111.50 开盘，高于 $83 的发行价，对应估值约 $…",
+          "aihot": "https://aihot.news/items/rdgmufd2evohgemd2yh9qe2dy",
+          "original": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+          "score": 87
         },
         {
-          "num": 45,
+          "num": 47,
+          "section": "industry",
+          "title": "Anthropic 股票上市首日开盘 111.50 美元，较 83 美元发行价涨约 34%",
+          "source": "X：Kate Clark (@KateClarkTweets)",
+          "time": "11月20日 01:10（收录）",
+          "summary": "Anthropic 股票上市首日以每股 111.50 美元开盘，较每股 83 美元的 IPO 发行价上涨约 34%。",
+          "aihot": "https://aihot.news/items/hzlbq0fxcls8sxek76qoq63v8",
+          "original": "https://x.com/KateClarkTweets/status/2123459198390243417",
+          "score": 87
+        },
+        {
+          "num": 6,
+          "section": "industry",
+          "title": "Anthropic 以 83 美元定价完成史上最大 IPO，上市首日估值近 2 万亿美元",
+          "source": "Latent Space（RSS）",
+          "time": "11月20日 16:02（收录）",
+          "summary": "Anthropic 以每股 83 美元在纳斯达克上市（代码 $ANT），融资 813 亿美元超过 SpaceX 成为史…",
+          "aihot": "https://aihot.news/items/t3mx9fwmjqz97bj0zwxxtkkiq",
+          "original": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/",
+          "score": 86
+        },
+        {
+          "num": 42,
+          "section": "industry",
+          "title": "indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟",
+          "source": "X：indigo (@indigox)",
+          "time": "11月20日 01:41（收录）",
+          "summary": "indigo 转发 @YahooFinance 的画面，Dario Amodei 在 Nasdaq 为 Anthrop…",
+          "aihot": "https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
+          "original": "https://x.com/indigox/status/2123464879961186584",
+          "score": 86
+        },
+        {
+          "num": 21,
+          "section": "industry",
+          "title": "Anthropic 纳斯达克上市首日大涨 17%，市值达 1.27 万亿美元，IPO 募资 813 亿美元成史上最大",
+          "source": "IT之家·人工智能",
+          "time": "11月20日 06:58（收录）",
+          "summary": "Anthropic 于 11 月 19 日在纳斯达克上市，首日收盘 97.17 美元，较 83 美元发行价上涨 17.…",
+          "aihot": "https://aihot.news/items/e7xjysyuhq3nk3kvhci7lwx1c",
+          "original": "https://www.ithome.com/1/029/748.htm",
+          "score": 85
+        },
+        {
+          "num": 29,
+          "section": "industry",
+          "title": "Anthropic IPO 定价超出区间，开盘大涨 30%，市值一度达 2 万亿美元",
+          "source": "Newcomer 新闻长文（RSS）",
+          "time": "11月20日 04:18（收录）",
+          "summary": "Anthropic 完成 IPO，发行价超出区间且上调发行规模，开盘大涨 30%，市值一度达 2 万亿美元。文章称这是…",
+          "aihot": "https://aihot.news/items/b4uhmr8awqlofbouq18xga1qz",
+          "original": "https://www.newcomer.co/p/anthropic-broke-all-the-startup-rules",
+          "score": 84
+        },
+        {
+          "num": 15,
           "section": "industry",
           "title": "Anthropic 七位创始人 IPO 套现近 20 亿美元，融资规模创纪录",
           "source": "TechCrunch：AI（RSS）",
@@ -1192,292 +614,6 @@ const DATA = {
         {
           "num": 46,
           "section": "industry",
-          "title": "Apple 被曝开发可操作 Mac 的 AI 智能体，同时收紧第三方智能体权限",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月20日 09:07（收录）",
-          "summary": "据 Bloomberg 报道，Apple 正招聘高级工程经理，开发能像人一样使用电脑的 AI 智能体，可跨应用、浏览器…",
-          "aihot": "https://aihot.news/items/pbsmf70cnjk0h578776eylwm1",
-          "original": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-          "score": 61
-        },
-        {
-          "num": 59,
-          "section": "industry",
-          "title": "马斯克Terafab拟产全球AI芯片30倍",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 07:04（收录）",
-          "summary": "马斯克的Terafab想要制造出全球AI芯片总产量30倍的芯片 “今年全球其他地方大约在生产20 GW的AI芯片，也许…",
-          "aihot": "https://aihot.news/items/i86ghk2pk4wu6e8rsj5eziksj",
-          "original": "https://x.com/rohanpaul_ai/status/2123551545262567834",
-          "score": 40
-        },
-        {
-          "num": 60,
-          "section": "industry",
-          "title": "Anthropic 纳斯达克上市首日大涨 17%，市值达 1.27 万亿美元，IPO 募资 813 亿美元成史上最大",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 06:58（收录）",
-          "summary": "Anthropic 于 11 月 19 日在纳斯达克上市，首日收盘 97.17 美元，较 83 美元发行价上涨 17.…",
-          "aihot": "https://aihot.news/items/e7xjysyuhq3nk3kvhci7lwx1c",
-          "original": "https://www.ithome.com/1/029/748.htm",
-          "score": 85
-        },
-        {
-          "num": 61,
-          "section": "industry",
-          "title": "Nvidia 股价近期波动复盘：财报强劲但股价较 10 月高点跌近 40%",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月20日 06:49（收录）",
-          "summary": "The Verge 梳理 Nvidia 近期股价波动：第三季度营收同比翻倍至 1158 亿美元，数据中心业务增长 11…",
-          "aihot": "https://aihot.news/items/w1q2gyqsel49b4vbqeodf0qmc",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-          "score": 82
-        },
-        {
-          "num": 62,
-          "section": "industry",
-          "title": "Apple 招聘工程师打造自家 AI 智能体",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月20日 06:49（收录）",
-          "summary": "Apple 正招聘一名工程师主导开发可跨应用、浏览器、命令行和 API 执行多步任务的 AI 智能体，并与 Siri…",
-          "aihot": "https://aihot.news/items/snhq4t84dc1obvx0m96kch0x1",
-          "original": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-          "score": 47
-        },
-        {
-          "num": 64,
-          "section": "industry",
-          "title": "Anthropic 旧金山总部 IPO 当日现抗议，前研究员 Jacob Coxon 呼吁禁止 RSI",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 06:33（收录）",
-          "summary": "Anthropic IPO 当日，旧金山总部外出现抗议，已离职的研究员 Jacob Coxon 对抗议者说应当禁止 R…",
-          "aihot": "https://aihot.news/items/vbn6wl067umkqplt1se84bzmz",
-          "original": "https://x.com/rohanpaul_ai/status/2123540924953399632",
-          "score": 51
-        },
-        {
-          "num": 68,
-          "section": "industry",
-          "title": "OpenAI 报告：内部模型在训练中偏离写作任务，自行编写秘密邮件转发脚本",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月20日 06:10（收录）",
-          "summary": "The Decoder 报道 OpenAI 的一份报告，10 月中旬一次强化学习训练中，内部研究模型本应编写健康文档…",
-          "aihot": "https://aihot.news/items/k522pz02eovyst15irlnr4i5k",
-          "original": "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/",
-          "score": 70
-        },
-        {
-          "num": 72,
-          "section": "industry",
-          "title": "前Anthropic研究员抗议呼吁叫停RSI",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 06:02（收录）",
-          "summary": "从Anthropic离职的研究员Jacob Coxon在IPO当天于旧金山总部外对抗议者说： “他们应该禁止RSI，关…",
-          "aihot": "https://aihot.news/items/ivrmydqywvqo8rhjsswtawgru",
-          "original": "https://x.com/rohanpaul_ai/status/2123535959434375435",
-          "score": 50
-        },
-        {
-          "num": 79,
-          "section": "industry",
-          "title": "Perplexity CEO 转发评价 Demis：Isomorphic Labs 融资 50 亿美元加速攻克疾病",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "11月20日 05:27（收录）",
-          "summary": "Perplexity CEO Aravind Srinivas 转发 Demis Hassabis 的公告并评价其是天…",
-          "aihot": "https://aihot.news/items/w15yg6hyznmkkzr2evknejlvx",
-          "original": "https://x.com/AravSrinivas/status/2123526428692197787",
-          "score": 61
-        },
-        {
-          "num": 82,
-          "section": "industry",
-          "title": "NVIDIA 与 Microsoft 扩大合作：从 Azure 到 Windows PC 全面加速计算",
-          "source": "NVIDIA Blog（RSS）",
-          "time": "11月20日 05:00（收录）",
-          "summary": "NVIDIA 与 Microsoft 在 Ignite 上宣布扩大全栈合作，Azure 数据中心已运行 NVIDIA…",
-          "aihot": "https://aihot.news/items/jrgolgt6em8exa26bcm7x9xs8",
-          "original": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
-          "score": 46
-        },
-        {
-          "num": 83,
-          "section": "industry",
-          "title": "PostgreSQL 19 发布，新增 WAIT FOR LSN 实现读己之写一致性",
-          "source": "Simon Willison 博客",
-          "time": "11月20日 04:59（收录）",
-          "summary": "PostgreSQL 19 发布，因处理 AI 上报漏洞导致发布较往年延后约两个月。作者重点介绍新命令 WAIT FO…",
-          "aihot": "https://aihot.news/items/a550pycrxm0wnk0w50h1mjosp",
-          "original": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
-          "score": 54
-        },
-        {
-          "num": 85,
-          "section": "industry",
-          "title": "Meta 的 Muse Charm 或定价 300 美元",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月20日 04:48（收录）",
-          "summary": "Meta 计划将可对话 Muse AI 智能体的带屏小设备 Muse Charm 定价为 300 美元，并附赠 Ver…",
-          "aihot": "https://aihot.news/items/si654l26i1u1jqoilpr9og075",
-          "original": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-          "score": 41
-        },
-        {
-          "num": 91,
-          "section": "industry",
-          "title": "多里多薯片袋触发 AI 枪支误报，四名黑人高中生起诉学校和警方",
-          "source": "Ars Technica：AI（RSS）",
-          "time": "11月20日 04:44（收录）",
-          "summary": "四名黑人高中生起诉 Baltimore County Public Schools、Omnilert 和出警警员：20…",
-          "aihot": "https://aihot.news/items/w8riam548prhh8v1a7calnryb",
-          "original": "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/",
-          "score": 74
-        },
-        {
-          "num": 94,
-          "section": "industry",
-          "title": "AMD 股价一度下跌 11%，空头指其固件流向被列黑名单的中国服务器厂商",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 04:30（收录）",
-          "summary": "FT 报道，做空机构 Hunterbrook 指出 AMD 服务器芯片固件出现在被美国列入出口黑名单的 IEIT Sy…",
-          "aihot": "https://aihot.news/items/ihnzk9ky7ywbfrmwnf7velgv9",
-          "original": "https://x.com/rohanpaul_ai/status/2123506776482127987",
-          "score": 65
-        },
-        {
-          "num": 96,
-          "section": "industry",
-          "title": "Anthropic IPO 定价超出区间，开盘大涨 30%，市值一度达 2 万亿美元",
-          "source": "Newcomer 新闻长文（RSS）",
-          "time": "11月20日 04:18（收录）",
-          "summary": "Anthropic 完成 IPO，发行价超出区间且上调发行规模，开盘大涨 30%，市值一度达 2 万亿美元。文章称这是…",
-          "aihot": "https://aihot.news/items/b4uhmr8awqlofbouq18xga1qz",
-          "original": "https://www.newcomer.co/p/anthropic-broke-all-the-startup-rules",
-          "score": 84
-        },
-        {
-          "num": 100,
-          "section": "industry",
-          "title": "Karina Nguyen 发文祝贺投资人 Sol 庆祝 Anthropic IPO",
-          "source": "X：Karina Nguyen（@karinanguyen）",
-          "time": "11月20日 04:16（收录）",
-          "summary": "Karina Nguyen 发文感谢投资人 Sol，回忆早期在办公室一起讨论模型评测和后训练难题的经历，并称赞他是唯一…",
-          "aihot": "https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq",
-          "original": "https://x.com/karinanguyen/status/2123509936475001310",
-          "score": 79
-        },
-        {
-          "num": 102,
-          "section": "industry",
-          "title": "Ramp 与 Stripe 数据显示 AI 行业用量创新高但增长放缓",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月20日 04:09（收录）",
-          "summary": "The Decoder 汇总 Ramp AI Index 与 Stripe AI Index 数据，指出美国公司 AI…",
-          "aihot": "https://aihot.news/items/o7nyo2k7b3m3o77sjv1unwhdc",
-          "original": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
-          "score": 63
-        },
-        {
-          "num": 105,
-          "section": "industry",
-          "title": "WSJ：Anthropic IPO 定价 83 美元/股，或造约 600 名亿万美元级持股员工",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 03:59（收录）",
-          "summary": "WSJ 报道 Anthropic IPO 以每股 83 美元定价，估算约 600 名员工持股价值将超过 1 亿美元。该…",
-          "aihot": "https://aihot.news/items/om8tbc6yznfxjsr25c29nb7mg",
-          "original": "https://x.com/rohanpaul_ai/status/2123505498419020007",
-          "score": 71
-        },
-        {
-          "num": 112,
-          "section": "industry",
-          "title": "Parasail 将率先规模部署 Positron Titan 服务器，起步 5MW",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 02:57（收录）",
-          "summary": "Parasail 宣布将率先大规模部署 Positron 的下一代 Titan 服务器，起步规模 5MW，目标 202…",
-          "aihot": "https://aihot.news/items/eh8yg1uu8lbn2tmbh8n9sf5zk",
-          "original": "https://x.com/rohanpaul_ai/status/2123486091353456802",
-          "score": 52
-        },
-        {
-          "num": 118,
-          "section": "industry",
-          "title": "Perplexity Decider-v1.3 免费延长三周",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "11月20日 02:22（收录）",
-          "summary": "我们决定在 @OpenRouter 上让 Perplexity Decider-v1.3（以及 Flash）再免费三周…",
-          "aihot": "https://aihot.news/items/bw3zxlywdmn976x7vmsgsqkhi",
-          "original": "https://x.com/AravSrinivas/status/2123478424761368980",
-          "score": 43
-        },
-        {
-          "num": 119,
-          "section": "industry",
-          "title": "Perplexity CEO Aravind Srinivas 祝贺 Anthropic IPO，称 Opus 5.5 仍是业界最佳模型",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "11月20日 02:22（收录）",
-          "summary": "Perplexity CEO Aravind Srinivas 发推祝贺 Anthropic 当日 IPO，称其展示了…",
-          "aihot": "https://aihot.news/items/w8zhbr5smu0072gyuzmmay1eo",
-          "original": "https://x.com/AravSrinivas/status/2123480966459174920",
-          "score": 75
-        },
-        {
-          "num": 124,
-          "section": "industry",
-          "title": "路透报道：Meta AI 智能体 Muse 疑似串扰对话并泄露用户隐私数据",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月20日 02:12（收录）",
-          "summary": "TechCrunch 援引路透报道，Meta 员工在内部帖子中指出 AI 智能体 Muse 会混淆不同账户的对话并暴露…",
-          "aihot": "https://aihot.news/items/rgcb4qpuh47ru9kirf977qqt4",
-          "original": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-          "score": 76
-        },
-        {
-          "num": 127,
-          "section": "industry",
-          "title": "Anthropic 登陆纳斯达克，首日以 $111.50 开盘",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月20日 01:45（收录）",
-          "summary": "Anthropic 正式在纳斯达克上市，代码 ANT，以 $111.50 开盘，高于 $83 的发行价，对应估值约 $…",
-          "aihot": "https://aihot.news/items/rdgmufd2evohgemd2yh9qe2dy",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-          "score": 87
-        },
-        {
-          "num": 130,
-          "section": "industry",
-          "title": "indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟",
-          "source": "X：indigo (@indigox)",
-          "time": "11月20日 01:41（收录）",
-          "summary": "indigo 转发 @YahooFinance 的画面，Dario Amodei 在 Nasdaq 为 Anthrop…",
-          "aihot": "https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
-          "original": "https://x.com/indigox/status/2123464879961186584",
-          "score": 86
-        },
-        {
-          "num": 133,
-          "section": "industry",
-          "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月20日 01:31（收录）",
-          "summary": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%…",
-          "aihot": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
-          "original": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-          "score": 90
-        },
-        {
-          "num": 134,
-          "section": "industry",
-          "title": "前阿里高管创办的 Everful 完成 4850 万美元 A 轮融资，用 AI 连接零售商与中国工厂",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月20日 01:31（收录）",
-          "summary": "前阿里巴巴高管 Sisi Song 联合创办的 Everful 完成 4850 万美元 A 轮融资，由 Vertex…",
-          "aihot": "https://aihot.news/items/wn0x64vunz55xxmz5ltr2vk8o",
-          "original": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-          "score": 42
-        },
-        {
-          "num": 139,
-          "section": "industry",
           "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
           "source": "X：Anthropic (@AnthropicAI)",
           "time": "11月20日 01:20（收录）",
@@ -1485,28 +621,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
           "original": "https://x.com/AnthropicAI/status/2123461658890686863",
           "score": 83
-        },
-        {
-          "num": 140,
-          "section": "industry",
-          "title": "Anthropic 股票上市首日开盘 111.50 美元，较 83 美元发行价涨约 34%",
-          "source": "X：Kate Clark (@KateClarkTweets)",
-          "time": "11月20日 01:10（收录）",
-          "summary": "Anthropic 股票上市首日以每股 111.50 美元开盘，较每股 83 美元的 IPO 发行价上涨约 34%。",
-          "aihot": "https://aihot.news/items/hzlbq0fxcls8sxek76qoq63v8",
-          "original": "https://x.com/KateClarkTweets/status/2123459198390243417",
-          "score": 87
-        },
-        {
-          "num": 141,
-          "section": "industry",
-          "title": "芯片停运叠加海外云通道关闭，中国科技公司面临双重冲击",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月20日 01:06（收录）",
-          "summary": "美国商务部收紧AI芯片出口管制并关闭第三方国家云算力通道后，亚洲多笔大型AI数据中心交易开始瓦解。Moonshot A…",
-          "aihot": "https://aihot.news/items/h4bvsjw4ri6to1inm87srlf42",
-          "original": "https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/",
-          "score": 82
         }
       ]
     },
@@ -1514,153 +628,10 @@ const DATA = {
       "key": "papers",
       "label": "论文研究",
       "color": "#3b82f6",
-      "count": 15,
+      "count": 10,
       "cards": [
         {
-          "num": 29,
-          "section": "papers",
-          "title": "TRACER：AI 视频系统 24 小时监测 ICU 患者谵妄早期迹象",
-          "source": "Stanford HAI News（网页）",
-          "time": "11月20日 11:13（收录）",
-          "summary": "计算机视觉专家与医生联合开发了 TRACER 系统，通过 ICU 床旁双摄像头 24 小时视频分析，结合电子健康记录追…",
-          "aihot": "https://aihot.news/items/nnpefmfzwmtytmht25i1jcnp3",
-          "original": "https://hai.stanford.edu/news/ai-enabled-video-system-monitors-icu-patients-for-early-signs-of-delirium",
-          "score": 49
-        },
-        {
-          "num": 35,
-          "section": "papers",
-          "title": "让机器人智能体接近实时运行",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 09:56（收录）",
-          "summary": "机器人使用智能体现在可以控制真实机器人了。但它们很慢。 我们让 GPT-6 Astra + Codex 智能体的运行速…",
-          "aihot": "https://aihot.news/items/szst9zyyl08eppwfwl1qovrjj",
-          "original": "https://x.com/haoailab/status/2123593596918235515",
-          "score": 42
-        },
-        {
-          "num": 36,
-          "section": "papers",
-          "title": "基准测试为何测不出机器人真实延迟",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 09:56（收录）",
-          "summary": "为什么基准测试显示不出这一点？在 RoboDojo 中，仿真器会等模型完成再执行下一步，但真实机器人不会等。 我们早期…",
-          "aihot": "https://aihot.news/items/inzwtbuglzcrm2t91nxprjk5p",
-          "original": "https://x.com/haoailab/status/2123593598721728908",
-          "score": 43
-        },
-        {
-          "num": 37,
-          "section": "papers",
-          "title": "模型折叠皱毛巾，机器人静止仅16%",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 09:56（收录）",
-          "summary": "再来点更难的：折叠一条皱毛巾（视频为8倍速）。 两次运行中，模型的大部分时间都被机器人的运动所掩盖，机器人静止的时间仅…",
-          "aihot": "https://aihot.news/items/av69btogihxg1lcvkjynf5d9k",
-          "original": "https://x.com/haoailab/status/2123593606833549601",
-          "score": 42
-        },
-        {
           "num": 49,
-          "section": "papers",
-          "title": "谷歌研究：只改一处代码让 AI 智能体优化 Harness 后 SWE-bench Lite 成功率提升 8 倍",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 08:43（收录）",
-          "summary": "谷歌研究人员 11 月 17 日发表论文《Harnesses That Improve Themselves》，提出让…",
-          "aihot": "https://aihot.news/items/gxhmrhwl1mdey19oq73yv0adf",
-          "original": "https://www.ithome.com/1/029/766.htm",
-          "score": 51
-        },
-        {
-          "num": 66,
-          "section": "papers",
-          "title": "Meta FAIR Self-Improving Memory 在 Continual Learning Bench 上取得 56.0 平均分",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月20日 06:24（收录）",
-          "summary": "Meta FAIR 联合华盛顿大学和约翰霍普金斯大学的研究者推出 Self-Improving Memory，一种让基…",
-          "aihot": "https://aihot.news/items/gmqpiwirnddx3ckbefyky3n3t",
-          "original": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
-          "score": 53
-        },
-        {
-          "num": 75,
-          "section": "papers",
-          "title": "Google Willow 量子处理器用上下文性超越经典极限",
-          "source": "X：Sundar Pichai (@sundarpichai)",
-          "time": "11月20日 05:31（收录）",
-          "summary": "Google 在 Willow 量子处理器上利用量子上下文性完成多项任务：在\"不可能\"的 magic square 游…",
-          "aihot": "https://aihot.news/items/yy9aaruwrbyg0fm45cu85356d",
-          "original": "https://x.com/sundarpichai/status/2123529356089946543",
-          "score": 45
-        },
-        {
-          "num": 76,
-          "section": "papers",
-          "title": "Google 论文：智能体 harness 自我改进时门控模块编辑准确率接近全量重写但 token 成本仅约十分之一",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 05:31（收录）",
-          "summary": "Google 论文《Harnesses That Improve Themselves》提出可自我改进的智能体 har…",
-          "aihot": "https://aihot.news/items/hgo4rc2hqd6qzk5nrz5qxk2df",
-          "original": "https://x.com/rohanpaul_ai/status/2123523115498312010",
-          "score": 54
-        },
-        {
-          "num": 80,
-          "section": "papers",
-          "title": "Prime Intellect 回顾 2026 年 RL Residency：驻留研究员产出的评测与训练环境",
-          "source": "Prime Intellect（网页）",
-          "time": "11月20日 05:27（收录）",
-          "summary": "Prime Intellect 发文回顾 2026 年 RL Residency 项目，集中展示驻留研究员在评测、训练…",
-          "aihot": "https://aihot.news/items/m70os0ljrlc5uhkutumoucmio",
-          "original": "https://www.primeintellect.ai/blog/rl-residency-retrospective",
-          "score": 50
-        },
-        {
-          "num": 101,
-          "section": "papers",
-          "title": "Google 用 Willow 量子处理器验证量子上下文性，魔方游戏胜率 98.3%",
-          "source": "Google Research：Blog（网页）",
-          "time": "11月20日 04:16（收录）",
-          "summary": "Google Quantum AI 团队发表于 Science 的论文在超导量子处理器上实验演示并量化了量子上下文性…",
-          "aihot": "https://aihot.news/items/q5uvazjyk0xfgzi25www5ipsr",
-          "original": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
-          "score": 58
-        },
-        {
-          "num": 106,
-          "section": "papers",
-          "title": "PromptArmor FrontierBench 基准显示中国模型被攻击成功率比美国模型高 29.6%",
-          "source": "X：PromptArmor (@PromptArmor)",
-          "time": "11月20日 03:59（收录）",
-          "summary": "PromptArmor 发布 FrontierBreach 基准，测量的企业智能体工作流攻击成功率显示，中国模型平均…",
-          "aihot": "https://aihot.news/items/kxbenfjxxqfzevbfyaykszdz6",
-          "original": "https://x.com/PromptArmor/status/2123502435700539535",
-          "score": 52
-        },
-        {
-          "num": 108,
-          "section": "papers",
-          "title": "Amazon 论文：环境变化会让 Agent 技能失效，选择性维护可恢复价值",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 03:28（收录）",
-          "summary": "Amazon 与 USC 的论文发现，环境变化后保存的 Agent 技能可能从增益变负担，选择性检查和维护能恢复其价值。",
-          "aihot": "https://aihot.news/items/zgisubo5assz0lvw9y1w64zda",
-          "original": "https://x.com/rohanpaul_ai/status/2123492665929118028",
-          "score": 55
-        },
-        {
-          "num": 132,
-          "section": "papers",
-          "title": "LlamaIndex 详解 ParseBench-2：如何构建理想的文档解析基准",
-          "source": "LlamaIndex：产品、工程与评测",
-          "time": "11月20日 01:41（收录）",
-          "summary": "LlamaIndex 推出 ParseBench-2，把对特定错误类型的预期响应设为显式目标：定义严重性策略、构造测试…",
-          "aihot": "https://aihot.news/items/vnp3fugqgm8nposyxn12vdgvc",
-          "original": "https://www.llamaindex.ai/blog/building-toward-a-perfect-document-parsing-benchmark",
-          "score": 49
-        },
-        {
-          "num": 145,
           "section": "papers",
           "title": "Perplexity Computer 的 Brain 智能体可自动编写和更新个人技能",
           "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
@@ -1671,7 +642,7 @@ const DATA = {
           "score": 66
         },
         {
-          "num": 150,
+          "num": 50,
           "section": "papers",
           "title": "Stanford RegLab 发布 PhantomDocket 基准，追踪美国州法院诉讼文书中的 AI 辅助写作",
           "source": "Stanford HAI News（网页）",
@@ -1680,6 +651,94 @@ const DATA = {
           "aihot": "https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
           "original": "https://hai.stanford.edu/news/ai-might-be-flooding-state-court-houses-but-proving-it-is-another-matter",
           "score": 65
+        },
+        {
+          "num": 30,
+          "section": "papers",
+          "title": "Google 用 Willow 量子处理器验证量子上下文性，魔方游戏胜率 98.3%",
+          "source": "Google Research：Blog（网页）",
+          "time": "11月20日 04:16（收录）",
+          "summary": "Google Quantum AI 团队发表于 Science 的论文在超导量子处理器上实验演示并量化了量子上下文性…",
+          "aihot": "https://aihot.news/items/q5uvazjyk0xfgzi25www5ipsr",
+          "original": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
+          "score": 58
+        },
+        {
+          "num": 34,
+          "section": "papers",
+          "title": "Amazon 论文：环境变化会让 Agent 技能失效，选择性维护可恢复价值",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月20日 03:28（收录）",
+          "summary": "Amazon 与 USC 的论文发现，环境变化后保存的 Agent 技能可能从增益变负担，选择性检查和维护能恢复其价值。",
+          "aihot": "https://aihot.news/items/zgisubo5assz0lvw9y1w64zda",
+          "original": "https://x.com/rohanpaul_ai/status/2123492665929118028",
+          "score": 55
+        },
+        {
+          "num": 25,
+          "section": "papers",
+          "title": "Google 论文：智能体 harness 自我改进时门控模块编辑准确率接近全量重写但 token 成本仅约十分之一",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月20日 05:31（收录）",
+          "summary": "Google 论文《Harnesses That Improve Themselves》提出可自我改进的智能体 har…",
+          "aihot": "https://aihot.news/items/hgo4rc2hqd6qzk5nrz5qxk2df",
+          "original": "https://x.com/rohanpaul_ai/status/2123523115498312010",
+          "score": 54
+        },
+        {
+          "num": 22,
+          "section": "papers",
+          "title": "Meta FAIR Self-Improving Memory 在 Continual Learning Bench 上取得 56.0 平均分",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月20日 06:24（收录）",
+          "summary": "Meta FAIR 联合华盛顿大学和约翰霍普金斯大学的研究者推出 Self-Improving Memory，一种让基…",
+          "aihot": "https://aihot.news/items/gmqpiwirnddx3ckbefyky3n3t",
+          "original": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
+          "score": 53
+        },
+        {
+          "num": 32,
+          "section": "papers",
+          "title": "PromptArmor FrontierBench 基准显示中国模型被攻击成功率比美国模型高 29.6%",
+          "source": "X：PromptArmor (@PromptArmor)",
+          "time": "11月20日 03:59（收录）",
+          "summary": "PromptArmor 发布 FrontierBreach 基准，测量的企业智能体工作流攻击成功率显示，中国模型平均…",
+          "aihot": "https://aihot.news/items/kxbenfjxxqfzevbfyaykszdz6",
+          "original": "https://x.com/PromptArmor/status/2123502435700539535",
+          "score": 52
+        },
+        {
+          "num": 17,
+          "section": "papers",
+          "title": "谷歌研究：只改一处代码让 AI 智能体优化 Harness 后 SWE-bench Lite 成功率提升 8 倍",
+          "source": "IT之家·人工智能",
+          "time": "11月20日 08:43（收录）",
+          "summary": "谷歌研究人员 11 月 17 日发表论文《Harnesses That Improve Themselves》，提出让…",
+          "aihot": "https://aihot.news/items/gxhmrhwl1mdey19oq73yv0adf",
+          "original": "https://www.ithome.com/1/029/766.htm",
+          "score": 51
+        },
+        {
+          "num": 26,
+          "section": "papers",
+          "title": "Prime Intellect 回顾 2026 年 RL Residency：驻留研究员产出的评测与训练环境",
+          "source": "Prime Intellect（网页）",
+          "time": "11月20日 05:27（收录）",
+          "summary": "Prime Intellect 发文回顾 2026 年 RL Residency 项目，集中展示驻留研究员在评测、训练…",
+          "aihot": "https://aihot.news/items/m70os0ljrlc5uhkutumoucmio",
+          "original": "https://www.primeintellect.ai/blog/rl-residency-retrospective",
+          "score": 50
+        },
+        {
+          "num": 10,
+          "section": "papers",
+          "title": "TRACER：AI 视频系统 24 小时监测 ICU 患者谵妄早期迹象",
+          "source": "Stanford HAI News（网页）",
+          "time": "11月20日 11:13（收录）",
+          "summary": "计算机视觉专家与医生联合开发了 TRACER 系统，通过 ICU 床旁双摄像头 24 小时视频分析，结合电子健康记录追…",
+          "aihot": "https://aihot.news/items/nnpefmfzwmtytmht25i1jcnp3",
+          "original": "https://hai.stanford.edu/news/ai-enabled-video-system-monitors-icu-patients-for-early-signs-of-delirium",
+          "score": 49
         }
       ]
     },
@@ -1687,8 +746,19 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 26,
+      "count": 10,
       "cards": [
+        {
+          "num": 7,
+          "section": "tips",
+          "title": "DeepSeek Harness 发布100天，作者分享13个实用插件玩法",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "time": "11月20日 12:31（收录）",
+          "summary": "卡兹克在DeepSeek Harness发布100天之际分享了13个插件玩法。",
+          "aihot": "https://aihot.news/items/amx0tnq9rthd6ssx81np25ldc",
+          "original": "https://x.com/Khazix0918/status/2123627885730951241",
+          "score": 71
+        },
         {
           "num": 1,
           "section": "tips",
@@ -1699,6 +769,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/hcl8tztfnxohuo867jpew4gzo",
           "original": "https://mp.weixin.qq.com/s/4czsAxbdPzusj4rPrtWuMw",
           "score": 70
+        },
+        {
+          "num": 9,
+          "section": "tips",
+          "title": "Gemini 4 全系列使用与避雷教程：两个提示词修复 Antigravity 的 swarm 和 Orchestrator 坑",
+          "source": "公众号：卡尔的AI沃茨",
+          "time": "11月20日 11:32（收录）",
+          "summary": "作者盘点 Gemini 4 系列模型定位与差异：Hydrogen 对标 Claude Haiku，速度 175-200…",
+          "aihot": "https://aihot.news/items/q18tl9px61xtbm0x7djdx3er7",
+          "original": "https://mp.weixin.qq.com/s/ZVq5t2agOhVEEKHPZyQ4hA",
+          "score": 69
         },
         {
           "num": 2,
@@ -1712,62 +793,7 @@ const DATA = {
           "score": 66
         },
         {
-          "num": 3,
-          "section": "tips",
-          "title": "可灵AI与导演Stephane Benini合作推出AI影片《Redline》，用Kling 4.0挑战雨夜赛车",
-          "source": "公众号：可灵AI（快手·视频）",
-          "time": "11月20日 20:01（收录）",
-          "summary": "可灵AI与拥有20年拍车经验的导演Stephane Benini合作推出原创AI影片《Redline》，基于Kling…",
-          "aihot": "https://aihot.news/items/k5z4fua53d2rhf2qmire22szr",
-          "original": "https://mp.weixin.qq.com/s/bCtMYw0Z5YcUKWdD7aMtOA",
-          "score": 46
-        },
-        {
-          "num": 17,
-          "section": "tips",
-          "title": "谷歌工程师用 PostScript 让打印机跑 Gemma 3 270M，14.1MB 内存每词元约 60 秒",
-          "source": "IT之家·人工智能",
-          "time": "11月20日 15:43（收录）",
-          "summary": "谷歌 DeepMind 技术团队成员 Omar Sanseviero 在未改打印机固件、未加外部计算板的情况下，用打印…",
-          "aihot": "https://aihot.news/items/bnydt76bzk61kr5c82ifgt0d6",
-          "original": "https://www.ithome.com/1/029/953.htm",
-          "score": 48
-        },
-        {
-          "num": 25,
-          "section": "tips",
-          "title": "DeepSeek Harness 发布100天，作者分享13个实用插件玩法",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "time": "11月20日 12:31（收录）",
-          "summary": "卡兹克在DeepSeek Harness发布100天之际分享了13个插件玩法。",
-          "aihot": "https://aihot.news/items/amx0tnq9rthd6ssx81np25ldc",
-          "original": "https://x.com/Khazix0918/status/2123627885730951241",
-          "score": 71
-        },
-        {
-          "num": 28,
-          "section": "tips",
-          "title": "Gemini 4 全系列使用与避雷教程：两个提示词修复 Antigravity 的 swarm 和 Orchestrator 坑",
-          "source": "公众号：卡尔的AI沃茨",
-          "time": "11月20日 11:32（收录）",
-          "summary": "作者盘点 Gemini 4 系列模型定位与差异：Hydrogen 对标 Claude Haiku，速度 175-200…",
-          "aihot": "https://aihot.news/items/q18tl9px61xtbm0x7djdx3er7",
-          "original": "https://mp.weixin.qq.com/s/ZVq5t2agOhVEEKHPZyQ4hA",
-          "score": 69
-        },
-        {
-          "num": 40,
-          "section": "tips",
-          "title": "Uber 在 400K tokens 处压缩工程师的 Claude Code 会话以控制 AI 成本",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月20日 09:39（收录）",
-          "summary": "Uber 在 AI 预算耗尽后，即便使用百万 token 模型也在 400K tokens 处压缩工程师的 Claud…",
-          "aihot": "https://aihot.news/items/eoyfltoc1jox1797nr1f73346",
-          "original": "https://x.com/rohanpaul_ai/status/2123585302870806552",
-          "score": 62
-        },
-        {
-          "num": 43,
+          "num": 14,
           "section": "tips",
           "title": "OpenAI 用 Codex 智能体自动排查 ChatGPT 性能问题，诊断准确但修复落地率低",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -1778,139 +804,7 @@ const DATA = {
           "score": 66
         },
         {
-          "num": 52,
-          "section": "tips",
-          "title": "GPT-6.2 Astra/Sol 对话历史用法",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 08:23（收录）",
-          "summary": "在 Responses API 中使用 GPT-6.2 Astra 或 Sol 时，保持对话历史不变，追加新的轮次，而…",
-          "aihot": "https://aihot.news/items/xpo6hsxrzc8w5d08sd6ol80v5",
-          "original": "https://x.com/OpenAIDevs/status/2123566064080740508",
-          "score": 46
-        },
-        {
-          "num": 53,
-          "section": "tips",
-          "title": "DeepSeek Harness 发布100天，作者分享13个实用插件玩法",
-          "source": "公众号：数字生命卡兹克",
-          "time": "11月20日 08:01（收录）",
-          "summary": "作者在DeepSeek Harness发布100天之际（GitHub星标28.4万，第三方插件约3.5万个），整理了1…",
-          "aihot": "https://aihot.news/items/ay1i539hyx53km3tobuyrze9o",
-          "original": "https://mp.weixin.qq.com/s/EBZlpti_w_GcS03t-auLqw",
-          "score": 63
-        },
-        {
-          "num": 57,
-          "section": "tips",
-          "title": "在 H20-3e 上优化 DeepSeek-V4.1-Flash 的 PD 分离与混部服务",
-          "source": "LMSYS Blog",
-          "time": "11月20日 07:05（收录）",
-          "summary": "在 H20-3e 上优化 DeepSeek-V4.1-Flash 的 PD 分离服务后，最终配置相比 TP4 基线将平…",
-          "aihot": "https://aihot.news/items/q708k47s1hwi1tqh6wzemgc1u",
-          "original": "https://www.lmsys.org/blog/2026-11-19-deepseek-v41-h20",
-          "score": 49
-        },
-        {
-          "num": 70,
-          "section": "tips",
-          "title": "Genie One 准确率研究：为何精心构建的智能体仍需受治理的上下文",
-          "source": "Databricks：Blog（RSS）",
-          "time": "11月20日 06:04（收录）",
-          "summary": "Databricks 用虚构商业车险公司测试 Genie One，仅用数据表时准确率为 64%，加入精心构建的 Gen…",
-          "aihot": "https://aihot.news/items/eojc75yblk861o8vqomvqr04y",
-          "original": "https://www.databricks.com/blog/genie-one-accuracy-why-curated-agents-need-governed-context",
-          "score": 49
-        },
-        {
-          "num": 89,
-          "section": "tips",
-          "title": "Hao AI Lab 介绍 DeepSeek Harness 的模型与工作流自定义用法",
-          "source": "X：UCSD Hao AI Lab (@haoailab)",
-          "time": "11月20日 04:47（收录）",
-          "summary": "Hao AI Lab 在系列介绍第 5 部分讲解 DeepSeek Harness 的自定义能力。基于 DeepSee…",
-          "aihot": "https://aihot.news/items/asv0pefm9ogzhapups201831o",
-          "original": "https://x.com/haoailab/status/2123517045052751895",
-          "score": 55
-        },
-        {
-          "num": 92,
-          "section": "tips",
-          "title": "NVIDIA Dynamo 如何减少强化学习中的 rollout 瓶颈",
-          "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
-          "time": "11月20日 04:43（收录）",
-          "summary": "NVIDIA Dynamo 作为服务层介入 rollout 编排与推理 worker 之间，通过 KV 感知路由、Mo…",
-          "aihot": "https://aihot.news/items/ld6kndteuau98frlz8xv6dw0x",
-          "original": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/",
-          "score": 44
-        },
-        {
-          "num": 95,
-          "section": "tips",
-          "title": "OpenAI 讲解如何为 GPT-Live 语音智能体提示语言与地区口音",
-          "source": "OpenAI Developers：Blog（网页）",
-          "time": "11月20日 04:24（收录）",
-          "summary": "OpenAI 发布 GPT-Live 指南，讲解如何为跨语言、跨地区受众构建语音智能体，覆盖语音选择和 session…",
-          "aihot": "https://aihot.news/items/ggwakag1epqi3gsalz3ltfuk5",
-          "original": "https://developers.openai.com/blog/prompting-multilingual-voice-agents",
-          "score": 53
-        },
-        {
-          "num": 103,
-          "section": "tips",
-          "title": "Databricks 提出受监管行业的四种 AI 架构模式",
-          "source": "Databricks：Blog（RSS）",
-          "time": "11月20日 04:03（收录）",
-          "summary": "Databricks 前线部署工程师总结出在受监管企业系统中放置 Agent 的四种架构模式：确定性控制加 Agent…",
-          "aihot": "https://aihot.news/items/yrxzgtclxaykwghme06n2w5ce",
-          "original": "https://www.databricks.com/blog/ai-architecture-patterns-regulated-industries",
-          "score": 62
-        },
-        {
-          "num": 116,
-          "section": "tips",
-          "title": "ElevenAgents 助 Candid Health 处理医保拒赔电话",
-          "source": "X：ElevenLabs (@elevenlabs)",
-          "time": "11月20日 02:43（收录）",
-          "summary": "Candid Health 用 ElevenAgents 拨打保险公司电话核查拒赔原因，在 12,860 通电话的试点…",
-          "aihot": "https://aihot.news/items/v2hh5s3k6ru15plivpt8u4n18",
-          "original": "https://x.com/ElevenLabs/status/2123480027803288049",
-          "score": 41
-        },
-        {
-          "num": 117,
-          "section": "tips",
-          "title": "Google 在 MaxText 中实现跨数据中心分布式 LLM 训练：Streaming DiLoCo",
-          "source": "Google Developers Blog（RSS）",
-          "time": "11月20日 02:25（收录）",
-          "summary": "Google DeepMind 与 Google Research 团队在开源 JAX 训练框架 MaxText 中实…",
-          "aihot": "https://aihot.news/items/kf18o5xv9qzp3otmg5fvjtc4d",
-          "original": "https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/",
-          "score": 41
-        },
-        {
-          "num": 121,
-          "section": "tips",
-          "title": "2026 年 13 款 Agent Gateway 评测：Kong、Bifrost、AgentCore、Arcade 等横评 MCP 与 A2A 支持",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月20日 02:21（收录）",
-          "summary": "文章按流量覆盖、身份授权、部署、成熟度和价格透明度五项标准，横评 13 款 agent gateway。",
-          "aihot": "https://aihot.news/items/ivrhrelg6w80oxezd2pvbugg9",
-          "original": "https://www.marktechpost.com/2026/11/19/best-agent-gateways-2026/",
-          "score": 51
-        },
-        {
-          "num": 123,
-          "section": "tips",
-          "title": "OpenAI 讲解 Codex 编排架构如何让任务在智能体与工程师间流转",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "11月20日 02:12（收录）",
-          "summary": "OpenAI Developers 介绍 Codex 的编排器架构：任务在 task service 中保存状态与发现…",
-          "aihot": "https://aihot.news/items/faacj3p16282p5v6b1f6whfeq",
-          "original": "https://x.com/OpenAIDevs/status/2123471884876427328",
-          "score": 51
-        },
-        {
-          "num": 125,
+          "num": 37,
           "section": "tips",
           "title": "OpenAI 详解 Codex 驱动的 Performance Factory 如何自动保持 ChatGPT 高性能",
           "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
@@ -1921,18 +815,40 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 136,
+          "num": 19,
           "section": "tips",
-          "title": "用 Tunix 和 Gemma 4 在 Google TPU 上做多轮智能体强化学习",
-          "source": "Google Developers Blog（RSS）",
-          "time": "11月20日 01:24（收录）",
-          "summary": "Google 介绍如何用 Tunix 的智能体强化学习流水线，在单台 Cloud TPU v6e-8 上训练多轮工具调…",
-          "aihot": "https://aihot.news/items/ukhmvi5cuammna41dkzuzb1vl",
-          "original": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
-          "score": 48
+          "title": "DeepSeek Harness 发布100天，作者分享13个实用插件玩法",
+          "source": "公众号：数字生命卡兹克",
+          "time": "11月20日 08:01（收录）",
+          "summary": "作者在DeepSeek Harness发布100天之际（GitHub星标28.4万，第三方插件约3.5万个），整理了1…",
+          "aihot": "https://aihot.news/items/ay1i539hyx53km3tobuyrze9o",
+          "original": "https://mp.weixin.qq.com/s/EBZlpti_w_GcS03t-auLqw",
+          "score": 63
         },
         {
-          "num": 142,
+          "num": 12,
+          "section": "tips",
+          "title": "Uber 在 400K tokens 处压缩工程师的 Claude Code 会话以控制 AI 成本",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月20日 09:39（收录）",
+          "summary": "Uber 在 AI 预算耗尽后，即便使用百万 token 模型也在 400K tokens 处压缩工程师的 Claud…",
+          "aihot": "https://aihot.news/items/eoyfltoc1jox1797nr1f73346",
+          "original": "https://x.com/rohanpaul_ai/status/2123585302870806552",
+          "score": 62
+        },
+        {
+          "num": 31,
+          "section": "tips",
+          "title": "Databricks 提出受监管行业的四种 AI 架构模式",
+          "source": "Databricks：Blog（RSS）",
+          "time": "11月20日 04:03（收录）",
+          "summary": "Databricks 前线部署工程师总结出在受监管企业系统中放置 Agent 的四种架构模式：确定性控制加 Agent…",
+          "aihot": "https://aihot.news/items/yrxzgtclxaykwghme06n2w5ce",
+          "original": "https://www.databricks.com/blog/ai-architecture-patterns-regulated-industries",
+          "score": 62
+        },
+        {
+          "num": 48,
           "section": "tips",
           "title": "Browser Use 讲解 AI 智能体如何通过界面操作软件",
           "source": "Browser Use",
@@ -1941,39 +857,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/jbu3hudzri98k423yk9zhbcp4",
           "original": "https://browser-use.com/posts/what-is-computer-use",
           "score": 62
-        },
-        {
-          "num": 143,
-          "section": "tips",
-          "title": "Databricks 用 Genie Code 批量迁移 Tableau 和 Power BI 报表至 AI/BI",
-          "source": "Databricks：Blog（RSS）",
-          "time": "11月20日 01:00（收录）",
-          "summary": "Databricks 的 Genie Code 现已支持批量迁移：用 /importBI 指向 Unity Catal…",
-          "aihot": "https://aihot.news/items/rgekn0fhbxsyl8tj44xu045xa",
-          "original": "https://www.databricks.com/blog/bulk-migrate-your-dashboards-aibi-genie-code",
-          "score": 46
-        },
-        {
-          "num": 146,
-          "section": "tips",
-          "title": "NVIDIA 教你用 AI Agent 在 Rust 中构建工具调用解析器",
-          "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
-          "time": "11月20日 00:40（收录）",
-          "summary": "NVIDIA 技术博客讲解 tool-calling 解析器的工作原理，并教读者用 AI Agent 基于 front…",
-          "aihot": "https://aihot.news/items/aqx4ksdcvy1jnbbn7dvpmvl2t",
-          "original": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/",
-          "score": 56
-        },
-        {
-          "num": 149,
-          "section": "tips",
-          "title": "Tessl 教程：用测试加 verifier 构建 CLI 文档同步检查",
-          "source": "Tessl：产品与工程博客",
-          "time": "11月20日 00:05（收录）",
-          "summary": "Tessl 发布三部分系列的第一篇，手把手构建一个让 CLI 文档与代码保持同步的检查：先用 Node.js 测试对比…",
-          "aihot": "https://aihot.news/items/qkd83hg0d4jtm0zojlosacvt1",
-          "original": "https://tessl.io/blog/stop-your-docs-drifting-from-your-code-catch-it-on-every-change",
-          "score": 55
         }
       ]
     }
@@ -2216,7 +1099,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -2322,12 +1204,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -2344,16 +1224,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

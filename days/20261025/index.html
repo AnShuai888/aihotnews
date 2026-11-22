@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-10-25",
     "heroDate": "2026年10月25日 周日",
-    "total": 40,
+    "total": 36,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年10月25日 19:48（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,7 +277,7 @@ const DATA = {
       "count": 1,
       "cards": [
         {
-          "num": 24,
+          "num": 22,
           "section": "models",
           "title": "Block 发布全双工语音模型 Dessa，支持 M4 Max 及以上 MacBook 本地运行",
           "source": "IT之家·人工智能",
@@ -299,8 +293,85 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 12,
+      "count": 10,
       "cards": [
+        {
+          "num": 19,
+          "section": "products",
+          "title": "Cognition 开源 Devin Vulnerability Fixes 插件，修复 PHP2Shell、Node.js 与 GitLab 三个 RCE 漏洞",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月25日 12:05（收录）",
+          "summary": "Cognition 发布免费开源的 Devin Vulnerability Fixes 插件，包含三个 MIT 许可的…",
+          "aihot": "https://aihot.news/items/qlkl7zlx77jue9bhrsz6e3r8v",
+          "original": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab/",
+          "score": 71
+        },
+        {
+          "num": 15,
+          "section": "products",
+          "title": "Ollama 上线语音模型 Phonon，支持本地文本转语音",
+          "source": "Ollama：Blog（RSS）",
+          "time": "10月25日 12:46（收录）",
+          "summary": "Ollama 宣布支持语音模型，首个上线的是 Gradium 的文本转语音模型 Phonon，目前可用于 macOS…",
+          "aihot": "https://aihot.news/items/cmq65cs8mvzn1w60gnei8s855",
+          "original": "https://ollama.com/blog/speech-models",
+          "score": 65
+        },
+        {
+          "num": 13,
+          "section": "products",
+          "title": "微软开源 Agensh：无中心编排器的多智能体编码框架，可扩展至 1,024 个 Agent",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月25日 14:07（收录）",
+          "summary": "Microsoft Research 开源了 Agensh，一个去中心化的多智能体编码 harness，移除了中心编排…",
+          "aihot": "https://aihot.news/items/lkcrtorizxzne84c1r5yxtoej",
+          "original": "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/",
+          "score": 62
+        },
+        {
+          "num": 14,
+          "section": "products",
+          "title": "Block 发布 Dessa：纯语音训练的全双工会话模型，可在 MacBook Pro 本地实时运行",
+          "source": "X：邵猛 (@shao__meng)",
+          "time": "10月25日 13:12（收录）",
+          "summary": "Twitter 联创 Jack 创办的 Block 发布 Dessa，一个从零用纯人类语音训练的 speech-to-…",
+          "aihot": "https://aihot.news/items/rdaf8ek1z1l57i14ka0pvz1nt",
+          "original": "https://x.com/shao__meng/status/2114217554948333812",
+          "score": 62
+        },
+        {
+          "num": 36,
+          "section": "products",
+          "title": "Perplexity 在 Computer 技能市场上线开源技能 /impeccable，每用户赠 5000 credits",
+          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+          "time": "10月25日 00:17（收录）",
+          "summary": "Perplexity CEO Aravind Srinivas 宣布 @pbakaus 开发的开源技能 /impecc…",
+          "aihot": "https://aihot.news/items/jryc594pqpq0xbtqbbd6yn7xb",
+          "original": "https://x.com/AravSrinivas/status/2114021917586014449",
+          "score": 60
+        },
+        {
+          "num": 17,
+          "section": "products",
+          "title": "可灵 Kling 4.0 上线 Runway Dev 平台并开放 API 调用",
+          "source": "X：可灵 Kling AI (@Kling_ai)",
+          "time": "10月25日 12:34（收录）",
+          "summary": "可灵（Kling AI）转发 Runway 官方消息，Kling 4.0 已在 Runway Dev 上线，可通过 A…",
+          "aihot": "https://aihot.news/items/q8bbnopo73upiti2obi7z19lw",
+          "original": "https://x.com/Kling_ai/status/2114208342914617549",
+          "score": 58
+        },
+        {
+          "num": 30,
+          "section": "products",
+          "title": "Krea 开放 Krea 3 图像编辑 beta，支持 2k 快速生成与多轮精确编辑",
+          "source": "X：Krea AI (@krea_ai)",
+          "time": "10月25日 05:20（收录）",
+          "summary": "Krea 开放 Krea 3 图像编辑 beta，定位为图像编辑新前沿。端到端 2k 编辑可在 8 秒内完成，画质对标…",
+          "aihot": "https://aihot.news/items/xougitbm9f5vrlfghlw4gh7t6",
+          "original": "https://x.com/krea_ai/status/2114098082220519524",
+          "score": 56
+        },
         {
           "num": 4,
           "section": "products",
@@ -313,106 +384,7 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 9,
-          "section": "products",
-          "title": "阿里 AI 智能体“千问 Go！”上线“我的应用”功能，可搭建并分享专属应用",
-          "source": "IT之家·人工智能",
-          "time": "10月25日 16:41（收录）",
-          "summary": "阿里 AI 智能体“千问 Go！”上线“我的应用”功能，用户无需编程，说出需求即可搭建生活、工作和学习场景的应用，生成…",
-          "aihot": "https://aihot.news/items/x2isf5se68i1z311lqh3wxcsk",
-          "original": "https://www.ithome.com/1/017/625.htm",
-          "score": 44
-        },
-        {
-          "num": 15,
-          "section": "products",
-          "title": "微软开源 Agensh：无中心编排器的多智能体编码框架，可扩展至 1,024 个 Agent",
-          "source": "MarkTechPost（RSS）",
-          "time": "10月25日 14:07（收录）",
-          "summary": "Microsoft Research 开源了 Agensh，一个去中心化的多智能体编码 harness，移除了中心编排…",
-          "aihot": "https://aihot.news/items/lkcrtorizxzne84c1r5yxtoej",
-          "original": "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/",
-          "score": 62
-        },
-        {
-          "num": 16,
-          "section": "products",
-          "title": "Block 发布 Dessa：纯语音训练的全双工会话模型，可在 MacBook Pro 本地实时运行",
-          "source": "X：邵猛 (@shao__meng)",
-          "time": "10月25日 13:12（收录）",
-          "summary": "Twitter 联创 Jack 创办的 Block 发布 Dessa，一个从零用纯人类语音训练的 speech-to-…",
-          "aihot": "https://aihot.news/items/rdaf8ek1z1l57i14ka0pvz1nt",
-          "original": "https://x.com/shao__meng/status/2114217554948333812",
-          "score": 62
-        },
-        {
-          "num": 17,
-          "section": "products",
-          "title": "Ollama 上线语音模型 Phonon，支持本地文本转语音",
-          "source": "Ollama：Blog（RSS）",
-          "time": "10月25日 12:46（收录）",
-          "summary": "Ollama 宣布支持语音模型，首个上线的是 Gradium 的文本转语音模型 Phonon，目前可用于 macOS…",
-          "aihot": "https://aihot.news/items/cmq65cs8mvzn1w60gnei8s855",
-          "original": "https://ollama.com/blog/speech-models",
-          "score": 65
-        },
-        {
-          "num": 19,
-          "section": "products",
-          "title": "可灵 Kling 4.0 上线 Runway Dev 平台并开放 API 调用",
-          "source": "X：可灵 Kling AI (@Kling_ai)",
-          "time": "10月25日 12:34（收录）",
-          "summary": "可灵（Kling AI）转发 Runway 官方消息，Kling 4.0 已在 Runway Dev 上线，可通过 A…",
-          "aihot": "https://aihot.news/items/q8bbnopo73upiti2obi7z19lw",
-          "original": "https://x.com/Kling_ai/status/2114208342914617549",
-          "score": 58
-        },
-        {
-          "num": 21,
-          "section": "products",
-          "title": "Cognition 开源 Devin Vulnerability Fixes 插件，修复 PHP2Shell、Node.js 与 GitLab 三个 RCE 漏洞",
-          "source": "MarkTechPost（RSS）",
-          "time": "10月25日 12:05（收录）",
-          "summary": "Cognition 发布免费开源的 Devin Vulnerability Fixes 插件，包含三个 MIT 许可的…",
-          "aihot": "https://aihot.news/items/qlkl7zlx77jue9bhrsz6e3r8v",
-          "original": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab/",
-          "score": 71
-        },
-        {
-          "num": 25,
-          "section": "products",
-          "title": "百度搭子企业版接入 Kimi K3.1 Pro，企业全员一键可用",
-          "source": "公众号：百度智能云（文心）",
-          "time": "10月25日 10:54（收录）",
-          "summary": "百度搭子企业版将月之暗面旗舰模型 Kimi K3.1 Pro 收进官方模型列表，成为行业首批将其作为官方预置能力、面向…",
-          "aihot": "https://aihot.news/items/sza0k6x64rvqlb6o4s61x5k43",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzA5NTQ5MzE5OQ%3D%3D&mid=2653161074&idx=1&sn=e85d12cd2fb41e906fd27485dbb20928",
-          "score": 22
-        },
-        {
-          "num": 32,
-          "section": "products",
-          "title": "Conductor 0.92.0 发布：用 iPhone 远程控制 Mac 上的工作区",
-          "source": "Conductor 官方更新",
-          "time": "10月25日 05:42（收录）",
-          "summary": "Conductor 0.92.0 新增远程控制功能，可在 Conductor iOS app 中浏览和创建工作区、阅读…",
-          "aihot": "https://aihot.news/items/gmaeh72z0fwbnccyc2cmgw80m",
-          "original": "https://www.conductor.build/changelog/0.92.0-remote-control",
-          "score": 46
-        },
-        {
           "num": 33,
-          "section": "products",
-          "title": "Krea 开放 Krea 3 图像编辑 beta，支持 2k 快速生成与多轮精确编辑",
-          "source": "X：Krea AI (@krea_ai)",
-          "time": "10月25日 05:20（收录）",
-          "summary": "Krea 开放 Krea 3 图像编辑 beta，定位为图像编辑新前沿。端到端 2k 编辑可在 8 秒内完成，画质对标…",
-          "aihot": "https://aihot.news/items/xougitbm9f5vrlfghlw4gh7t6",
-          "original": "https://x.com/krea_ai/status/2114098082220519524",
-          "score": 56
-        },
-        {
-          "num": 36,
           "section": "products",
           "title": "SGLang 对比 DeepInfer：DeepSeek-V4.1-Flash 推理性能实测与完整服务能力",
           "source": "LMSYS Blog",
@@ -423,15 +395,15 @@ const DATA = {
           "score": 47
         },
         {
-          "num": 40,
+          "num": 29,
           "section": "products",
-          "title": "Perplexity 在 Computer 技能市场上线开源技能 /impeccable，每用户赠 5000 credits",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "10月25日 00:17（收录）",
-          "summary": "Perplexity CEO Aravind Srinivas 宣布 @pbakaus 开发的开源技能 /impecc…",
-          "aihot": "https://aihot.news/items/jryc594pqpq0xbtqbbd6yn7xb",
-          "original": "https://x.com/AravSrinivas/status/2114021917586014449",
-          "score": 60
+          "title": "Conductor 0.92.0 发布：用 iPhone 远程控制 Mac 上的工作区",
+          "source": "Conductor 官方更新",
+          "time": "10月25日 05:42（收录）",
+          "summary": "Conductor 0.92.0 新增远程控制功能，可在 Conductor iOS app 中浏览和创建工作区、阅读…",
+          "aihot": "https://aihot.news/items/gmaeh72z0fwbnccyc2cmgw80m",
+          "original": "https://www.conductor.build/changelog/0.92.0-remote-control",
+          "score": 46
         }
       ]
     },
@@ -439,29 +411,29 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 12,
+      "count": 10,
       "cards": [
         {
-          "num": 5,
+          "num": 9,
           "section": "industry",
-          "title": "Air Street Press 11 月 3 日在巴黎举办 State of AI 2026 发布会",
-          "source": "Air Street Press（RSS）",
-          "time": "10月25日 18:03（收录）",
-          "summary": "Air Street Press 将于 11 月 3 日周二晚 6 点在巴黎举办 State of AI 2026 发…",
-          "aihot": "https://aihot.news/items/yuavnmme6ne2jqle4zxqx8der",
-          "original": "https://press.airstreet.com/p/join-us-in-paris-on-november-3-for",
-          "score": 32
+          "title": "OpenAI 以最高 90% 折扣争夺 Anthropic 大客户，多家公司转移 AI 支出",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月25日 16:13（收录）",
+          "summary": "据 The Information 报道，OpenAI 向大客户提供最高 90% 的折扣以争夺 Anthropic 的…",
+          "aihot": "https://aihot.news/items/b18largheqo95pfg2sbam8xcj",
+          "original": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+          "score": 75
         },
         {
-          "num": 7,
+          "num": 20,
           "section": "industry",
-          "title": "软银孙正义计划在马来西亚投资 500 亿美元，押注 AI 与数据中心",
+          "title": "三名被解雇的 OpenAI 安全研究员否认泄密，怀疑因推动 AI 透明度被针对",
           "source": "IT之家·人工智能",
-          "time": "10月25日 17:37（收录）",
-          "summary": "马来西亚总理安瓦尔宣布，软银集团创办人兼社长孙正义计划在马来西亚投资 500 亿美元，涉及 AI、新兴技术和数据中心等…",
-          "aihot": "https://aihot.news/items/b1tweepc7dzyhb0cvl5pid08i",
-          "original": "https://www.ithome.com/1/017/637.htm",
-          "score": 42
+          "time": "10月25日 12:01（收录）",
+          "summary": "三名因涉嫌泄密被解雇的 OpenAI 安全研究员科尔巴克、巴莱斯尼和王茉莉接受《华尔街日报》采访，否认泄露机密信息，并…",
+          "aihot": "https://aihot.news/items/dftvl258fny4smo7tqvba5rgz",
+          "original": "https://www.ithome.com/1/017/563.htm",
+          "score": 74
         },
         {
           "num": 8,
@@ -475,40 +447,7 @@ const DATA = {
           "score": 64
         },
         {
-          "num": 10,
-          "section": "industry",
-          "title": "OpenAI 以最高 90% 折扣争夺 Anthropic 大客户，多家公司转移 AI 支出",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月25日 16:13（收录）",
-          "summary": "据 The Information 报道，OpenAI 向大客户提供最高 90% 的折扣以争夺 Anthropic 的…",
-          "aihot": "https://aihot.news/items/b18largheqo95pfg2sbam8xcj",
-          "original": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
-          "score": 75
-        },
-        {
-          "num": 11,
-          "section": "industry",
-          "title": "OpenAI 用量额度随调钟重置回 100%",
-          "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
-          "time": "10月25日 15:47（收录）",
-          "summary": "时钟回拨了一小时，你的用量额度也回到了 100% 周末愉快，尽情 codex maxxing 吧！",
-          "aihot": "https://aihot.news/items/y08641zgkvhq3m3wam7ye5e9t",
-          "original": "https://x.com/reach_vb/status/2114255005167349952",
-          "score": 29
-        },
-        {
-          "num": 22,
-          "section": "industry",
-          "title": "三名被解雇的 OpenAI 安全研究员否认泄密，怀疑因推动 AI 透明度被针对",
-          "source": "IT之家·人工智能",
-          "time": "10月25日 12:01（收录）",
-          "summary": "三名因涉嫌泄密被解雇的 OpenAI 安全研究员科尔巴克、巴莱斯尼和王茉莉接受《华尔街日报》采访，否认泄露机密信息，并…",
-          "aihot": "https://aihot.news/items/dftvl258fny4smo7tqvba5rgz",
-          "original": "https://www.ithome.com/1/017/563.htm",
-          "score": 74
-        },
-        {
-          "num": 23,
+          "num": 21,
           "section": "industry",
           "title": "AI 智能体涌入银行账户，美国大行制定灾后应急预案",
           "source": "IT之家·人工智能",
@@ -519,18 +458,7 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 26,
-          "section": "industry",
-          "title": "Anthropic 被曝悄悄限制 Claude Opus 5.5 逆向工程能力",
-          "source": "IT之家·人工智能",
-          "time": "10月25日 10:37（收录）",
-          "summary": "大量用户反馈 Claude Opus 5.5 的逆向工程能力被削弱，Reddit r/Clause 社区 10 月 2…",
-          "aihot": "https://aihot.news/items/aavwxb8yhu3v9yufx6h3yman8",
-          "original": "https://www.ithome.com/1/017/554.htm",
-          "score": 51
-        },
-        {
-          "num": 28,
+          "num": 25,
           "section": "industry",
           "title": "澳国脚沃尔帕托授权 AI 数字分身，运动员肖像权商业化加速",
           "source": "IT之家·人工智能",
@@ -541,7 +469,7 @@ const DATA = {
           "score": 57
         },
         {
-          "num": 34,
+          "num": 31,
           "section": "industry",
           "title": "宾夕法尼亚州签署法案要求AI生成广告加注标识",
           "source": "The Verge：AI（RSS）",
@@ -552,7 +480,7 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 35,
+          "num": 32,
           "section": "industry",
           "title": "TechCrunch 梳理 AI 坟场：Relay、Character.ai、Humane AI Pin 等失败项目盘点",
           "source": "TechCrunch：AI（RSS）",
@@ -563,15 +491,37 @@ const DATA = {
           "score": 52
         },
         {
-          "num": 39,
+          "num": 23,
           "section": "industry",
-          "title": "Runway 联合创始人 Anastasis Germanidis 将于 10 月 27 日出席纽约 State of AI 2026 见面会",
+          "title": "Anthropic 被曝悄悄限制 Claude Opus 5.5 逆向工程能力",
+          "source": "IT之家·人工智能",
+          "time": "10月25日 10:37（收录）",
+          "summary": "大量用户反馈 Claude Opus 5.5 的逆向工程能力被削弱，Reddit r/Clause 社区 10 月 2…",
+          "aihot": "https://aihot.news/items/aavwxb8yhu3v9yufx6h3yman8",
+          "original": "https://www.ithome.com/1/017/554.htm",
+          "score": 51
+        },
+        {
+          "num": 7,
+          "section": "industry",
+          "title": "软银孙正义计划在马来西亚投资 500 亿美元，押注 AI 与数据中心",
+          "source": "IT之家·人工智能",
+          "time": "10月25日 17:37（收录）",
+          "summary": "马来西亚总理安瓦尔宣布，软银集团创办人兼社长孙正义计划在马来西亚投资 500 亿美元，涉及 AI、新兴技术和数据中心等…",
+          "aihot": "https://aihot.news/items/b1tweepc7dzyhb0cvl5pid08i",
+          "original": "https://www.ithome.com/1/017/637.htm",
+          "score": 42
+        },
+        {
+          "num": 5,
+          "section": "industry",
+          "title": "Air Street Press 11 月 3 日在巴黎举办 State of AI 2026 发布会",
           "source": "Air Street Press（RSS）",
-          "time": "10月25日 00:46（收录）",
-          "summary": "Runway 联合创始人兼联合 CEO Anastasis Germanidis 将于 10 月 27 日出席在纽约举…",
-          "aihot": "https://aihot.news/items/zb1thz9nsoxinjvkojrtlvob4",
-          "original": "https://press.airstreet.com/p/runways-anastasis-germanidis-joins",
-          "score": 25
+          "time": "10月25日 18:03（收录）",
+          "summary": "Air Street Press 将于 11 月 3 日周二晚 6 点在巴黎举办 State of AI 2026 发…",
+          "aihot": "https://aihot.news/items/yuavnmme6ne2jqle4zxqx8der",
+          "original": "https://press.airstreet.com/p/join-us-in-paris-on-november-3-for",
+          "score": 32
         }
       ]
     },
@@ -604,18 +554,7 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 12,
-          "section": "papers",
-          "title": "多伦多大学与Google论文：AI助手选择或成最后重大决定",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "10月25日 15:16（收录）",
-          "summary": "多伦多大学与Google的论文提出，选择AI助手可能是人们做的最后一个重大决定，此后决策都由该助手代劳。论文还指出，评…",
-          "aihot": "https://aihot.news/items/nvfuzr06xq5p3otd9koo5tpjp",
-          "original": "https://x.com/rohanpaul_ai/status/2114251676144021818",
-          "score": 31
-        },
-        {
-          "num": 13,
+          "num": 11,
           "section": "papers",
           "title": "南京大学等团队开源 OpenMobile-2 手机智能体，27B 版 AndroidWorld 得分 79.9",
           "source": "The Decoder：AI News（RSS）",
@@ -626,7 +565,7 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 14,
+          "num": 12,
           "section": "papers",
           "title": "Google DeepMind 论文：主动式 AI 智能体进团队，有人视其为救星，有人感到被监视",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -637,7 +576,7 @@ const DATA = {
           "score": 56
         },
         {
-          "num": 31,
+          "num": 28,
           "section": "papers",
           "title": "生成式价值分类器：无需动作条件化的Q函数",
           "source": "X：Chelsea Finn（Stanford 助理教授） (@chelseabfinn)",
@@ -646,6 +585,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/atv3cls68b2966uqwunnq17w4",
           "original": "https://x.com/chelseabfinn/status/2114117117813706782",
           "score": 34
+        },
+        {
+          "num": 10,
+          "section": "papers",
+          "title": "多伦多大学与Google论文：AI助手选择或成最后重大决定",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月25日 15:16（收录）",
+          "summary": "多伦多大学与Google的论文提出，选择AI助手可能是人们做的最后一个重大决定，此后决策都由该助手代劳。论文还指出，评…",
+          "aihot": "https://aihot.news/items/nvfuzr06xq5p3otd9koo5tpjp",
+          "original": "https://x.com/rohanpaul_ai/status/2114251676144021818",
+          "score": 31
         }
       ]
     },
@@ -667,6 +617,28 @@ const DATA = {
           "score": 68
         },
         {
+          "num": 24,
+          "section": "tips",
+          "title": "Claude 平台文章讲解何时把子 Agent 折进主循环，Skills 渐进披露常优于多专家编排",
+          "source": "X：邵猛 (@shao__meng)",
+          "time": "10月25日 09:35（收录）",
+          "summary": "Anthropic Claude Platform 发布文章，讨论构建 Agent 时何时把子 Agent 折进主循环…",
+          "aihot": "https://aihot.news/items/pdgoa2t4xld60fwo4kt36c5po",
+          "original": "https://x.com/shao__meng/status/2114164780986679331",
+          "score": 68
+        },
+        {
+          "num": 16,
+          "section": "tips",
+          "title": "Orange AI 实测腾讯元宝搜索：AI 流量超过人类后 Agent 搜索怎么选",
+          "source": "X：Oran Ge (@oran_ge)",
+          "time": "10月25日 12:40（收录）",
+          "summary": "作者从 Cloudflare 公布的自动化流量占比 57.5%、首次超过人类流量说起，分析 Agent 时代搜索的三个…",
+          "aihot": "https://aihot.news/items/uquyqt38rzy1zh5wkt5n8cjf6",
+          "original": "https://x.com/oran_ge/status/2114212241188991318",
+          "score": 67
+        },
+        {
           "num": 6,
           "section": "tips",
           "title": "Farza Majeed 谈每天发 demo：三百万播放不如两万播放的 YouTube 视频",
@@ -680,17 +652,6 @@ const DATA = {
         {
           "num": 18,
           "section": "tips",
-          "title": "Orange AI 实测腾讯元宝搜索：AI 流量超过人类后 Agent 搜索怎么选",
-          "source": "X：Oran Ge (@oran_ge)",
-          "time": "10月25日 12:40（收录）",
-          "summary": "作者从 Cloudflare 公布的自动化流量占比 57.5%、首次超过人类流量说起，分析 Agent 时代搜索的三个…",
-          "aihot": "https://aihot.news/items/uquyqt38rzy1zh5wkt5n8cjf6",
-          "original": "https://x.com/oran_ge/status/2114212241188991318",
-          "score": 67
-        },
-        {
-          "num": 20,
-          "section": "tips",
           "title": "如何在 llama.cpp 中运行 Underdog Saluki 27B：2-bit Qwen3.8-27B 工具调用实测指南",
           "source": "MarkTechPost（RSS）",
           "time": "10月25日 12:05（收录）",
@@ -700,18 +661,18 @@ const DATA = {
           "score": 46
         },
         {
-          "num": 27,
+          "num": 35,
           "section": "tips",
-          "title": "Claude 平台文章讲解何时把子 Agent 折进主循环，Skills 渐进披露常优于多专家编排",
-          "source": "X：邵猛 (@shao__meng)",
-          "time": "10月25日 09:35（收录）",
-          "summary": "Anthropic Claude Platform 发布文章，讨论构建 Agent 时何时把子 Agent 折进主循环…",
-          "aihot": "https://aihot.news/items/pdgoa2t4xld60fwo4kt36c5po",
-          "original": "https://x.com/shao__meng/status/2114164780986679331",
-          "score": 68
+          "title": "vLLM 在 GB300 NVL72 上规模化服务 DeepSeek-V4.1-Flash，解码吞吐与 DeepInfer 差距在 6% 以内",
+          "source": "vLLM 官方博客（RSS）",
+          "time": "10月25日 02:32（收录）",
+          "summary": "vLLM 用 P/D 分离与 Wide-EP 在单台 NVIDIA GB300 NVL72 上服务 DeepSeek-…",
+          "aihot": "https://aihot.news/items/ln25949991kg9sace8iafbn11",
+          "original": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+          "score": 46
         },
         {
-          "num": 29,
+          "num": 26,
           "section": "tips",
           "title": "腾讯元宝与96岁独游西藏的谭爷爷聊了聊：用AI规划少走路行程",
           "source": "公众号：腾讯元宝",
@@ -722,7 +683,7 @@ const DATA = {
           "score": 29
         },
         {
-          "num": 30,
+          "num": 27,
           "section": "tips",
           "title": "自己做了一个海边悠闲度假版的鹈鹕骑车游戏 玩 AI 游戏竟然可以进入心流（毕竟难度是自己调的 提示词： 动用你的一切才华，做一个世界上最精美的鹈鹕骑自行车游戏",
           "source": "X：Oran Ge (@oran_ge)",
@@ -733,7 +694,7 @@ const DATA = {
           "score": 26
         },
         {
-          "num": 37,
+          "num": 34,
           "section": "tips",
           "title": "Grok Bot 可在 Slack 中协作",
           "source": "X：Lauren Tan（SpaceXSI，Grok Bot 工程负责人） (@poteto)",
@@ -742,17 +703,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/ojwqwdgv1z3x0q4e8iuk4cbn9",
           "original": "https://x.com/poteto/status/2114071326411690209",
           "score": 22
-        },
-        {
-          "num": 38,
-          "section": "tips",
-          "title": "vLLM 在 GB300 NVL72 上规模化服务 DeepSeek-V4.1-Flash，解码吞吐与 DeepInfer 差距在 6% 以内",
-          "source": "vLLM 官方博客（RSS）",
-          "time": "10月25日 02:32（收录）",
-          "summary": "vLLM 用 P/D 分离与 Wide-EP 在单台 NVIDIA GB300 NVL72 上服务 DeepSeek-…",
-          "aihot": "https://aihot.news/items/ln25949991kg9sace8iafbn11",
-          "original": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
-          "score": 46
         }
       ]
     }
@@ -995,7 +945,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1101,12 +1050,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1123,16 +1070,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

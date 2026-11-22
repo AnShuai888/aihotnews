@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-11-15",
     "heroDate": "2026年11月15日 周日",
-    "total": 33,
+    "total": 31,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年11月15日 20:24（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,17 +277,6 @@ const DATA = {
       "count": 3,
       "cards": [
         {
-          "num": 4,
-          "section": "models",
-          "title": "Bland 发布 Tofu-1 全双工语音到语音通话模型",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月15日 19:04（收录）",
-          "summary": "Bland 发布全双工语音到语音模型 Tofu-1，处于研究预览阶段，面向车载、病房和弱信号线路等嘈杂通话场景，直接处…",
-          "aihot": "https://aihot.news/items/ptmh871ycsrypu217da4zwbci",
-          "original": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
-          "score": 43
-        },
-        {
           "num": 5,
           "section": "models",
           "title": "美团开源 1.6 万亿参数智能体模型 LongCat-2.5，训练全程未用 Nvidia GPU",
@@ -305,7 +288,7 @@ const DATA = {
           "score": 75
         },
         {
-          "num": 32,
+          "num": 30,
           "section": "models",
           "title": "Gemini 4 Carbon 登顶 MathArena 数学基准，成本约为 GPT-6.1 Sol 的 15 倍",
           "source": "The Decoder：AI News（RSS）",
@@ -314,6 +297,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/u5l9pjdssjonk6zr64vg4ynf3",
           "original": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
           "score": 55
+        },
+        {
+          "num": 4,
+          "section": "models",
+          "title": "Bland 发布 Tofu-1 全双工语音到语音通话模型",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月15日 19:04（收录）",
+          "summary": "Bland 发布全双工语音到语音模型 Tofu-1，处于研究预览阶段，面向车载、病房和弱信号线路等嘈杂通话场景，直接处…",
+          "aihot": "https://aihot.news/items/ptmh871ycsrypu217da4zwbci",
+          "original": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
+          "score": 43
         }
       ]
     },
@@ -324,6 +318,39 @@ const DATA = {
       "count": 8,
       "cards": [
         {
+          "num": 22,
+          "section": "products",
+          "title": "fal 上线豆包 Seedream v5 pro 文生图与图像编辑模型",
+          "source": "X：fal (@fal)",
+          "time": "11月15日 05:41（收录）",
+          "summary": "fal 官方宣布 Seedream v5 pro 已可在其平台试用，提供文生图和图像编辑两个入口：https://fa…",
+          "aihot": "https://aihot.news/items/scry0zbmshicyszzvh2cwcdqb",
+          "original": "https://x.com/fal/status/2121714750413496661",
+          "score": 61
+        },
+        {
+          "num": 26,
+          "section": "products",
+          "title": "Cmpnd 发布 dspy-wsp，把权重空间编程做成 DSPy 优化器",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月15日 02:52（收录）",
+          "summary": "Cmpnd 发布开源原型优化器 dspy-wsp（MIT 许可，pip install dspy-wsp），让前沿 L…",
+          "aihot": "https://aihot.news/items/ko49hfoxbd3969cmeqq6z2vv7",
+          "original": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
+          "score": 61
+        },
+        {
+          "num": 15,
+          "section": "products",
+          "title": "Gemini 新增 Google Wallet 连接，可生成个人财务洞察",
+          "source": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
+          "time": "11月15日 08:16（收录）",
+          "summary": "Google Labs VP Josh Woodward 宣布 Gemini 新增 Google Wallet 连接功…",
+          "aihot": "https://aihot.news/items/bp7q8w93wi1c48pr2fjiqae8w",
+          "original": "https://x.com/joshwoodward/status/2121755282326102417",
+          "score": 56
+        },
+        {
           "num": 7,
           "section": "products",
           "title": "开发者用 Claude 编写 97KB 浏览器水下探索模拟项目 Abyssal Garden",
@@ -333,6 +360,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/xya3wtmvxn4www66c9epy523l",
           "original": "https://www.ithome.com/1/027/406.htm",
           "score": 49
+        },
+        {
+          "num": 27,
+          "section": "products",
+          "title": "Grok 整合 SpaceXAI 产品打造统一体验",
+          "source": "X：Grok (@grok)",
+          "time": "11月15日 02:36（收录）",
+          "summary": "我们正将更多 @spacexai 产品整合到统一的 Grok 体验中，让创作、构建和完成工作都集中在一个地方。",
+          "aihot": "https://aihot.news/items/uqfmekbu3y5knvmiivzp5tqxm",
+          "original": "https://x.com/grok/status/2121673185540378797",
+          "score": 47
         },
         {
           "num": 10,
@@ -346,29 +384,7 @@ const DATA = {
           "score": 45
         },
         {
-          "num": 14,
-          "section": "products",
-          "title": "datasette-llm 0.1a11 发布：支持 OpenAI 兼容端点",
-          "source": "Simon Willison 博客",
-          "time": "11月15日 09:27（收录）",
-          "summary": "Datasette 的中间插件 datasette-llm 发布 0.1a11，新增对 OpenAI 兼容端点的支持…",
-          "aihot": "https://aihot.news/items/up3tosqc4zea11fz1st0nljio",
-          "original": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-          "score": 41
-        },
-        {
-          "num": 16,
-          "section": "products",
-          "title": "Gemini 新增 Google Wallet 连接，可生成个人财务洞察",
-          "source": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
-          "time": "11月15日 08:16（收录）",
-          "summary": "Google Labs VP Josh Woodward 宣布 Gemini 新增 Google Wallet 连接功…",
-          "aihot": "https://aihot.news/items/bp7q8w93wi1c48pr2fjiqae8w",
-          "original": "https://x.com/joshwoodward/status/2121755282326102417",
-          "score": 56
-        },
-        {
-          "num": 22,
+          "num": 21,
           "section": "products",
           "title": "Seedream 5.0 Pro 上线 fal 美国托管基础设施",
           "source": "X：fal (@fal)",
@@ -379,37 +395,15 @@ const DATA = {
           "score": 44
         },
         {
-          "num": 23,
+          "num": 13,
           "section": "products",
-          "title": "fal 上线豆包 Seedream v5 pro 文生图与图像编辑模型",
-          "source": "X：fal (@fal)",
-          "time": "11月15日 05:41（收录）",
-          "summary": "fal 官方宣布 Seedream v5 pro 已可在其平台试用，提供文生图和图像编辑两个入口：https://fa…",
-          "aihot": "https://aihot.news/items/scry0zbmshicyszzvh2cwcdqb",
-          "original": "https://x.com/fal/status/2121714750413496661",
-          "score": 61
-        },
-        {
-          "num": 27,
-          "section": "products",
-          "title": "Cmpnd 发布 dspy-wsp，把权重空间编程做成 DSPy 优化器",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月15日 02:52（收录）",
-          "summary": "Cmpnd 发布开源原型优化器 dspy-wsp（MIT 许可，pip install dspy-wsp），让前沿 L…",
-          "aihot": "https://aihot.news/items/ko49hfoxbd3969cmeqq6z2vv7",
-          "original": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
-          "score": 61
-        },
-        {
-          "num": 28,
-          "section": "products",
-          "title": "Grok 整合 SpaceXAI 产品打造统一体验",
-          "source": "X：Grok (@grok)",
-          "time": "11月15日 02:36（收录）",
-          "summary": "我们正将更多 @spacexai 产品整合到统一的 Grok 体验中，让创作、构建和完成工作都集中在一个地方。",
-          "aihot": "https://aihot.news/items/uqfmekbu3y5knvmiivzp5tqxm",
-          "original": "https://x.com/grok/status/2121673185540378797",
-          "score": 47
+          "title": "datasette-llm 0.1a11 发布：支持 OpenAI 兼容端点",
+          "source": "Simon Willison 博客",
+          "time": "11月15日 09:27（收录）",
+          "summary": "Datasette 的中间插件 datasette-llm 发布 0.1a11，新增对 OpenAI 兼容端点的支持…",
+          "aihot": "https://aihot.news/items/up3tosqc4zea11fz1st0nljio",
+          "original": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+          "score": 41
         }
       ]
     },
@@ -417,8 +411,30 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 12,
+      "count": 10,
       "cards": [
+        {
+          "num": 19,
+          "section": "industry",
+          "title": "马斯克等高管联署请愿，要求 Nvidia 恢复黄仁勋 CEO 职务",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "11月15日 06:23（收录）",
+          "summary": "要求 Nvidia 恢复被罢免 CEO 黄仁勋职务的请愿书，截至周六下午已获得超过 11.5 万个签名，包括 5,96…",
+          "aihot": "https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
+          "original": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+          "score": 84
+        },
+        {
+          "num": 24,
+          "section": "industry",
+          "title": "Anthropic CEO Amodei 在 IPO 前承认明年存在巨大不确定性，算力是公司最深的商业两难",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月15日 03:29（收录）",
+          "summary": "Anthropic CEO Dario Amodei 在 JPMorgan 投资者活动上表示，明年的走向存在巨大不确定…",
+          "aihot": "https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
+          "original": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+          "score": 78
+        },
         {
           "num": 2,
           "section": "industry",
@@ -429,28 +445,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/hfef2qtnuq9jnfrcbnd04ihd2",
           "original": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
           "score": 74
-        },
-        {
-          "num": 6,
-          "section": "industry",
-          "title": "谷歌 Project Zero 宣布将分阶段把漏洞披露期限从 90 天缩短至 30 天",
-          "source": "IT之家·人工智能",
-          "time": "11月15日 18:26（收录）",
-          "summary": "谷歌 Project Zero 于当地时间 11 月 13 日发布全新漏洞披露政策，称 AI 辅助漏洞挖掘与利用技术的…",
-          "aihot": "https://aihot.news/items/j4n3zsl311001lzzt6u1efydo",
-          "original": "https://www.ithome.com/1/027/423.htm",
-          "score": 64
-        },
-        {
-          "num": 8,
-          "section": "industry",
-          "title": "SK 海力士加快 HBM4 设备投资，清州 P&T6 厂拟明年上半年投产",
-          "source": "IT之家·人工智能",
-          "time": "11月15日 16:27（收录）",
-          "summary": "SK 海力士正与设备供应商商讨追加采购 HBM4 生产设备，重点覆盖键合、切割和检测等后道工序，部分设备要求供应商在第…",
-          "aihot": "https://aihot.news/items/uc4ezw55y20eohepxgkhq984c",
-          "original": "https://www.ithome.com/1/027/392.htm",
-          "score": 48
         },
         {
           "num": 9,
@@ -464,6 +458,17 @@ const DATA = {
           "score": 69
         },
         {
+          "num": 6,
+          "section": "industry",
+          "title": "谷歌 Project Zero 宣布将分阶段把漏洞披露期限从 90 天缩短至 30 天",
+          "source": "IT之家·人工智能",
+          "time": "11月15日 18:26（收录）",
+          "summary": "谷歌 Project Zero 于当地时间 11 月 13 日发布全新漏洞披露政策，称 AI 辅助漏洞挖掘与利用技术的…",
+          "aihot": "https://aihot.news/items/j4n3zsl311001lzzt6u1efydo",
+          "original": "https://www.ithome.com/1/027/423.htm",
+          "score": 64
+        },
+        {
           "num": 11,
           "section": "industry",
           "title": "韩国税务师考试榜一考生自首，承认用微型摄像头与生成式 AI 作弊",
@@ -475,40 +480,7 @@ const DATA = {
           "score": 64
         },
         {
-          "num": 12,
-          "section": "industry",
-          "title": "SK 集团会长崔泰源：所有子公司都要蜕变为 AI 企业",
-          "source": "IT之家·人工智能",
-          "time": "11月15日 10:27（收录）",
-          "summary": "SK 集团会长崔泰源在“2026 CEO 研讨会”上表示，集团必须打破现有框架、重新定位为 AI 公司，所有子公司都要…",
-          "aihot": "https://aihot.news/items/wlh6si075rxka16ewd7b03a1k",
-          "original": "https://www.ithome.com/1/027/277.htm",
-          "score": 40
-        },
-        {
-          "num": 17,
-          "section": "industry",
-          "title": "超聚变深交所创业板 IPO 过会，前身是华为 X86 服务器业务",
-          "source": "IT之家·人工智能",
-          "time": "11月15日 08:08（收录）",
-          "summary": "深交所上市审核委员会 11 月 12 日审议通过超聚变数字技术创业板首发，从受理到过会仅用时 174 天。",
-          "aihot": "https://aihot.news/items/ks2fe7977pxkkf9mhz84kkbwb",
-          "original": "https://www.ithome.com/1/027/255.htm",
-          "score": 63
-        },
-        {
-          "num": 20,
-          "section": "industry",
-          "title": "马斯克等高管联署请愿，要求 Nvidia 恢复黄仁勋 CEO 职务",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月15日 06:23（收录）",
-          "summary": "要求 Nvidia 恢复被罢免 CEO 黄仁勋职务的请愿书，截至周六下午已获得超过 11.5 万个签名，包括 5,96…",
-          "aihot": "https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
-          "original": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
-          "score": 84
-        },
-        {
-          "num": 24,
+          "num": 23,
           "section": "industry",
           "title": "投资者致信 Nvidia 董事会呼吁保留黄仁勋回归 CEO 的选项",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -519,18 +491,18 @@ const DATA = {
           "score": 64
         },
         {
-          "num": 25,
+          "num": 16,
           "section": "industry",
-          "title": "Anthropic CEO Amodei 在 IPO 前承认明年存在巨大不确定性，算力是公司最深的商业两难",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月15日 03:29（收录）",
-          "summary": "Anthropic CEO Dario Amodei 在 JPMorgan 投资者活动上表示，明年的走向存在巨大不确定…",
-          "aihot": "https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
-          "original": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
-          "score": 78
+          "title": "超聚变深交所创业板 IPO 过会，前身是华为 X86 服务器业务",
+          "source": "IT之家·人工智能",
+          "time": "11月15日 08:08（收录）",
+          "summary": "深交所上市审核委员会 11 月 12 日审议通过超聚变数字技术创业板首发，从受理到过会仅用时 174 天。",
+          "aihot": "https://aihot.news/items/ks2fe7977pxkkf9mhz84kkbwb",
+          "original": "https://www.ithome.com/1/027/255.htm",
+          "score": 63
         },
         {
-          "num": 29,
+          "num": 28,
           "section": "industry",
           "title": "NVIDIA 工程总监 Liila Torabi 被曝称黄仁勋下台系预先策划，LinkedIn 帖文数小时内删除",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -541,15 +513,15 @@ const DATA = {
           "score": 58
         },
         {
-          "num": 30,
+          "num": 8,
           "section": "industry",
-          "title": "AI 坟场：那些关停、转型或未达预期的 AI 项目与初创公司盘点",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月15日 01:52（收录）",
-          "summary": "TechCrunch 汇总了一份 AI 项目\"坟场\"名单，记录已关停、转型或大幅低于预期的产品与初创公司。S&P Gl…",
-          "aihot": "https://aihot.news/items/io0z6dcb7ffd8lb8kiixk7rga",
-          "original": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-          "score": 47
+          "title": "SK 海力士加快 HBM4 设备投资，清州 P&T6 厂拟明年上半年投产",
+          "source": "IT之家·人工智能",
+          "time": "11月15日 16:27（收录）",
+          "summary": "SK 海力士正与设备供应商商讨追加采购 HBM4 生产设备，重点覆盖键合、切割和检测等后道工序，部分设备要求供应商在第…",
+          "aihot": "https://aihot.news/items/uc4ezw55y20eohepxgkhq984c",
+          "original": "https://www.ithome.com/1/027/392.htm",
+          "score": 48
         }
       ]
     },
@@ -571,6 +543,28 @@ const DATA = {
           "score": 62
         },
         {
+          "num": 17,
+          "section": "papers",
+          "title": "MIT 与 Google DeepMind 论文发现 AI 顾问会因汇报关系偏向上级利益",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月15日 07:55（收录）",
+          "summary": "MIT 与 Google DeepMind 论文发现 AI 模型担任公司顾问时，向 CEO 汇报且 CEO 奖金与削减…",
+          "aihot": "https://aihot.news/items/da5ehhf7bpogslnrs4yqxsutt",
+          "original": "https://x.com/rohanpaul_ai/status/2121748888654946362",
+          "score": 62
+        },
+        {
+          "num": 14,
+          "section": "papers",
+          "title": "Northwestern 与 Google 论文提出 Harness2：无需答案键自动改进智能体 harness",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月15日 08:26（收录）",
+          "summary": "Northwestern 与 Google 的论文 Harness² 提出 plug-and-play 的递归 har…",
+          "aihot": "https://aihot.news/items/v62fbnnz3n8j7gd0xejqtzmws",
+          "original": "https://x.com/rohanpaul_ai/status/2121757204810469793",
+          "score": 53
+        },
+        {
           "num": 3,
           "section": "papers",
           "title": "澳大利亚央行研究：AI 就业冲击最先落在年轻劳动者，软件客服岗位降幅最大",
@@ -582,29 +576,7 @@ const DATA = {
           "score": 51
         },
         {
-          "num": 15,
-          "section": "papers",
-          "title": "Northwestern 与 Google 论文提出 Harness2：无需答案键自动改进智能体 harness",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月15日 08:26（收录）",
-          "summary": "Northwestern 与 Google 的论文 Harness² 提出 plug-and-play 的递归 har…",
-          "aihot": "https://aihot.news/items/v62fbnnz3n8j7gd0xejqtzmws",
-          "original": "https://x.com/rohanpaul_ai/status/2121757204810469793",
-          "score": 53
-        },
-        {
-          "num": 18,
-          "section": "papers",
-          "title": "MIT 与 Google DeepMind 论文发现 AI 顾问会因汇报关系偏向上级利益",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月15日 07:55（收录）",
-          "summary": "MIT 与 Google DeepMind 论文发现 AI 模型担任公司顾问时，向 CEO 汇报且 CEO 奖金与削减…",
-          "aihot": "https://aihot.news/items/da5ehhf7bpogslnrs4yqxsutt",
-          "original": "https://x.com/rohanpaul_ai/status/2121748888654946362",
-          "score": 62
-        },
-        {
-          "num": 21,
+          "num": 20,
           "section": "papers",
           "title": "Meta 论文：用跨视角一致性判断 LLM 答案可信度",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -615,7 +587,7 @@ const DATA = {
           "score": 44
         },
         {
-          "num": 26,
+          "num": 25,
           "section": "papers",
           "title": "浙大研究：弱模型也能当教练提升智能体表现",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -634,29 +606,7 @@ const DATA = {
       "count": 4,
       "cards": [
         {
-          "num": 13,
-          "section": "tips",
-          "title": "Grok Bot 可代打电话改签航班",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "time": "11月15日 09:35（收录）",
-          "summary": "试试 Grok @Bot",
-          "aihot": "https://aihot.news/items/i4cpgcjm1h1f3i5e9mjwmqntp",
-          "original": "https://x.com/elonmusk/status/2121770874885845044",
-          "score": 41
-        },
-        {
-          "num": 19,
-          "section": "tips",
-          "title": "Addy Osmani 谈 Claude 模型选择建议",
-          "source": "X：Addy Osmani (@addyosmani)",
-          "time": "11月15日 06:39（收录）",
-          "summary": "Opus 5.5 中等档位是很好的日常主力。 如果它吃力，先提高 effort 再换模型。否则 Fable 5.2 适…",
-          "aihot": "https://aihot.news/items/iizlg2088bv8smg0vlxv6qhwm",
-          "original": "https://x.com/addyosmani/status/2121732470118965298",
-          "score": 45
-        },
-        {
-          "num": 31,
+          "num": 29,
           "section": "tips",
           "title": "Anthropic 建议弃用过时提示词习惯以充分发挥 Claude Opus 5.5",
           "source": "The Decoder：AI News（RSS）",
@@ -667,7 +617,7 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 33,
+          "num": 31,
           "section": "tips",
           "title": "LangChain 提出 Goal Engineering：按反馈易度设计智能体目标范围",
           "source": "LangChain：Blog（RSS）",
@@ -676,6 +626,28 @@ const DATA = {
           "aihot": "https://aihot.news/items/rs6obb8t15cok8ggh2t7y6sgh",
           "original": "https://www.langchain.com/blog/goal-engineering",
           "score": 53
+        },
+        {
+          "num": 18,
+          "section": "tips",
+          "title": "Addy Osmani 谈 Claude 模型选择建议",
+          "source": "X：Addy Osmani (@addyosmani)",
+          "time": "11月15日 06:39（收录）",
+          "summary": "Opus 5.5 中等档位是很好的日常主力。 如果它吃力，先提高 effort 再换模型。否则 Fable 5.2 适…",
+          "aihot": "https://aihot.news/items/iizlg2088bv8smg0vlxv6qhwm",
+          "original": "https://x.com/addyosmani/status/2121732470118965298",
+          "score": 45
+        },
+        {
+          "num": 12,
+          "section": "tips",
+          "title": "Grok Bot 可代打电话改签航班",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "11月15日 09:35（收录）",
+          "summary": "试试 Grok @Bot",
+          "aihot": "https://aihot.news/items/i4cpgcjm1h1f3i5e9mjwmqntp",
+          "original": "https://x.com/elonmusk/status/2121770874885845044",
+          "score": 41
         }
       ]
     }
@@ -903,7 +875,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1009,12 +980,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1031,16 +1000,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-06",
     "heroDate": "2026年9月6日 周日",
-    "total": 57,
+    "total": 38,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月06日 20:32（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -294,18 +288,7 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 9,
-          "section": "models",
-          "title": "阿里千问开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 17:31（收录）",
-          "summary": "阿里千问本周开源 Qwen-Drive-1.0-4B，一款基于 Qwen3.5-4B 构建的自动驾驶视觉语言基础模型…",
-          "aihot": "https://aihot.virxact.com/items/cmtpm46oz01efroryjmqkcgwu",
-          "original": "https://www.ithome.com/0/998/997.htm",
-          "score": 50
-        },
-        {
-          "num": 23,
+          "num": 17,
           "section": "models",
           "title": "蚂蚁 inclusionAI 发布 LLaDA2.2-mini 智能体扩散语言模型",
           "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
@@ -314,6 +297,17 @@ const DATA = {
           "aihot": "https://aihot.virxact.com/items/cmtpbfzu40ckwrobl7wjmgsp8",
           "original": "https://huggingface.co/inclusionAI/LLaDA2.2-mini",
           "score": 53
+        },
+        {
+          "num": 8,
+          "section": "models",
+          "title": "阿里千问开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 17:31（收录）",
+          "summary": "阿里千问本周开源 Qwen-Drive-1.0-4B，一款基于 Qwen3.5-4B 构建的自动驾驶视觉语言基础模型…",
+          "aihot": "https://aihot.virxact.com/items/cmtpm46oz01efroryjmqkcgwu",
+          "original": "https://www.ithome.com/0/998/997.htm",
+          "score": 50
         }
       ]
     },
@@ -321,29 +315,18 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 16,
+      "count": 10,
       "cards": [
         {
-          "num": 3,
+          "num": 27,
           "section": "products",
-          "title": "微软发布 AI 快速入门指南，30 分钟即可生成并发布 WinUI 原生应用",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 19:31（收录）",
-          "summary": "微软发布快速入门指南，开发者借助 AI、VS Code、winapp CLI 和 GitHub Copilot 免费版…",
-          "aihot": "https://aihot.virxact.com/items/cmtpqej6201t1rokz25ar0sg5",
-          "original": "https://www.ithome.com/0/999/015.htm",
-          "score": 56
-        },
-        {
-          "num": 4,
-          "section": "products",
-          "title": "Google 与 DeepMind 发布 WeatherNext 3：跳过物理模拟，直接从实时卫星数据学习天气预报",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月6日 19:04（收录）",
-          "summary": "Google Research 与 DeepMind 发布 AI 天气模型 WeatherNext 3，不再依赖传统物…",
-          "aihot": "https://aihot.virxact.com/items/cmtppezy2011brokzee6er80h",
-          "original": "https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data",
-          "score": 67
+          "title": "OpenAI GPT-6 Astra 登顶 Code Arena WebDev 榜首，领先 Claude Fable 5.1 达 35 分",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "time": "9月6日 05:59（收录）",
+          "summary": "GPT-6 Astra （Max） 以 1797 分登顶 Code Arena： WebDev，领先第 2 名 Cla…",
+          "aihot": "https://aihot.virxact.com/items/cmtoxdsbb032sromz8bcrhsii",
+          "original": "https://x.com/testingcatalog/status/2096350628054176240",
+          "score": 76
         },
         {
           "num": 5,
@@ -357,40 +340,18 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 10,
+          "num": 4,
           "section": "products",
-          "title": "Abliteration.ai 推出去除拒绝机制的 GLM-5.3 修改版商用 API",
+          "title": "Google 与 DeepMind 发布 WeatherNext 3：跳过物理模拟，直接从实时卫星数据学习天气预报",
           "source": "The Decoder：AI News（RSS）",
-          "time": "9月6日 17:03（收录）",
-          "summary": "美国初创公司 Abliteration.ai 发布 abliterated-model-large-v2，通过 abl…",
-          "aihot": "https://aihot.virxact.com/items/cmtpl4ngt01v3romhgouyn0gn",
-          "original": "https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service",
-          "score": 57
+          "time": "9月6日 19:04（收录）",
+          "summary": "Google Research 与 DeepMind 发布 AI 天气模型 WeatherNext 3，不再依赖传统物…",
+          "aihot": "https://aihot.virxact.com/items/cmtppezy2011brokzee6er80h",
+          "original": "https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data",
+          "score": 67
         },
         {
-          "num": 14,
-          "section": "products",
-          "title": "特斯拉推送 FSD v14.3.9 监督版，手动驾驶时也可强行介入避险",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 15:31（收录）",
-          "summary": "特斯拉开始逐步推送 FSD v14.3.9（监督版），新增主动安全机制，即使车辆由驾驶员手动驾驶，系统也可在必要时接管…",
-          "aihot": "https://aihot.virxact.com/items/cmtphtttc01piroxxcu0ddnfd",
-          "original": "https://www.ithome.com/0/998/933.htm",
-          "score": 55
-        },
-        {
-          "num": 17,
-          "section": "products",
-          "title": "Greg Brockman 转发用户用 Astra 检查科学论文复现代码的结果",
-          "source": "X：Greg Brockman (@gdb)",
-          "time": "9月6日 14:37（收录）",
-          "summary": "Greg Brockman 转发用户 @cremieuxrecueil 的实测：用 Astra 检查一批复现包，发现大…",
-          "aihot": "https://aihot.virxact.com/items/cmtpfwfvk01f7rodguewq4l8z",
-          "original": "https://x.com/gdb/status/2096486220918657164",
-          "score": 51
-        },
-        {
-          "num": 18,
+          "num": 13,
           "section": "products",
           "title": "UC Berkeley 发布 CUA-Lite：统一沙箱、数据、评测与 RL 的计算机使用智能体开源平台",
           "source": "MarkTechPost（RSS）",
@@ -401,62 +362,7 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 19,
-          "section": "products",
-          "title": "公安部发布\"国家反诈 AI\"App，微信、支付宝小程序同步开放",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 14:31（收录）",
-          "summary": "公安部宣布，由公安部刑侦局指导、上海市公安局自主研发的\"国家反诈 AI\"App 正式上线，微信、支付宝小程序同步开放…",
-          "aihot": "https://aihot.virxact.com/items/cmtpfon3w0026rodghso8geru",
-          "original": "https://www.ithome.com/0/998/922.htm",
-          "score": 64
-        },
-        {
-          "num": 21,
-          "section": "products",
-          "title": "GPT-6 上线 ChatGPT 聊天模式，据称目前仅限 Pro 用户",
-          "source": "X：ZHO (@ZHO_ZHO_ZHO)",
-          "time": "9月6日 13:09（收录）",
-          "summary": "GPT-6 现在可以在聊天模式里使用了，作者称似乎只向 Pro 用户开放。作者实测后认为它确实比之前更会说人话了一点…",
-          "aihot": "https://aihot.virxact.com/items/cmtpcrbl60dsbrobli538uw2r",
-          "original": "https://x.com/ZHO_ZHO_ZHO/status/2096460956981453172",
-          "score": 54
-        },
-        {
-          "num": 37,
-          "section": "products",
-          "title": "Gemini Business 支持自定义 MCP 服务器连接",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "9月6日 06:29（收录）",
-          "summary": "Gemini Business 新增自定义 MCP 服务器连接功能，可连接私有数据和内部工具。截图显示 Gemini…",
-          "aihot": "https://aihot.virxact.com/items/cmtoygfmy0181roqccs7uiiui",
-          "original": "https://x.com/testingcatalog/status/2096357644491456542",
-          "score": 52
-        },
-        {
-          "num": 38,
-          "section": "products",
-          "title": "OpenAI GPT-6 Astra 登顶 Code Arena WebDev 榜首，领先 Claude Fable 5.1 达 35 分",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "9月6日 05:59（收录）",
-          "summary": "GPT-6 Astra （Max） 以 1797 分登顶 Code Arena： WebDev，领先第 2 名 Cla…",
-          "aihot": "https://aihot.virxact.com/items/cmtoxdsbb032sromz8bcrhsii",
-          "original": "https://x.com/testingcatalog/status/2096350628054176240",
-          "score": 76
-        },
-        {
-          "num": 39,
-          "section": "products",
-          "title": "Grok Imagine Video 1.5 Agent 上线，底层换用 Image 2.0 图像模型",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "9月6日 04:29（收录）",
-          "summary": "Grok Imagine Video 1.5 agent 现已可用，由最新的 Image 2.0 图像模型驱动，官方称…",
-          "aihot": "https://aihot.virxact.com/items/cmtou61sc018vromzen1kn5wk",
-          "original": "https://x.com/testingcatalog/status/2096332080929968424",
-          "score": 51
-        },
-        {
-          "num": 41,
+          "num": 28,
           "section": "products",
           "title": "GitHub 推出 Project HydraFusion 研究预览，在 Copilot CLI 中按编码任务动态编排多模型工作流",
           "source": "MarkTechPost（RSS）",
@@ -467,18 +373,40 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 43,
+          "num": 14,
           "section": "products",
-          "title": "Nous Research 为 Hermes Desktop 增加一键本地模型安装",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月6日 03:32（收录）",
-          "summary": "Nous Research 在 Hermes Desktop 中将本地模型安装简化为一次点击。应用会读取用户硬件，对照…",
-          "aihot": "https://aihot.virxact.com/items/cmtos5b5u0280roooiyv4z1vb",
-          "original": "https://www.marktechpost.com/2026/09/05/nous-research-hermes-desktop-one-click-local-model-setup",
-          "score": 52
+          "title": "公安部发布\"国家反诈 AI\"App，微信、支付宝小程序同步开放",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 14:31（收录）",
+          "summary": "公安部宣布，由公安部刑侦局指导、上海市公安局自主研发的\"国家反诈 AI\"App 正式上线，微信、支付宝小程序同步开放…",
+          "aihot": "https://aihot.virxact.com/items/cmtpfon3w0026rodghso8geru",
+          "original": "https://www.ithome.com/0/998/922.htm",
+          "score": 64
         },
         {
-          "num": 48,
+          "num": 36,
+          "section": "products",
+          "title": "Codex 推出 Astra 上下文保存与检索功能，作者称可缓解长任务中的上下文压缩瓶颈",
+          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "time": "9月6日 00:40（收录）",
+          "summary": "Elvis Saravia 转发 Gabriel Chua 的介绍：Codex 推出 Astra 功能，在上下文窗口填…",
+          "aihot": "https://aihot.virxact.com/items/cmtolzrkc03lcrocxfn803vyl",
+          "original": "https://x.com/omarsar0/status/2096272427818811495",
+          "score": 58
+        },
+        {
+          "num": 9,
+          "section": "products",
+          "title": "Abliteration.ai 推出去除拒绝机制的 GLM-5.3 修改版商用 API",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "9月6日 17:03（收录）",
+          "summary": "美国初创公司 Abliteration.ai 发布 abliterated-model-large-v2，通过 abl…",
+          "aihot": "https://aihot.virxact.com/items/cmtpl4ngt01v3romhgouyn0gn",
+          "original": "https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service",
+          "score": 57
+        },
+        {
+          "num": 32,
           "section": "products",
           "title": "Grok Imagine Video 1.5 agent 上线，由 Image 2.0 模型驱动",
           "source": "X：Andrew Milich (@milichab)",
@@ -489,15 +417,15 @@ const DATA = {
           "score": 57
         },
         {
-          "num": 54,
+          "num": 3,
           "section": "products",
-          "title": "Codex 推出 Astra 上下文保存与检索功能，作者称可缓解长任务中的上下文压缩瓶颈",
-          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
-          "time": "9月6日 00:40（收录）",
-          "summary": "Elvis Saravia 转发 Gabriel Chua 的介绍：Codex 推出 Astra 功能，在上下文窗口填…",
-          "aihot": "https://aihot.virxact.com/items/cmtolzrkc03lcrocxfn803vyl",
-          "original": "https://x.com/omarsar0/status/2096272427818811495",
-          "score": 58
+          "title": "微软发布 AI 快速入门指南，30 分钟即可生成并发布 WinUI 原生应用",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 19:31（收录）",
+          "summary": "微软发布快速入门指南，开发者借助 AI、VS Code、winapp CLI 和 GitHub Copilot 免费版…",
+          "aihot": "https://aihot.virxact.com/items/cmtpqej6201t1rokz25ar0sg5",
+          "original": "https://www.ithome.com/0/999/015.htm",
+          "score": 56
         }
       ]
     },
@@ -508,84 +436,7 @@ const DATA = {
       "count": 9,
       "cards": [
         {
-          "num": 16,
-          "section": "industry",
-          "title": "国内首款 AI 辅助研发创新药艾普司韦获药监局附条件批准上市",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 15:31（收录）",
-          "summary": "由西湖大学、西湖实验室、西湖制药联合研发的盐酸伊司特韦片（商品名：艾普司韦）获国家药品监督管理局附条件批准上市，用于成…",
-          "aihot": "https://aihot.virxact.com/items/cmtphtttc01pgroxxvmgdcow7",
-          "original": "https://www.ithome.com/0/998/936.htm",
-          "score": 66
-        },
-        {
-          "num": 20,
-          "section": "industry",
-          "title": "B站首届 AI 创造公开赛收官，《猫娘计划 Project N.E.K.O.》获一等奖独享百万奖金",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 13:30（收录）",
-          "summary": "B站首届 build in bilibili·AI 创造公开赛落幕，UP 主 W 博士与 AI 猫娘凭《猫娘计划 Pr…",
-          "aihot": "https://aihot.virxact.com/items/cmtpdip6s0eedroblkt1m60ty",
-          "original": "https://www.ithome.com/0/998/921.htm",
-          "score": 52
-        },
-        {
-          "num": 26,
-          "section": "industry",
-          "title": "F-Droid 拟借鉴 Debian 新 AI 政策：允许使用生成式 AI，责任由人类开发者承担",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 11:30（收录）",
-          "summary": "开源安卓应用商店 F-Droid 考虑采用类似 Debian 的 AI 政策，拟议文本直接沿用 Debian 政策全文…",
-          "aihot": "https://aihot.virxact.com/items/cmtp98a8d0ahlroblfchwk717",
-          "original": "https://www.ithome.com/0/998/895.htm",
-          "score": 52
-        },
-        {
-          "num": 29,
-          "section": "industry",
-          "title": "中国联通反诈大模型预警并协助捣毁涉诈 VOIP 黑盒设备",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 09:30（收录）",
-          "summary": "中国联通抚顺市分公司 8 月 24 日依托自主研发的反诈大模型预警，联合当地公安机关识别并捣毁一处非法私装的涉诈 VO…",
-          "aihot": "https://aihot.virxact.com/items/cmtp4xxsh06lcrobl9yf66sk6",
-          "original": "https://www.ithome.com/0/998/877.htm",
-          "score": 51
-        },
-        {
-          "num": 30,
-          "section": "industry",
-          "title": "马斯克转发：萨尔瓦多 171 所公立学校 AI 辅导试点成绩超过全国平均水平",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "time": "9月6日 09:11（收录）",
-          "summary": "马斯克引用 Polymarket 消息称，萨尔瓦多在 171 所公立学校的 AI 辅导试点中，阅读、数学和科学成绩高于…",
-          "aihot": "https://aihot.virxact.com/items/cmtp48nd0060urobl5qt253pe",
-          "original": "https://x.com/elonmusk/status/2096402943981604902",
-          "score": 56
-        },
-        {
-          "num": 32,
-          "section": "industry",
-          "title": "OpenAI 宣布建立新框架，将更透明披露 AI 智能体失控和失准事件",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 08:30（收录）",
-          "summary": "OpenAI 发文宣布将建立全新透明度框架，承诺更透明地披露旗下 AI 智能体失控和失准（Misalignment）情…",
-          "aihot": "https://aihot.virxact.com/items/cmtp2srnd04p0robl0oiizgap",
-          "original": "https://www.ithome.com/0/998/859.htm",
-          "score": 68
-        },
-        {
-          "num": 35,
-          "section": "industry",
-          "title": "《西雅图时报》与 Newsday 起诉 OpenAI 和 Microsoft 涉嫌版权侵权",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月6日 07:02（收录）",
-          "summary": "《西雅图时报》和 Newsday 起诉 OpenAI 与 Microsoft，指控其用新闻内容训练 AI，诉状称 AI…",
-          "aihot": "https://aihot.virxact.com/items/cmtoznirq020crobl8b8w0f3z",
-          "original": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
-          "score": 61
-        },
-        {
-          "num": 47,
+          "num": 31,
           "section": "industry",
           "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
           "source": "TechCrunch：AI（RSS）",
@@ -596,7 +447,40 @@ const DATA = {
           "score": 82
         },
         {
-          "num": 55,
+          "num": 23,
+          "section": "industry",
+          "title": "OpenAI 宣布建立新框架，将更透明披露 AI 智能体失控和失准事件",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 08:30（收录）",
+          "summary": "OpenAI 发文宣布将建立全新透明度框架，承诺更透明地披露旗下 AI 智能体失控和失准（Misalignment）情…",
+          "aihot": "https://aihot.virxact.com/items/cmtp2srnd04p0robl0oiizgap",
+          "original": "https://www.ithome.com/0/998/859.htm",
+          "score": 68
+        },
+        {
+          "num": 12,
+          "section": "industry",
+          "title": "国内首款 AI 辅助研发创新药艾普司韦获药监局附条件批准上市",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 15:31（收录）",
+          "summary": "由西湖大学、西湖实验室、西湖制药联合研发的盐酸伊司特韦片（商品名：艾普司韦）获国家药品监督管理局附条件批准上市，用于成…",
+          "aihot": "https://aihot.virxact.com/items/cmtphtttc01pgroxxvmgdcow7",
+          "original": "https://www.ithome.com/0/998/936.htm",
+          "score": 66
+        },
+        {
+          "num": 25,
+          "section": "industry",
+          "title": "《西雅图时报》与 Newsday 起诉 OpenAI 和 Microsoft 涉嫌版权侵权",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "9月6日 07:02（收录）",
+          "summary": "《西雅图时报》和 Newsday 起诉 OpenAI 与 Microsoft，指控其用新闻内容训练 AI，诉状称 AI…",
+          "aihot": "https://aihot.virxact.com/items/cmtoznirq020crobl8b8w0f3z",
+          "original": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
+          "score": 61
+        },
+        {
+          "num": 37,
           "section": "industry",
           "title": "Meta 自主 AI 研究系统 AIRA3 在 NVIDIA Kaggle 竞赛中获金牌",
           "source": "X：AI at Meta (@AIatMeta)",
@@ -605,6 +489,50 @@ const DATA = {
           "aihot": "https://aihot.virxact.com/items/cmtoluiyr03hfrocx9dxineaz",
           "original": "https://x.com/AIatMeta/status/2096271545589190927",
           "score": 57
+        },
+        {
+          "num": 22,
+          "section": "industry",
+          "title": "马斯克转发：萨尔瓦多 171 所公立学校 AI 辅导试点成绩超过全国平均水平",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "9月6日 09:11（收录）",
+          "summary": "马斯克引用 Polymarket 消息称，萨尔瓦多在 171 所公立学校的 AI 辅导试点中，阅读、数学和科学成绩高于…",
+          "aihot": "https://aihot.virxact.com/items/cmtp48nd0060urobl5qt253pe",
+          "original": "https://x.com/elonmusk/status/2096402943981604902",
+          "score": 56
+        },
+        {
+          "num": 15,
+          "section": "industry",
+          "title": "B站首届 AI 创造公开赛收官，《猫娘计划 Project N.E.K.O.》获一等奖独享百万奖金",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 13:30（收录）",
+          "summary": "B站首届 build in bilibili·AI 创造公开赛落幕，UP 主 W 博士与 AI 猫娘凭《猫娘计划 Pr…",
+          "aihot": "https://aihot.virxact.com/items/cmtpdip6s0eedroblkt1m60ty",
+          "original": "https://www.ithome.com/0/998/921.htm",
+          "score": 52
+        },
+        {
+          "num": 18,
+          "section": "industry",
+          "title": "F-Droid 拟借鉴 Debian 新 AI 政策：允许使用生成式 AI，责任由人类开发者承担",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 11:30（收录）",
+          "summary": "开源安卓应用商店 F-Droid 考虑采用类似 Debian 的 AI 政策，拟议文本直接沿用 Debian 政策全文…",
+          "aihot": "https://aihot.virxact.com/items/cmtp98a8d0ahlroblfchwk717",
+          "original": "https://www.ithome.com/0/998/895.htm",
+          "score": 52
+        },
+        {
+          "num": 21,
+          "section": "industry",
+          "title": "中国联通反诈大模型预警并协助捣毁涉诈 VOIP 黑盒设备",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 09:30（收录）",
+          "summary": "中国联通抚顺市分公司 8 月 24 日依托自主研发的反诈大模型预警，联合当地公安机关识别并捣毁一处非法私装的涉诈 VO…",
+          "aihot": "https://aihot.virxact.com/items/cmtp4xxsh06lcrobl9yf66sk6",
+          "original": "https://www.ithome.com/0/998/877.htm",
+          "score": 51
         }
       ]
     },
@@ -626,18 +554,18 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 28,
+          "num": 35,
           "section": "papers",
-          "title": "DisCo 论文提出 Repo-To-Skill 方法，将 GitHub 仓库蒸馏为技能使 MLE-bench 从 31.11% 升至 72.89%",
+          "title": "研究显示LLM智能体比例决定人类群体共识走向，高占比会使共识转向AI主导规范",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月6日 09:40（收录）",
-          "summary": "论文提出 DisCo，一个把 GitHub 仓库、论文和任务研究蒸馏为紧凑技能的研究智能体，让智能体知道用什么工具、何…",
-          "aihot": "https://aihot.virxact.com/items/cmtp5a7gb06zlroblmz1u34ny",
-          "original": "https://x.com/rohanpaul_ai/status/2096406594460487716",
-          "score": 51
+          "time": "9月6日 00:40（收录）",
+          "summary": "一项研究将人类与LLM智能体组成24人小组，反复对同一图像达成描述共识。结果发现低AI占比促进人类达成共识，12.5%…",
+          "aihot": "https://aihot.virxact.com/items/cmtolzrkr03lerocx2cn77xq3",
+          "original": "https://x.com/rohanpaul_ai/status/2096276541747626313",
+          "score": 54
         },
         {
-          "num": 36,
+          "num": 26,
           "section": "papers",
           "title": "arXiv 论文提出大语言模型作为认知病毒的传播模型",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -648,7 +576,18 @@ const DATA = {
           "score": 52
         },
         {
-          "num": 49,
+          "num": 20,
+          "section": "papers",
+          "title": "DisCo 论文提出 Repo-To-Skill 方法，将 GitHub 仓库蒸馏为技能使 MLE-bench 从 31.11% 升至 72.89%",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月6日 09:40（收录）",
+          "summary": "论文提出 DisCo，一个把 GitHub 仓库、论文和任务研究蒸馏为紧凑技能的研究智能体，让智能体知道用什么工具、何…",
+          "aihot": "https://aihot.virxact.com/items/cmtp5a7gb06zlroblmz1u34ny",
+          "original": "https://x.com/rohanpaul_ai/status/2096406594460487716",
+          "score": 51
+        },
+        {
+          "num": 33,
           "section": "papers",
           "title": "Harness-of-Harness 框架通过持久项目状态提升长周期自主软件开发表现",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -659,7 +598,7 @@ const DATA = {
           "score": 51
         },
         {
-          "num": 51,
+          "num": 34,
           "section": "papers",
           "title": "PayPal AI 论文揭示持久记忆智能体更信陈旧记忆而非新证据，且缓解手段依赖模型规模",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -668,17 +607,6 @@ const DATA = {
           "aihot": "https://aihot.virxact.com/items/cmton2ccq04jurocxa5483hi8",
           "original": "https://x.com/rohanpaul_ai/status/2096280338083528801",
           "score": 51
-        },
-        {
-          "num": 53,
-          "section": "papers",
-          "title": "研究显示LLM智能体比例决定人类群体共识走向，高占比会使共识转向AI主导规范",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月6日 00:40（收录）",
-          "summary": "一项研究将人类与LLM智能体组成24人小组，反复对同一图像达成描述共识。结果发现低AI占比促进人类达成共识，12.5%…",
-          "aihot": "https://aihot.virxact.com/items/cmtolzrkr03lerocx2cn77xq3",
-          "original": "https://x.com/rohanpaul_ai/status/2096276541747626313",
-          "score": 54
         }
       ]
     },
@@ -686,18 +614,29 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 23,
+      "count": 10,
       "cards": [
         {
-          "num": 2,
+          "num": 30,
           "section": "tips",
-          "title": "微软提出无计量智能战略，推动 AI 在 Windows PC 本地运行",
+          "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月6日 02:40（收录）",
+          "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境…",
+          "aihot": "https://aihot.virxact.com/items/cmtoqa3i1022iro4mjh3iogk8",
+          "original": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+          "score": 83
+        },
+        {
+          "num": 11,
+          "section": "tips",
+          "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
           "source": "IT之家（RSS）",
-          "time": "9月6日 19:31（收录）",
-          "summary": "据 Windows Latest 报道，微软在 IFA 2026 上由 Windows 与设备部门企业副总裁 Mark…",
-          "aihot": "https://aihot.virxact.com/items/cmtpqej6201t2rokz04m7ae3q",
-          "original": "https://www.ithome.com/0/999/014.htm",
-          "score": 64
+          "time": "9月6日 15:31（收录）",
+          "summary": "据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据…",
+          "aihot": "https://aihot.virxact.com/items/cmtphtttc01pkroxxh8pinzq2",
+          "original": "https://www.ithome.com/0/998/927.htm",
+          "score": 77
         },
         {
           "num": 7,
@@ -711,161 +650,7 @@ const DATA = {
           "score": 74
         },
         {
-          "num": 8,
-          "section": "tips",
-          "title": "阑夕用《帝国时代II》奇观类比解读SOTA模型的领先周期",
-          "source": "X：阑夕 (@foxshuo)",
-          "time": "9月6日 17:39（收录）",
-          "summary": "阑夕提出，新模型发布首日Demo刷屏、次日集体反思已是固定节奏，SOTA模型本身也是一种「奇观」。他以《帝国时代II》…",
-          "aihot": "https://aihot.virxact.com/items/cmtpmeji901qrrory03f3jiaq",
-          "original": "https://x.com/foxshuo/status/2096532057237422318",
-          "score": 51
-        },
-        {
-          "num": 11,
-          "section": "tips",
-          "title": "AI 短剧制作价格大跳水，每分钟报价从 5000 元跌至几百元",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 16:31（收录）",
-          "summary": "据央视财经报道，AI 短剧技术门槛下降、从业者涌入，制作报价从每分钟 5000 元跌至几百元，逼近成本线，但定制短剧仍…",
-          "aihot": "https://aihot.virxact.com/items/cmtpjyz2h01cgro473tn87503",
-          "original": "https://www.ithome.com/0/998/943.htm",
-          "score": 59
-        },
-        {
-          "num": 12,
-          "section": "tips",
-          "title": "博主把视频制作流程做成主动引导式 Skill，一个爆贴一天涨粉 4000",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月6日 15:39（收录）",
-          "summary": "阿易转发大雷（@AaronYiaazw）的视频制作教程案例：后者把完整视频制作流程做成主动引导式 Skill，已发布在…",
-          "aihot": "https://aihot.virxact.com/items/cmtpi499t01carotsnjcsd54u",
-          "original": "https://x.com/AYi_AInotes/status/2096499131347071048",
-          "score": 56
-        },
-        {
-          "num": 13,
-          "section": "tips",
-          "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 15:31（收录）",
-          "summary": "据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据…",
-          "aihot": "https://aihot.virxact.com/items/cmtphtttc01pkroxxh8pinzq2",
-          "original": "https://www.ithome.com/0/998/927.htm",
-          "score": 77
-        },
-        {
-          "num": 15,
-          "section": "tips",
-          "title": "OpenAI 应用研究主管鲍里斯·鲍尔称 Astra 模型已补上人类空间推理优势",
-          "source": "IT之家（RSS）",
-          "time": "9月6日 15:31（收录）",
-          "summary": "OpenAI 应用研究主管鲍里斯·鲍尔 9 月 6 日在 X 平台表示，空间推理曾是人类大幅领先计算机的少数优势之一…",
-          "aihot": "https://aihot.virxact.com/items/cmtphtttc01phroxxkv644l82",
-          "original": "https://www.ithome.com/0/998/935.htm",
-          "score": 53
-        },
-        {
-          "num": 22,
-          "section": "tips",
-          "title": "GPT-6 Astra 与 Claude Fable 5/5.1 机械臂操作对比实测：碗任务 19/20 完成但拼图任务同样卡住",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月6日 13:02（收录）",
-          "summary": "同一站点延续此前对 Claude Fable 5 和 Fable 5.1 的对比，让 OpenAI 的 GPT-6 A…",
-          "aihot": "https://aihot.virxact.com/items/cmtpcipaq0dlprobl3s3gdqqc",
-          "original": "https://openai.robocurve.org/gpt-6-astra",
-          "score": 69
-        },
-        {
-          "num": 24,
-          "section": "tips",
-          "title": "GPT-6 Astra 地狱难度建筑测试：13 小时 5 项任务得 60 分",
-          "source": "X：ZHO (@ZHO_ZHO_ZHO)",
-          "time": "9月6日 11:39（收录）",
-          "summary": "一场耗时 13 小时的 GPT-6 Astra 地狱难度建筑专业任务测试总结，5 项任务总得分 60/100（及格线）…",
-          "aihot": "https://aihot.virxact.com/items/cmtp9jle40avzrobl18f8h7bh",
-          "original": "https://x.com/ZHO_ZHO_ZHO/status/2096440695146020916",
-          "score": 51
-        },
-        {
-          "num": 25,
-          "section": "tips",
-          "title": "AYi 评 Astra 实测 V8 引擎演示：知识交付从图纸变为可交互数字实体",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月6日 11:39（收录）",
-          "summary": "AYi 评述 DilumSanjaya 的 Astra 实测视频：这台 V8 演示包含 90 度交叉平面曲轴、1-8-…",
-          "aihot": "https://aihot.virxact.com/items/cmtp9jldu0avyrobl7yra514a",
-          "original": "https://x.com/AYi_AInotes/status/2096441703632863646",
-          "score": 51
-        },
-        {
-          "num": 27,
-          "section": "tips",
-          "title": "Bryan Cantrill 谈读者的反抗：LLM 代写正让读者弃读作者",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月6日 10:32（收录）",
-          "summary": "Bryan Cantrill 撰文批评用 LLM 代写公开文章的现象，引用 Cynthia Dunlop 对 668…",
-          "aihot": "https://aihot.virxact.com/items/cmtp75qv408omroblrlr0e0gr",
-          "original": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader",
-          "score": 59
-        },
-        {
-          "num": 31,
-          "section": "tips",
-          "title": "Sapient 回应 OpenAI Astra 带火循环架构：HRM-Text 已开源，约 1000 美元算力即可从零预训练",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月6日 08:40（收录）",
-          "summary": "Rohan Paul 转发 Sapient 的回应称，Sapient 于 2025 年 6 月提出 Hierarchi…",
-          "aihot": "https://aihot.virxact.com/items/cmtp350wa0528robleyezpyhj",
-          "original": "https://x.com/rohanpaul_ai/status/2096397706235420789",
-          "score": 54
-        },
-        {
-          "num": 33,
-          "section": "tips",
-          "title": "Simon Willison 实测 GPT-6 Astra 开发者版本",
-          "source": "Simon Willison 博客",
-          "time": "9月6日 08:30（收录）",
-          "summary": "Simon Willison 分享对面向开发者的 GPT-6 Astra 的试用印象：Astra 在细节把握、理解用户…",
-          "aihot": "https://aihot.virxact.com/items/cmtp2s2jo04mhrobl17rmtylj",
-          "original": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers",
-          "score": 60
-        },
-        {
-          "num": 34,
-          "section": "tips",
-          "title": "BestBlogs 早报 09-06：蚂蚁数科 Harness 验收、Uber 智能体成本治理与 UrbanGround 长程评测",
-          "source": "X：洪明 (@hongming731)",
-          "time": "9月6日 08:09（收录）",
-          "summary": "BestBlogs 早报 09-06 精讲三篇工程实践：蚂蚁数科魏长征在 AICon 分享 Harness 验收闭环…",
-          "aihot": "https://aihot.virxact.com/items/cmtp21idf043aroblzbx682de",
-          "original": "https://x.com/hongming731/status/2096389047900082595",
-          "score": 54
-        },
-        {
-          "num": 40,
-          "section": "tips",
-          "title": "三名徒步者依赖 Google Gemini 规划登山后被困 Mount Shasta 获救",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月6日 04:02（收录）",
-          "summary": "三名徒步者用 Google Gemini 规划行程后在加州 Mount Shasta 被救，Siskiyou 县警长办…",
-          "aihot": "https://aihot.virxact.com/items/cmtot7yj801cvrobs82tm6oq4",
-          "original": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning",
-          "score": 53
-        },
-        {
-          "num": 42,
-          "section": "tips",
-          "title": "Claude Code 创造者 Boris Cherny 谈企业 AI 提效为何不及预期",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月6日 03:40（收录）",
-          "summary": "Claude Code 创造者 Boris Cherny 解释了许多公司把 AI 融入工作流却未获得大幅生产率提升的原…",
-          "aihot": "https://aihot.virxact.com/items/cmtosf8xk02ggrooo6lrx1fgh",
-          "original": "https://x.com/rohanpaul_ai/status/2096321310259585428",
-          "score": 52
-        },
-        {
-          "num": 44,
+          "num": 29,
           "section": "tips",
           "title": "GPT-6 Astra （Max） 登顶 Code Arena： WebDev，1797 分领先 Claude Fable 5.1 （Max） 35 分",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -876,51 +661,29 @@ const DATA = {
           "score": 71
         },
         {
-          "num": 45,
+          "num": 16,
           "section": "tips",
-          "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月6日 02:40（收录）",
-          "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境…",
-          "aihot": "https://aihot.virxact.com/items/cmtoqa3i1022iro4mjh3iogk8",
-          "original": "https://x.com/rohanpaul_ai/status/2096303922378088854",
-          "score": 83
+          "title": "GPT-6 Astra 与 Claude Fable 5/5.1 机械臂操作对比实测：碗任务 19/20 完成但拼图任务同样卡住",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月6日 13:02（收录）",
+          "summary": "同一站点延续此前对 Claude Fable 5 和 Fable 5.1 的对比，让 OpenAI 的 GPT-6 A…",
+          "aihot": "https://aihot.virxact.com/items/cmtpcipaq0dlprobl3s3gdqqc",
+          "original": "https://openai.robocurve.org/gpt-6-astra",
+          "score": 69
         },
         {
-          "num": 46,
+          "num": 2,
           "section": "tips",
-          "title": "Artificial Analysis 发布 Intelligence Index v4.2，GPT-6 Astra 评分争议后调整基准",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月6日 02:33（收录）",
-          "summary": "Artificial Analysis 发布 Intelligence Index v4.2，此前其对 GPT-6 A…",
-          "aihot": "https://aihot.virxact.com/items/cmtoq0vdm01urro4mn9pi0gvn",
-          "original": "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism",
-          "score": 58
+          "title": "微软提出无计量智能战略，推动 AI 在 Windows PC 本地运行",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 19:31（收录）",
+          "summary": "据 Windows Latest 报道，微软在 IFA 2026 上由 Windows 与设备部门企业副总裁 Mark…",
+          "aihot": "https://aihot.virxact.com/items/cmtpqej6201t2rokz04m7ae3q",
+          "original": "https://www.ithome.com/0/999/014.htm",
+          "score": 64
         },
         {
-          "num": 50,
-          "section": "tips",
-          "title": "Yuchen Jin 评价 GPT-6 Astra 被称 AGI 与代际跃升的原因",
-          "source": "X：Yuchen Jin (@Yuchenj_UW)",
-          "time": "9月6日 01:34（收录）",
-          "summary": "Yuchen Jin 称 GPT-6 Astra 修复了 GPT 最大的短板之一前端能力，在设计和一次性生成游戏、工具…",
-          "aihot": "https://aihot.virxact.com/items/cmtonxokd05azrocx3p9mn2ec",
-          "original": "https://x.com/Yuchenj_UW/status/2096283823386575049",
-          "score": 56
-        },
-        {
-          "num": 52,
-          "section": "tips",
-          "title": "GPT-6 Astra 地狱难度测试总结：5 项专业任务总得 60/100，消耗 2.1 亿 token",
-          "source": "X：ZHO (@ZHO_ZHO_ZHO)",
-          "time": "9月6日 01:09（收录）",
-          "summary": "Zho 用 GPT-6 Astra 跑了超过 12 小时的地狱难度测试，输入为单张建筑照片加提示词，5 项任务总得分…",
-          "aihot": "https://aihot.virxact.com/items/cmton1g0004j2rocxm1ytq4n0",
-          "original": "https://x.com/ZHO_ZHO_ZHO/status/2096278274842448221",
-          "score": 52
-        },
-        {
-          "num": 56,
+          "num": 38,
           "section": "tips",
           "title": "François Chollet 向法语读者推介 Le Point 关于 OpenAI 新模型 ARC-AGI-3 表现的解读",
           "source": "X：Francois Chollet (@fchollet)",
@@ -931,15 +694,37 @@ const DATA = {
           "score": 64
         },
         {
-          "num": 57,
+          "num": 24,
           "section": "tips",
-          "title": "Simon Willison 演示如何在 macOS 上用 coding agent 驱动 Blender 渲染",
+          "title": "Simon Willison 实测 GPT-6 Astra 开发者版本",
           "source": "Simon Willison 博客",
-          "time": "9月6日 00:30（收录）",
-          "summary": "Simon Willison 分享在 Mac 上用 ChatGPT Codex 搭配 Blender 的玩法：从 bl…",
-          "aihot": "https://aihot.virxact.com/items/cmtolmpa90366rocxyp9ln2tz",
-          "original": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos",
-          "score": 58
+          "time": "9月6日 08:30（收录）",
+          "summary": "Simon Willison 分享对面向开发者的 GPT-6 Astra 的试用印象：Astra 在细节把握、理解用户…",
+          "aihot": "https://aihot.virxact.com/items/cmtp2s2jo04mhrobl17rmtylj",
+          "original": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers",
+          "score": 60
+        },
+        {
+          "num": 10,
+          "section": "tips",
+          "title": "AI 短剧制作价格大跳水，每分钟报价从 5000 元跌至几百元",
+          "source": "IT之家（RSS）",
+          "time": "9月6日 16:31（收录）",
+          "summary": "据央视财经报道，AI 短剧技术门槛下降、从业者涌入，制作报价从每分钟 5000 元跌至几百元，逼近成本线，但定制短剧仍…",
+          "aihot": "https://aihot.virxact.com/items/cmtpjyz2h01cgro473tn87503",
+          "original": "https://www.ithome.com/0/998/943.htm",
+          "score": 59
+        },
+        {
+          "num": 19,
+          "section": "tips",
+          "title": "Bryan Cantrill 谈读者的反抗：LLM 代写正让读者弃读作者",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月6日 10:32（收录）",
+          "summary": "Bryan Cantrill 撰文批评用 LLM 代写公开文章的现象，引用 Cynthia Dunlop 对 668…",
+          "aihot": "https://aihot.virxact.com/items/cmtp75qv408omroblrlr0e0gr",
+          "original": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader",
+          "score": 59
         }
       ]
     }
@@ -1089,7 +874,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1195,12 +979,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1217,16 +999,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

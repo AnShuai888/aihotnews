@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-10-18",
     "heroDate": "2026年10月18日 周日",
-    "total": 50,
+    "total": 40,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年10月18日 19:47（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,18 +277,18 @@ const DATA = {
       "count": 5,
       "cards": [
         {
-          "num": 30,
+          "num": 33,
           "section": "models",
-          "title": "果蝇大脑接入Odyssey-3世界模型",
-          "source": "X：Odyssey (@odysseyml)",
-          "time": "10月18日 07:05（收录）",
-          "summary": "我们把果蝇大脑放进了Odyssey-3，一个前沿世界模型。 这个小家伙现在完全靠自己，在完全由想象生成的模拟世界里飞来…",
-          "aihot": "https://aihot.news/items/lrhqb57bpg7ew5qeh5ewzdca1",
-          "original": "https://x.com/odysseyml/status/2111589148146749616",
-          "score": 39
+          "title": "Yuchen Jin 称 DeepSeek-V4.1-Flash-1017 以 1/83 成本达到 Opus 5 级编码表现",
+          "source": "X：Yuchen Jin (@Yuchenj_UW)",
+          "time": "10月18日 01:48（收录）",
+          "summary": "作者表示开源模型永远追不上闭源的观点没撑过一周，DeepSeek-V4.1-Flash-1017 在 DeepSWE…",
+          "aihot": "https://aihot.news/items/bvh07bfwx5x7ktp10eb0wv3n1",
+          "original": "https://x.com/Yuchenj_UW/status/2111510402140197252",
+          "score": 54
         },
         {
-          "num": 33,
+          "num": 26,
           "section": "models",
           "title": "Kyutai 发布 REKI：2.4B 视觉-语言-动作模型，为机器人操作带来高效记忆",
           "source": "MarkTechPost（RSS）",
@@ -305,7 +299,7 @@ const DATA = {
           "score": 44
         },
         {
-          "num": 37,
+          "num": 28,
           "section": "models",
           "title": "Perplexity Decider Flash 可端侧运行",
           "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
@@ -316,7 +310,18 @@ const DATA = {
           "score": 40
         },
         {
-          "num": 38,
+          "num": 24,
+          "section": "models",
+          "title": "果蝇大脑接入Odyssey-3世界模型",
+          "source": "X：Odyssey (@odysseyml)",
+          "time": "10月18日 07:05（收录）",
+          "summary": "我们把果蝇大脑放进了Odyssey-3，一个前沿世界模型。 这个小家伙现在完全靠自己，在完全由想象生成的模拟世界里飞来…",
+          "aihot": "https://aihot.news/items/lrhqb57bpg7ew5qeh5ewzdca1",
+          "original": "https://x.com/odysseyml/status/2111589148146749616",
+          "score": 39
+        },
+        {
+          "num": 29,
           "section": "models",
           "title": "Cohere称Embed 5 Fast优于EmbeddingGemma 2",
           "source": "X：Cohere（@cohere）",
@@ -325,17 +330,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/gp98wqr3twdw0r8xgk2g0dunp",
           "original": "https://x.com/cohere/status/2111544722535645187",
           "score": 27
-        },
-        {
-          "num": 42,
-          "section": "models",
-          "title": "Yuchen Jin 称 DeepSeek-V4.1-Flash-1017 以 1/83 成本达到 Opus 5 级编码表现",
-          "source": "X：Yuchen Jin (@Yuchenj_UW)",
-          "time": "10月18日 01:48（收录）",
-          "summary": "作者表示开源模型永远追不上闭源的观点没撑过一周，DeepSeek-V4.1-Flash-1017 在 DeepSWE…",
-          "aihot": "https://aihot.news/items/bvh07bfwx5x7ktp10eb0wv3n1",
-          "original": "https://x.com/Yuchenj_UW/status/2111510402140197252",
-          "score": 54
         }
       ]
     },
@@ -346,7 +340,7 @@ const DATA = {
       "count": 9,
       "cards": [
         {
-          "num": 4,
+          "num": 2,
           "section": "products",
           "title": "Google 开源递归式 Agent Harnessing 框架 Harness²",
           "source": "MarkTechPost（RSS）",
@@ -357,7 +351,18 @@ const DATA = {
           "score": 68
         },
         {
-          "num": 18,
+          "num": 17,
+          "section": "products",
+          "title": "Elon Musk 转发 Grok Bot 大规模升级，任务速度提升 3 倍",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "10月18日 10:35（收录）",
+          "summary": "Elon Musk 转发 @melvindvivas 的帖子，称 Grok Bot 获得大规模升级。更新包括计算机任务…",
+          "aihot": "https://aihot.news/items/ecjmjz71xs2nwh7kj2jlicgcp",
+          "original": "https://x.com/elonmusk/status/2111642949071364231",
+          "score": 56
+        },
+        {
+          "num": 13,
           "section": "products",
           "title": "Voxel51 3.0 发布：面向 Physical AI 的统一多模态数据平台",
           "source": "MarkTechPost（RSS）",
@@ -368,7 +373,18 @@ const DATA = {
           "score": 53
         },
         {
-          "num": 20,
+          "num": 36,
+          "section": "products",
+          "title": "Bolt 周末免费开放 GLM 5.3 Flash",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月18日 00:44（收录）",
+          "summary": "对任何还有未完成应用的人来说，时机正好。 Bolt 本周末将把 GLM 5.3 Flash 加入每个账户的模型选择器…",
+          "aihot": "https://aihot.news/items/vr8fu5wpsfcvsufwjs0707ui8",
+          "original": "https://x.com/rohanpaul_ai/status/2111498576232882225",
+          "score": 37
+        },
+        {
+          "num": 15,
           "section": "products",
           "title": "WorkBuddy 国际版限免 DeepSeek-V4.1-Flash-1017",
           "source": "X：邵猛 (@shao__meng)",
@@ -381,28 +397,6 @@ const DATA = {
         {
           "num": 21,
           "section": "products",
-          "title": "Simon Willison 发布 web-edit 0.1a2，新增文本与图片复制到剪贴板",
-          "source": "Simon Willison 博客",
-          "time": "10月18日 11:14（收录）",
-          "summary": "Simon Willison 发布 web-edit 0.1a2，这款小型 Web 应用用于浏览和编辑文件夹中的文件…",
-          "aihot": "https://aihot.news/items/i3d5n0qjfmgcibm3tt1lq5hur",
-          "original": "https://simonwillison.net/2026/Oct/17/web-edit/",
-          "score": 26
-        },
-        {
-          "num": 22,
-          "section": "products",
-          "title": "Elon Musk 转发 Grok Bot 大规模升级，任务速度提升 3 倍",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "time": "10月18日 10:35（收录）",
-          "summary": "Elon Musk 转发 @melvindvivas 的帖子，称 Grok Bot 获得大规模升级。更新包括计算机任务…",
-          "aihot": "https://aihot.news/items/ecjmjz71xs2nwh7kj2jlicgcp",
-          "original": "https://x.com/elonmusk/status/2111642949071364231",
-          "score": 56
-        },
-        {
-          "num": 27,
-          "section": "products",
           "title": "联想 AI 主机 P7 将于 1024 开启预约：此芯 P1 SoC + 后摩 M50 dNPU，190TOPS 算力",
           "source": "IT之家·人工智能",
           "time": "10月18日 08:50（收录）",
@@ -412,29 +406,18 @@ const DATA = {
           "score": 31
         },
         {
-          "num": 46,
+          "num": 16,
           "section": "products",
-          "title": "Bolt 周末免费开放 GLM 5.3 Flash",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "10月18日 00:44（收录）",
-          "summary": "对任何还有未完成应用的人来说，时机正好。 Bolt 本周末将把 GLM 5.3 Flash 加入每个账户的模型选择器…",
-          "aihot": "https://aihot.news/items/vr8fu5wpsfcvsufwjs0707ui8",
-          "original": "https://x.com/rohanpaul_ai/status/2111498576232882225",
-          "score": 37
+          "title": "Simon Willison 发布 web-edit 0.1a2，新增文本与图片复制到剪贴板",
+          "source": "Simon Willison 博客",
+          "time": "10月18日 11:14（收录）",
+          "summary": "Simon Willison 发布 web-edit 0.1a2，这款小型 Web 应用用于浏览和编辑文件夹中的文件…",
+          "aihot": "https://aihot.news/items/i3d5n0qjfmgcibm3tt1lq5hur",
+          "original": "https://simonwillison.net/2026/Oct/17/web-edit/",
+          "score": 26
         },
         {
-          "num": 47,
-          "section": "products",
-          "title": "OpenAI 今日太平洋时间下班前重置用量限制",
-          "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
-          "time": "10月18日 00:44（收录）",
-          "summary": "今天太平洋时间下班前重置落地！尽情享用！！",
-          "aihot": "https://aihot.news/items/zu56fvwrnyjd7xkscu2epuh3z",
-          "original": "https://x.com/reach_vb/status/2111497018732613710",
-          "score": 20
-        },
-        {
-          "num": 50,
+          "num": 40,
           "section": "products",
           "title": "Waymo 无障碍功能保障视障乘客出行",
           "source": "X：Waymo (@Waymo)",
@@ -443,6 +426,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/ny3i0jug3jy10v41wsx86c78w",
           "original": "https://x.com/Waymo/status/2111487403256951257",
           "score": 25
+        },
+        {
+          "num": 37,
+          "section": "products",
+          "title": "OpenAI 今日太平洋时间下班前重置用量限制",
+          "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
+          "time": "10月18日 00:44（收录）",
+          "summary": "今天太平洋时间下班前重置落地！尽情享用！！",
+          "aihot": "https://aihot.news/items/zu56fvwrnyjd7xkscu2epuh3z",
+          "original": "https://x.com/reach_vb/status/2111497018732613710",
+          "score": 20
         }
       ]
     },
@@ -450,109 +444,10 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 20,
+      "count": 10,
       "cards": [
         {
-          "num": 1,
-          "section": "industry",
-          "title": "世界银行敦促发展中国家开发小型 AI 模型",
-          "source": "IT之家·人工智能",
-          "time": "10月18日 19:29（收录）",
-          "summary": "世界银行正敦促发展中国家开发可在手机等设备端侧运行的小型 AI 模型，以帮助网络条件较差的地区发挥 AI 潜力。首席知…",
-          "aihot": "https://aihot.news/items/wch0f4ltm6ihe5gv8key4ew1f",
-          "original": "https://www.ithome.com/1/014/577.htm",
-          "score": 46
-        },
-        {
-          "num": 2,
-          "section": "industry",
-          "title": "微软终止与 Nscale 数据中心合作，后者数十亿美元上市计划受挫",
-          "source": "IT之家·人工智能",
-          "time": "10月18日 18:50（收录）",
-          "summary": "据《每日电讯报》报道，微软终止了与英国数据中心企业 Nscale 在埃塞克斯郡劳顿的数据中心项目，Nscale 价值数…",
-          "aihot": "https://aihot.news/items/zdr1iocr9utx4dpu6qqhfj6r6",
-          "original": "https://www.ithome.com/1/014/574.htm",
-          "score": 57
-        },
-        {
-          "num": 6,
-          "section": "industry",
-          "title": "Anthropic 咨询律所，为 AI 智能体谈判制定公平规范",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月18日 17:47（收录）",
-          "summary": "Anthropic 正与律所合作，为替用户议价、处理投诉和优化合同条款的 AI 智能体制定公平谈判规范。实验显示更强模…",
-          "aihot": "https://aihot.news/items/k0klvt2lx8ni3udq522l02v71",
-          "original": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/",
-          "score": 49
-        },
-        {
-          "num": 7,
-          "section": "industry",
-          "title": "Anthropic 员工调查：59% 称 AI 把适合任务耗时压缩到四分之一",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "10月18日 17:15（收录）",
-          "summary": "Rohan Paul 转引调查显示，59% 的 Anthropic 员工称 AI 已把适合任务的耗时压缩到原来的四分之…",
-          "aihot": "https://aihot.news/items/pxejkapnxmlb0xx6x2yncjnbx",
-          "original": "https://x.com/rohanpaul_ai/status/2111744320982425948",
-          "score": 60
-        },
-        {
-          "num": 9,
-          "section": "industry",
-          "title": "Anthropic 与律所商讨 AI 智能体谈判规范：可替用户砍价、处理纠纷或谈薪资",
-          "source": "IT之家·人工智能",
-          "time": "10月18日 16:30（收录）",
-          "summary": "据《金融时报》报道，Anthropic 正与律所等法律机构磋商，研究 AI 智能体应如何为用户谈判，例如替用户砍价、处…",
-          "aihot": "https://aihot.news/items/mntinpkf9mgxg8499y7rotuub",
-          "original": "https://www.ithome.com/1/014/519.htm",
-          "score": 52
-        },
-        {
-          "num": 10,
-          "section": "industry",
-          "title": "OpenAI API 现三个 aurora 模型引用",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "10月18日 16:13（收录）",
-          "summary": "OPENAI 🔥：最近在 API 上发现了 3 个新的模型引用。 - aurora-red-alpha - auror…",
-          "aihot": "https://aihot.news/items/bhawxaabotw0ecxenp7uujfbo",
-          "original": "https://x.com/testingcatalog/status/2111724606927028578",
-          "score": 24
-        },
-        {
-          "num": 17,
-          "section": "industry",
-          "title": "Anthropic 初级技术员工占比从 21% 降至 14%，公司规模同期增至三倍",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "10月18日 14:00（收录）",
-          "summary": "Anthropic 初级技术员工占比自 2025 年初以来从 21% 降至 14%，初级技术招聘比例从 27% 降至…",
-          "aihot": "https://aihot.news/items/nofq14yuyhmcuglejw2n4dtqi",
-          "original": "https://x.com/rohanpaul_ai/status/2111698696337514705",
-          "score": 63
-        },
-        {
-          "num": 23,
-          "section": "industry",
-          "title": "我国首个全国产十万卡 AI 超集群曙光 8000 真机亮相",
-          "source": "IT之家·人工智能",
-          "time": "10月18日 10:30（收录）",
-          "summary": "据央视新闻报道，我国首个全国产十万卡 AI 超集群曙光 8000 真机在 2026 全国高性能计算学术大会上亮相，并将…",
-          "aihot": "https://aihot.news/items/v5eu5y82xm0p72lcmumgbzis4",
-          "original": "https://www.ithome.com/1/014/456.htm",
-          "score": 59
-        },
-        {
-          "num": 25,
-          "section": "industry",
-          "title": "Anthropic 报告：初级技术岗招聘收缩，员工转向管理多个 Claude 实例",
-          "source": "IT之家·人工智能",
-          "time": "10月18日 09:50（收录）",
-          "summary": "Anthropic 于当地时间周五发布报告，指过去一年公司用工结构因 AI 发生明显变化。自 2025 年初以来，技术…",
-          "aihot": "https://aihot.news/items/hfl3pizpfxfhwv0p6ktjxktw7",
-          "original": "https://www.ithome.com/1/014/450.htm",
-          "score": 70
-        },
-        {
-          "num": 26,
+          "num": 20,
           "section": "industry",
           "title": "OpenCode 遭蒸馏攻击：1.4% Console 用户 API 密钥可能外泄",
           "source": "IT之家·人工智能",
@@ -563,95 +458,18 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 28,
+          "num": 19,
           "section": "industry",
-          "title": "Meta 删除商业服务条款中“用于训练 AI”相关表述",
+          "title": "Anthropic 报告：初级技术岗招聘收缩，员工转向管理多个 Claude 实例",
           "source": "IT之家·人工智能",
-          "time": "10月18日 08:30（收录）",
-          "summary": "Meta 更新商业服务条款中关于可使用企业账户域名内容训练产品服务的表述引发争议后，现已正式删除该条款。法律专家曾指出…",
-          "aihot": "https://aihot.news/items/ldxe9lobhx20mp543ffkmqpxy",
-          "original": "https://www.ithome.com/1/014/429.htm",
-          "score": 60
-        },
-        {
-          "num": 31,
-          "section": "industry",
-          "title": "Meta 删去引发抓取与 AI 训练争议的商业条款措辞",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月18日 06:28（收录）",
-          "summary": "据 The Verge 报道，Meta 已删去商业使用条款中允许将商业账户域名内容用于训练其产品与 AI 模型的表述…",
-          "aihot": "https://aihot.news/items/zszbrck8uah51k6qsw99yhyzd",
-          "original": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-          "score": 57
+          "time": "10月18日 09:50（收录）",
+          "summary": "Anthropic 于当地时间周五发布报告，指过去一年公司用工结构因 AI 发生明显变化。自 2025 年初以来，技术…",
+          "aihot": "https://aihot.news/items/hfl3pizpfxfhwv0p6ktjxktw7",
+          "original": "https://www.ithome.com/1/014/450.htm",
+          "score": 70
         },
         {
           "num": 32,
-          "section": "industry",
-          "title": "NVIDIA RTX Spark 笔记本开售，起价 $2,399 并在全球多地举办庆祝活动",
-          "source": "NVIDIA Blog（RSS）",
-          "time": "10月18日 05:55（收录）",
-          "summary": "NVIDIA RTX Spark 笔记本正式上市，搭载 Blackwell RTX GPU 与 Grace CPU 的…",
-          "aihot": "https://aihot.news/items/p4onrft3oltqqk5e5xv21khvc",
-          "original": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
-          "score": 63
-        },
-        {
-          "num": 34,
-          "section": "industry",
-          "title": "Anthropic 报告称内部团队更资深、会议时间增加",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月18日 05:25（收录）",
-          "summary": "Anthropic 周五发布报告，介绍其围绕 Claude 重塑工作流后公司内部的变化。技术部门初级员工占比从 21%…",
-          "aihot": "https://aihot.news/items/t9kbnkk2r3i67tnmv578wqon8",
-          "original": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-          "score": 60
-        },
-        {
-          "num": 35,
-          "section": "industry",
-          "title": "Anthropic 就 OpenCode 安全泄露事件撤销受影响的 Claude API 密钥",
-          "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-          "time": "10月18日 05:10（收录）",
-          "summary": "Anthropic 的 Lydia Hallie 表示团队正与 OpenCode 协作处理前一日发生的安全泄露，已撤销…",
-          "aihot": "https://aihot.news/items/l77k5lljwa77u0w19gsgesqq0",
-          "original": "https://x.com/lydiahallie/status/2111563956666110287",
-          "score": 60
-        },
-        {
-          "num": 36,
-          "section": "industry",
-          "title": "Nathan Lambert 质疑 OpenCode 事件中蒸馏一词被滥用",
-          "source": "X：Nathan Lambert (@natolambert)",
-          "time": "10月18日 04:40（收录）",
-          "summary": "OpenCode 通报遭大规模蒸馏攻击，1.4% 的 Console 用户受影响，已邮件通知并与 Anthropic…",
-          "aihot": "https://aihot.news/items/uzg9o5b0me9km50ailo7avrqw",
-          "original": "https://x.com/natolambert/status/2111549984373911572",
-          "score": 61
-        },
-        {
-          "num": 39,
-          "section": "industry",
-          "title": "Replit CEO 称不再与 Anthropic 合作，改为默认使用 OpenAI",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月18日 03:26（收录）",
-          "summary": "Replit CEO Amjad Masad 在 TechCrunch Disrupt 上表示公司不再与 Anthro…",
-          "aihot": "https://aihot.news/items/l4367pr0mayrgs0f3fnki1pvb",
-          "original": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-          "score": 63
-        },
-        {
-          "num": 40,
-          "section": "industry",
-          "title": "OpenCode 官方通报大规模蒸馏攻击，1.4% Console 用户受影响",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "10月18日 03:22（收录）",
-          "summary": "OpenCode 发布官方声明称，前一晚发生大规模蒸馏攻击安全漏洞，影响 1.4% 的 OpenCode Consol…",
-          "aihot": "https://aihot.news/items/i06hfb4sg84wb8r2k15awogk3",
-          "original": "https://x.com/testingcatalog/status/2111536604351246541",
-          "score": 66
-        },
-        {
-          "num": 41,
           "section": "industry",
           "title": "Amazon 被曝用 AI 工具 Atlas 预测英国仓库工会风险",
           "source": "Hacker News：AI 热帖",
@@ -662,15 +480,81 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 43,
+          "num": 31,
           "section": "industry",
-          "title": "被控窃听会议室的 OpenAI 工程师 Alfozan 称赴沙特单程票在调查前已购买",
+          "title": "OpenCode 官方通报大规模蒸馏攻击，1.4% Console 用户受影响",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "time": "10月18日 03:22（收录）",
+          "summary": "OpenCode 发布官方声明称，前一晚发生大规模蒸馏攻击安全漏洞，影响 1.4% 的 OpenCode Consol…",
+          "aihot": "https://aihot.news/items/i06hfb4sg84wb8r2k15awogk3",
+          "original": "https://x.com/testingcatalog/status/2111536604351246541",
+          "score": 66
+        },
+        {
+          "num": 12,
+          "section": "industry",
+          "title": "Anthropic 初级技术员工占比从 21% 降至 14%，公司规模同期增至三倍",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "10月18日 01:15（收录）",
-          "summary": "Bloomberg 报道，被控在会议室安装窃听设备的 OpenAI 工程师 Abdulrahman Alfozan 申…",
-          "aihot": "https://aihot.news/items/uwoxcnx07tyjhx3o4nz6qzd2u",
-          "original": "https://x.com/rohanpaul_ai/status/2111501592520478822",
-          "score": 52
+          "time": "10月18日 14:00（收录）",
+          "summary": "Anthropic 初级技术员工占比自 2025 年初以来从 21% 降至 14%，初级技术招聘比例从 27% 降至…",
+          "aihot": "https://aihot.news/items/nofq14yuyhmcuglejw2n4dtqi",
+          "original": "https://x.com/rohanpaul_ai/status/2111698696337514705",
+          "score": 63
+        },
+        {
+          "num": 25,
+          "section": "industry",
+          "title": "NVIDIA RTX Spark 笔记本开售，起价 $2,399 并在全球多地举办庆祝活动",
+          "source": "NVIDIA Blog（RSS）",
+          "time": "10月18日 05:55（收录）",
+          "summary": "NVIDIA RTX Spark 笔记本正式上市，搭载 Blackwell RTX GPU 与 Grace CPU 的…",
+          "aihot": "https://aihot.news/items/p4onrft3oltqqk5e5xv21khvc",
+          "original": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+          "score": 63
+        },
+        {
+          "num": 30,
+          "section": "industry",
+          "title": "Replit CEO 称不再与 Anthropic 合作，改为默认使用 OpenAI",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月18日 03:26（收录）",
+          "summary": "Replit CEO Amjad Masad 在 TechCrunch Disrupt 上表示公司不再与 Anthro…",
+          "aihot": "https://aihot.news/items/l4367pr0mayrgs0f3fnki1pvb",
+          "original": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+          "score": 63
+        },
+        {
+          "num": 27,
+          "section": "industry",
+          "title": "Nathan Lambert 质疑 OpenCode 事件中蒸馏一词被滥用",
+          "source": "X：Nathan Lambert (@natolambert)",
+          "time": "10月18日 04:40（收录）",
+          "summary": "OpenCode 通报遭大规模蒸馏攻击，1.4% 的 Console 用户受影响，已邮件通知并与 Anthropic…",
+          "aihot": "https://aihot.news/items/uzg9o5b0me9km50ailo7avrqw",
+          "original": "https://x.com/natolambert/status/2111549984373911572",
+          "score": 61
+        },
+        {
+          "num": 4,
+          "section": "industry",
+          "title": "Anthropic 员工调查：59% 称 AI 把适合任务耗时压缩到四分之一",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月18日 17:15（收录）",
+          "summary": "Rohan Paul 转引调查显示，59% 的 Anthropic 员工称 AI 已把适合任务的耗时压缩到原来的四分之…",
+          "aihot": "https://aihot.news/items/pxejkapnxmlb0xx6x2yncjnbx",
+          "original": "https://x.com/rohanpaul_ai/status/2111744320982425948",
+          "score": 60
+        },
+        {
+          "num": 22,
+          "section": "industry",
+          "title": "Meta 删除商业服务条款中“用于训练 AI”相关表述",
+          "source": "IT之家·人工智能",
+          "time": "10月18日 08:30（收录）",
+          "summary": "Meta 更新商业服务条款中关于可使用企业账户域名内容训练产品服务的表述引发争议后，现已正式删除该条款。法律专家曾指出…",
+          "aihot": "https://aihot.news/items/ldxe9lobhx20mp543ffkmqpxy",
+          "original": "https://www.ithome.com/1/014/429.htm",
+          "score": 60
         }
       ]
     },
@@ -681,7 +565,29 @@ const DATA = {
       "count": 8,
       "cards": [
         {
-          "num": 5,
+          "num": 38,
+          "section": "papers",
+          "title": "OpenAI 报告多起模型自主绕过安全边界案例，含下载 24 年医院数据事件",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月18日 00:32（收录）",
+          "summary": "OpenAI 发布四起新案例，报告其模型在训练或测试中自行绕过安全边界。一个模型在政府网站遭遇访问拒绝后，利用文件下载…",
+          "aihot": "https://aihot.news/items/l2ewugju2319dvmteh4vrnrnz",
+          "original": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
+          "score": 73
+        },
+        {
+          "num": 6,
+          "section": "papers",
+          "title": "Google Research 开源递归式智能体优化框架 Harness²",
+          "source": "X：邵猛 (@shao__meng)",
+          "time": "10月18日 16:13（收录）",
+          "summary": "Google Research 开源 Harness²，一个递归式智能体 Harness 优化框架，地址为 https…",
+          "aihot": "https://aihot.news/items/lvsc8m9jlqviaauhihhis35qa",
+          "original": "https://x.com/shao__meng/status/2111730826308452600",
+          "score": 66
+        },
+        {
+          "num": 3,
           "section": "papers",
           "title": "Taste-Bench 基准揭示 AI 智能体长期决策能力薄弱，最佳模型仅得 59.7%",
           "source": "The Decoder：AI News（RSS）",
@@ -692,7 +598,7 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 8,
+          "num": 5,
           "section": "papers",
           "title": "六款 AI 智能体追讨 465 美元退款实验：编造借口、泄露隐私、轰炸议员办公室，全部失败",
           "source": "The Decoder：AI News（RSS）",
@@ -705,16 +611,16 @@ const DATA = {
         {
           "num": 11,
           "section": "papers",
-          "title": "Google Research 开源递归式智能体优化框架 Harness²",
-          "source": "X：邵猛 (@shao__meng)",
-          "time": "10月18日 16:13（收录）",
-          "summary": "Google Research 开源 Harness²，一个递归式智能体 Harness 优化框架，地址为 https…",
-          "aihot": "https://aihot.news/items/lvsc8m9jlqviaauhihhis35qa",
-          "original": "https://x.com/shao__meng/status/2111730826308452600",
-          "score": 66
+          "title": "FT：Anthropic 借鉴律师谈判伦理，为 Claude 智能体谈判制定规范",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "10月18日 14:00（收录）",
+          "summary": "据 FT 报道，Anthropic 希望把律师的谈判伦理规范植入将与其他智能体讨价还价、解决纠纷和协商薪酬的 Clau…",
+          "aihot": "https://aihot.news/items/yk0xjvg7sbtx5wlrh2r8mzsl3",
+          "original": "https://x.com/rohanpaul_ai/status/2111695161164259808",
+          "score": 59
         },
         {
-          "num": 13,
+          "num": 8,
           "section": "papers",
           "title": "Anthropic 研究报告：员工预期 AI 到 2030 年完成 75% 的本职工作，美国普通劳动者只预期 28%",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -725,7 +631,7 @@ const DATA = {
           "score": 52
         },
         {
-          "num": 15,
+          "num": 10,
           "section": "papers",
           "title": "Meta 论文提出 Agent Plasticity 衡量智能体从经验中学习的效率差异",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -736,18 +642,7 @@ const DATA = {
           "score": 51
         },
         {
-          "num": 16,
-          "section": "papers",
-          "title": "FT：Anthropic 借鉴律师谈判伦理，为 Claude 智能体谈判制定规范",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "10月18日 14:00（收录）",
-          "summary": "据 FT 报道，Anthropic 希望把律师的谈判伦理规范植入将与其他智能体讨价还价、解决纠纷和协商薪酬的 Clau…",
-          "aihot": "https://aihot.news/items/yk0xjvg7sbtx5wlrh2r8mzsl3",
-          "original": "https://x.com/rohanpaul_ai/status/2111695161164259808",
-          "score": 59
-        },
-        {
-          "num": 19,
+          "num": 14,
           "section": "papers",
           "title": "MIT 团队构建多模态 AI 模型，让大模型“看懂”晶体三维结构",
           "source": "MIT News（RSS）",
@@ -756,17 +651,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/lgansydvf3xrj8ajy2vt53ev2",
           "original": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
           "score": 42
-        },
-        {
-          "num": 48,
-          "section": "papers",
-          "title": "OpenAI 报告多起模型自主绕过安全边界案例，含下载 24 年医院数据事件",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月18日 00:32（收录）",
-          "summary": "OpenAI 发布四起新案例，报告其模型在训练或测试中自行绕过安全边界。一个模型在政府网站遭遇访问拒绝后，利用文件下载…",
-          "aihot": "https://aihot.news/items/l2ewugju2319dvmteh4vrnrnz",
-          "original": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
-          "score": 73
         }
       ]
     },
@@ -777,18 +661,7 @@ const DATA = {
       "count": 8,
       "cards": [
         {
-          "num": 3,
-          "section": "tips",
-          "title": "用 Codex 半小时自建打字游戏替代 128 元 App",
-          "source": "X：邵猛 (@shao__meng)",
-          "time": "10月18日 18:17（收录）",
-          "summary": "邵猛用 Codex 输入需求、跑一个 Goal，20 分钟做好打字游戏并部署到 ChatGPT Sites，随后加入实…",
-          "aihot": "https://aihot.news/items/gxhx9id2mvfqei6uir3evj3lx",
-          "original": "https://x.com/shao__meng/status/2111759325379121593",
-          "score": 35
-        },
-        {
-          "num": 12,
+          "num": 7,
           "section": "tips",
           "title": "NVIDIA Structured Data Models 实测：零训练表格预测与多个默认行为陷阱",
           "source": "MarkTechPost（RSS）",
@@ -799,18 +672,7 @@ const DATA = {
           "score": 69
         },
         {
-          "num": 14,
-          "section": "tips",
-          "title": "Fable 5.1 将博尔赫斯短篇做成 3D",
-          "source": "X：Ethan Mollick (@emollick)",
-          "time": "10月18日 14:30（收录）",
-          "summary": "Fable 5.1：“把博尔赫斯的短篇小说实现出来。比如用 3D 实现。去做吧，让它们有创意、漂亮，帮我们理解故事的重…",
-          "aihot": "https://aihot.news/items/d6dq3yet9he6as49w4qichoje",
-          "original": "https://x.com/emollick/status/2111700285814940159",
-          "score": 46
-        },
-        {
-          "num": 24,
+          "num": 18,
           "section": "tips",
           "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
           "source": "X：卡兹克 (@Khazix0918)",
@@ -821,18 +683,7 @@ const DATA = {
           "score": 68
         },
         {
-          "num": 29,
-          "section": "tips",
-          "title": "OpenAI 社区周末项目搭建指南",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "10月18日 07:05（收录）",
-          "summary": "想找个周末项目做做？ 以下是社区一直在构建的东西，以及你可以如何自己复现： https://youcanjustbui…",
-          "aihot": "https://aihot.news/items/iedc91ifai5p6u9ir4ucmsqxz",
-          "original": "https://x.com/OpenAIDevs/status/2111585491237650691",
-          "score": 16
-        },
-        {
-          "num": 44,
+          "num": 34,
           "section": "tips",
           "title": "Anthropic 员工演示 Claude Code mods 拦截危险 shell 命令",
           "source": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
@@ -843,7 +694,40 @@ const DATA = {
           "score": 50
         },
         {
-          "num": 45,
+          "num": 9,
+          "section": "tips",
+          "title": "Fable 5.1 将博尔赫斯短篇做成 3D",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "10月18日 14:30（收录）",
+          "summary": "Fable 5.1：“把博尔赫斯的短篇小说实现出来。比如用 3D 实现。去做吧，让它们有创意、漂亮，帮我们理解故事的重…",
+          "aihot": "https://aihot.news/items/d6dq3yet9he6as49w4qichoje",
+          "original": "https://x.com/emollick/status/2111700285814940159",
+          "score": 46
+        },
+        {
+          "num": 39,
+          "section": "tips",
+          "title": "OpenRouter 推出 Scaledown 模型实战手册",
+          "source": "X：OpenRouter (@OpenRouter)",
+          "time": "10月18日 00:26（收录）",
+          "summary": "想找个周末项目？OpenRouter 新增两本 cookbook，围绕 @scaledown_team 的任务专用模型…",
+          "aihot": "https://aihot.news/items/cbdge1jrwgm0ww3ucmtoq53er",
+          "original": "https://x.com/OpenRouter/status/2111487458819145893",
+          "score": 40
+        },
+        {
+          "num": 1,
+          "section": "tips",
+          "title": "用 Codex 半小时自建打字游戏替代 128 元 App",
+          "source": "X：邵猛 (@shao__meng)",
+          "time": "10月18日 18:17（收录）",
+          "summary": "邵猛用 Codex 输入需求、跑一个 Goal，20 分钟做好打字游戏并部署到 ChatGPT Sites，随后加入实…",
+          "aihot": "https://aihot.news/items/gxhx9id2mvfqei6uir3evj3lx",
+          "original": "https://x.com/shao__meng/status/2111759325379121593",
+          "score": 35
+        },
+        {
+          "num": 35,
           "section": "tips",
           "title": "OpenAI员工用AI智能体处理税务",
           "source": "X：Tibo (@thsottiaux)",
@@ -854,15 +738,15 @@ const DATA = {
           "score": 35
         },
         {
-          "num": 49,
+          "num": 23,
           "section": "tips",
-          "title": "OpenRouter 推出 Scaledown 模型实战手册",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "time": "10月18日 00:26（收录）",
-          "summary": "想找个周末项目？OpenRouter 新增两本 cookbook，围绕 @scaledown_team 的任务专用模型…",
-          "aihot": "https://aihot.news/items/cbdge1jrwgm0ww3ucmtoq53er",
-          "original": "https://x.com/OpenRouter/status/2111487458819145893",
-          "score": 40
+          "title": "OpenAI 社区周末项目搭建指南",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
+          "time": "10月18日 07:05（收录）",
+          "summary": "想找个周末项目做做？ 以下是社区一直在构建的东西，以及你可以如何自己复现： https://youcanjustbui…",
+          "aihot": "https://aihot.news/items/iedc91ifai5p6u9ir4ucmsqxz",
+          "original": "https://x.com/OpenAIDevs/status/2111585491237650691",
+          "score": 16
         }
       ]
     }
@@ -1100,7 +984,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1206,12 +1089,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1228,16 +1109,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

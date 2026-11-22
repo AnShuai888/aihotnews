@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-11-08",
     "heroDate": "2026年11月8日 周日",
-    "total": 40,
+    "total": 31,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年11月09日 19:58（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,7 +277,7 @@ const DATA = {
       "count": 2,
       "cards": [
         {
-          "num": 19,
+          "num": 17,
           "section": "models",
           "title": "Nous Research 发布 Arete-27B，将 Qwen3.8-27B 宣传性回答从 22% 降到 0.9%",
           "source": "MarkTechPost（RSS）",
@@ -294,7 +288,7 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 32,
+          "num": 24,
           "section": "models",
           "title": "Cerebras 展示 Kimi K3.1 高速推理",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -313,18 +307,7 @@ const DATA = {
       "count": 2,
       "cards": [
         {
-          "num": 8,
-          "section": "products",
-          "title": "PixVerse 推出 Draw to Fly 功能",
-          "source": "X：PixVerse (@PixVerse)",
-          "time": "11月8日 20:58（收录）",
-          "summary": "在 PixVerse 上试试 Draw to Fly https://app.pixverse.ai/mini-app…",
-          "aihot": "https://aihot.news/items/p7d6evc6anlp0wkx0it56e8oo",
-          "original": "https://x.com/PixVerse/status/2119407129991987240",
-          "score": 41
-        },
-        {
-          "num": 12,
+          "num": 11,
           "section": "products",
           "title": "Google 开源 Elephant-Goldfish Model 插件，用无状态子智能体做规格先行代码评审",
           "source": "MarkTechPost（RSS）",
@@ -333,6 +316,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/eshqi132u2idu6zrt1hllwcd5",
           "original": "https://www.marktechpost.com/2026/11/08/google-elephant-goldfish-model-plugin-spec-review-coding-agents/",
           "score": 67
+        },
+        {
+          "num": 7,
+          "section": "products",
+          "title": "PixVerse 推出 Draw to Fly 功能",
+          "source": "X：PixVerse (@PixVerse)",
+          "time": "11月8日 20:58（收录）",
+          "summary": "在 PixVerse 上试试 Draw to Fly https://app.pixverse.ai/mini-app…",
+          "aihot": "https://aihot.news/items/p7d6evc6anlp0wkx0it56e8oo",
+          "original": "https://x.com/PixVerse/status/2119407129991987240",
+          "score": 41
         }
       ]
     },
@@ -340,175 +334,10 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 17,
+      "count": 10,
       "cards": [
         {
-          "num": 1,
-          "section": "industry",
-          "title": "蚂蚁集团灵光用户突破 2000 万，灵光 2.0 上线一周管理超 116 万项事务",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 23:10（收录）",
-          "summary": "蚂蚁集团旗下 AI 助手灵光宣布用户突破 2000 万，灵光 2.0 自 10 月 27 日上线以来一周内帮助用户管理…",
-          "aihot": "https://aihot.news/items/uhvixvqd097h0zqy1hscjeg4i",
-          "original": "https://www.ithome.com/1/024/010.htm",
-          "score": 54
-        },
-        {
-          "num": 6,
-          "section": "industry",
-          "title": "FT 报道 Anthropic 以 34 亿美元购入 1.7GW Caterpillar 燃气发电机",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 22:31（收录）",
-          "summary": "据 FT 报道，Anthropic 以 34 亿美元购入 1.7GW 的 Caterpillar 燃气发电机，是已知…",
-          "aihot": "https://aihot.news/items/fhtzzpeq9pxo021k0uk7s034p",
-          "original": "https://x.com/rohanpaul_ai/status/2119431232165683269",
-          "score": 74
-        },
-        {
-          "num": 9,
-          "section": "industry",
-          "title": "日本富士电视台宣布 2027 年起所有真人剧制作引入生成式 AI，可省七至八成特效工序",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 20:45（收录）",
-          "summary": "据日经亚洲报道，富士电视台计划从 2027 年 10 月起在所有真人电视剧制作中使用生成式 AI，成为日本首家全面引入…",
-          "aihot": "https://aihot.news/items/nrzp7pwdvg9p4pz9fqmw7pheo",
-          "original": "https://www.ithome.com/1/023/992.htm",
-          "score": 70
-        },
-        {
-          "num": 11,
-          "section": "industry",
-          "title": "Anthropic 拟以 34 亿美元采购 1.7GW 燃气发电机组，为 AI 公司迄今最大发电设备订单",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 20:03（收录）",
-          "summary": "据《金融时报》报道，Anthropic 于 9 月下旬斥资 34 亿美元从得州供应商 OnePWR Solutions…",
-          "aihot": "https://aihot.news/items/sw1sy1ek0k6d1nxicvv57r3j6",
-          "original": "https://www.ithome.com/1/023/989.htm",
-          "score": 71
-        },
-        {
-          "num": 15,
-          "section": "industry",
-          "title": "美国司法部起诉三名男子涉嫌用 AI 冒充高管和律师行骗超 1.29 亿美元",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 17:17（收录）",
-          "summary": "美国司法部起诉书显示，三名外国男子涉嫌自 2024 年起利用 AI 伪造企业高管和律师的声音、影像，诱骗员工汇款，涉案…",
-          "aihot": "https://aihot.news/items/atetv2r2vbc0lb9h0x7ruvuh8",
-          "original": "https://www.ithome.com/1/023/925.htm",
-          "score": 73
-        },
-        {
-          "num": 17,
-          "section": "industry",
-          "title": "伯恩斯坦估算 OpenAI 至 2030 年算力基础设施支出或达 6140 亿美元",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 15:34（收录）",
-          "summary": "伯恩斯坦分析师 Mark Moerdler 估算，OpenAI 已披露的算力合作协议对应的基础设施支出到 2030 年…",
-          "aihot": "https://aihot.news/items/sc9uc2r707nes2jii6jfccob8",
-          "original": "https://www.ithome.com/1/023/905.htm",
-          "score": 54
-        },
-        {
-          "num": 18,
-          "section": "industry",
-          "title": "Menlo Ventures 报告：中国 AI 模型占全球开源模型企业支出 89%，Kimi、DeepSeek、GLM 位列前三",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 13:50（收录）",
-          "summary": "Menlo Ventures 发布报告称，中国 AI 模型占全球企业开源模型支出约 89%。其中月之暗面 Kimi 以…",
-          "aihot": "https://aihot.news/items/qlxlxr2ed2hiubrqoi28f0xs6",
-          "original": "https://www.ithome.com/1/023/885.htm",
-          "score": 73
-        },
-        {
-          "num": 20,
-          "section": "industry",
-          "title": "OpenAI Pro 各档用量对比 Plus 说明",
-          "source": "X：Tibo (@thsottiaux)",
-          "time": "11月8日 13:18（收录）",
-          "summary": "看到一些混淆，但所有 Pro 套餐都没有 5 小时限制，并且相比 Plus 提供以下用量。 ✅ Pro 100 = 1…",
-          "aihot": "https://aihot.news/items/i0qylf97r1at94oogm9m3eg9l",
-          "original": "https://x.com/thsottiaux/status/2119296267545419987",
-          "score": 48
-        },
-        {
-          "num": 21,
-          "section": "industry",
-          "title": "多名用户反映 ChatGPT 账号遭突然停用，200 美元 Pro 用户也在其中",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 12:05（收录）",
-          "summary": "近日多名用户在 Reddit 和 OpenAI 开发者社区反映 ChatGPT 账号突然被停用，其中包括每月 200…",
-          "aihot": "https://aihot.news/items/gqk47c2d28cmvwwhm14ltqxnu",
-          "original": "https://www.ithome.com/1/023/879.htm",
-          "score": 53
-        },
-        {
-          "num": 22,
-          "section": "industry",
-          "title": "消息称 Anthropic 仍推进 IPO：拟募资 800 亿至 1000 亿美元，估值预期回落",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 09:17（收录）",
-          "summary": "据《金融时报》报道，Anthropic 仍在推进感恩节前的 IPO，预计募资 800 亿至 1000 亿美元，目标估值…",
-          "aihot": "https://aihot.news/items/cjulee90gasnt7mbhmxcuiiqj",
-          "original": "https://www.ithome.com/1/023/854.htm",
-          "score": 71
-        },
-        {
-          "num": 24,
-          "section": "industry",
-          "title": "埃森哲报告被指含 15 条虚假引用，公司否认系 AI 幻觉所致",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 08:14（收录）",
-          "summary": "GPTZero 分析称，埃森哲与马德里 IE 大学合作的报告《跨越式发展》涉嫌包含 15 条虚假引用和完全虚构的案例研…",
-          "aihot": "https://aihot.news/items/q6p5wnnzc4l1e0y9yn6iced3l",
-          "original": "https://www.ithome.com/1/023/845.htm",
-          "score": 63
-        },
-        {
-          "num": 25,
-          "section": "industry",
-          "title": "Perplexity CEO 称 Teammates 上线次日自动化运行量增长 3.7x",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "11月8日 07:59（收录）",
-          "summary": "Perplexity 发布面向工作的个人智能体 Teammates，从在会话中写提示词改为下达高层目标，今日起向 Ma…",
-          "aihot": "https://aihot.news/items/p8oqmtvatj7bnodfp4jincgf8",
-          "original": "https://x.com/AravSrinivas/status/2119211310424654034",
-          "score": 56
-        },
-        {
-          "num": 26,
-          "section": "industry",
-          "title": "TechCrunch 播客：中期选举后马斯克与数据中心处境转难",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "11月8日 06:40（收录）",
-          "summary": "TechCrunch Equity 播客讨论中期选举对科技业的影响：多地选民否决数据中心相关公投案，新当选的德州州长…",
-          "aihot": "https://aihot.news/items/xt4twaanvja3mk7ttops9agjw",
-          "original": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
-          "score": 67
-        },
-        {
           "num": 27,
-          "section": "industry",
-          "title": "台积电否认应英伟达要求布局3D DRAM",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 06:36（收录）",
-          "summary": "台积电回应称将坚持纯逻辑代工定位，否认了有关英伟达推动其制定3D DRAM计划的报道。报道称AI需求已耗尽DRAM供应…",
-          "aihot": "https://aihot.news/items/wieng8l5kabpwkszhei1tjfa9",
-          "original": "https://x.com/rohanpaul_ai/status/2119192725782479047",
-          "score": 43
-        },
-        {
-          "num": 31,
-          "section": "industry",
-          "title": "SemiAnalysis 实地探访内蒙古 Galaxy 数据中心，对比 Stargate Abilene 的规模与垂直整合",
-          "source": "SemiAnalysis 长文 RSS（RSS）",
-          "time": "11月8日 03:40（收录）",
-          "summary": "SemiAnalysis 团队 9 月实地探访内蒙古乌兰察布的 Galaxy 数据中心园区，规划 IT 容量约 800…",
-          "aihot": "https://aihot.news/items/f6b2mvewgtiz1wzpzs6l428yw",
-          "original": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
-          "score": 70
-        },
-        {
-          "num": 35,
           "section": "industry",
           "title": "Anthropic 拟感恩节前 IPO，接受低于预期的估值，募资 800–1000 亿美元",
           "source": "The Decoder：AI News（RSS）",
@@ -519,7 +348,18 @@ const DATA = {
           "score": 76
         },
         {
-          "num": 39,
+          "num": 5,
+          "section": "industry",
+          "title": "FT 报道 Anthropic 以 34 亿美元购入 1.7GW Caterpillar 燃气发电机",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月8日 22:31（收录）",
+          "summary": "据 FT 报道，Anthropic 以 34 亿美元购入 1.7GW 的 Caterpillar 燃气发电机，是已知…",
+          "aihot": "https://aihot.news/items/fhtzzpeq9pxo021k0uk7s034p",
+          "original": "https://x.com/rohanpaul_ai/status/2119431232165683269",
+          "score": 74
+        },
+        {
+          "num": 30,
           "section": "industry",
           "title": "纽约时报调查称美国批准 Nvidia H200 销售给空壳中国公司",
           "source": "The Verge：AI（RSS）",
@@ -528,6 +368,83 @@ const DATA = {
           "aihot": "https://aihot.news/items/kdmbrw6ufa0zl3yupx4qdnpjr",
           "original": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
           "score": 74
+        },
+        {
+          "num": 14,
+          "section": "industry",
+          "title": "美国司法部起诉三名男子涉嫌用 AI 冒充高管和律师行骗超 1.29 亿美元",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 17:17（收录）",
+          "summary": "美国司法部起诉书显示，三名外国男子涉嫌自 2024 年起利用 AI 伪造企业高管和律师的声音、影像，诱骗员工汇款，涉案…",
+          "aihot": "https://aihot.news/items/atetv2r2vbc0lb9h0x7ruvuh8",
+          "original": "https://www.ithome.com/1/023/925.htm",
+          "score": 73
+        },
+        {
+          "num": 16,
+          "section": "industry",
+          "title": "Menlo Ventures 报告：中国 AI 模型占全球开源模型企业支出 89%，Kimi、DeepSeek、GLM 位列前三",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 13:50（收录）",
+          "summary": "Menlo Ventures 发布报告称，中国 AI 模型占全球企业开源模型支出约 89%。其中月之暗面 Kimi 以…",
+          "aihot": "https://aihot.news/items/qlxlxr2ed2hiubrqoi28f0xs6",
+          "original": "https://www.ithome.com/1/023/885.htm",
+          "score": 73
+        },
+        {
+          "num": 10,
+          "section": "industry",
+          "title": "Anthropic 拟以 34 亿美元采购 1.7GW 燃气发电机组，为 AI 公司迄今最大发电设备订单",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 20:03（收录）",
+          "summary": "据《金融时报》报道，Anthropic 于 9 月下旬斥资 34 亿美元从得州供应商 OnePWR Solutions…",
+          "aihot": "https://aihot.news/items/sw1sy1ek0k6d1nxicvv57r3j6",
+          "original": "https://www.ithome.com/1/023/989.htm",
+          "score": 71
+        },
+        {
+          "num": 18,
+          "section": "industry",
+          "title": "消息称 Anthropic 仍推进 IPO：拟募资 800 亿至 1000 亿美元，估值预期回落",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 09:17（收录）",
+          "summary": "据《金融时报》报道，Anthropic 仍在推进感恩节前的 IPO，预计募资 800 亿至 1000 亿美元，目标估值…",
+          "aihot": "https://aihot.news/items/cjulee90gasnt7mbhmxcuiiqj",
+          "original": "https://www.ithome.com/1/023/854.htm",
+          "score": 71
+        },
+        {
+          "num": 8,
+          "section": "industry",
+          "title": "日本富士电视台宣布 2027 年起所有真人剧制作引入生成式 AI，可省七至八成特效工序",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 20:45（收录）",
+          "summary": "据日经亚洲报道，富士电视台计划从 2027 年 10 月起在所有真人电视剧制作中使用生成式 AI，成为日本首家全面引入…",
+          "aihot": "https://aihot.news/items/nrzp7pwdvg9p4pz9fqmw7pheo",
+          "original": "https://www.ithome.com/1/023/992.htm",
+          "score": 70
+        },
+        {
+          "num": 23,
+          "section": "industry",
+          "title": "SemiAnalysis 实地探访内蒙古 Galaxy 数据中心，对比 Stargate Abilene 的规模与垂直整合",
+          "source": "SemiAnalysis 长文 RSS（RSS）",
+          "time": "11月8日 03:40（收录）",
+          "summary": "SemiAnalysis 团队 9 月实地探访内蒙古乌兰察布的 Galaxy 数据中心园区，规划 IT 容量约 800…",
+          "aihot": "https://aihot.news/items/f6b2mvewgtiz1wzpzs6l428yw",
+          "original": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
+          "score": 70
+        },
+        {
+          "num": 20,
+          "section": "industry",
+          "title": "TechCrunch 播客：中期选举后马斯克与数据中心处境转难",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "11月8日 06:40（收录）",
+          "summary": "TechCrunch Equity 播客讨论中期选举对科技业的影响：多地选民否决数据中心相关公投案，新当选的德州州长…",
+          "aihot": "https://aihot.news/items/xt4twaanvja3mk7ttops9agjw",
+          "original": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+          "score": 67
         }
       ]
     },
@@ -535,120 +452,10 @@ const DATA = {
       "key": "papers",
       "label": "论文研究",
       "color": "#3b82f6",
-      "count": 12,
+      "count": 10,
       "cards": [
         {
-          "num": 5,
-          "section": "papers",
-          "title": "Meta 论文介绍大规模 AI 辅助 A/B 实验的 Agent 设计与经验教训",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 22:31（收录）",
-          "summary": "Meta 发布论文《Learnings and Pitfalls from AI-Assisted A/B Exper…",
-          "aihot": "https://aihot.news/items/zk8n50br6zuwt663mpbspnjmz",
-          "original": "https://x.com/rohanpaul_ai/status/2119430195572887953",
-          "score": 53
-        },
-        {
-          "num": 7,
-          "section": "papers",
-          "title": "上海交大发布 AI 原生科学实验室 AutoDNA，成果登《自然》",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 21:48（收录）",
-          "summary": "上海交大 IPADS 实验室联合化学化工学院团队在《自然》发表成果，构建 AI 原生科学实验室 AutoDNA（思源一…",
-          "aihot": "https://aihot.news/items/zy75yq8c6wra7ne3mtl7zcej0",
-          "original": "https://www.ithome.com/1/024/001.htm",
-          "score": 69
-        },
-        {
-          "num": 10,
-          "section": "papers",
-          "title": "清华论文提出 TraceMRT：隐藏目标可绕过 CoT 监控约 60%",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 20:28（收录）",
-          "summary": "清华大学论文提出 TraceMRT 框架，把隐藏任务改写为主任务的合理子目标来攻击 CoT 监控。在 SHADE-Ar…",
-          "aihot": "https://aihot.news/items/eqzhztswkxrdd3no254x08bog",
-          "original": "https://x.com/rohanpaul_ai/status/2119402688870023190",
-          "score": 60
-        },
-        {
-          "num": 13,
-          "section": "papers",
-          "title": "Co-Design Bench 测试显示编码智能体仅在约四分之一任务上完全达标",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月8日 18:40（收录）",
-          "summary": "阿里与多所亚洲高校的研究者基于真实编码会话中的用户修改请求构建了 Co-Design Bench，要求智能体改造现有…",
-          "aihot": "https://aihot.news/items/v677lfehbais3prs5hsf9nx1o",
-          "original": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
-          "score": 63
-        },
-        {
-          "num": 16,
-          "section": "papers",
-          "title": "GPT-6.1 Sol 连续参与三次活体小鼠脑手术，定位误差从 0.6 毫米降至 0.3 毫米",
-          "source": "IT之家·人工智能",
-          "time": "11月8日 15:34（收录）",
-          "summary": "据《WIRED》报道及 Exin Therapeutics CEO 于 11 月 5 日在 X 公布的结果，GPT-6…",
-          "aihot": "https://aihot.news/items/uhi0dbgdjc32uma8nu41ftguf",
-          "original": "https://www.ithome.com/1/023/900.htm",
-          "score": 62
-        },
-        {
-          "num": 23,
-          "section": "papers",
-          "title": "Salesforce 论文：RL 专家蒸馏比外部大模型蒸馏更省算力",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 08:39（收录）",
-          "summary": "Salesforce 新论文发现，从大型外部教师模型做蒸馏通常比纯 RL 消耗更多算力，而将多个 RL 训练的领域专家…",
-          "aihot": "https://aihot.news/items/nr3368azfaibk0sbg78skrwrm",
-          "original": "https://x.com/rohanpaul_ai/status/2119222842332271059",
-          "score": 48
-        },
-        {
-          "num": 28,
-          "section": "papers",
-          "title": "Stanford 论文：信息披露让部分 LLM 智能体交易收益上升、部分下降",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 06:05（收录）",
-          "summary": "Stanford 论文提出经验性信息设计框架，在 10 个前沿 LLM 上对比不同披露粒度下的多智能体交易、议价与拍卖…",
-          "aihot": "https://aihot.news/items/onxxxzspw1tlj1mp8ak0z2n28",
-          "original": "https://x.com/rohanpaul_ai/status/2119189456226042246",
-          "score": 50
-        },
-        {
           "num": 29,
-          "section": "papers",
-          "title": "Google 论文：会反驳的 AI 队友让学生商业计划得分更高",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 05:03（收录）",
-          "summary": "Google 新论文发现，与会反驳的 AI 队友练习的学生写出的商业计划优于使用普通 AI 工具的学生。研究基于 Go…",
-          "aihot": "https://aihot.news/items/ceryb3wiqy13ib42zzzg5bpjs",
-          "original": "https://x.com/rohanpaul_ai/status/2119173230871359977",
-          "score": 45
-        },
-        {
-          "num": 33,
-          "section": "papers",
-          "title": "牛津论文发现前沿 LLM 智能体难以与陌生伙伴零样本协同",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月8日 03:00（收录）",
-          "summary": "牛津 BOLD 团队论文研究 LLM 智能体的零样本协同（ZSC），在 9 个小型合作博弈中测试基于 GPT-5.2…",
-          "aihot": "https://aihot.news/items/tt7nzegl4jsry8p8hf64j4sbd",
-          "original": "https://x.com/rohanpaul_ai/status/2119139181368914223",
-          "score": 60
-        },
-        {
-          "num": 34,
-          "section": "papers",
-          "title": "Andy Hall 研究分析：AI 审计模型能抓住大部分智能体不当行为，但误报太多",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月8日 01:41（收录）",
-          "summary": "Anthropic 研究院研究员 Andy Hall 在 Substack 发文，基于 METR 的 MALT 数据集…",
-          "aihot": "https://aihot.news/items/sqgn4uyjtgpb0g7vzflowb5a2",
-          "original": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
-          "score": 59
-        },
-        {
-          "num": 37,
           "section": "papers",
           "title": "Vals AI 基准测试显示开源与闭源模型网络攻击能力差距持续缩小",
           "source": "The Decoder：AI News（RSS）",
@@ -659,14 +466,102 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 38,
+          "num": 6,
           "section": "papers",
-          "title": "Vals AI 研究：Thinking Machines 的 Inkling 2 Small 在基准测试中爆粗口 316 次",
+          "title": "上海交大发布 AI 原生科学实验室 AutoDNA，成果登《自然》",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 21:48（收录）",
+          "summary": "上海交大 IPADS 实验室联合化学化工学院团队在《自然》发表成果，构建 AI 原生科学实验室 AutoDNA（思源一…",
+          "aihot": "https://aihot.news/items/zy75yq8c6wra7ne3mtl7zcej0",
+          "original": "https://www.ithome.com/1/024/001.htm",
+          "score": 69
+        },
+        {
+          "num": 12,
+          "section": "papers",
+          "title": "Co-Design Bench 测试显示编码智能体仅在约四分之一任务上完全达标",
           "source": "The Decoder：AI News（RSS）",
-          "time": "11月8日 00:41（收录）",
-          "summary": "Vals AI 研究人员读取 Thinking Machines 的 Inkling 2 Small 在 13 个基准…",
-          "aihot": "https://aihot.news/items/h1e0zbyqc8p5ps481naunojc2",
-          "original": "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/",
+          "time": "11月8日 18:40（收录）",
+          "summary": "阿里与多所亚洲高校的研究者基于真实编码会话中的用户修改请求构建了 Co-Design Bench，要求智能体改造现有…",
+          "aihot": "https://aihot.news/items/v677lfehbais3prs5hsf9nx1o",
+          "original": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
+          "score": 63
+        },
+        {
+          "num": 15,
+          "section": "papers",
+          "title": "GPT-6.1 Sol 连续参与三次活体小鼠脑手术，定位误差从 0.6 毫米降至 0.3 毫米",
+          "source": "IT之家·人工智能",
+          "time": "11月8日 15:34（收录）",
+          "summary": "据《WIRED》报道及 Exin Therapeutics CEO 于 11 月 5 日在 X 公布的结果，GPT-6…",
+          "aihot": "https://aihot.news/items/uhi0dbgdjc32uma8nu41ftguf",
+          "original": "https://www.ithome.com/1/023/900.htm",
+          "score": 62
+        },
+        {
+          "num": 9,
+          "section": "papers",
+          "title": "清华论文提出 TraceMRT：隐藏目标可绕过 CoT 监控约 60%",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月8日 20:28（收录）",
+          "summary": "清华大学论文提出 TraceMRT 框架，把隐藏任务改写为主任务的合理子目标来攻击 CoT 监控。在 SHADE-Ar…",
+          "aihot": "https://aihot.news/items/eqzhztswkxrdd3no254x08bog",
+          "original": "https://x.com/rohanpaul_ai/status/2119402688870023190",
+          "score": 60
+        },
+        {
+          "num": 25,
+          "section": "papers",
+          "title": "牛津论文发现前沿 LLM 智能体难以与陌生伙伴零样本协同",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月8日 03:00（收录）",
+          "summary": "牛津 BOLD 团队论文研究 LLM 智能体的零样本协同（ZSC），在 9 个小型合作博弈中测试基于 GPT-5.2…",
+          "aihot": "https://aihot.news/items/tt7nzegl4jsry8p8hf64j4sbd",
+          "original": "https://x.com/rohanpaul_ai/status/2119139181368914223",
+          "score": 60
+        },
+        {
+          "num": 26,
+          "section": "papers",
+          "title": "Andy Hall 研究分析：AI 审计模型能抓住大部分智能体不当行为，但误报太多",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月8日 01:41（收录）",
+          "summary": "Anthropic 研究院研究员 Andy Hall 在 Substack 发文，基于 METR 的 MALT 数据集…",
+          "aihot": "https://aihot.news/items/sqgn4uyjtgpb0g7vzflowb5a2",
+          "original": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
+          "score": 59
+        },
+        {
+          "num": 4,
+          "section": "papers",
+          "title": "Meta 论文介绍大规模 AI 辅助 A/B 实验的 Agent 设计与经验教训",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月8日 22:31（收录）",
+          "summary": "Meta 发布论文《Learnings and Pitfalls from AI-Assisted A/B Exper…",
+          "aihot": "https://aihot.news/items/zk8n50br6zuwt663mpbspnjmz",
+          "original": "https://x.com/rohanpaul_ai/status/2119430195572887953",
+          "score": 53
+        },
+        {
+          "num": 21,
+          "section": "papers",
+          "title": "Stanford 论文：信息披露让部分 LLM 智能体交易收益上升、部分下降",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月8日 06:05（收录）",
+          "summary": "Stanford 论文提出经验性信息设计框架，在 10 个前沿 LLM 上对比不同披露粒度下的多智能体交易、议价与拍卖…",
+          "aihot": "https://aihot.news/items/onxxxzspw1tlj1mp8ak0z2n28",
+          "original": "https://x.com/rohanpaul_ai/status/2119189456226042246",
+          "score": 50
+        },
+        {
+          "num": 19,
+          "section": "papers",
+          "title": "Salesforce 论文：RL 专家蒸馏比外部大模型蒸馏更省算力",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月8日 08:39（收录）",
+          "summary": "Salesforce 新论文发现，从大型外部教师模型做蒸馏通常比纯 RL 消耗更多算力，而将多个 RL 训练的领域专家…",
+          "aihot": "https://aihot.news/items/nr3368azfaibk0sbg78skrwrm",
+          "original": "https://x.com/rohanpaul_ai/status/2119222842332271059",
           "score": 48
         }
       ]
@@ -678,7 +573,7 @@ const DATA = {
       "count": 7,
       "cards": [
         {
-          "num": 2,
+          "num": 1,
           "section": "tips",
           "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
           "source": "X：卡尔的 AI 沃茨 (@aiwarts)",
@@ -689,40 +584,7 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 3,
-          "section": "tips",
-          "title": "用 n8n 和 TurboDocx 从 Slack 审批到 SharePoint 归档发送合同签署",
-          "source": "n8n Blog",
-          "time": "11月8日 22:42（收录）",
-          "summary": "n8n 发布 Verified Node Spotlight，演示用 TurboDocx 节点补齐合同电子签名环节：E…",
-          "aihot": "https://aihot.news/items/f7gveb2a8q2jygh7fdlun08di",
-          "original": "https://blog.n8n.io/spotlight-turbodocx/",
-          "score": 46
-        },
-        {
-          "num": 4,
-          "section": "tips",
-          "title": "Andrej Karpathy 用 Claude 周末搭建视频精选平台 HackerTube",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "11月8日 22:38（收录）",
-          "summary": "Andrej Karpathy 用 Claude Opus 5.5 在一个周末搭建了 HackerTube，从 20…",
-          "aihot": "https://aihot.news/items/xas58u8z185ani3f4rhsm198h",
-          "original": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
-          "score": 58
-        },
-        {
-          "num": 14,
-          "section": "tips",
-          "title": "DeepSeek、Qwen、Mixtral、Llama 4、gpt-oss 等 MoE 模型路由机制对比",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月8日 18:30（收录）",
-          "summary": "一项对比梳理了 10 款开放 MoE 模型的路由配置：专家数从 Mixtral 的 8 个到 Kimi K2 与 De…",
-          "aihot": "https://aihot.news/items/qanij9tdzghpivw3ja8hl2sa6",
-          "original": "https://www.marktechpost.com/2026/11/08/moe-model-routing-comparison/",
-          "score": 40
-        },
-        {
-          "num": 30,
+          "num": 22,
           "section": "tips",
           "title": "NVIDIA Dory 1.0 4B 用 llama.cpp 运行的逐环实测教程",
           "source": "MarkTechPost（RSS）",
@@ -733,7 +595,18 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 36,
+          "num": 3,
+          "section": "tips",
+          "title": "Andrej Karpathy 用 Claude 周末搭建视频精选平台 HackerTube",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "11月8日 22:38（收录）",
+          "summary": "Andrej Karpathy 用 Claude Opus 5.5 在一个周末搭建了 HackerTube，从 20…",
+          "aihot": "https://aihot.news/items/xas58u8z185ani3f4rhsm198h",
+          "original": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
+          "score": 58
+        },
+        {
+          "num": 28,
           "section": "tips",
           "title": "Karpathy 用 Claude Code 一次成型打造 TristanTube 视频站",
           "source": "X：Andrej Karpathy (@karpathy)",
@@ -744,7 +617,7 @@ const DATA = {
           "score": 57
         },
         {
-          "num": 40,
+          "num": 31,
           "section": "tips",
           "title": "The Verge 评测 NYT Cooking AI 助手：改鸡饭很成功，做蛋糕险翻车",
           "source": "The Verge：AI（RSS）",
@@ -753,6 +626,28 @@ const DATA = {
           "aihot": "https://aihot.news/items/p7vv7nuc9uhpyunla2j2rwck8",
           "original": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
           "score": 56
+        },
+        {
+          "num": 2,
+          "section": "tips",
+          "title": "用 n8n 和 TurboDocx 从 Slack 审批到 SharePoint 归档发送合同签署",
+          "source": "n8n Blog",
+          "time": "11月8日 22:42（收录）",
+          "summary": "n8n 发布 Verified Node Spotlight，演示用 TurboDocx 节点补齐合同电子签名环节：E…",
+          "aihot": "https://aihot.news/items/f7gveb2a8q2jygh7fdlun08di",
+          "original": "https://blog.n8n.io/spotlight-turbodocx/",
+          "score": 46
+        },
+        {
+          "num": 13,
+          "section": "tips",
+          "title": "DeepSeek、Qwen、Mixtral、Llama 4、gpt-oss 等 MoE 模型路由机制对比",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月8日 18:30（收录）",
+          "summary": "一项对比梳理了 10 款开放 MoE 模型的路由配置：专家数从 Mixtral 的 8 个到 Kimi K2 与 De…",
+          "aihot": "https://aihot.news/items/qanij9tdzghpivw3ja8hl2sa6",
+          "original": "https://www.marktechpost.com/2026/11/08/moe-model-routing-comparison/",
+          "score": 40
         }
       ]
     }
@@ -830,7 +725,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -936,12 +830,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -958,16 +850,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

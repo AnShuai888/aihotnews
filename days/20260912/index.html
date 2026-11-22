@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-12",
     "heroDate": "2026年9月12日 周六",
-    "total": 100,
+    "total": 43,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月12日 22:04（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,40 +277,7 @@ const DATA = {
       "count": 5,
       "cards": [
         {
-          "num": 20,
-          "section": "models",
-          "title": "Google Research 发布 TimesFM-3 时序预测模型，首次支持多变量与已知未来事件",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月12日 17:29（收录）",
-          "summary": "Google Research 发布 TimesFM-3 时序预测模型，可同时处理多个相关变量，并利用折扣计划、天气预…",
-          "aihot": "https://aihot.news/items/cmty6o23k02pnrohtgcjmdpe7",
-          "original": "https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules",
-          "score": 56
-        },
-        {
-          "num": 24,
-          "section": "models",
-          "title": "生数科技发布 Motus2：面向灵巧操作的自进化通用世界模型",
-          "source": "公众号：生数科技（Vidu·视频）",
-          "time": "9月12日 16:30（收录）",
-          "summary": "生数科技发布面向机器人灵巧操作的世界模型 Motus2，将行动、预测、评估三种能力统一进同一个共享参数模型，形成生成动…",
-          "aihot": "https://aihot.news/items/cmty4kcaq02owrolyigqgqmo8",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzkzMDQ5NTQwMQ%3D%3D&mid=2247489150&idx=1&sn=447e11c94c093f0c428f16b5efe0db78",
-          "score": 55
-        },
-        {
-          "num": 61,
-          "section": "models",
-          "title": "OpenAI 发布 GPT-Rosalind 生物推理模型，Jason Liu 宣布参与相关工作",
-          "source": "X：Jason Liu (@jxnlco)",
-          "time": "9月12日 06:27（收录）",
-          "summary": "OpenAI 在 API 和 Codex 中推出 GPT-Rosalind，主打更强的生物推理能力，可连接论文与实验结…",
-          "aihot": "https://aihot.news/items/cmtxj0syb02u7roi3uhfdr243",
-          "original": "https://x.com/jxnlco/status/2098532259653386548",
-          "score": 55
-        },
-        {
-          "num": 72,
+          "num": 34,
           "section": "models",
           "title": "Ant Group 开源 Ling-3.0-flash-VL，Artificial Analysis 评 25 分",
           "source": "X：Artificial Analysis (@ArtificialAnlys)",
@@ -327,7 +288,7 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 90,
+          "num": 39,
           "section": "models",
           "title": "宇树开源通用人形基座大模型 UnifoLM-WLA-1.0",
           "source": "X：阿易 AI Notes (@AYi_AInotes)",
@@ -336,6 +297,39 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmtx7oj430a3lroed5r17ydz9",
           "original": "https://x.com/AYi_AInotes/status/2098456689611509824",
           "score": 57
+        },
+        {
+          "num": 6,
+          "section": "models",
+          "title": "Google Research 发布 TimesFM-3 时序预测模型，首次支持多变量与已知未来事件",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "9月12日 17:29（收录）",
+          "summary": "Google Research 发布 TimesFM-3 时序预测模型，可同时处理多个相关变量，并利用折扣计划、天气预…",
+          "aihot": "https://aihot.news/items/cmty6o23k02pnrohtgcjmdpe7",
+          "original": "https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules",
+          "score": 56
+        },
+        {
+          "num": 8,
+          "section": "models",
+          "title": "生数科技发布 Motus2：面向灵巧操作的自进化通用世界模型",
+          "source": "公众号：生数科技（Vidu·视频）",
+          "time": "9月12日 16:30（收录）",
+          "summary": "生数科技发布面向机器人灵巧操作的世界模型 Motus2，将行动、预测、评估三种能力统一进同一个共享参数模型，形成生成动…",
+          "aihot": "https://aihot.news/items/cmty4kcaq02owrolyigqgqmo8",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzkzMDQ5NTQwMQ%3D%3D&mid=2247489150&idx=1&sn=447e11c94c093f0c428f16b5efe0db78",
+          "score": 55
+        },
+        {
+          "num": 27,
+          "section": "models",
+          "title": "OpenAI 发布 GPT-Rosalind 生物推理模型，Jason Liu 宣布参与相关工作",
+          "source": "X：Jason Liu (@jxnlco)",
+          "time": "9月12日 06:27（收录）",
+          "summary": "OpenAI 在 API 和 Codex 中推出 GPT-Rosalind，主打更强的生物推理能力，可连接论文与实验结…",
+          "aihot": "https://aihot.news/items/cmtxj0syb02u7roi3uhfdr243",
+          "original": "https://x.com/jxnlco/status/2098532259653386548",
+          "score": 55
         }
       ]
     },
@@ -343,142 +337,10 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 16,
+      "count": 10,
       "cards": [
         {
-          "num": 33,
-          "section": "products",
-          "title": "小墨开源《Pi 学习蓝皮书》中文教程，系统整理开源 AI 编程助手 Pi 的学习路径",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 12:39（收录）",
-          "summary": "小墨@xiaomovps 发布开源中文教材《Pi 学习蓝皮书》（https://pi.xiaomovps.com/，仓…",
-          "aihot": "https://aihot.news/items/cmtxwbuyq06olrous4p6tltgh",
-          "original": "https://x.com/AYi_AInotes/status/2098625642849771819",
-          "score": 53
-        },
-        {
-          "num": 38,
-          "section": "products",
-          "title": "百度智能云秒哒3.8全面升级，转向应用创造与经营平台",
-          "source": "公众号：百度智能云（文心）",
-          "time": "9月12日 12:01（收录）",
-          "summary": "百度智能云在2026秒哒AI Day发布秒哒3.8，将平台从生成应用升级为覆盖设计、开发、测试、分发、增长、商业化的应…",
-          "aihot": "https://aihot.news/items/cmtxuyvb705eirousyfrxsz8n",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzA5NTQ5MzE5OQ%3D%3D&mid=2653160355&idx=1&sn=1f21f0d333b652933c4df151d6686d3b",
-          "score": 56
-        },
-        {
-          "num": 39,
-          "section": "products",
-          "title": "litelm 开源：从 LiteLLM 抽取精简版路由与消息翻译核心，仅约 2900 行代码、2 个依赖",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 10:58（收录）",
-          "summary": "开发者 kennethwolters 发布开源项目 litelm，将 litellm 的模型路由、消息翻译、流式输出…",
-          "aihot": "https://aihot.news/items/cmtxsq56j03torop2ddonyfn3",
-          "original": "https://github.com/kennethwolters/litelm",
-          "score": 53
-        },
-        {
-          "num": 43,
-          "section": "products",
-          "title": "微信测试图片 AI 处理功能，支持美化、修改与信息提取",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 10:00（收录）",
-          "summary": "微信在发送图片界面新增 AI 处理功能，点击后提供美化图片、修改图片、提取信息三类菜单，涵盖生成写真、消除杂物、扩图…",
-          "aihot": "https://aihot.news/items/cmtxqnb7w09z3roi306quw1l3",
-          "original": "https://www.ithome.com/1/001/514.htm",
-          "score": 63
-        },
-        {
-          "num": 47,
-          "section": "products",
-          "title": "ChatGPT Sites 推出协作、私有分享、自定义域名等多项升级",
-          "source": "X：Tibo (@thsottiaux)",
-          "time": "9月12日 08:37（收录）",
-          "summary": "ChatGPT Sites 发布多项更新。Sites 上线三个月用户已创建超 500 万个站点。新功能包括邀请队友协作…",
-          "aihot": "https://aihot.news/items/cmtxnolwx076broi3qi67qavy",
-          "original": "https://x.com/thsottiaux/status/2098569538510180712",
-          "score": 62
-        },
-        {
-          "num": 51,
-          "section": "products",
-          "title": "Minara Harness 实测：多 Agent 投研圆桌与强制纸交易的散户交易工作区",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 08:09（收录）",
-          "summary": "作者实测金融 AI 工作区 Minara Harness（获 Circle Ventures 投资），输入一句 AAP…",
-          "aihot": "https://aihot.news/items/cmtxmom2c06d9roi3zz2i6k20",
-          "original": "https://x.com/AYi_AInotes/status/2098561644783644887",
-          "score": 53
-        },
-        {
-          "num": 53,
-          "section": "products",
-          "title": "OpenAI 完善 ChatGPT Sites：新增协作功能、私有分享、自定义域名并提速部署",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 08:00（收录）",
-          "summary": "OpenAI 进一步完善 ChatGPT Sites，新增 Build Together 协作功能，允许邀请他人共同编…",
-          "aihot": "https://aihot.news/items/cmtxmd06905q6roi3up455e9x",
-          "original": "https://www.ithome.com/1/001/485.htm",
-          "score": 54
-        },
-        {
-          "num": 62,
-          "section": "products",
-          "title": "Claude Code 新增 claude plugin eval：为插件和 skill 建立评测",
-          "source": "X：Thariq (@trq212)",
-          "time": "9月12日 06:07（收录）",
-          "summary": "Claude Code 推出新功能 claude plugin eval，用于检验插件或 skill 带来的实际价值…",
-          "aihot": "https://aihot.news/items/cmtxibouo0ai0ro6p1wqet9y4",
-          "original": "https://x.com/trq212/status/2098531560643539440",
-          "score": 54
-        },
-        {
-          "num": 64,
-          "section": "products",
-          "title": "OpenAI 发布 Agents API，以托管的 Codex harness 在云端构建 Agent",
-          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
-          "time": "9月12日 05:42（收录）",
-          "summary": "OpenAI 推出 Agents API，一种基于 Codex harness、在云端构建 Agent 的新方式，支持…",
-          "aihot": "https://aihot.news/items/cmtxhf8ln06w7ro6p8gzlita5",
-          "original": "https://x.com/omarsar0/status/2098524621439914375",
-          "score": 65
-        },
-        {
-          "num": 65,
-          "section": "products",
-          "title": "Anthropic 为 Claude Code 推出插件评测流程：6 种 grader、无插件基线与 CI 门禁",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月12日 05:32（收录）",
-          "summary": "Anthropic 为 Claude Code 发布 plugin evals 工作流，claude plugin e…",
-          "aihot": "https://aihot.news/items/cmtxh2iyx06ohro6p9zfkjilu",
-          "original": "https://www.marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills",
-          "score": 65
-        },
-        {
-          "num": 73,
-          "section": "products",
-          "title": "Claude Code 新增 claude plugin eval 插件评测功能",
-          "source": "X：Claude Devs (@ClaudeDevs)",
-          "time": "9月12日 04:07（收录）",
-          "summary": "Claude Code 推出 claude plugin eval 功能，用于评估插件或技能带来的实际价值。用户可以创…",
-          "aihot": "https://aihot.news/items/cmtxe1czg0427ro6pb962jn1v",
-          "original": "https://x.com/ClaudeDevs/status/2098500999656923145",
-          "score": 53
-        },
-        {
-          "num": 96,
-          "section": "products",
-          "title": "OpenAI 介绍 GPT-Live-1 语音能力及 Yelp 预订电话应用",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "9月12日 00:46（收录）",
-          "summary": "OpenAI Developers 介绍 GPT-Live-1，可在说话的同时监听，通话者能随时打断、补充细节或中途改…",
-          "aihot": "https://aihot.news/items/cmtx6u4to0906roede0i17pqv",
-          "original": "https://x.com/OpenAIDevs/status/2098445843485557174",
-          "score": 52
-        },
-        {
-          "num": 97,
+          "num": 41,
           "section": "products",
           "title": "OpenAI 公测 Agents API：用 Codex harness 托管云端 Agent",
           "source": "X：阿易 AI Notes (@AYi_AInotes)",
@@ -489,7 +351,51 @@ const DATA = {
           "score": 74
         },
         {
-          "num": 98,
+          "num": 30,
+          "section": "products",
+          "title": "OpenAI 发布 Agents API，以托管的 Codex harness 在云端构建 Agent",
+          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "time": "9月12日 05:42（收录）",
+          "summary": "OpenAI 推出 Agents API，一种基于 Codex harness、在云端构建 Agent 的新方式，支持…",
+          "aihot": "https://aihot.news/items/cmtxhf8ln06w7ro6p8gzlita5",
+          "original": "https://x.com/omarsar0/status/2098524621439914375",
+          "score": 65
+        },
+        {
+          "num": 31,
+          "section": "products",
+          "title": "Anthropic 为 Claude Code 推出插件评测流程：6 种 grader、无插件基线与 CI 门禁",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月12日 05:32（收录）",
+          "summary": "Anthropic 为 Claude Code 发布 plugin evals 工作流，claude plugin e…",
+          "aihot": "https://aihot.news/items/cmtxh2iyx06ohro6p9zfkjilu",
+          "original": "https://www.marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills",
+          "score": 65
+        },
+        {
+          "num": 16,
+          "section": "products",
+          "title": "微信测试图片 AI 处理功能，支持美化、修改与信息提取",
+          "source": "IT之家（RSS）",
+          "time": "9月12日 10:00（收录）",
+          "summary": "微信在发送图片界面新增 AI 处理功能，点击后提供美化图片、修改图片、提取信息三类菜单，涵盖生成写真、消除杂物、扩图…",
+          "aihot": "https://aihot.news/items/cmtxqnb7w09z3roi306quw1l3",
+          "original": "https://www.ithome.com/1/001/514.htm",
+          "score": 63
+        },
+        {
+          "num": 19,
+          "section": "products",
+          "title": "ChatGPT Sites 推出协作、私有分享、自定义域名等多项升级",
+          "source": "X：Tibo (@thsottiaux)",
+          "time": "9月12日 08:37（收录）",
+          "summary": "ChatGPT Sites 发布多项更新。Sites 上线三个月用户已创建超 500 万个站点。新功能包括邀请队友协作…",
+          "aihot": "https://aihot.news/items/cmtxnolwx076broi3qi67qavy",
+          "original": "https://x.com/thsottiaux/status/2098569538510180712",
+          "score": 62
+        },
+        {
+          "num": 42,
           "section": "products",
           "title": "xAI 发布 Grok Bot 101 指南，讲解如何在云端创建个人 AI 智能体",
           "source": "X：cb_doge (@cb_doge)",
@@ -500,7 +406,18 @@ const DATA = {
           "score": 57
         },
         {
-          "num": 99,
+          "num": 13,
+          "section": "products",
+          "title": "百度智能云秒哒3.8全面升级，转向应用创造与经营平台",
+          "source": "公众号：百度智能云（文心）",
+          "time": "9月12日 12:01（收录）",
+          "summary": "百度智能云在2026秒哒AI Day发布秒哒3.8，将平台从生成应用升级为覆盖设计、开发、测试、分发、增长、商业化的应…",
+          "aihot": "https://aihot.news/items/cmtxuyvb705eirousyfrxsz8n",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzA5NTQ5MzE5OQ%3D%3D&mid=2653160355&idx=1&sn=1f21f0d333b652933c4df151d6686d3b",
+          "score": 56
+        },
+        {
+          "num": 43,
           "section": "products",
           "title": "Minara Harness 实测：多 Agent 投研圆桌用空头对辩压制确认偏误",
           "source": "X：阿易 AI Notes (@AYi_AInotes)",
@@ -511,14 +428,25 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 100,
+          "num": 23,
           "section": "products",
-          "title": "Black Forest Labs 的 FLUX Video Edit 上线 OpenRouter",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "time": "9月12日 00:07（收录）",
-          "summary": "OpenRouter 宣布 Black Forest Labs 的 FLUX Video Edit 上线 OpenRo…",
-          "aihot": "https://aihot.news/items/cmtx5gqdy07zmroed99uil4r1",
-          "original": "https://x.com/OpenRouter/status/2098441690801656232",
+          "title": "OpenAI 完善 ChatGPT Sites：新增协作功能、私有分享、自定义域名并提速部署",
+          "source": "IT之家（RSS）",
+          "time": "9月12日 08:00（收录）",
+          "summary": "OpenAI 进一步完善 ChatGPT Sites，新增 Build Together 协作功能，允许邀请他人共同编…",
+          "aihot": "https://aihot.news/items/cmtxmd06905q6roi3up455e9x",
+          "original": "https://www.ithome.com/1/001/485.htm",
+          "score": 54
+        },
+        {
+          "num": 28,
+          "section": "products",
+          "title": "Claude Code 新增 claude plugin eval：为插件和 skill 建立评测",
+          "source": "X：Thariq (@trq212)",
+          "time": "9月12日 06:07（收录）",
+          "summary": "Claude Code 推出新功能 claude plugin eval，用于检验插件或 skill 带来的实际价值…",
+          "aihot": "https://aihot.news/items/cmtxibouo0ai0ro6p1wqet9y4",
+          "original": "https://x.com/trq212/status/2098531560643539440",
           "score": 54
         }
       ]
@@ -527,32 +455,10 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 18,
+      "count": 10,
       "cards": [
         {
-          "num": 5,
-          "section": "industry",
-          "title": "Colossus 2 算力中心建成可能为美国最大的电池储能设施",
-          "source": "X：cb_doge (@cb_doge)",
-          "time": "9月12日 20:59（收录）",
-          "summary": "Colossus 2 在孟菲斯附近建成大规模电池储能设施，可能是美国最大的。据 7 月卫星图像显示有 720 个 Te…",
-          "aihot": "https://aihot.news/items/cmtye6dvh0b9mrojhgfq88jxo",
-          "original": "https://x.com/cb_doge/status/2098757399226249349",
-          "score": 52
-        },
-        {
-          "num": 7,
-          "section": "industry",
-          "title": "40 名英国议员联名致信首相 Andy Burnham 呼吁禁止开发超级智能 AI",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月12日 20:12（收录）",
-          "summary": "40 名英国下议院议员签署致首相 Andy Burnham 的信，呼吁英国推动国际协议禁止开发超级智能 AI。信中提出…",
-          "aihot": "https://aihot.news/items/cmtyci31i0a1zrojh7wcrh10y",
-          "original": "https://x.com/kimmonismus/status/2098741481557168610",
-          "score": 54
-        },
-        {
-          "num": 15,
+          "num": 4,
           "section": "industry",
           "title": "研究分析称 OpenAI 智能体曾向 RubyGems 上传 2000 多个恶意包",
           "source": "The Decoder：AI News（RSS）",
@@ -563,73 +469,7 @@ const DATA = {
           "score": 82
         },
         {
-          "num": 17,
-          "section": "industry",
-          "title": "甲骨文因 AI 数据中心现金压力再增 7 亿美元裁员成本，重组总成本升至约 28 亿美元",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 18:00（收录）",
-          "summary": "据彭博社报道，受大规模建设 AI 数据中心带来的现金压力影响，甲骨文将 2026 年重组计划的裁员总成本提升至约 28…",
-          "aihot": "https://aihot.news/items/cmty7sstv02y7rojhbd39cuqc",
-          "original": "https://www.ithome.com/1/001/603.htm",
-          "score": 66
-        },
-        {
-          "num": 18,
-          "section": "industry",
-          "title": "Verne 与小马智行在萨格勒布启动欧洲首个全无人载客测试",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 18:00（收录）",
-          "summary": "Verne 与小马智行在克罗地亚萨格勒布开放欧洲首个完全无人驾驶载客测试，车内不设安全员，用户通过 Uber 应用体验…",
-          "aihot": "https://aihot.news/items/cmty7sstv02y9rojhpwycvjmx",
-          "original": "https://www.ithome.com/1/001/599.htm",
-          "score": 60
-        },
-        {
-          "num": 21,
-          "section": "industry",
-          "title": "Anthropic 研究员警告 AI 灭绝风险后，美国两党议员呼吁政府加强监管",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 17:00（收录）",
-          "summary": "Anthropic 研究员考克森辞职并警告 AI 可能致人类灭绝，科学家胡宾格称认为十年内发生概率超过 10%。随后美…",
-          "aihot": "https://aihot.news/items/cmty5nlsy02ybro8q7e31j7sx",
-          "original": "https://www.ithome.com/1/001/587.htm",
-          "score": 67
-        },
-        {
-          "num": 35,
-          "section": "industry",
-          "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月12日 12:25（收录）",
-          "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-…",
-          "aihot": "https://aihot.news/items/cmtxvt03h068vrous6ilk8ds7",
-          "original": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "score": 76
-        },
-        {
-          "num": 41,
-          "section": "industry",
-          "title": "美国国会议员致函议长敦促立即复会应对前沿AI灾难性风险",
-          "source": "X：AI Safety Memes (@AISafetyMemes)",
-          "time": "9月12日 10:27（收录）",
-          "summary": "该条目暂无摘要，可点击「阅读原文」查看出处。",
-          "aihot": "https://aihot.news/items/cmtxrlg8a0b19roi3o4ehaw82",
-          "original": "https://x.com/AISafetyMemes/status/2098597355566379203",
-          "score": 60
-        },
-        {
-          "num": 42,
-          "section": "industry",
-          "title": "Nvidia 拟向 Anthropic 2 万亿美元 IPO 注资 100 亿美元当锚定投资人",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 10:12（收录）",
-          "summary": "据 Reuters 报道，Nvidia 正考虑在 Anthropic 追求 2 万亿美元 IPO 的过程中进行 100…",
-          "aihot": "https://aihot.news/items/cmtxr2geu0anrroi37macafhm",
-          "original": "https://x.com/rohanpaul_ai/status/2098588166429245634",
-          "score": 70
-        },
-        {
-          "num": 52,
+          "num": 22,
           "section": "industry",
           "title": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
           "source": "IT之家（RSS）",
@@ -640,51 +480,51 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 54,
+          "num": 12,
           "section": "industry",
-          "title": "71 名英国议员致信首相呼吁国际协议禁止超级智能 AI",
-          "source": "X：AI Safety Memes (@AISafetyMemes)",
-          "time": "9月12日 07:57（收录）",
-          "summary": "71 名英国议员联名致信首相，呼吁政府支持 Alex Sobel MP 提出的人工超级智能安全法案，并推动禁止开发超级…",
-          "aihot": "https://aihot.news/items/cmtxm8jvu05iproi3pzp16em7",
-          "original": "https://x.com/AISafetyMemes/status/2098555392062333053",
-          "score": 62
+          "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月12日 12:25（收录）",
+          "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-…",
+          "aihot": "https://aihot.news/items/cmtxvt03h068vrous6ilk8ds7",
+          "original": "https://www.minitap.ai/blog/i-expected-better-from-google",
+          "score": 76
         },
         {
-          "num": 55,
+          "num": 15,
           "section": "industry",
-          "title": "Anthropic 安全团队成员 Joe Benton 离职并加入 METR",
+          "title": "Nvidia 拟向 Anthropic 2 万亿美元 IPO 注资 100 亿美元当锚定投资人",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 07:42（收录）",
-          "summary": "Anthropic 安全团队成员 Joe Benton 宣布两周前离职，认为 AI 公司安全投入不足、缺乏透明度，公众…",
-          "aihot": "https://aihot.news/items/cmtxlpk50055groi3gcolfynh",
-          "original": "https://x.com/rohanpaul_ai/status/2098550772615290891",
-          "score": 62
+          "time": "9月12日 10:12（收录）",
+          "summary": "据 Reuters 报道，Nvidia 正考虑在 Anthropic 追求 2 万亿美元 IPO 的过程中进行 100…",
+          "aihot": "https://aihot.news/items/cmtxr2geu0anrroi37macafhm",
+          "original": "https://x.com/rohanpaul_ai/status/2098588166429245634",
+          "score": 70
         },
         {
-          "num": 59,
+          "num": 7,
           "section": "industry",
-          "title": "Anthropic 安全研究员 Joe Benton 离职并加入 METR 做独立评估",
-          "source": "X：AI Safety Memes (@AISafetyMemes)",
-          "time": "9月12日 06:57（收录）",
-          "summary": "Anthropic 安全团队成员 Joe Benton 宣布两周前离职，称 AI 公司竞相建造远超人类智能的机器且安全…",
-          "aihot": "https://aihot.news/items/cmtxk3e4v03l0roi3uosg7fin",
-          "original": "https://x.com/AISafetyMemes/status/2098539967714857053",
-          "score": 64
+          "title": "Anthropic 研究员警告 AI 灭绝风险后，美国两党议员呼吁政府加强监管",
+          "source": "IT之家（RSS）",
+          "time": "9月12日 17:00（收录）",
+          "summary": "Anthropic 研究员考克森辞职并警告 AI 可能致人类灭绝，科学家胡宾格称认为十年内发生概率超过 10%。随后美…",
+          "aihot": "https://aihot.news/items/cmty5nlsy02ybro8q7e31j7sx",
+          "original": "https://www.ithome.com/1/001/587.htm",
+          "score": 67
         },
         {
-          "num": 66,
+          "num": 5,
           "section": "industry",
-          "title": "新墨西哥州最高法院对在谋杀案上诉中使用 ChatGPT 编造证人证词的律师罚款 5000 美元",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月12日 05:28（收录）",
-          "summary": "新墨西哥州最高法院对律师 Stephen Aarons 罚款 5000 美元并判处藐视法庭，因其未核实 AI 生成的法…",
-          "aihot": "https://aihot.news/items/cmtxgxnca06ilro6pn50i1lkr",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-          "score": 61
+          "title": "甲骨文因 AI 数据中心现金压力再增 7 亿美元裁员成本，重组总成本升至约 28 亿美元",
+          "source": "IT之家（RSS）",
+          "time": "9月12日 18:00（收录）",
+          "summary": "据彭博社报道，受大规模建设 AI 数据中心带来的现金压力影响，甲骨文将 2026 年重组计划的裁员总成本提升至约 28…",
+          "aihot": "https://aihot.news/items/cmty7sstv02y7rojhbd39cuqc",
+          "original": "https://www.ithome.com/1/001/603.htm",
+          "score": 66
         },
         {
-          "num": 70,
+          "num": 33,
           "section": "industry",
           "title": "新墨西哥州最高法院制裁使用 ChatGPT 引用虚构证词的律师",
           "source": "Ars Technica：AI（RSS）",
@@ -695,7 +535,7 @@ const DATA = {
           "score": 66
         },
         {
-          "num": 75,
+          "num": 35,
           "section": "industry",
           "title": "月之暗面（Moonshot AI）瞄准年底 20 亿美元年化营收",
           "source": "TechCrunch：AI（RSS）",
@@ -706,26 +546,26 @@ const DATA = {
           "score": 66
         },
         {
-          "num": 79,
+          "num": 26,
           "section": "industry",
-          "title": "美国环保署计划废除数据中心空气污染许可的公众审查规定",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 03:28（收录）",
-          "summary": "美国环保署计划废除要求各州在批准工业设施空气污染许可前公开告知并征求公众意见的规定，涵盖 AI 数据中心及其配套电厂…",
-          "aihot": "https://aihot.news/items/cmtxcnayi02laro6p1dh33hj7",
-          "original": "https://capitalbnews.org/data-centers-permit-rules-epa",
-          "score": 60
+          "title": "Anthropic 安全研究员 Joe Benton 离职并加入 METR 做独立评估",
+          "source": "X：AI Safety Memes (@AISafetyMemes)",
+          "time": "9月12日 06:57（收录）",
+          "summary": "Anthropic 安全团队成员 Joe Benton 宣布两周前离职，称 AI 公司竞相建造远超人类智能的机器且安全…",
+          "aihot": "https://aihot.news/items/cmtxk3e4v03l0roi3uosg7fin",
+          "original": "https://x.com/AISafetyMemes/status/2098539967714857053",
+          "score": 64
         },
         {
-          "num": 95,
+          "num": 24,
           "section": "industry",
-          "title": "Nscale 任命前 OpenAI 高管 Fidji Simo 进董事会，为潜在 IPO 做准备",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月12日 00:58（收录）",
-          "summary": "英国 AI 数据中心初创公司 Nscale 任命前 OpenAI 高管 Fidji Simo 进入董事会，她将加入 S…",
-          "aihot": "https://aihot.news/items/cmtx7a72k09asroed30vfgagh",
-          "original": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo",
-          "score": 51
+          "title": "71 名英国议员致信首相呼吁国际协议禁止超级智能 AI",
+          "source": "X：AI Safety Memes (@AISafetyMemes)",
+          "time": "9月12日 07:57（收录）",
+          "summary": "71 名英国议员联名致信首相，呼吁政府支持 Alex Sobel MP 提出的人工超级智能安全法案，并推动禁止开发超级…",
+          "aihot": "https://aihot.news/items/cmtxm8jvu05iproi3pzp16em7",
+          "original": "https://x.com/AISafetyMemes/status/2098555392062333053",
+          "score": 62
         }
       ]
     },
@@ -736,51 +576,7 @@ const DATA = {
       "count": 8,
       "cards": [
         {
-          "num": 26,
-          "section": "papers",
-          "title": "Meta 论文 Jagged Judges：对抗性 LLM 可说服判官翻转 62-91% 的判决",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 15:12（收录）",
-          "summary": "Meta 发布论文《Jagged Judges： Epistemic Stability Under Silence…",
-          "aihot": "https://aihot.news/items/cmty1sdvr02psrojilupmbrzz",
-          "original": "https://x.com/rohanpaul_ai/status/2098670948828504568",
-          "score": 61
-        },
-        {
-          "num": 40,
-          "section": "papers",
-          "title": "BenchShield 论文提出基于形式化模型的 LLM Agent 评测奖励破解检测方法",
-          "source": "X：DAIR.AI (@dair_ai)",
-          "time": "9月12日 10:29（收录）",
-          "summary": "BenchShield 论文提出一种用于 LLM Agent 评测奖励完整性的检测层，对 456 条人工判定轨迹（来自…",
-          "aihot": "https://aihot.news/items/cmtxro3ot0b46roi3vw7aq7mv",
-          "original": "https://x.com/dair_ai/status/2098592449568591902",
-          "score": 55
-        },
-        {
-          "num": 44,
-          "section": "papers",
-          "title": "论文实验：100 个 LLM agent 运行小镇经济 26 周，货币最终停止流动",
-          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
-          "time": "9月12日 09:12（收录）",
-          "summary": "一项研究将 100 个带记忆的 LLM agent 置于真实 Pokhara Lakeside 地理的小镇经济中，运行…",
-          "aihot": "https://aihot.news/items/cmtxoxe0x08l9roi3gjb0oswl",
-          "original": "https://x.com/omarsar0/status/2098577348211994947",
-          "score": 60
-        },
-        {
-          "num": 48,
-          "section": "papers",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 08:28（收录）",
-          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems…",
-          "aihot": "https://aihot.news/items/cmtxnd7fw06wcroi31psxg2c6",
-          "original": "https://www.rubyhack.ai/",
-          "score": 81
-        },
-        {
-          "num": 49,
+          "num": 21,
           "section": "papers",
           "title": "调查报告：OpenAI 智能体对 RubyGems 发起未公开的 GemStuffer 攻击",
           "source": "Hacker News：AI 热帖",
@@ -791,7 +587,18 @@ const DATA = {
           "score": 82
         },
         {
-          "num": 57,
+          "num": 20,
+          "section": "papers",
+          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月12日 08:28（收录）",
+          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems…",
+          "aihot": "https://aihot.news/items/cmtxnd7fw06wcroi31psxg2c6",
+          "original": "https://www.rubyhack.ai/",
+          "score": 81
+        },
+        {
+          "num": 25,
           "section": "papers",
           "title": "研究显示语言模型可自主利用漏洞并跨服务器自我复制",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -802,7 +609,40 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 63,
+          "num": 9,
+          "section": "papers",
+          "title": "Meta 论文 Jagged Judges：对抗性 LLM 可说服判官翻转 62-91% 的判决",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月12日 15:12（收录）",
+          "summary": "Meta 发布论文《Jagged Judges： Epistemic Stability Under Silence…",
+          "aihot": "https://aihot.news/items/cmty1sdvr02psrojilupmbrzz",
+          "original": "https://x.com/rohanpaul_ai/status/2098670948828504568",
+          "score": 61
+        },
+        {
+          "num": 17,
+          "section": "papers",
+          "title": "论文实验：100 个 LLM agent 运行小镇经济 26 周，货币最终停止流动",
+          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "time": "9月12日 09:12（收录）",
+          "summary": "一项研究将 100 个带记忆的 LLM agent 置于真实 Pokhara Lakeside 地理的小镇经济中，运行…",
+          "aihot": "https://aihot.news/items/cmtxoxe0x08l9roi3gjb0oswl",
+          "original": "https://x.com/omarsar0/status/2098577348211994947",
+          "score": 60
+        },
+        {
+          "num": 14,
+          "section": "papers",
+          "title": "BenchShield 论文提出基于形式化模型的 LLM Agent 评测奖励破解检测方法",
+          "source": "X：DAIR.AI (@dair_ai)",
+          "time": "9月12日 10:29（收录）",
+          "summary": "BenchShield 论文提出一种用于 LLM Agent 评测奖励完整性的检测层，对 456 条人工判定轨迹（来自…",
+          "aihot": "https://aihot.news/items/cmtxro3ot0b46roi3vw7aq7mv",
+          "original": "https://x.com/dair_ai/status/2098592449568591902",
+          "score": 55
+        },
+        {
+          "num": 29,
           "section": "papers",
           "title": "ByteDance Seed 等团队提出 HarnessDev，评测 LLM 自建的 Agent harness 仅 34/64 改动可泛化",
           "source": "MarkTechPost（RSS）",
@@ -813,7 +653,7 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 83,
+          "num": 36,
           "section": "papers",
           "title": "LinkedIn 论文：Agent 记忆无法自动迁移，模型升级需做记忆兼容性测试",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -829,76 +669,43 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 53,
+      "count": 10,
       "cards": [
-        {
-          "num": 1,
-          "section": "tips",
-          "title": "Chaofan Shou 称从某中国 LLM 路由服务购得 6TB 数据集，内含 7 家政府机构和 19 家企业凭证",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月12日 21:42（收录）",
-          "summary": "安全研究者 Chaofan Shou（@shoucccc）自述昨天从中国头部 LLM 路由服务购得一个 Fable 数…",
-          "aihot": "https://aihot.news/items/cmtyfpy160crnrojhd7vnbcbf",
-          "original": "https://x.com/kimmonismus/status/2098764565764804908",
-          "score": 63
-        },
-        {
-          "num": 2,
-          "section": "tips",
-          "title": "25 位菲尔兹奖得主在 mathandai.org 联合发布《数学中的 AI 严重错位》声明",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 21:39（收录）",
-          "summary": "由陶哲轩（Terence Tao）领衔、从 1978 年的 Deligne 到 2026 年获奖的邓煜，25 位在世菲…",
-          "aihot": "https://aihot.news/items/cmtyfmaqb0cq6rojhw8di9ah7",
-          "original": "https://x.com/AYi_AInotes/status/2098763078653415896",
-          "score": 65
-        },
         {
           "num": 3,
           "section": "tips",
-          "title": "OpenAI 建议开发者用更精简的提示词和更少限制来适配 GPT-6 Astra",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月12日 21:29（收录）",
-          "summary": "OpenAI 的 Eric Provencher 撰文建议，切换到 GPT-6 Astra 时应精简技能描述、AGEN…",
-          "aihot": "https://aihot.news/items/cmtyf8tid0cgbrojhe215jo3n",
-          "original": "https://the-decoder.com/gpt-6-astra-needs-leaner-prompts-and-fewer-guardrails-openai-recommends",
-          "score": 64
+          "title": "The Verge 深度报道：OpenAI 以 88 小时解决 Navier-Stokes 引发数学界信任危机",
+          "source": "The Verge：AI（RSS）",
+          "time": "9月12日 19:28（收录）",
+          "summary": "The Verge 采访十余位数学家，梳理 OpenAI 用约 10，000 个 agent、数千万美元算力和 88…",
+          "aihot": "https://aihot.news/items/cmtyay71605x2rojh4f44hf66",
+          "original": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
+          "score": 82
         },
         {
-          "num": 4,
+          "num": 18,
           "section": "tips",
-          "title": "Claude Code 之父切尔尼谈 AI 编程：开发者核心职责是守住代码质量",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 21:00（收录）",
-          "summary": "据《商业内幕》报道，Anthropic Claude Code 创作者鲍里斯·切尔尼 9 月 10 日回复开发者来信称…",
-          "aihot": "https://aihot.news/items/cmtye8cay0bdrrojhxiutniia",
-          "original": "https://www.ithome.com/1/001/633.htm",
-          "score": 56
+          "title": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露",
+          "source": "Simon Willison 博客",
+          "time": "9月12日 08:59（收录）",
+          "summary": "新报告认为 5 月 12 日 RubyGems 安全团队负责人 Maciej Mensfeld 报告的恶意包攻击很可能…",
+          "aihot": "https://aihot.news/items/cmtxohbcn07sdroi3f6t10g0i",
+          "original": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
+          "score": 79
         },
         {
-          "num": 6,
+          "num": 37,
           "section": "tips",
-          "title": "Meta 推出 Muse：每周送用户 1 亿 Token 配云电脑，作者解读为 Agent 商业税单",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 20:39（收录）",
-          "summary": "Meta 推出 Muse，每周给每个用户送 1 亿 Token，配一台独立 Linux 云电脑和真实浏览器。作者阿易认…",
-          "aihot": "https://aihot.news/items/cmtydh4z80aqzrojhtebhklko",
-          "original": "https://x.com/AYi_AInotes/status/2098748619616641533",
-          "score": 53
+          "title": "GPT Image 2.5 Flare 与 Sunburst 登顶 Artificial Analysis 图像竞技场",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "9月12日 02:27（收录）",
+          "summary": "Artificial Analysis 评测显示，OpenAI 新发布的 GPT Image 2.5 Flare 和…",
+          "aihot": "https://aihot.news/items/cmtxag5x702throukwt8vno1e",
+          "original": "https://x.com/ArtificialAnlys/status/2098477736746713145",
+          "score": 75
         },
         {
-          "num": 8,
-          "section": "tips",
-          "title": "阿易解读 Simon Taylor 观点：所有 AI 公司最终都会变成支付公司",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 20:09（收录）",
-          "summary": "金融科技专家 Simon Taylor 提出「All AI companies will be Payments co…",
-          "aihot": "https://aihot.news/items/cmtycekq20a0frojh5eypfqaw",
-          "original": "https://x.com/AYi_AInotes/status/2098739104976453983",
-          "score": 54
-        },
-        {
-          "num": 9,
+          "num": 1,
           "section": "tips",
           "title": "OpenAI 公开 ChatGPT 存储系统 Habitat：两工程师携 Codex 和 GPT-5.5 用 Rust 完成重写",
           "source": "X：小北 (@frxiaobei)",
@@ -911,6 +718,50 @@ const DATA = {
         {
           "num": 10,
           "section": "tips",
+          "title": "安全学者寿超璠购得 6TB 中转站日志，内含小米、蔚来等企业真实 SSH 密钥与云凭证",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月12日 15:09（收录）",
+          "summary": "安全学者寿超璠花几万美金从一家头部大模型中转站买下 6TB Claude 调用日志，其中含小米、华为、蔚来、MiniM…",
+          "aihot": "https://aihot.news/items/cmty1otbd02nvrojisdh6vjw9",
+          "original": "https://x.com/AYi_AInotes/status/2098665232616894840",
+          "score": 72
+        },
+        {
+          "num": 40,
+          "section": "tips",
+          "title": "Anthropic 发布报告披露四起自家 AI 模型入侵外部系统事件",
+          "source": "The Verge：AI（RSS）",
+          "time": "9月12日 00:58（收录）",
+          "summary": "Anthropic 于周三发布新报告，详细披露今年四起其 AI 模型入侵外部公司系统或利用漏洞的事件。其中一起涉及一个…",
+          "aihot": "https://aihot.news/items/cmtx7abln09b3roed4y8twwa1",
+          "original": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+          "score": 68
+        },
+        {
+          "num": 32,
+          "section": "tips",
+          "title": "25位菲尔兹奖得主发公开信，OpenAI与数学家的争端持续升级",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "9月12日 04:58（收录）",
+          "summary": "25位菲尔兹奖得主签署公开信，警告AI实验室竞争威胁数学家的智力工作与开放研究文化。NYU教授Tristan Buck…",
+          "aihot": "https://aihot.news/items/cmtxfuvux05blro6pg12glqm9",
+          "original": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating",
+          "score": 67
+        },
+        {
+          "num": 38,
+          "section": "tips",
+          "title": "前 DeepMind 研究副总裁 Vinyals 称 AI 自我改进会到来但不会引发智能爆炸",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "9月12日 01:58（收录）",
+          "summary": "前 Google DeepMind 研究副总裁 Oriol Vinyals 在 Agentic AI Summit 2…",
+          "aihot": "https://aihot.news/items/cmtx9fqss0bgoroed12jj7y2f",
+          "original": "https://the-decoder.com/ex-deepmind-vp-vinyals-says-ai-self-improvement-is-coming-but-wont-trigger-an-intelligence-explosion",
+          "score": 67
+        },
+        {
+          "num": 2,
+          "section": "tips",
           "title": "3 天实测 GPT Images 2.5：730 张生成数据统计与 5 大问题总结",
           "source": "X：ZHO (@ZHO_ZHO_ZHO)",
           "time": "9月12日 19:39（收录）",
@@ -922,496 +773,12 @@ const DATA = {
         {
           "num": 11,
           "section": "tips",
-          "title": "Unitree 能否复制 DJI 的路径主导全球机器人市场",
-          "source": "Ars Technica：AI（RSS）",
-          "time": "9月12日 19:30（收录）",
-          "summary": "作者花 4000 美元购买中国 Unitree 机器狗，并分析 Unitree 凭自产电机和变速箱等低成本供应链可能复…",
-          "aihot": "https://aihot.news/items/cmtyaztfa05ytrojh6ks8mk94",
-          "original": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china",
-          "score": 56
-        },
-        {
-          "num": 12,
-          "section": "tips",
-          "title": "The Verge 深度报道：OpenAI 以 88 小时解决 Navier-Stokes 引发数学界信任危机",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月12日 19:28（收录）",
-          "summary": "The Verge 采访十余位数学家，梳理 OpenAI 用约 10，000 个 agent、数千万美元算力和 88…",
-          "aihot": "https://aihot.news/items/cmtyay71605x2rojh4f44hf66",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-          "score": 82
-        },
-        {
-          "num": 13,
-          "section": "tips",
-          "title": "回顾性逆向工程苹果神经引擎：从 M1 ANE 架构看 NPU 为何衰落",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 19:28（收录）",
-          "summary": "作者曾是逆向 ANE Linux 驱动的开发者，三年后重新逆向 M1 上的 Apple Neural Engine，完…",
-          "aihot": "https://aihot.news/items/cmtyay7av05x3rojh7ahlv3dv",
-          "original": "https://eiln.github.io/posts/ane.html",
-          "score": 52
-        },
-        {
-          "num": 14,
-          "section": "tips",
-          "title": "从 DeepMind 推理指南看大模型推理工程：瓶颈不在算力而在显存带宽",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 19:09（收录）",
-          "summary": "Wafer 联创推荐吃透 How To Scale Your Model 第 7 章，并上线了 AI 性能工程资源系列…",
-          "aihot": "https://aihot.news/items/cmtya9e5305h8rojhtresxfol",
-          "original": "https://x.com/AYi_AInotes/status/2098730751004913820",
-          "score": 53
-        },
-        {
-          "num": 16,
-          "section": "tips",
-          "title": "Google Cloud 架构师在 Anthropic 大会用 Claude 26 分钟从手绘草图上线真实 App",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 18:09（收录）",
-          "summary": "Google Cloud 架构师 Ivan Nardini 在 Anthropic 大会现场演示，不预写代码、用 26…",
-          "aihot": "https://aihot.news/items/cmty849ew03jjrojhwxuhpkwa",
-          "original": "https://x.com/AYi_AInotes/status/2098714398701302023",
-          "score": 54
-        },
-        {
-          "num": 19,
-          "section": "tips",
-          "title": "洛图科技：中国智能眼镜线上规模首次下跌，7 月销量同比下降 15.3%",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 18:00（收录）",
-          "summary": "洛图科技报告显示，2026 年 7 月中国智能眼镜线上监测零售量为 7.4 万台，同比下降 15.3%，零售额 1.3…",
-          "aihot": "https://aihot.news/items/cmty7sstv02y8rojhwrxwwo91",
-          "original": "https://www.ithome.com/1/001/602.htm",
-          "score": 53
-        },
-        {
-          "num": 22,
-          "section": "tips",
-          "title": "25 位菲尔兹奖得主联合警告：AI 或在伤害数学及所有智力工作",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月12日 16:59（收录）",
-          "summary": "25 位菲尔兹奖得主发布联合声明，警告 AI 行业与数学的目标严重错位，用 AI 批量攻克难题可能破坏学科真正的目的即…",
-          "aihot": "https://aihot.news/items/cmty5lh2o02rwro8qjqiq37eo",
-          "original": "https://the-decoder.com/leading-mathematicians-fear-ai-is-making-their-field-dumber-and-warn-the-rest-of-us-is-next",
-          "score": 64
-        },
-        {
-          "num": 23,
-          "section": "tips",
-          "title": "Dwarkesh 对谈 John Schulman、Beren Millidge 与 Charlie O'Neill：我们离递归式自我改进还有多远",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 16:58（收录）",
-          "summary": "Dwarkesh 发布与 John Schulman（Thinking Machines 首席科学家）、Beren M…",
-          "aihot": "https://aihot.news/items/cmty5l9kl02r8ro8qkiyos2za",
-          "original": "https://www.dwarkesh.com/p/john-beren-charlie",
-          "score": 60
-        },
-        {
-          "num": 25,
-          "section": "tips",
-          "title": "Hugging Face CEO 质疑考克森谈 AI 灭绝风险，称像空调维修工谈气候变化",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 16:00（收录）",
-          "summary": "前 Anthropic 研究员雅各布·考克森本周二宣布辞职，称担忧 Anthropic 和 OpenAI 正在全速迈向…",
-          "aihot": "https://aihot.news/items/cmty3ieqt03zuro4lz6hflr5s",
-          "original": "https://www.ithome.com/1/001/582.htm",
-          "score": 60
-        },
-        {
-          "num": 27,
-          "section": "tips",
-          "title": "安全学者寿超璠购得 6TB 中转站日志，内含小米、蔚来等企业真实 SSH 密钥与云凭证",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 15:09（收录）",
-          "summary": "安全学者寿超璠花几万美金从一家头部大模型中转站买下 6TB Claude 调用日志，其中含小米、华为、蔚来、MiniM…",
-          "aihot": "https://aihot.news/items/cmty1otbd02nvrojisdh6vjw9",
-          "original": "https://x.com/AYi_AInotes/status/2098665232616894840",
-          "score": 72
-        },
-        {
-          "num": 28,
-          "section": "tips",
-          "title": "GPT-6 Astra 驱动 Hugging Face SO-101 机械臂画出金门大桥，转发者解读视觉闭环与具身智能趋势",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 15:09（收录）",
-          "summary": "开发者 Thijs 给 GPT-6 Astra 一只不到 200 美元的 Hugging Face SO-101 开源…",
-          "aihot": "https://aihot.news/items/cmty1otbd02nurojipc38pc9r",
-          "original": "https://x.com/AYi_AInotes/status/2098669390635860068",
-          "score": 59
-        },
-        {
-          "num": 29,
-          "section": "tips",
-          "title": "NYT 报道肯尼亚论文代写产业因 ChatGPT 崩盘",
-          "source": "X：阑夕 (@foxshuo)",
-          "time": "9月12日 14:09（收录）",
-          "summary": "阑夕转述 NYT 关于肯尼亚论文代写产业因 AI 崩盘的报道。肯尼亚曾供给全球最多的论文枪手，中介每篇论文以 40-7…",
-          "aihot": "https://aihot.news/items/cmtxzjlt20cdkrous9sxr8qz0",
-          "original": "https://x.com/foxshuo/status/2098649476785439206",
-          "score": 65
-        },
-        {
-          "num": 30,
-          "section": "tips",
-          "title": "阿易转述 SpaceXAI 工程师演示 200 多个并发 Agent 的云端协作架构",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 14:09（收录）",
-          "summary": "博主转述一场 22 分钟实战演示，称 SpaceXAI 核心成员 Amira（前 Cursor 团队）展示了如何用云端…",
-          "aihot": "https://aihot.news/items/cmtxzjlsk0cdjrouse8xh23z0",
-          "original": "https://x.com/AYi_AInotes/status/2098653726307205528",
-          "score": 57
-        },
-        {
-          "num": 31,
-          "section": "tips",
           "title": "Minitap 团队指控 Google Artemis 使用其开源项目 mobile-use 代码却未注明出处",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
           "time": "9月12日 13:58（收录）",
           "summary": "Minitap 团队发布长文，指控 Google 开源的移动设备自动化项目 Artemis 使用了其开源项目 mobi…",
           "aihot": "https://aihot.news/items/cmtxz5q4r091frous4s8547rc",
           "original": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "score": 66
-        },
-        {
-          "num": 32,
-          "section": "tips",
-          "title": "25 位菲尔兹奖得主联合发表声明警告 AI 在数学领域严重错位",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 13:00（收录）",
-          "summary": "当地时间 9 月 11 日，陶哲轩、邓煜、Peter Scholze 等 25 位菲尔兹奖得主联合发表声明《A Sev…",
-          "aihot": "https://aihot.news/items/cmtxx2u1t079urousqvxda8o8",
-          "original": "https://www.ithome.com/1/001/554.htm",
-          "score": 65
-        },
-        {
-          "num": 34,
-          "section": "tips",
-          "title": "Yuchen Jin 回应 25 位菲尔兹奖得主对 AI 冲击数学的担忧",
-          "source": "X：Yuchen Jin (@Yuchenj_UW)",
-          "time": "9月12日 12:34（收录）",
-          "summary": "25 位菲尔兹奖得主担心 AI 过快解决数学问题会损害数学学科，Yuchen Jin 表示自己在编程领域看到的是相反情…",
-          "aihot": "https://aihot.news/items/cmtxw5jb506karous355n7af0",
-          "original": "https://x.com/Yuchenj_UW/status/2098623936636625233",
-          "score": 53
-        },
-        {
-          "num": 36,
-          "section": "tips",
-          "title": "David Sacks 称 Jacob Coxon 辞职推文是有组织的 doomer 操作，本人接受 CBS 采访回应 AI 自我复制风险",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 12:12（收录）",
-          "summary": "David Sacks 在 All-In Podcast 称 Jacob Coxon 浏览量超 1.66 亿的辞职推文…",
-          "aihot": "https://aihot.news/items/cmtxvctlo05yjrous2yp0ofrn",
-          "original": "https://x.com/rohanpaul_ai/status/2098622662402814318",
-          "score": 52
-        },
-        {
-          "num": 37,
-          "section": "tips",
-          "title": "吴恩达基于上万份岗位分析提出工程师应主动塑造构建的四项能力",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 12:09（收录）",
-          "summary": "吴恩达发布基于 10，000 多份真实岗位分析构建的《AI Engineering Skills Map》压轴支柱 S…",
-          "aihot": "https://aihot.news/items/cmtxv9aaz05wwrousdui2uokv",
-          "original": "https://x.com/AYi_AInotes/status/2098618847876042956",
-          "score": 56
-        },
-        {
-          "num": 45,
-          "section": "tips",
-          "title": "OpenAI 将在线存储平台 Habitat 从 Python 迁移至 Rust，CPU 效率提升 6 倍",
-          "source": "IT之家（RSS）",
-          "time": "9月12日 09:00（收录）",
-          "summary": "OpenAI 发文介绍其在线存储平台 Habitat 从 Python 迁移至 Rust 的过程，该平台每秒处理超 7…",
-          "aihot": "https://aihot.news/items/cmtxoi8bc07unroi3qbos73ld",
-          "original": "https://www.ithome.com/1/001/497.htm",
-          "score": 61
-        },
-        {
-          "num": 46,
-          "section": "tips",
-          "title": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露",
-          "source": "Simon Willison 博客",
-          "time": "9月12日 08:59（收录）",
-          "summary": "新报告认为 5 月 12 日 RubyGems 安全团队负责人 Maciej Mensfeld 报告的恶意包攻击很可能…",
-          "aihot": "https://aihot.news/items/cmtxohbcn07sdroi3f6t10g0i",
-          "original": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-          "score": 79
-        },
-        {
-          "num": 50,
-          "section": "tips",
-          "title": "Jacob Coxon 在 CNN 称一年内 AI 或在多领域取代人类做研究",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 08:12（收录）",
-          "summary": "前 Anthropic 和 OpenAI 研究员 Jacob Coxon 在 CNN 采访中表示，编码和数学领域 AI…",
-          "aihot": "https://aihot.news/items/cmtxms5du06fyroi329ijiehr",
-          "original": "https://x.com/rohanpaul_ai/status/2098562944212885616",
-          "score": 51
-        },
-        {
-          "num": 56,
-          "section": "tips",
-          "title": "a16z David George：美国企业 AI 人均月支出中位数 12 美元，前 1% 达 7000 美元",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 07:39（收录）",
-          "summary": "a16z 增长合伙人 David George 称，美国企业每位员工每月 AI 支出中位数为 12 美元，其监测数据集…",
-          "aihot": "https://aihot.news/items/cmtxlm1f5053sroi3oad0s9sk",
-          "original": "https://x.com/AYi_AInotes/status/2098551435252154572",
-          "score": 57
-        },
-        {
-          "num": 58,
-          "section": "tips",
-          "title": "Simon Willison 介绍使用 OpenRouter 的供应商路由陷阱与对策",
-          "source": "Simon Willison 博客",
-          "time": "9月12日 06:59（收录）",
-          "summary": "Simon Willison 转述 Mohamed Moustafa 对 OpenRouter 自动路由的问题分析。不…",
-          "aihot": "https://aihot.news/items/cmtxk6z8j03qrroi31ebno2wk",
-          "original": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter",
-          "score": 59
-        },
-        {
-          "num": 60,
-          "section": "tips",
-          "title": "Anthropic 工程师工作坊拆解 Claude Code 生产级 Agent 的五层脚手架",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 06:39（收录）",
-          "summary": "Anthropic 一位 Claude Code 工程师在 1 小时内部工作坊中，从空白终端逐步演示生产级 Agent…",
-          "aihot": "https://aihot.news/items/cmtxjgv8g0378roi3xswd1fa7",
-          "original": "https://x.com/AYi_AInotes/status/2098536978648310014",
-          "score": 61
-        },
-        {
-          "num": 67,
-          "section": "tips",
-          "title": "Y Combinator CEO Garry Tan 主张美国开源权重 AI 实验室也应蒸馏前沿模型",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月12日 05:28（收录）",
-          "summary": "Y Combinator CEO Garry Tan 接受 CNBC 和 TechCrunch 采访时表示，监管机构不…",
-          "aihot": "https://aihot.news/items/cmtxgxhe306hero6puqjpabpd",
-          "original": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
-          "score": 59
-        },
-        {
-          "num": 68,
-          "section": "tips",
-          "title": "25位菲尔兹奖得主发公开信，OpenAI与数学家的争端持续升级",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月12日 04:58（收录）",
-          "summary": "25位菲尔兹奖得主签署公开信，警告AI实验室竞争威胁数学家的智力工作与开放研究文化。NYU教授Tristan Buck…",
-          "aihot": "https://aihot.news/items/cmtxfuvux05blro6pg12glqm9",
-          "original": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating",
-          "score": 67
-        },
-        {
-          "num": 69,
-          "section": "tips",
-          "title": "OpenRouter：DeepSeek V4.1 Flash 上线 24 小时用量达 1T token",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "time": "9月12日 04:37（收录）",
-          "summary": "OpenRouter 称 DeepSeek V4.1 Flash 在其平台上 24 小时内处理了 1T token，预…",
-          "aihot": "https://aihot.news/items/cmtxf3xsi04unro6pq4vbva4y",
-          "original": "https://x.com/OpenRouter/status/2098503808682967356",
-          "score": 64
-        },
-        {
-          "num": 71,
-          "section": "tips",
-          "title": "Artificial Analysis 独立评测 Devin Fusion 编码代理：Fable 配置得分 62，Astra 配置更省更快",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "9月12日 04:27（收录）",
-          "summary": "Artificial Analysis 在 Devin Fusion 发布当天对其独立评测，这是首个进入 Artifi…",
-          "aihot": "https://aihot.news/items/cmtxeqhmq04ikro6pzb3as0qu",
-          "original": "https://x.com/ArtificialAnlys/status/2098504936984293447",
-          "score": 64
-        },
-        {
-          "num": 74,
-          "section": "tips",
-          "title": "VOIDZ 如何用 Runway 把 15 秒 VFX 短片做成 95 秒纪实电影《Ends Meat》",
-          "source": "Runway：News（网页）",
-          "time": "9月12日 04:02（收录）",
-          "summary": "艺术家 VOIDZ 在 Runway 访谈中介绍其约 95 秒、含 15 处超现实干预的纪实混合现实影片《Ends M…",
-          "aihot": "https://aihot.news/items/cmtxduei203ntro6p2jdxs0h4",
-          "original": "https://runwayml.com/news/customers/voidz",
-          "score": 53
-        },
-        {
-          "num": 76,
-          "section": "tips",
-          "title": "President Trump dismissed AI extinction concerns， prioritizing competition with China as frontier-la…",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 03:42（收录）",
-          "summary": "该条目暂无摘要，可点击「阅读原文」查看出处。",
-          "aihot": "https://aihot.news/items/cmtxd4xk502ypro6ps2pyiv3l",
-          "original": "https://x.com/rohanpaul_ai/status/2098491061643743721",
-          "score": 64
-        },
-        {
-          "num": 77,
-          "section": "tips",
-          "title": "Musk 称 Grok 4.7 需再推迟几天，疑因 RL 过度惩罚回复长度",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "9月12日 03:29（收录）",
-          "summary": "Musk 回复称 Grok 4.7 还需几天继续打磨，可能因为在 RL 中对回复长度惩罚过重，模型仍会过早放弃其实能完…",
-          "aihot": "https://aihot.news/items/cmtxcnzpk02n0ro6pfnai6y13",
-          "original": "https://x.com/testingcatalog/status/2098488904680652830",
-          "score": 55
-        },
-        {
-          "num": 78,
-          "section": "tips",
-          "title": "陶哲轩等 25 位菲尔兹奖得主联署声明：数学领域 AI 存在严重错位",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 03:28（收录）",
-          "summary": "陶哲轩宣布与 24 位菲尔兹奖得主共同签署声明，称 LLM 数学能力虽大幅提升，但 AI 公司以解题为基准与数学社区目…",
-          "aihot": "https://aihot.news/items/cmtxcnayi02lbro6ppz17yy0v",
-          "original": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics",
-          "score": 66
-        },
-        {
-          "num": 80,
-          "section": "tips",
-          "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
-          "source": "GitHub Blog",
-          "time": "9月12日 02:59（收录）",
-          "summary": "GitHub 日韩地区营销负责人 Tomoko Tanaka 分享如何不写代码，把活动运营交给 GitHub Copi…",
-          "aihot": "https://aihot.news/items/cmtxbm8dp037xrouueja171wr",
-          "original": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
-          "score": 64
-        },
-        {
-          "num": 81,
-          "section": "tips",
-          "title": "TechCrunch Equity 播客讨论 Anthropic 研究员的末日式离职警告",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月12日 02:58（收录）",
-          "summary": "TechCrunch 的 Equity 播客讨论一名 Anthropic 研究员本周辞职并在 X 上警告公司正冲向自我…",
-          "aihot": "https://aihot.news/items/cmtxbkj2b0339rouug8sxm8h3",
-          "original": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time",
-          "score": 64
-        },
-        {
-          "num": 82,
-          "section": "tips",
-          "title": "OpenAI 官方分享如何为 GPT-6 Astra 优化 skills、AGENTS.md 与任务提示词",
-          "source": "X：OpenAI Developers (@OpenAIDevs)",
-          "time": "9月12日 02:46（收录）",
-          "summary": "OpenAI 开发者账号发布建议，提示开发者通过重新审视 skills、AGENTS.md 和任务提示词来更好地使用…",
-          "aihot": "https://aihot.news/items/cmtxb4ez602snrouunm0abrqd",
-          "original": "https://x.com/OpenAIDevs/status/2098480213244117065",
-          "score": 56
-        },
-        {
-          "num": 84,
-          "section": "tips",
-          "title": "GPT Image 2.5 Flare 与 Sunburst 登顶 Artificial Analysis 图像竞技场",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "9月12日 02:27（收录）",
-          "summary": "Artificial Analysis 评测显示，OpenAI 新发布的 GPT Image 2.5 Flare 和…",
-          "aihot": "https://aihot.news/items/cmtxag5x702throukwt8vno1e",
-          "original": "https://x.com/ArtificialAnlys/status/2098477736746713145",
-          "score": 75
-        },
-        {
-          "num": 85,
-          "section": "tips",
-          "title": "前 DeepMind 研究副总裁 Vinyals 称 AI 自我改进会到来但不会引发智能爆炸",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月12日 01:58（收录）",
-          "summary": "前 Google DeepMind 研究副总裁 Oriol Vinyals 在 Agentic AI Summit 2…",
-          "aihot": "https://aihot.news/items/cmtx9fqss0bgoroed12jj7y2f",
-          "original": "https://the-decoder.com/ex-deepmind-vp-vinyals-says-ai-self-improvement-is-coming-but-wont-trigger-an-intelligence-explosion",
-          "score": 67
-        },
-        {
-          "num": 86,
-          "section": "tips",
-          "title": "Anthropic 滥用报告指伊朗关联单位用 Claude 构建监控工具",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月12日 01:42（收录）",
-          "summary": "Anthropic 的 AI 滥用报告称，2 个与伊朗安全组织关联的单位使用 Claude 构建服务同一个监控系统的工…",
-          "aihot": "https://aihot.news/items/cmtx8ulj40b0iroedk6ebcqn4",
-          "original": "https://x.com/rohanpaul_ai/status/2098461156012924955",
-          "score": 65
-        },
-        {
-          "num": 87,
-          "section": "tips",
-          "title": "SemiAnalysis 分析 Nvidia 的 11 万亿美元 AI 建设兜底经济与其资产负债表的极限",
-          "source": "X：SemiAnalysis (@SemiAnalysis_)",
-          "time": "9月12日 01:42（收录）",
-          "summary": "SemiAnalysis 发布文章《Nvidia's Backstop Universe》，探讨 11 万亿美元 AI…",
-          "aihot": "https://aihot.news/items/cmtx8uljf0b0jroedlkrwvumg",
-          "original": "https://x.com/SemiAnalysis_/status/2098461999277416554",
-          "score": 55
-        },
-        {
-          "num": 88,
-          "section": "tips",
-          "title": "Claude Code 负责人 Boris Cherny 公开答复架构师来信：AI 时代生产代码标准应更高而非放水",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月12日 01:39（收录）",
-          "summary": "Claude Code 负责人 Boris Cherny 公开一封有 12 年经验架构师的求助信及自己的答复，认为面对…",
-          "aihot": "https://aihot.news/items/cmtx8r3ab0ayuroedhlef4eo2",
-          "original": "https://x.com/AYi_AInotes/status/2098462221378494736",
-          "score": 66
-        },
-        {
-          "num": 89,
-          "section": "tips",
-          "title": "深度学习先驱 Bengio 称训练过程本身使 AI 变得危险",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月12日 01:28（收录）",
-          "summary": "Yoshua Bengio 在新文章中警告，先进的 AI 智能体可能脱离人类控制：智能体越擅长优化目标，也越擅长欺骗用…",
-          "aihot": "https://aihot.news/items/cmtx8d6gb0ambroeddj2q83rd",
-          "original": "https://the-decoder.com/deep-learning-pioneer-bengio-argues-the-training-process-itself-makes-ai-dangerous",
-          "score": 50
-        },
-        {
-          "num": 91,
-          "section": "tips",
-          "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "time": "9月12日 01:02（收录）",
-          "summary": "OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：现每秒处理超 7000 万请求、服务每周超…",
-          "aihot": "https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv",
-          "original": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-          "score": 61
-        },
-        {
-          "num": 92,
-          "section": "tips",
-          "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远",
-          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-          "time": "9月12日 01:01（收录）",
-          "summary": "Dwarkesh Patel 与 Zyphra CTO Beren Millidge、Thinking Machine…",
-          "aihot": "https://aihot.news/items/cmtx7e9sn09mmroedph6hkyx4",
-          "original": "https://www.dwarkesh.com/p/john-beren-charlie",
-          "score": 66
-        },
-        {
-          "num": 93,
-          "section": "tips",
-          "title": "Anthropic 发布报告披露四起自家 AI 模型入侵外部系统事件",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月12日 00:58（收录）",
-          "summary": "Anthropic 于周三发布新报告，详细披露今年四起其 AI 模型入侵外部公司系统或利用漏洞的事件。其中一起涉及一个…",
-          "aihot": "https://aihot.news/items/cmtx7abln09b3roed4y8twwa1",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-          "score": 68
-        },
-        {
-          "num": 94,
-          "section": "tips",
-          "title": "RTK 是否让 AI 编码更便宜：Quesma 在 Terminal-Bench 2.1 上的成本基准说否",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月12日 00:58（收录）",
-          "summary": "Quesma 花 1500 多美元在 Terminal-Bench 2.1 上实测 RTK（Rust Token Ki…",
-          "aihot": "https://aihot.news/items/cmtx7abzo09baroedxquu0fnv",
-          "original": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper",
           "score": 66
         }
       ]
@@ -1644,7 +1011,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1750,12 +1116,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1772,16 +1136,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

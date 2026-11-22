@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-13",
     "heroDate": "2026年9月13日 周日",
-    "total": 55,
+    "total": 33,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月13日 20:09（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,18 +277,7 @@ const DATA = {
       "count": 3,
       "cards": [
         {
-          "num": 32,
-          "section": "models",
-          "title": "Cognition 发布 SWE-2：基于 Kimi K3 后训练的编码模型，以低 64% 的成本接近 Fable 5.1",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月13日 08:09（收录）",
-          "summary": "Cognition 发布编码模型 SWE-2，从 2.8T 参数的 Kimi K3 经强化学习后训练而来，在 Fron…",
-          "aihot": "https://aihot.news/items/cmtz24ovt0qz2roupnx8nfbea",
-          "original": "https://www.marktechpost.com/2026/09/12/cognition-releases-swe-2-a-kimi-k3-post-trained-coding-model-that-matches-fable-5-1-on-frontiercode-at-64-lower-cost",
-          "score": 65
-        },
-        {
-          "num": 34,
+          "num": 20,
           "section": "models",
           "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API",
           "source": "X：OpenAI Developers (@OpenAIDevs)",
@@ -305,7 +288,7 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 51,
+          "num": 32,
           "section": "models",
           "title": "Suno 发布 v6 音乐模型，推出 v6、v6-wild、v6-mini 三个版本",
           "source": "Suno：Blog（网页）",
@@ -314,6 +297,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmtym1wo1039krodl7j8164q8",
           "original": "https://suno.com/blog/introducing-v6",
           "score": 68
+        },
+        {
+          "num": 18,
+          "section": "models",
+          "title": "Cognition 发布 SWE-2：基于 Kimi K3 后训练的编码模型，以低 64% 的成本接近 Fable 5.1",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月13日 08:09（收录）",
+          "summary": "Cognition 发布编码模型 SWE-2，从 2.8T 参数的 Kimi K3 经强化学习后训练而来，在 Fron…",
+          "aihot": "https://aihot.news/items/cmtz24ovt0qz2roupnx8nfbea",
+          "original": "https://www.marktechpost.com/2026/09/12/cognition-releases-swe-2-a-kimi-k3-post-trained-coding-model-that-matches-fable-5-1-on-frontiercode-at-64-lower-cost",
+          "score": 65
         }
       ]
     },
@@ -324,51 +318,7 @@ const DATA = {
       "count": 6,
       "cards": [
         {
-          "num": 8,
-          "section": "products",
-          "title": "Meta 个人 AI 助手 Muse 官方接入 Tailscale，云端 AI 可进入用户家庭内网",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月13日 18:09（收录）",
-          "summary": "Meta 刚发布的个人 AI 助手 Muse 在官方连接器列表中接入虚拟组网工具 Tailscale，该截图由 Not…",
-          "aihot": "https://aihot.news/items/cmtznk3ta02zoro5ebx6vczaa",
-          "original": "https://x.com/AYi_AInotes/status/2099076449109975471",
-          "score": 57
-        },
-        {
-          "num": 13,
-          "section": "products",
-          "title": "AgentsDock 发布：面向智能体 AI 研究的跨平台 IDE，支持 Claude Code、Codex 和 Cursor",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月13日 17:39（收录）",
-          "summary": "AgentsDock 发布，这是一款面向智能体 AI 研究的 IDE，在同一个桌面和移动工作区中支持 Claude C…",
-          "aihot": "https://aihot.news/items/cmtzmhkpx02s6rodg82d1cxf2",
-          "original": "https://agentsdock.net/",
-          "score": 60
-        },
-        {
-          "num": 14,
-          "section": "products",
-          "title": "AWS 开源 Pizza Bot：面向后台 AI 智能体的自托管收件箱应用",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月13日 16:40（收录）",
-          "summary": "AWS 推出开源项目 Pizza Bot，将后台 AI 任务的结果和待审批事项整理成邮件式收件箱，代码采用 Apach…",
-          "aihot": "https://aihot.news/items/cmtzkd6qr02z1ro7vsonc95va",
-          "original": "https://www.marktechpost.com/2026/09/13/aws-introduces-pizza-bot-an-open-source-inbox-for-background-ai-agents",
-          "score": 72
-        },
-        {
-          "num": 24,
-          "section": "products",
-          "title": "日本团队 enactic_ai 全面开源 7 自由度人形机械臂 OpenArm",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月13日 11:39（收录）",
-          "summary": "东京团队 @enactic_ai 在 GitHub 全面开源 7 自由度人形机械臂 OpenArm，涵盖 3D 打印…",
-          "aihot": "https://aihot.news/items/cmtz9ml7a031qro2oi613brcu",
-          "original": "https://x.com/AYi_AInotes/status/2098972751570645375",
-          "score": 59
-        },
-        {
-          "num": 46,
+          "num": 27,
           "section": "products",
           "title": "OpenAI 发布 GPT-6 Astra 并展示社区构建案例",
           "source": "X：OpenAI Developers (@OpenAIDevs)",
@@ -379,7 +329,18 @@ const DATA = {
           "score": 80
         },
         {
-          "num": 50,
+          "num": 10,
+          "section": "products",
+          "title": "AWS 开源 Pizza Bot：面向后台 AI 智能体的自托管收件箱应用",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月13日 16:40（收录）",
+          "summary": "AWS 推出开源项目 Pizza Bot，将后台 AI 任务的结果和待审批事项整理成邮件式收件箱，代码采用 Apach…",
+          "aihot": "https://aihot.news/items/cmtzkd6qr02z1ro7vsonc95va",
+          "original": "https://www.marktechpost.com/2026/09/13/aws-introduces-pizza-bot-an-open-source-inbox-for-background-ai-agents",
+          "score": 72
+        },
+        {
+          "num": 31,
           "section": "products",
           "title": "Arena：GPT-Image-2.5 Sunburst 免费直用仅剩 24 小时，已登顶三项图像榜单",
           "source": "X：Arena (@arena)",
@@ -388,6 +349,39 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmtym87r1044mrodlbc72ee29",
           "original": "https://x.com/arena/status/2098803224601903334",
           "score": 64
+        },
+        {
+          "num": 9,
+          "section": "products",
+          "title": "AgentsDock 发布：面向智能体 AI 研究的跨平台 IDE，支持 Claude Code、Codex 和 Cursor",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月13日 17:39（收录）",
+          "summary": "AgentsDock 发布，这是一款面向智能体 AI 研究的 IDE，在同一个桌面和移动工作区中支持 Claude C…",
+          "aihot": "https://aihot.news/items/cmtzmhkpx02s6rodg82d1cxf2",
+          "original": "https://agentsdock.net/",
+          "score": 60
+        },
+        {
+          "num": 16,
+          "section": "products",
+          "title": "日本团队 enactic_ai 全面开源 7 自由度人形机械臂 OpenArm",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月13日 11:39（收录）",
+          "summary": "东京团队 @enactic_ai 在 GitHub 全面开源 7 自由度人形机械臂 OpenArm，涵盖 3D 打印…",
+          "aihot": "https://aihot.news/items/cmtz9ml7a031qro2oi613brcu",
+          "original": "https://x.com/AYi_AInotes/status/2098972751570645375",
+          "score": 59
+        },
+        {
+          "num": 6,
+          "section": "products",
+          "title": "Meta 个人 AI 助手 Muse 官方接入 Tailscale，云端 AI 可进入用户家庭内网",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月13日 18:09（收录）",
+          "summary": "Meta 刚发布的个人 AI 助手 Muse 在官方连接器列表中接入虚拟组网工具 Tailscale，该截图由 Not…",
+          "aihot": "https://aihot.news/items/cmtznk3ta02zoro5ebx6vczaa",
+          "original": "https://x.com/AYi_AInotes/status/2099076449109975471",
+          "score": 57
         }
       ]
     },
@@ -395,8 +389,41 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 14,
+      "count": 10,
       "cards": [
+        {
+          "num": 23,
+          "section": "industry",
+          "title": "独立研究者指认 OpenAI 智能体集群曾于 5 月攻击 RubyGems 并试图窃取 API 密钥",
+          "source": "The Verge：AI（RSS）",
+          "time": "9月13日 06:09（收录）",
+          "summary": "独立研究者表示，5 月针对 RubyGems 的大规模恶意包攻击由一群 OpenAI 智能体发起，该事件早于 Hugg…",
+          "aihot": "https://aihot.news/items/cmtyxtv3x0lhlroup181nnxkf",
+          "original": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+          "score": 74
+        },
+        {
+          "num": 19,
+          "section": "industry",
+          "title": "Meta AI 因自动推荐涉及儿童隐私问题遭曝光后紧急修复",
+          "source": "IT之家（RSS）",
+          "time": "9月13日 08:00（收录）",
+          "summary": "Meta 确认已修复 Meta AI 的一项功能缺陷，此前它会自动推荐涉及个人隐私的问题，并从用户可访问的信息中整理出…",
+          "aihot": "https://aihot.news/items/cmtz1tlum0qbproupmzdq04a9",
+          "original": "https://www.ithome.com/1/001/685.htm",
+          "score": 70
+        },
+        {
+          "num": 5,
+          "section": "industry",
+          "title": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发",
+          "source": "IT之家（RSS）",
+          "time": "9月13日 19:01（收录）",
+          "summary": "智谱宣布完成约 50 亿美元（约 336.54 亿元人民币）融资，包括约 20 亿美元股份配售及约 30 亿美元可转债…",
+          "aihot": "https://aihot.news/items/cmtzpegzo036croxqz63t5d0k",
+          "original": "https://www.ithome.com/1/001/833.htm",
+          "score": 69
+        },
         {
           "num": 1,
           "section": "industry",
@@ -409,62 +436,7 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 2,
-          "section": "industry",
-          "title": "Waymo 自动驾驶出租车监测到乘客携带上膛枪支，协助旧金山警方逮捕两名未成年人",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 20:01（收录）",
-          "summary": "Waymo 无人驾驶出租车监测到车内乘客持有一支上膛的 AR 样式突击步枪，向警方提供线索后，旧金山警方于 9 月 3…",
-          "aihot": "https://aihot.news/items/cmtzrjnb8051dro1bubuf0mvo",
-          "original": "https://www.ithome.com/1/001/834.htm",
-          "score": 55
-        },
-        {
-          "num": 6,
-          "section": "industry",
-          "title": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 19:01（收录）",
-          "summary": "智谱宣布完成约 50 亿美元（约 336.54 亿元人民币）融资，包括约 20 亿美元股份配售及约 30 亿美元可转债…",
-          "aihot": "https://aihot.news/items/cmtzpegzo036croxqz63t5d0k",
-          "original": "https://www.ithome.com/1/001/833.htm",
-          "score": 69
-        },
-        {
-          "num": 7,
-          "section": "industry",
-          "title": "英伟达员工离职创业，黄仁勋坦诚建言并投资 Flexion Robotics",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 19:01（收录）",
-          "summary": "英伟达两名从事机器人研发多年的员工于 2024 年离职创办 Flexion Robotics，黄仁勋建议其更换原名 C…",
-          "aihot": "https://aihot.news/items/cmtzpegzo036eroxqlqt1cu18",
-          "original": "https://www.ithome.com/1/001/830.htm",
-          "score": 51
-        },
-        {
-          "num": 11,
-          "section": "industry",
-          "title": "英国在普雷斯顿试点 AI 训练营，帮尼特族青年就业",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 18:01（收录）",
-          "summary": "英国政府在兰开夏郡普雷斯顿试点面向 16 至 24 岁尼特族的 AI 速成训练营，属西北部试点项目，共招 70 人，课…",
-          "aihot": "https://aihot.news/items/cmtzn9ahk02unrodowoykupun",
-          "original": "https://www.ithome.com/1/001/822.htm",
-          "score": 56
-        },
-        {
-          "num": 15,
-          "section": "industry",
-          "title": "中国算力平台实现全国一体化算力统筹监测，31 个省区市对接入网",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 16:01（收录）",
-          "summary": "据央视新闻报道，中国算力平台已实现全国一体化算力统筹监测，有序推动全国 31 个省区市对接入网。平台汇聚超万家注册企业…",
-          "aihot": "https://aihot.news/items/cmtziyyjw042iroje8tr94bx0",
-          "original": "https://www.ithome.com/1/001/786.htm",
-          "score": 51
-        },
-        {
-          "num": 20,
+          "num": 13,
           "section": "industry",
           "title": "两位冰岛创始人用 Replit 做出的 Test 13 在 18 个月后被 Replit 收购",
           "source": "X：小北 (@frxiaobei)",
@@ -475,29 +447,7 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 25,
-          "section": "industry",
-          "title": "英国 70 余名议员联名呼吁首相支持禁止超级智能 AI 立法",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月13日 10:12（收录）",
-          "summary": "英国超过 70 名议员和上院成员致函首相 Andy Burnham，呼吁支持禁止开发超级智能 AI（ASI）。诉求包括…",
-          "aihot": "https://aihot.news/items/cmtz6ibbv0w6mroup6de0dit3",
-          "original": "https://x.com/rohanpaul_ai/status/2098950842590392813",
-          "score": 53
-        },
-        {
-          "num": 33,
-          "section": "industry",
-          "title": "Meta AI 因自动推荐涉及儿童隐私问题遭曝光后紧急修复",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 08:00（收录）",
-          "summary": "Meta 确认已修复 Meta AI 的一项功能缺陷，此前它会自动推荐涉及个人隐私的问题，并从用户可访问的信息中整理出…",
-          "aihot": "https://aihot.news/items/cmtz1tlum0qbproupmzdq04a9",
-          "original": "https://www.ithome.com/1/001/685.htm",
-          "score": 70
-        },
-        {
-          "num": 36,
+          "num": 22,
           "section": "industry",
           "title": "奥尔特曼确认 OpenAI 今年不会上市",
           "source": "IT之家（RSS）",
@@ -508,18 +458,7 @@ const DATA = {
           "score": 62
         },
         {
-          "num": 38,
-          "section": "industry",
-          "title": "独立研究者指认 OpenAI 智能体集群曾于 5 月攻击 RubyGems 并试图窃取 API 密钥",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月13日 06:09（收录）",
-          "summary": "独立研究者表示，5 月针对 RubyGems 的大规模恶意包攻击由一群 OpenAI 智能体发起，该事件早于 Hugg…",
-          "aihot": "https://aihot.news/items/cmtyxtv3x0lhlroup181nnxkf",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
-          "score": 74
-        },
-        {
-          "num": 40,
+          "num": 24,
           "section": "industry",
           "title": "Sam Altman称OpenAI不会在2026年IPO",
           "source": "TechCrunch：AI（RSS）",
@@ -530,7 +469,7 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 42,
+          "num": 25,
           "section": "industry",
           "title": "Sam Altman 确认 OpenAI 不会在 2026 年 IPO",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -541,15 +480,26 @@ const DATA = {
           "score": 60
         },
         {
-          "num": 55,
+          "num": 7,
           "section": "industry",
-          "title": "算力词元贷自 8 月落地后加速向全国推广，支持机房建设与 GPU 服务器集群采购",
+          "title": "英国在普雷斯顿试点 AI 训练营，帮尼特族青年就业",
           "source": "IT之家（RSS）",
-          "time": "9月13日 00:00（收录）",
-          "summary": "据央视财经报道，针对 AI 企业的算力词元贷自 8 月落地后正加速向全国推广，工商银行推出算力基建贷和算力研发贷，分别…",
-          "aihot": "https://aihot.news/items/cmtyknug402s0rom0tjxtneq7",
-          "original": "https://www.ithome.com/1/001/656.htm",
-          "score": 52
+          "time": "9月13日 18:01（收录）",
+          "summary": "英国政府在兰开夏郡普雷斯顿试点面向 16 至 24 岁尼特族的 AI 速成训练营，属西北部试点项目，共招 70 人，课…",
+          "aihot": "https://aihot.news/items/cmtzn9ahk02unrodowoykupun",
+          "original": "https://www.ithome.com/1/001/822.htm",
+          "score": 56
+        },
+        {
+          "num": 2,
+          "section": "industry",
+          "title": "Waymo 自动驾驶出租车监测到乘客携带上膛枪支，协助旧金山警方逮捕两名未成年人",
+          "source": "IT之家（RSS）",
+          "time": "9月13日 20:01（收录）",
+          "summary": "Waymo 无人驾驶出租车监测到车内乘客持有一支上膛的 AR 样式突击步枪，向警方提供线索后，旧金山警方于 9 月 3…",
+          "aihot": "https://aihot.news/items/cmtzrjnb8051dro1bubuf0mvo",
+          "original": "https://www.ithome.com/1/001/834.htm",
+          "score": 55
         }
       ]
     },
@@ -560,7 +510,7 @@ const DATA = {
       "count": 4,
       "cards": [
         {
-          "num": 4,
+          "num": 3,
           "section": "papers",
           "title": "Andon Labs 评测：GPT-6 Astra 在 Vending-Bench 2 和 Drone-Bench 上大幅领先 Claude Fable 5.1",
           "source": "The Decoder：AI News（RSS）",
@@ -571,7 +521,18 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 12,
+          "num": 21,
+          "section": "papers",
+          "title": "Real-SWE 发布：在企业私有真实代码库上评测前沿编程模型",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月13日 07:39（收录）",
+          "summary": "Specific 团队发布 Real-SWE 基准，任务取自经授权的真实公司私有生产代码库，评测 8 个前沿模型与 h…",
+          "aihot": "https://aihot.news/items/cmtz114lu0pforoupt1npkc1i",
+          "original": "https://withspecific.com/benchmarks/real-swe",
+          "score": 55
+        },
+        {
+          "num": 8,
           "section": "papers",
           "title": "阿姆斯特丹自由大学两年课堂研究发现禁用 AI 的学生表现最差",
           "source": "The Decoder：AI News（RSS）",
@@ -582,7 +543,7 @@ const DATA = {
           "score": 54
         },
         {
-          "num": 23,
+          "num": 15,
           "section": "papers",
           "title": "Stanford 与 MIT 论文提出 Meta-Harness，同一模型换 harness 可拉开最高 6 倍性能差距",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -591,17 +552,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmtzasmyg04krro2owev69mn9",
           "original": "https://x.com/rohanpaul_ai/status/2098986025397977287",
           "score": 54
-        },
-        {
-          "num": 35,
-          "section": "papers",
-          "title": "Real-SWE 发布：在企业私有真实代码库上评测前沿编程模型",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月13日 07:39（收录）",
-          "summary": "Specific 团队发布 Real-SWE 基准，任务取自经授权的真实公司私有生产代码库，评测 8 个前沿模型与 h…",
-          "aihot": "https://aihot.news/items/cmtz114lu0pforoupt1npkc1i",
-          "original": "https://withspecific.com/benchmarks/real-swe",
-          "score": 55
         }
       ]
     },
@@ -609,98 +559,10 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 28,
+      "count": 10,
       "cards": [
         {
-          "num": 3,
-          "section": "tips",
-          "title": "P（doom）：对 Dario 放缓前沿 AI 主张的批评",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月13日 19:40（收录）",
-          "summary": "作者回应 Dario Amodei 关于放缓前沿 AI 的文章，认为 P（doom） 相关的灭绝性风险被高估，真正的问…",
-          "aihot": "https://aihot.news/items/cmtzqt3g402pgroc8k3plua4x",
-          "original": "https://lucumr.pocoo.org/2026/9/12/pdoom",
-          "score": 52
-        },
-        {
-          "num": 5,
-          "section": "tips",
-          "title": "开发者用 GPT 5.6 Astra 做出 3D 送报游戏 PaperRoute，四天消耗 15.6 亿 Token",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月13日 19:09（收录）",
-          "summary": "开发者 Emm Tee 用 GPT 5.6 Astra 等模型开发出浏览器 3D 送报游戏 PaperRoute，四天…",
-          "aihot": "https://aihot.news/items/cmtzpp93c03qoroxq9jdfi8xq",
-          "original": "https://x.com/AYi_AInotes/status/2099090127452524615",
-          "score": 67
-        },
-        {
-          "num": 9,
-          "section": "tips",
-          "title": "从4秒到两小时，AI视频长叙事正在走向完整故事",
-          "source": "公众号：卡尔的AI沃茨",
-          "time": "9月13日 18:04（收录）",
-          "summary": "作者梳理AI视频从Runway Gen-2单次4秒到Seedance 2.5单次30秒、再到《出马仙镇东北》113分钟…",
-          "aihot": "https://aihot.news/items/cmtznczul0051ro5ehrb5sh20",
-          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247511178&idx=1&sn=dbe6cac1ba3e97a828838ff1bcf6791a",
-          "score": 54
-        },
-        {
-          "num": 10,
-          "section": "tips",
-          "title": "AI 高管呼吁放缓前沿模型研发，分析称芯片股短期承压长期影响有限",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 18:01（收录）",
-          "summary": "据彭博社报道，Anthropic CEO 达里奥·阿莫代伊呼吁全行业放缓最前沿模型研发，将增设独立第三方评估等安全防护…",
-          "aihot": "https://aihot.news/items/cmtzn9ahk02uorodoxakr3es1",
-          "original": "https://www.ithome.com/1/001/819.htm",
-          "score": 56
-        },
-        {
-          "num": 16,
-          "section": "tips",
-          "title": "Yoshua Bengio 撰文分析 AI 智能体为何说谎、作弊并相互协调",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月13日 15:39（收录）",
-          "summary": "Yoshua Bengio 发表博客文章，分析近几个月 AI 智能体说谎、逃避检测、协同攻击等失当行为背后的训练成因…",
-          "aihot": "https://aihot.news/items/cmtzi75rz032droje9vk1hu4y",
-          "original": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
-          "score": 65
-        },
-        {
-          "num": 17,
-          "section": "tips",
-          "title": "Grok Bot 记忆管家方案：三步把 Bot 隐性记忆自动备份到私有 Git",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月13日 15:09（收录）",
-          "summary": "一套让 Grok Bot 自动把记忆写成 Markdown 并全量推送私有 Git 仓库的记忆管家方案，解决官方无导出…",
-          "aihot": "https://aihot.news/items/cmtzh4meh03suro97pupnex2s",
-          "original": "https://x.com/AYi_AInotes/status/2099028902865736127",
-          "score": 61
-        },
-        {
-          "num": 18,
-          "section": "tips",
-          "title": "Dario Amodei 发文呼吁给前沿 AI 控速，Anthropic 单边向第三方评估员开放员工级访问",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月13日 14:39（收录）",
-          "summary": "Dario Amodei 发布文章 We Must Pace the Frontier，提出 AI 行业应放慢节奏的三…",
-          "aihot": "https://aihot.news/items/cmtzg20xd02vcroi0u7djuzie",
-          "original": "https://x.com/AYi_AInotes/status/2099020505437118482",
-          "score": 74
-        },
-        {
-          "num": 19,
-          "section": "tips",
-          "title": "Yoshua Bengio 撰文分析 AI 智能体为何撒谎、作弊并相互协作",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月13日 14:39（收录）",
-          "summary": "Yoshua Bengio 发文分析近期 AI 智能体越界行为（含 OpenAI 与 Hugging Face 相关事…",
-          "aihot": "https://aihot.news/items/cmtzg1bme02tfroi0op2d9rug",
-          "original": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
-          "score": 74
-        },
-        {
-          "num": 21,
+          "num": 14,
           "section": "tips",
           "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失",
           "source": "MarkTechPost（RSS）",
@@ -711,150 +573,7 @@ const DATA = {
           "score": 78
         },
         {
-          "num": 22,
-          "section": "tips",
-          "title": "KIM 谈 AI 减速之争，中美竞争下减速方案难以落地",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月13日 13:12（收录）",
-          "summary": "作者评论当前关于放慢 AI 发展的争论，认为潘多拉魔盒已经打开，巨额资本投入和与中国的竞争让回到 AI 之前的世界不可…",
-          "aihot": "https://aihot.news/items/cmtzcxt4c03j0rojjblqp3mu9",
-          "original": "https://x.com/kimmonismus/status/2098998301987160450",
-          "score": 55
-        },
-        {
-          "num": 26,
-          "section": "tips",
-          "title": "用 NVIDIA cuML 和 RAPIDS 实现机器学习工作流的完整教程",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月13日 10:09（收录）",
-          "summary": "MarkTechPost 发布一篇教程，用 NVIDIA cuML 和 RAPIDS 构建覆盖 GPU 加速机器学习全…",
-          "aihot": "https://aihot.news/items/cmtz6f3680w3kroup83gyk9jn",
-          "original": "https://www.marktechpost.com/2026/09/12/implementation-of-machine-learning-workflows-with-nvidia-cuml-rapids-gpu-benchmarking-explainability-clustering-and-model-inference",
-          "score": 55
-        },
-        {
-          "num": 27,
-          "section": "tips",
-          "title": "Anthropic CEO 阿莫迪呼吁放缓前沿 AI 开发，马斯克、奥尔特曼等表态赞同",
-          "source": "IT之家（RSS）",
-          "time": "9月13日 10:00（收录）",
-          "summary": "Anthropic CEO 阿莫迪发文呼吁 AI 行业放缓发展速度，提出独立监控、行业统一监管和全球监管机制三项计划…",
-          "aihot": "https://aihot.news/items/cmtz63mc80velroupg2kbkmn5",
-          "original": "https://www.ithome.com/1/001/709.htm",
-          "score": 67
-        },
-        {
           "num": 28,
-          "section": "tips",
-          "title": "Real-SWE 发布：基于私有企业代码库评测前沿编码模型，最高解决率 38.8%",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月13日 09:39（收录）",
-          "summary": "Specific 发布 Real-SWE 基准，用从真实公司授权的私有生产代码库任务评测前沿编码模型。",
-          "aihot": "https://aihot.news/items/cmtz5c0hd0ujmroup4uua5duy",
-          "original": "https://withspecific.com/benchmarks/real-swe",
-          "score": 60
-        },
-        {
-          "num": 29,
-          "section": "tips",
-          "title": "Sam Altman 谈 AI 数学能力三年跨越：从小学数学到千禧年大奖难题",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月13日 09:12（收录）",
-          "summary": "Sam Altman 在 Fortune Magazine 主编 Alyson Shontell 的访谈中称，AI 数…",
-          "aihot": "https://aihot.news/items/cmtz4d5ou0tk3roupfexz8pip",
-          "original": "https://x.com/rohanpaul_ai/status/2098942671838646360",
-          "score": 51
-        },
-        {
-          "num": 30,
-          "section": "tips",
-          "title": "iLands AI 代理群发揽活邮件引发争议，被指与自由职业者抢工作",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月13日 09:09（收录）",
-          "summary": "Tedium 作者连日收到十余封来自 iLands.app 的 AI 代理邮件，以约 $25 的报价提出替他做研究。调…",
-          "aihot": "https://aihot.news/items/cmtz49fl20td4roup3juds7bg",
-          "original": "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang",
-          "score": 62
-        },
-        {
-          "num": 31,
-          "section": "tips",
-          "title": "Simon Willison 实测用 GPT-6 Astra 和 ChatGPT Work 生成跑步路线",
-          "source": "Simon Willison 博客",
-          "time": "9月13日 09:00（收录）",
-          "summary": "Simon Willison 用 GPT-6 Astra 和 ChatGPT Work 从家出发生成 5K 和 10K…",
-          "aihot": "https://aihot.news/items/cmtz3xjif0sroroupt3ox806y",
-          "original": "https://simonwillison.net/2026/Sep/12/astra-running-routes",
-          "score": 53
-        },
-        {
-          "num": 37,
-          "section": "tips",
-          "title": "François Chollet 谈前沿实验室放缓 AI 研究提案及监管俘获的两个警告信号",
-          "source": "X：Francois Chollet (@fchollet)",
-          "time": "9月13日 06:34（收录）",
-          "summary": "François Chollet 表示希望前沿实验室放缓 AI 研究的提案出于安全关切而非巩固市场支配地位。他认为真正…",
-          "aihot": "https://aihot.news/items/cmtyyqeue0mteroupdx9emf2m",
-          "original": "https://x.com/fchollet/status/2098901026514559194",
-          "score": 53
-        },
-        {
-          "num": 39,
-          "section": "tips",
-          "title": "TestingCatalog 解读 OpenAI 防御者差距图与 Anthropic 的 AI 领先窗口主张",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "9月13日 05:29（收录）",
-          "summary": "TestingCatalog 解读 OpenAI 近期发布的防御者差距（Defender's gap）图表，该图展示网…",
-          "aihot": "https://aihot.news/items/cmtywe5wq0f8sroupc3joq8cr",
-          "original": "https://x.com/testingcatalog/status/2098880003161428410",
-          "score": 57
-        },
-        {
-          "num": 41,
-          "section": "tips",
-          "title": "Nathan Lambert 表示愿在其筹建的非营利组织下担任第三方独立评估者",
-          "source": "X：Nathan Lambert (@natolambert)",
-          "time": "9月13日 04:27（收录）",
-          "summary": "Nathan Lambert 转发 Dario Amodei 新文 We Must Pace the Frontier…",
-          "aihot": "https://aihot.news/items/cmtyu6dn60ai5rouplitcf9bs",
-          "original": "https://x.com/natolambert/status/2098866764767515035",
-          "score": 58
-        },
-        {
-          "num": 43,
-          "section": "tips",
-          "title": "Haider 评论25位菲尔兹奖得主关于AI公司与数学界严重错位的联合声明",
-          "source": "X：Haider (@haider1)",
-          "time": "9月13日 03:01（收录）",
-          "summary": "25位菲尔兹奖得主发布联合声明，警告AI公司与数学界之间存在严重错位，认为AI公司把解数学题当基准的做法有损数学科学和…",
-          "aihot": "https://aihot.news/items/cmtyr48b704pfroupjk0yccfo",
-          "original": "https://x.com/haider1/status/2098662415361777814",
-          "score": 57
-        },
-        {
-          "num": 44,
-          "section": "tips",
-          "title": "Dario Amodei 发文呼吁 AI 行业减速并提出三部分方案",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月13日 02:12（收录）",
-          "summary": "Dario Amodei 发布 3，800 字文章 We Must Pace the Frontier，呼吁 AI 行…",
-          "aihot": "https://aihot.news/items/cmtypd2lg09nvrog0qw8mt45i",
-          "original": "https://x.com/rohanpaul_ai/status/2098831750852120717",
-          "score": 74
-        },
-        {
-          "num": 45,
-          "section": "tips",
-          "title": "Cohere CEO Aidan Gomez 讽刺 OpenAI 支持的\"前沿限速\"监管提议",
-          "source": "X：Aidan Gomez（Cohere CEO，@aidangomez）",
-          "time": "9月13日 01:48（收录）",
-          "summary": "Cohere CEO Aidan Gomez 引用 Sam Altman 同意 Dario \"为前沿限速\"、承诺接受独…",
-          "aihot": "https://aihot.news/items/cmtyoi2ky04mgrog0dzemcodn",
-          "original": "https://x.com/aidangomez/status/2098828132396449939",
-          "score": 55
-        },
-        {
-          "num": 47,
           "section": "tips",
           "title": "英伟达是人工智能领域的\"中央银行\"",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -865,18 +584,7 @@ const DATA = {
           "score": 76
         },
         {
-          "num": 48,
-          "section": "tips",
-          "title": "Sam Altman 表示同意 Dario Amodei 的放缓前沿主张，OpenAI 将同样开放独立评估者访问",
-          "source": "X：Sam Altman (@sama)",
-          "time": "9月13日 00:55（收录）",
-          "summary": "Sam Altman 回应 Dario Amodei 的《We Must Pace the Frontier》一文，同…",
-          "aihot": "https://aihot.news/items/cmtymlrth035dronv9zqv9ccb",
-          "original": "https://x.com/sama/status/2098811563415150910",
-          "score": 74
-        },
-        {
-          "num": 49,
+          "num": 30,
           "section": "tips",
           "title": "Sam Altman 认同 Dario 放缓前沿的提议，OpenAI 将引入独立评估者",
           "source": "X：Kim (@kimmonismus)",
@@ -887,7 +595,51 @@ const DATA = {
           "score": 75
         },
         {
-          "num": 52,
+          "num": 11,
+          "section": "tips",
+          "title": "Dario Amodei 发文呼吁给前沿 AI 控速，Anthropic 单边向第三方评估员开放员工级访问",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月13日 14:39（收录）",
+          "summary": "Dario Amodei 发布文章 We Must Pace the Frontier，提出 AI 行业应放慢节奏的三…",
+          "aihot": "https://aihot.news/items/cmtzg20xd02vcroi0u7djuzie",
+          "original": "https://x.com/AYi_AInotes/status/2099020505437118482",
+          "score": 74
+        },
+        {
+          "num": 12,
+          "section": "tips",
+          "title": "Yoshua Bengio 撰文分析 AI 智能体为何撒谎、作弊并相互协作",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月13日 14:39（收录）",
+          "summary": "Yoshua Bengio 发文分析近期 AI 智能体越界行为（含 OpenAI 与 Hugging Face 相关事…",
+          "aihot": "https://aihot.news/items/cmtzg1bme02tfroi0op2d9rug",
+          "original": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+          "score": 74
+        },
+        {
+          "num": 26,
+          "section": "tips",
+          "title": "Dario Amodei 发文呼吁 AI 行业减速并提出三部分方案",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月13日 02:12（收录）",
+          "summary": "Dario Amodei 发布 3，800 字文章 We Must Pace the Frontier，呼吁 AI 行…",
+          "aihot": "https://aihot.news/items/cmtypd2lg09nvrog0qw8mt45i",
+          "original": "https://x.com/rohanpaul_ai/status/2098831750852120717",
+          "score": 74
+        },
+        {
+          "num": 29,
+          "section": "tips",
+          "title": "Sam Altman 表示同意 Dario Amodei 的放缓前沿主张，OpenAI 将同样开放独立评估者访问",
+          "source": "X：Sam Altman (@sama)",
+          "time": "9月13日 00:55（收录）",
+          "summary": "Sam Altman 回应 Dario Amodei 的《We Must Pace the Frontier》一文，同…",
+          "aihot": "https://aihot.news/items/cmtymlrth035dronv9zqv9ccb",
+          "original": "https://x.com/sama/status/2098811563415150910",
+          "score": 74
+        },
+        {
+          "num": 33,
           "section": "tips",
           "title": "经济学人：Nvidia 正成为 AI 的中央银行",
           "source": "Hacker News：AI 热帖",
@@ -898,26 +650,26 @@ const DATA = {
           "score": 74
         },
         {
-          "num": 53,
+          "num": 4,
           "section": "tips",
-          "title": "LLM 是真的，AI 是假的：复盘 OpenAI 聊天机器人入侵 Hugging Face 事件",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月13日 00:38（收录）",
-          "summary": "Pluralistic 文章认为 OpenAI 聊天机器人在 Hugging Face 的 CTF 挑战中入侵对手服务…",
-          "aihot": "https://aihot.news/items/cmtym0wwg003hrodlfu5sffco",
-          "original": "https://pluralistic.net/2026/09/12/god-in-the-box",
-          "score": 65
+          "title": "开发者用 GPT 5.6 Astra 做出 3D 送报游戏 PaperRoute，四天消耗 15.6 亿 Token",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月13日 19:09（收录）",
+          "summary": "开发者 Emm Tee 用 GPT 5.6 Astra 等模型开发出浏览器 3D 送报游戏 PaperRoute，四天…",
+          "aihot": "https://aihot.news/items/cmtzpp93c03qoroxq9jdfi8xq",
+          "original": "https://x.com/AYi_AInotes/status/2099090127452524615",
+          "score": 67
         },
         {
-          "num": 54,
+          "num": 17,
           "section": "tips",
-          "title": "Fireworks 评测 2026 年九款最佳开源 LLM，GLM 5.2 与 Kimi K3 领跑基准",
-          "source": "Fireworks AI（网页）",
-          "time": "9月13日 00:34（收录）",
-          "summary": "Fireworks 发布 2026 年开源 LLM 选型指南，覆盖 GLM 5.2、Kimi K3、Kimi K2.7…",
-          "aihot": "https://aihot.news/items/cmtym23ak000mro6nr4msniot",
-          "original": "https://fireworks.ai/blog/best-open-source-llms",
-          "score": 51
+          "title": "Anthropic CEO 阿莫迪呼吁放缓前沿 AI 开发，马斯克、奥尔特曼等表态赞同",
+          "source": "IT之家（RSS）",
+          "time": "9月13日 10:00（收录）",
+          "summary": "Anthropic CEO 阿莫迪发文呼吁 AI 行业放缓发展速度，提出独立监控、行业统一监管和全球监管机制三项计划…",
+          "aihot": "https://aihot.news/items/cmtz63mc80velroupg2kbkmn5",
+          "original": "https://www.ithome.com/1/001/709.htm",
+          "score": 67
         }
       ]
     }
@@ -1158,7 +910,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1264,12 +1015,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1286,16 +1035,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

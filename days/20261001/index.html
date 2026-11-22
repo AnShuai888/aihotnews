@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-10-01",
     "heroDate": "2026年10月1日 周四",
-    "total": 50,
+    "total": 36,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年10月08日 20:25（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,18 +277,7 @@ const DATA = {
       "count": 3,
       "cards": [
         {
-          "num": 4,
-          "section": "models",
-          "title": "Viggle Turbo v0.3 发布",
-          "source": "X：Viggle AI (@ViggleAI)",
-          "time": "10月1日 23:40（收录）",
-          "summary": "✨ Viggle Turbo v0.3 来了！ 全新的 9-step 模式带来更干净的画面、更精细的细节，以及更好的小…",
-          "aihot": "https://aihot.news/items/iq9udfju1flipjagu337k7bnl",
-          "original": "https://x.com/ViggleAI/status/2105684053173387307",
-          "score": 36
-        },
-        {
-          "num": 16,
+          "num": 14,
           "section": "models",
           "title": "Ai2 发布 Olmo-core 3 开源 MoE 训练框架",
           "source": "Ai2 / Allen Institute for AI（RSS）",
@@ -305,7 +288,7 @@ const DATA = {
           "score": 58
         },
         {
-          "num": 26,
+          "num": 19,
           "section": "models",
           "title": "OpenRouter 上线 Pareto 26.10 预览版",
           "source": "X：OpenRouter (@OpenRouter)",
@@ -314,6 +297,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/krfvq6998wdup1rt50gyl2m0m",
           "original": "https://x.com/OpenRouter/status/2105661806186500286",
           "score": 42
+        },
+        {
+          "num": 4,
+          "section": "models",
+          "title": "Viggle Turbo v0.3 发布",
+          "source": "X：Viggle AI (@ViggleAI)",
+          "time": "10月1日 23:40（收录）",
+          "summary": "✨ Viggle Turbo v0.3 来了！ 全新的 9-step 模式带来更干净的画面、更精细的细节，以及更好的小…",
+          "aihot": "https://aihot.news/items/iq9udfju1flipjagu337k7bnl",
+          "original": "https://x.com/ViggleAI/status/2105684053173387307",
+          "score": 36
         }
       ]
     },
@@ -321,19 +315,8 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 18,
+      "count": 10,
       "cards": [
-        {
-          "num": 7,
-          "section": "products",
-          "title": "Ai2 发布 Olmo-core 3：面向大规模 MoE 的开源可扩展训练框架",
-          "source": "Hugging Face 社区博客（混合发现）",
-          "time": "10月1日 23:29（收录）",
-          "summary": "Ai2 发布 Olmo-core 3，这是面向大规模混合专家（MoE）模型的开源训练框架，设计目标是将 MoE 训练扩…",
-          "aihot": "https://aihot.news/items/hnhxy8c3tdyjw0a4dzvp0vma3",
-          "original": "https://huggingface.co/blog/allenai/olmocore3",
-          "score": 55
-        },
         {
           "num": 11,
           "section": "products",
@@ -346,7 +329,7 @@ const DATA = {
           "score": 62
         },
         {
-          "num": 14,
+          "num": 12,
           "section": "products",
           "title": "LlamaIndex 发布 Extract v2.5 文档抽取智能体，三档准确率全面提升",
           "source": "LlamaIndex：产品、工程与评测",
@@ -357,117 +340,7 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 18,
-          "section": "products",
-          "title": "WorkBuddy Pro 首月 7 美元",
-          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-          "time": "10月1日 23:10（收录）",
-          "summary": "WorkBuddy Pro 首月现在只需 $7。 以这个入门优惠开始，从第二个月起按 $10/月继续。我们还新增了微信…",
-          "aihot": "https://aihot.news/items/xgvp61rt6g6pvsm4pmwco3v8t",
-          "original": "https://x.com/WorkBuddy_AI/status/2105675968673370417",
-          "score": 29
-        },
-        {
-          "num": 19,
-          "section": "products",
-          "title": "Manus 2.0 + Tripo 工作流实测",
-          "source": "Tripo（官方 X）",
-          "time": "10月1日 23:10（收录）",
-          "summary": "从一句提示词开始。2 小时做出可玩的游戏。🚀 我们测试了全新的 Manus 2.0 + Tripo 工作流： • @M…",
-          "aihot": "https://aihot.news/items/lsbrzcjtn21vgrtaqwjof6s2i",
-          "original": "https://x.com/tripoai/status/2105674095946064334",
-          "score": 38
-        },
-        {
-          "num": 20,
-          "section": "products",
-          "title": "Suno Studio 2.0 支持在聊天栏中拆分 stems 并添加乐器、效果和 automation",
-          "source": "X：Suno (@suno)",
-          "time": "10月1日 23:10（收录）",
-          "summary": "Suno 官方演示 Suno Studio 2.0：从一首歌开始，可直接在聊天栏中拆分 stems、添加新乐器、效果和…",
-          "aihot": "https://aihot.news/items/psci34up7mf4n4ebds1xltno8",
-          "original": "https://x.com/suno/status/2105671545515565247",
-          "score": 53
-        },
-        {
-          "num": 21,
-          "section": "products",
-          "title": "奇安信盘古石取证 R8.8.0 适配 Android 17，支持微信已删除多媒体碎片重组",
-          "source": "IT之家·人工智能",
-          "time": "10月1日 22:59（收录）",
-          "summary": "奇安信盘古石手机取证 R8.8.0 完成升级，提取能力上完成 Android 17 系统提权适配，并新增三星、小米系列…",
-          "aihot": "https://aihot.news/items/fmvuyelf1wgv4uiuy4061s5e1",
-          "original": "https://www.ithome.com/1/009/165.htm",
-          "score": 26
-        },
-        {
-          "num": 24,
-          "section": "products",
-          "title": "余承东宣布华为睿影 XMAGE 正式发布，Mate 90 系列首发搭载",
-          "source": "IT之家·人工智能",
-          "time": "10月1日 22:43（收录）",
-          "summary": "余承东宣布华为移动影像升级，正式发布华为睿影 XMAGE 影像品牌。华为 Mate 90 系列首发搭载全新升级的 XM…",
-          "aihot": "https://aihot.news/items/fud9un57ax96pv4f9ku9gr6cy",
-          "original": "https://www.ithome.com/1/009/163.htm",
-          "score": 32
-        },
-        {
-          "num": 25,
-          "section": "products",
-          "title": "ChatGPT 应用内现\"钱包\"入口，标注即将推出",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "10月1日 22:39（收录）",
-          "summary": "ChatGPT 应用内出现标注\"Coming Soon\"的 Wallet 入口，时间点几乎与 World 应用更名为…",
-          "aihot": "https://aihot.news/items/vxzx26crpgscpcz3z3ij7508e",
-          "original": "https://x.com/testingcatalog/status/2105666923153281185",
-          "score": 31
-        },
-        {
           "num": 27,
-          "section": "products",
-          "title": "OpenRouter 发布 Pareto 26.10 预览版",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "time": "10月1日 22:38（收录）",
-          "summary": "2/ 这是下一代 Pareto 版本的预览版，可能随时变更，恕不另行通知。如需稳定行为，请使用 Pareto 26.9…",
-          "aihot": "https://aihot.news/items/e1ka6kar1v8vx74d0801xkdyo",
-          "original": "https://x.com/OpenRouter/status/2105661818576474234",
-          "score": 22
-        },
-        {
-          "num": 28,
-          "section": "products",
-          "title": "华为 Mate XT 2 三折叠手机获 HarmonyOS 7.0.0.109 SP8 升级，通信共享支持多人互助",
-          "source": "IT之家·人工智能",
-          "time": "10月1日 22:28（收录）",
-          "summary": "华为 Mate XT 2 非凡大师三折叠手机推送 HarmonyOS 7.0.0.109 SP8 更新，锁屏新增 3D…",
-          "aihot": "https://aihot.news/items/f7xo1px4k5y2khhcuj2bymdzy",
-          "original": "https://www.ithome.com/1/009/160.htm",
-          "score": 28
-        },
-        {
-          "num": 31,
-          "section": "products",
-          "title": "Perplexity 联手 Amex 推出预置技能库",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "10月1日 22:19（收录）",
-          "summary": "Perplexity 面向符合条件的美国 Amex Business 小企业卡会员，在 Perplexity Comp…",
-          "aihot": "https://aihot.news/items/lx2m2sb0ctsupleub5bwbzyjt",
-          "original": "https://x.com/AravSrinivas/status/2105660740799717599",
-          "score": 34
-        },
-        {
-          "num": 33,
-          "section": "products",
-          "title": "SenseNova 6.8 Flash 动态设计预览",
-          "source": "X：商汤 SenseTime (@SenseTime_AI)",
-          "time": "10月1日 22:08（收录）",
-          "summary": "任何时区都可爱。🐼 🎬 动态设计，由 SenseNova 6.8 Flash Preview 驱动，让静态图像活起来。",
-          "aihot": "https://aihot.news/items/hij7qc5g3scmx4h0c39hw6nsa",
-          "original": "https://x.com/SenseTime_AI/status/2105660419469877475",
-          "score": 21
-        },
-        {
-          "num": 39,
           "section": "products",
           "title": "Synthesia 发布 Sessions 交互式 AI 数字人，支持实时对话练习与访谈",
           "source": "X：Testing Catalog (@testingcatalog)",
@@ -478,29 +351,29 @@ const DATA = {
           "score": 56
         },
         {
-          "num": 40,
+          "num": 7,
           "section": "products",
-          "title": "Legato 推出 AI 助听眼镜 Legato Frames，起售价 999 美元",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月1日 21:28（收录）",
-          "summary": "听力科技初创公司 Legato 周四宣布，其 AI 助听眼镜 Legato Frames 正式开售，起售价 999 美…",
-          "aihot": "https://aihot.news/items/rqukpvznyssf2epsu4b6b5a4n",
-          "original": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
-          "score": 43
+          "title": "Ai2 发布 Olmo-core 3：面向大规模 MoE 的开源可扩展训练框架",
+          "source": "Hugging Face 社区博客（混合发现）",
+          "time": "10月1日 23:29（收录）",
+          "summary": "Ai2 发布 Olmo-core 3，这是面向大规模混合专家（MoE）模型的开源训练框架，设计目标是将 MoE 训练扩…",
+          "aihot": "https://aihot.news/items/hnhxy8c3tdyjw0a4dzvp0vma3",
+          "original": "https://huggingface.co/blog/allenai/olmocore3",
+          "score": 55
         },
         {
-          "num": 43,
+          "num": 16,
           "section": "products",
-          "title": "Databricks 谈智能体营销：如何把客户上下文连到可衡量的 ROI",
-          "source": "Databricks：Blog（RSS）",
-          "time": "10月1日 21:17（收录）",
-          "summary": "Databricks 全球媒体娱乐与广告 GTM 负责人 Jake LaDuke 提出，营销价值正从\"曝光货币\"转向\"…",
-          "aihot": "https://aihot.news/items/cgk14mozig81vv52tisr48ltu",
-          "original": "https://www.databricks.com/blog/connecting-customer-context-measurable-roi-agentic-marketing",
-          "score": 31
+          "title": "Suno Studio 2.0 支持在聊天栏中拆分 stems 并添加乐器、效果和 automation",
+          "source": "X：Suno (@suno)",
+          "time": "10月1日 23:10（收录）",
+          "summary": "Suno 官方演示 Suno Studio 2.0：从一首歌开始，可直接在聊天栏中拆分 stems、添加新乐器、效果和…",
+          "aihot": "https://aihot.news/items/psci34up7mf4n4ebds1xltno8",
+          "original": "https://x.com/suno/status/2105671545515565247",
+          "score": 53
         },
         {
-          "num": 44,
+          "num": 31,
           "section": "products",
           "title": "PixVerse 推出 ChatGPT 插件，一个提示词生成电影感短片",
           "source": "X：PixVerse (@PixVerse)",
@@ -511,15 +384,48 @@ const DATA = {
           "score": 51
         },
         {
-          "num": 45,
+          "num": 28,
           "section": "products",
-          "title": "PixVerse 插件获取地址",
-          "source": "X：PixVerse (@PixVerse)",
-          "time": "10月1日 21:06（收录）",
-          "summary": "获取插件 https://app.pixverse.ai/cli/marketing",
-          "aihot": "https://aihot.news/items/q0v5kdrxy6wkqssa8x1w2xry1",
-          "original": "https://x.com/PixVerse/status/2105643993489133592",
-          "score": 16
+          "title": "Legato 推出 AI 助听眼镜 Legato Frames，起售价 999 美元",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月1日 21:28（收录）",
+          "summary": "听力科技初创公司 Legato 周四宣布，其 AI 助听眼镜 Legato Frames 正式开售，起售价 999 美…",
+          "aihot": "https://aihot.news/items/rqukpvznyssf2epsu4b6b5a4n",
+          "original": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
+          "score": 43
+        },
+        {
+          "num": 15,
+          "section": "products",
+          "title": "Manus 2.0 + Tripo 工作流实测",
+          "source": "Tripo（官方 X）",
+          "time": "10月1日 23:10（收录）",
+          "summary": "从一句提示词开始。2 小时做出可玩的游戏。🚀 我们测试了全新的 Manus 2.0 + Tripo 工作流： • @M…",
+          "aihot": "https://aihot.news/items/lsbrzcjtn21vgrtaqwjof6s2i",
+          "original": "https://x.com/tripoai/status/2105674095946064334",
+          "score": 38
+        },
+        {
+          "num": 21,
+          "section": "products",
+          "title": "Perplexity 联手 Amex 推出预置技能库",
+          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+          "time": "10月1日 22:19（收录）",
+          "summary": "Perplexity 面向符合条件的美国 Amex Business 小企业卡会员，在 Perplexity Comp…",
+          "aihot": "https://aihot.news/items/lx2m2sb0ctsupleub5bwbzyjt",
+          "original": "https://x.com/AravSrinivas/status/2105660740799717599",
+          "score": 34
+        },
+        {
+          "num": 18,
+          "section": "products",
+          "title": "余承东宣布华为睿影 XMAGE 正式发布，Mate 90 系列首发搭载",
+          "source": "IT之家·人工智能",
+          "time": "10月1日 22:43（收录）",
+          "summary": "余承东宣布华为移动影像升级，正式发布华为睿影 XMAGE 影像品牌。华为 Mate 90 系列首发搭载全新升级的 XM…",
+          "aihot": "https://aihot.news/items/fud9un57ax96pv4f9ku9gr6cy",
+          "original": "https://www.ithome.com/1/009/163.htm",
+          "score": 32
         }
       ]
     },
@@ -527,8 +433,41 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 15,
+      "count": 10,
       "cards": [
+        {
+          "num": 34,
+          "section": "industry",
+          "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月1日 20:53（收录）",
+          "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户…",
+          "aihot": "https://aihot.news/items/uxe9v0hypn93df9ogn6glwled",
+          "original": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/",
+          "score": 77
+        },
+        {
+          "num": 26,
+          "section": "industry",
+          "title": "安全公司 Glow Security 发现超过 13000 张被 AI 智能体公开上传的企业内部截图",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月1日 21:49（收录）",
+          "summary": "安全初创公司 Glow Security 发现 343 家组织的超过 13000 张内部项目截图被 AI 智能体公开上…",
+          "aihot": "https://aihot.news/items/sejzhkpnl011ii2lau8nfr31o",
+          "original": "https://the-decoder.com/security-startup-finds-more-than-13000-internal-company-screenshots-that-ai-agents-uploaded-publicly/",
+          "score": 69
+        },
+        {
+          "num": 29,
+          "section": "industry",
+          "title": "泄露视频称警方可用 GrayKey 绕过 iPhone 自动重启机制解锁手机",
+          "source": "404 Media（RSS）",
+          "time": "10月1日 21:27（收录）",
+          "summary": "404 Media 获得的视频显示，取证公司 Magnet Forensics 开发出可让 iPhone 冻结在便于取…",
+          "aihot": "https://aihot.news/items/r2fyvw9bjn1omes2t0pwastaf",
+          "original": "https://www.404media.co/cops-can-bypass-iphone-automatic-inactivity-reboot-graykey/",
+          "score": 66
+        },
         {
           "num": 10,
           "section": "industry",
@@ -541,117 +480,7 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 12,
-          "section": "industry",
-          "title": "黄仁勋将出席 ElevenLabs 纽约峰会",
-          "source": "X：ElevenLabs (@elevenlabs)",
-          "time": "10月1日 23:20（收录）",
-          "summary": "Jensen Huang 要来 ElevenLabs Summit NYC 了。 NVIDIA 从我们最早的日子起就与…",
-          "aihot": "https://aihot.news/items/ipxqqyt1fe76kd6czzrfoiloa",
-          "original": "https://x.com/ElevenLabs/status/2105674547685118362",
-          "score": 31
-        },
-        {
-          "num": 13,
-          "section": "industry",
-          "title": "ElevenLabs 纽约峰会开放申请",
-          "source": "X：ElevenLabs (@elevenlabs)",
-          "time": "10月1日 23:20（收录）",
-          "summary": "参会需经审核批准。申请加入：https://elevenlabs.io/summit/new-york",
-          "aihot": "https://aihot.news/items/mncj5tum0zzc7dge23opgnz0x",
-          "original": "https://x.com/ElevenLabs/status/2105674819832619399",
-          "score": 13
-        },
-        {
-          "num": 17,
-          "section": "industry",
-          "title": "WorkBuddy 普林斯顿校园见面会",
-          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-          "time": "10月1日 23:10（收录）",
-          "summary": "普林斯顿，10 月 3 日有安排了吗？现在有了。 来参加 WorkBuddy 校园见面会——带上朋友，来打个招呼！",
-          "aihot": "https://aihot.news/items/pw2ghu5k33fpnetil789nulsq",
-          "original": "https://x.com/WorkBuddy_AI/status/2105675605216047227",
-          "score": 14
-        },
-        {
-          "num": 22,
-          "section": "industry",
-          "title": "Arena 旧金山新总部屋顶开放日",
-          "source": "X：Arena (@arena)",
-          "time": "10月1日 22:50（收录）",
-          "summary": "Arena Open House：屋顶 Happy Hour 10/7。 我们敞开新 SF 总部办公室的大门，想邀请正…",
-          "aihot": "https://aihot.news/items/a67qzzlkr3vw1ifrgjfe33drn",
-          "original": "https://x.com/arena/status/2105669639724491147",
-          "score": 13
-        },
-        {
-          "num": 23,
-          "section": "industry",
-          "title": "Anthropic 向美国文职机构开放 Claude for Government，与五角大楼争端仍在持续",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月1日 22:45（收录）",
-          "summary": "Anthropic 现向美国联邦和州级文职机构提供 Claude for Government，该平台自 7 月起开放…",
-          "aihot": "https://aihot.news/items/jlzu810pv8eai4ga86tqcvb9g",
-          "original": "https://the-decoder.com/anthropic-brings-claude-to-civilian-agencies-as-its-fight-with-the-pentagon-drags-on/",
-          "score": 62
-        },
-        {
           "num": 32,
-          "section": "industry",
-          "title": "Figure 让 F.02 人形机器人跳入熔炉退役，采纳施瓦辛格本人提议",
-          "source": "IT之家·人工智能",
-          "time": "10月1日 22:12（收录）",
-          "summary": "Figure 为退役的 F.02 人形机器人举行\"火化仪式\"，让机器人亲自跳入熔炉，这一想法源自《终结者 2》T-80…",
-          "aihot": "https://aihot.news/items/eoih26ys0k14iacrrh6r0bqwp",
-          "original": "https://www.ithome.com/1/009/159.htm",
-          "score": 49
-        },
-        {
-          "num": 35,
-          "section": "industry",
-          "title": "Photon 为移动应用办葬礼后获 450 万美元种子轮，用智能体取代 App",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月1日 22:05（收录）",
-          "summary": "帮助开发者在 iMessage 和 WhatsApp 上构建智能体的 AI 初创公司 Photon 完成 450 万美…",
-          "aihot": "https://aihot.news/items/ogq6uvlq6tt5vd4hnnnnjs75c",
-          "original": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
-          "score": 46
-        },
-        {
-          "num": 37,
-          "section": "industry",
-          "title": "安全公司 Glow Security 发现超过 13000 张被 AI 智能体公开上传的企业内部截图",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月1日 21:49（收录）",
-          "summary": "安全初创公司 Glow Security 发现 343 家组织的超过 13000 张内部项目截图被 AI 智能体公开上…",
-          "aihot": "https://aihot.news/items/sejzhkpnl011ii2lau8nfr31o",
-          "original": "https://the-decoder.com/security-startup-finds-more-than-13000-internal-company-screenshots-that-ai-agents-uploaded-publicly/",
-          "score": 69
-        },
-        {
-          "num": 38,
-          "section": "industry",
-          "title": "宝马计划 2027 年中在欧洲推行代理直售模式，车型全国统一定价",
-          "source": "IT之家·人工智能",
-          "time": "10月1日 21:41（收录）",
-          "summary": "宝马集团宣布将从 2027 年年中开始在欧洲导入新的“代理直售”模式，此前该模式已通过 MINI 品牌在 24 个欧洲…",
-          "aihot": "https://aihot.news/items/dhz97vpg9d5wdu71bd2sacfvb",
-          "original": "https://www.ithome.com/1/009/154.htm",
-          "score": 31
-        },
-        {
-          "num": 41,
-          "section": "industry",
-          "title": "泄露视频称警方可用 GrayKey 绕过 iPhone 自动重启机制解锁手机",
-          "source": "404 Media（RSS）",
-          "time": "10月1日 21:27（收录）",
-          "summary": "404 Media 获得的视频显示，取证公司 Magnet Forensics 开发出可让 iPhone 冻结在便于取…",
-          "aihot": "https://aihot.news/items/r2fyvw9bjn1omes2t0pwastaf",
-          "original": "https://www.404media.co/cops-can-bypass-iphone-automatic-inactivity-reboot-graykey/",
-          "score": 66
-        },
-        {
-          "num": 46,
           "section": "industry",
           "title": "OpenAI 与 Synopsys 宣布战略合作，共同开发芯片设计专用模型 GPT-Synopsys",
           "source": "Hacker News：AI 热帖",
@@ -662,18 +491,18 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 48,
+          "num": 17,
           "section": "industry",
-          "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
+          "title": "Anthropic 向美国文职机构开放 Claude for Government，与五角大楼争端仍在持续",
           "source": "The Decoder：AI News（RSS）",
-          "time": "10月1日 20:53（收录）",
-          "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户…",
-          "aihot": "https://aihot.news/items/uxe9v0hypn93df9ogn6glwled",
-          "original": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/",
-          "score": 77
+          "time": "10月1日 22:45（收录）",
+          "summary": "Anthropic 现向美国联邦和州级文职机构提供 Claude for Government，该平台自 7 月起开放…",
+          "aihot": "https://aihot.news/items/jlzu810pv8eai4ga86tqcvb9g",
+          "original": "https://the-decoder.com/anthropic-brings-claude-to-civilian-agencies-as-its-fight-with-the-pentagon-drags-on/",
+          "score": 62
         },
         {
-          "num": 49,
+          "num": 35,
           "section": "industry",
           "title": "前 Google 与 SpaceX 产品经理创办的 Satlyt 融资 800 万美元，在卫星上运行 AI",
           "source": "TechCrunch：AI（RSS）",
@@ -684,7 +513,29 @@ const DATA = {
           "score": 50
         },
         {
-          "num": 50,
+          "num": 22,
+          "section": "industry",
+          "title": "Figure 让 F.02 人形机器人跳入熔炉退役，采纳施瓦辛格本人提议",
+          "source": "IT之家·人工智能",
+          "time": "10月1日 22:12（收录）",
+          "summary": "Figure 为退役的 F.02 人形机器人举行\"火化仪式\"，让机器人亲自跳入熔炉，这一想法源自《终结者 2》T-80…",
+          "aihot": "https://aihot.news/items/eoih26ys0k14iacrrh6r0bqwp",
+          "original": "https://www.ithome.com/1/009/159.htm",
+          "score": 49
+        },
+        {
+          "num": 24,
+          "section": "industry",
+          "title": "Photon 为移动应用办葬礼后获 450 万美元种子轮，用智能体取代 App",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月1日 22:05（收录）",
+          "summary": "帮助开发者在 iMessage 和 WhatsApp 上构建智能体的 AI 初创公司 Photon 完成 450 万美…",
+          "aihot": "https://aihot.news/items/ogq6uvlq6tt5vd4hnnnnjs75c",
+          "original": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+          "score": 46
+        },
+        {
+          "num": 36,
           "section": "industry",
           "title": "a16z 领投 Armadin B 轮，打造 AI 时代自主安全平台",
           "source": "a16z：News（RSS）",
@@ -703,18 +554,18 @@ const DATA = {
       "count": 3,
       "cards": [
         {
-          "num": 9,
+          "num": 25,
           "section": "papers",
-          "title": "Apple 提出 RLTL;DR：让模型内化自生成反馈实现自我提升",
-          "source": "Apple Machine Learning Research（RSS）",
-          "time": "10月1日 23:26（收录）",
-          "summary": "Apple 研究者提出 RLTL;DR，在每次失败尝试后让策略读取验证器输出并自行写出一条 TL;DR 式反馈，后续…",
-          "aihot": "https://aihot.news/items/g0baw2mygf3wo7pfvlrtxsc3f",
-          "original": "https://machinelearning.apple.com/research/rltl-dr-self-improvement",
-          "score": 45
+          "title": "Ataraxos 以85%有效胜率击败最强人类 Stratego 选手，训练成本不足 8000 美元",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月1日 21:49（收录）",
+          "summary": "研究人员开发的 AI 系统 Ataraxos 以 85% 的有效胜率（平局计半胜）击败了曾获 4 次世界冠军的史上最强…",
+          "aihot": "https://aihot.news/items/w1n2xk27c8wehlngxnilhwy3p",
+          "original": "https://the-decoder.com/ai-beats-strategos-greatest-player-ending-one-of-the-last-human-strongholds-in-board-games/",
+          "score": 77
         },
         {
-          "num": 29,
+          "num": 20,
           "section": "papers",
           "title": "研究指出强模型智能体在自主机器学习工程中几乎不需要复杂 harness",
           "source": "Apple Machine Learning Research（RSS）",
@@ -725,15 +576,15 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 36,
+          "num": 9,
           "section": "papers",
-          "title": "Ataraxos 以85%有效胜率击败最强人类 Stratego 选手，训练成本不足 8000 美元",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月1日 21:49（收录）",
-          "summary": "研究人员开发的 AI 系统 Ataraxos 以 85% 的有效胜率（平局计半胜）击败了曾获 4 次世界冠军的史上最强…",
-          "aihot": "https://aihot.news/items/w1n2xk27c8wehlngxnilhwy3p",
-          "original": "https://the-decoder.com/ai-beats-strategos-greatest-player-ending-one-of-the-last-human-strongholds-in-board-games/",
-          "score": 77
+          "title": "Apple 提出 RLTL;DR：让模型内化自生成反馈实现自我提升",
+          "source": "Apple Machine Learning Research（RSS）",
+          "time": "10月1日 23:26（收录）",
+          "summary": "Apple 研究者提出 RLTL;DR，在每次失败尝试后让策略读取验证器输出并自行写出一条 TL;DR 式反馈，后续…",
+          "aihot": "https://aihot.news/items/g0baw2mygf3wo7pfvlrtxsc3f",
+          "original": "https://machinelearning.apple.com/research/rltl-dr-self-improvement",
+          "score": 45
         }
       ]
     },
@@ -741,19 +592,8 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 11,
+      "count": 10,
       "cards": [
-        {
-          "num": 1,
-          "section": "tips",
-          "title": "Perplexity Computer 集成 Seedance",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "10月1日 23:50（收录）",
-          "summary": "Computer 里的 Seedance 对营销和品牌团队来说相当惊艳！",
-          "aihot": "https://aihot.news/items/ifk2yfaui3exci8klx220qsxs",
-          "original": "https://x.com/AravSrinivas/status/2105679959453032810",
-          "score": 48
-        },
         {
           "num": 2,
           "section": "tips",
@@ -766,26 +606,15 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 3,
+          "num": 13,
           "section": "tips",
-          "title": "Si Sheppard：几百名西班牙士兵如何推翻阿兹特克与印加两大帝国",
-          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-          "time": "10月1日 23:43（收录）",
-          "summary": "军事历史学家 Si Sheppard 在播客中讲述 Cortés 与 Pizarro 如何以数百名征服者推翻阿兹特克和…",
-          "aihot": "https://aihot.news/items/mkhndkmtjlihlhu5u9975fc9w",
-          "original": "https://www.dwarkesh.com/p/si-sheppard",
-          "score": 41
-        },
-        {
-          "num": 5,
-          "section": "tips",
-          "title": "人类用量无限但智能体受限",
-          "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
-          "time": "10月1日 23:37",
-          "summary": "我第一次见到人类用量无限，但智能体用量受限的情况。有意思。",
-          "aihot": "https://aihot.news/items/cgnu8elhs3gewwx3wdyazygha",
-          "original": "https://x.com/_philschmid/status/2105683611714199994",
-          "score": 29
+          "title": "Brian Chesky 访谈：AI 智能体需要自己的操作系统",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月1日 23:19（收录）",
+          "summary": "Airbnb 本周随秋季更新上线新的 AI 驱动搜索，CEO Brian Chesky 在访谈中重申聊天机器人不适合旅…",
+          "aihot": "https://aihot.news/items/bsl6tc44ujz1enklgnocv4ol0",
+          "original": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
+          "score": 61
         },
         {
           "num": 6,
@@ -799,6 +628,28 @@ const DATA = {
           "score": 60
         },
         {
+          "num": 1,
+          "section": "tips",
+          "title": "Perplexity Computer 集成 Seedance",
+          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+          "time": "10月1日 23:50（收录）",
+          "summary": "Computer 里的 Seedance 对营销和品牌团队来说相当惊艳！",
+          "aihot": "https://aihot.news/items/ifk2yfaui3exci8klx220qsxs",
+          "original": "https://x.com/AravSrinivas/status/2105679959453032810",
+          "score": 48
+        },
+        {
+          "num": 3,
+          "section": "tips",
+          "title": "Si Sheppard：几百名西班牙士兵如何推翻阿兹特克与印加两大帝国",
+          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+          "time": "10月1日 23:43（收录）",
+          "summary": "军事历史学家 Si Sheppard 在播客中讲述 Cortés 与 Pizarro 如何以数百名征服者推翻阿兹特克和…",
+          "aihot": "https://aihot.news/items/mkhndkmtjlihlhu5u9975fc9w",
+          "original": "https://www.dwarkesh.com/p/si-sheppard",
+          "score": 41
+        },
+        {
           "num": 8,
           "section": "tips",
           "title": "GitHub Universe 2026 值得期待的 10 场技术演讲",
@@ -810,40 +661,7 @@ const DATA = {
           "score": 37
         },
         {
-          "num": 15,
-          "section": "tips",
-          "title": "Brian Chesky 访谈：AI 智能体需要自己的操作系统",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月1日 23:19（收录）",
-          "summary": "Airbnb 本周随秋季更新上线新的 AI 驱动搜索，CEO Brian Chesky 在访谈中重申聊天机器人不适合旅…",
-          "aihot": "https://aihot.news/items/bsl6tc44ujz1enklgnocv4ol0",
-          "original": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
-          "score": 61
-        },
-        {
           "num": 30,
-          "section": "tips",
-          "title": "百度 DuMate 庆祝国际咖啡日",
-          "source": "X：百度 Baidu (@Baidu_Inc)",
-          "time": "10月1日 22:19（收录）",
-          "summary": "世界以不同的方式醒来。我们偏爱有咖啡相伴的那种。国际咖啡日快乐！☕ - 由 DuMate 创作",
-          "aihot": "https://aihot.news/items/iz42ugbgtxi3fa2t7jpj1080d",
-          "original": "https://x.com/Baidu_Inc/status/2105659003821011288",
-          "score": 11
-        },
-        {
-          "num": 34,
-          "section": "tips",
-          "title": "Nathan Lambert 获 AI2050 早期职业研究员",
-          "source": "X：Nathan Lambert (@natolambert)",
-          "time": "10月1日 22:06（收录）",
-          "summary": "我进不了 X 平台顶级发帖者榜单，但我是 Schmidt Sciences AI2050 早期职业研究员，继续致力于构…",
-          "aihot": "https://aihot.news/items/ixx8rzwuk450toc7tdi3u7sgx",
-          "original": "https://x.com/natolambert/status/2105655038307967233",
-          "score": 17
-        },
-        {
-          "num": 42,
           "section": "tips",
           "title": "NVIDIA AI 工厂如何实现高产出、长寿命与通用性以最大化投资回报",
           "source": "NVIDIA Blog（RSS）",
@@ -854,7 +672,7 @@ const DATA = {
           "score": 37
         },
         {
-          "num": 47,
+          "num": 33,
           "section": "tips",
           "title": "以图为中心的智能体智能：从网络拓扑建模到根因分析",
           "source": "Amazon Science（RSS）",
@@ -863,6 +681,28 @@ const DATA = {
           "aihot": "https://aihot.news/items/qhwoo85keery53krfpasqy9cr",
           "original": "https://www.amazon.science/blog/graph-centric-agentic-intelligence",
           "score": 30
+        },
+        {
+          "num": 5,
+          "section": "tips",
+          "title": "人类用量无限但智能体受限",
+          "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
+          "time": "10月1日 23:37",
+          "summary": "我第一次见到人类用量无限，但智能体用量受限的情况。有意思。",
+          "aihot": "https://aihot.news/items/cgnu8elhs3gewwx3wdyazygha",
+          "original": "https://x.com/_philschmid/status/2105683611714199994",
+          "score": 29
+        },
+        {
+          "num": 23,
+          "section": "tips",
+          "title": "Nathan Lambert 获 AI2050 早期职业研究员",
+          "source": "X：Nathan Lambert (@natolambert)",
+          "time": "10月1日 22:06（收录）",
+          "summary": "我进不了 X 平台顶级发帖者榜单，但我是 Schmidt Sciences AI2050 早期职业研究员，继续致力于构…",
+          "aihot": "https://aihot.news/items/ixx8rzwuk450toc7tdi3u7sgx",
+          "original": "https://x.com/natolambert/status/2105655038307967233",
+          "score": 17
         }
       ]
     }
@@ -940,7 +780,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1046,12 +885,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1068,16 +905,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

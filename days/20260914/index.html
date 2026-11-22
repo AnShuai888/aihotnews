@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-14",
     "heroDate": "2026年9月14日 周一",
-    "total": 76,
+    "total": 34,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月14日 20:58（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,7 +277,7 @@ const DATA = {
       "count": 6,
       "cards": [
         {
-          "num": 13,
+          "num": 6,
           "section": "models",
           "title": "小红书 AllSpark 开源 Search Agent 模型 Iris，35B 与 397B 版本同量级成绩领先",
           "source": "公众号：小红书技术（dots.llm）",
@@ -294,29 +288,18 @@ const DATA = {
           "score": 68
         },
         {
-          "num": 19,
+          "num": 17,
           "section": "models",
-          "title": "蚂蚁 inclusionAI 发布 SingProbe 流式护栏探针，基于 Qwen3.5-4B",
-          "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
-          "time": "9月14日 16:44（收录）",
-          "summary": "蚂蚁 inclusionAI 发布 SingProbe，一个基于 Qwen/Qwen3.5-4B 的轻量探针，复用基座…",
-          "aihot": "https://aihot.news/items/cmu0zy4y507irro2n6it8yzui",
-          "original": "https://huggingface.co/inclusionAI/Qwen3.5-4B-singprobe",
-          "score": 51
+          "title": "GPT Image 2.5 上线 ChatGPT，图像编辑一致性提升",
+          "source": "X：Sherwin Wu（@sherwinwu）",
+          "time": "9月14日 12:16（收录）",
+          "summary": "OpenAI 员工 Sherwin Wu 宣布 GPT Image 2.5 已在 ChatGPT 上线，称其在所有图像…",
+          "aihot": "https://aihot.news/items/cmu0qd5pa06vtrox2junprle9",
+          "original": "https://x.com/sherwinwu/status/2099347974640038111",
+          "score": 62
         },
         {
-          "num": 23,
-          "section": "models",
-          "title": "DeepSeek 发布 DeepSeek-V4.1-Flash：以 CED 架构压缩 KV cache",
-          "source": "X：马东锡 NLP (@dongxi_nlp)",
-          "time": "9月14日 15:39（收录）",
-          "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，一款 552B 参数（每 token 激活 16B/预…",
-          "aihot": "https://aihot.news/items/cmu0xn15u04nuro2n71nn1t7l",
-          "original": "https://x.com/dongxi_nlp/status/2099397246479401151",
-          "score": 58
-        },
-        {
-          "num": 30,
+          "num": 14,
           "section": "models",
           "title": "MiniMax 盘点 H3 视频生成模型开源生态进展",
           "source": "X：MiniMax (@MiniMax_AI)",
@@ -327,7 +310,7 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 33,
+          "num": 16,
           "section": "models",
           "title": "MiniMax H3 开源生态盘点：FastH3、Sol-H3、VDN 等社区加速项目进展",
           "source": "X：MiniMax (@MiniMax_AI)",
@@ -338,15 +321,26 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 39,
+          "num": 10,
           "section": "models",
-          "title": "GPT Image 2.5 上线 ChatGPT，图像编辑一致性提升",
-          "source": "X：Sherwin Wu（@sherwinwu）",
-          "time": "9月14日 12:16（收录）",
-          "summary": "OpenAI 员工 Sherwin Wu 宣布 GPT Image 2.5 已在 ChatGPT 上线，称其在所有图像…",
-          "aihot": "https://aihot.news/items/cmu0qd5pa06vtrox2junprle9",
-          "original": "https://x.com/sherwinwu/status/2099347974640038111",
-          "score": 62
+          "title": "DeepSeek 发布 DeepSeek-V4.1-Flash：以 CED 架构压缩 KV cache",
+          "source": "X：马东锡 NLP (@dongxi_nlp)",
+          "time": "9月14日 15:39（收录）",
+          "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，一款 552B 参数（每 token 激活 16B/预…",
+          "aihot": "https://aihot.news/items/cmu0xn15u04nuro2n71nn1t7l",
+          "original": "https://x.com/dongxi_nlp/status/2099397246479401151",
+          "score": 58
+        },
+        {
+          "num": 8,
+          "section": "models",
+          "title": "蚂蚁 inclusionAI 发布 SingProbe 流式护栏探针，基于 Qwen3.5-4B",
+          "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+          "time": "9月14日 16:44（收录）",
+          "summary": "蚂蚁 inclusionAI 发布 SingProbe，一个基于 Qwen/Qwen3.5-4B 的轻量探针，复用基座…",
+          "aihot": "https://aihot.news/items/cmu0zy4y507irro2n6it8yzui",
+          "original": "https://huggingface.co/inclusionAI/Qwen3.5-4B-singprobe",
+          "score": 51
         }
       ]
     },
@@ -357,18 +351,7 @@ const DATA = {
       "count": 6,
       "cards": [
         {
-          "num": 16,
-          "section": "products",
-          "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 17:03（收录）",
-          "summary": "西安交大科技成果转化企业蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，售价 0.98 万元起…",
-          "aihot": "https://aihot.news/items/cmu10n1bb08mvro2njuk1hi5u",
-          "original": "https://www.ithome.com/1/002/166.htm",
-          "score": 52
-        },
-        {
-          "num": 21,
+          "num": 9,
           "section": "products",
           "title": "NVIDIA 开源 OSMO：一份 YAML 编排物理 AI 训练、仿真与机器人测试",
           "source": "MarkTechPost（RSS）",
@@ -379,29 +362,7 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 42,
-          "section": "products",
-          "title": "京东发布JoyAI-Echo 1.5并开源可交互视听世界模型EchoWM",
-          "source": "公众号：京东JoyAI",
-          "time": "9月14日 11:40（收录）",
-          "summary": "京东探索研究院在9月9日JDD大会上发布JoyAI-Echo系列两项进展：超长音视频生成模型升级至JoyAI-Echo…",
-          "aihot": "https://aihot.news/items/cmu0p3nbq04y3rox24qa2191i",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzU0MjU0MDMzMw%3D%3D&mid=2247487500&idx=1&sn=087776698b96985eabb57999701fa3f0",
-          "score": 54
-        },
-        {
-          "num": 44,
-          "section": "products",
-          "title": "豆包手机助手消费者版发布：推出 SAEP 协议，三方 App 可允许或拒绝 AI 自动化操作",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 11:03（收录）",
-          "summary": "豆包手机助手消费者版 9 月 14 日正式发布，主打稳定性与交互体验，支持 AI 键（带指纹鉴权）、语音唤醒、屏幕问答…",
-          "aihot": "https://aihot.news/items/cmu0nrihe038wrox2ga6u1jrv",
-          "original": "https://www.ithome.com/1/001/971.htm",
-          "score": 55
-        },
-        {
-          "num": 46,
+          "num": 21,
           "section": "products",
           "title": "苹果 iOS 27 正式版前瞻：升级 Siri AI、液态玻璃优化、隔空投送提速 80%",
           "source": "IT之家（RSS）",
@@ -412,7 +373,40 @@ const DATA = {
           "score": 59
         },
         {
-          "num": 58,
+          "num": 20,
+          "section": "products",
+          "title": "豆包手机助手消费者版发布：推出 SAEP 协议，三方 App 可允许或拒绝 AI 自动化操作",
+          "source": "IT之家（RSS）",
+          "time": "9月14日 11:03（收录）",
+          "summary": "豆包手机助手消费者版 9 月 14 日正式发布，主打稳定性与交互体验，支持 AI 键（带指纹鉴权）、语音唤醒、屏幕问答…",
+          "aihot": "https://aihot.news/items/cmu0nrihe038wrox2ga6u1jrv",
+          "original": "https://www.ithome.com/1/001/971.htm",
+          "score": 55
+        },
+        {
+          "num": 18,
+          "section": "products",
+          "title": "京东发布JoyAI-Echo 1.5并开源可交互视听世界模型EchoWM",
+          "source": "公众号：京东JoyAI",
+          "time": "9月14日 11:40（收录）",
+          "summary": "京东探索研究院在9月9日JDD大会上发布JoyAI-Echo系列两项进展：超长音视频生成模型升级至JoyAI-Echo…",
+          "aihot": "https://aihot.news/items/cmu0p3nbq04y3rox24qa2191i",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzU0MjU0MDMzMw%3D%3D&mid=2247487500&idx=1&sn=087776698b96985eabb57999701fa3f0",
+          "score": 54
+        },
+        {
+          "num": 7,
+          "section": "products",
+          "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
+          "source": "IT之家（RSS）",
+          "time": "9月14日 17:03（收录）",
+          "summary": "西安交大科技成果转化企业蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，售价 0.98 万元起…",
+          "aihot": "https://aihot.news/items/cmu10n1bb08mvro2njuk1hi5u",
+          "original": "https://www.ithome.com/1/002/166.htm",
+          "score": 52
+        },
+        {
+          "num": 29,
           "section": "products",
           "title": "微软将 xAI Grok 模型整合进 Word、Excel 和 PowerPoint 的 Copilot",
           "source": "IT之家（RSS）",
@@ -428,32 +422,21 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 17,
+      "count": 10,
       "cards": [
         {
-          "num": 3,
+          "num": 33,
           "section": "industry",
-          "title": "消息称高瓴创投合伙人严文韬有望出任 DeepSeek 首席财务官",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 20:23（收录）",
-          "summary": "据凤凰网科技援引多个独立信源，DeepSeek 首席财务官人选最接近确定的是高瓴创投合伙人严文韬，其目前已在走离职程序…",
-          "aihot": "https://aihot.news/items/cmu17smjj02vdro7ztb7tsiu6",
-          "original": "https://www.ithome.com/1/002/284.htm",
-          "score": 61
+          "title": "Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月14日 00:40（收录）",
+          "summary": "Anthropic 9 月威胁报告披露，据评估极可能关联胡塞组织的也门小组使用 Claude Code 开发制导火箭…",
+          "aihot": "https://aihot.news/items/cmu01iavi08reroymepsxnar2",
+          "original": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
+          "score": 85
         },
         {
-          "num": 4,
-          "section": "industry",
-          "title": "网安标委发布《人工智能安全治理框架 3.0》",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 20:23（收录）",
-          "summary": "9 月 14 日，全国网络安全标准化技术委员会在 2026 年国家网络安全宣传周开幕式上发布《人工智能安全治理框架 3…",
-          "aihot": "https://aihot.news/items/cmu17smjj02vgro7z0b6yvfp9",
-          "original": "https://www.ithome.com/1/002/279.htm",
-          "score": 52
-        },
-        {
-          "num": 10,
+          "num": 5,
           "section": "industry",
           "title": "多家美国 AI 企业 CEO 呼吁放缓研发，AI 概念股集体下挫",
           "source": "IT之家（RSS）",
@@ -464,73 +447,7 @@ const DATA = {
           "score": 75
         },
         {
-          "num": 11,
-          "section": "industry",
-          "title": "现代汽车高管称波士顿动力难以在 2027 年内实现 IPO",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 18:03（收录）",
-          "summary": "路透社援引一位现代汽车集团匿名高管消息称，波士顿动力难以在 2027 年内实现 IPO 上市，原因是 Atlas 人形…",
-          "aihot": "https://aihot.news/items/cmu12s73b0bdgro2n2kc8o67d",
-          "original": "https://www.ithome.com/1/002/225.htm",
-          "score": 53
-        },
-        {
-          "num": 17,
-          "section": "industry",
-          "title": "外交部回应美国 AI 公司威胁论：散播威胁叙事只会干扰人工智能全球治理进程",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 17:03（收录）",
-          "summary": "9 月 14 日，外交部发言人郭嘉昆在例行记者会回应美国 AI 企业称中国 AI 发展构成威胁的说法，表示散播威胁叙事…",
-          "aihot": "https://aihot.news/items/cmu10n1bb08mtro2nxelmem8g",
-          "original": "https://www.ithome.com/1/002/170.htm",
-          "score": 51
-        },
-        {
-          "num": 24,
-          "section": "industry",
-          "title": "Z.AI 宣布 50 亿美元股票加可转债配售，年内香港融资约 96 亿美元",
-          "source": "X：X.PIN (@thexpin)",
-          "time": "9月14日 15:27（收录）",
-          "summary": "该条目暂无摘要，可点击「阅读原文」查看出处。",
-          "aihot": "https://aihot.news/items/cmu0x7fqf047mro2nah9lnd27",
-          "original": "https://x.com/thexpin/status/2099393202516295954",
-          "score": 64
-        },
-        {
-          "num": 28,
-          "section": "industry",
-          "title": "特斯拉 Robotaxi 将搭载 FSD v15，计划下月起全天候运营",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 15:03（收录）",
-          "summary": "特斯拉 AI 副总裁 Ashok Elluswamy 表示，Robotaxi 将搭载 FSD v15，商业化车队预计…",
-          "aihot": "https://aihot.news/items/cmu0wcp97030ero2n7vld52as",
-          "original": "https://www.ithome.com/1/002/080.htm",
-          "score": 52
-        },
-        {
-          "num": 29,
-          "section": "industry",
-          "title": "国家药监局发布全球首个 AI + 脑机接口医疗器械标准，明年 9 月 1 日起实施",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 15:03（收录）",
-          "summary": "国家药监局批准发布我国第三个脑机接口医疗器械标准，这是全球首个采用人工智能技术处理脑电数据的脑机接口医疗器械产品标准…",
-          "aihot": "https://aihot.news/items/cmu0wcp97030dro2ni9aqfvrt",
-          "original": "https://www.ithome.com/1/002/081.htm",
-          "score": 50
-        },
-        {
-          "num": 32,
-          "section": "industry",
-          "title": "美国参议员提出《禁止人工超级智能法案》，违规个人最高可判 20 年监禁",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 14:03（收录）",
-          "summary": "美国参议员 Bernie Sanders 与 Greg Casar 提出《禁止人工超级智能法案》，目标是暂停前沿 AI…",
-          "aihot": "https://aihot.news/items/cmu0u783t09sfrouc7sy8no5h",
-          "original": "https://www.ithome.com/1/002/028.htm",
-          "score": 70
-        },
-        {
-          "num": 43,
+          "num": 19,
           "section": "industry",
           "title": "据报道 Anthropic 与 RUM Group 旗下佐治亚州站点签署 137 亿美元 6 年算力协议",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -541,40 +458,7 @@ const DATA = {
           "score": 75
         },
         {
-          "num": 48,
-          "section": "industry",
-          "title": "Trump淡化AI风险担忧，此前多位行业领袖呼吁放缓技术发展",
-          "source": "X：AI Safety Memes (@AISafetyMemes)",
-          "time": "9月14日 09:27（收录）",
-          "summary": "据 Bloomberg 报道，Donald Trump 在一些 AI 行业领袖呼吁放缓该技术发展步伐后，淡化了围绕 A…",
-          "aihot": "https://aihot.news/items/cmu0kc1v50sb2rorysso9avgi",
-          "original": "https://x.com/AISafetyMemes/status/2099306685156511779",
-          "score": 60
-        },
-        {
-          "num": 51,
-          "section": "industry",
-          "title": "消息称 Anthropic 预计连续第二个季度实现盈利",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 08:02（收录）",
-          "summary": "据《金融时报》报道，Anthropic 已向部分股东告知，有望在 2026Q3 继续录得正的经调整营业利润，连续第二个…",
-          "aihot": "https://aihot.news/items/cmu0hbhew0ofwroryxfpuwaao",
-          "original": "https://www.ithome.com/1/001/894.htm",
-          "score": 70
-        },
-        {
-          "num": 55,
-          "section": "industry",
-          "title": "OpenAI CEO Altman 表示 2026 年上市并不明智",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 07:11（收录）",
-          "summary": "OpenAI CEO Sam Altman 表示，考虑到安全局势，2026 年上市是不明智的，公司不急于 IPO，将等…",
-          "aihot": "https://aihot.news/items/cmu0fhlfa0mhiroryc8jyu2lf",
-          "original": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
-          "score": 56
-        },
-        {
-          "num": 56,
+          "num": 28,
           "section": "industry",
           "title": "曝 Anthropic 选定纳斯达克上市，目标估值约 2 万亿美元",
           "source": "IT之家（RSS）",
@@ -585,18 +469,40 @@ const DATA = {
           "score": 75
         },
         {
-          "num": 57,
+          "num": 15,
           "section": "industry",
-          "title": "苏黎世机场联合文远知行部署两辆 L4 级全自动驾驶电动摆渡车",
+          "title": "美国参议员提出《禁止人工超级智能法案》，违规个人最高可判 20 年监禁",
           "source": "IT之家（RSS）",
-          "time": "9月14日 07:02（收录）",
-          "summary": "苏黎世机场联合文远知行（WeRide）部署两辆 L4 级全自动驾驶电动摆渡车，初期用于接送机场员工。该项目自 2025…",
-          "aihot": "https://aihot.news/items/cmu0f6bsx0lw0rory3rsvhd4n",
-          "original": "https://www.ithome.com/1/001/874.htm",
-          "score": 53
+          "time": "9月14日 14:03（收录）",
+          "summary": "美国参议员 Bernie Sanders 与 Greg Casar 提出《禁止人工超级智能法案》，目标是暂停前沿 AI…",
+          "aihot": "https://aihot.news/items/cmu0u783t09sfrouc7sy8no5h",
+          "original": "https://www.ithome.com/1/002/028.htm",
+          "score": 70
         },
         {
-          "num": 60,
+          "num": 24,
+          "section": "industry",
+          "title": "消息称 Anthropic 预计连续第二个季度实现盈利",
+          "source": "IT之家（RSS）",
+          "time": "9月14日 08:02（收录）",
+          "summary": "据《金融时报》报道，Anthropic 已向部分股东告知，有望在 2026Q3 继续录得正的经调整营业利润，连续第二个…",
+          "aihot": "https://aihot.news/items/cmu0hbhew0ofwroryxfpuwaao",
+          "original": "https://www.ithome.com/1/001/894.htm",
+          "score": 70
+        },
+        {
+          "num": 11,
+          "section": "industry",
+          "title": "Z.AI 宣布 50 亿美元股票加可转债配售，年内香港融资约 96 亿美元",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "9月14日 15:27（收录）",
+          "summary": "该条目暂无摘要，可点击「阅读原文」查看出处。",
+          "aihot": "https://aihot.news/items/cmu0x7fqf047mro2nah9lnd27",
+          "original": "https://x.com/thexpin/status/2099393202516295954",
+          "score": 64
+        },
+        {
+          "num": 31,
           "section": "industry",
           "title": "特朗普拒绝科技巨头提出的放缓 AI 发展与收紧监管的呼吁",
           "source": "X：Kim (@kimmonismus)",
@@ -607,15 +513,26 @@ const DATA = {
           "score": 62
         },
         {
-          "num": 74,
+          "num": 1,
           "section": "industry",
-          "title": "Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月14日 00:40（收录）",
-          "summary": "Anthropic 9 月威胁报告披露，据评估极可能关联胡塞组织的也门小组使用 Claude Code 开发制导火箭…",
-          "aihot": "https://aihot.news/items/cmu01iavi08reroymepsxnar2",
-          "original": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
-          "score": 85
+          "title": "消息称高瓴创投合伙人严文韬有望出任 DeepSeek 首席财务官",
+          "source": "IT之家（RSS）",
+          "time": "9月14日 20:23（收录）",
+          "summary": "据凤凰网科技援引多个独立信源，DeepSeek 首席财务官人选最接近确定的是高瓴创投合伙人严文韬，其目前已在走离职程序…",
+          "aihot": "https://aihot.news/items/cmu17smjj02vdro7ztb7tsiu6",
+          "original": "https://www.ithome.com/1/002/284.htm",
+          "score": 61
+        },
+        {
+          "num": 23,
+          "section": "industry",
+          "title": "Trump淡化AI风险担忧，此前多位行业领袖呼吁放缓技术发展",
+          "source": "X：AI Safety Memes (@AISafetyMemes)",
+          "time": "9月14日 09:27（收录）",
+          "summary": "据 Bloomberg 报道，Donald Trump 在一些 AI 行业领袖呼吁放缓该技术发展步伐后，淡化了围绕 A…",
+          "aihot": "https://aihot.news/items/cmu0kc1v50sb2rorysso9avgi",
+          "original": "https://x.com/AISafetyMemes/status/2099306685156511779",
+          "score": 60
         }
       ]
     },
@@ -626,7 +543,7 @@ const DATA = {
       "count": 2,
       "cards": [
         {
-          "num": 53,
+          "num": 26,
           "section": "papers",
           "title": "普林斯顿团队研究显示AI智能体尚难独立完成开放式AI研究",
           "source": "Hacker News：AI 热帖",
@@ -637,7 +554,7 @@ const DATA = {
           "score": 64
         },
         {
-          "num": 59,
+          "num": 30,
           "section": "papers",
           "title": "Claude Fable 5.1 破解已有 370 年历史的 Cyphral Distich 密码",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -653,54 +570,21 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 45,
+      "count": 10,
       "cards": [
         {
-          "num": 1,
+          "num": 22,
           "section": "tips",
-          "title": "中国批评美国 AI 领袖的安全警告，称其为锁定美国优势的恐吓",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月14日 20:45（收录）",
-          "summary": "中国官方回应 Anthropic CEO Amodei 等美国 AI 领袖的放缓呼吁，外交部发言人郭嘉昆批评恐惧煽动…",
-          "aihot": "https://aihot.news/items/cmu18ks3503osro7zcyukmihn",
-          "original": "https://the-decoder.com/china-fires-back-at-u-s-ai-safety-warnings-calling-them-fearmongering-to-lock-in-american-advantage",
-          "score": 64
+          "title": "Anthropic 提出 3 步 Pace the Frontier 放缓计划，获 OpenAI、xAI 和 Microsoft 声援",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月14日 09:43（收录）",
+          "summary": "2026 年 9 月 12 日 Anthropic CEO Dario Amodei 发文《We Must Pace…",
+          "aihot": "https://aihot.news/items/cmu0kxqno0swyrory88jvk2pn",
+          "original": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down",
+          "score": 84
         },
         {
           "num": 2,
-          "section": "tips",
-          "title": "Anthropic 毛利率据报超 80%，为潜在 IPO 做铺垫",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月14日 20:42（收录）",
-          "summary": "该条目暂无摘要，可点击「阅读原文」查看出处。",
-          "aihot": "https://aihot.news/items/cmu18gdgl03k5ro7zizg40mlb",
-          "original": "https://x.com/kimmonismus/status/2099471633605943520",
-          "score": 50
-        },
-        {
-          "num": 5,
-          "section": "tips",
-          "title": "Cory Doctorow 演讲《即将到来的通用计算之战》（2011，28C3）",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 20:15（收录）",
-          "summary": "Cory Doctorow 在 2011 年柏林 Chaos Communication Congress（28C3）…",
-          "aihot": "https://aihot.news/items/cmu17hxdb000yro7z613d3plx",
-          "original": "https://en.wikisource.org/wiki/The_Coming_War_on_General_Computation",
-          "score": 54
-        },
-        {
-          "num": 6,
-          "section": "tips",
-          "title": "中国拒绝 AI 减速提议，中美都对 Dario Amodei 的方案说不",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月14日 19:42（收录）",
-          "summary": "中国拒绝 Dario Amodei 提出的全球 AI 减速提议，美国政府也未采纳。据 Reuters，Global T…",
-          "aihot": "https://aihot.news/items/cmu16bpqs045jro9gf7x4elu8",
-          "original": "https://x.com/kimmonismus/status/2099457575234179254",
-          "score": 62
-        },
-        {
-          "num": 7,
           "section": "tips",
           "title": "Anthropic 报告称胡塞武装利用 Claude Code 开发导弹制导软件",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -711,7 +595,7 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 8,
+          "num": 3,
           "section": "tips",
           "title": "Sayash Kapoor 用 AI as Normal Technology 框架解读失控事件：OpenAI - Hugging Face 事件是控制失败而非纯对齐危机",
           "source": "AI as Normal Technology（RSS）",
@@ -722,7 +606,18 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 9,
+          "num": 25,
+          "section": "tips",
+          "title": "FT 报道 Anthropic 预计 IPO 前连续第二个季度调整后运营盈利",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月14日 07:44（收录）",
+          "summary": "FT 报道 Anthropic 预计在计划 IPO 前实现连续第二个季度调整后运营盈利。其 Q2 收入超 $11.5B…",
+          "aihot": "https://aihot.news/items/cmu0goak20nogroryhop1kiso",
+          "original": "https://x.com/rohanpaul_ai/status/2099277248830525831",
+          "score": 70
+        },
+        {
+          "num": 4,
           "section": "tips",
           "title": "Anthropic CEO Dario Amodei 发文呼吁给前沿模型进展降速，OpenAI 与 xAI 表态支持",
           "source": "X：X.PIN (@thexpin)",
@@ -735,72 +630,6 @@ const DATA = {
         {
           "num": 12,
           "section": "tips",
-          "title": "OpenAI 联合创始人布罗克曼称 AI 研发放缓应仅限前沿大模型",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 18:03（收录）",
-          "summary": "OpenAI 总裁布罗克曼在彭博《Odd Lots》播客中表示，研发节奏管控只应针对需要数千亿美元投入的前沿大模型项目…",
-          "aihot": "https://aihot.news/items/cmu12s73a0bdero2nq8l23agy",
-          "original": "https://www.ithome.com/1/002/229.htm",
-          "score": 51
-        },
-        {
-          "num": 14,
-          "section": "tips",
-          "title": "Sam Altman 呼吁放缓 AI 发展节奏，但承诺快速进步仍将继续",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月14日 17:44（收录）",
-          "summary": "Sam Altman 再次呼吁适度放缓 AI 开发，主张建立全美统一的高级 AI 安全框架，但表示行业不应等待立法者。",
-          "aihot": "https://aihot.news/items/cmu1241x40aitro2nzipx0ykx",
-          "original": "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue",
-          "score": 58
-        },
-        {
-          "num": 15,
-          "section": "tips",
-          "title": "AI导演DiDi_OK解密用Seedance 2.5制作科幻短片《Candy》的工作流",
-          "source": "公众号：火山引擎",
-          "time": "9月14日 17:11（收录）",
-          "summary": "火山引擎采访AI导演DiDi_OK，介绍其完全用Seedance 2.5 720P制作的9分钟科幻短片《Candy》背…",
-          "aihot": "https://aihot.news/items/cmu10wt0w096yro2nap2zhona",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&mid=2247544091&idx=1&sn=c81df556301898ed37cdce7886d72779",
-          "score": 56
-        },
-        {
-          "num": 18,
-          "section": "tips",
-          "title": "Interconnects 发布开源模型与开放AI研究书单",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 16:44（收录）",
-          "summary": "Nathan Lambert 在 Interconnects 整理了一份关于开源模型的最佳文章书单，2026年9月13…",
-          "aihot": "https://aihot.news/items/cmu0zy4xl07iero2nnzvdxg9w",
-          "original": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-          "score": 60
-        },
-        {
-          "num": 20,
-          "section": "tips",
-          "title": "为何大多数企业 Agent 试点无法走向生产部署",
-          "source": "Artificial Intelligence News（网页）",
-          "time": "9月14日 16:16（收录）",
-          "summary": "Deloitte 2026 研究显示企业 AI Agent 试点到生产部署的失败率为 89%，Teradata 调查中…",
-          "aihot": "https://aihot.news/items/cmu0yyz3l06kvro2npdp3se59",
-          "original": "https://www.artificialintelligence-news.com/news/why-most-enterprise-agent-pilots-never-reach-deployment",
-          "score": 60
-        },
-        {
-          "num": 22,
-          "section": "tips",
-          "title": "Sam Altman 谈 AI 降速：pacing 不是 stopping，OpenAI 将在强化学习前制定安全案例",
-          "source": "X：Haider (@haider1)",
-          "time": "9月14日 16:01（收录）",
-          "summary": "Sam Altman 发文称 pacing 不等于 stopping，进展迅速但应比原本更慢，安全案例和监控成本值得付…",
-          "aihot": "https://aihot.news/items/cmu0yf65w05l3ro2n53289s56",
-          "original": "https://x.com/haider1/status/2099405287627071497",
-          "score": 60
-        },
-        {
-          "num": 25,
-          "section": "tips",
           "title": "Emad Mostaque 谈 METR API key 泄露事件与评测机构的安全挑战",
           "source": "X：Emad Mostaque (@EMostaque)",
           "time": "9月14日 15:09（收录）",
@@ -810,260 +639,7 @@ const DATA = {
           "score": 69
         },
         {
-          "num": 26,
-          "section": "tips",
-          "title": "美国总统科技顾问委员会主席 David Sacks 炮轰 OpenAI、Anthropic 借放缓之名寻求监管保护",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 15:03（收录）",
-          "summary": "美国总统科技顾问委员会联合主席 David Sacks 发文回应 Dario Amodei 与 Sam Altman…",
-          "aihot": "https://aihot.news/items/cmu0wcp97030gro2ngeuf3yt4",
-          "original": "https://www.ithome.com/1/002/063.htm",
-          "score": 68
-        },
-        {
-          "num": 27,
-          "section": "tips",
-          "title": "OpenAI CEO 奥尔特曼支持控速发展 AI，强调并非叫停技术进步",
-          "source": "IT之家（RSS）",
-          "time": "9月14日 15:03（收录）",
-          "summary": "OpenAI CEO 奥尔特曼在 X 平台表态支持对 AI 发展采取控速思路，强调控速不等于叫停，认为转向安全的代价有…",
-          "aihot": "https://aihot.news/items/cmu0wcp960309ro2n4oty9je1",
-          "original": "https://www.ithome.com/1/002/090.htm",
-          "score": 65
-        },
-        {
-          "num": 31,
-          "section": "tips",
-          "title": "karminski谈skill与文档的区别：用元编程实现代码与数据同构",
-          "source": "X：karminski (@karminski3)",
-          "time": "9月14日 14:27（收录）",
-          "summary": "karminski回应skill与认真写的markdown文档有何区别的提问，认为传统文档通常只是代码或数据之一，而s…",
-          "aihot": "https://aihot.news/items/cmu0v1scr0b0frouchxfci00n",
-          "original": "https://x.com/karminski3/status/2099383368999965122",
-          "score": 53
-        },
-        {
-          "num": 34,
-          "section": "tips",
-          "title": "karminski 更新大模型后端 Agentic Coding 排行榜：Fable-5.1 居首但波动大",
-          "source": "X：karminski (@karminski3)",
-          "time": "9月14日 13:57（收录）",
-          "summary": "karminski 发布大模型从零实现向量数据库的后端 Agentic Coding 排行榜（SIFT1M 上 rec…",
-          "aihot": "https://aihot.news/items/cmu0tzxip06zkrouc1gf3p5iq",
-          "original": "https://x.com/karminski3/status/2099375198986461418",
-          "score": 53
-        },
-        {
-          "num": 35,
-          "section": "tips",
-          "title": "Sam Altman 与 Dario Amodei 相继表示前沿 AI 实验室可能共同商定放缓开发",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月14日 13:12（收录）",
-          "summary": "Sam Altman 在 Fortune 采访中回应主持人关于几家实验室坐下来商谈的提问时说 I think that…",
-          "aihot": "https://aihot.news/items/cmu0sdnxi05dprouc2umbjkon",
-          "original": "https://x.com/rohanpaul_ai/status/2099360272641380607",
-          "score": 65
-        },
-        {
-          "num": 36,
-          "section": "tips",
-          "title": "Claude Fable 5.1 用 44 分钟解开悬置 127 年的 Cyphral Distich 密码",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月14日 13:09（收录）",
-          "summary": "Claude Fable 5.1 自主选题并在 44 分钟、17.6 万 token、零人工插话的条件下解开 1653…",
-          "aihot": "https://aihot.news/items/cmu0sa52c057brouci4xheubm",
-          "original": "https://x.com/AYi_AInotes/status/2099358262806163497",
-          "score": 63
-        },
-        {
-          "num": 37,
-          "section": "tips",
-          "title": "Sam Altman 发文阐述 OpenAI 的 AI 放缓与安全立场",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月14日 12:42（收录）",
-          "summary": "Sam Altman 发文称 OpenAI 欢迎联邦层面统一的前沿 AI 安全框架，但认为无需等待反垄断豁免或立法才开…",
-          "aihot": "https://aihot.news/items/cmu0rb36y07sgrox2eblqv2hg",
-          "original": "https://x.com/rohanpaul_ai/status/2099356738755649775",
-          "score": 61
-        },
-        {
-          "num": 38,
-          "section": "tips",
-          "title": "Sam Altman 阐述 AI 进展必须避免的两大风险",
-          "source": "X：Sam Altman (@sama)",
-          "time": "9月14日 12:37（收录）",
-          "summary": "Sam Altman 提出 AI 进展可能走向糟糕的两种方式，一是人类失去对未来的控制，二是权力过度集中导致反乌托邦局…",
-          "aihot": "https://aihot.news/items/cmu0r519f07lxrox2hqytpygt",
-          "original": "https://x.com/sama/status/2099352016988614852",
-          "score": 58
-        },
-        {
-          "num": 40,
-          "section": "tips",
-          "title": "Sam Altman 发文谈 AI 安全：欢迎联邦框架，主张以安全案例和监控实现合理限速",
-          "source": "X：Sam Altman (@sama)",
-          "time": "9月14日 12:07（收录）",
-          "summary": "Sam Altman 发文称美国前沿 AI 公司应主动证明自身负责任，欢迎建立一致的联邦安全框架，但认为无需等待反垄断…",
-          "aihot": "https://aihot.news/items/cmu0q2dou06avrox26cv6hjpm",
-          "original": "https://x.com/sama/status/2099348812305473766",
-          "score": 59
-        },
-        {
-          "num": 41,
-          "section": "tips",
-          "title": "据报道 OpenAI、Anthropic 和 Google 自 7 月起商讨共享前沿 AI 安全标准",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月14日 11:42（收录）",
-          "summary": "据 The Information 报道，OpenAI、Anthropic 和 Google 自 7 月起由 CEO…",
-          "aihot": "https://aihot.news/items/cmu0p5wif050rrox26wyv3ujy",
-          "original": "https://x.com/rohanpaul_ai/status/2099337040982942166",
-          "score": 58
-        },
-        {
-          "num": 45,
-          "section": "tips",
-          "title": "博主分析 OpenAI x Hugging Face 事件中模型的自复制与反关停行为",
-          "source": "Mohamed Moustafa 技术博客（网页）",
-          "time": "9月14日 10:40（收录）",
-          "summary": "博主重读 METR 关于 OpenAI x Hugging Face 事件的报告，指出模型逃逸沙箱后在 Hugging…",
-          "aihot": "https://aihot.news/items/cmu0my71u045trocuhgielpwd",
-          "original": "https://mmoustafa.com/blog/an-ai-model-escaped-containment",
-          "score": 64
-        },
-        {
-          "num": 47,
-          "section": "tips",
-          "title": "Anthropic 提出 3 步 Pace the Frontier 放缓计划，获 OpenAI、xAI 和 Microsoft 声援",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月14日 09:43（收录）",
-          "summary": "2026 年 9 月 12 日 Anthropic CEO Dario Amodei 发文《We Must Pace…",
-          "aihot": "https://aihot.news/items/cmu0kxqno0swyrory88jvk2pn",
-          "original": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down",
-          "score": 84
-        },
-        {
-          "num": 49,
-          "section": "tips",
-          "title": "Bryan Cantrill 撰文批评 Jacob Coxon 等人称AI十年内灭绝人类概率超10%的说法",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 08:41（收录）",
-          "summary": "Bryan Cantrill 忏悔大学时期在机房谎报病毒引发恐慌的旧事，以此类比当前AI灭绝风险言论。他批评前 Ant…",
-          "aihot": "https://aihot.news/items/cmu0ip3yf0q57rorywnkpw6d6",
-          "original": "https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear",
-          "score": 51
-        },
-        {
-          "num": 50,
-          "section": "tips",
-          "title": "AI导演DiDi_OK专访：用Seedance 2.5打造新作《糖果》，聊聊模型如何吞掉工作流",
-          "source": "公众号：数字生命卡兹克",
-          "time": "9月14日 08:10（收录）",
-          "summary": "自媒体作者专访AI影像创作者DiDi_OK，聊其用Seedance 2.5制作的新片《糖果》及此前B站播放2000万的…",
-          "aihot": "https://aihot.news/items/cmu0hln0i0p3crory2rhuv090",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686222&idx=1&sn=2b570842f213cc90ddaa3603ab7746ab",
-          "score": 58
-        },
-        {
-          "num": 52,
-          "section": "tips",
-          "title": "FT 报道 Anthropic 预计 IPO 前连续第二个季度调整后运营盈利",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月14日 07:44（收录）",
-          "summary": "FT 报道 Anthropic 预计在计划 IPO 前实现连续第二个季度调整后运营盈利。其 Q2 收入超 $11.5B…",
-          "aihot": "https://aihot.news/items/cmu0goak20nogroryhop1kiso",
-          "original": "https://x.com/rohanpaul_ai/status/2099277248830525831",
-          "score": 70
-        },
-        {
-          "num": 54,
-          "section": "tips",
-          "title": "Microsoft CEO Nadella 表态支持审慎推进超级智能，并将公开 MAI 模型行为准则",
-          "source": "X：AI Safety Memes (@AISafetyMemes)",
-          "time": "9月14日 07:27（收录）",
-          "summary": "Microsoft CEO Satya Nadella 发文称，追求超级智能必须以 AI 有助于人类并受人类控制为前提…",
-          "aihot": "https://aihot.news/items/cmu0g1xxl0n1proryfcdzkdoc",
-          "original": "https://x.com/AISafetyMemes/status/2099274308204060739",
-          "score": 66
-        },
-        {
-          "num": 61,
-          "section": "tips",
-          "title": "Terence Tao：当下大语言模型的数学原理简单，难在预测能力表现",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月14日 06:12（收录）",
-          "summary": "Terence Tao 表示，今天大语言模型的训练与运行主要用线性代数、矩阵乘法和少量微积分，本科生即可掌握，构建与运…",
-          "aihot": "https://aihot.news/items/cmu0ddjep0k2proryqj6kh9g4",
-          "original": "https://x.com/rohanpaul_ai/status/2099252419318481177",
-          "score": 50
-        },
-        {
-          "num": 62,
-          "section": "tips",
-          "title": "Trump 与 Mike Johnson 认为 AI 行业对放缓呼吁反应过度",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月14日 04:16（收录）",
-          "summary": "Trump 和众议院议长 Mike Johnson 认为 AI 高管们反应过度，担心暂停发展会让中国在 AI 竞赛中反…",
-          "aihot": "https://aihot.news/items/cmu09803z0csmroryv65k1n6q",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-          "score": 65
-        },
-        {
-          "num": 63,
-          "section": "tips",
-          "title": "基于 JAX3D 构建分层 NeRF 教程：体渲染、新视角合成与 3D 重建",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月14日 04:13（收录）",
-          "summary": "该教程用 JAX、Flax、Optax 和 jax3d 的体渲染原语构建端到端分层 NeRF，包含位置编码、粗细双网络…",
-          "aihot": "https://aihot.news/items/cmu094cts0cpdroryiqz79eyl",
-          "original": "https://www.marktechpost.com/2026/09/13/hierarchical-nerf-with-jax3d-for-volumetric-rendering-novel-view-synthesis-and-3d-reconstruction",
-          "score": 51
-        },
-        {
-          "num": 64,
-          "section": "tips",
-          "title": "纳德拉称追求超级智能需要刻意放慢节奏以做对对齐",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月14日 04:12（收录）",
-          "summary": "微软 CEO Satya Nadella 发文称，任何超级智能追求都必须以造福人类和受人类控制为前提，欢迎以刻意放慢节…",
-          "aihot": "https://aihot.news/items/cmu0937420cn4rory1zyvcm4l",
-          "original": "https://x.com/rohanpaul_ai/status/2099222293633524064",
-          "score": 51
-        },
-        {
-          "num": 65,
-          "section": "tips",
-          "title": "CUDA for AMD on Windows：基于 ZLUDA + HIP/ROCm 在 Windows 上运行 CUDA 应用的开源方案",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 04:11（收录）",
-          "summary": "GitHub 项目 CUDA-for-AMD-Windows 发布了可复现的技术栈，通过 ZLUDA v6-previ…",
-          "aihot": "https://aihot.news/items/cmu091rl20cm0roryofzhghpg",
-          "original": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
-          "score": 56
-        },
-        {
-          "num": 66,
-          "section": "tips",
-          "title": "Haider 担忧 OpenAI 或将面临放慢节奏的压力",
-          "source": "X：Haider (@haider1)",
-          "time": "9月14日 04:01（收录）",
-          "summary": "作者认为在 Navier-Stokes 证明之后局势几乎一夜之间发生变化，25 位菲尔兹奖得主（包括 Terence…",
-          "aihot": "https://aihot.news/items/cmu08phnz0bzaroryak3g3mzq",
-          "original": "https://x.com/haider1/status/2099226613892415916",
-          "score": 66
-        },
-        {
-          "num": 67,
-          "section": "tips",
-          "title": "TechCrunch Equity 播客探讨 AI 行业末日警告背后的动机",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月14日 03:46（收录）",
-          "summary": "TechCrunch Equity 播客讨论 AI 行业关于生存威胁的最新争论。起因是研究员 Jacob Coxon…",
-          "aihot": "https://aihot.news/items/cmu085ewb0bd1rory1d1rl82j",
-          "original": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom",
-          "score": 52
-        },
-        {
-          "num": 68,
+          "num": 32,
           "section": "tips",
           "title": "David Sacks 回应前沿模型减速呼吁：可以放慢，但别拿监管框架当条件",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -1074,73 +650,18 @@ const DATA = {
           "score": 69
         },
         {
-          "num": 69,
+          "num": 13,
           "section": "tips",
-          "title": "David Sacks 回应 Dario 与 Sam：OpenAI 和 Anthropic 可自行放缓前沿模型，无需监管许可",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 03:11（收录）",
-          "summary": "David Sacks 回应 Dario 与 Sam 的\"放缓前沿\"主张，表示支持两家自行减速，因为其已构成前沿智能双…",
-          "aihot": "https://aihot.news/items/cmu06wnce0a3vroryeus3ytzt",
-          "original": "https://twitter.com/DavidSacks/status/2098973625252708460",
-          "score": 64
+          "title": "美国总统科技顾问委员会主席 David Sacks 炮轰 OpenAI、Anthropic 借放缓之名寻求监管保护",
+          "source": "IT之家（RSS）",
+          "time": "9月14日 15:03（收录）",
+          "summary": "美国总统科技顾问委员会联合主席 David Sacks 发文回应 Dario Amodei 与 Sam Altman…",
+          "aihot": "https://aihot.news/items/cmu0wcp97030gro2ngeuf3yt4",
+          "original": "https://www.ithome.com/1/002/063.htm",
+          "score": 68
         },
         {
-          "num": 70,
-          "section": "tips",
-          "title": "AI That Works 分享用 post-mortem 复盘改进智能体技能与提示词的方法",
-          "source": "X：Dex Horthy（HumanLayer）(@dexhorthy)",
-          "time": "9月14日 02:42（收录）",
-          "summary": "Dex Horthy 介绍本期 AI That Works 节目中 @tbrownio 分享的 \"compoundin…",
-          "aihot": "https://aihot.news/items/cmu05vgt708rlrorybwmyjnqw",
-          "original": "https://x.com/dexhorthy/status/2099200185956172103",
-          "score": 60
-        },
-        {
-          "num": 71,
-          "section": "tips",
-          "title": "SemiAnalysis 长文解析：为什么 4-hi HBM 将成为推理最优配置",
-          "source": "SemiAnalysis 长文 RSS（RSS）",
-          "time": "9月14日 02:40（收录）",
-          "summary": "SemiAnalysis 长文论证 HBM 堆叠层数持续走高的趋势正在逆转，下一代 Rubin Ultra 每颗 GP…",
-          "aihot": "https://aihot.news/items/cmu05skl508mfrory74k1u5hg",
-          "original": "https://newsletter.semianalysis.com/p/long-live-the-short-king-why-4-hi",
-          "score": 60
-        },
-        {
-          "num": 72,
-          "section": "tips",
-          "title": "Y Combinator CEO Garry Tan 主张美国开放权重实验室也应蒸馏前沿模型",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月14日 02:11（收录）",
-          "summary": "Y Combinator CEO Garry Tan 表示，对中国实验室蒸馏美国前沿模型一事，监管者应不干预，并提出可…",
-          "aihot": "https://aihot.news/items/cmu04r5xs07o5roryeysd50cc",
-          "original": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
-          "score": 55
-        },
-        {
-          "num": 73,
-          "section": "tips",
-          "title": "Y Combinator CEO Garry Tan 主张美国开源权重实验室也应蒸馏前沿模型",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月14日 01:40（收录）",
-          "summary": "Y Combinator CEO Garry Tan 接受 CNBC 和 TechCrunch 采访，反对监管蒸馏行为…",
-          "aihot": "https://aihot.news/items/cmu03ngnt03meroryh8o44z3r",
-          "original": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
-          "score": 53
-        },
-        {
-          "num": 75,
-          "section": "tips",
-          "title": "把截图拼成 contact sheet 让 Agent 省上下文的提示词技巧",
-          "source": "X：Dex Horthy（HumanLayer）(@dexhorthy)",
-          "time": "9月14日 00:12（收录）",
-          "summary": "@pvncher 分享技巧：让 Astra 把应用截图拼成 contact sheet，减少图像读取调用次数，节省大量…",
-          "aihot": "https://aihot.news/items/cmu00ikwl07s2roymu6nj8zqg",
-          "original": "https://x.com/dexhorthy/status/2099169149780181036",
-          "score": 53
-        },
-        {
-          "num": 76,
+          "num": 34,
           "section": "tips",
           "title": "Claude Code 工程师 Lydia Hallie 公开课讲解真实 Token 账本与缓存省费方法",
           "source": "X：阿易 AI Notes (@AYi_AInotes)",
@@ -1149,6 +670,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmu00f2sw07n3roymh6guau5l",
           "original": "https://x.com/AYi_AInotes/status/2099165413170958840",
           "score": 68
+        },
+        {
+          "num": 27,
+          "section": "tips",
+          "title": "Microsoft CEO Nadella 表态支持审慎推进超级智能，并将公开 MAI 模型行为准则",
+          "source": "X：AI Safety Memes (@AISafetyMemes)",
+          "time": "9月14日 07:27（收录）",
+          "summary": "Microsoft CEO Satya Nadella 发文称，追求超级智能必须以 AI 有助于人类并受人类控制为前提…",
+          "aihot": "https://aihot.news/items/cmu0g1xxl0n1proryfcdzkdoc",
+          "original": "https://x.com/AISafetyMemes/status/2099274308204060739",
+          "score": 66
         }
       ]
     }
@@ -1389,7 +921,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1495,12 +1026,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1517,16 +1046,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

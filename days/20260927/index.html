@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-27",
     "heroDate": "2026年9月27日 周日",
-    "total": 44,
+    "total": 35,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月27日 20:22（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,18 +277,7 @@ const DATA = {
       "count": 2,
       "cards": [
         {
-          "num": 34,
-          "section": "models",
-          "title": "巴西 Supersonic Labs 发布 144.3M 参数开源决策模型 Julia 1，可在 CPU 上运行",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月27日 03:58（收录）",
-          "summary": "巴西 AI 实验室 Supersonic Labs 发布 144.3M 参数的开源决策模型 Julia 1，权重以 A…",
-          "aihot": "https://aihot.news/items/cmuitc2zq05nrrohypr5i9jqb",
-          "original": "https://www.marktechpost.com/2026/09/26/supersonic-labs-releases-julia-1-a-144-3m-parameter-open-decision-model-that-runs-on-a-cpu",
-          "score": 50
-        },
-        {
-          "num": 39,
+          "num": 31,
           "section": "models",
           "title": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首",
           "source": "X：Arena (@arena)",
@@ -303,6 +286,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmuinp76b0smurov0wemcbshl",
           "original": "https://x.com/arena/status/2103893011164017018",
           "score": 78
+        },
+        {
+          "num": 27,
+          "section": "models",
+          "title": "巴西 Supersonic Labs 发布 144.3M 参数开源决策模型 Julia 1，可在 CPU 上运行",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月27日 03:58（收录）",
+          "summary": "巴西 AI 实验室 Supersonic Labs 发布 144.3M 参数的开源决策模型 Julia 1，权重以 A…",
+          "aihot": "https://aihot.news/items/cmuitc2zq05nrrohypr5i9jqb",
+          "original": "https://www.marktechpost.com/2026/09/26/supersonic-labs-releases-julia-1-a-144-3m-parameter-open-decision-model-that-runs-on-a-cpu",
+          "score": 50
         }
       ]
     },
@@ -312,6 +306,50 @@ const DATA = {
       "color": "#10b981",
       "count": 8,
       "cards": [
+        {
+          "num": 33,
+          "section": "products",
+          "title": "Floci 发布可在本地模拟 AWS、Azure、GCP 和 OCI 的开源云模拟器",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月27日 00:32（收录）",
+          "summary": "Floci 推出本地云模拟工具，可分别模拟 AWS、Azure、GCP 和 OCI 服务，采用 MIT 许可证，无需账…",
+          "aihot": "https://aihot.news/items/cmuilyxgs0qylrov0ba0dbuj9",
+          "original": "https://floci.io/",
+          "score": 68
+        },
+        {
+          "num": 26,
+          "section": "products",
+          "title": "drawgent 发布：把 Claude Code、Codex 或 opencode 接入 Excalidraw 实时画布",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月27日 04:46（收录）",
+          "summary": "drawgent 是一个开源工具，将用户自己安装的 Claude Code、Codex 或 opencode 连接到…",
+          "aihot": "https://aihot.news/items/cmuiv0iu407f7rohyvp0l0q0v",
+          "original": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+          "score": 63
+        },
+        {
+          "num": 15,
+          "section": "products",
+          "title": "Drawgent 发布：把 Claude Code、Codex 或 opencode 接入实时 Excalidraw 画布的编码智能体工具",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月27日 08:33（收录）",
+          "summary": "Drawgent 将用户自装的 Claude Code、Codex 或 opencode 接入 Excalidraw…",
+          "aihot": "https://aihot.news/items/cmuj34jdz0j2irohyh3biqqqt",
+          "original": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+          "score": 60
+        },
+        {
+          "num": 23,
+          "section": "products",
+          "title": "Reladraw 0.5.0 发布：由作者声明元素位置的文字图表语言",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月27日 06:03（收录）",
+          "summary": "作者发布 Reladraw 0.5.0，一种用相对位置语句（如 below、right of、between）声明元素…",
+          "aihot": "https://aihot.news/items/cmuixri9x0dinrohyqrk2hxkt",
+          "original": "https://github.com/reladraw/reladraw",
+          "score": 59
+        },
         {
           "num": 2,
           "section": "products",
@@ -324,7 +362,7 @@ const DATA = {
           "score": 56
         },
         {
-          "num": 15,
+          "num": 11,
           "section": "products",
           "title": "开发者 Daniel 一天两更 DLSS-NR-on-AMD，让 AMD 显卡运行 DLSS 5 性能累计提升近 74%",
           "source": "IT之家（RSS）",
@@ -335,29 +373,7 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 20,
-          "section": "products",
-          "title": "Drawgent 发布：把 Claude Code、Codex 或 opencode 接入实时 Excalidraw 画布的编码智能体工具",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月27日 08:33（收录）",
-          "summary": "Drawgent 将用户自装的 Claude Code、Codex 或 opencode 接入 Excalidraw…",
-          "aihot": "https://aihot.news/items/cmuj34jdz0j2irohyh3biqqqt",
-          "original": "https://tangled.org/yanndegat.tngl.sh/drawgent",
-          "score": 60
-        },
-        {
-          "num": 29,
-          "section": "products",
-          "title": "Reladraw 0.5.0 发布：由作者声明元素位置的文字图表语言",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月27日 06:03（收录）",
-          "summary": "作者发布 Reladraw 0.5.0，一种用相对位置语句（如 below、right of、between）声明元素…",
-          "aihot": "https://aihot.news/items/cmuixri9x0dinrohyqrk2hxkt",
-          "original": "https://github.com/reladraw/reladraw",
-          "score": 59
-        },
-        {
-          "num": 30,
+          "num": 24,
           "section": "products",
           "title": "Grok Bot 推出 Finance 集成，可接管用户理财管理",
           "source": "X：Elon Musk (@elonmusk, xAI)",
@@ -368,29 +384,7 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 33,
-          "section": "products",
-          "title": "drawgent 发布：把 Claude Code、Codex 或 opencode 接入 Excalidraw 实时画布",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月27日 04:46（收录）",
-          "summary": "drawgent 是一个开源工具，将用户自己安装的 Claude Code、Codex 或 opencode 连接到…",
-          "aihot": "https://aihot.news/items/cmuiv0iu407f7rohyvp0l0q0v",
-          "original": "https://tangled.org/yanndegat.tngl.sh/drawgent",
-          "score": 63
-        },
-        {
-          "num": 41,
-          "section": "products",
-          "title": "Floci 发布可在本地模拟 AWS、Azure、GCP 和 OCI 的开源云模拟器",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月27日 00:32（收录）",
-          "summary": "Floci 推出本地云模拟工具，可分别模拟 AWS、Azure、GCP 和 OCI 服务，采用 MIT 许可证，无需账…",
-          "aihot": "https://aihot.news/items/cmuilyxgs0qylrov0ba0dbuj9",
-          "original": "https://floci.io/",
-          "score": 68
-        },
-        {
-          "num": 44,
+          "num": 35,
           "section": "products",
           "title": "OpenRouter 推出 Jev Router，为每次 LLM 调用自动选择模型和推理力度",
           "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
@@ -406,10 +400,65 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 13,
+      "count": 10,
       "cards": [
         {
-          "num": 4,
+          "num": 19,
+          "section": "industry",
+          "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "source": "IT之家（RSS）",
+          "time": "9月27日 07:28（收录）",
+          "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏…",
+          "aihot": "https://aihot.news/items/cmuj0tqch0go3rohyqv46zlhy",
+          "original": "https://www.ithome.com/1/007/447.htm",
+          "score": 86
+        },
+        {
+          "num": 28,
+          "section": "industry",
+          "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月27日 03:46（收录）",
+          "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分…",
+          "aihot": "https://aihot.news/items/cmuisvcxk05a2rohyozb492a3",
+          "original": "https://www.bbc.com/news/articles/cw62jje658dlo",
+          "score": 86
+        },
+        {
+          "num": 14,
+          "section": "industry",
+          "title": "OpenAI 披露其 AI 智能体擅自访问 SEC 等数十家机构网站",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月27日 09:03（收录）",
+          "summary": "OpenAI 承认已通报数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部的网站，部分智能…",
+          "aihot": "https://aihot.news/items/cmuj473xg0k2drohyh3j3gviq",
+          "original": "https://www.bbc.com/news/articles/cw62jje658dlo",
+          "score": 84
+        },
+        {
+          "num": 30,
+          "section": "industry",
+          "title": "OpenAI 暂停其最强模型的训练，此前沙盒中的模型利用漏洞接入互联网",
+          "source": "The Verge：AI（RSS）",
+          "time": "9月27日 01:29（收录）",
+          "summary": "OpenAI 在沙盒测试中的模型于 9 月 20 日利用漏洞接入互联网后，决定暂停其最强模型的训练，截至 9 月 25…",
+          "aihot": "https://aihot.news/items/cmuinz5zu0syqrov00j91trgw",
+          "original": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+          "score": 83
+        },
+        {
+          "num": 20,
+          "section": "industry",
+          "title": "OpenAI 因多起模型失控事件暂停最强模型训练",
+          "source": "IT之家（RSS）",
+          "time": "9月27日 07:28（收录）",
+          "summary": "OpenAI 在多起模型行为失控报告增加后，暂停了旗下能力最强模型的训练。9 月 20 日一款沙盒测试中的模型利用漏洞…",
+          "aihot": "https://aihot.news/items/cmuj0tqch0go4rohynd8zoqeb",
+          "original": "https://www.ithome.com/1/007/445.htm",
+          "score": 82
+        },
+        {
+          "num": 3,
           "section": "industry",
           "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -422,17 +471,6 @@ const DATA = {
         {
           "num": 8,
           "section": "industry",
-          "title": "消息称台积电计划在嘉义科学园区新增 5 座先进封装工厂，总数将达 10 座",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 16:28（收录）",
-          "summary": "据自由时报援引半导体供应链消息，台积电计划在嘉义科学园区三期追加建设 5 座先进封装工厂，完成后园区封装厂总数将达到…",
-          "aihot": "https://aihot.news/items/cmujk49x30jbiro9h6a5bpgmb",
-          "original": "https://www.ithome.com/1/007/532.htm",
-          "score": 52
-        },
-        {
-          "num": 11,
-          "section": "industry",
           "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
           "source": "IT之家（RSS）",
           "time": "9月27日 14:28（收录）",
@@ -442,18 +480,7 @@ const DATA = {
           "score": 76
         },
         {
-          "num": 12,
-          "section": "industry",
-          "title": "英国桌游展 UKGE 出台新规：禁止 AI 生成游戏参展，仅少数情况例外",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 13:28（收录）",
-          "summary": "英国规模最大的桌面桌游展会英国桌游展（UK Games Expo）公布新规，禁止 AI 生成的游戏参展，主办方有权要求…",
-          "aihot": "https://aihot.news/items/cmujdorip0994ro9hvh37vxtx",
-          "original": "https://www.ithome.com/1/007/506.htm",
-          "score": 56
-        },
-        {
-          "num": 14,
+          "num": 10,
           "section": "industry",
           "title": "Comma.ai 后装智驾涉及 5 起事故致 3 死，遭美国 NHTSA 联邦调查",
           "source": "IT之家（RSS）",
@@ -464,51 +491,7 @@ const DATA = {
           "score": 71
         },
         {
-          "num": 19,
-          "section": "industry",
-          "title": "OpenAI 披露其 AI 智能体擅自访问 SEC 等数十家机构网站",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月27日 09:03（收录）",
-          "summary": "OpenAI 承认已通报数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部的网站，部分智能…",
-          "aihot": "https://aihot.news/items/cmuj473xg0k2drohyh3j3gviq",
-          "original": "https://www.bbc.com/news/articles/cw62jje658dlo",
-          "score": 84
-        },
-        {
-          "num": 21,
-          "section": "industry",
-          "title": "欧盟推迟特斯拉 FSD（监督版）全欧投票，特斯拉与爱尔兰等国展开审批磋商",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 08:28（收录）",
-          "summary": "欧盟将针对特斯拉 FSD（监督版）的全欧盟监管投票从 10 月 6 日推迟至最早 12 月，特斯拉转而直接与成员国政府…",
-          "aihot": "https://aihot.news/items/cmuj2ywqf0ivsrohyv67g45x7",
-          "original": "https://www.ithome.com/1/007/455.htm",
-          "score": 54
-        },
-        {
-          "num": 25,
-          "section": "industry",
-          "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 07:28（收录）",
-          "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏…",
-          "aihot": "https://aihot.news/items/cmuj0tqch0go3rohyqv46zlhy",
-          "original": "https://www.ithome.com/1/007/447.htm",
-          "score": 86
-        },
-        {
-          "num": 26,
-          "section": "industry",
-          "title": "OpenAI 因多起模型失控事件暂停最强模型训练",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 07:28（收录）",
-          "summary": "OpenAI 在多起模型行为失控报告增加后，暂停了旗下能力最强模型的训练。9 月 20 日一款沙盒测试中的模型利用漏洞…",
-          "aihot": "https://aihot.news/items/cmuj0tqch0go4rohynd8zoqeb",
-          "original": "https://www.ithome.com/1/007/445.htm",
-          "score": 82
-        },
-        {
-          "num": 28,
+          "num": 22,
           "section": "industry",
           "title": "新泽西州对微软关联数据中心 DataOne 开出 107 万美元罚单",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -519,37 +502,15 @@ const DATA = {
           "score": 60
         },
         {
-          "num": 35,
+          "num": 9,
           "section": "industry",
-          "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月27日 03:46（收录）",
-          "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分…",
-          "aihot": "https://aihot.news/items/cmuisvcxk05a2rohyozb492a3",
-          "original": "https://www.bbc.com/news/articles/cw62jje658dlo",
-          "score": 86
-        },
-        {
-          "num": 36,
-          "section": "industry",
-          "title": "乌克兰前防长Fedorov推动私营部门战斗机器人计划",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月27日 03:30（收录）",
-          "summary": "乌克兰前国防部长Mykhailo Fedorov在IT Arena 2026上宣布推动战场全面机器人化的私营计划，称无…",
-          "aihot": "https://aihot.news/items/cmuisbydd04syrohyt8afpb6m",
-          "original": "https://the-decoder.com/former-ukrainian-defense-minister-fedorov-pitches-a-private-sector-robot-army",
+          "title": "英国桌游展 UKGE 出台新规：禁止 AI 生成游戏参展，仅少数情况例外",
+          "source": "IT之家（RSS）",
+          "time": "9月27日 13:28（收录）",
+          "summary": "英国规模最大的桌面桌游展会英国桌游展（UK Games Expo）公布新规，禁止 AI 生成的游戏参展，主办方有权要求…",
+          "aihot": "https://aihot.news/items/cmujdorip0994ro9hvh37vxtx",
+          "original": "https://www.ithome.com/1/007/506.htm",
           "score": 56
-        },
-        {
-          "num": 38,
-          "section": "industry",
-          "title": "OpenAI 暂停其最强模型的训练，此前沙盒中的模型利用漏洞接入互联网",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月27日 01:29（收录）",
-          "summary": "OpenAI 在沙盒测试中的模型于 9 月 20 日利用漏洞接入互联网后，决定暂停其最强模型的训练，截至 9 月 25…",
-          "aihot": "https://aihot.news/items/cmuinz5zu0syqrov00j91trgw",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-          "score": 83
         }
       ]
     },
@@ -560,7 +521,18 @@ const DATA = {
       "count": 5,
       "cards": [
         {
-          "num": 7,
+          "num": 34,
+          "section": "papers",
+          "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+          "source": "IT之家（RSS）",
+          "time": "9月27日 00:28（收录）",
+          "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天…",
+          "aihot": "https://aihot.news/items/cmuiltkdf0qrarov0lo96tucy",
+          "original": "https://www.ithome.com/1/007/444.htm",
+          "score": 80
+        },
+        {
+          "num": 6,
           "section": "papers",
           "title": "蓝十字蓝盾协会分析：美国医院用 AI 写病历，两年推高医疗支出 9.42 亿美元",
           "source": "IT之家（RSS）",
@@ -571,18 +543,7 @@ const DATA = {
           "score": 72
         },
         {
-          "num": 16,
-          "section": "papers",
-          "title": "斯坦福 HomeBody 用 GPT Astra 驱动人形机器人完成未见环境的长程任务",
-          "source": "X：Ethan Mollick (@emollick)",
-          "time": "9月27日 09:59（收录）",
-          "summary": "斯坦福团队推出 HomeBody，由 GPT Astra 控制的人形机器人在此前未见过的厨房中执行长程任务，从跨房间收…",
-          "aihot": "https://aihot.news/items/cmuj67b6o0m5jrohypuzg87j9",
-          "original": "https://x.com/emollick/status/2104025904653521363",
-          "score": 52
-        },
-        {
-          "num": 27,
+          "num": 21,
           "section": "papers",
           "title": "DeepSeek 发布 DSec 弹性计算沙箱平台技术报告，支撑大规模智能体 RL 训练",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -593,7 +554,7 @@ const DATA = {
           "score": 70
         },
         {
-          "num": 40,
+          "num": 32,
           "section": "papers",
           "title": "研究：AI建议可用让人几乎不再愿意说\"我不知道\"",
           "source": "The Decoder：AI News（RSS）",
@@ -604,15 +565,15 @@ const DATA = {
           "score": 66
         },
         {
-          "num": 43,
+          "num": 12,
           "section": "papers",
-          "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 00:28（收录）",
-          "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天…",
-          "aihot": "https://aihot.news/items/cmuiltkdf0qrarov0lo96tucy",
-          "original": "https://www.ithome.com/1/007/444.htm",
-          "score": 80
+          "title": "斯坦福 HomeBody 用 GPT Astra 驱动人形机器人完成未见环境的长程任务",
+          "source": "X：Ethan Mollick (@emollick)",
+          "time": "9月27日 09:59（收录）",
+          "summary": "斯坦福团队推出 HomeBody，由 GPT Astra 控制的人形机器人在此前未见过的厨房中执行长程任务，从跨房间收…",
+          "aihot": "https://aihot.news/items/cmuj67b6o0m5jrohypuzg87j9",
+          "original": "https://x.com/emollick/status/2104025904653521363",
+          "score": 52
         }
       ]
     },
@@ -620,8 +581,30 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 16,
+      "count": 10,
       "cards": [
+        {
+          "num": 4,
+          "section": "tips",
+          "title": "OpenAI 与 Anthropic 调查数万起 AI 智能体突破安全边界事件",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "9月27日 17:31（收录）",
+          "summary": "OpenAI 和 Anthropic 正调查数万起先进 AI 模型突破安全边界、篡改系统或试图规避监控的事件。Open…",
+          "aihot": "https://aihot.news/items/cmujmcvda0lpdro9hnakq68ib",
+          "original": "https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning",
+          "score": 78
+        },
+        {
+          "num": 7,
+          "section": "tips",
+          "title": "分析报告：OpenAI 智能体被指用双编码等手段暴力探测 UNCTADstat API",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月27日 14:46（收录）",
+          "summary": "独立调查文章指认 OpenAI 智能体在 2026 年 4 月 13 日至 6 月 19 日期间通过 Urlquery…",
+          "aihot": "https://aihot.news/items/cmujgg8et0fjvro9ht8kx6q1e",
+          "original": "https://swarmcha.se/posts/openai-unctad",
+          "score": 74
+        },
         {
           "num": 1,
           "section": "tips",
@@ -634,29 +617,40 @@ const DATA = {
           "score": 67
         },
         {
-          "num": 3,
+          "num": 16,
           "section": "tips",
-          "title": "BestBlogs 精选周刊第 114 期：智能过剩之后，瓶颈向任务链后方移动",
-          "source": "X：洪明 (@hongming731)",
-          "time": "9月27日 17:39（收录）",
-          "summary": "BestBlogs 精选周刊第 114 期发布，梳理 Claude Opus 5.5、GPT-6 Sol 与 Luna…",
-          "aihot": "https://aihot.news/items/cmujmngfs0lypro9hdgsbd3b1",
-          "original": "https://x.com/hongming731/status/2104139011564654837",
-          "score": 57
+          "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回",
+          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+          "time": "9月27日 08:13（收录）",
+          "summary": "Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调查数万起前沿模型安全事件，规模远超此前…",
+          "aihot": "https://aihot.news/items/cmuj2fvet0i72rohydbh98ndp",
+          "original": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
+          "score": 67
+        },
+        {
+          "num": 25,
+          "section": "tips",
+          "title": "蓝十字蓝盾协会分析称医院使用 AI 已推高医疗成本两年多支出 9.42 亿美元",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "9月27日 05:30（收录）",
+          "summary": "蓝十字蓝盾协会（BCBSA）的分析发现，医院在提交保险理赔时使用 AI 工具，两年内带来额外 9.42 亿美元医疗支出…",
+          "aihot": "https://aihot.news/items/cmuiwl2ep08ylrohy2maueumr",
+          "original": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs",
+          "score": 67
+        },
+        {
+          "num": 29,
+          "section": "tips",
+          "title": "brumar 开源 Claude Code 国际象棋复盘 Skill，结合 Stockfish 与思考录音生成解说视频",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月27日 02:46（收录）",
+          "summary": "作者 brumar 发布一套 Claude Code skills，将 lichess 对局结合 Stockfish…",
+          "aihot": "https://aihot.news/items/cmuiqq6yk036xrohynj0oxtt7",
+          "original": "https://github.com/brumar/chess-postmortem-skills",
+          "score": 66
         },
         {
           "num": 5,
-          "section": "tips",
-          "title": "OpenAI 与 Anthropic 调查数万起 AI 智能体突破安全边界事件",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月27日 17:31（收录）",
-          "summary": "OpenAI 和 Anthropic 正调查数万起先进 AI 模型突破安全边界、篡改系统或试图规避监控的事件。Open…",
-          "aihot": "https://aihot.news/items/cmujmcvda0lpdro9hnakq68ib",
-          "original": "https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning",
-          "score": 78
-        },
-        {
-          "num": 6,
           "section": "tips",
           "title": "高盛预计科技巨头 2027 年将斥资 1.2 万亿美元建设 AI 基础设施，超出华尔街预期",
           "source": "The Decoder：AI News（RSS）",
@@ -667,40 +661,18 @@ const DATA = {
           "score": 65
         },
         {
-          "num": 9,
+          "num": 17,
           "section": "tips",
-          "title": "HuggingFace 开源 Claude Opus 5.5 生成的 2194 种疾病模拟医患对话数据集",
-          "source": "X：小北 (@frxiaobei)",
-          "time": "9月27日 15:29（收录）",
-          "summary": "HuggingFace 上开源了一个用 Claude Opus 5.5 生成的模拟医患对话数据集，覆盖 2194 种疾…",
-          "aihot": "https://aihot.news/items/cmujhzoam0h74ro9he3zwk3sh",
-          "original": "https://x.com/frxiaobei/status/2104103804710855125",
-          "score": 53
-        },
-        {
-          "num": 10,
-          "section": "tips",
-          "title": "分析报告：OpenAI 智能体被指用双编码等手段暴力探测 UNCTADstat API",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月27日 14:46（收录）",
-          "summary": "独立调查文章指认 OpenAI 智能体在 2026 年 4 月 13 日至 6 月 19 日期间通过 Urlquery…",
-          "aihot": "https://aihot.news/items/cmujgg8et0fjvro9ht8kx6q1e",
-          "original": "https://swarmcha.se/posts/openai-unctad",
-          "score": 74
+          "title": "Simon Willison 用 Claude Opus 5.5 生成鸮鹦鹉像素动画并用 Claude Code 录成视频",
+          "source": "Simon Willison 博客",
+          "time": "9月27日 08:13（收录）",
+          "summary": "Simon Willison 在 WeAreDevelopers World Congress North Ameri…",
+          "aihot": "https://aihot.news/items/cmuj2fb290i5zrohyedjcvnnc",
+          "original": "https://simonwillison.net/2026/Sep/26/kakapo-party",
+          "score": 62
         },
         {
           "num": 13,
-          "section": "tips",
-          "title": "澳大利亚政商界称民众对 AI 数据中心的抵制受美国舆论影响",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 11:28（收录）",
-          "summary": "澳大利亚政界和商界人士认为，当地对 AI 数据中心的不满很大程度上是从美国输入的舆论，澳大利亚仅有 252 座数据中心…",
-          "aihot": "https://aihot.news/items/cmuj9ehzd04ywro9hijv1l9bi",
-          "original": "https://www.ithome.com/1/007/481.htm",
-          "score": 57
-        },
-        {
-          "num": 17,
           "section": "tips",
           "title": "epsilon 报告显示购物成为第三大 AI 应用，执行购买仍是门槛",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -713,39 +685,6 @@ const DATA = {
         {
           "num": 18,
           "section": "tips",
-          "title": "微软员工回应 Copilot 无人使用质疑，称 3000 万付费席位来自大企业需求",
-          "source": "IT之家（RSS）",
-          "time": "9月27日 09:28（收录）",
-          "summary": "微软员工 Nicolas Bustamante 回应\"到底有谁在用 Copilot\"的质疑，称 Microsoft 3…",
-          "aihot": "https://aihot.news/items/cmuj5430o0l4brohy27b03yjg",
-          "original": "https://www.ithome.com/1/007/466.htm",
-          "score": 51
-        },
-        {
-          "num": 22,
-          "section": "tips",
-          "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "time": "9月27日 08:13（收录）",
-          "summary": "Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调查数万起前沿模型安全事件，规模远超此前…",
-          "aihot": "https://aihot.news/items/cmuj2fvet0i72rohydbh98ndp",
-          "original": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
-          "score": 67
-        },
-        {
-          "num": 23,
-          "section": "tips",
-          "title": "Simon Willison 用 Claude Opus 5.5 生成鸮鹦鹉像素动画并用 Claude Code 录成视频",
-          "source": "Simon Willison 博客",
-          "time": "9月27日 08:13（收录）",
-          "summary": "Simon Willison 在 WeAreDevelopers World Congress North Ameri…",
-          "aihot": "https://aihot.news/items/cmuj2fb290i5zrohyedjcvnnc",
-          "original": "https://simonwillison.net/2026/Sep/26/kakapo-party",
-          "score": 62
-        },
-        {
-          "num": 24,
-          "section": "tips",
           "title": "用户报告 OpenAI Codex 擅自启动 826 个并行子任务并消耗约 78，000 美元",
           "source": "Hacker News：AI 热帖",
           "time": "9月27日 07:46（收录）",
@@ -753,50 +692,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmuj1g1pr0hb1rohyk29y8yoe",
           "original": "https://news.ycombinator.com/item?id=49861047",
           "score": 60
-        },
-        {
-          "num": 31,
-          "section": "tips",
-          "title": "蓝十字蓝盾协会分析称医院使用 AI 已推高医疗成本两年多支出 9.42 亿美元",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月27日 05:30（收录）",
-          "summary": "蓝十字蓝盾协会（BCBSA）的分析发现，医院在提交保险理赔时使用 AI 工具，两年内带来额外 9.42 亿美元医疗支出…",
-          "aihot": "https://aihot.news/items/cmuiwl2ep08ylrohy2maueumr",
-          "original": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs",
-          "score": 67
-        },
-        {
-          "num": 32,
-          "section": "tips",
-          "title": "Rohan Paul 解读高盛研究：AI 进入规模经济，token 需求增速需跑赢价格下滑",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月27日 05:10（收录）",
-          "summary": "作者引用高盛研究称，总 token 需求从 2025 年 12 月到 2026 年 9 月增长约 18 倍，而前沿模型…",
-          "aihot": "https://aihot.news/items/cmuivvv6x0863rohy6ahvmz69",
-          "original": "https://x.com/rohanpaul_ai/status/2103951890082087039",
-          "score": 52
-        },
-        {
-          "num": 37,
-          "section": "tips",
-          "title": "brumar 开源 Claude Code 国际象棋复盘 Skill，结合 Stockfish 与思考录音生成解说视频",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月27日 02:46（收录）",
-          "summary": "作者 brumar 发布一套 Claude Code skills，将 lichess 对局结合 Stockfish…",
-          "aihot": "https://aihot.news/items/cmuiqq6yk036xrohynj0oxtt7",
-          "original": "https://github.com/brumar/chess-postmortem-skills",
-          "score": 66
-        },
-        {
-          "num": 42,
-          "section": "tips",
-          "title": "Peter Steinberger 转发智能体用近百万短链接链式执行代码入侵 Hugging Face 事件",
-          "source": "X：Peter Steinberger (@steipete)",
-          "time": "9月27日 00:31（收录）",
-          "summary": "Peter Steinberger 转发 Jeff Ladish 的描述并评论称终于理解为什么有人谈论 AGI，称这非…",
-          "aihot": "https://aihot.news/items/cmuilxlkg0qwyrov0l6s74rrn",
-          "original": "https://x.com/steipete/status/2103883264054505493",
-          "score": 54
         }
       ]
     }
@@ -1032,7 +927,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1138,12 +1032,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1160,16 +1052,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

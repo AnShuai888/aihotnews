@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -313,6 +307,17 @@ const DATA = {
       "count": 3,
       "cards": [
         {
+          "num": 18,
+          "section": "products",
+          "title": "Anthropic 开源 sandbox-runtime：无需容器的操作系统级 AI Agent 沙箱",
+          "source": "MarkTechPost（RSS）",
+          "time": "10月24日 21:51（收录）",
+          "summary": "Anthropic 开源的 sandbox-runtime（srt）是 Claude Code 沙箱 bash 工具背…",
+          "aihot": "https://aihot.news/items/nj4rndmo45sc6mzp2smlwz4s2",
+          "original": "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/",
+          "score": 73
+        },
+        {
           "num": 4,
           "section": "products",
           "title": "Kling 4.0 上线 Lovart 平台",
@@ -333,17 +338,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/fokhfuaa5u7ie9qy5jhabmja8",
           "original": "https://simonwillison.net/2026/Oct/24/battledrones/",
           "score": 29
-        },
-        {
-          "num": 18,
-          "section": "products",
-          "title": "Anthropic 开源 sandbox-runtime：无需容器的操作系统级 AI Agent 沙箱",
-          "source": "MarkTechPost（RSS）",
-          "time": "10月24日 21:51（收录）",
-          "summary": "Anthropic 开源的 sandbox-runtime（srt）是 Claude Code 沙箱 bash 工具背…",
-          "aihot": "https://aihot.news/items/nj4rndmo45sc6mzp2smlwz4s2",
-          "original": "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/",
-          "score": 73
         }
       ]
     },
@@ -365,39 +359,6 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 3,
-          "section": "industry",
-          "title": "Claude Code 两位负责人离开 Cursor 回归 Anthropic",
-          "source": "X：邵猛 (@shao__meng)",
-          "time": "10月24日 23:46（收录）",
-          "summary": "Claude Code 产研两位负责人 Cat 和 Boris 加入 Cursor 后不久便回到 Anthropic…",
-          "aihot": "https://aihot.news/items/nb9rzhqcvvr6gcjxrrr2hhvuc",
-          "original": "https://x.com/shao__meng/status/2114016908408480203",
-          "score": 33
-        },
-        {
-          "num": 5,
-          "section": "industry",
-          "title": "Tripo 发布全新视觉标识",
-          "source": "Tripo（官方 X）",
-          "time": "10月24日 23:17（收录）",
-          "summary": "3D 是世界的语言。也是我们的语言。 认识 Tripo 全新视觉标识——由 3D 塑造，向所有人开放，为进化而生。 原…",
-          "aihot": "https://aihot.news/items/p3p8q7qrk3pmohvjkumxif2dc",
-          "original": "https://x.com/tripoai/status/2114009028519170477",
-          "score": 20
-        },
-        {
-          "num": 6,
-          "section": "industry",
-          "title": "PixLight 2026 征片倒计时7天",
-          "source": "X：PixVerse (@PixVerse)",
-          "time": "10月24日 23:14（收录）",
-          "summary": "还在追那最后一个镜头？🎬 PixLight 2026 还剩 7 天。 再渲染一次。再改写一次。再多一次讲述你故事的机会…",
-          "aihot": "https://aihot.news/items/omqftqosxz75y0b0gvosrj8i5",
-          "original": "https://x.com/PixVerse/status/2114009058399469954",
-          "score": 21
-        },
-        {
           "num": 8,
           "section": "industry",
           "title": "Meta Muse 聊天分享功能被曝通过被动 DNS 泄露超 6800 个对话链接，已暂停修复",
@@ -407,6 +368,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/t1bibyohet2owqi2h0ytwvtk8",
           "original": "https://www.ithome.com/1/017/517.htm",
           "score": 71
+        },
+        {
+          "num": 17,
+          "section": "industry",
+          "title": "Z-Library 论文被指至少 10 条引用不存在，Taylor & Francis 启动调查",
+          "source": "Hacker News：AI 热帖",
+          "time": "10月24日 22:02（收录）",
+          "summary": "TorrentFreak 调查发现，发表在 New Review of Academic Librarianship…",
+          "aihot": "https://aihot.news/items/tv9nj2h8juzh311ruo0mcr0sw",
+          "original": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+          "score": 64
         },
         {
           "num": 16,
@@ -420,15 +392,37 @@ const DATA = {
           "score": 52
         },
         {
-          "num": 17,
+          "num": 3,
           "section": "industry",
-          "title": "Z-Library 论文被指至少 10 条引用不存在，Taylor & Francis 启动调查",
-          "source": "Hacker News：AI 热帖",
-          "time": "10月24日 22:02（收录）",
-          "summary": "TorrentFreak 调查发现，发表在 New Review of Academic Librarianship…",
-          "aihot": "https://aihot.news/items/tv9nj2h8juzh311ruo0mcr0sw",
-          "original": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
-          "score": 64
+          "title": "Claude Code 两位负责人离开 Cursor 回归 Anthropic",
+          "source": "X：邵猛 (@shao__meng)",
+          "time": "10月24日 23:46（收录）",
+          "summary": "Claude Code 产研两位负责人 Cat 和 Boris 加入 Cursor 后不久便回到 Anthropic…",
+          "aihot": "https://aihot.news/items/nb9rzhqcvvr6gcjxrrr2hhvuc",
+          "original": "https://x.com/shao__meng/status/2114016908408480203",
+          "score": 33
+        },
+        {
+          "num": 6,
+          "section": "industry",
+          "title": "PixLight 2026 征片倒计时7天",
+          "source": "X：PixVerse (@PixVerse)",
+          "time": "10月24日 23:14（收录）",
+          "summary": "还在追那最后一个镜头？🎬 PixLight 2026 还剩 7 天。 再渲染一次。再改写一次。再多一次讲述你故事的机会…",
+          "aihot": "https://aihot.news/items/omqftqosxz75y0b0gvosrj8i5",
+          "original": "https://x.com/PixVerse/status/2114009058399469954",
+          "score": 21
+        },
+        {
+          "num": 5,
+          "section": "industry",
+          "title": "Tripo 发布全新视觉标识",
+          "source": "Tripo（官方 X）",
+          "time": "10月24日 23:17（收录）",
+          "summary": "3D 是世界的语言。也是我们的语言。 认识 Tripo 全新视觉标识——由 3D 塑造，向所有人开放，为进化而生。 原…",
+          "aihot": "https://aihot.news/items/p3p8q7qrk3pmohvjkumxif2dc",
+          "original": "https://x.com/tripoai/status/2114009028519170477",
+          "score": 20
         }
       ]
     },
@@ -439,15 +433,15 @@ const DATA = {
       "count": 4,
       "cards": [
         {
-          "num": 2,
+          "num": 11,
           "section": "papers",
-          "title": "Convovo 研究：Grok 4.7 强制选择时 92% 推荐共和党，GPT-6.1 Sol 97% 推荐民主党",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月24日 23:52（收录）",
-          "summary": "Convovo 研究室要求 GPT 与 Grok 模型通过 API 在近 500 个选区中指定一名候选人，Grok 4…",
-          "aihot": "https://aihot.news/items/ggpyd5zaj25h11h1rcqrfer6p",
-          "original": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-          "score": 63
+          "title": "NBER 实验：AI 让初级专利律师即战力提升，但只有资深律师留存优势",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "10月24日 22:56（收录）",
+          "summary": "NBER 一项工作论文在 11 家美国知识产权律所开展为期三个月的随机对照试验，133 名律师中三分之二使用 Goog…",
+          "aihot": "https://aihot.news/items/pmv324aboghgyi40ys8ozlbjp",
+          "original": "https://the-decoder.com/ai-makes-junior-patent-attorneys-instantly-better-but-may-quietly-stunt-their-professional-growth/",
+          "score": 70
         },
         {
           "num": 9,
@@ -461,15 +455,15 @@ const DATA = {
           "score": 68
         },
         {
-          "num": 11,
+          "num": 2,
           "section": "papers",
-          "title": "NBER 实验：AI 让初级专利律师即战力提升，但只有资深律师留存优势",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "10月24日 22:56（收录）",
-          "summary": "NBER 一项工作论文在 11 家美国知识产权律所开展为期三个月的随机对照试验，133 名律师中三分之二使用 Goog…",
-          "aihot": "https://aihot.news/items/pmv324aboghgyi40ys8ozlbjp",
-          "original": "https://the-decoder.com/ai-makes-junior-patent-attorneys-instantly-better-but-may-quietly-stunt-their-professional-growth/",
-          "score": 70
+          "title": "Convovo 研究：Grok 4.7 强制选择时 92% 推荐共和党，GPT-6.1 Sol 97% 推荐民主党",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月24日 23:52（收录）",
+          "summary": "Convovo 研究室要求 GPT 与 Grok 模型通过 API 在近 500 个选区中指定一名候选人，Grok 4…",
+          "aihot": "https://aihot.news/items/ggpyd5zaj25h11h1rcqrfer6p",
+          "original": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+          "score": 63
         },
         {
           "num": 19,
@@ -491,17 +485,6 @@ const DATA = {
       "count": 4,
       "cards": [
         {
-          "num": 12,
-          "section": "tips",
-          "title": "TechCrunch 盘点可通过短信使用的 AI 智能体：从 Instinct 到 Fambot",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "10月24日 22:52（收录）",
-          "summary": "TechCrunch 汇总了当前可直接通过短信或 iMessage 交互的 20 多个 AI 智能体，覆盖个人助理、家…",
-          "aihot": "https://aihot.news/items/lob6d2chaftmj4o6g3sdms2kp",
-          "original": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-          "score": 56
-        },
-        {
           "num": 14,
           "section": "tips",
           "title": "Orange AI 分享 8 个 AI 自动转写的播客精读网站",
@@ -513,15 +496,15 @@ const DATA = {
           "score": 64
         },
         {
-          "num": 15,
+          "num": 12,
           "section": "tips",
-          "title": "随手做了一个鹈鹕骑自行车的 AI 游戏 没想到一次就做出来了 现在随便一个模型都太强了 https://orange2ai.github.io/pelican-bike/",
-          "source": "X：Oran Ge (@oran_ge)",
-          "time": "10月24日 22:43（收录）",
-          "summary": "随手做了一个鹈鹕骑自行车的 AI 游戏 没想到一次就做出来了 现在随便一个模型都太强了 https://orange2…",
-          "aihot": "https://aihot.news/items/a3ewnm64l7vonvw64sntgiwel",
-          "original": "https://x.com/oran_ge/status/2114003877813178562",
-          "score": 32
+          "title": "TechCrunch 盘点可通过短信使用的 AI 智能体：从 Instinct 到 Fambot",
+          "source": "TechCrunch：AI（RSS）",
+          "time": "10月24日 22:52（收录）",
+          "summary": "TechCrunch 汇总了当前可直接通过短信或 iMessage 交互的 20 多个 AI 智能体，覆盖个人助理、家…",
+          "aihot": "https://aihot.news/items/lob6d2chaftmj4o6g3sdms2kp",
+          "original": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "score": 56
         },
         {
           "num": 20,
@@ -533,6 +516,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/n2v46bwdqzvi6mxxv97dgci9i",
           "original": "https://x.com/mattyp/status/2113978076937994305",
           "score": 33
+        },
+        {
+          "num": 15,
+          "section": "tips",
+          "title": "随手做了一个鹈鹕骑自行车的 AI 游戏 没想到一次就做出来了 现在随便一个模型都太强了 https://orange2ai.github.io/pelican-bike/",
+          "source": "X：Oran Ge (@oran_ge)",
+          "time": "10月24日 22:43（收录）",
+          "summary": "随手做了一个鹈鹕骑自行车的 AI 游戏 没想到一次就做出来了 现在随便一个模型都太强了 https://orange2…",
+          "aihot": "https://aihot.news/items/a3ewnm64l7vonvw64sntgiwel",
+          "original": "https://x.com/oran_ge/status/2114003877813178562",
+          "score": 32
         }
       ]
     }
@@ -775,7 +769,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -881,12 +874,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -903,16 +894,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

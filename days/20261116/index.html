@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-11-16",
     "heroDate": "2026年11月16日 周一",
-    "total": 57,
+    "total": 40,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年11月16日 19:43（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -280,76 +274,10 @@ const DATA = {
       "key": "models",
       "label": "模型发布/更新",
       "color": "#6366f1",
-      "count": 16,
+      "count": 10,
       "cards": [
         {
-          "num": 4,
-          "section": "models",
-          "title": "阿里发布 Qwen4-Max：2.4T MoE、71B 激活、1M 上下文",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月16日 18:18（收录）",
-          "summary": "阿里 Qwen 团队发布 Qwen4 系列首个模型 Qwen4-Max，为专有稀疏 MoE 模型，2.4T 骨干参数…",
-          "aihot": "https://aihot.news/items/pttf3d3jrgv3ixuze5ju49aws",
-          "original": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
-          "score": 78
-        },
-        {
-          "num": 14,
-          "section": "models",
-          "title": "腾讯混元发布 Hy4 flash，盲测比肩 Claude Haiku 5.5 且任务成本降低 18 倍",
-          "source": "X：腾讯混元 (@TencentHunyuan)",
-          "time": "11月16日 15:16（收录）",
-          "summary": "腾讯混元发布 Hy4 flash，定位日常生产力场景最低价模型。称其在人工盲测的日常任务中与 Claude Haiku…",
-          "aihot": "https://aihot.news/items/zty8a2llkfo545rtr4rw22ctj",
-          "original": "https://x.com/TencentHunyuan/status/2122217770314301469",
-          "score": 59
-        },
-        {
           "num": 21,
-          "section": "models",
-          "title": "腾讯混元发布 Hy4 flash：224B 总参、12B 激活，单任务成本约 Hy4 的 5%",
-          "source": "IT之家·人工智能",
-          "time": "11月16日 13:34（收录）",
-          "summary": "腾讯混元团队宣布正式推出 Hy4 flash，总参数量 224B（含 64B Engram 参数），每 token 激…",
-          "aihot": "https://aihot.news/items/l2ronxw4hsc6rkz12af1sxrbk",
-          "original": "https://www.ithome.com/1/027/630.htm",
-          "score": 73
-        },
-        {
-          "num": 22,
-          "section": "models",
-          "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
-          "source": "腾讯混元：Research（API）",
-          "time": "11月16日 13:27（收录）",
-          "summary": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M…",
-          "aihot": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
-          "original": "https://hunyuan.tencent.com/research/100145?langVersion=zh",
-          "score": 73
-        },
-        {
-          "num": 28,
-          "section": "models",
-          "title": "通义千问发布 Qwen4 Max，Intelligence Index 较 Qwen3.8 Max 高 9 分且成本更低",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "time": "11月16日 11:59（收录）",
-          "summary": "通义千问宣布发布 Qwen4 Max，据 Artificial Analysis 数据，其 Intelligence…",
-          "aihot": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
-          "original": "https://x.com/Alibaba_Qwen/status/2122174463479542126",
-          "score": 73
-        },
-        {
-          "num": 29,
-          "section": "models",
-          "title": "Qwen4-Max 以 63.20% 准确率位列 Vals Index 第11名，成中国模型之首",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "time": "11月16日 11:59（收录）",
-          "summary": "Qwen 转发 ValsAI 榜单：Qwen 4 Max 登上 Vals Index 第11名（63.20% 准确率…",
-          "aihot": "https://aihot.news/items/zt7810nj5l9s393h7gugnqp34",
-          "original": "https://x.com/Alibaba_Qwen/status/2122175103115075709",
-          "score": 58
-        },
-        {
-          "num": 31,
           "section": "models",
           "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
           "source": "X：Arena (@arena)",
@@ -360,62 +288,7 @@ const DATA = {
           "score": 82
         },
         {
-          "num": 32,
-          "section": "models",
-          "title": "Arena：Qwen4-Max 以 1750 分登 Code Arena WebDev 第 6 名",
-          "source": "X：Arena (@arena)",
-          "time": "11月16日 10:58（收录）",
-          "summary": "Arena 公布 Qwen4-Max 在 Code Arena: WebDev 排名第 6，初步得分 1750 分，比…",
-          "aihot": "https://aihot.news/items/epq3pj0n24437nyrd6ahe3t6b",
-          "original": "https://x.com/arena/status/2122153582384583156",
-          "score": 71
-        },
-        {
-          "num": 33,
-          "section": "models",
-          "title": "Arena 实测 Qwen4-Max：与 Opus、GPT、Kimi 对比 3D 场景、游戏与网页设计",
-          "source": "X：Arena (@arena)",
-          "time": "11月16日 10:58（收录）",
-          "summary": "Arena 宣布 Qwen4-Max 进入 Arena，并发布 Peter Gostev 的实测视频，在 3D 场景…",
-          "aihot": "https://aihot.news/items/lwm5arpx4igijefecen2o53sa",
-          "original": "https://x.com/arena/status/2122157548057084062",
-          "score": 73
-        },
-        {
-          "num": 34,
-          "section": "models",
-          "title": "Qwen4-Max 以 1750 分位列 Code Arena WebDev 第 6 名",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "time": "11月16日 10:57（收录）",
-          "summary": "Qwen4-Max 在 Code Arena: WebDev 榜单以 1750 分（初步）位列第 6，比前代 Qwen…",
-          "aihot": "https://aihot.news/items/k2yu9dc1syzyxg39e723hj5tj",
-          "original": "https://x.com/Alibaba_Qwen/status/2122156070781300934",
-          "score": 55
-        },
-        {
-          "num": 35,
-          "section": "models",
-          "title": "Qwen4-Max 登顶 Agent Arena 中国模型第一，阿里巴巴升至全球第五实验室",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "time": "11月16日 10:57（收录）",
-          "summary": "Qwen4-Max 在 Agent Arena 以 +7.5% 净提升超过 Qwen3.8-Max，总体排名从 #39…",
-          "aihot": "https://aihot.news/items/my21gpu54w5efhqcj52vt8qdx",
-          "original": "https://x.com/Alibaba_Qwen/status/2122161519110844686",
-          "score": 64
-        },
-        {
-          "num": 36,
-          "section": "models",
-          "title": "阿里巴巴发布 Qwen4 Max，Artificial Analysis 评测 Intelligence Index 得 43 分",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "time": "11月16日 10:57（收录）",
-          "summary": "Artificial Analysis 评测阿里巴巴新发布的 Qwen4 Max：在 Intelligence Ind…",
-          "aihot": "https://aihot.news/items/tbsk6xevx1zi89yv43zzv70fa",
-          "original": "https://x.com/ArtificialAnlys/status/2122161629592953032",
-          "score": 74
-        },
-        {
-          "num": 40,
+          "num": 27,
           "section": "models",
           "title": "阿里通义千问 Qwen4-Max 正式上线：2.4 万亿参数 MoE 架构，任务成本降低超 60%",
           "source": "IT之家·人工智能",
@@ -426,18 +299,7 @@ const DATA = {
           "score": 80
         },
         {
-          "num": 41,
-          "section": "models",
-          "title": "Qwen 发布 Qwen4-Max：MoE 架构、原生视觉与 1M token 上下文窗口",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "time": "11月16日 10:26（收录）",
-          "summary": "Qwen 发布旗舰模型 Qwen4-Max，采用新 MoE 架构，具备原生视觉能力和 1M token 上下文窗口。官…",
-          "aihot": "https://aihot.news/items/nyprun70jveiyetdmcvotqaod",
-          "original": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
-          "score": 77
-        },
-        {
-          "num": 42,
+          "num": 29,
           "section": "models",
           "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
           "source": "Qwen：Blog Retrieval（API）",
@@ -448,15 +310,81 @@ const DATA = {
           "score": 80
         },
         {
-          "num": 48,
+          "num": 3,
           "section": "models",
-          "title": "Claude Fable 5.2 不调用图像模型，用 Python 代码模拟真实画笔逐笔作画",
+          "title": "阿里发布 Qwen4-Max：2.4T MoE、71B 激活、1M 上下文",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月16日 18:18（收录）",
+          "summary": "阿里 Qwen 团队发布 Qwen4 系列首个模型 Qwen4-Max，为专有稀疏 MoE 模型，2.4T 骨干参数…",
+          "aihot": "https://aihot.news/items/pttf3d3jrgv3ixuze5ju49aws",
+          "original": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
+          "score": 78
+        },
+        {
+          "num": 28,
+          "section": "models",
+          "title": "Qwen 发布 Qwen4-Max：MoE 架构、原生视觉与 1M token 上下文窗口",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "time": "11月16日 10:26（收录）",
+          "summary": "Qwen 发布旗舰模型 Qwen4-Max，采用新 MoE 架构，具备原生视觉能力和 1M token 上下文窗口。官…",
+          "aihot": "https://aihot.news/items/nyprun70jveiyetdmcvotqaod",
+          "original": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+          "score": 77
+        },
+        {
+          "num": 23,
+          "section": "models",
+          "title": "阿里巴巴发布 Qwen4 Max，Artificial Analysis 评测 Intelligence Index 得 43 分",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "time": "11月16日 10:57（收录）",
+          "summary": "Artificial Analysis 评测阿里巴巴新发布的 Qwen4 Max：在 Intelligence Ind…",
+          "aihot": "https://aihot.news/items/tbsk6xevx1zi89yv43zzv70fa",
+          "original": "https://x.com/ArtificialAnlys/status/2122161629592953032",
+          "score": 74
+        },
+        {
+          "num": 16,
+          "section": "models",
+          "title": "腾讯混元发布 Hy4 flash：224B 总参、12B 激活，单任务成本约 Hy4 的 5%",
           "source": "IT之家·人工智能",
-          "time": "11月16日 09:34（收录）",
-          "summary": "Anthropic 的 Claude Fable 5.2 展示了一种不依赖图像生成模型的生图方式，通过编写 Pytho…",
-          "aihot": "https://aihot.news/items/mc0spd5j68n84jb96dj0euekq",
-          "original": "https://www.ithome.com/1/027/490.htm",
-          "score": 67
+          "time": "11月16日 13:34（收录）",
+          "summary": "腾讯混元团队宣布正式推出 Hy4 flash，总参数量 224B（含 64B Engram 参数），每 token 激…",
+          "aihot": "https://aihot.news/items/l2ronxw4hsc6rkz12af1sxrbk",
+          "original": "https://www.ithome.com/1/027/630.htm",
+          "score": 73
+        },
+        {
+          "num": 17,
+          "section": "models",
+          "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
+          "source": "腾讯混元：Research（API）",
+          "time": "11月16日 13:27（收录）",
+          "summary": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M…",
+          "aihot": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+          "original": "https://hunyuan.tencent.com/research/100145?langVersion=zh",
+          "score": 73
+        },
+        {
+          "num": 20,
+          "section": "models",
+          "title": "通义千问发布 Qwen4 Max，Intelligence Index 较 Qwen3.8 Max 高 9 分且成本更低",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "time": "11月16日 11:59（收录）",
+          "summary": "通义千问宣布发布 Qwen4 Max，据 Artificial Analysis 数据，其 Intelligence…",
+          "aihot": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
+          "original": "https://x.com/Alibaba_Qwen/status/2122174463479542126",
+          "score": 73
+        },
+        {
+          "num": 22,
+          "section": "models",
+          "title": "Arena 实测 Qwen4-Max：与 Opus、GPT、Kimi 对比 3D 场景、游戏与网页设计",
+          "source": "X：Arena (@arena)",
+          "time": "11月16日 10:58（收录）",
+          "summary": "Arena 宣布 Qwen4-Max 进入 Arena，并发布 Peter Gostev 的实测视频，在 3D 场景…",
+          "aihot": "https://aihot.news/items/lwm5arpx4igijefecen2o53sa",
+          "original": "https://x.com/arena/status/2122157548057084062",
+          "score": 73
         }
       ]
     },
@@ -464,109 +392,10 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 17,
+      "count": 10,
       "cards": [
         {
-          "num": 7,
-          "section": "products",
-          "title": "OpenCode Go 上线 Hy4 flash 免费使用",
-          "source": "X：opencode (@opencode)",
-          "time": "11月16日 17:24（收录）",
-          "summary": "Hy4 flash 现已在 OpenCode Go 上线 接下来 14 天，使用量近乎无限，完全免费 不计入你的 Go…",
-          "aihot": "https://aihot.news/items/bstxshdzvivb7hc2dgsch7h8m",
-          "original": "https://x.com/opencode/status/2122258314809741673",
-          "score": 49
-        },
-        {
-          "num": 9,
-          "section": "products",
-          "title": "Hark 发布 Handoff²：Hark Pro 内置计算机操作智能体平均提速约 2 倍",
-          "source": "MarkTechPost（RSS）",
-          "time": "11月16日 17:17（收录）",
-          "summary": "Hark 在 Hark Pro 中发布第二代计算机操作智能体 Handoff²，平均端到端速度约为 v1 的 2 倍…",
-          "aihot": "https://aihot.news/items/cbc9zrhedvcqdxbeek51fwps9",
-          "original": "https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/",
-          "score": 58
-        },
-        {
-          "num": 10,
-          "section": "products",
-          "title": "Browser Use 智能体接入 Evervault，结账时无需接触真实卡号",
-          "source": "Browser Use",
-          "time": "11月16日 16:57（收录）",
-          "summary": "Browser Use 智能体现可借助 Evervault 完成结账，全程不接触真实卡号。Evervault 生成 L…",
-          "aihot": "https://aihot.news/items/t6kfv5uo9tnxig0p0hbyim23f",
-          "original": "https://browser-use.com/posts/browser-use-evervault",
-          "score": 49
-        },
-        {
-          "num": 11,
-          "section": "products",
-          "title": "马斯克确认 Grok API 文本水印默认关闭",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "time": "11月16日 15:47（收录）",
-          "summary": "Elon Musk 确认引用内容所述变化：Grok 的文本水印在 xAI API 中现已默认关闭，仅在法律要求或用户主…",
-          "aihot": "https://aihot.news/items/ik6lxh9yrue1xo80dhftwhbdx",
-          "original": "https://x.com/elonmusk/status/2122223599079559603",
-          "score": 56
-        },
-        {
-          "num": 13,
-          "section": "products",
-          "title": "字节跳动火山引擎全面开放 Seedance 2.5 4K 视频生成模型 API",
-          "source": "IT之家·人工智能",
-          "time": "11月16日 15:34（收录）",
-          "summary": "火山引擎宣布 Seedance 2.5 4K 的 API 全面开放，开发者与企业客户可通过接口调用该 4K 视频生成模…",
-          "aihot": "https://aihot.news/items/rplpo56eu6ch0j9lecwzty9je",
-          "original": "https://www.ithome.com/1/027/736.htm",
-          "score": 61
-        },
-        {
-          "num": 16,
-          "section": "products",
-          "title": "面壁智能 MiniCPM-OCR 1.0 原生支持 vLLM 与 SGLang 推理框架",
-          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-          "time": "11月16日 15:10（收录）",
-          "summary": "OpenBMB 宣布 MiniCPM-OCR 原生支持 vLLM 与 SGLang 两大开源推理框架，便于开发者将 M…",
-          "aihot": "https://aihot.news/items/y68xh1e0v0t0rnhea6jn3qwsp",
-          "original": "https://x.com/OpenBMB/status/2122218994325447163",
-          "score": 61
-        },
-        {
-          "num": 17,
-          "section": "products",
-          "title": "WorkBuddy 接入腾讯混元 Hy4 flash 模型",
-          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-          "time": "11月16日 14:51（收录）",
-          "summary": "WorkBuddy 宣布将腾讯混元新模型 Hy4 flash 集成进产品，用于完成日常工作。引用腾讯混元的介绍称，Hy…",
-          "aihot": "https://aihot.news/items/zckx4qlv2yyp24wny8na0ukdq",
-          "original": "https://x.com/WorkBuddy_AI/status/2122218284175196179",
-          "score": 56
-        },
-        {
-          "num": 18,
-          "section": "products",
-          "title": "MiniCPM-OCR 1.0 获得 vLLM 和 SGLang 原生支持",
-          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-          "time": "11月16日 14:39（收录）",
-          "summary": "面壁智能 OpenBMB 宣布 MiniCPM-OCR 1.0 已原生支持 vLLM 和 SGLang，代码已合并、可…",
-          "aihot": "https://aihot.news/items/duk6m1x96u9c9c2uhlc5bs30t",
-          "original": "https://x.com/OpenBMB/status/2122217150882500974",
-          "score": 58
-        },
-        {
-          "num": 19,
-          "section": "products",
-          "title": "Meshy 开源 ThreeRT：为 three.js 带来 60 fps 硬件光追渲染",
-          "source": "X：Meshy (@MeshyAI)",
-          "time": "11月16日 14:35（收录）",
-          "summary": "Meshy 团队宣布开源 ThreeRT，一个原生 JS 运行时和硬件加速实时光线追踪器，可在 macOS、Windo…",
-          "aihot": "https://aihot.news/items/dwvtlyuew6jgp20rsk9zuh7r9",
-          "original": "https://x.com/MeshyAI/status/2122216130827944151",
-          "score": 58
-        },
-        {
-          "num": 20,
+          "num": 15,
           "section": "products",
           "title": "火山引擎开放 Seedance 2.5 4K API",
           "source": "公众号：火山引擎",
@@ -577,29 +406,29 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 23,
+          "num": 10,
           "section": "products",
-          "title": "豆包工作上线「工作台」功能，首批覆盖金融、医疗、教育等 21 个专业场景",
+          "title": "字节跳动火山引擎全面开放 Seedance 2.5 4K 视频生成模型 API",
           "source": "IT之家·人工智能",
-          "time": "11月16日 13:14（收录）",
-          "summary": "豆包工作宣布独家上线「工作台」功能，为专业工作场景提供预配置技能和工具的 AI 工作空间，首批覆盖金融、医疗、教育等…",
-          "aihot": "https://aihot.news/items/zhza6qwp4ylvz6iclzncpqxqh",
-          "original": "https://www.ithome.com/1/027/608.htm",
-          "score": 58
+          "time": "11月16日 15:34（收录）",
+          "summary": "火山引擎宣布 Seedance 2.5 4K 的 API 全面开放，开发者与企业客户可通过接口调用该 4K 视频生成模…",
+          "aihot": "https://aihot.news/items/rplpo56eu6ch0j9lecwzty9je",
+          "original": "https://www.ithome.com/1/027/736.htm",
+          "score": 61
         },
         {
-          "num": 30,
+          "num": 12,
           "section": "products",
-          "title": "Grok Bot 可完成几乎任何任务",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "time": "11月16日 11:45（收录）",
-          "summary": "Grok @Bot 几乎什么都能做",
-          "aihot": "https://aihot.news/items/vellvvevs62hn77kqju8l0xpq",
-          "original": "https://x.com/elonmusk/status/2122164224382447808",
-          "score": 41
+          "title": "面壁智能 MiniCPM-OCR 1.0 原生支持 vLLM 与 SGLang 推理框架",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "time": "11月16日 15:10（收录）",
+          "summary": "OpenBMB 宣布 MiniCPM-OCR 原生支持 vLLM 与 SGLang 两大开源推理框架，便于开发者将 M…",
+          "aihot": "https://aihot.news/items/y68xh1e0v0t0rnhea6jn3qwsp",
+          "original": "https://x.com/OpenBMB/status/2122218994325447163",
+          "score": 61
         },
         {
-          "num": 37,
+          "num": 24,
           "section": "products",
           "title": "千问 Qwen4 Max 上线 OpenRouter",
           "source": "X：OpenRouter (@OpenRouter)",
@@ -610,7 +439,7 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 38,
+          "num": 25,
           "section": "products",
           "title": "Qwen4 Max 上线 OpenRouter，定价降至 $1.50/M 输入和 $4.50/M 输出",
           "source": "X：OpenRouter (@OpenRouter)",
@@ -621,37 +450,59 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 45,
+          "num": 7,
           "section": "products",
-          "title": "Datasette 1.0a43 发布：输出渲染器支持流式输出",
-          "source": "Simon Willison 博客",
-          "time": "11月16日 09:43（收录）",
-          "summary": "Datasette 1.0a43 发布，内置 TSV 和 CSV 导出已改用流式输出，插件可通过新的 Response…",
-          "aihot": "https://aihot.news/items/de38ghi26r8v2t7himg6fj4xw",
-          "original": "https://simonwillison.net/2026/Nov/15/datasette/",
-          "score": 44
+          "title": "Hark 发布 Handoff²：Hark Pro 内置计算机操作智能体平均提速约 2 倍",
+          "source": "MarkTechPost（RSS）",
+          "time": "11月16日 17:17（收录）",
+          "summary": "Hark 在 Hark Pro 中发布第二代计算机操作智能体 Handoff²，平均端到端速度约为 v1 的 2 倍…",
+          "aihot": "https://aihot.news/items/cbc9zrhedvcqdxbeek51fwps9",
+          "original": "https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/",
+          "score": 58
         },
         {
-          "num": 46,
+          "num": 13,
           "section": "products",
-          "title": "Datasette 发布地理空间插件 datasette-maplibre 0.1a0，结合 MapLibre GL 与 OpenFreeMap",
-          "source": "Simon Willison 博客",
-          "time": "11月16日 09:43（收录）",
-          "summary": "Datasette 推出新地理空间插件 datasette-maplibre 0.1a0，将 MapLibre GL…",
-          "aihot": "https://aihot.news/items/szxuazfh0x20dq7dnknly7uev",
-          "original": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
-          "score": 44
+          "title": "MiniCPM-OCR 1.0 获得 vLLM 和 SGLang 原生支持",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "time": "11月16日 14:39（收录）",
+          "summary": "面壁智能 OpenBMB 宣布 MiniCPM-OCR 1.0 已原生支持 vLLM 和 SGLang，代码已合并、可…",
+          "aihot": "https://aihot.news/items/duk6m1x96u9c9c2uhlc5bs30t",
+          "original": "https://x.com/OpenBMB/status/2122217150882500974",
+          "score": 58
         },
         {
-          "num": 57,
+          "num": 14,
           "section": "products",
-          "title": "Claude Code 桌面版支持自定义主题 mod",
-          "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-          "time": "11月16日 02:46（收录）",
-          "summary": "自定义主题其实就是 mod，所以你的背景甚至能对实际会话做出反应！ 这里我让 Claude 随着我的上下文填满而下雪（…",
-          "aihot": "https://aihot.news/items/w7xc4jvrorftkf9u751zyndf2",
-          "original": "https://x.com/lydiahallie/status/2122028598639136810",
-          "score": 47
+          "title": "Meshy 开源 ThreeRT：为 three.js 带来 60 fps 硬件光追渲染",
+          "source": "X：Meshy (@MeshyAI)",
+          "time": "11月16日 14:35（收录）",
+          "summary": "Meshy 团队宣布开源 ThreeRT，一个原生 JS 运行时和硬件加速实时光线追踪器，可在 macOS、Windo…",
+          "aihot": "https://aihot.news/items/dwvtlyuew6jgp20rsk9zuh7r9",
+          "original": "https://x.com/MeshyAI/status/2122216130827944151",
+          "score": 58
+        },
+        {
+          "num": 18,
+          "section": "products",
+          "title": "豆包工作上线「工作台」功能，首批覆盖金融、医疗、教育等 21 个专业场景",
+          "source": "IT之家·人工智能",
+          "time": "11月16日 13:14（收录）",
+          "summary": "豆包工作宣布独家上线「工作台」功能，为专业工作场景提供预配置技能和工具的 AI 工作空间，首批覆盖金融、医疗、教育等…",
+          "aihot": "https://aihot.news/items/zhza6qwp4ylvz6iclzncpqxqh",
+          "original": "https://www.ithome.com/1/027/608.htm",
+          "score": 58
+        },
+        {
+          "num": 8,
+          "section": "products",
+          "title": "马斯克确认 Grok API 文本水印默认关闭",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "time": "11月16日 15:47（收录）",
+          "summary": "Elon Musk 确认引用内容所述变化：Grok 的文本水印在 xAI API 中现已默认关闭，仅在法律要求或用户主…",
+          "aihot": "https://aihot.news/items/ik6lxh9yrue1xo80dhftwhbdx",
+          "original": "https://x.com/elonmusk/status/2122223599079559603",
+          "score": 56
         }
       ]
     },
@@ -659,8 +510,30 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 14,
+      "count": 10,
       "cards": [
+        {
+          "num": 39,
+          "section": "industry",
+          "title": "美国国会寻求收紧AI芯片出口规则",
+          "source": "The Verge：AI（RSS）",
+          "time": "11月16日 04:17（收录）",
+          "summary": "在涉及Nvidia高管的争议事件后，美国国会正寻求进一步收紧AI芯片出口。民主党和共和党均对收紧相关规则的法案表示支持…",
+          "aihot": "https://aihot.news/items/qdgamkwiwpicxwylijl7kws6y",
+          "original": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+          "score": 74
+        },
+        {
+          "num": 37,
+          "section": "industry",
+          "title": "Alpha School 年收费 7.5 万美元，其内部数据显示约半数学生未达数学提速目标",
+          "source": "Hacker News：AI 热帖",
+          "time": "11月16日 06:11（收录）",
+          "summary": "Fortune 报道称，年收费高达 7.5 万美元的 AI 私立学校网络 Alpha School 内部数据显示，仅…",
+          "aihot": "https://aihot.news/items/vhs4j3x3u7b6f3ax5y5itc8p5",
+          "original": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+          "score": 70
+        },
         {
           "num": 2,
           "section": "industry",
@@ -673,40 +546,7 @@ const DATA = {
           "score": 68
         },
         {
-          "num": 3,
-          "section": "industry",
-          "title": "LVMH 媒体部门与 OpenAI 宣布战略合作，将 ChatGPT Enterprise 引入旗下刊物",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "time": "11月16日 18:42（收录）",
-          "summary": "LVMH 集团媒体部门与 OpenAI 签署战略合作协议，将在旗下全部刊物部署 OpenAI 工具和 ChatGPT…",
-          "aihot": "https://aihot.news/items/he8qslcaerhe1u3t1ccwx9ap7",
-          "original": "https://openai.com/index/lvmh-media-division-partnership",
-          "score": 49
-        },
-        {
-          "num": 8,
-          "section": "industry",
-          "title": "北卡 Enfield 镇拟要求数据中心出资清洁能源计划并用余热供暖",
-          "source": "Canary Media：Data Centers 原创报道",
-          "time": "11月16日 17:17（收录）",
-          "summary": "北卡 Enfield 镇正与 Quiet Data Centers 谈判具法律约束力的社区受益协议，镇长要求该公司出资…",
-          "aihot": "https://aihot.news/items/rfp5d2yj0zsufrohj6ux11p23",
-          "original": "https://www.canarymedia.com/articles/geothermal/data-center-heat-north-carolina-town",
-          "score": 55
-        },
-        {
-          "num": 12,
-          "section": "industry",
-          "title": "虚拟人“方桃子”代言美瞳发布虚假广告，涉事公司被罚 6.82 万余元",
-          "source": "IT之家·人工智能",
-          "time": "11月16日 15:34（收录）",
-          "summary": "据大河报报道，广州我的影视文化传媒有限公司因在自制虚拟人物“方桃子”账号发布“NUTNUTLOOK 坚果力”美瞳广告…",
-          "aihot": "https://aihot.news/items/szxmilipgcypod4olle7u6vqw",
-          "original": "https://www.ithome.com/1/027/711.htm",
-          "score": 56
-        },
-        {
-          "num": 15,
+          "num": 11,
           "section": "industry",
           "title": "台积电拟按客户信用额度供应产能，应对 AI 循环融资疑虑",
           "source": "IT之家·人工智能",
@@ -717,40 +557,7 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 24,
-          "section": "industry",
-          "title": "无界进化完成超亿元 Pre-A 轮融资，称刷新中国虚拟细胞企业单笔融资纪录",
-          "source": "IT之家·人工智能",
-          "time": "11月16日 13:14（收录）",
-          "summary": "无界进化（INFevo）11 月 16 日宣布完成超亿元 Pre-A 轮融资，由星连资本、Prosperity7 Ve…",
-          "aihot": "https://aihot.news/items/nub87n88f5lei5j212jd4xqby",
-          "original": "https://www.ithome.com/1/027/609.htm",
-          "score": 41
-        },
-        {
-          "num": 25,
-          "section": "industry",
-          "title": "国家统计局：人工智能快速发展带动电子、电气机械等行业需求回升、价格上涨",
-          "source": "IT之家·人工智能",
-          "time": "11月16日 12:34（收录）",
-          "summary": "国家统计局新闻发言人王冠华在国新办发布会上表示，人工智能快速发展带动部分装备行业价格上行。10 月份电气机械和器材制造…",
-          "aihot": "https://aihot.news/items/i8wt901xi0nbs7ajn6ri26loc",
-          "original": "https://www.ithome.com/1/027/602.htm",
-          "score": 45
-        },
-        {
           "num": 26,
-          "section": "industry",
-          "title": "中国与东盟宣布将 2027 年定为人工智能合作年",
-          "source": "IT之家·人工智能",
-          "time": "11月16日 12:34（收录）",
-          "summary": "中国与东盟宣布将 2027 年定为人工智能合作年，中国－东盟自贸区 3.0 版升级议定书将于 2026 年 12 月…",
-          "aihot": "https://aihot.news/items/whnwoq3ixzykqim8m2vju4sd6",
-          "original": "https://www.ithome.com/1/027/607.htm",
-          "score": 42
-        },
-        {
-          "num": 39,
           "section": "industry",
           "title": "腾讯公布总办 LinkTime 播客原文，号召所有业务面向 AI 时代再创业",
           "source": "IT之家·人工智能",
@@ -761,7 +568,7 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 44,
+          "num": 31,
           "section": "industry",
           "title": "Apple 联合 OpenEvidence 推出健康 AI 研究应用",
           "source": "TechCrunch：AI（RSS）",
@@ -772,7 +579,29 @@ const DATA = {
           "score": 61
         },
         {
-          "num": 49,
+          "num": 9,
+          "section": "industry",
+          "title": "虚拟人“方桃子”代言美瞳发布虚假广告，涉事公司被罚 6.82 万余元",
+          "source": "IT之家·人工智能",
+          "time": "11月16日 15:34（收录）",
+          "summary": "据大河报报道，广州我的影视文化传媒有限公司因在自制虚拟人物“方桃子”账号发布“NUTNUTLOOK 坚果力”美瞳广告…",
+          "aihot": "https://aihot.news/items/szxmilipgcypod4olle7u6vqw",
+          "original": "https://www.ithome.com/1/027/711.htm",
+          "score": 56
+        },
+        {
+          "num": 6,
+          "section": "industry",
+          "title": "北卡 Enfield 镇拟要求数据中心出资清洁能源计划并用余热供暖",
+          "source": "Canary Media：Data Centers 原创报道",
+          "time": "11月16日 17:17（收录）",
+          "summary": "北卡 Enfield 镇正与 Quiet Data Centers 谈判具法律约束力的社区受益协议，镇长要求该公司出资…",
+          "aihot": "https://aihot.news/items/rfp5d2yj0zsufrohj6ux11p23",
+          "original": "https://www.canarymedia.com/articles/geothermal/data-center-heat-north-carolina-town",
+          "score": 55
+        },
+        {
+          "num": 33,
           "section": "industry",
           "title": "物理学家 Nathaniel Craig 分享与 GPT-6 Astra 协作构建标准模型候选格点定义",
           "source": "X：OpenAI (@OpenAI)",
@@ -783,18 +612,7 @@ const DATA = {
           "score": 53
         },
         {
-          "num": 53,
-          "section": "industry",
-          "title": "Alpha School 年收费 7.5 万美元，其内部数据显示约半数学生未达数学提速目标",
-          "source": "Hacker News：AI 热帖",
-          "time": "11月16日 06:11（收录）",
-          "summary": "Fortune 报道称，年收费高达 7.5 万美元的 AI 私立学校网络 Alpha School 内部数据显示，仅…",
-          "aihot": "https://aihot.news/items/vhs4j3x3u7b6f3ax5y5itc8p5",
-          "original": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
-          "score": 70
-        },
-        {
-          "num": 54,
+          "num": 38,
           "section": "industry",
           "title": "Wispr 自研语音模型 Canto 1 在真实听写测试中词错率降至 3.4%",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -803,17 +621,6 @@ const DATA = {
           "aihot": "https://aihot.news/items/hebxxa7eqwytcxfeylqmk5j71",
           "original": "https://x.com/rohanpaul_ai/status/2122087112082399393",
           "score": 51
-        },
-        {
-          "num": 55,
-          "section": "industry",
-          "title": "美国国会寻求收紧AI芯片出口规则",
-          "source": "The Verge：AI（RSS）",
-          "time": "11月16日 04:17（收录）",
-          "summary": "在涉及Nvidia高管的争议事件后，美国国会正寻求进一步收紧AI芯片出口。民主党和共和党均对收紧相关规则的法案表示支持…",
-          "aihot": "https://aihot.news/items/qdgamkwiwpicxwylijl7kws6y",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-          "score": 74
         }
       ]
     },
@@ -823,6 +630,17 @@ const DATA = {
       "color": "#3b82f6",
       "count": 4,
       "cards": [
+        {
+          "num": 32,
+          "section": "papers",
+          "title": "Apple 联合 OpenEvidence 启动 Apple Health AI Usage Study 探索健康 AI 使用",
+          "source": "Apple：Newsroom（RSS）",
+          "time": "11月16日 09:43（收录）",
+          "summary": "Apple 宣布在美国推出 Apple Health AI Usage Study，与 OpenEvidence 合作…",
+          "aihot": "https://aihot.news/items/txbnasfrp3d0w6wqmor5rp8fk",
+          "original": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+          "score": 61
+        },
         {
           "num": 1,
           "section": "papers",
@@ -835,29 +653,7 @@ const DATA = {
           "score": 58
         },
         {
-          "num": 47,
-          "section": "papers",
-          "title": "Apple 联合 OpenEvidence 启动 Apple Health AI Usage Study 探索健康 AI 使用",
-          "source": "Apple：Newsroom（RSS）",
-          "time": "11月16日 09:43（收录）",
-          "summary": "Apple 宣布在美国推出 Apple Health AI Usage Study，与 OpenEvidence 合作…",
-          "aihot": "https://aihot.news/items/txbnasfrp3d0w6wqmor5rp8fk",
-          "original": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
-          "score": 61
-        },
-        {
-          "num": 50,
-          "section": "papers",
-          "title": "Google DeepMind 与哥伦比亚大学提出 BTTF 框架，用 SQL 数据库让智能体调试芯片仿真",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "11月16日 08:02（收录）",
-          "summary": "Google DeepMind 与哥伦比亚大学的论文提出 Back-to-the-Future（BTTF）框架，将超过…",
-          "aihot": "https://aihot.news/items/yhcgx912dsvdcowy44a5efl6b",
-          "original": "https://x.com/rohanpaul_ai/status/2122114049353908599",
-          "score": 56
-        },
-        {
-          "num": 56,
+          "num": 40,
           "section": "papers",
           "title": "斯坦福 AI Index 新数据揭示 AI 投资破万亿与公众情绪、就业影响的落差",
           "source": "Stanford HAI News（网页）",
@@ -866,6 +662,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/td8xahzqebgzd9ane8nkn2avs",
           "original": "https://hai.stanford.edu/news/the-jagged-edge-of-the-ai-boom",
           "score": 58
+        },
+        {
+          "num": 34,
+          "section": "papers",
+          "title": "Google DeepMind 与哥伦比亚大学提出 BTTF 框架，用 SQL 数据库让智能体调试芯片仿真",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "11月16日 08:02（收录）",
+          "summary": "Google DeepMind 与哥伦比亚大学的论文提出 Back-to-the-Future（BTTF）框架，将超过…",
+          "aihot": "https://aihot.news/items/yhcgx912dsvdcowy44a5efl6b",
+          "original": "https://x.com/rohanpaul_ai/status/2122114049353908599",
+          "score": 56
         }
       ]
     },
@@ -876,51 +683,7 @@ const DATA = {
       "count": 6,
       "cards": [
         {
-          "num": 5,
-          "section": "tips",
-          "title": "卡兹克分享两个月用 Agent 干活最常用的 10 条 Prompt",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "time": "11月16日 18:12（收录）",
-          "summary": "卡兹克分享了最近两个月自己用 Agent 干活最常说的 10 条 Prompt，包括从第一性原理找根因、先对齐喜好再出…",
-          "aihot": "https://aihot.news/items/ujdm0l8jtabqsdvc6kfs542xn",
-          "original": "https://x.com/Khazix0918/status/2122268349707219333",
-          "score": 66
-        },
-        {
-          "num": 6,
-          "section": "tips",
-          "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
-          "source": "公众号：数字生命卡兹克",
-          "time": "11月16日 18:11（收录）",
-          "summary": "作者让Agent整理出自己近两个月指挥Agent干活最常用的10条Prompt并分享，包括从第一性原理找根因、先对齐喜…",
-          "aihot": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-          "original": "https://mp.weixin.qq.com/s/SD5q9kVK5gXyTHVQjNPnoA",
-          "score": 68
-        },
-        {
-          "num": 27,
-          "section": "tips",
-          "title": "卡兹克解析 AI 手搓几百K纯HTML 3D世界：Three.js 与程序化生成如何实现极限压缩",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "time": "11月16日 12:00（收录）",
-          "summary": "作者解析近期流行的 AI 生成纯HTML 3D游戏为何能压到极小：一个1.4M游戏demo中约700KB是打包的 Th…",
-          "aihot": "https://aihot.news/items/mkrkzap1dpb14npw28k8rdbu4",
-          "original": "https://x.com/Khazix0918/status/2122172073170837600",
-          "score": 70
-        },
-        {
-          "num": 43,
-          "section": "tips",
-          "title": "借鉴 Claude 常驻智能体指南的省 token 提示词技巧",
-          "source": "公众号：卡尔的AI沃茨",
-          "time": "11月16日 10:11（收录）",
-          "summary": "作者把 Anthropic 常驻智能体指南的五组件（事件收件箱、定时器、记忆、权限、发件箱）翻译成一段提示词写入自己的…",
-          "aihot": "https://aihot.news/items/f9pp7cfr02m516vx5o7tvgznc",
-          "original": "https://mp.weixin.qq.com/s/Zt7GxF84UxSHMEJmn6qRzQ",
-          "score": 67
-        },
-        {
-          "num": 51,
+          "num": 35,
           "section": "tips",
           "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
           "source": "公众号：数字生命卡兹克",
@@ -931,7 +694,51 @@ const DATA = {
           "score": 72
         },
         {
-          "num": 52,
+          "num": 19,
+          "section": "tips",
+          "title": "卡兹克解析 AI 手搓几百K纯HTML 3D世界：Three.js 与程序化生成如何实现极限压缩",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "time": "11月16日 12:00（收录）",
+          "summary": "作者解析近期流行的 AI 生成纯HTML 3D游戏为何能压到极小：一个1.4M游戏demo中约700KB是打包的 Th…",
+          "aihot": "https://aihot.news/items/mkrkzap1dpb14npw28k8rdbu4",
+          "original": "https://x.com/Khazix0918/status/2122172073170837600",
+          "score": 70
+        },
+        {
+          "num": 5,
+          "section": "tips",
+          "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
+          "source": "公众号：数字生命卡兹克",
+          "time": "11月16日 18:11（收录）",
+          "summary": "作者让Agent整理出自己近两个月指挥Agent干活最常用的10条Prompt并分享，包括从第一性原理找根因、先对齐喜…",
+          "aihot": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
+          "original": "https://mp.weixin.qq.com/s/SD5q9kVK5gXyTHVQjNPnoA",
+          "score": 68
+        },
+        {
+          "num": 30,
+          "section": "tips",
+          "title": "借鉴 Claude 常驻智能体指南的省 token 提示词技巧",
+          "source": "公众号：卡尔的AI沃茨",
+          "time": "11月16日 10:11（收录）",
+          "summary": "作者把 Anthropic 常驻智能体指南的五组件（事件收件箱、定时器、记忆、权限、发件箱）翻译成一段提示词写入自己的…",
+          "aihot": "https://aihot.news/items/f9pp7cfr02m516vx5o7tvgznc",
+          "original": "https://mp.weixin.qq.com/s/Zt7GxF84UxSHMEJmn6qRzQ",
+          "score": 67
+        },
+        {
+          "num": 4,
+          "section": "tips",
+          "title": "卡兹克分享两个月用 Agent 干活最常用的 10 条 Prompt",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "time": "11月16日 18:12（收录）",
+          "summary": "卡兹克分享了最近两个月自己用 Agent 干活最常说的 10 条 Prompt，包括从第一性原理找根因、先对齐喜好再出…",
+          "aihot": "https://aihot.news/items/ujdm0l8jtabqsdvc6kfs542xn",
+          "original": "https://x.com/Khazix0918/status/2122268349707219333",
+          "score": 66
+        },
+        {
+          "num": 36,
           "section": "tips",
           "title": "Genie One 技能（Skills）使用指南：把团队工作流教给 AI",
           "source": "Databricks：Blog（RSS）",
@@ -1168,7 +975,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1274,12 +1080,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1296,16 +1100,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

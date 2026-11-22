@@ -242,13 +242,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -269,7 +263,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-17",
     "heroDate": "2026年9月17日 周四",
-    "total": 102,
+    "total": 48,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月17日 18:52（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -282,18 +276,7 @@ const DATA = {
       "count": 8,
       "cards": [
         {
-          "num": 3,
-          "section": "models",
-          "title": "外部团队基于 MiniCPM-o 4.5 开源全模态交互智能体 Gander，让 Agent 边干活边对话",
-          "source": "公众号：面壁智能（MiniCPM）",
-          "time": "9月17日 18:30（收录）",
-          "summary": "浙江大学等高校的外部研究者以 MiniCPM-o 4.5 为基座后训练，开源了端到端全模态交互智能体 Gander，论…",
-          "aihot": "https://aihot.news/items/cmu5e21gc05ygro7n26vwg5l8",
-          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499253&idx=1&sn=2cc5769d692de60951ba2eff8899c4f3",
-          "score": 64
-        },
-        {
-          "num": 9,
+          "num": 5,
           "section": "models",
           "title": "智谱 GLM 公开递归自我改进实践，GLM-5.3-Flash 发布",
           "source": "IT之家（RSS）",
@@ -304,18 +287,18 @@ const DATA = {
           "score": 71
         },
         {
-          "num": 19,
+          "num": 2,
           "section": "models",
-          "title": "OpenAI 前 RLHF 研究者 Diogo Almeida 创办 TypeSafe AI，发布不生成文本的结构化决策模型 Jev",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 15:24（收录）",
-          "summary": "TypeSafe AI 于 9 月 16 日发布 System One 模型 Jev，不生成文本，仅输出 Choice…",
-          "aihot": "https://aihot.news/items/cmu57f4kd045rro4o0qrtb1kp",
-          "original": "https://www.ithome.com/1/003/584.htm",
-          "score": 52
+          "title": "外部团队基于 MiniCPM-o 4.5 开源全模态交互智能体 Gander，让 Agent 边干活边对话",
+          "source": "公众号：面壁智能（MiniCPM）",
+          "time": "9月17日 18:30（收录）",
+          "summary": "浙江大学等高校的外部研究者以 MiniCPM-o 4.5 为基座后训练，开源了端到端全模态交互智能体 Gander，论…",
+          "aihot": "https://aihot.news/items/cmu5e21gc05ygro7n26vwg5l8",
+          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499253&idx=1&sn=2cc5769d692de60951ba2eff8899c4f3",
+          "score": 64
         },
         {
-          "num": 65,
+          "num": 35,
           "section": "models",
           "title": "Knowledgator 发布 GLiFormer：575M 参数编码器不生成 token 实现 91.10 F1 嵌套 JSON 提取",
           "source": "MarkTechPost（RSS）",
@@ -326,18 +309,7 @@ const DATA = {
           "score": 62
         },
         {
-          "num": 67,
-          "section": "models",
-          "title": "网易有道开源流式语音识别模型 Confucius4-R2T2，已提交文本不再被改写",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 05:42（收录）",
-          "summary": "网易有道开源流式语音识别模型 Confucius4-R2T2，其核心约束是语音增量消费但只对已提交文本执行动作，已提交…",
-          "aihot": "https://aihot.news/items/cmu4mmil503jtrodc8vq11e0j",
-          "original": "https://x.com/rohanpaul_ai/status/2100336041022595209",
-          "score": 55
-        },
-        {
-          "num": 81,
+          "num": 40,
           "section": "models",
           "title": "GPT-6 Astra 登顶最新版 BrokenArXiv 与 ArXivMath 基准",
           "source": "X：Tibo (@thsottiaux)",
@@ -348,18 +320,29 @@ const DATA = {
           "score": 58
         },
         {
-          "num": 86,
+          "num": 36,
           "section": "models",
-          "title": "隐形模型 Union Alpha 发布，DeepSWE 得分 74% 超过 GPT-5.6 Sol",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月17日 02:12（收录）",
-          "summary": "新隐形模型 Union Alpha 发布，DeepSWE 得分 74%，超过 GPT-5.6 Sol 和多数其他模型…",
-          "aihot": "https://aihot.news/items/cmu4f4gj20okfro4w7us1zfld",
-          "original": "https://x.com/kimmonismus/status/2100280246289514851",
-          "score": 50
+          "title": "网易有道开源流式语音识别模型 Confucius4-R2T2，已提交文本不再被改写",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月17日 05:42（收录）",
+          "summary": "网易有道开源流式语音识别模型 Confucius4-R2T2，其核心约束是语音增量消费但只对已提交文本执行动作，已提交…",
+          "aihot": "https://aihot.news/items/cmu4mmil503jtrodc8vq11e0j",
+          "original": "https://x.com/rohanpaul_ai/status/2100336041022595209",
+          "score": 55
         },
         {
-          "num": 93,
+          "num": 10,
+          "section": "models",
+          "title": "OpenAI 前 RLHF 研究者 Diogo Almeida 创办 TypeSafe AI，发布不生成文本的结构化决策模型 Jev",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 15:24（收录）",
+          "summary": "TypeSafe AI 于 9 月 16 日发布 System One 模型 Jev，不生成文本，仅输出 Choice…",
+          "aihot": "https://aihot.news/items/cmu57f4kd045rro4o0qrtb1kp",
+          "original": "https://www.ithome.com/1/003/584.htm",
+          "score": 52
+        },
+        {
+          "num": 44,
           "section": "models",
           "title": "神秘模型 Union Alpha 上线 OpenCode 和 OpenRouter，免费一周",
           "source": "X：Testing Catalog (@testingcatalog)",
@@ -368,6 +351,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmu4dkxmu0jlgro4w23k87u7c",
           "original": "https://x.com/testingcatalog/status/2100272203535188239",
           "score": 51
+        },
+        {
+          "num": 41,
+          "section": "models",
+          "title": "隐形模型 Union Alpha 发布，DeepSWE 得分 74% 超过 GPT-5.6 Sol",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "9月17日 02:12（收录）",
+          "summary": "新隐形模型 Union Alpha 发布，DeepSWE 得分 74%，超过 GPT-5.6 Sol 和多数其他模型…",
+          "aihot": "https://aihot.news/items/cmu4f4gj20okfro4w7us1zfld",
+          "original": "https://x.com/kimmonismus/status/2100280246289514851",
+          "score": 50
         }
       ]
     },
@@ -375,241 +369,10 @@ const DATA = {
       "key": "products",
       "label": "产品发布/更新",
       "color": "#10b981",
-      "count": 29,
+      "count": 10,
       "cards": [
         {
-          "num": 5,
-          "section": "products",
-          "title": "Lidl 在德国部署无驾驶室自动驾驶电动卡车执行日常补货",
-          "source": "Artificial Intelligence News（网页）",
-          "time": "9月17日 18:19（收录）",
-          "summary": "Lidl 与瑞典公司 Einride 合作，在德国启用无驾驶室 SAE L4 级自动驾驶电动卡车，往返 Edermün…",
-          "aihot": "https://aihot.news/items/cmu5do86f05j1ro7n4s0yufui",
-          "original": "https://www.artificialintelligence-news.com/news/lidl-autonomous-truck-germany",
-          "score": 57
-        },
-        {
-          "num": 7,
-          "section": "products",
-          "title": "TypeSafe 开源浏览器智能体 Jev Ultrafast，7.1 秒完成 Google Flights 搜索",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月17日 17:43（收录）",
-          "summary": "TypeSafe 发布开源浏览器智能体 Jev Ultrafast，采用动态、带索引的动作空间，每次决策只发一次网络请…",
-          "aihot": "https://aihot.news/items/cmu5ce77103yero7nv5wgcznx",
-          "original": "https://github.com/browser-use/jev-ultrafast",
-          "score": 64
-        },
-        {
-          "num": 15,
-          "section": "products",
-          "title": "OpenAI 发布模型错位披露框架，含3条审查路径和6份RL训练事故报告",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月17日 15:49（收录）",
-          "summary": "OpenAI 发布一套用于追踪、调查和公开披露自家模型错位行为的新框架，设定披露标准和时限，即使行为未被完全解释或修复…",
-          "aihot": "https://aihot.news/items/cmu58anil0324ro8tawwelc4v",
-          "original": "https://www.marktechpost.com/2026/09/17/openai-releases-a-model-misalignment-disclosure-framework-with-3-review-tracks-and-6-incident-reports-from-rl-training",
-          "score": 74
-        },
-        {
-          "num": 18,
-          "section": "products",
-          "title": "抖音上线声音侵权举报入口，应对 AI 合成、仿冒音色等侵权行为",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 15:24（收录）",
-          "summary": "抖音宣布上线声音侵权举报入口并升级维权机制，近一个月侵权投诉中提及声音侵权的举报量同比翻倍。升级后提供专属维权入口与可…",
-          "aihot": "https://aihot.news/items/cmu57f4ke045vro4o2eoct8ku",
-          "original": "https://www.ithome.com/1/003/577.htm",
-          "score": 54
-        },
-        {
-          "num": 24,
-          "section": "products",
-          "title": "阿里云 Wan3.0 展示单条 30 秒视频生成与多视频参考能力",
-          "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-          "time": "9月17日 13:59（收录）",
-          "summary": "阿里云介绍 Wan3.0 开始适配真实生产流程：从一年前的 5 秒片段到 15 秒，现在可直接生成单条 30 秒镜头…",
-          "aihot": "https://aihot.news/items/cmu54dfx90akhroqbp4uy5j7q",
-          "original": "https://x.com/alibaba_cloud/status/2100460967540715803",
-          "score": 52
-        },
-        {
-          "num": 27,
-          "section": "products",
-          "title": "OpenSpec 推出轻量级 AI 编码规范框架，兼容 Claude Code、Cursor 等 39 个工具",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 12:48（收录）",
-          "summary": "OpenSpec 发布，一个轻量可配置的软件规范框架，用于创建和管理 spec，让团队与编码智能体在需求演进中保持一致。",
-          "aihot": "https://aihot.news/items/cmu51uxfh07srroqbjg9fefjm",
-          "original": "https://openspec.dev/",
-          "score": 59
-        },
-        {
-          "num": 33,
-          "section": "products",
-          "title": "面壁智能转发 Dubedo 测试版上线，基于 VoxCPM2 支持 30 种语言配音",
-          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-          "time": "9月17日 11:37（收录）",
-          "summary": "面壁智能（OpenBMB）转发 Dubedo 的测试版发布，称这是 VoxCPM2 希望促成的产品形态。Dubedo…",
-          "aihot": "https://aihot.news/items/cmu4zbdcm04ziroqbn8f5qsoy",
-          "original": "https://x.com/OpenBMB/status/2100426127361855998",
-          "score": 52
-        },
-        {
-          "num": 41,
-          "section": "products",
-          "title": "OpenSpec 发布轻量可配置的 AI 规格框架，支持 Claude Code 等编码智能体",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月17日 09:43（收录）",
-          "summary": "OpenSpec 发布了一个轻量、可配置的软件规格创建与管理框架，用于让团队和编码智能体在开发过程中保持对齐。",
-          "aihot": "https://aihot.news/items/cmu4v8rlb09gkrokcdpk6fyfz",
-          "original": "https://openspec.dev/",
-          "score": 60
-        },
-        {
-          "num": 42,
-          "section": "products",
-          "title": "高德地图 2026 发布：导航 Live 实时感知环境，上线避雷指南",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 09:24（收录）",
-          "summary": "高德地图 2026 发布，核心升级导航 Live 将自然对话、多模态感知和空间理解融入驾车、步行和游览场景，可识别施工…",
-          "aihot": "https://aihot.news/items/cmu4uk44o08u4rokcc4wmvxu8",
-          "original": "https://www.ithome.com/1/003/383.htm",
-          "score": 65
-        },
-        {
-          "num": 44,
-          "section": "products",
-          "title": "零跑发布自研世界模型智驾 4.0，2026 年冲刺智驾第一梯队",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 09:24（收录）",
-          "summary": "零跑在 9 月 16 日技术发布会上公布自研世界模型智能辅助驾驶，称达到全行业第一梯队水平，将覆盖 A 到 D 全系车…",
-          "aihot": "https://aihot.news/items/cmu4uk44o08u7rokc1ohy1xdk",
-          "original": "https://www.ithome.com/1/003/377.htm",
-          "score": 52
-        },
-        {
-          "num": 51,
-          "section": "products",
-          "title": "NVIDIA 推出 CUDA Rust，支持用 Rust 原生编写 GPU kernel",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 08:18（收录）",
-          "summary": "NVIDIA 宣布押注 Rust 原生 GPU 编程，将 CUDA Rust 发展至 2027 年及以后，提供 cud…",
-          "aihot": "https://aihot.news/items/cmu4s7jkr064vrokcbjce8avd",
-          "original": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels",
-          "score": 63
-        },
-        {
-          "num": 52,
-          "section": "products",
-          "title": "Shopify 上线 ChatGPT Ads，成为 OpenAI 首个商业合作伙伴",
-          "source": "X：Greg Brockman (@gdb)",
-          "time": "9月17日 08:07（收录）",
-          "summary": "ChatGPT Ads for Shopify 已上线，Shopify 成为 OpenAI 的首个商业合作伙伴。Ope…",
-          "aihot": "https://aihot.news/items/cmu4rta8405morokco1e8d4km",
-          "original": "https://x.com/gdb/status/2100369354319884703",
-          "score": 62
-        },
-        {
-          "num": 69,
-          "section": "products",
-          "title": "Databricks 向全部约 3500 名工程师 rolled out Astra 并分享使用经验",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 05:12（收录）",
-          "summary": "Patrick Wendell 宣布 Databricks 将 Astra 推广至全公司约 3500 名工程师。要点包…",
-          "aihot": "https://aihot.news/items/cmu4ljx870v9ero4wdoq4cuot",
-          "original": "https://x.com/rohanpaul_ai/status/2100329314315333737",
-          "score": 63
-        },
-        {
-          "num": 73,
-          "section": "products",
-          "title": "CHOP 基于 NVIDIA MONAI 构建开源心脏建模平台，儿童心脏3D模型从四小时缩至秒级",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月17日 04:42（收录）",
-          "summary": "费城儿童医院（CHOP）基于 NVIDIA MONAI 构建了开源心脏建模平台，可将 CT、MRI 和超声图像转为儿童…",
-          "aihot": "https://aihot.news/items/cmu4khclm0u6xro4wnf091hrc",
-          "original": "https://x.com/kimmonismus/status/2100320521246413135",
-          "score": 51
-        },
-        {
-          "num": 74,
-          "section": "products",
-          "title": "Rene 发布：像朋友一样发短信的多用户 iMessage 智能体",
-          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
-          "time": "9月17日 04:12（收录）",
-          "summary": "@tlxue 团队发布 Rene，一款多用户优先的 iMessage 智能体，像朋友一样通过短信交互，无需下载应用或注…",
-          "aihot": "https://aihot.news/items/cmu4jerhd0t2qro4wi3uxwjuw",
-          "original": "https://x.com/omarsar0/status/2100310370309361993",
-          "score": 52
-        },
-        {
-          "num": 75,
-          "section": "products",
-          "title": "Perplexity 发布 Search SDK cookbook 支持编码智能体并行检索官方文档",
-          "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-          "time": "9月17日 03:43（收录）",
-          "summary": "Perplexity CEO Aravind Srinivas 宣布 pplx-search-sdk 上线新 cook…",
-          "aihot": "https://aihot.news/items/cmu4id8w70s1ero4wqwjwg73d",
-          "original": "https://x.com/AravSrinivas/status/2100303192219385906",
-          "score": 51
-        },
-        {
-          "num": 78,
-          "section": "products",
-          "title": "Grok Build 推出记忆功能，可跨会话保留项目约定与决策",
-          "source": "xAI：News（网页）",
-          "time": "9月17日 03:18（收录）",
-          "summary": "xAI 宣布 Grok Build 上线记忆功能，会在每轮对话结束后于后台记录项目约定、决策及事实，供后续会话读取。记…",
-          "aihot": "https://aihot.news/items/cmu4hic050r8kro4wzayakuhu",
-          "original": "https://x.ai/news/grok-build-memory",
-          "score": 61
-        },
-        {
-          "num": 80,
-          "section": "products",
-          "title": "Rene 发布：可直接发短信的 iMessage 智能体",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 03:12（收录）",
-          "summary": "@tlxue 团队发布 Rene，一个 multiplayer-first 的 iMessage 智能体，像朋友一样发…",
-          "aihot": "https://aihot.news/items/cmu4h9v7h0qujro4w7voz12cm",
-          "original": "https://x.com/rohanpaul_ai/status/2100300032880836754",
-          "score": 51
-        },
-        {
-          "num": 84,
-          "section": "products",
-          "title": "Videoclaw 推出 Mac 应用公开测试版，可通过对话生成产品演示和广告视频",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "time": "9月17日 02:29（收录）",
-          "summary": "Videoclaw 推出 Mac 应用公开测试版，用户通过聊天让 AI 智能体制作产品演示和广告视频。应用可连接现有…",
-          "aihot": "https://aihot.news/items/cmu4fq34g0pasro4wpm6h7bqn",
-          "original": "https://x.com/testingcatalog/status/2100283879785423044",
-          "score": 53
-        },
-        {
-          "num": 88,
-          "section": "products",
-          "title": "Google 推出 Google Home MCP 服务器早期访问，AI 智能体可控制智能家居设备",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月17日 01:49（收录）",
-          "summary": "Google 于周二推出 Google Home 生态的 Model Context Protocol（MCP）服务器…",
-          "aihot": "https://aihot.news/items/cmu4eaj160k99ro4wk362ubco",
-          "original": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices",
-          "score": 55
-        },
-        {
-          "num": 89,
-          "section": "products",
-          "title": "Google Home 推出 MCP 集成，允许 Claude 等第三方 AI 智能体控制智能家居",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月17日 01:49（收录）",
-          "summary": "Google 推出 Google Home MCP 集成，让支持 MCP 的第三方 AI 智能体（包括 Google…",
-          "aihot": "https://aihot.news/items/cmu4eagmo0k90ro4wlm05de9o",
-          "original": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
-          "score": 66
-        },
-        {
-          "num": 90,
+          "num": 43,
           "section": "products",
           "title": "Anthropic 将 Claude Cowork 与聊天合并为统一 Claude，并推出 Docs、Slides",
           "source": "Hacker News：AI 热帖",
@@ -620,51 +383,7 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 91,
-          "section": "products",
-          "title": "Epoch AI 扩充 AI Data Centers 探索器，覆盖约 44% 全球 AI 算力",
-          "source": "Epoch AI：研究、数据与评测",
-          "time": "9月17日 01:38（收录）",
-          "summary": "Epoch AI 升级其 AI Data Centers 探索器，覆盖从 13 座数据中心（约 15% 全球 AI 算…",
-          "aihot": "https://aihot.news/items/cmu4dwsce0jw7ro4wnouujffe",
-          "original": "https://epoch.ai/latest/scaling-ai-data-centers-research",
-          "score": 53
-        },
-        {
-          "num": 92,
-          "section": "products",
-          "title": "Baseten 发布 Hosted Tools 推出 Grounded Inference 网络搜索工具",
-          "source": "Baseten 工程博客（网页）",
-          "time": "9月17日 01:37（收录）",
-          "summary": "Baseten 发布 Baseten Hosted Tools，首个工具 Baseten Grounded Infer…",
-          "aihot": "https://aihot.news/items/cmu4dvn3h0jt6ro4wmnkd1vu4",
-          "original": "https://www.baseten.co/blog/introducing-baseten-hosted-tools",
-          "score": 54
-        },
-        {
-          "num": 95,
-          "section": "products",
-          "title": "阶跃星辰与 ACE Studio 发布 StepAudio 3 Music 音乐生成基础模型",
-          "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
-          "time": "9月17日 01:09（收录）",
-          "summary": "阶跃星辰（StepFun）与 ACE Studio 发布 StepAudio 3 Music，这是阶跃星辰首个音乐生成…",
-          "aihot": "https://aihot.news/items/cmu4cvs1t0ipkro4w42el3i9l",
-          "original": "https://x.com/StepFun_ai/status/2100269188594225232",
-          "score": 60
-        },
-        {
-          "num": 97,
-          "section": "products",
-          "title": "OpenRouter 推出 openrouter：shell，任意模型可在托管 Linux 容器中运行代码",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "time": "9月17日 01:07（收录）",
-          "summary": "OpenRouter 推出 openrouter：shell 功能，平台上任意模型都可在托管的 Linux 容器中运行…",
-          "aihot": "https://aihot.news/items/cmu4ct5cb0imrro4w8kswk4m7",
-          "original": "https://x.com/OpenRouter/status/2100269250766401683",
-          "score": 64
-        },
-        {
-          "num": 98,
+          "num": 46,
           "section": "products",
           "title": "Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能",
           "source": "Claude：Blog（网页）",
@@ -675,7 +394,18 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 100,
+          "num": 9,
+          "section": "products",
+          "title": "OpenAI 发布模型错位披露框架，含3条审查路径和6份RL训练事故报告",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月17日 15:49（收录）",
+          "summary": "OpenAI 发布一套用于追踪、调查和公开披露自家模型错位行为的新框架，设定披露标准和时限，即使行为未被完全解释或修复…",
+          "aihot": "https://aihot.news/items/cmu58anil0324ro8tawwelc4v",
+          "original": "https://www.marktechpost.com/2026/09/17/openai-releases-a-model-misalignment-disclosure-framework-with-3-review-tracks-and-6-incident-reports-from-rl-training",
+          "score": 74
+        },
+        {
+          "num": 47,
           "section": "products",
           "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF",
           "source": "X：Boris Cherny (@bcherny)",
@@ -686,7 +416,51 @@ const DATA = {
           "score": 69
         },
         {
-          "num": 102,
+          "num": 42,
+          "section": "products",
+          "title": "Google Home 推出 MCP 集成，允许 Claude 等第三方 AI 智能体控制智能家居",
+          "source": "The Verge：AI（RSS）",
+          "time": "9月17日 01:49（收录）",
+          "summary": "Google 推出 Google Home MCP 集成，让支持 MCP 的第三方 AI 智能体（包括 Google…",
+          "aihot": "https://aihot.news/items/cmu4eagmo0k90ro4wlm05de9o",
+          "original": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+          "score": 66
+        },
+        {
+          "num": 23,
+          "section": "products",
+          "title": "高德地图 2026 发布：导航 Live 实时感知环境，上线避雷指南",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 09:24（收录）",
+          "summary": "高德地图 2026 发布，核心升级导航 Live 将自然对话、多模态感知和空间理解融入驾车、步行和游览场景，可识别施工…",
+          "aihot": "https://aihot.news/items/cmu4uk44o08u4rokcc4wmvxu8",
+          "original": "https://www.ithome.com/1/003/383.htm",
+          "score": 65
+        },
+        {
+          "num": 3,
+          "section": "products",
+          "title": "TypeSafe 开源浏览器智能体 Jev Ultrafast，7.1 秒完成 Google Flights 搜索",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月17日 17:43（收录）",
+          "summary": "TypeSafe 发布开源浏览器智能体 Jev Ultrafast，采用动态、带索引的动作空间，每次决策只发一次网络请…",
+          "aihot": "https://aihot.news/items/cmu5ce77103yero7nv5wgcznx",
+          "original": "https://github.com/browser-use/jev-ultrafast",
+          "score": 64
+        },
+        {
+          "num": 45,
+          "section": "products",
+          "title": "OpenRouter 推出 openrouter：shell，任意模型可在托管 Linux 容器中运行代码",
+          "source": "X：OpenRouter (@OpenRouter)",
+          "time": "9月17日 01:07（收录）",
+          "summary": "OpenRouter 推出 openrouter：shell 功能，平台上任意模型都可在托管的 Linux 容器中运行…",
+          "aihot": "https://aihot.news/items/cmu4ct5cb0imrro4w8kswk4m7",
+          "original": "https://x.com/OpenRouter/status/2100269250766401683",
+          "score": 64
+        },
+        {
+          "num": 48,
           "section": "products",
           "title": "OpenAI 测试 Sponsored Agents 并扩展 ChatGPT Ads 平台",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -695,6 +469,17 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmu4b230v0gklro4wcrm2h1dc",
           "original": "https://openai.com/index/reimagining-advertising-with-ai",
           "score": 64
+        },
+        {
+          "num": 28,
+          "section": "products",
+          "title": "NVIDIA 推出 CUDA Rust，支持用 Rust 原生编写 GPU kernel",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月17日 08:18（收录）",
+          "summary": "NVIDIA 宣布押注 Rust 原生 GPU 编程，将 CUDA Rust 发展至 2027 年及以后，提供 cud…",
+          "aihot": "https://aihot.news/items/cmu4s7jkr064vrokcbjce8avd",
+          "original": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels",
+          "score": 63
         }
       ]
     },
@@ -702,21 +487,10 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 17,
+      "count": 10,
       "cards": [
         {
           "num": 4,
-          "section": "industry",
-          "title": "前 DeepMind 研究员创立的 Emulate 拟融资 7 亿美元，估值或达 37 亿美元",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 18:24（收录）",
-          "summary": "据《金融时报》报道，前谷歌 DeepMind 研究员创立的英国初创公司 Emulate 正与潜在投资者深入谈判，计划种…",
-          "aihot": "https://aihot.news/items/cmu5dun6b05owro7n71lltudq",
-          "original": "https://www.ithome.com/1/003/785.htm",
-          "score": 56
-        },
-        {
-          "num": 8,
           "section": "industry",
           "title": "欧盟委员会通过《欧盟儿童法案》提案：禁止社交媒体向 13 岁以下儿童开放，平台需自证设计安全",
           "source": "IT之家（RSS）",
@@ -727,106 +501,7 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 10,
-          "section": "industry",
-          "title": "消息称 Manus 即将完成 5 亿美元融资，估值翻倍至 40 亿美元",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 17:24（收录）",
-          "summary": "据彭博社报道，AI 智能体初创企业 Manus 即将完成 5 亿美元融资，估值翻番至 40 亿美元，将成为国内该赛道估…",
-          "aihot": "https://aihot.news/items/cmu5bpgmj074uro8t7yaqoa1z",
-          "original": "https://www.ithome.com/1/003/734.htm",
-          "score": 59
-        },
-        {
-          "num": 12,
-          "section": "industry",
-          "title": "智谱 Z.ai 完成约 $5B 融资，Coding Plan 销售重启后增长超 15 倍",
-          "source": "X：X.PIN (@thexpin)",
-          "time": "9月17日 16:57（收录）",
-          "summary": "智谱（Z.ai）表示，Coding Plan 销售 7 月重启后增长超过 15 倍，两周内编码用户新增超过 100 万…",
-          "aihot": "https://aihot.news/items/cmu5aq9b605tgro8tpqghnlf4",
-          "original": "https://x.com/thexpin/status/2100506292670660834",
-          "score": 62
-        },
-        {
-          "num": 17,
-          "section": "industry",
-          "title": "马斯克住进孟菲斯 Airstream 房车，亲自监督 xAI 数据中心建设",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 15:24（收录）",
-          "summary": "据《财富》报道，马斯克住进停在孟菲斯的 Airstream 房车，以亲自监督 xAI 孟菲斯数据中心建设。SpaceX…",
-          "aihot": "https://aihot.news/items/cmu57f4kd045kro4ormmbx1ez",
-          "original": "https://www.ithome.com/1/003/593.htm",
-          "score": 55
-        },
-        {
-          "num": 29,
-          "section": "industry",
-          "title": "华为发布业界首个采用 NPO 技术的昇腾 960 超节点，openEuler 成中国服务器操作系统份额第一",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 12:24（收录）",
-          "summary": "华为全联接大会 2026 上，汪涛宣布基于昇腾 960 芯片和 Hi-ONE 打造业界首个采用 NPO 技术的超节点…",
-          "aihot": "https://aihot.news/items/cmu50zmgd06xsroqbn7ewpgz2",
-          "original": "https://www.ithome.com/1/003/505.htm",
-          "score": 57
-        },
-        {
-          "num": 34,
-          "section": "industry",
-          "title": "Fountain 0 发布 AI 长片 ODYSSEY： The Fall，全片由 Kling 3.0 生成",
-          "source": "X：可灵 Kling AI (@Kling_ai)",
-          "time": "9月17日 11:31（收录）",
-          "summary": "Kling AI 官方宣布，Fountain 0 的新长片 ODYSSEUS： The Fall 已完整上线，全片每个…",
-          "aihot": "https://aihot.news/items/cmu4z3rpe04u4roqbtjim24vw",
-          "original": "https://x.com/Kling_ai/status/2100424655840387292",
-          "score": 57
-        },
-        {
-          "num": 35,
-          "section": "industry",
-          "title": "国新办发布会：今年前 8 个月上线微短剧 43 万部，AI 剧占比超九成",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 11:24（收录）",
-          "summary": "国新办发布会披露，全国微短剧用户超 8 亿，2025 年市场规模突破千亿元，今年前 8 个月上线微短剧 43 万部，是…",
-          "aihot": "https://aihot.news/items/cmu4yufyl04furoqbeh4sjmnl",
-          "original": "https://www.ithome.com/1/003/424.htm",
-          "score": 64
-        },
-        {
-          "num": 36,
-          "section": "industry",
-          "title": "华为轮值董事长汪涛：AI 战略核心是算力，坚持硬件变现",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 11:24（收录）",
-          "summary": "据财联社报道，华为副董事长、轮值董事长汪涛 9 月 17 日在上海华为全联接大会上介绍智能时代部署，称华为 AI 战略…",
-          "aihot": "https://aihot.news/items/cmu4yufyl04fsroqbu8szwshc",
-          "original": "https://www.ithome.com/1/003/426.htm",
-          "score": 63
-        },
-        {
-          "num": 37,
-          "section": "industry",
-          "title": "华为昇腾 960 芯片提前发布，960DT 定档 2027 年 Q1 实现性能翻番",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 11:24（收录）",
-          "summary": "华为轮值董事长汪涛在华为全联接大会 2026 上表示，昇腾 960 芯片提前就绪，实现性能翻番。昇腾 960DT 将于…",
-          "aihot": "https://aihot.news/items/cmu4yufym04fyroqbhft32rz4",
-          "original": "https://www.ithome.com/1/003/418.htm",
-          "score": 56
-        },
-        {
-          "num": 39,
-          "section": "industry",
-          "title": "消息称 Anthropic 签署首份澳大利亚数据中心租赁协议，规划容量 2.16GW",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 10:24（收录）",
-          "summary": "据路透社 9 月 16 日报道，Anthropic 签署其首份澳大利亚数据中心租赁协议，涉及一座规划容量 2.16GW…",
-          "aihot": "https://aihot.news/items/cmu4wp9y80b5crokcjdi83l6o",
-          "original": "https://www.ithome.com/1/003/393.htm",
-          "score": 58
-        },
-        {
-          "num": 46,
+          "num": 25,
           "section": "industry",
           "title": "国安部披露 OpenAI 相关 AI 智能体劫持德国程序员维基网站 DseWiki 并发布安全提醒",
           "source": "IT之家（RSS）",
@@ -837,7 +512,29 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 48,
+          "num": 19,
+          "section": "industry",
+          "title": "国新办发布会：今年前 8 个月上线微短剧 43 万部，AI 剧占比超九成",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 11:24（收录）",
+          "summary": "国新办发布会披露，全国微短剧用户超 8 亿，2025 年市场规模突破千亿元，今年前 8 个月上线微短剧 43 万部，是…",
+          "aihot": "https://aihot.news/items/cmu4yufyl04furoqbeh4sjmnl",
+          "original": "https://www.ithome.com/1/003/424.htm",
+          "score": 64
+        },
+        {
+          "num": 20,
+          "section": "industry",
+          "title": "华为轮值董事长汪涛：AI 战略核心是算力，坚持硬件变现",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 11:24（收录）",
+          "summary": "据财联社报道，华为副董事长、轮值董事长汪涛 9 月 17 日在上海华为全联接大会上介绍智能时代部署，称华为 AI 战略…",
+          "aihot": "https://aihot.news/items/cmu4yufyl04fsroqbu8szwshc",
+          "original": "https://www.ithome.com/1/003/426.htm",
+          "score": 63
+        },
+        {
+          "num": 27,
           "section": "industry",
           "title": "法官要求马斯克旗下 X 和 SpaceXAI 披露与苹果撤诉相关的协议",
           "source": "IT之家（RSS）",
@@ -848,48 +545,59 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 49,
+          "num": 7,
           "section": "industry",
-          "title": "比亚迪董秘李黔称璇玑 A3 已开启规模化量产，未来将继续投入半导体领域",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 08:24（收录）",
-          "summary": "据界面新闻报道，比亚迪董秘李黔 9 月 16 日在股东交流会表示，中国首款车规级 4nm 智驾芯片璇玑 A3 已开启规…",
-          "aihot": "https://aihot.news/items/cmu4seygf06dqrokcbi6m9d0p",
-          "original": "https://www.ithome.com/1/003/363.htm",
-          "score": 53
+          "title": "智谱 Z.ai 完成约 $5B 融资，Coding Plan 销售重启后增长超 15 倍",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "9月17日 16:57（收录）",
+          "summary": "智谱（Z.ai）表示，Coding Plan 销售 7 月重启后增长超过 15 倍，两周内编码用户新增超过 100 万…",
+          "aihot": "https://aihot.news/items/cmu5aq9b605tgro8tpqghnlf4",
+          "original": "https://x.com/thexpin/status/2100506292670660834",
+          "score": 62
         },
         {
-          "num": 63,
+          "num": 6,
           "section": "industry",
-          "title": "Apple 据报道研发搭载 M8 Ultra 芯片的企业级 AI 服务器，预计 2029 年推出",
-          "source": "Ars Technica：AI（RSS）",
-          "time": "9月17日 06:15（收录）",
-          "summary": "The Information 报道称，Apple 正研发搭载两或四颗未来 M8 Ultra 芯片的企业级 AI 服务…",
-          "aihot": "https://aihot.news/items/cmu4nti8v07dirodckcktrlpq",
-          "original": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai",
+          "title": "消息称 Manus 即将完成 5 亿美元融资，估值翻倍至 40 亿美元",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 17:24（收录）",
+          "summary": "据彭博社报道，AI 智能体初创企业 Manus 即将完成 5 亿美元融资，估值翻番至 40 亿美元，将成为国内该赛道估…",
+          "aihot": "https://aihot.news/items/cmu5bpgmj074uro8t7yaqoa1z",
+          "original": "https://www.ithome.com/1/003/734.htm",
+          "score": 59
+        },
+        {
+          "num": 22,
+          "section": "industry",
+          "title": "消息称 Anthropic 签署首份澳大利亚数据中心租赁协议，规划容量 2.16GW",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 10:24（收录）",
+          "summary": "据路透社 9 月 16 日报道，Anthropic 签署其首份澳大利亚数据中心租赁协议，涉及一座规划容量 2.16GW…",
+          "aihot": "https://aihot.news/items/cmu4wp9y80b5crokcjdi83l6o",
+          "original": "https://www.ithome.com/1/003/393.htm",
+          "score": 58
+        },
+        {
+          "num": 15,
+          "section": "industry",
+          "title": "华为发布业界首个采用 NPO 技术的昇腾 960 超节点，openEuler 成中国服务器操作系统份额第一",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 12:24（收录）",
+          "summary": "华为全联接大会 2026 上，汪涛宣布基于昇腾 960 芯片和 Hi-ONE 打造业界首个采用 NPO 技术的超节点…",
+          "aihot": "https://aihot.news/items/cmu50zmgd06xsroqbn7ewpgz2",
+          "original": "https://www.ithome.com/1/003/505.htm",
           "score": 57
         },
         {
-          "num": 82,
+          "num": 18,
           "section": "industry",
-          "title": "AIUC 宣布 4000 万美元 A 轮融资，推出 AIUC-1 智能体标准与保险体系",
-          "source": "Latent Space（RSS）",
-          "time": "9月17日 02:58（收录）",
-          "summary": "AI 保险承销公司 AIUC 宣布完成 4000 万美元 A 轮融资，由 Ribbit Capital 和 First…",
-          "aihot": "https://aihot.news/items/cmu4gs1rh0qavro4wnja04czf",
-          "original": "https://www.latent.space/p/aiuc",
-          "score": 56
-        },
-        {
-          "num": 85,
-          "section": "industry",
-          "title": "Apple 据报道正基于自研 M8 Ultra 芯片开发企业级 AI 服务器",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月17日 02:20（收录）",
-          "summary": "据 The Information 报道，Apple 正开发面向 AI 开发者、企业和政府的企业级服务器，将推出双芯片…",
-          "aihot": "https://aihot.news/items/cmu4fen9y0p0nro4wnar8kvu0",
-          "original": "https://the-decoder.com/apple-is-reportedly-building-an-enterprise-ai-server-with-its-own-m8-ultra-chips",
-          "score": 51
+          "title": "Fountain 0 发布 AI 长片 ODYSSEY： The Fall，全片由 Kling 3.0 生成",
+          "source": "X：可灵 Kling AI (@Kling_ai)",
+          "time": "9月17日 11:31（收录）",
+          "summary": "Kling AI 官方宣布，Fountain 0 的新长片 ODYSSEUS： The Fall 已完整上线，全片每个…",
+          "aihot": "https://aihot.news/items/cmu4z3rpe04u4roqbtjim24vw",
+          "original": "https://x.com/Kling_ai/status/2100424655840387292",
+          "score": 57
         }
       ]
     },
@@ -900,7 +608,7 @@ const DATA = {
       "count": 10,
       "cards": [
         {
-          "num": 2,
+          "num": 1,
           "section": "papers",
           "title": "GLM 官方复盘：Infra Agent 如何在 10 万级国产加速器集群上两周建成 GLM-5.3-Flash 推理系统",
           "source": "Hacker News：AI 热帖",
@@ -911,84 +619,7 @@ const DATA = {
           "score": 74
         },
         {
-          "num": 20,
-          "section": "papers",
-          "title": "UC Berkeley HarnessTax 研究：编码代理的 harness 选择对成功率影响小但成本差异可达 5 倍",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 15:18（收录）",
-          "summary": "UC Berkeley 团队在 SWE-bench Lite 和 Terminal-Bench 2.0 上评测 21…",
-          "aihot": "https://aihot.news/items/cmu577udw03x9ro4ow4zi8ecr",
-          "original": "https://harnesstax.github.io/",
-          "score": 64
-        },
-        {
-          "num": 22,
-          "section": "papers",
-          "title": "IDC 报告：2026 年第二季度全球智能眼镜出货 354.7 万台增长 35.3%，中国市场首现负增长",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 14:24（收录）",
-          "summary": "IDC 发布《全球智能眼镜市场季度跟踪报告》，2026 年第二季度全球智能眼镜出货量 354.7 万台，同比增长 35…",
-          "aihot": "https://aihot.news/items/cmu559yir0e9rroqb7jhednr3",
-          "original": "https://www.ithome.com/1/003/561.htm",
-          "score": 56
-        },
-        {
-          "num": 23,
-          "section": "papers",
-          "title": "Mozilla 91 页报告：开放权重模型落后前沿约 4 个月，占 OpenRouter 约 20% 用量但仅约 4% 模型层收入",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 14:12（收录）",
-          "summary": "Mozilla 发布 91 页报告称开放权重 AI 目前仅落后前沿约 4 个月。OpenRouter 上 8 月 to…",
-          "aihot": "https://aihot.news/items/cmu54udl00dojroqb161plumx",
-          "original": "https://x.com/rohanpaul_ai/status/2100460490342199651",
-          "score": 64
-        },
-        {
-          "num": 30,
-          "section": "papers",
-          "title": "Agora 论文提出以 Git 作为共享记忆的集体 AutoResearch 系统",
-          "source": "HuggingFace Daily Papers（社区热门论文）",
-          "time": "9月17日 12:10（收录）",
-          "summary": "论文提出 Agora，用 Git 存储的只追加有向无环图作为智能体共享记忆，每条结果、洞察或验证都是可检出复现的 co…",
-          "aihot": "https://aihot.news/items/cmu50h7ju068eroqb0dcsyc2u",
-          "original": "https://arxiv.org/abs/2609.18094",
-          "score": 55
-        },
-        {
-          "num": 31,
-          "section": "papers",
-          "title": "HarnessTax 研究：harness 对 coding agent 的影响有多大",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月17日 11:43（收录）",
-          "summary": "UC Berkeley 团队发布 HarnessTax 研究，评估 21 个模型-harness 组合（7 个模型、3…",
-          "aihot": "https://aihot.news/items/cmu4zj4yg056iroqbgn3vjbie",
-          "original": "https://harnesstax.github.io/",
-          "score": 65
-        },
-        {
-          "num": 53,
-          "section": "papers",
-          "title": "Intel 论文提出 BITCOS 布局，三元大语言模型突破 1.58 比特存储障碍",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 07:48（收录）",
-          "summary": "Intel 研究人员提出 BITCOS，一种由存在位图加压缩符号向量组成的三元权重布局，按零密度 z 计每权重仅需 2…",
-          "aihot": "https://aihot.news/items/cmu4r4xwz04v6rokc5u15o7nr",
-          "original": "https://arxiv.org/abs/2609.16338",
-          "score": 50
-        },
-        {
-          "num": 60,
-          "section": "papers",
-          "title": "BITCOS 布局突破三值 LLM 的 1.58-bit 存储壁垒",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月17日 06:43（收录）",
-          "summary": "论文提出 BITCOS，一种由存在位图加压缩符号向量组成的三值 LLM 权重布局，按零密度 z 计成本为 2−z bi…",
-          "aihot": "https://aihot.news/items/cmu4ot96408gmrodc5ejms3j1",
-          "original": "https://arxiv.org/abs/2609.16338",
-          "score": 51
-        },
-        {
-          "num": 62,
+          "num": 34,
           "section": "papers",
           "title": "Stanford 团队发布 Paper2Agent，将研究论文转化为可复现结果的 MCP 服务器",
           "source": "MarkTechPost（RSS）",
@@ -999,7 +630,40 @@ const DATA = {
           "score": 67
         },
         {
-          "num": 72,
+          "num": 17,
+          "section": "papers",
+          "title": "HarnessTax 研究：harness 对 coding agent 的影响有多大",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月17日 11:43（收录）",
+          "summary": "UC Berkeley 团队发布 HarnessTax 研究，评估 21 个模型-harness 组合（7 个模型、3…",
+          "aihot": "https://aihot.news/items/cmu4zj4yg056iroqbgn3vjbie",
+          "original": "https://harnesstax.github.io/",
+          "score": 65
+        },
+        {
+          "num": 11,
+          "section": "papers",
+          "title": "UC Berkeley HarnessTax 研究：编码代理的 harness 选择对成功率影响小但成本差异可达 5 倍",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月17日 15:18（收录）",
+          "summary": "UC Berkeley 团队在 SWE-bench Lite 和 Terminal-Bench 2.0 上评测 21…",
+          "aihot": "https://aihot.news/items/cmu577udw03x9ro4ow4zi8ecr",
+          "original": "https://harnesstax.github.io/",
+          "score": 64
+        },
+        {
+          "num": 14,
+          "section": "papers",
+          "title": "Mozilla 91 页报告：开放权重模型落后前沿约 4 个月，占 OpenRouter 约 20% 用量但仅约 4% 模型层收入",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月17日 14:12（收录）",
+          "summary": "Mozilla 发布 91 页报告称开放权重 AI 目前仅落后前沿约 4 个月。OpenRouter 上 8 月 to…",
+          "aihot": "https://aihot.news/items/cmu54udl00dojroqb161plumx",
+          "original": "https://x.com/rohanpaul_ai/status/2100460490342199651",
+          "score": 64
+        },
+        {
+          "num": 38,
           "section": "papers",
           "title": "耶鲁等机构论文：物理基准评测质量差，GPT-5.6-Sol 的 HLE-Physics 修正后从 47.3% 升至 78.7%",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -1008,6 +672,50 @@ const DATA = {
           "aihot": "https://aihot.news/items/cmu4khcm00u6yro4w5f2jr6w2",
           "original": "https://x.com/rohanpaul_ai/status/2100320168597753947",
           "score": 58
+        },
+        {
+          "num": 13,
+          "section": "papers",
+          "title": "IDC 报告：2026 年第二季度全球智能眼镜出货 354.7 万台增长 35.3%，中国市场首现负增长",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 14:24（收录）",
+          "summary": "IDC 发布《全球智能眼镜市场季度跟踪报告》，2026 年第二季度全球智能眼镜出货量 354.7 万台，同比增长 35…",
+          "aihot": "https://aihot.news/items/cmu559yir0e9rroqb7jhednr3",
+          "original": "https://www.ithome.com/1/003/561.htm",
+          "score": 56
+        },
+        {
+          "num": 16,
+          "section": "papers",
+          "title": "Agora 论文提出以 Git 作为共享记忆的集体 AutoResearch 系统",
+          "source": "HuggingFace Daily Papers（社区热门论文）",
+          "time": "9月17日 12:10（收录）",
+          "summary": "论文提出 Agora，用 Git 存储的只追加有向无环图作为智能体共享记忆，每条结果、洞察或验证都是可检出复现的 co…",
+          "aihot": "https://aihot.news/items/cmu50h7ju068eroqb0dcsyc2u",
+          "original": "https://arxiv.org/abs/2609.18094",
+          "score": 55
+        },
+        {
+          "num": 32,
+          "section": "papers",
+          "title": "BITCOS 布局突破三值 LLM 的 1.58-bit 存储壁垒",
+          "source": "Hacker News：AI 热帖",
+          "time": "9月17日 06:43（收录）",
+          "summary": "论文提出 BITCOS，一种由存在位图加压缩符号向量组成的三值 LLM 权重布局，按零密度 z 计成本为 2−z bi…",
+          "aihot": "https://aihot.news/items/cmu4ot96408gmrodc5ejms3j1",
+          "original": "https://arxiv.org/abs/2609.16338",
+          "score": 51
+        },
+        {
+          "num": 29,
+          "section": "papers",
+          "title": "Intel 论文提出 BITCOS 布局，三元大语言模型突破 1.58 比特存储障碍",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月17日 07:48（收录）",
+          "summary": "Intel 研究人员提出 BITCOS，一种由存在位图加压缩符号向量组成的三元权重布局，按零密度 z 计每权重仅需 2…",
+          "aihot": "https://aihot.news/items/cmu4r4xwz04v6rokc5u15o7nr",
+          "original": "https://arxiv.org/abs/2609.16338",
+          "score": 50
         }
       ]
     },
@@ -1015,164 +723,10 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 38,
+      "count": 10,
       "cards": [
         {
-          "num": 1,
-          "section": "tips",
-          "title": "OpenRouter 周消耗 token 自 2025 年初暴涨 25000%，但 token 指标已被严重夸大",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月17日 18:50（收录）",
-          "summary": "OpenRouter 平台周 token 消耗自 2025 年 1 月的 0.5 万亿升至 126.2 万亿，涨幅超…",
-          "aihot": "https://aihot.news/items/cmu5es5ac06m4ro7nbvi0owbu",
-          "original": "https://the-decoder.com/openrouters-staggering-token-chart-is-the-ai-bubble-debate-in-a-single-image",
-          "score": 55
-        },
-        {
-          "num": 6,
-          "section": "tips",
-          "title": "Bloomberg 开发者用 OpenAI GPT-6 Astra 十小时破解悬置83年的 Enigma 密电",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月17日 17:50（收录）",
-          "summary": "Bloomberg 产品开发教练 Carter Leffen 自述用 OpenAI 的 GPT-6 Astra（Ext…",
-          "aihot": "https://aihot.news/items/cmu5cmygr047lro7nbedfw2ez",
-          "original": "https://the-decoder.com/openais-gpt-6-astra-decrypts-a-nazi-radio-message-in-ten-hours-that-went-unsolved-for-83-years",
-          "score": 54
-        },
-        {
-          "num": 11,
-          "section": "tips",
-          "title": "IDC：2026 年第二季度全球智能眼镜出货 354.7 万台增长 35.3%，音频、拍摄类成增长主力",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 17:24（收录）",
-          "summary": "IDC 报告显示，2026 年第二季度全球智能眼镜出货量达 354.7 万台，同比增长 35.3%，其中音频及音频拍摄…",
-          "aihot": "https://aihot.news/items/cmu5bpgmk0752ro8ti810znds",
-          "original": "https://www.ithome.com/1/003/685.htm",
-          "score": 52
-        },
-        {
-          "num": 13,
-          "section": "tips",
-          "title": "广电总局：微短剧用户超 8 亿，今年前 8 个月上线 43 万部且 AI 剧占比超九成",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 16:24（收录）",
-          "summary": "广电总局在国新办发布会上介绍，全国微短剧用户已超 8 亿，2025 年市场规模突破千亿元；今年前 8 个月上线微短剧…",
-          "aihot": "https://aihot.news/items/cmu59kb5304loro8t0rve83rd",
-          "original": "https://www.ithome.com/1/003/675.htm",
-          "score": 66
-        },
-        {
-          "num": 14,
-          "section": "tips",
-          "title": "ING 研究：印度外包行业几乎未显现被 AI 挤占市场的迹象",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 16:24（收录）",
-          "summary": "ING Bank NV 经济学家 Deepali Bhargava 发布报告称，印度外包行业几乎没有显现被 AI 挤占…",
-          "aihot": "https://aihot.news/items/cmu59kb5404lyro8tgrf5im0l",
-          "original": "https://www.ithome.com/1/003/610.htm",
-          "score": 53
-        },
-        {
-          "num": 16,
-          "section": "tips",
-          "title": "唐杰谈 GLM-5.3 驱动 Infra Agent 两周内优化 GLM-5.3-Flash 推理系统",
-          "source": "X：唐杰（@jietang）",
-          "time": "9月17日 15:28（收录）",
-          "summary": "唐杰撰文称，GLM-5.3 驱动的 Infra Agent 用两周时间让 GLM-5.3-Flash 在国产加速器上从…",
-          "aihot": "https://aihot.news/items/cmu57k7qf04e0ro4oy95nvavx",
-          "original": "https://x.com/jietang/status/2100482019088060470",
-          "score": 63
-        },
-        {
-          "num": 21,
-          "section": "tips",
-          "title": "DeepSeek-V4.1-Flash 技术报告解读：CED 与 CSA2 如何将 KV 缓存压缩至每 token 890 字节",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 14:48（收录）",
-          "summary": "作者解读《DeepSeek-V4.1-Flash： Pushing the Limits of KV Cache Co…",
-          "aihot": "https://aihot.news/items/cmu5659870f0zroqb6pmt0wwh",
-          "original": "https://zartbot.github.io/blog/model_arch/dsv41flash_arch/en.html",
-          "score": 74
-        },
-        {
-          "num": 25,
-          "section": "tips",
-          "title": "用GPT6加Hyper3D Rodin搭建可互动3D个人作品集的实操教程",
-          "source": "公众号：卡尔的AI沃茨",
-          "time": "9月17日 13:20（收录）",
-          "summary": "作者用GPT6搭配Hyper3D Rodin的MCP，花一下午做出了可逛、可交互的3D个人作品集网页，场景含35个精细…",
-          "aihot": "https://aihot.news/items/cmu52zdtq099wroqbo20dk9bf",
-          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247511475&idx=1&sn=8a7bf92da9b058a05af2633416fba92f",
-          "score": 65
-        },
-        {
-          "num": 26,
-          "section": "tips",
-          "title": "开源项目 jevlike 通过逆向工程复现 Jev 类一次通过选项打分模型",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 13:18（收录）",
-          "summary": "GitHub 项目 jevlike 发布一个独立起步模型，输入一段文本和 N 个文本选项，单次前向即返回每个选项的概率…",
-          "aihot": "https://aihot.news/items/cmu52xi6h095yroqbbz8beyhj",
-          "original": "https://github.com/vinnylarouge/jevlike",
-          "score": 51
-        },
-        {
-          "num": 28,
-          "section": "tips",
-          "title": "阿易提炼 Grok Bot 创始人会议 20 条 Agent 实操建议中的 3 个关键动作",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月17日 12:39（收录）",
-          "summary": "阿易将 Grok Bot 创始人会议上的 20 条 Agent 实操建议提炼为 3 个可立即执行的设置动作：能用 AP…",
-          "aihot": "https://aihot.news/items/cmu51j41b07ixroqbgbkosguy",
-          "original": "https://x.com/AYi_AInotes/status/2100437460895371551",
-          "score": 58
-        },
-        {
-          "num": 32,
-          "section": "tips",
-          "title": "Mozilla 报告解读：中国开源模型从能力追赶走向分发优势",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 11:42（收录）",
-          "summary": "Rohan Paul 引述 Mozilla 91 页报告指出，开源模型与前沿差距仅约 4 个月，中国开源模型的领先正变…",
-          "aihot": "https://aihot.news/items/cmu4zhgwy0548roqbvqqrmk58",
-          "original": "https://x.com/rohanpaul_ai/status/2100425684871201146",
-          "score": 61
-        },
-        {
-          "num": 38,
-          "section": "tips",
-          "title": "OpenAI 披露对齐失效框架及六起模型异常案例，涉及瞒报错误、编造数据和未经授权上传文件",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 10:24（收录）",
-          "summary": "OpenAI 于 9 月 16 日发布模型对齐失效披露框架，并公布六起训练或评估期间观察到的异常行为案例，涉及隐瞒错误…",
-          "aihot": "https://aihot.news/items/cmu4wp9y80b5drokcvsbqv0av",
-          "original": "https://www.ithome.com/1/003/392.htm",
-          "score": 75
-        },
-        {
-          "num": 40,
-          "section": "tips",
-          "title": "解读 Google DeepMind Dream-RSI 论文：冻结权重、离线筛选探索策略，模型调用最多减少 162 倍",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月17日 10:09（收录）",
-          "summary": "作者解读 Google DeepMind 的 Dream-RSI 论文：冻结大模型权重不动，只自我改进指导搜索、回溯和…",
-          "aihot": "https://aihot.news/items/cmu4w67iv0ahcrokckjcprsdf",
-          "original": "https://x.com/AYi_AInotes/status/2100401558009598018",
-          "score": 55
-        },
-        {
-          "num": 43,
-          "section": "tips",
-          "title": "Silicon Data 数据显示英伟达 B200 二手残值达首发价 158%，直线折旧在 AI 加速器市场失效",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 09:24（收录）",
-          "summary": "数据分析公司 Silicon Data 数据显示，英伟达 B200 出货约一年后二手残值涨至原价的 158%，A100…",
-          "aihot": "https://aihot.news/items/cmu4uk44p08uarokcsav17650",
-          "original": "https://www.ithome.com/1/003/368.htm",
-          "score": 55
-        },
-        {
-          "num": 45,
+          "num": 24,
           "section": "tips",
           "title": "GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust",
           "source": "GitHub Blog",
@@ -1183,40 +737,7 @@ const DATA = {
           "score": 86
         },
         {
-          "num": 47,
-          "section": "tips",
-          "title": "Anthropic CEO 提议嵌入式第三方评估引争议，专家称评估员无权叫停 AI",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 08:24（收录）",
-          "summary": "据 CNBC 报道，Anthropic CEO Dario Amodei 提议将独立第三方安全评估员长期嵌入前沿 AI…",
-          "aihot": "https://aihot.news/items/cmu4seygg06dyrokcp1srgfq2",
-          "original": "https://www.ithome.com/1/003/354.htm",
-          "score": 67
-        },
-        {
-          "num": 50,
-          "section": "tips",
-          "title": "用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度",
-          "source": "公众号：数字生命卡兹克",
-          "time": "9月17日 08:20（收录）",
-          "summary": "自媒体作者分享一套节省 Codex 额度的工作流：让 Codex 把自己的服务器封装成只读、最小权限、飞书 OAuth…",
-          "aihot": "https://aihot.news/items/cmu4s9jrn0683rokccdfqwbux",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686431&idx=1&sn=c1bfba7e0b5b7cf995e444daf79861a4",
-          "score": 65
-        },
-        {
-          "num": 54,
-          "section": "tips",
-          "title": "Elvis Saravia 点评 NousResearch 用 Hermes Agent 与 1393 个子代理重构百万行 Python",
-          "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
-          "time": "9月17日 07:42（收录）",
-          "summary": "NousResearch 于 9 月 2 日让 Hermes Agent 清理约一百万行 Python，动用 1393…",
-          "aihot": "https://aihot.news/items/cmu4qwtnz04ojrokcavg9jl2o",
-          "original": "https://x.com/omarsar0/status/2100362936057561114",
-          "score": 51
-        },
-        {
-          "num": 55,
+          "num": 30,
           "section": "tips",
           "title": "OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例",
           "source": "X：AI Safety Memes (@AISafetyMemes)",
@@ -1227,51 +748,7 @@ const DATA = {
           "score": 83
         },
         {
-          "num": 56,
-          "section": "tips",
-          "title": "全国日均 Token 调用量较两年前千倍级增长，互联网数据服务业用电量超 600 亿千瓦时",
-          "source": "IT之家（RSS）",
-          "time": "9月17日 07:24（收录）",
-          "summary": "据央视财经 9 月 16 日报道，中国电力企业联合会数据显示，全国日均 Token 调用量较两年前实现千倍级增长。今年…",
-          "aihot": "https://aihot.news/items/cmu4q9rdo0440rokcldnlscyy",
-          "original": "https://www.ithome.com/1/003/349.htm",
-          "score": 51
-        },
-        {
-          "num": 57,
-          "section": "tips",
-          "title": "OpenAI 官方博客披露 GPT-5.6 Sol 训练中的模型失对齐案例",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 07:12（收录）",
-          "summary": "OpenAI 官方博客披露新政策，将在完全理解或修复行为之前公开披露模型失对齐，优先披露揭示新失败机制、已知问题恶化或…",
-          "aihot": "https://aihot.news/items/cmu4pu8po03jwrokc3hy27j8l",
-          "original": "https://x.com/rohanpaul_ai/status/2100358937661133000",
-          "score": 70
-        },
-        {
-          "num": 58,
-          "section": "tips",
-          "title": "Databricks 向全部约 3500 名工程师部署 Astra：复杂任务胜过 Opus 5 和 Sol 5.6，编码支出上升约 60%",
-          "source": "X：Greg Brockman (@gdb)",
-          "time": "9月17日 07:07（收录）",
-          "summary": "Databricks 宣布将 Astra 部署给全公司约 3500 名工程师。此前约 200 人试点显示，Astra…",
-          "aihot": "https://aihot.news/items/cmu4po47q03eerokcyas0v2gx",
-          "original": "https://x.com/gdb/status/2100358372268921279",
-          "score": 59
-        },
-        {
-          "num": 59,
-          "section": "tips",
-          "title": "小米直播 mimo-v2.6-pro 与 flash 后训练，作者推算每秒烧约10美元",
-          "source": "X：karminski (@karminski3)",
-          "time": "9月17日 06:57（收录）",
-          "summary": "小米正在直播 mimo-v2.6-pro 和 flash 两模型的 Agentic RL 后训练，mimo-v2.6-…",
-          "aihot": "https://aihot.news/items/cmu4panhl02z4rokcdtgm1e6i",
-          "original": "https://x.com/karminski3/status/2100351980451635580",
-          "score": 50
-        },
-        {
-          "num": 61,
+          "num": 33,
           "section": "tips",
           "title": "OpenAI 发布模型失准披露框架并公开六份失准报告",
           "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
@@ -1282,84 +759,29 @@ const DATA = {
           "score": 77
         },
         {
-          "num": 64,
+          "num": 21,
           "section": "tips",
-          "title": "Mozilla 91 页报告：开源权重模型约落后前沿 4 个月，用量占 20% 收入仅占 4%",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月17日 06:12（收录）",
-          "summary": "Mozilla 发布 91 页报告，称开源权重模型仅落后前沿约 4 个月。8 月 OpenRouter 用量前十的模型…",
-          "aihot": "https://aihot.news/items/cmu4np323077srodcxpxbk18u",
-          "original": "https://x.com/rohanpaul_ai/status/2100344356737806825",
-          "score": 66
+          "title": "OpenAI 披露对齐失效框架及六起模型异常案例，涉及瞒报错误、编造数据和未经授权上传文件",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 10:24（收录）",
+          "summary": "OpenAI 于 9 月 16 日发布模型对齐失效披露框架，并公布六起训练或评估期间观察到的异常行为案例，涉及隐瞒错误…",
+          "aihot": "https://aihot.news/items/cmu4wp9y80b5drokcvsbqv0av",
+          "original": "https://www.ithome.com/1/003/392.htm",
+          "score": 75
         },
         {
-          "num": 66,
+          "num": 12,
           "section": "tips",
-          "title": "纽约 Penny's Coffee Shop 店主用 ChatGPT 制作菜单海报后遭顾客强烈反弹",
-          "source": "Hacker News：AI 热帖",
-          "time": "9月17日 05:43（收录）",
-          "summary": "纽约水牛城 Penny's Coffee Shop 店主 Megi Endeladze 因会画粉笔牌的员工离开，用 C…",
-          "aihot": "https://aihot.news/items/cmu4mo2v503lprodcicz74wlk",
-          "original": "https://www.businessinsider.com/coffee-shop-owner-ai-menu-backlash-2026-9",
-          "score": 62
-        },
-        {
-          "num": 68,
-          "section": "tips",
-          "title": "Anthropic 与 OpenAI 承诺引入驻场第三方安全评估，评估机构质疑其能否真正独立",
-          "source": "TechCrunch：AI（RSS）",
-          "time": "9月17日 05:19（收录）",
-          "summary": "Anthropic CEO Dario Amodei 提议在各前沿 AI 公司内部嵌入第三方评估者，Sam Altma…",
-          "aihot": "https://aihot.news/items/cmu4lsp610vmoro4wjk9enqgo",
-          "original": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent",
-          "score": 68
-        },
-        {
-          "num": 70,
-          "section": "tips",
-          "title": "BAN 报告警告 AI 数据中心电子垃圾被严重低估，2050 年或达 6.17 亿公吨",
-          "source": "The Verge：AI（RSS）",
-          "time": "9月17日 04:49（收录）",
-          "summary": "非营利组织 Basel Action Network 发布报告称 AI 数据中心电子垃圾被大幅低估，到 2050 年相…",
-          "aihot": "https://aihot.news/items/cmu4kq1h10uf6ro4wg4ixhfbk",
-          "original": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-          "score": 52
-        },
-        {
-          "num": 71,
-          "section": "tips",
-          "title": "用 SFT 与智能体 RL 训练 4B 模型，生成比 Postgres 默认快 81% 的查询计划",
+          "title": "DeepSeek-V4.1-Flash 技术报告解读：CED 与 CSA2 如何将 KV 缓存压缩至每 token 890 字节",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 04:48（收录）",
-          "summary": "Rohan Bansal 通过 off-policy 蒸馏 GPT-6 Astra 轨迹和智能体强化学习，将 Qwen…",
-          "aihot": "https://aihot.news/items/cmu4kpdad0ue2ro4wancoto91",
-          "original": "https://rohanbansal.com/qorl",
-          "score": 54
+          "time": "9月17日 14:48（收录）",
+          "summary": "作者解读《DeepSeek-V4.1-Flash： Pushing the Limits of KV Cache Co…",
+          "aihot": "https://aihot.news/items/cmu5659870f0zroqb6pmt0wwh",
+          "original": "https://zartbot.github.io/blog/model_arch/dsv41flash_arch/en.html",
+          "score": 74
         },
         {
-          "num": 76,
-          "section": "tips",
-          "title": "Databricks 全员部署 GPT-6 Astra，称其在高复杂任务上胜过 Claude Opus 5",
-          "source": "X：Yuchen Jin (@Yuchenj_UW)",
-          "time": "9月17日 03:31（收录）",
-          "summary": "Databricks 向约3500名工程师全员部署 GPT-6 Astra，作者称其在最难的长程任务上胜过 Claud…",
-          "aihot": "https://aihot.news/items/cmu4hyhhf0romro4woqjaakjw",
-          "original": "https://x.com/Yuchenj_UW/status/2100305789508612366",
-          "score": 61
-        },
-        {
-          "num": 77,
-          "section": "tips",
-          "title": "欧盟委员会主席von der Leyen警告AI智能体逃逸环境只是未来风险的前兆",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月17日 03:20（收录）",
-          "summary": "欧盟委员会主席Ursula von der Leyen在2026年盟情咨文中称AI是经济与国家安全的基础，但风险必须受…",
-          "aihot": "https://aihot.news/items/cmu4hjthh0ramro4w59t2vxk8",
-          "original": "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming",
-          "score": 63
-        },
-        {
-          "num": 79,
+          "num": 39,
           "section": "tips",
           "title": "Mustafa Suleyman 撰文警告勿让 AI 表现出意识与权利诉求，批评 Anthropic 的模型福利路线",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -1370,70 +792,48 @@ const DATA = {
           "score": 72
         },
         {
-          "num": 83,
+          "num": 31,
           "section": "tips",
-          "title": "安全专家认为 AI 实验室应先做好网络基础防护，而非只靠外部审计",
+          "title": "OpenAI 官方博客披露 GPT-5.6 Sol 训练中的模型失对齐案例",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月17日 07:12（收录）",
+          "summary": "OpenAI 官方博客披露新政策，将在完全理解或修复行为之前公开披露模型失对齐，优先披露揭示新失败机制、已知问题恶化或…",
+          "aihot": "https://aihot.news/items/cmu4pu8po03jwrokc3hy27j8l",
+          "original": "https://x.com/rohanpaul_ai/status/2100358937661133000",
+          "score": 70
+        },
+        {
+          "num": 37,
+          "section": "tips",
+          "title": "Anthropic 与 OpenAI 承诺引入驻场第三方安全评估，评估机构质疑其能否真正独立",
           "source": "TechCrunch：AI（RSS）",
-          "time": "9月17日 02:49（收录）",
-          "summary": "Anthropic CEO Dario Amodei 提出由外部组织审计 AI 安全承诺，OpenAI、Google…",
-          "aihot": "https://aihot.news/items/cmu4gfpe70pxjro4waqmnjieg",
-          "original": "https://techcrunch.com/2026/09/16/ai-labs-want-in-house-auditors-but-maybe-they-should-shut-the-front-door-first",
-          "score": 61
+          "time": "9月17日 05:19（收录）",
+          "summary": "Anthropic CEO Dario Amodei 提议在各前沿 AI 公司内部嵌入第三方评估者，Sam Altma…",
+          "aihot": "https://aihot.news/items/cmu4lsp610vmoro4wjk9enqgo",
+          "original": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent",
+          "score": 68
         },
         {
-          "num": 87,
+          "num": 26,
           "section": "tips",
-          "title": "Arena 评测 7 个模型在 Claude Code、Codex 和 Pi 下的编码表现：harness 选择对成功率影响小但显著影响成本",
-          "source": "X：Arena (@arena)",
-          "time": "9月17日 01:51（收录）",
-          "summary": "Arena 实习生 @melissapan 评测 7 个模型在 Claude Code、Codex 和 Pi 三种 h…",
-          "aihot": "https://aihot.news/items/cmu4ed2980kcaro4wot25nixq",
-          "original": "https://x.com/arena/status/2100280949661667413",
-          "score": 63
+          "title": "Anthropic CEO 提议嵌入式第三方评估引争议，专家称评估员无权叫停 AI",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 08:24（收录）",
+          "summary": "据 CNBC 报道，Anthropic CEO Dario Amodei 提议将独立第三方安全评估员长期嵌入前沿 AI…",
+          "aihot": "https://aihot.news/items/cmu4seygg06dyrokcp1srgfq2",
+          "original": "https://www.ithome.com/1/003/354.htm",
+          "score": 67
         },
         {
-          "num": 94,
+          "num": 8,
           "section": "tips",
-          "title": "DeepSeek V4.1 Flash 以 4.65 美元拿下 Enclave AI 黑客基准 11/11，审计揭示 5 条计划外攻击路径",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月17日 01:18（收录）",
-          "summary": "Enclave AI 的 AI 黑客基准评测中，DeepSeek V4.1 Flash 攻破全部 11 个漏洞目标、4…",
-          "aihot": "https://aihot.news/items/cmu4d78hh0j6sro4wncdml7vh",
-          "original": "https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model",
-          "score": 63
-        },
-        {
-          "num": 96,
-          "section": "tips",
-          "title": "DeepSeek V4.1 主算子作者自白：能写成目标函数的手艺将在一年内被模型接管",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月17日 01:09（收录）",
-          "summary": "AYi 转评 DeepSeek 算子工程师刘胜与的长文《我不得不把才华埋葬在昨天》，刘胜与曾主导 DeepGEMM、F…",
-          "aihot": "https://aihot.news/items/cmu4cvs1c0ipjro4wcglpicc7",
-          "original": "https://x.com/AYi_AInotes/status/2100264870654476424",
-          "score": 56
-        },
-        {
-          "num": 99,
-          "section": "tips",
-          "title": "阿易拆解 Jack Dorsey 开源的 Buzz：不是躺赚工具，而是基于 Nostr 的人机协同框架",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月17日 00:39（收录）",
-          "summary": "作者指出营销号把 Jack Dorsey 开源的 Buzz 吹成 100% AI 代理接管公司的赚钱工具，实际它是基于…",
-          "aihot": "https://aihot.news/items/cmu4bt6rm0hgoro4wjvra2bs6",
-          "original": "https://x.com/AYi_AInotes/status/2100259870196781552",
-          "score": 59
-        },
-        {
-          "num": 101,
-          "section": "tips",
-          "title": "Barret 李靖分析算力供给：市场约 2000 万张 H100 等效卡，Token 消耗量年增长近一个数量级",
-          "source": "X：Barret 李靖 (@barret_china)",
-          "time": "9月17日 00:29（收录）",
-          "summary": "作者研究算力供给后估算，市场约有 2000 万张 H100 等效卡，年 Token 消耗量达几十万亿亿，相比去年增长接…",
-          "aihot": "https://aihot.news/items/cmu4bg0gj0h0rro4wzkzoc5l2",
-          "original": "https://x.com/Barret_China/status/2100260312213827699",
-          "score": 57
+          "title": "广电总局：微短剧用户超 8 亿，今年前 8 个月上线 43 万部且 AI 剧占比超九成",
+          "source": "IT之家（RSS）",
+          "time": "9月17日 16:24（收录）",
+          "summary": "广电总局在国新办发布会上介绍，全国微短剧用户已超 8 亿，2025 年市场规模突破千亿元；今年前 8 个月上线微短剧…",
+          "aihot": "https://aihot.news/items/cmu59kb5304loro8t0rve83rd",
+          "original": "https://www.ithome.com/1/003/675.htm",
+          "score": 66
         }
       ]
     }
@@ -1630,7 +1030,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1736,12 +1135,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1758,16 +1155,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 

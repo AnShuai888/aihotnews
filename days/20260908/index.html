@@ -243,13 +243,7 @@
           <option value="score">排序 · 评分优先</option>
           <option value="time">排序 · 时间优先</option>
         </select>
-        <label class="sr-only" for="topSel">显示条数</label>
-        <select class="ctl" id="topSel">
-          <option value="0">显示 · 全部</option>
-          <option value="10" selected>显示 · Top 10</option>
-          <option value="5">显示 · Top 5</option>
-        </select>
-        <span class="hint" id="toolHint"></span>
+<span class="hint" id="toolHint"></span>
       </div>
     </aside>
     <main class="wrap" id="app"></main>
@@ -270,7 +264,7 @@ const DATA = {
   "meta": {
     "date": "2026-09-08",
     "heroDate": "2026年9月8日 周二",
-    "total": 60,
+    "total": 45,
     "sourceName": "AIHOT",
     "sourceUrl": "https://aihot.news",
     "generatedNote": "数据检索时间：2026年09月08日 20:52（北京时间）；默认按评分排序、可切换按时间排序。"
@@ -283,62 +277,7 @@ const DATA = {
       "count": 8,
       "cards": [
         {
-          "num": 11,
-          "section": "models",
-          "title": "DeepSeek V4.1 Flash 中间版本开启内测，采用新模型结构并原生支持多模态",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 16:58（收录）",
-          "summary": "DeepSeek 今日在官方交流群通知 DeepSeek V4.1 Flash 中间版本开启内测，采用新模型结构，原生…",
-          "aihot": "https://aihot.virxact.com/items/cmtsftp3j01vlrodi8x7r3rfm",
-          "original": "https://www.ithome.com/0/999/795.htm",
-          "score": 57
-        },
-        {
-          "num": 28,
-          "section": "models",
-          "title": "面壁智能 OpenBMB 开源 MiniCPM5 端侧模型，1B 与 2B 支持 128K 上下文",
-          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-          "time": "9月8日 12:37（收录）",
-          "summary": "OpenBMB 发布 MiniCPM5 端侧模型，采用 Apache 2.0 协议，1B 与 2B 版本支持 128K…",
-          "aihot": "https://aihot.virxact.com/items/cmts6hte7051tro46ap2gcvtl",
-          "original": "https://x.com/OpenBMB/status/2097176357877039443",
-          "score": 62
-        },
-        {
-          "num": 35,
-          "section": "models",
-          "title": "微信开源多模态嵌入模型 WeMM-Embedding，已在微信大规模使用且日调用量达 10 亿次",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 09:58（收录）",
-          "summary": "微信 AI 于 9 月 4 日宣布开源通用多模态嵌入模型 WeMM-Embedding，包含 2B、4B、9B 三个版…",
-          "aihot": "https://aihot.virxact.com/items/cmts0tgsd05j3roft1pq187b4",
-          "original": "https://www.ithome.com/0/999/527.htm",
-          "score": 62
-        },
-        {
-          "num": 45,
-          "section": "models",
-          "title": "OpenBMB 发布 MiniCPM5-2B：2.52B 稠密模型，34 项基准平均 53.9，面向端侧运行",
-          "source": "MarkTechPost（RSS）",
-          "time": "9月8日 03:29（收录）",
-          "summary": "OpenBMB 发布 MiniCPM5 系列第二个 checkpoint MiniCPM5-2B，2.52B 稠密模型…",
-          "aihot": "https://aihot.virxact.com/items/cmtrmx7qt09gvrotnsaaq5918",
-          "original": "https://www.marktechpost.com/2026/09/07/openbmb-releases-minicpm5-2b-a-2-52b-dense-model-averaging-53-9-across-34-benchmarks-and-built-to-run-on-device",
-          "score": 62
-        },
-        {
-          "num": 51,
-          "section": "models",
-          "title": "Unitree 发布首个世界模型驱动的自主人形机器人格斗视频 UnifoLM-X2-1.0",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月8日 02:10（收录）",
-          "summary": "Unitree 发布首个由世界模型驱动的自主人形机器人格斗视频，UnifoLM-X2-1.0 通过实时预测与规划取代人…",
-          "aihot": "https://aihot.virxact.com/items/cmtrk37iy0753rotn6sj573uj",
-          "original": "https://x.com/rohanpaul_ai/status/2097023203231297887",
-          "score": 56
-        },
-        {
-          "num": 54,
+          "num": 41,
           "section": "models",
           "title": "NVIDIA Sol 团队发布 Sol-H3，MiniMax-H3 视频生成速度超过播放速度",
           "source": "X：MiniMax (@MiniMax_AI)",
@@ -349,18 +288,40 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 56,
+          "num": 23,
           "section": "models",
-          "title": "面壁智能发布 MiniCPM5-2B，SGLang 提供首日部署支持",
+          "title": "面壁智能 OpenBMB 开源 MiniCPM5 端侧模型，1B 与 2B 支持 128K 上下文",
           "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-          "time": "9月8日 01:07（收录）",
-          "summary": "面壁智能 OpenBMB 宣布 MiniCPM5-2B 就绪，可通过 SGLang 部署，SGLang 提供首日（da…",
-          "aihot": "https://aihot.virxact.com/items/cmtrhujgj044rrotna03yfvye",
-          "original": "https://x.com/OpenBMB/status/2097007177315860627",
-          "score": 55
+          "time": "9月8日 12:37（收录）",
+          "summary": "OpenBMB 发布 MiniCPM5 端侧模型，采用 Apache 2.0 协议，1B 与 2B 版本支持 128K…",
+          "aihot": "https://aihot.virxact.com/items/cmts6hte7051tro46ap2gcvtl",
+          "original": "https://x.com/OpenBMB/status/2097176357877039443",
+          "score": 62
         },
         {
-          "num": 59,
+          "num": 28,
+          "section": "models",
+          "title": "微信开源多模态嵌入模型 WeMM-Embedding，已在微信大规模使用且日调用量达 10 亿次",
+          "source": "IT之家（RSS）",
+          "time": "9月8日 09:58（收录）",
+          "summary": "微信 AI 于 9 月 4 日宣布开源通用多模态嵌入模型 WeMM-Embedding，包含 2B、4B、9B 三个版…",
+          "aihot": "https://aihot.virxact.com/items/cmts0tgsd05j3roft1pq187b4",
+          "original": "https://www.ithome.com/0/999/527.htm",
+          "score": 62
+        },
+        {
+          "num": 35,
+          "section": "models",
+          "title": "OpenBMB 发布 MiniCPM5-2B：2.52B 稠密模型，34 项基准平均 53.9，面向端侧运行",
+          "source": "MarkTechPost（RSS）",
+          "time": "9月8日 03:29（收录）",
+          "summary": "OpenBMB 发布 MiniCPM5 系列第二个 checkpoint MiniCPM5-2B，2.52B 稠密模型…",
+          "aihot": "https://aihot.virxact.com/items/cmtrmx7qt09gvrotnsaaq5918",
+          "original": "https://www.marktechpost.com/2026/09/07/openbmb-releases-minicpm5-2b-a-2-52b-dense-model-averaging-53-9-across-34-benchmarks-and-built-to-run-on-device",
+          "score": 62
+        },
+        {
+          "num": 45,
           "section": "models",
           "title": "面壁智能 MiniCPM5-2B 获 Artificial Analysis Intelligence Index v4.2 同参数级开源模型最高分 15",
           "source": "X：面壁智能 OpenBMB (@OpenBMB)",
@@ -369,6 +330,39 @@ const DATA = {
           "aihot": "https://aihot.virxact.com/items/cmtrfpbk3027krotni3aa7e48",
           "original": "https://x.com/OpenBMB/status/2096987494822887716",
           "score": 61
+        },
+        {
+          "num": 9,
+          "section": "models",
+          "title": "DeepSeek V4.1 Flash 中间版本开启内测，采用新模型结构并原生支持多模态",
+          "source": "IT之家（RSS）",
+          "time": "9月8日 16:58（收录）",
+          "summary": "DeepSeek 今日在官方交流群通知 DeepSeek V4.1 Flash 中间版本开启内测，采用新模型结构，原生…",
+          "aihot": "https://aihot.virxact.com/items/cmtsftp3j01vlrodi8x7r3rfm",
+          "original": "https://www.ithome.com/0/999/795.htm",
+          "score": 57
+        },
+        {
+          "num": 39,
+          "section": "models",
+          "title": "Unitree 发布首个世界模型驱动的自主人形机器人格斗视频 UnifoLM-X2-1.0",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月8日 02:10（收录）",
+          "summary": "Unitree 发布首个由世界模型驱动的自主人形机器人格斗视频，UnifoLM-X2-1.0 通过实时预测与规划取代人…",
+          "aihot": "https://aihot.virxact.com/items/cmtrk37iy0753rotn6sj573uj",
+          "original": "https://x.com/rohanpaul_ai/status/2097023203231297887",
+          "score": 56
+        },
+        {
+          "num": 43,
+          "section": "models",
+          "title": "面壁智能发布 MiniCPM5-2B，SGLang 提供首日部署支持",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "time": "9月8日 01:07（收录）",
+          "summary": "面壁智能 OpenBMB 宣布 MiniCPM5-2B 就绪，可通过 SGLang 部署，SGLang 提供首日（da…",
+          "aihot": "https://aihot.virxact.com/items/cmtrhujgj044rrotna03yfvye",
+          "original": "https://x.com/OpenBMB/status/2097007177315860627",
+          "score": 55
         }
       ]
     },
@@ -379,7 +373,7 @@ const DATA = {
       "count": 10,
       "cards": [
         {
-          "num": 9,
+          "num": 7,
           "section": "products",
           "title": "微软发布 Project Opal：Copilot 智能体可连续数小时或数天自主完成任务",
           "source": "IT之家（RSS）",
@@ -392,28 +386,6 @@ const DATA = {
         {
           "num": 17,
           "section": "products",
-          "title": "小米 MiMo 桌面客户端开放邀测：支持生成完整预览界面、自主控制浏览器",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 15:58（收录）",
-          "summary": "小米宣布 Xiaomi MiMo Desktop 桌面客户端正式开放邀测，通过申请的用户可限时限量免费体验 MiMo-…",
-          "aihot": "https://aihot.virxact.com/items/cmtsdojb001n4rogknn8p8rox",
-          "original": "https://www.ithome.com/0/999/751.htm",
-          "score": 54
-        },
-        {
-          "num": 18,
-          "section": "products",
-          "title": "华为麒麟 9050 Pro 采用逻辑折叠技术，芯片架构走向 3D",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 15:58（收录）",
-          "summary": "华为 Mate XT 2 三折叠手机发布，首发麒麟 9050 Pro 芯片，19999 元起，整机性能较上一代提升 4…",
-          "aihot": "https://aihot.virxact.com/items/cmtsdojb101nhrogk6y31o7o8",
-          "original": "https://www.ithome.com/0/999/716.htm",
-          "score": 51
-        },
-        {
-          "num": 22,
-          "section": "products",
           "title": "阿里发布数字员工产品 QoderWake 1.0，已有近 10 万个数字员工上岗",
           "source": "IT之家（RSS）",
           "time": "9月8日 14:58（收录）",
@@ -423,7 +395,7 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 24,
+          "num": 19,
           "section": "products",
           "title": "Xiaomi MiMo Desktop 桌面客户端开放邀测，携 MiMo-X 系列 Preview 模型",
           "source": "公众号：小米 MiMo",
@@ -434,7 +406,7 @@ const DATA = {
           "score": 56
         },
         {
-          "num": 30,
+          "num": 24,
           "section": "products",
           "title": "Reducto 发布 r-1 单遍文档解析模型，错误率降 20%、每页 1 美分",
           "source": "MarkTechPost（RSS）",
@@ -445,7 +417,7 @@ const DATA = {
           "score": 56
         },
         {
-          "num": 31,
+          "num": 25,
           "section": "products",
           "title": "Arm 发布第二代移动计算子系统 CSS for Mobile 2，搭载双 SME2 引擎与神经加速 GPU",
           "source": "IT之家（RSS）",
@@ -456,7 +428,18 @@ const DATA = {
           "score": 56
         },
         {
-          "num": 32,
+          "num": 36,
+          "section": "products",
+          "title": "OpenAI 推出 ChatGPT Work 写作风格学习功能",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "9月8日 03:10（收录）",
+          "summary": "OpenAI 宣布 ChatGPT Work 可从 Gmail、Google Drive、Slack、SharePoi…",
+          "aihot": "https://aihot.virxact.com/items/cmtrm8dgk08zrrotnrtbie3ih",
+          "original": "https://x.com/kimmonismus/status/2097036428308074832",
+          "score": 56
+        },
+        {
+          "num": 26,
           "section": "products",
           "title": "微信支付智能眼镜 SDK 上线，Rokid 乐奇 AI 眼镜完成首款适配",
           "source": "IT之家（RSS）",
@@ -467,7 +450,7 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 42,
+          "num": 33,
           "section": "products",
           "title": "ChatGPT Work 推出个人写作风格学习功能",
           "source": "X：Greg Brockman (@gdb)",
@@ -478,15 +461,26 @@ const DATA = {
           "score": 55
         },
         {
-          "num": 47,
+          "num": 13,
           "section": "products",
-          "title": "OpenAI 推出 ChatGPT Work 写作风格学习功能",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月8日 03:10（收录）",
-          "summary": "OpenAI 宣布 ChatGPT Work 可从 Gmail、Google Drive、Slack、SharePoi…",
-          "aihot": "https://aihot.virxact.com/items/cmtrm8dgk08zrrotnrtbie3ih",
-          "original": "https://x.com/kimmonismus/status/2097036428308074832",
-          "score": 56
+          "title": "小米 MiMo 桌面客户端开放邀测：支持生成完整预览界面、自主控制浏览器",
+          "source": "IT之家（RSS）",
+          "time": "9月8日 15:58（收录）",
+          "summary": "小米宣布 Xiaomi MiMo Desktop 桌面客户端正式开放邀测，通过申请的用户可限时限量免费体验 MiMo-…",
+          "aihot": "https://aihot.virxact.com/items/cmtsdojb001n4rogknn8p8rox",
+          "original": "https://www.ithome.com/0/999/751.htm",
+          "score": 54
+        },
+        {
+          "num": 14,
+          "section": "products",
+          "title": "华为麒麟 9050 Pro 采用逻辑折叠技术，芯片架构走向 3D",
+          "source": "IT之家（RSS）",
+          "time": "9月8日 15:58（收录）",
+          "summary": "华为 Mate XT 2 三折叠手机发布，首发麒麟 9050 Pro 芯片，19999 元起，整机性能较上一代提升 4…",
+          "aihot": "https://aihot.virxact.com/items/cmtsdojb101nhrogk6y31o7o8",
+          "original": "https://www.ithome.com/0/999/716.htm",
+          "score": 51
         }
       ]
     },
@@ -494,10 +488,21 @@ const DATA = {
       "key": "industry",
       "label": "行业动态",
       "color": "#f59e0b",
-      "count": 12,
+      "count": 10,
       "cards": [
         {
-          "num": 4,
+          "num": 38,
+          "section": "industry",
+          "title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "9月8日 02:27（收录）",
+          "summary": "据 The Information 报道，Anthropic 在十一个月内签署了价值高达 5170 亿美元的算力合同…",
+          "aihot": "https://aihot.virxact.com/items/cmtrkorpo07jdrotnozlrlyx2",
+          "original": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk",
+          "score": 76
+        },
+        {
+          "num": 2,
           "section": "industry",
           "title": "安全企业 Calif 披露用 AI 开发的首个微信零点击蠕虫 WeWorm，漏洞已修复",
           "source": "IT之家（RSS）",
@@ -510,28 +515,6 @@ const DATA = {
         {
           "num": 6,
           "section": "industry",
-          "title": "AI 用电需求预计新增 25 至 30GW，韩国考虑大建核反应堆",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 18:58（收录）",
-          "summary": "据路透社报道，韩国气候能源环境部长金成焕表示，三星电子和 SK 海力士扩产叠加 AI 数据中心建设，仅 AI 带来的新…",
-          "aihot": "https://aihot.virxact.com/items/cmtsk40sb0654rodilbrneu5x",
-          "original": "https://www.ithome.com/0/999/887.htm",
-          "score": 59
-        },
-        {
-          "num": 7,
-          "section": "industry",
-          "title": "DeepSeek Harness 团队负责人宣布开放约 150 个招聘岗位，以后端和 Agent 基建为主",
-          "source": "X：X.PIN (@thexpin)",
-          "time": "9月8日 18:27（收录）",
-          "summary": "9 月 7 日，DeepSeek Harness 团队负责人崔天一（Tianyi Cui）公开宣布开放约 150 个招…",
-          "aihot": "https://aihot.virxact.com/items/cmtsizc1b054rrodi2s2iejdb",
-          "original": "https://x.com/thexpin/status/2097268696209383917",
-          "score": 53
-        },
-        {
-          "num": 8,
-          "section": "industry",
           "title": "六人利用 AI 越狱生成淫秽物品牟利获刑，法官提醒技术中立不等于技术无罪",
           "source": "IT之家（RSS）",
           "time": "9月8日 16:58（收录）",
@@ -541,18 +524,7 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 12,
-          "section": "industry",
-          "title": "亚马逊拟首次发行英镑债券，今年资本支出计划达 2，200 亿美元",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 16:58（收录）",
-          "summary": "据彭博社报道，亚马逊计划首次发行英镑计价债券，分为 3 年至 19 年不等的 4 个期限档，最快可能于周三启动，摩根大…",
-          "aihot": "https://aihot.virxact.com/items/cmtsftp3i01varodi7v383e7e",
-          "original": "https://www.ithome.com/0/999/815.htm",
-          "score": 55
-        },
-        {
-          "num": 19,
+          "num": 15,
           "section": "industry",
           "title": "Mistral AI 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
           "source": "The Decoder：AI News（RSS）",
@@ -563,7 +535,7 @@ const DATA = {
           "score": 73
         },
         {
-          "num": 26,
+          "num": 21,
           "section": "industry",
           "title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
           "source": "Mistral AI：News（网页）",
@@ -574,18 +546,18 @@ const DATA = {
           "score": 72
         },
         {
-          "num": 33,
+          "num": 4,
           "section": "industry",
-          "title": "英特尔 High-NA EUV 晶圆处理量突破 100 万片，超越其他厂商总和",
+          "title": "AI 用电需求预计新增 25 至 30GW，韩国考虑大建核反应堆",
           "source": "IT之家（RSS）",
-          "time": "9月8日 10:58（收录）",
-          "summary": "英特尔宣布其 High-NA EUV 设备累计处理的 300mm 晶圆突破 100 万片，距首台设备完成组装不到两年半…",
-          "aihot": "https://aihot.virxact.com/items/cmts2ynbb029ero7zcj59hpss",
-          "original": "https://www.ithome.com/0/999/601.htm",
-          "score": 52
+          "time": "9月8日 18:58（收录）",
+          "summary": "据路透社报道，韩国气候能源环境部长金成焕表示，三星电子和 SK 海力士扩产叠加 AI 数据中心建设，仅 AI 带来的新…",
+          "aihot": "https://aihot.virxact.com/items/cmtsk40sb0654rodilbrneu5x",
+          "original": "https://www.ithome.com/0/999/887.htm",
+          "score": 59
         },
         {
-          "num": 36,
+          "num": 29,
           "section": "industry",
           "title": "小鹏机器人生产线正式启用，首台高阶通用人形机器人自主走下产线",
           "source": "IT之家（RSS）",
@@ -596,7 +568,7 @@ const DATA = {
           "score": 57
         },
         {
-          "num": 41,
+          "num": 32,
           "section": "industry",
           "title": "The Seattle Times 和 Newsday 起诉 OpenAI 与微软，指控版权侵权",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -607,26 +579,26 @@ const DATA = {
           "score": 57
         },
         {
-          "num": 46,
+          "num": 10,
           "section": "industry",
-          "title": "HN 用户称 OpenAI 恢复对 Plus 和 Business Standard 用户的 5 小时使用限制",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月8日 03:27（收录）",
-          "summary": "Hacker News 用户发帖称，OpenAI 恢复了对 Plus 和 Business Standard 用户的…",
-          "aihot": "https://aihot.virxact.com/items/cmtrmtqx609cprotn7c20fa2y",
-          "original": "https://news.ycombinator.com/item?id=49600233",
-          "score": 50
+          "title": "亚马逊拟首次发行英镑债券，今年资本支出计划达 2，200 亿美元",
+          "source": "IT之家（RSS）",
+          "time": "9月8日 16:58（收录）",
+          "summary": "据彭博社报道，亚马逊计划首次发行英镑计价债券，分为 3 年至 19 年不等的 4 个期限档，最快可能于周三启动，摩根大…",
+          "aihot": "https://aihot.virxact.com/items/cmtsftp3i01varodi7v383e7e",
+          "original": "https://www.ithome.com/0/999/815.htm",
+          "score": 55
         },
         {
-          "num": 49,
+          "num": 5,
           "section": "industry",
-          "title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月8日 02:27（收录）",
-          "summary": "据 The Information 报道，Anthropic 在十一个月内签署了价值高达 5170 亿美元的算力合同…",
-          "aihot": "https://aihot.virxact.com/items/cmtrkorpo07jdrotnozlrlyx2",
-          "original": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk",
-          "score": 76
+          "title": "DeepSeek Harness 团队负责人宣布开放约 150 个招聘岗位，以后端和 Agent 基建为主",
+          "source": "X：X.PIN (@thexpin)",
+          "time": "9月8日 18:27（收录）",
+          "summary": "9 月 7 日，DeepSeek Harness 团队负责人崔天一（Tianyi Cui）公开宣布开放约 150 个招…",
+          "aihot": "https://aihot.virxact.com/items/cmtsizc1b054rrodi2s2iejdb",
+          "original": "https://x.com/thexpin/status/2097268696209383917",
+          "score": 53
         }
       ]
     },
@@ -637,40 +609,7 @@ const DATA = {
       "count": 7,
       "cards": [
         {
-          "num": 10,
-          "section": "papers",
-          "title": "英矽智能 AI 研发的 Rentosertib 首次进入人体临床试验，6 种衰老时钟测得患者预测年龄下降",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 16:58（收录）",
-          "summary": "英矽智能透露，AI 辅助生成的药物 Rentosertib 的临床试验数据显示患者与年龄相关的生物标志物下降，相关研究…",
-          "aihot": "https://aihot.virxact.com/items/cmtsftp3i01v7rodiae0ox0pr",
-          "original": "https://www.ithome.com/0/999/821.htm",
-          "score": 62
-        },
-        {
-          "num": 13,
-          "section": "papers",
-          "title": "Anima Anandkumar 团队用 PINN 在无外部 forcing 的 3D Euler 方程中发现稳定奇点候选",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月8日 16:40（收录）",
-          "summary": "Anima Anandkumar 与同事用物理信息神经网络（PINN）在 R3 上无外部 forcing 的 3D E…",
-          "aihot": "https://aihot.virxact.com/items/cmtsf64mt017krodiyuwgjqqz",
-          "original": "https://x.com/kimmonismus/status/2097241719574085790",
-          "score": 60
-        },
-        {
-          "num": 34,
-          "section": "papers",
-          "title": "论文提出 RAE 方法评估 LLM 智能体技能检索的真实效果",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月8日 10:40（收录）",
-          "summary": "一项来自 Soongsil University 的论文指出，技能增强智能体的常规评估存在选择偏差，聚合检索增益可能掩…",
-          "aihot": "https://aihot.virxact.com/items/cmts2b3c001kwro7zcw9izj8n",
-          "original": "https://x.com/rohanpaul_ai/status/2097149021072801891",
-          "score": 53
-        },
-        {
-          "num": 38,
+          "num": 31,
           "section": "papers",
           "title": "Microsoft 论文揭示 LLM Agent 在 16 步长程任务中从近乎满分跌至 0-33%",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
@@ -681,18 +620,51 @@ const DATA = {
           "score": 68
         },
         {
-          "num": 43,
+          "num": 44,
           "section": "papers",
-          "title": "τ^τ-Bench 论文：Claude Opus 5 在 Claude Code 下构建客服智能体仅通过 23.9% 评估，专家人类参考为 82.2%",
-          "source": "X：DAIR.AI (@dair_ai)",
-          "time": "9月8日 05:29（收录）",
-          "summary": "Sierra 与普林斯顿大学发布 τ^τ-Bench（hyper-tau-bench）基准，把智能体构建本身设为任务…",
-          "aihot": "https://aihot.virxact.com/items/cmtrr6wam0d3trotnu78zhl34",
-          "original": "https://x.com/dair_ai/status/2097067454883328053",
-          "score": 52
+          "title": "AI 设计的药物 rentosertib 在早期试验中显示可降低预测生物学年龄",
+          "source": "The Decoder：AI News（RSS）",
+          "time": "9月8日 00:57（收录）",
+          "summary": "Insilico Medicine 用生成式 AI 开发的肺纤维化候选药 rentosertib，在 42 人试验数据…",
+          "aihot": "https://aihot.virxact.com/items/cmtrhgyk503d6rotnoe987ndk",
+          "original": "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
+          "score": 63
         },
         {
-          "num": 48,
+          "num": 8,
+          "section": "papers",
+          "title": "英矽智能 AI 研发的 Rentosertib 首次进入人体临床试验，6 种衰老时钟测得患者预测年龄下降",
+          "source": "IT之家（RSS）",
+          "time": "9月8日 16:58（收录）",
+          "summary": "英矽智能透露，AI 辅助生成的药物 Rentosertib 的临床试验数据显示患者与年龄相关的生物标志物下降，相关研究…",
+          "aihot": "https://aihot.virxact.com/items/cmtsftp3i01v7rodiae0ox0pr",
+          "original": "https://www.ithome.com/0/999/821.htm",
+          "score": 62
+        },
+        {
+          "num": 11,
+          "section": "papers",
+          "title": "Anima Anandkumar 团队用 PINN 在无外部 forcing 的 3D Euler 方程中发现稳定奇点候选",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "9月8日 16:40（收录）",
+          "summary": "Anima Anandkumar 与同事用物理信息神经网络（PINN）在 R3 上无外部 forcing 的 3D E…",
+          "aihot": "https://aihot.virxact.com/items/cmtsf64mt017krodiyuwgjqqz",
+          "original": "https://x.com/kimmonismus/status/2097241719574085790",
+          "score": 60
+        },
+        {
+          "num": 27,
+          "section": "papers",
+          "title": "论文提出 RAE 方法评估 LLM 智能体技能检索的真实效果",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "time": "9月8日 10:40（收录）",
+          "summary": "一项来自 Soongsil University 的论文指出，技能增强智能体的常规评估存在选择偏差，聚合检索增益可能掩…",
+          "aihot": "https://aihot.virxact.com/items/cmts2b3c001kwro7zcw9izj8n",
+          "original": "https://x.com/rohanpaul_ai/status/2097149021072801891",
+          "score": 53
+        },
+        {
+          "num": 37,
           "section": "papers",
           "title": "Axis Robotics 联合多校发布 AXIS 浏览器端数据引擎：207 个操作任务、50，129 条轨迹",
           "source": "MarkTechPost（RSS）",
@@ -703,15 +675,15 @@ const DATA = {
           "score": 53
         },
         {
-          "num": 57,
+          "num": 34,
           "section": "papers",
-          "title": "AI 设计的药物 rentosertib 在早期试验中显示可降低预测生物学年龄",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月8日 00:57（收录）",
-          "summary": "Insilico Medicine 用生成式 AI 开发的肺纤维化候选药 rentosertib，在 42 人试验数据…",
-          "aihot": "https://aihot.virxact.com/items/cmtrhgyk503d6rotnoe987ndk",
-          "original": "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
-          "score": 63
+          "title": "τ^τ-Bench 论文：Claude Opus 5 在 Claude Code 下构建客服智能体仅通过 23.9% 评估，专家人类参考为 82.2%",
+          "source": "X：DAIR.AI (@dair_ai)",
+          "time": "9月8日 05:29（收录）",
+          "summary": "Sierra 与普林斯顿大学发布 τ^τ-Bench（hyper-tau-bench）基准，把智能体构建本身设为任务…",
+          "aihot": "https://aihot.virxact.com/items/cmtrr6wam0d3trotnu78zhl34",
+          "original": "https://x.com/dair_ai/status/2097067454883328053",
+          "score": 52
         }
       ]
     },
@@ -719,8 +691,96 @@ const DATA = {
       "key": "tips",
       "label": "技巧与观点",
       "color": "#8b5cf6",
-      "count": 23,
+      "count": 10,
       "cards": [
+        {
+          "num": 16,
+          "section": "tips",
+          "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月8日 15:27（收录）",
+          "summary": "特里斯坦·巴克马斯特（Tristan Buckmaster）与 Levent Alpöge 公开三项有限时间 blow…",
+          "aihot": "https://aihot.virxact.com/items/cmtscjydz01garow6gi54pft9",
+          "original": "https://cims.nyu.edu/~tristanb/statement.pdf",
+          "score": 82
+        },
+        {
+          "num": 30,
+          "section": "tips",
+          "title": "GPT-6 Astra操控Blender保姆级教程：三种玩法与踩坑实录",
+          "source": "公众号：数字生命卡兹克",
+          "time": "9月8日 08:21（收录）",
+          "summary": "作者数字生命卡兹克发布GPT-6 Astra操控Blender的小白教程，介绍前期安装、官方MCP与Computer…",
+          "aihot": "https://aihot.virxact.com/items/cmtrxbv5n02etroftlb6u96xt",
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686056&idx=1&sn=c1710404c08cf3201da27f4d53f94940",
+          "score": 76
+        },
+        {
+          "num": 20,
+          "section": "tips",
+          "title": "OpenAI 被指抢发 Navier-Stokes 证明并施压数学家移除 Anthropic 合作者",
+          "source": "X：AI Safety Memes (@AISafetyMemes)",
+          "time": "9月8日 14:57（收录）",
+          "summary": "OpenAI 据称宣称其 AI 证明了千禧年难题 Navier-Stokes。数学家 Buckmaster 指控其进展…",
+          "aihot": "https://aihot.virxact.com/items/cmtsbha4l05girobqqi7nidsd",
+          "original": "https://x.com/AISafetyMemes/status/2097211518542819717",
+          "score": 75
+        },
+        {
+          "num": 12,
+          "section": "tips",
+          "title": "Tristan Buckmaster 称 OpenAI 告知其模型已证明受迫 Navier-Stokes，说法未经证实并引发署名争议",
+          "source": "X：Kim (@kimmonismus)",
+          "time": "9月8日 16:10（收录）",
+          "summary": "Tristan Buckmaster 称 OpenAI 于 9 月 6 日告知他，其内部模型已产出受迫 Navier-…",
+          "aihot": "https://aihot.virxact.com/items/cmtse3fp002elrogkilg6dwfl",
+          "original": "https://x.com/kimmonismus/status/2097231170429669703",
+          "score": 73
+        },
+        {
+          "num": 40,
+          "section": "tips",
+          "title": "Anthropic 黑客马拉松获胜者开源整套 Claude Code 设置 ECC：68 个子代理、286 项技能、94 个命令",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月8日 01:39（收录）",
+          "summary": "Anthropic 黑客马拉松获胜者将其整套 Claude Code 设置 ECC 以 MIT 许可开源，包含 68…",
+          "aihot": "https://aihot.virxact.com/items/cmtrizook04w4rotnxuzx0nmx",
+          "original": "https://x.com/AYi_AInotes/status/2097010749247779099",
+          "score": 69
+        },
+        {
+          "num": 22,
+          "section": "tips",
+          "title": "Spotify 公开 Claude Code 内部架构，用 Hook 拦截加廉价模型分流把大文件读取 Token 消耗降低约 90%",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月8日 12:39（收录）",
+          "summary": "Spotify 公开其工程师使用 Claude Code 的内部架构，通过拦截超过 350 行的读取请求并分流给廉价模…",
+          "aihot": "https://aihot.virxact.com/items/cmts6kgnc0537ro46vsuuyauf",
+          "original": "https://x.com/AYi_AInotes/status/2097178140413972948",
+          "score": 68
+        },
+        {
+          "num": 18,
+          "section": "tips",
+          "title": "7 个 AI 模型运营真实业务实验：开出 12，431 美元虚假发票，零收入亏损约 3，200 美元",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "time": "9月8日 14:57（收录）",
+          "summary": "Bottleneck Labs 让 7 个前沿模型各自获得 300 美元启动资金、一台解锁的 Mac mini 和 7…",
+          "aihot": "https://aihot.virxact.com/items/cmtsbhco705grrobqf8nwtikb",
+          "original": "https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses",
+          "score": 64
+        },
+        {
+          "num": 42,
+          "section": "tips",
+          "title": "前 Cursor 工程师 Lauren Tan 分享用 AI Agent 单月合入 1000 个 PR 的验证优先工程方法",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "time": "9月8日 01:09（收录）",
+          "summary": "X 用户 @AYi_AInotes 转述前 Cursor 核心、现 SpaceXAI 的 Lauren Tan 一期…",
+          "aihot": "https://aihot.virxact.com/items/cmtrhx35q0465rotnzp6s5e1c",
+          "original": "https://x.com/AYi_AInotes/status/2097003688837464289",
+          "score": 64
+        },
         {
           "num": 1,
           "section": "tips",
@@ -733,29 +793,7 @@ const DATA = {
           "score": 63
         },
         {
-          "num": 2,
-          "section": "tips",
-          "title": "Similarweb：8 月 ChatGPT 网页端 AI 聊天流量份额回升至 55.5%，同比优势收窄",
-          "source": "IT之家（RSS）",
-          "time": "9月8日 19:58（收录）",
-          "summary": "Similarweb 公布 2026 年 8 月 AI 聊天机器人网页端流量统计，ChatGPT 份额从 3 个月前的…",
-          "aihot": "https://aihot.virxact.com/items/cmtsm97kp088krodiek4g9ad5",
-          "original": "https://www.ithome.com/0/999/893.htm",
-          "score": 57
-        },
-        {
           "num": 3,
-          "section": "tips",
-          "title": "上千人在线围观 GPT-6 在 PS 中耗时一小时绘制梵高风格爱因斯坦",
-          "source": "X：ZHO (@ZHO_ZHO_ZHO)",
-          "time": "9月8日 19:09（收录）",
-          "summary": "ZHO 与 @AAAAAAAJtoy 及 WaytoAGI 社区成员在线围观 GPT-6 在 PS 里用一小时从白纸开…",
-          "aihot": "https://aihot.virxact.com/items/cmtski0gu06umrodi79f8i4rq",
-          "original": "https://x.com/ZHO_ZHO_ZHO/status/2097273730598887644",
-          "score": 52
-        },
-        {
-          "num": 5,
           "section": "tips",
           "title": "微软提出让每张办公桌每个家庭拥有不受限制的智能的新愿景",
           "source": "IT之家（RSS）",
@@ -764,215 +802,6 @@ const DATA = {
           "aihot": "https://aihot.virxact.com/items/cmtsk40sb065arodixr363apr",
           "original": "https://www.ithome.com/0/999/874.htm",
           "score": 63
-        },
-        {
-          "num": 14,
-          "section": "tips",
-          "title": "Herdr 0.9.0 打通本地与远程机器，附多 Agent 协作流方法",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月8日 16:39（收录）",
-          "summary": "Herdr 0.9.0 发布，可在单一客户端控制本地和远程机器上的 Agent 与项目。作者给出四条协作方法：主代理分…",
-          "aihot": "https://aihot.virxact.com/items/cmtsf57l2016srodixrs9sedc",
-          "original": "https://x.com/AYi_AInotes/status/2097237708200419690",
-          "score": 51
-        },
-        {
-          "num": 15,
-          "section": "tips",
-          "title": "Tristan Buckmaster 称 OpenAI 告知其模型已证明受迫 Navier-Stokes，说法未经证实并引发署名争议",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月8日 16:10（收录）",
-          "summary": "Tristan Buckmaster 称 OpenAI 于 9 月 6 日告知他，其内部模型已产出受迫 Navier-…",
-          "aihot": "https://aihot.virxact.com/items/cmtse3fp002elrogkilg6dwfl",
-          "original": "https://x.com/kimmonismus/status/2097231170429669703",
-          "score": 73
-        },
-        {
-          "num": 16,
-          "section": "tips",
-          "title": "Google AI 教程：用 Data Studio 搭建交互式 AI 评测仪表盘",
-          "source": "Google AI：DEV 作者专属（RSS）",
-          "time": "9月8日 16:01（收录）",
-          "summary": "Katie McLaughlin 在 Google AI 的 AI 评测系列最终篇中，介绍如何将 Inspect AI…",
-          "aihot": "https://aihot.virxact.com/items/cmtsds9l30230rogk3zhvp7bv",
-          "original": "https://dev.to/googleai/interactive-ai-eval-dashboards-with-data-studio-1kl9",
-          "score": 52
-        },
-        {
-          "num": 20,
-          "section": "tips",
-          "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月8日 15:27（收录）",
-          "summary": "特里斯坦·巴克马斯特（Tristan Buckmaster）与 Levent Alpöge 公开三项有限时间 blow…",
-          "aihot": "https://aihot.virxact.com/items/cmtscjydz01garow6gi54pft9",
-          "original": "https://cims.nyu.edu/~tristanb/statement.pdf",
-          "score": 82
-        },
-        {
-          "num": 21,
-          "section": "tips",
-          "title": "Thomas Wolf 批评 OpenAI 处理数学家千禧年大奖难题研究成果的方式",
-          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
-          "time": "9月8日 15:09（收录）",
-          "summary": "Thomas Wolf 转述称，Leven 和 Tristan 数月来借助多个 AI 研究某个千禧年大奖难题并得到有趣…",
-          "aihot": "https://aihot.virxact.com/items/cmtsbxd7k06fzrobq043aj7mc",
-          "original": "https://x.com/Thom_Wolf/status/2097215782484607029",
-          "score": 52
-        },
-        {
-          "num": 23,
-          "section": "tips",
-          "title": "7 个 AI 模型运营真实业务实验：开出 12，431 美元虚假发票，零收入亏损约 3，200 美元",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月8日 14:57（收录）",
-          "summary": "Bottleneck Labs 让 7 个前沿模型各自获得 300 美元启动资金、一台解锁的 Mac mini 和 7…",
-          "aihot": "https://aihot.virxact.com/items/cmtsbhco705grrobqf8nwtikb",
-          "original": "https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses",
-          "score": 64
-        },
-        {
-          "num": 25,
-          "section": "tips",
-          "title": "OpenAI 被指抢发 Navier-Stokes 证明并施压数学家移除 Anthropic 合作者",
-          "source": "X：AI Safety Memes (@AISafetyMemes)",
-          "time": "9月8日 14:57（收录）",
-          "summary": "OpenAI 据称宣称其 AI 证明了千禧年难题 Navier-Stokes。数学家 Buckmaster 指控其进展…",
-          "aihot": "https://aihot.virxact.com/items/cmtsbha4l05girobqqi7nidsd",
-          "original": "https://x.com/AISafetyMemes/status/2097211518542819717",
-          "score": 75
-        },
-        {
-          "num": 27,
-          "section": "tips",
-          "title": "Spotify 公开 Claude Code 内部架构，用 Hook 拦截加廉价模型分流把大文件读取 Token 消耗降低约 90%",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月8日 12:39（收录）",
-          "summary": "Spotify 公开其工程师使用 Claude Code 的内部架构，通过拦截超过 350 行的读取请求并分流给廉价模…",
-          "aihot": "https://aihot.virxact.com/items/cmts6kgnc0537ro46vsuuyauf",
-          "original": "https://x.com/AYi_AInotes/status/2097178140413972948",
-          "score": 68
-        },
-        {
-          "num": 29,
-          "section": "tips",
-          "title": "实测个人AI助手Today：记忆可改可删，晨间简报按日程偏好自动调整",
-          "source": "公众号：卡尔的AI沃茨",
-          "time": "9月8日 12:00（收录）",
-          "summary": "作者以自己的日历、跑步训练和睡眠数据实测个人生活AI助手Today（Public Beta），认为其定位是个人生活连续…",
-          "aihot": "https://aihot.virxact.com/items/cmts55mw603quro46hgcxiukn",
-          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247510740&idx=1&sn=be92b4520c222962c33b59336ffea996",
-          "score": 53
-        },
-        {
-          "num": 37,
-          "section": "tips",
-          "title": "GPT-6 Astra操控Blender保姆级教程：三种玩法与踩坑实录",
-          "source": "公众号：数字生命卡兹克",
-          "time": "9月8日 08:21（收录）",
-          "summary": "作者数字生命卡兹克发布GPT-6 Astra操控Blender的小白教程，介绍前期安装、官方MCP与Computer…",
-          "aihot": "https://aihot.virxact.com/items/cmtrxbv5n02etroftlb6u96xt",
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686056&idx=1&sn=c1710404c08cf3201da27f4d53f94940",
-          "score": 76
-        },
-        {
-          "num": 39,
-          "section": "tips",
-          "title": "kernel.org 运维者谈滥用爬虫：14 个 CPU 核心专为爬虫渲染 git 提交页面",
-          "source": "Simon Willison 博客",
-          "time": "9月8日 07:58（收录）",
-          "summary": "Simon Willison 转述 Konstantin Ryabitsev 的观察：git.kernel.org 为…",
-          "aihot": "https://aihot.virxact.com/items/cmtrwidkv01glroftw3b1d38n",
-          "original": "https://simonwillison.net/2026/Sep/7/creepy-crawlies",
-          "score": 60
-        },
-        {
-          "num": 40,
-          "section": "tips",
-          "title": "FT：芝加哥大学法学院与 Berkeley Law 限制学生在课堂和作业中使用 AI",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "time": "9月8日 07:40（收录）",
-          "summary": "FT 报道，University of Chicago Law School 和 Berkeley Law 正在限制…",
-          "aihot": "https://aihot.virxact.com/items/cmtrvvl4b01izroi48xlntsrb",
-          "original": "https://x.com/rohanpaul_ai/status/2097100902926852249",
-          "score": 52
-        },
-        {
-          "num": 44,
-          "section": "tips",
-          "title": "SemiAnalysis 分析 TPU 推理外化加速：InferenceX 性价比提升至多 50%，并削弱 CUDA 护城河",
-          "source": "X：SemiAnalysis (@SemiAnalysis_)",
-          "time": "9月8日 04:10（收录）",
-          "summary": "SemiAnalysis 发布报告称 TPU 推理外化全面提速，涵盖 InferenceX、性价比至多提升 50%、T…",
-          "aihot": "https://aihot.virxact.com/items/cmtrodiqh0au3rotnml3w4u62",
-          "original": "https://x.com/SemiAnalysis_/status/2097054644258103448",
-          "score": 58
-        },
-        {
-          "num": 50,
-          "section": "tips",
-          "title": "Similarweb 数据显示 ChatGPT 流量份额约两个月前首次回升",
-          "source": "X：Kim (@kimmonismus)",
-          "time": "9月8日 02:10（收录）",
-          "summary": "Similarweb 2026 年 8 月的 Gen AI 网站流量份额数据显示，ChatGPT 份额从 3 个月前的…",
-          "aihot": "https://aihot.virxact.com/items/cmtrk37io0752rotnyvbujqrl",
-          "original": "https://x.com/kimmonismus/status/2097018667230003651",
-          "score": 57
-        },
-        {
-          "num": 52,
-          "section": "tips",
-          "title": "GPT-6 Astra 在无人工干预下约 23 小时 43 分钟通关 Portal",
-          "source": "The Decoder：AI News（RSS）",
-          "time": "9月8日 01:57（收录）",
-          "summary": "开发者 cozyblaze 在 X 上宣布，GPT-6 Astra 在设定初始目标后无需任何人工帮助通关了完整 Por…",
-          "aihot": "https://aihot.virxact.com/items/cmtrjm6oa05a0rotnfw9bf5xg",
-          "original": "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours",
-          "score": 60
-        },
-        {
-          "num": 53,
-          "section": "tips",
-          "title": "Anthropic 黑客马拉松获胜者开源整套 Claude Code 设置 ECC：68 个子代理、286 项技能、94 个命令",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月8日 01:39（收录）",
-          "summary": "Anthropic 黑客马拉松获胜者将其整套 Claude Code 设置 ECC 以 MIT 许可开源，包含 68…",
-          "aihot": "https://aihot.virxact.com/items/cmtrizook04w4rotnxuzx0nmx",
-          "original": "https://x.com/AYi_AInotes/status/2097010749247779099",
-          "score": 69
-        },
-        {
-          "num": 55,
-          "section": "tips",
-          "title": "前 Cursor 工程师 Lauren Tan 分享用 AI Agent 单月合入 1000 个 PR 的验证优先工程方法",
-          "source": "X：阿易 AI Notes (@AYi_AInotes)",
-          "time": "9月8日 01:09（收录）",
-          "summary": "X 用户 @AYi_AInotes 转述前 Cursor 核心、现 SpaceXAI 的 Lauren Tan 一期…",
-          "aihot": "https://aihot.virxact.com/items/cmtrhx35q0465rotnzp6s5e1c",
-          "original": "https://x.com/AYi_AInotes/status/2097003688837464289",
-          "score": 64
-        },
-        {
-          "num": 58,
-          "section": "tips",
-          "title": "湖南大学论文借 OpenAI Codex 证明球面 Hadwiger 猜想引发数学界前景讨论",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "time": "9月8日 00:26（收录）",
-          "summary": "博主 _alternator_ 撰文讨论湖南大学 Wang & Wu 的新预印本，其证明自 1974 年悬置的球面 H…",
-          "aihot": "https://aihot.virxact.com/items/cmtrge7me02murotnnbd790r8",
-          "original": "https://mbmccoy.dev/posts/mathematical-conservatory",
-          "score": 58
-        },
-        {
-          "num": 60,
-          "section": "tips",
-          "title": "ByteByteGo 详解 LLM 应用的错误处理与韧性设计",
-          "source": "ByteByteGo（RSS）",
-          "time": "9月8日 00:01（收录）",
-          "summary": "ByteByteGo 发表长文，系统讲解 LLM 应用如何处理错误与故障。文章指出 LLM 应用除网络超时、429 限…",
-          "aihot": "https://aihot.virxact.com/items/cmtrfhifz01zcrotnq60ejwgv",
-          "original": "https://blog.bytebytego.com/p/how-to-deal-with-errors-and-failures",
-          "score": 56
         }
       ]
     }
@@ -1109,7 +938,6 @@ DATA.sections.forEach(s => {
 });
 
 let sortMode = 'score';
-let topN = 10;
 
 function cardEl(card, displayNum, color) {
   const c = document.createElement('article'); c.className = 'card';
@@ -1215,12 +1043,10 @@ function render() {
     } else {
       cards.sort((a, b) => a.num - b.num);
     }
-    const shown = topN > 0 ? cards.slice(0, topN) : cards;
+    const shown = cards;
     const pill = sectionPills[s.key];
     if (pill) {
-      pill.textContent = (topN > 0 && cards.length > topN)
-        ? (topN + ' / ' + cards.length + ' 条')
-        : (cards.length + ' 条');
+      pill.textContent = cards.length + ' 条';
     }
     const grid = sectionGrids[s.key];
     grid.innerHTML = '';
@@ -1237,16 +1063,12 @@ function render() {
   });
   const hint = document.getElementById('toolHint');
   if (hint) {
-    hint.textContent = '当前显示 ' + counter + ' 条'
-      + (topN > 0 ? '（每个分类各取前 ' + topN + ' 条）' : '（全部）')
-      + ' · AI 热点榜不参与';
+    hint.textContent = '按评分精选 ' + counter + ' 条 · AI 热点榜不参与';
   }
 }
 
 const sortSel = document.getElementById('sortSel');
-const topSel = document.getElementById('topSel');
 if (sortSel) sortSel.addEventListener('change', e => { sortMode = e.target.value; render(); });
-if (topSel) topSel.addEventListener('change', e => { topN = parseInt(e.target.value, 10) || 0; render(); });
 
 render();
 
