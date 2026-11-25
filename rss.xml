@@ -5,10 +5,17 @@
     <link>https://aihot.space/</link>
     <description>AIhot 每日聚合全球 AI 产品、行业、论文与技巧热点，按北京时间整理，一分钟看懂 AI 圈。每日一期精选。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 11:45:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 10:54:51 GMT</lastBuildDate>
     <generator>AIhot gen_rss</generator>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://aihot.space/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Nov 2026 01:00:00 GMT</pubDate>
+    <pubDate>Wed, 25 Nov 2026 01:00:00 GMT</pubDate>
+    <item>
+      <title>AIhot 每日 AI 精选 · 2026-11-25</title>
+      <link>https://aihot.space/days/20261125/</link>
+      <guid isPermaLink="true">https://aihot.space/days/20261125/</guid>
+      <pubDate>Wed, 25 Nov 2026 01:00:00 GMT</pubDate>
+      <description><h2>AIhot 每日 AI 精选 · 2026-11-25</h2><p>当日按评分精选的 AI 热点（共 50 条）：</p><ul><li><a href="https://www.understandingai.org/p/an-anthropic-mathematician-just-solved">Anthropic 数学家 Alpöge 与 Claude 合作给出黎曼猜想 Lean 证明</a> · Timothy B. Lee：Understanding AI（RSS） · 行业动态</li><li><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/">OpenAI 发布预印本：GPT-6 模型展现内在蛋白质设计能力</a> · OpenAI：官网动态（RSS · 排除企业/客户案例） · 论文研究</li><li><a href="https://www.ithome.com/1/031/983.htm">Anthropic 上市不到一周跌破 83 美元发行价</a> · IT之家·人工智能 · 行业动态</li><li><a href="https://claude.com/blog/install-as-app">Claude 推出 Install as app：artifacts 可安装为 Mac 和 Windows 桌面应用</a> · Claude：Blog（网页） · 产品发布/更新</li><li><a href="https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/">Anthropic 股价跌破 83 美元 IPO 发行价，上市不到一周最低跌至 76 美元</a> · TechCrunch：AI（RSS） · 行业动态</li><li><a href="https://x.com/rohanpaul_ai/status/2125461932111229203">MIT 与 Microsoft 论文：GitHub Copilot 使初级软件工程师招聘下降约 40%</a> · X：Rohan Paul (@rohanpaul_ai) · 论文研究</li><li><a href="https://x.com/rohanpaul_ai/status/2125339306185388060">OpenAI 预印本展示 GPT-6 系列模型内生蛋白质设计能力，湿实验结合率 10.9%</a> · X：Rohan Paul (@rohanpaul_ai) · 论文研究</li><li><a href="https://x.com/addyosmani/status/2125492213903978917">Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法</a> · X：Addy Osmani (@addyosmani) · 技巧与观点</li><li><a href="https://x.com/_philschmid/status/2125296446459056156">Google Workspace MCP servers 与 gwscli 正式发布，Personal 模式一键开通</a> · X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid) · 产品发布/更新</li><li><a href="https://mp.weixin.qq.com/s/jZumD5cprhI7bgmOI7mUEw">千问APP免费开放千问Go打电话服务，经授权可代打电话和定时来电</a> · 公众号：千问APP（阿里） · 产品发布/更新</li></ul><p><a href="https://aihot.space/days/20261125/">在 AIhot 阅读完整日报 →</a></p></description>
+    </item>
     <item>
       <title>AIhot 每日 AI 精选 · 2026-11-24</title>
       <link>https://aihot.space/days/20261124/</link>
@@ -421,13 +428,6 @@
       <guid isPermaLink="true">https://aihot.space/days/20260927/</guid>
       <pubDate>Sun, 27 Sep 2026 01:00:00 GMT</pubDate>
       <description><h2>AIhot 每日 AI 精选 · 2026-09-27</h2><p>当日按评分精选的 AI 热点（共 35 条）：</p><ul><li><a href="https://www.ithome.com/1/007/447.htm">消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件</a> · IT之家（RSS） · 行业动态</li><li><a href="https://www.bbc.com/news/articles/cw62jje658dlo">OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄</a> · Hacker News：AI 热帖 · 行业动态</li><li><a href="https://www.bbc.com/news/articles/cw62jje658dlo">OpenAI 披露其 AI 智能体擅自访问 SEC 等数十家机构网站</a> · Hacker News 热门（buzzing.cc 中文翻译） · 行业动态</li><li><a href="https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause">OpenAI 暂停其最强模型的训练，此前沙盒中的模型利用漏洞接入互联网</a> · The Verge：AI（RSS） · 行业动态</li><li><a href="https://www.ithome.com/1/007/445.htm">OpenAI 因多起模型失控事件暂停最强模型训练</a> · IT之家（RSS） · 行业动态</li><li><a href="https://www.ithome.com/1/007/444.htm">Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录</a> · IT之家（RSS） · 论文研究</li><li><a href="https://x.com/arena/status/2103893011164017018">Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首</a> · X：Arena (@arena) · 模型发布/更新</li><li><a href="https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning">OpenAI 与 Anthropic 调查数万起 AI 智能体突破安全边界事件</a> · The Decoder：AI News（RSS） · 技巧与观点</li><li><a href="https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal">Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法</a> · Hacker News 热门（buzzing.cc 中文翻译） · 行业动态</li><li><a href="https://www.ithome.com/1/007/508.htm">OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会</a> · IT之家（RSS） · 行业动态</li></ul><p><a href="https://aihot.space/days/20260927/">在 AIhot 阅读完整日报 →</a></p></description>
-    </item>
-    <item>
-      <title>AIhot 每日 AI 精选 · 2026-09-26</title>
-      <link>https://aihot.space/days/20260926/</link>
-      <guid isPermaLink="true">https://aihot.space/days/20260926/</guid>
-      <pubDate>Sat, 26 Sep 2026 01:00:00 GMT</pubDate>
-      <description><h2>AIhot 每日 AI 精选 · 2026-09-26</h2><p>当日按评分精选的 AI 热点（共 43 条）：</p><ul><li><a href="https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data">OpenAI 暂停最强模型的训练与工具使用，披露智能体利用 DNS 漏洞联网及泄露 GitHub token 等安全事件</a> · The Decoder：AI News（RSS） · 技巧与观点</li><li><a href="https://x.com/Yuchenj_UW/status/2103589198427193593">Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链</a> · X：Yuchen Jin (@Yuchenj_UW) · 技巧与观点</li><li><a href="https://swarmtraces.org/">独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节</a> · Hacker News 热门（buzzing.cc 中文翻译） · 论文研究</li><li><a href="https://x.com/arena/status/2103571568467288451">GPT-6 Sol （Max） 登陆 Arena Agent Arena 排行榜第 6 名，净提升 +7.7%</a> · X：Arena (@arena) · 模型发布/更新</li><li><a href="https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features">法院裁定特朗普政府可将拒绝启用 Claude 功能的 Anthropic 列入黑名单</a> · Ars Technica：AI（RSS） · 行业动态</li><li><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定</a> · Hacker News：AI 热帖 · 行业动态</li><li><a href="https://x.com/emollick/status/2103709671865602100">Ethan Mollick 评 OpenAI 披露多起新的对齐事件</a> · X：Ethan Mollick (@emollick) · 技巧与观点</li><li><a href="https://the-decoder.com/pentagon-was-right-to-slap-anthropic-with-a-security-supply-chain-risk-label-federal-court-says">联邦上诉法院维持五角大楼将 Anthropic 列为国家安全供应链风险的决定</a> · The Decoder：AI News（RSS） · 行业动态</li><li><a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末</a> · Anthropic：Research（发表成果 · 网页） · 技巧与观点</li><li><a href="https://www.ithome.com/1/007/252.htm">龚古尔奖将因 AI 创作指控的畅销小说《要么就这样，要么死》移出初选名单</a> · IT之家（RSS） · 行业动态</li></ul><p><a href="https://aihot.space/days/20260926/">在 AIhot 阅读完整日报 →</a></p></description>
     </item>
   </channel>
 </rss>
